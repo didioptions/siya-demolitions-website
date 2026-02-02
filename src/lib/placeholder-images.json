@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "homeHero",
+      "description": "A large building during the demolition process, with heavy machinery visible.",
+      "imageUrl": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "demolition building"
+    },
+    {
+      "id": "residentialDemolition",
+      "description": "A residential house being carefully demolished.",
+      "imageUrl": "https://images.unsplash.com/photo-1768321911661-e0cc615e7679?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZXNpZGVudGlhbCUyMGRlbW9saXRpb258ZW58MHx8fHwxNzcwMDY3MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "residential demolition"
+    },
+    {
+      "id": "commercialDemolition",
+      "description": "The frame of a commercial building being taken down.",
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwYnVpbGRpbmd8ZW58MHx8fHwxNzcwMDExMzY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "commercial building"
+    },
+    {
+      "id": "industrialDemolition",
+      "description": "A large industrial complex demolition in progress.",
+      "imageUrl": "https://images.unsplash.com/photo-1685746204661-b92400e9a79a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwZmFjdG9yeXxlbnwwfHx8fDE3Njk5Njg5MjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial factory"
+    },
+    {
+      "id": "siteClearing",
+      "description": "An excavator clearing rubble from a construction site.",
+      "imageUrl": "https://images.unsplash.com/photo-1763478411692-55d2abecc585?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzaXRlJTIwY2xlYXJpbmd8ZW58MHx8fHwxNzcwMDY3MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "site clearing"
+    },
+    {
+      "id": "concreteBreaking",
+      "description": "A jackhammer breaking up a concrete slab.",
+      "imageUrl": "https://images.unsplash.com/photo-1570541294008-8db52a0d047e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGJyZWFraW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "concrete breaking"
+    },
+    {
+      "id": "asbestosRemoval",
+      "description": "A worker in protective gear handling asbestos materials.",
+      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc2Jlc3RvcyUyMHJlbW92YWx8ZW58MHx8fHwxNzcwMDY3MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "asbestos removal"
+    },
+    {
+      "id": "contactPage",
+      "description": "A crane against a city skyline.",
+      "imageUrl": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaXR5JTIwc2t5bGluZXxlbnwwfHx8fDE3NzAwNjcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city skyline"
+    }
+  ]
 }
