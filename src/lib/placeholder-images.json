@@ -47,6 +47,24 @@
       "description": "A crane against a city skyline.",
       "imageUrl": "https://images.unsplash.com/photo-1535498730771-e735b998cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaXR5JTIwc2t5bGluZXxlbnwwfHx8fDE3NzAwNjcyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "city skyline"
+    },
+    {
+      "id": "rubbleRemoval",
+      "description": "A construction site with piles of rubble being cleared.",
+      "imageUrl": "https://images.unsplash.com/photo-1727857161714-2adcefb21ff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxydWJibGUlMjByZW1vdmFsfGVufDB8fHx8MTc3MDA2ODI4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rubble removal"
+    },
+    {
+      "id": "treeFelling",
+      "description": "A large tree being cut down by a professional.",
+      "imageUrl": "https://images.unsplash.com/photo-1686596668278-9c2e84490887?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0cmVlJTIwZmVsbGluZ3xlbnwwfHx8fDE3NzAwNjgyODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tree felling"
+    },
+    {
+      "id": "constructionServices",
+      "description": "A new building under construction.",
+      "imageUrl": "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidWlsZGluZyUyMGNvbnN0cnVjdGlvbnxlbnwwfHx8fDE3NzAwNDQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "building construction"
     }
   ]
 }
