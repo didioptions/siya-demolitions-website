@@ -1,60 +1,66 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin } from "lucide-react";
+import { Check, Phone, MessageSquare } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Service Areas",
-  description: "Siya Demolitions Projects proudly serves Johannesburg, Pretoria, and the entire Gauteng province.",
+  title: "Service Areas | Siya Demolitions Projects Gauteng",
+  description: "Siya Demolitions Projects provides demolition, rubble removal, site cleaning, tree felling, and construction services across all Gauteng areas.",
 };
 
-const areas = [
-  { name: "Johannesburg", description: "All suburbs including Sandton, Randburg, and Roodepoort.", href: "/johannesburg" },
-  { name: "Pretoria", description: "Covering Centurion, Pretoria East, and northern suburbs." },
-  { name: "Ekurhuleni", description: "Serving areas like Boksburg, Benoni, and Kempton Park." },
-  { name: "West Rand", description: "Including Krugersdorp, Mogale City, and surrounding areas." },
-  { name: "Sedibeng", description: "Covering Vereeniging, Vanderbijlpark, and the Vaal Triangle." },
-  { name: "And more...", description: "Contact us to confirm service availability in your specific location within Gauteng." },
+const serviceAreas = [
+  "Johannesburg", "Soweto", "Sandton", "Randburg", "Midrand", "Kempton Park",
+  "Roodepoort", "Pretoria", "Centurion", "Germiston", "Tembisa", "Alberton",
+  "Boksburg", "Benoni", "Orange Farm", "Lenasia"
 ];
 
 export default function ServiceAreasPage() {
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold tracking-tight">Serving All of Gauteng</h1>
-        <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-          We provide expert demolition services across the major metropolitan areas of Gauteng, South Africa.
+        <h1 className="text-4xl font-bold tracking-tight">Our Service Areas in Gauteng</h1>
+        <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
+          We proudly serve an extensive list of areas throughout Gauteng. If your location isn't listed below, please contact us as we may still be able to assist.
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {areas.map((area) => (
-          <Card key={area.name}>
-            <CardContent className="p-6">
-              <div className="flex items-center gap-4">
-                <MapPin className="h-8 w-8 text-accent" />
-                <div>
-                  <h3 className="text-xl font-semibold">{area.name}</h3>
-                  <p className="text-sm text-muted-foreground">{area.description}</p>
-                  {area.href && (
-                    <Button variant="link" asChild className="p-0 h-auto mt-2">
-                       <Link href={area.href}>Learn More</Link>
-                    </Button>
-                  )}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-
+      <Card className="max-w-5xl mx-auto shadow-lg">
+        <CardContent className="p-6 md:p-8">
+          <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4">
+            {serviceAreas.map((area) => (
+              <li key={area} className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-accent flex-shrink-0" />
+                {area === 'Johannesburg' ? (
+                  <Link href="/johannesburg" className="font-medium text-primary hover:underline">{area}</Link>
+                ) : (
+                  <span className="font-medium">{area}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+      </Card>
+      
       <div className="mt-16 text-center">
-        <h2 className="text-2xl font-semibold">Not Sure If We Cover Your Area?</h2>
-        <p className="mt-2 text-muted-foreground">Give us a call and we'll be happy to assist.</p>
-        <Button asChild className="mt-4">
-          <Link href="/contact">Contact Us</Link>
-        </Button>
+        <h2 className="text-2xl font-semibold">Is Your Area Not Listed?</h2>
+        <p className="mt-2 text-muted-foreground">
+          No problem! We are flexible and our service area is always expanding. Contact us to confirm availability.
+        </p>
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+            <a href="tel:0784292760">
+                <Phone />
+                Call Now
+            </a>
+            </Button>
+            <Button size="lg" variant="secondary" asChild>
+            <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
+                <MessageSquare />
+                WhatsApp Now
+            </a>
+            </Button>
+        </div>
       </div>
     </div>
   );
