@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: {
       absolute: "Siya Demolitions Projects | Demolition & Construction Gauteng",
   },
-  description: "Siya Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling and construction services across Gauteng. Call 078 429 2760.",
+  description: "Siya Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling, and construction services across Gauteng. Call 078 429 2760.",
 };
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center flex flex-col items-center justify-center flex-grow">
+    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center flex flex-col items-center justify-center flex-grow">
       <div className="max-w-4xl">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
@@ -33,6 +33,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
