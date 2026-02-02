@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Phone, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutPage() {
     const aboutImage = PlaceHolderImages.find(p => p.id === 'constructionServices');
@@ -27,42 +26,20 @@ export default function AboutPage() {
             </section>
 
             <section className="container mx-auto px-4 py-12 md:px-6 md:py-20">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-4">
-                        <h2 className="text-3xl font-bold">Our Story</h2>
-                        <p className="text-muted-foreground">
-                            Founded with a commitment to safety, efficiency, and reliability, Siya Demolitions Projects has grown to become a leading name in demolition and site preparation across Gauteng. Our team is our greatest asset, bringing years of experience and a dedication to excellence on every job site.
-                        </p>
-                        <p className="text-muted-foreground">
-                            We believe in building strong relationships with our clients by delivering on our promises. From the initial consultation to the final site cleanup, we are your partners in ensuring your project starts on solid ground.
-                        </p>
-                    </div>
-                    <Card>
-                        <CardContent className="p-6">
-                            <h3 className="text-2xl font-bold mb-4">Our Core Values</h3>
-                            <ul className="space-y-3 text-muted-foreground">
-                                <li className="flex items-start gap-3">
-                                    <span className="text-accent font-bold mt-1">✓</span>
-                                    <div><span className="font-semibold text-foreground">Safety First:</span> Uncompromising commitment to the safety of our team, clients, and the public.</div>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-accent font-bold mt-1">✓</span>
-                                     <div><span className="font-semibold text-foreground">Efficiency:</span> Utilizing modern equipment and techniques to complete projects on time and on budget.</div>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-accent font-bold mt-1">✓</span>
-                                     <div><span className="font-semibold text-foreground">Integrity:</span> Operating with honesty and transparency in all our dealings.</div>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <span className="text-accent font-bold mt-1">✓</span>
-                                     <div><span className="font-semibold text-foreground">Customer Focus:</span> We listen to your needs and deliver tailored solutions.</div>
-                                </li>
-                            </ul>
-                        </CardContent>
-                    </Card>
+                <div className="max-w-4xl mx-auto space-y-6">
+                    <h2 className="text-3xl font-bold text-center">Our Commitment to Excellence</h2>
+                    <p className="text-muted-foreground text-lg">
+                       Siya Demolitions Projects has been serving Gauteng since 2000. Our experienced team provides reliable demolition, rubble removal, site cleaning, tree felling, and construction services for residential, commercial, and industrial clients.
+                    </p>
+                    <p className="text-muted-foreground text-lg">
+                       We prioritize safety, efficiency, and customer satisfaction on every project. With the right equipment and skilled professionals, we complete projects on time while maintaining clean and secure sites.
+                    </p>
+                    <p className="text-muted-foreground text-lg">
+                        Our goal is to make demolition and construction projects hassle-free for our clients. Contact us today to learn how we can help with your next project.
+                    </p>
                 </div>
                  <div className="mt-16 text-center">
-                    <h2 className="text-2xl font-semibold">Let's Build the Future Together</h2>
+                    <h2 className="text-2xl font-semibold">Let's Get Started</h2>
                     <p className="mt-2 text-muted-foreground">
                         Contact us to discuss how we can help with your next project.
                     </p>
