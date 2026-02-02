@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 const serviceAreas = [
-  "Johannesburg", "Soweto", "Sandton", "Randburg", "Midrand", "Kempton Park",
-  "Roodepoort", "Pretoria", "Centurion", "Germiston", "Tembisa", "Alberton",
+  "Johannesburg", "Pretoria", "Soweto", "Sandton", "Randburg", "Midrand", "Kempton Park",
+  "Roodepoort", "Centurion", "Germiston", "Tembisa", "Alberton",
   "Boksburg", "Benoni", "Orange Farm", "Lenasia"
 ];
 
@@ -33,6 +33,8 @@ export default function ServiceAreasPage() {
                 <Check className="h-5 w-5 text-accent flex-shrink-0" />
                 {area === 'Johannesburg' ? (
                   <Link href="/johannesburg" className="font-medium text-primary hover:underline">{area}</Link>
+                ) : area === 'Pretoria' ? (
+                  <Link href="/pretoria" className="font-medium text-primary hover:underline">{area}</Link>
                 ) : (
                   <span className="font-medium">{area}</span>
                 )}
