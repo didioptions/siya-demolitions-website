@@ -1,12 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -36,17 +36,17 @@ export default function ContactPage() {
                 )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center items-center text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold">Get In Touch</h1>
-                    <p className="mt-2 text-lg text-gray-200">We're here to help with your next project.</p>
+                    <h1 className="text-4xl md:text-5xl font-bold">Contact Siya Demolitions Projects</h1>
+                    <p className="mt-2 text-lg text-gray-200 max-w-3xl">Need demolition, rubble removal, site cleaning, tree felling or construction services in Gauteng? Reach out today!</p>
                 </div>
             </section>
             
             <section className="container mx-auto px-4 py-12 md:px-6 md:py-20">
                 <div className="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h2 className="text-3xl font-bold mb-2">Contact Information</h2>
+                        <h2 className="text-3xl font-bold mb-2">Get a Fast Quote</h2>
                         <p className="text-muted-foreground mb-8">
-                            Reach out to us via phone, email, or by filling out the contact form. We look forward to hearing from you.
+                            For the quickest response, please call or WhatsApp us. We serve all of Gauteng and are ready to assist with your project needs.
                         </p>
                         <div className="space-y-6">
                             <div className="flex items-center gap-4">
@@ -60,11 +60,11 @@ export default function ContactPage() {
                             </div>
                             <div className="flex items-center gap-4">
                                 <div className="bg-accent/10 p-3 rounded-full">
-                                    <Mail className="h-6 w-6 text-accent" />
+                                    <MessageSquare className="h-6 w-6 text-accent" />
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold">Email</h3>
-                                    <a href="mailto:info@siyademolitions.co.za" className="text-muted-foreground hover:text-primary">info@siyademolitions.co.za</a>
+                                    <h3 className="font-semibold">WhatsApp</h3>
+                                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">078 429 2760</a>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold">Location</h3>
-                                    <p className="text-muted-foreground">Gauteng, South Africa</p>
+                                    <p className="text-muted-foreground">Serving all Gauteng areas</p>
                                 </div>
                             </div>
                         </div>
@@ -82,6 +82,9 @@ export default function ContactPage() {
                     <Card className="shadow-lg">
                         <CardHeader>
                             <CardTitle>Send Us a Message</CardTitle>
+                            <CardDescription>
+                                Alternatively, fill out the form below (optional) and we will get back to you.
+                            </CardDescription>
                         </CardHeader>
                         <CardContent>
                             <form className="space-y-4" onSubmit={handleSubmit}>
