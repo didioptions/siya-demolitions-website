@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageSquare } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin } from "lucide-react";
 import type { Metadata } from 'next';
+import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
@@ -9,30 +12,198 @@ export const metadata: Metadata = {
   description: "Siya Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling, and construction services across Gauteng. Call 078 429 2760.",
 };
 
+const services = [
+  {
+    title: "Demolition",
+    icon: <Wrench className="w-8 h-8 text-accent" />,
+    description: "Safe and efficient demolition for any structure, residential or commercial.",
+    link: "/services"
+  },
+  {
+    title: "Rubble Removal",
+    icon: <Trash2 className="w-8 h-8 text-accent" />,
+    description: "Quick and complete removal of all construction debris and rubble.",
+    link: "/services"
+  },
+  {
+    title: "Site Cleaning",
+    icon: <Sparkles className="w-8 h-8 text-accent" />,
+    description: "Thorough site clearing and cleaning to prepare for your next project.",
+    link: "/services"
+  },
+  {
+    title: "Tree Felling",
+    icon: <Axe className="w-8 h-8 text-accent" />,
+    description: "Professional tree removal services to safely clear your property.",
+    link: "/services"
+  },
+  {
+    title: "Construction",
+    icon: <Building className="w-8 h-8 text-accent" />,
+    description: "Foundation and structural construction to get your new build started.",
+    link: "/services"
+  }
+];
+
+const serviceAreas = [ "Johannesburg", "Pretoria", "Sandton", "Soweto", "Randburg", "Midrand" ];
+
+const whyChooseUs = [
+    {
+        icon: <Award className="w-8 h-8 text-accent"/>,
+        title: "20+ Years of Experience",
+        description: "Serving Gauteng since 2000, we have the expertise to handle any project, big or small."
+    },
+    {
+        icon: <Users className="w-8 h-8 text-accent"/>,
+        title: "Trusted Professionals",
+        description: "Our skilled team is committed to safety, reliability, and exceeding client expectations."
+    },
+    {
+        icon: <Check className="w-8 h-8 text-accent"/>,
+        title: "Customer Satisfaction",
+        description: "We prioritize clear communication and hassle-free service from start to finish."
+    }
+]
+
 export default function Home() {
+    const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
+
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center flex flex-col items-center justify-center flex-grow">
-      <div className="max-w-4xl">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
-        <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-          Welcome to Siya Demolitions Projects. We offer demolition, rubble removal, 
-          site cleaning, tree felling, and construction services throughout Gauteng.
-        </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" asChild>
-            <a href="tel:0784292760">
-              <Phone />
-              Call Now
-            </a>
-          </Button>
-          <Button size="lg" variant="secondary" asChild>
-            <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
-              <MessageSquare />
-              WhatsApp Now
-            </a>
-          </Button>
-        </div>
-      </div>
-    </div>
+    <>
+        {/* Hero Section */}
+        <section className="relative w-full h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white">
+            {heroImage && (
+                <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
+                    data-ai-hint={heroImage.imageHint}
+                    fill
+                    className="object-cover"
+                    priority
+                />
+            )}
+            <div className="absolute inset-0 bg-black/60" />
+            <div className="relative z-10 container mx-auto px-4 md:px-6">
+                <div className="max-w-4xl mx-auto">
+                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-200">
+                    Welcome to Siya Demolitions Projects. We offer demolition, rubble removal, site cleaning, tree felling, and construction services throughout Gauteng.
+                    </p>
+                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button size="lg" asChild>
+                            <a href="tel:0784292760">
+                            <Phone />
+                            Call Now for a Quote
+                            </a>
+                        </Button>
+                        <Button size="lg" variant="secondary" asChild>
+                            <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
+                            <MessageSquare />
+                            WhatsApp Us
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Services Highlights Section */}
+        <section id="services" className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Core Services</h2>
+                    <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs.</p>
+                </div>
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+                    {services.map((service) => (
+                        <div key={service.title} className="text-center flex flex-col items-center">
+                            <div className="bg-accent/10 p-4 rounded-full mb-4">
+                                {service.icon}
+                            </div>
+                            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                            <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
+                            <Button variant="outline" asChild>
+                                <Link href={service.link}>Learn More</Link>
+                            </Button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section id="about" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Partner in Demolition</h2>
+                        <p className="mt-4 text-lg text-muted-foreground">
+                            At Siya Demolitions Projects, we combine decades of experience with a commitment to excellence. We are your reliable partners for making any demolition or construction project a success.
+                        </p>
+                         <div className="mt-8 space-y-6">
+                            {whyChooseUs.map((item) => (
+                                <div key={item.title} className="flex gap-4">
+                                    <div className="flex-shrink-0">{item.icon}</div>
+                                    <div>
+                                        <h3 className="text-xl font-semibold">{item.title}</h3>
+                                        <p className="text-muted-foreground mt-1">{item.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <Button size="lg" className="mt-8" asChild>
+                            <Link href="/about">More About Us</Link>
+                        </Button>
+                    </div>
+                    <div>
+                        <Image src="https://picsum.photos/seed/about/600/500" alt="Construction team meeting" data-ai-hint="team meeting" width={600} height={500} className="rounded-lg shadow-lg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Service Areas Section */}
+        <section id="areas" className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6 text-center">
+                 <h2 className="text-3xl md:text-4xl font-bold">Serving All of Gauteng</h2>
+                 <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">We proudly serve residential and commercial clients across the entire Gauteng province.</p>
+                 <div className="mt-8 flex flex-wrap justify-center gap-4">
+                    {serviceAreas.map(area => (
+                        <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2">
+                           <MapPin className="w-4 h-4 text-accent"/> {area}
+                        </div>
+                    ))}
+                     <div className="bg-background border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
+                 </div>
+                 <Button variant="secondary" className="mt-8" asChild>
+                    <Link href="/service-areas">View All Service Areas</Link>
+                 </Button>
+            </div>
+        </section>
+        
+        {/* Final CTA */}
+        <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground">
+             <div className="container mx-auto px-4 md:px-6 text-center">
+                <h2 className="text-3xl font-bold">Ready to Start Your Project?</h2>
+                <p className="mt-2 max-w-xl mx-auto text-primary-foreground/80">
+                    Contact us today for a free, no-obligation quote. Let's build something great together.
+                </p>
+                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button size="lg" variant="secondary" asChild>
+                        <a href="tel:0784292760">
+                        <Phone />
+                        Call Now
+                        </a>
+                    </Button>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                        <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
+                        <MessageSquare />
+                        WhatsApp Now
+                        </a>
+                    </Button>
+                </div>
+             </div>
+        </section>
+    </>
   );
 }
