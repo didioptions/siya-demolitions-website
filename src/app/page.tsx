@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User } from "lucide-react";
@@ -6,6 +5,7 @@ import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -325,6 +325,8 @@ export default function Home() {
                     </Button>
                 </div>
                 <p className="mt-6 text-sm text-primary-foreground/70">Trusted by 500+ clients across Gauteng</p>
+                
+                <HomePageContactForm />
              </div>
         </section>
     </>
