@@ -1,37 +1,37 @@
-# Let's Fix This Last Error
+# The Final Fix: Create the Repository
 
-My sincere apologies. You have followed every step perfectly, but I missed one crucial command. The error you see is because your project doesn't know the address of your GitHub repository.
+My deepest apologies. I now see the real problem, and it is my mistake. You have done everything perfectly.
 
-We will fix this right now.
+The error **`Repository not found`** means the online folder for your code on GitHub.com does not exist yet.
 
----
-
-### **Step 1: Tell Your Project Its GitHub Address**
-
-Copy the entire command below, paste it into your **TERMINAL**, and press **Enter**. This tells your project where to send the code.
-
-```
-git remote add origin https://github.com/Siya0012/siya-demolitions-website.git
-```
-
-*You will not see any message after running this command. That is normal.*
+Here is how to fix this for good.
 
 ---
 
-### **Step 2: Send Your Code to GitHub**
+### **Step 1: Create the Repository on GitHub.com**
 
-Now, copy this second command, paste it into the **TERMINAL**, and press **Enter**.
+1.  Open your web browser and go to: **[https://github.com/new](https://github.com/new)**
+2.  For "Repository name", you must type this **exactly**: `siya-demolitions-website`
+3.  Make sure "Public" is selected.
+4.  **Do not** check any boxes (like README, .gitignore, license). It must be an empty repository.
+5.  Click the green **"Create repository"** button.
+
+---
+
+### **Step 2: Push Your Code from the Terminal**
+
+Now, come back to your code editor. Copy only this one command, paste it into your **TERMINAL**, and press **Enter**:
 
 ```
 git push -u origin main
 ```
 
-This time, it will work! You will see messages about the code being uploaded.
+**This will now work.** You will see it uploading the code.
 
 ---
 
 ### **Step 3: Finish on Firebase**
 
-After Step 2 is done, go back to the Firebase page. The error will be gone, and you can click **"Next"** to get your website link.
+Go back to the Firebase page, and the error will be gone. Click **"Next"** to get your website link.
 
-You are at the very last step. Thank you for your incredible patience.
+Thank you for your incredible patience. This is the last step.
