@@ -18,35 +18,35 @@ const services = [
     icon: <Wrench className="w-8 h-8 text-accent" />,
     description: "Expert demolition for any project, ensuring fast approvals and safe site prep for new construction.",
     link: "/services",
-    buttonText: "Explore Demolition"
+    buttonText: "See Why Builders Trust Us"
   },
   {
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
     description: "Quickly clear all construction debris from your site, leaving it spotless, safe, and ready for the next phase.",
     link: "/services",
-    buttonText: "Clear Your Site"
+    buttonText: "Clear Your Site Fast with Us"
   },
   {
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
     description: "Complete site cleaning services to prepare your property for handover or the next stage of development.",
     link: "/services",
-    buttonText: "View Cleaning Details"
+    buttonText: "Request Site Clearing Services"
   },
   {
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
     description: "Professional tree felling to safely clear land, remove hazardous trees, and protect your property.",
     link: "/services",
-    buttonText: "Learn About Felling"
+    buttonText: "Safely Remove Trees Today"
   },
   {
     title: "Construction",
     icon: <Building className="w-8 h-8 text-accent" />,
     description: "From foundations to structural work, we provide a reliable start for your new building project.",
     link: "/services",
-    buttonText: "See Construction Info"
+    buttonText: "Start Strong – Book a Builder"
   }
 ];
 
