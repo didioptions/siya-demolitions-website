@@ -2,4 +2,4 @@
 
 This is a NextJS starter in Firebase Studio.
 
-To get started, take a look at src/app/page.tsx.
+**Action Required:** Please publish this branch to your GitHub repository to continue with Firebase setup.
