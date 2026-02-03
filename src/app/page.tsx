@@ -85,6 +85,9 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto">
+                    <h2 className="text-accent font-bold tracking-widest uppercase mb-4 animate-bounce">
+                      Gauteng's Premier Demolition Experts
+                    </h2>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-200">
                     Welcome to Siya Demolitions Projects. We offer demolition, rubble removal, site cleaning, tree felling, and construction services throughout Gauteng.
