@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -308,13 +307,13 @@ export default function Home() {
              <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl font-bold">Start Your Safe & Certified Demolition Today</h2>
                 <p className="mt-2 max-w-xl mx-auto text-primary-foreground/80">
-                    Contact us today for a free, no-obligation quote. We’re fully licensed & insured, and ready to assist with your demolition or construction project in Gauteng.
+                    Get in touch for a free, no-obligation quote. We're fully licensed, insured, and ready to help you clear your site efficiently, safely, and professionally anywhere in Gauteng.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
                         <a href="tel:0784292760">
                         <Phone />
-                        Call Us
+                        Call Now
                         </a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
@@ -323,10 +322,13 @@ export default function Home() {
                         WhatsApp Us
                         </a>
                     </Button>
+                    <Button size="lg" variant="secondary" asChild>
+                        <Link href="/contact">
+                            <Quote />
+                            Request a Free Quote
+                        </Link>
+                    </Button>
                 </div>
-                <p className="mt-6 text-sm text-primary-foreground/70">Trusted by 500+ clients across Gauteng</p>
-                
-                <HomePageContactForm />
              </div>
         </section>
     </>
