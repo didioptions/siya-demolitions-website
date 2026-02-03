@@ -16,31 +16,31 @@ const services = [
   {
     title: "Demolition Services",
     icon: <Wrench className="w-8 h-8 text-accent" />,
-    description: "Expert residential and commercial demolition services across Gauteng, handled with precision and care.",
+    description: "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
     link: "/services"
   },
   {
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
-    description: "Fast and reliable rubble removal in Gauteng. We clear all construction debris, leaving your site clean.",
+    description: "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
     link: "/services"
   },
   {
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
-    description: "Thorough site cleaning and clearing to prepare your Gauteng property for its next phase.",
+    description: "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.",
     link: "/services"
   },
   {
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
-    description: "Safe and professional tree felling in Gauteng. We remove hazardous or unwanted trees efficiently.",
+    description: "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.",
     link: "/services"
   },
   {
     title: "Construction",
     icon: <Building className="w-8 h-8 text-accent" />,
-    description: "Foundation and structural construction to provide a solid start for your new build in Gauteng.",
+    description: "Foundation and structural construction services in Gauteng, providing a solid and reliable start for your new building project.",
     link: "/services"
   }
 ];
@@ -123,7 +123,11 @@ export default function Home() {
                             <div className="bg-accent/10 p-4 rounded-full mb-4">
                                 {service.icon}
                             </div>
-                            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                            <h3 className="text-xl font-semibold mb-2">
+                                <Link href={service.link} className="hover:underline focus:underline">
+                                    {service.title}
+                                </Link>
+                            </h3>
                             <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
                             <Button variant="outline" asChild>
                                 <Link href={service.link}>Learn More</Link>
