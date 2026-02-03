@@ -65,6 +65,12 @@
       "description": "A new building under construction.",
       "imageUrl": "https://images.unsplash.com/photo-1587582423116-ec07293f0395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidWlsZGluZyUyMGNvbnN0cnVjdGlvbnxlbnwwfHx8fDE3NzAwNDQwMzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "building construction"
+    },
+    {
+      "id": "aboutSection",
+      "description": "A group of construction workers in a meeting on site.",
+      "imageUrl": "https://images.unsplash.com/photo-1681949103006-70066fb25dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NzAxMjAyMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team meeting"
     }
   ]
 }

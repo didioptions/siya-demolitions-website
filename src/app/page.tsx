@@ -126,6 +126,7 @@ const servicesSchema = [
 
 export default function Home() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
+    const aboutImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
@@ -229,7 +230,7 @@ export default function Home() {
                         </Button>
                     </div>
                     <div>
-                        <Image src="https://picsum.photos/seed/about/600/500" alt="Construction team meeting" data-ai-hint="team meeting" width={600} height={500} className="rounded-lg shadow-lg" />
+                       {aboutImage && <Image src={aboutImage.imageUrl} alt={aboutImage.description} data-ai-hint={aboutImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
                     </div>
                 </div>
             </div>
