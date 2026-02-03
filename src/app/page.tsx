@@ -16,32 +16,37 @@ const services = [
   {
     title: "Demolition Services",
     icon: <Wrench className="w-8 h-8 text-accent" />,
-    description: "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
-    link: "/services"
+    description: "Expert demolition for any project, ensuring fast approvals and safe site prep for new construction.",
+    link: "/services",
+    buttonText: "Explore Demolition"
   },
   {
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
-    description: "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
-    link: "/services"
+    description: "Quickly clear all construction debris from your site, leaving it spotless, safe, and ready for the next phase.",
+    link: "/services",
+    buttonText: "Clear Your Site"
   },
   {
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
-    description: "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.",
-    link: "/services"
+    description: "Complete site cleaning services to prepare your property for handover or the next stage of development.",
+    link: "/services",
+    buttonText: "View Cleaning Details"
   },
   {
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
-    description: "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.",
-    link: "/services"
+    description: "Professional tree felling to safely clear land, remove hazardous trees, and protect your property.",
+    link: "/services",
+    buttonText: "Learn About Felling"
   },
   {
     title: "Construction",
     icon: <Building className="w-8 h-8 text-accent" />,
-    description: "Foundation and structural construction services in Gauteng, providing a solid and reliable start for your new building project.",
-    link: "/services"
+    description: "From foundations to structural work, we provide a reliable start for your new building project.",
+    link: "/services",
+    buttonText: "See Construction Info"
   }
 ];
 
@@ -151,13 +156,13 @@ export default function Home() {
                     </h2>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-200">
-                    Welcome to Siya Demolitions Projects. We offer demolition, rubble removal, site cleaning, tree felling, and construction services throughout Gauteng.
+                      With over 20 years of experience, Siya Demolitions Projects is your trusted partner for safe, efficient, and reliable demolition and construction services across Gauteng.
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
                             <a href="tel:0784292760">
                             <Phone />
-                            Call Now for a Quote
+                            Speak to an Expert Now
                             </a>
                         </Button>
                         <Button size="lg" variant="secondary" asChild>
@@ -191,7 +196,7 @@ export default function Home() {
                             </h3>
                             <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
                             <Button variant="outline" asChild>
-                                <Link href={service.link}>Learn More</Link>
+                                <Link href={service.link}>{service.buttonText}</Link>
                             </Button>
                         </div>
                     ))}
