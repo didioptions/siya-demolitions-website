@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin } from "lucide-react";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
@@ -62,14 +62,75 @@ const whyChooseUs = [
         icon: <Check className="w-8 h-8 text-accent"/>,
         title: "Customer Satisfaction",
         description: "We prioritize clear communication and hassle-free service from start to finish."
+    },
+    {
+        icon: <ShieldCheck className="w-8 h-8 text-accent"/>,
+        title: "Licensed & Insured",
+        description: "Work with a fully compliant and insured team for complete peace of mind. Free quotes available."
     }
-]
+];
+
+const servicesSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Demolition Services",
+    "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
+    "url": "https://siyademolitions.co.za/services"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Rubble Removal",
+    "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
+    "url": "https://siyademolitions.co.za/services"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Site Cleaning",
+    "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
+    "url": "https://siyademolitions.co.za/services"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Tree Felling",
+    "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
+    "url": "https://siyademolitions.co.za/services"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Construction",
+    "description": "Foundation and structural construction services in Gauteng, providing a solid and reliable start for your new building project.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
+    "url": "https://siyademolitions.co.za/services"
+  }
+];
+
 
 export default function Home() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
   return (
     <>
+      {servicesSchema.map((schema, index) => (
+        <script
+          key={`service-schema-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
         {/* Hero Section */}
         <section className="relative w-full h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white">
             {heroImage && (
@@ -147,13 +208,13 @@ export default function Home() {
                         <p className="mt-4 text-lg text-muted-foreground">
                             At Siya Demolitions Projects, we combine decades of experience with a commitment to excellence. We are your reliable partners for making any demolition or construction project a success.
                         </p>
-                         <div className="mt-8 space-y-6">
+                         <div className="mt-8 grid sm:grid-cols-2 gap-6">
                             {whyChooseUs.map((item) => (
                                 <div key={item.title} className="flex gap-4">
                                     <div className="flex-shrink-0">{item.icon}</div>
                                     <div>
                                         <h3 className="text-xl font-semibold">{item.title}</h3>
-                                        <p className="text-muted-foreground mt-1">{item.description}</p>
+                                        <p className="text-muted-foreground mt-1 text-sm">{item.description}</p>
                                     </div>
                                 </div>
                             ))}
