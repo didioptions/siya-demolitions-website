@@ -68,9 +68,9 @@
     },
     {
       "id": "aboutSection",
-      "description": "A group of construction workers in a meeting on site.",
-      "imageUrl": "https://images.unsplash.com/photo-1681949103006-70066fb25dfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NzAxMjAyMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team meeting"
+      "description": "A group of construction workers in a meeting on site, looking at plans.",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtfGVufDB8fHx8MTc3MDEyMDIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction team"
     }
   ]
 }
