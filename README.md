@@ -1,43 +1,72 @@
-# This is Great News!
+# Project Title
 
-Thank you for sharing that screenshot. It tells us that **the repository already exists!**
+A brief description of your project.
 
-You have already completed the first step. You do not need to create it again.
+## Getting Started
 
-My previous instructions had the wrong GitHub username. I am very sorry for that mistake. Let's fix it right now.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Please come back to your code editor's **TERMINAL** and run these commands one by one.
+### Prerequisites
 
----
+What things you need to install the software and how to install them.
 
-### **Step 1: Remove the Old, Incorrect Remote**
+'''
+Give examples
+'''
 
-Copy this command, paste it into the terminal, and press **Enter**. (It's okay if this command shows an error, just continue to the next step).
+### Installing
 
-```
-git remote remove origin
-```
+A step-by-step series of examples that tell you how to get a development environment running.
 
----
+Say what the step will be
 
-### **Step 2: Add the Correct Remote**
+'''
+Give the example
+'''
 
-Now, copy this **new** command. This one has your correct username (`didioptions`). Paste it into the terminal and press **Enter**.
+And repeat
 
-```
-git remote add origin https://github.com/didioptions/siya-demolitions-website.git
-```
+'''
+until finished
+'''
 
----
+End with an example of getting some data out of the system or using it for a little demo.
 
-### **Step 3: Push Your Code**
+## Running the tests
 
-This is the final step. Copy this command, paste it into the terminal, and press **Enter**.
+Explain how to run the automated tests for this system.
 
-```
-git push -u origin main
-```
+### Break down into end-to-end tests
 
-**This will now work.** You will see it uploading the code. After it finishes, you can go to the Firebase page, and the error will be gone. Click **"Next"** to get your website link.
+Explain what these tests test and why.
 
-I am very sorry for the long and frustrating process. This is the last fix.
+'''
+Give an example
+'''
+
+### And coding style tests
+
+Explain what these tests test and why.
+
+'''
+Give an example
+'''
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system.
+
+## Built With
+
+* [Next.js](https://nextjs.org/) - The React Framework
+* [ShadCN](https://ui.shadcn.com/) - UI Components
+* [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
+* [Genkit](https://firebase.google.com/docs/genkit) - AI Framework
+
+## Authors
+
+* **Your Name** - *Initial work* - [Your GitHub](https://github.com/your-username)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
