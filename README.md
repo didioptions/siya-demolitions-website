@@ -1,47 +1,43 @@
 # Siya Demolitions Projects
 
-I am very sorry for the previous instructions. Let's use a different method that is more direct and should work without any issues.
+My sincere apologies for the confusion. Let's fix this together.
 
-We will use the built-in terminal to send your code to GitHub.
+You are seeing an error because you copied the gray box formatting (` ```bash `) along with the command. You should only copy the text *inside* the box.
 
----
-
-### **Step 1: Open the Terminal in Your Editor**
-
-1.  Look at the top menu bar of your code editor (where you see "File", "Edit", etc.).
-2.  Click on **"Terminal"**.
-3.  From the dropdown menu that appears, click **"New Terminal"**.
-
-A new panel will open at the bottom of your editor screen. This is your command-line terminal.
+Let's try again.
 
 ---
 
-### **Step 2: Run These Commands**
+### **Step 1: Get Ready**
 
-Copy each command below, one at a time. Paste it into the terminal, and press **Enter**. Wait for each one to finish before doing the next.
+*   You should have the **TERMINAL** panel open at the bottom of your editor. If not, click **"Terminal" -> "New Terminal"** from the top menu.
 
-1.  Copy and run this command first:
+---
+
+### **Step 2: Run The Commands (One By One)**
+
+Copy the commands **exactly** as they appear below, without any extra text or symbols.
+
+1.  **First Command:** Copy this line, paste it into the terminal, and press **Enter**.
     ```bash
     git add .
     ```
 
-2.  Copy and run this command second:
+2.  **Second Command:** Now, copy this next line, paste it in, and press **Enter**.
     ```bash
     git commit -m "Initial commit"
     ```
-    *(If this command gives an error about `user.email` or `user.name`, please copy the `git config` commands it tells you to run, run them, and then run the `git commit` command again.)*
+    *If you see an error about `user.email` or `user.name`, please run the two `git config` commands it suggests, and then run `git commit -m "Initial commit"` again.*
 
-3.  Copy and run this final command:
+3.  **Third Command:** Finally, copy this last line, paste it in, and press **Enter**.
     ```bash
     git push -u origin main
     ```
 
-After the last command finishes, your code will be successfully uploaded to GitHub.
+After the last command finishes, your code will be on GitHub.
 
 ---
 
 ### **Step 3: Finish Firebase Setup**
 
-Now, you can go back to the Firebase page ([https://console.firebase.google.com/project/siya-demolitions-projects/apphosting](https://console.firebase.google.com/project/siya-demolitions-projects/apphosting)).
-
-Refresh the page. The error message will be gone. You can then click **"Next"** to finish and get your website link.
+Go back to the Firebase page ([https://console.firebase.google.com/project/siya-demolitions-projects/apphosting](https://console.firebase.google.com/project/siya-demolitions-projects/apphosting)), refresh it, and the error will be gone. You can then click "Next" to get your website link.
