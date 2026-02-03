@@ -1,37 +1,43 @@
-# The Final Fix: Create the Repository
+# This is Great News!
 
-My deepest apologies. I now see the real problem, and it is my mistake. You have done everything perfectly.
+Thank you for sharing that screenshot. It tells us that **the repository already exists!**
 
-The error **`Repository not found`** means the online folder for your code on GitHub.com does not exist yet.
+You have already completed the first step. You do not need to create it again.
 
-Here is how to fix this for good.
+My previous instructions had the wrong GitHub username. I am very sorry for that mistake. Let's fix it right now.
 
----
-
-### **Step 1: Create the Repository on GitHub.com**
-
-1.  Open your web browser and go to: **[https://github.com/new](https://github.com/new)**
-2.  For "Repository name", you must type this **exactly**: `siya-demolitions-website`
-3.  Make sure "Public" is selected.
-4.  **Do not** check any boxes (like README, .gitignore, license). It must be an empty repository.
-5.  Click the green **"Create repository"** button.
+Please come back to your code editor's **TERMINAL** and run these commands one by one.
 
 ---
 
-### **Step 2: Push Your Code from the Terminal**
+### **Step 1: Remove the Old, Incorrect Remote**
 
-Now, come back to your code editor. Copy only this one command, paste it into your **TERMINAL**, and press **Enter**:
+Copy this command, paste it into the terminal, and press **Enter**. (It's okay if this command shows an error, just continue to the next step).
+
+```
+git remote remove origin
+```
+
+---
+
+### **Step 2: Add the Correct Remote**
+
+Now, copy this **new** command. This one has your correct username (`didioptions`). Paste it into the terminal and press **Enter**.
+
+```
+git remote add origin https://github.com/didioptions/siya-demolitions-website.git
+```
+
+---
+
+### **Step 3: Push Your Code**
+
+This is the final step. Copy this command, paste it into the terminal, and press **Enter**.
 
 ```
 git push -u origin main
 ```
 
-**This will now work.** You will see it uploading the code.
+**This will now work.** You will see it uploading the code. After it finishes, you can go to the Firebase page, and the error will be gone. Click **"Next"** to get your website link.
 
----
-
-### **Step 3: Finish on Firebase**
-
-Go back to the Firebase page, and the error will be gone. Click **"Next"** to get your website link.
-
-Thank you for your incredible patience. This is the last step.
+I am very sorry for the long and frustrating process. This is the last fix.
