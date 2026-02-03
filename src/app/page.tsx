@@ -14,33 +14,33 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    title: "Demolition",
+    title: "Demolition Services",
     icon: <Wrench className="w-8 h-8 text-accent" />,
-    description: "Safe and efficient demolition for any structure, residential or commercial.",
+    description: "Expert residential and commercial demolition services across Gauteng, handled with precision and care.",
     link: "/services"
   },
   {
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
-    description: "Quick and complete removal of all construction debris and rubble.",
+    description: "Fast and reliable rubble removal in Gauteng. We clear all construction debris, leaving your site clean.",
     link: "/services"
   },
   {
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
-    description: "Thorough site clearing and cleaning to prepare for your next project.",
+    description: "Thorough site cleaning and clearing to prepare your Gauteng property for its next phase.",
     link: "/services"
   },
   {
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
-    description: "Professional tree removal services to safely clear your property.",
+    description: "Safe and professional tree felling in Gauteng. We remove hazardous or unwanted trees efficiently.",
     link: "/services"
   },
   {
     title: "Construction",
     icon: <Building className="w-8 h-8 text-accent" />,
-    description: "Foundation and structural construction to get your new build started.",
+    description: "Foundation and structural construction to provide a solid start for your new build in Gauteng.",
     link: "/services"
   }
 ];
@@ -115,11 +115,11 @@ export default function Home() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Our Core Services</h2>
-                    <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs.</p>
+                    <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs in Gauteng.</p>
                 </div>
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
                     {services.map((service) => (
-                        <div key={service.title} className="text-center flex flex-col items-center">
+                        <div key={service.title} className="text-center flex flex-col items-center p-6 rounded-lg bg-background hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                             <div className="bg-accent/10 p-4 rounded-full mb-4">
                                 {service.icon}
                             </div>
