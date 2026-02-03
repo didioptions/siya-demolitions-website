@@ -211,7 +211,7 @@ export default function Home() {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Partner in Demolition</h2>
                         <p className="mt-4 text-lg text-muted-foreground">
-                            At Siya Demolitions Projects, we combine decades of experience with a commitment to excellence. We are your reliable partners for making any demolition or construction project a success.
+                            At Siya Demolitions Projects, we don't just demolish—we clear the path for safe, reliable construction success. We are your reliable partners for making any project a success.
                         </p>
                          <div className="mt-8 grid sm:grid-cols-2 gap-6">
                             {whyChooseUs.map((item) => (
@@ -238,12 +238,17 @@ export default function Home() {
         {/* Service Areas Section */}
         <section id="areas" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6 text-center">
-                 <h2 className="text-3xl md:text-4xl font-bold">Serving All of Gauteng</h2>
+                 <h2 className="text-3xl md:text-4xl font-bold">Proudly Serving Residential & Commercial Clients Across Gauteng</h2>
                  <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">We proudly serve residential and commercial clients across the entire Gauteng province.</p>
                  <div className="mt-8 flex flex-wrap justify-center gap-4">
                     {serviceAreas.map(area => (
-                        <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2">
-                           <MapPin className="w-4 h-4 text-accent"/> {area}
+                        <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
+                            <MapPin className="w-4 h-4 text-accent"/>
+                            {area === 'Johannesburg' || area === 'Pretoria' ? (
+                                <Link href={`/${area.toLowerCase()}`} className="hover:underline">{area}</Link>
+                            ) : (
+                                area
+                            )}
                         </div>
                     ))}
                      <div className="bg-background border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
@@ -257,7 +262,7 @@ export default function Home() {
         {/* Final CTA */}
         <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground">
              <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl font-bold">Ready to Start Your Project?</h2>
+                <h2 className="text-3xl font-bold">Let's Clear the Way for Your Next Project</h2>
                 <p className="mt-2 max-w-xl mx-auto text-primary-foreground/80">
                     Contact us today for a free, no-obligation quote. Let's build something great together.
                 </p>
