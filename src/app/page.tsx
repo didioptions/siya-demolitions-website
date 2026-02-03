@@ -262,24 +262,25 @@ export default function Home() {
         {/* Final CTA */}
         <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground">
              <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl font-bold">Let's Clear the Way for Your Next Project</h2>
+                <h2 className="text-3xl font-bold">Start Your Safe & Certified Demolition Today</h2>
                 <p className="mt-2 max-w-xl mx-auto text-primary-foreground/80">
-                    Contact us today for a free, no-obligation quote. Let's build something great together.
+                    Contact us today for a free, no-obligation quote. We’re fully licensed & insured, and ready to assist with your demolition or construction project in Gauteng.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
                         <a href="tel:0784292760">
                         <Phone />
-                        Call Now
+                        Call Us
                         </a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                         <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
                         <MessageSquare />
-                        WhatsApp Now
+                        WhatsApp Us
                         </a>
                     </Button>
                 </div>
+                <p className="mt-6 text-sm text-primary-foreground/70">Trusted by 500+ clients across Gauteng</p>
              </div>
         </section>
     </>
