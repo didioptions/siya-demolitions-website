@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck } from "lucide-react";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
@@ -123,6 +123,21 @@ const servicesSchema = [
   }
 ];
 
+const testimonials = [
+    {
+        quote: "Siya Demolitions handled our site professionally and left it spotless. Highly recommended!",
+        name: "Lindiwe M., Johannesburg"
+    },
+    {
+        quote: "Fast, reliable, and very professional. They cleared our rubble in record time. Will definitely use them again.",
+        name: "John D., Pretoria"
+    },
+    {
+        quote: "The team was fantastic. They took down an old structure for us safely and efficiently. Great service all around.",
+        name: "Sarah P., Sandton"
+    }
+];
+
 
 export default function Home() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
@@ -205,8 +220,27 @@ export default function Home() {
             </div>
         </section>
 
+        {/* Testimonials Section */}
+        <section id="testimonials" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
+                    <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Real feedback from satisfied customers across Gauteng.</p>
+                </div>
+                <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    {testimonials.map((testimonial) => (
+                        <div key={testimonial.name} className="bg-card p-6 rounded-lg shadow-md flex flex-col">
+                            <Quote className="w-8 h-8 text-accent mb-4" />
+                            <p className="text-muted-foreground mb-4 flex-grow">"{testimonial.quote}"</p>
+                            <p className="font-semibold text-right">- {testimonial.name}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+
         {/* Why Choose Us Section */}
-        <section id="about" className="py-12 md:py-20 bg-background">
+        <section id="about" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -237,13 +271,13 @@ export default function Home() {
         </section>
 
         {/* Service Areas Section */}
-        <section id="areas" className="py-12 md:py-20 bg-card">
+        <section id="areas" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Proudly Serving Residential & Commercial Clients Across Gauteng</h2>
                  <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">We proudly serve residential and commercial clients across the entire Gauteng province.</p>
                  <div className="mt-8 flex flex-wrap justify-center gap-4">
                     {serviceAreas.map(area => (
-                        <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
+                        <div key={area} className="bg-card border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
                             <MapPin className="w-4 h-4 text-accent"/>
                             {area === 'Johannesburg' || area === 'Pretoria' ? (
                                 <Link href={`/${area.toLowerCase()}`} className="hover:underline">{area}</Link>
