@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote } from "lucide-react";
@@ -55,7 +56,7 @@ const serviceAreas = [ "Johannesburg", "Pretoria", "Sandton", "Soweto", "Randbur
 const whyChooseUs = [
     {
         icon: <Award className="w-8 h-8 text-accent"/>,
-        title: "20+ Years of Experience",
+        title: "20+ Years Combined Experience",
         description: "Serving Gauteng since 2000, we have the expertise to handle any project, big or small."
     },
     {
@@ -64,14 +65,14 @@ const whyChooseUs = [
         description: "Our skilled team is committed to safety, reliability, and exceeding client expectations."
     },
     {
+        icon: <ShieldCheck className="w-8 h-8 text-accent"/>,
+        title: "Licensed, Insured & Compliant",
+        description: "Fully compliant for both residential & commercial projects, ensuring your complete peace of mind."
+    },
+    {
         icon: <Check className="w-8 h-8 text-accent"/>,
         title: "Customer Satisfaction",
         description: "We prioritize clear communication and hassle-free service from start to finish."
-    },
-    {
-        icon: <ShieldCheck className="w-8 h-8 text-accent"/>,
-        title: "Licensed & Insured",
-        description: "Work with a fully compliant and insured team for complete peace of mind. Free quotes available."
     }
 ];
 
