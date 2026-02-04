@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +26,7 @@ const services = [
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
     description: "Quickly clear all construction debris from your site, leaving it spotless, safe, and ready for the next phase.",
-    link: "/services",
+    link: "/rubble-removal",
     buttonText: "Clear Your Site Fast with Us"
   },
   {
@@ -93,7 +94,7 @@ const servicesSchema = [
     "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/services"
+    "url": "https://siyademolitions.co.za/rubble-removal"
   },
   {
     "@context": "https://schema.org",
@@ -312,14 +313,14 @@ export default function Home() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
                         <a href="tel:0784292760">
-                        <Phone />
-                        Call Now
+                            <Phone />
+                            Call Now
                         </a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                         <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
-                        <MessageSquare />
-                        WhatsApp Us
+                            <MessageSquare />
+                            WhatsApp Us
                         </a>
                     </Button>
                     <Button size="lg" variant="secondary" asChild>
