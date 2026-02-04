@@ -71,6 +71,24 @@
       "description": "A group of construction workers in a meeting on site, looking at plans.",
       "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtfGVufDB8fHx8MTc3MDEyMDIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "construction team"
+    },
+    {
+      "id": "siteCleaningBefore",
+      "description": "A messy construction site with debris and waste scattered around.",
+      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdHJ1Y3Rpb24lMjB3YXN0ZXxlbnwwfHx8fDE3NzAyMDc1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction waste"
+    },
+    {
+      "id": "siteCleaningAfter",
+      "description": "A clean and organized construction site after professional cleaning.",
+      "imageUrl": "https://images.unsplash.com/photo-1578496459868-7d09b8516e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjleanJlZCUyMGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8fHwxNzcwMjA3NTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cleared site"
+    },
+    {
+      "id": "siteCleaningWorker",
+      "description": "A worker in professional gear clearing construction waste from a site.",
+      "imageUrl": "https://images.unsplash.com/photo-1606913531849-3a321c7367a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXIlMjBjbGVhbmluZ3xlbnwwfHx8fDE3NzAyMDc1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "worker cleaning"
     }
   ]
 }

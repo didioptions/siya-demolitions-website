@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +32,7 @@ const services = [
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
     description: "Complete site cleaning services to prepare your property for handover or the next stage of development.",
-    link: "/services",
+    link: "/site-cleaning",
     buttonText: "Request Site Clearing Services"
   },
   {
@@ -103,7 +102,7 @@ const servicesSchema = [
     "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/services"
+    "url": "https://siyademolitions.co.za/site-cleaning"
   },
   {
     "@context": "https://schema.org",
