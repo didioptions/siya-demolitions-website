@@ -46,7 +46,7 @@ const services = [
     title: "Plant Hire",
     icon: <Truck className="w-8 h-8 text-accent" />,
     description: "Affordable and reliable plant hire for your construction and demolition needs, including TLBs and more.",
-    link: "/contact",
+    link: "/plant-hire",
     buttonText: "Book Plant Hire"
   }
 ];
@@ -117,10 +117,10 @@ const servicesSchema = [
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Plant Hire",
-    "description": "Affordable and reliable plant hire in Gauteng for construction and demolition projects, including TLBs and more.",
+    "description": "Affordable and reliable plant hire in Gauteng for construction and demolition projects, including TLBs and Bobcats.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/contact"
+    "url": "https://siyademolitions.co.za/plant-hire"
   }
 ];
 

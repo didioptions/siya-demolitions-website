@@ -107,6 +107,24 @@
       "description": "Workers cleaning up wood chips and branches after a tree has been felled.",
       "imageUrl": "https://images.unsplash.com/photo-1526685892534-12b5a5c43a08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29kJTIwY2hpcHMlMjBjbGVhbnVwfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wood chips"
+    },
+    {
+      "id": "plantHireBobcat",
+      "description": "A Bobcat compact loader cleaning or levelling a tight area on a construction site.",
+      "imageUrl": "https://images.unsplash.com/photo-1629727579124-b07f8a7a5a81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBsb2FkZXJ8ZW58MHx8fHwxNzcwMzgwMjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bobcat loader"
+    },
+    {
+      "id": "plantHireTlb",
+      "description": "A TLB (Tractor Loader Backhoe) digging a trench on a construction site.",
+      "imageUrl": "https://images.unsplash.com/photo-1552055533-52c6f14093e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCYWNrSG9lJTIwTG9hZGVyfGVufDB8fHx8MTc3MDM4MDI5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "backhoe loader"
+    },
+    {
+      "id": "plantHireResidential",
+      "description": "An operator using a compact loader in a residential setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1593642532400-2682810df593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGV4Y2F2YXRvcnxlbnwwfHx8fDE3NzAzODAzMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "small excavator"
     }
   ]
 }
