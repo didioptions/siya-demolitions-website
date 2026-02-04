@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { href: "/rubble-removal", label: "Rubble Removal" },
   { href: "/site-cleaning", label: "Site Cleaning" },
   { href: "/tree-felling", label: "Tree Felling" },
-  { href: "/plant-hire", label: "Plant Hire" },
+  { href: "/swimming-pool-demolition", label: "Pool Demolition" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/contact", label: "Contact" },
 ];

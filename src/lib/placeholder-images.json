@@ -109,22 +109,22 @@
       "imageHint": "wood chips"
     },
     {
-      "id": "plantHireBobcat",
-      "description": "A Bobcat compact loader cleaning or levelling a tight area on a construction site.",
-      "imageUrl": "https://images.unsplash.com/photo-1629727579124-b07f8a7a5a81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBsb2FkZXJ8ZW58MHx8fHwxNzcwMzgwMjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bobcat loader"
+      "id": "poolDemoHero",
+      "description": "A completely demolished in-ground swimming pool, now an empty space with rubble.",
+      "imageUrl": "https://images.unsplash.com/photo-1598276039467-f65d6b28ae2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW1vbGlzaGVkJTIwcG9vbHxlbnwwfHx8fDE3NzAyNDI4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "demolished pool"
     },
     {
-      "id": "plantHireTlb",
-      "description": "A TLB (Tractor Loader Backhoe) digging a trench on a construction site.",
-      "imageUrl": "https://images.unsplash.com/photo-1552055533-52c6f14093e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCYWNrSG9lJTIwTG9hZGVyfGVufDB8fHx8MTc3MDM4MDI5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "backhoe loader"
+      "id": "poolDemoWork",
+      "description": "A small excavator with a jackhammer attachment breaking up the concrete of a swimming pool.",
+      "imageUrl": "https://picsum.photos/seed/poolDemoWork/600/400",
+      "imageHint": "excavator pool"
     },
     {
-      "id": "plantHireResidential",
-      "description": "An operator using a compact loader in a residential setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1593642532400-2682810df593?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWFsbCUyMGV4Y2F2YXRvcnxlbnwwfHx8fDE3NzAzODAzMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "small excavator"
+      "id": "poolDemoAfter",
+      "description": "A lush, green backyard where a swimming pool used to be.",
+      "imageUrl": "https://images.unsplash.com/photo-1719872895913-4a689588229a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JlZW4lMjBiYWNreWFyZHxlbnwwfHx8fDE3NzAyNDI4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green backyard"
     }
   ]
 }

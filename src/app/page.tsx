@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Truck } from "lucide-react";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
@@ -43,11 +43,11 @@ const services = [
     buttonText: "Safely Remove Trees Today"
   },
   {
-    title: "Plant Hire",
-    icon: <Truck className="w-8 h-8 text-accent" />,
-    description: "Affordable and reliable plant hire for your construction and demolition needs, including TLBs and more.",
-    link: "/plant-hire",
-    buttonText: "Book Plant Hire"
+    title: "Swimming Pool Demolition",
+    icon: <Waves className="w-8 h-8 text-accent" />,
+    description: "Safe and complete pool removal, from breaking and clearing to site leveling and preparation.",
+    link: "/swimming-pool-demolition",
+    buttonText: "Remove Your Pool"
   }
 ];
 
@@ -116,11 +116,11 @@ const servicesSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Plant Hire",
-    "description": "Affordable and reliable plant hire in Gauteng for construction and demolition projects, including TLBs and Bobcats.",
+    "serviceType": "Swimming Pool Demolition",
+    "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/plant-hire"
+    "url": "https://siyademolitions.co.za/swimming-pool-demolition"
   }
 ];
 
