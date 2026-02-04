@@ -193,6 +193,35 @@ export default function Home() {
             </div>
         </section>
 
+        {/* Highlights Bar */}
+        <section className="py-6 bg-card border-y">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div className="flex items-center gap-4 justify-center md:justify-start">
+                        <Award className="h-10 w-10 text-accent flex-shrink-0" />
+                        <div>
+                            <p className="font-bold text-foreground uppercase">20+ Years Experience</p>
+                            <p className="text-muted-foreground text-sm">Trusted by homeowners & contractors in Gauteng</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4 justify-center md:justify-start">
+                        <ShieldCheck className="h-10 w-10 text-accent flex-shrink-0" />
+                        <div>
+                            <p className="font-bold text-foreground uppercase">Fully Licensed & Insured</p>
+                            <p className="text-muted-foreground text-sm">Safety-compliant demolition experts</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-4 justify-center md:justify-start">
+                        <Users className="h-10 w-10 text-accent flex-shrink-0" />
+                        <div>
+                            <p className="font-bold text-foreground uppercase">500+ Projects Completed</p>
+                            <p className="text-muted-foreground text-sm">Residential & Commercial Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {/* Services Highlights Section */}
         <section id="services" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
