@@ -89,6 +89,24 @@
       "description": "A worker in professional gear clearing construction waste from a site.",
       "imageUrl": "https://images.unsplash.com/photo-1606913531849-3a321c7367a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB3b3JrZXIlMjBjbGVhbmluZ3xlbnwwfHx8fDE3NzAyMDc1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "worker cleaning"
+    },
+    {
+      "id": "treeCuttingBefore",
+      "description": "A large tree in a residential yard before being cut.",
+      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892d3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "large tree"
+    },
+    {
+      "id": "treeCuttingRopes",
+      "description": "An arborist using ropes to safely dismantle a large tree.",
+      "imageUrl": "https://images.unsplash.com/photo-1615752176885-45d611606544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmJvcmlzdCUyMHJvcGVzfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "arborist ropes"
+    },
+    {
+      "id": "treeCuttingCleanup",
+      "description": "Workers cleaning up wood chips and branches after a tree has been felled.",
+      "imageUrl": "https://images.unsplash.com/photo-1526685892534-12b5a5c43a08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b29kJTIwY2hpcHMlMjBjbGVhbnVwfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wood chips"
     }
   ]
 }

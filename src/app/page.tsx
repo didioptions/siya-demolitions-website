@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +40,7 @@ const services = [
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
     description: "Professional tree felling to safely clear land, remove hazardous trees, and protect your property.",
-    link: "/services",
+    link: "/tree-felling",
     buttonText: "Safely Remove Trees Today"
   },
   {

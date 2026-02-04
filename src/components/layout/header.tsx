@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { href: "/services", label: "Services" },
   { href: "/rubble-removal", label: "Rubble Removal" },
   { href: "/site-cleaning", label: "Site Cleaning" },
+  { href: "/tree-felling", label: "Tree Felling" },
   { href: "/service-areas", label: "Service Areas" },
   { href: "/contact", label: "Contact" },
 ];
