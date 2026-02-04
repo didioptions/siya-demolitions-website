@@ -17,6 +17,7 @@ export function Footer() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/services", label: "Services" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -89,7 +90,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border/50 pt-6 text-center text-sm">
+        <div className="mt-12 border-t pt-6 text-center text-sm">
           <p>&copy; {year} Siya Demolitions Projects. All rights reserved.</p>
         </div>
       </div>

@@ -7,7 +7,6 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
-  SheetClose,
 } from "@/components/ui/sheet";
 import {
   DropdownMenu,
@@ -42,7 +41,7 @@ export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
-  const isServicesActive = serviceNavLinks.some(link => pathname.startsWith(link.href));
+  const isServicesActive = serviceNavLinks.some(link => pathname === link.href);
 
   const DesktopNav = () => (
     <nav className="hidden md:flex items-center gap-6">
@@ -52,7 +51,7 @@ export function Header() {
           href={link.href}
           className={cn(
             "text-sm font-medium transition-colors hover:text-primary",
-            pathname === link.href ? "text-primary" : "text-muted-foreground"
+            pathname === link.href ? "text-primary" : "text-foreground/80"
           )}
         >
           {link.label}
@@ -63,13 +62,13 @@ export function Header() {
         <DropdownMenuTrigger
           className={cn(
             "flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary focus:outline-none",
-            isServicesActive ? "text-primary" : "text-muted-foreground"
+            isServicesActive ? "text-primary" : "text-foreground/80"
           )}
         >
           Services
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="bg-card border-border text-foreground">
+        <DropdownMenuContent>
           {serviceNavLinks.map((link) => (
             <DropdownMenuItem key={link.href} asChild>
               <Link
@@ -92,7 +91,7 @@ export function Header() {
           href={link.href}
           className={cn(
             "text-sm font-medium transition-colors hover:text-primary",
-            pathname === link.href ? "text-primary" : "text-muted-foreground"
+            pathname === link.href ? "text-primary" : "text-foreground/80"
           )}
         >
           {link.label}
@@ -102,17 +101,19 @@ export function Header() {
   );
 
   const MobileNav = () => (
-    <div className="flex flex-col gap-4">
-      <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
-        <div className="bg-primary p-2 rounded-md">
-          <HardHat className="h-6 w-6 text-primary-foreground" />
-        </div>
-        <div className="flex flex-col">
-            <span className="font-bold text-base uppercase tracking-wider text-foreground">Siya Demolitions</span>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
-        </div>
-      </Link>
-      <div className="flex flex-col gap-4 mt-4">
+    <div className="flex flex-col h-full">
+      <div className="flex items-center justify-between border-b pb-4">
+        <Link href="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3">
+          <div className="bg-primary p-2 rounded-md">
+            <HardHat className="h-6 w-6 text-primary-foreground" />
+          </div>
+          <div className="flex flex-col">
+              <span className="font-bold text-base uppercase tracking-wider text-foreground">Siya Demolitions</span>
+              <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
+          </div>
+        </Link>
+      </div>
+      <div className="flex flex-col gap-4 mt-6 flex-grow">
         {[...mainNavLinks, ...serviceNavLinks, ...otherNavLinks].map((link) => (
           <Link
             key={link.href}
@@ -120,14 +121,14 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
             className={cn(
               "text-lg font-medium transition-colors hover:text-primary",
-              pathname === link.href ? "text-primary" : "text-muted-foreground"
+              pathname === link.href ? "text-primary" : "text-foreground"
             )}
           >
             {link.label}
           </Link>
         ))}
       </div>
-      <Button asChild className="w-full mt-4" onClick={() => setMobileMenuOpen(false)}>
+      <Button asChild className="w-full mt-auto" size="lg" onClick={() => setMobileMenuOpen(false)}>
         <Link href="/contact">FREE QUOTE</Link>
       </Button>
     </div>
@@ -161,7 +162,7 @@ export function Header() {
                 <span className="sr-only">Toggle navigation menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-card border-l-border">
+            <SheetContent side="right">
               <MobileNav />
             </SheetContent>
           </Sheet>

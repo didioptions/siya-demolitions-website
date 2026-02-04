@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, MessageSquare, Mail, MapPin, Trash2, Home, Building } from "lucide-react";
-import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const whatWeRemove = [
     "Concrete and bricks",
@@ -52,6 +53,10 @@ const faqs = [
 ];
 
 export default function RubbleRemovalPage() {
+    const rubbleImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
+    const cleanSiteImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
+    const workerImage = PlaceHolderImages.find(p => p.id === 'siteCleaningWorker');
+
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
       {/* Hero Section */}
@@ -73,7 +78,8 @@ export default function RubbleRemovalPage() {
       {/* What We Remove Section */}
       <section id="what-we-remove" className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-8">What We Remove</h2>
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            {rubbleImage && <div className="aspect-video relative"><Image src={rubbleImage.imageUrl} alt="Rubble piled near construction" data-ai-hint="rubble construction" fill className="rounded-lg object-cover" /></div>}
             <Card className="shadow-lg">
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><Trash2 className="h-6 w-6 text-accent" /> All Debris Types</CardTitle>
@@ -91,7 +97,13 @@ export default function RubbleRemovalPage() {
                     <p className="mt-4 text-sm text-muted-foreground italic">No load is too small or too large — from small homes to large developments.</p>
                 </CardContent>
             </Card>
-            <Card className="shadow-lg">
+        </div>
+      </section>
+      
+      {/* Fast & Reliable Section */}
+      <section className="mb-16 bg-card p-8 rounded-lg">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3">⚡ Fast & Reliable Site Clearance</CardTitle>
                 </CardHeader>
@@ -106,10 +118,11 @@ export default function RubbleRemovalPage() {
                         ))}
                     </ul>
                 </CardContent>
-            </Card>
+            </div>
+             {cleanSiteImage && <div className="aspect-video relative"><Image src={cleanSiteImage.imageUrl} alt="Clean site after clearance" data-ai-hint="clean site" fill className="rounded-lg object-cover" /></div>}
         </div>
       </section>
-      
+
       {/* Residential & Commercial Section */}
        <section id="project-types" className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-8">Residential & Commercial Services</h2>
@@ -157,6 +170,7 @@ export default function RubbleRemovalPage() {
                     </div>
                 ))}
             </div>
+            {workerImage && <div className="mt-6 aspect-video relative"><Image src={workerImage.imageUrl} alt="Worker loading rubble into a truck" data-ai-hint="worker loading" fill className="rounded-lg object-cover" /></div>}
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">

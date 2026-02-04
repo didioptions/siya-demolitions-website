@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -17,12 +15,12 @@ const treeServices = [
 ];
 
 const whyChooseUs = [
-    { text: "Safe, experienced teams" },
-    { text: "Affordable, up-front pricing" },
-    { text: "Local service in Johannesburg" },
-    { text: "No mess left behind" },
-    { text: "Emergency service available when possible" },
-    { text: "Fully insured & reliable" },
+    "Safe, experienced teams",
+    "Affordable, up-front pricing",
+    "Local service in Johannesburg",
+    "No mess left behind",
+    "Emergency service available when possible",
+    "Fully insured & reliable",
 ];
 
 const joburgAreas = [
@@ -148,9 +146,9 @@ export default function TreeFellingPage() {
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose Siya for Tree Felling?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
-                    <div key={reason.text} className="flex items-start gap-3">
+                    <div key={reason} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/>
-                        <span className="font-medium text-muted-foreground">{reason.text}</span>
+                        <span className="font-medium text-muted-foreground">{reason}</span>
                     </div>
                 ))}
             </div>

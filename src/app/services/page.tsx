@@ -1,13 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, MessageSquare, Mail, Building, Trash2, Sparkles, Wrench, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export const metadata: Metadata = {
-  title: "Demolition & Construction Services | Siya Demolitions",
+  title: "Demolition & Construction Services in Johannesburg | Siya Demolitions",
   description: "Professional demolition, rubble removal, site clearing, and construction services in Johannesburg. Fully licensed and insured. Call for a free quote.",
 };
 
@@ -22,7 +23,9 @@ const jhbServices = [
             "Partial or full structure removal",
             "Internal strip-outs and renovation related dismantling"
         ],
-        outro: "All projects are carried out with strict safety standards and minimal disruption to surrounding properties."
+        outro: "All projects are carried out with strict safety standards and minimal disruption to surrounding properties.",
+        imageId: "residentialDemolition",
+        imageHint: "residential demolition"
     },
     { 
         title: "Rubble Removal & Waste Disposal", 
@@ -34,7 +37,9 @@ const jhbServices = [
             "Disposal of concrete, bricks, mixed debris",
             "Eco-friendly recycling wherever possible"
         ],
-        outro: "We remove rubble quickly and responsibly so your project stays on schedule."
+        outro: "We remove rubble quickly and responsibly so your project stays on schedule.",
+        imageId: "rubbleRemoval",
+        imageHint: "rubble removal truck"
     },
     { 
         title: "Site Cleaning & Land Clearing", 
@@ -46,7 +51,9 @@ const jhbServices = [
             "Pre-sale or post-demolition site prep",
             "Ready-to-build preparation"
         ],
-        outro: "Perfect for developments, renovations, or landscaping."
+        outro: "Perfect for developments, renovations, or landscaping.",
+        imageId: "siteClearing",
+        imageHint: "site clearing"
     },
     { 
         title: "TLB Hire & Construction Support", 
@@ -58,7 +65,9 @@ const jhbServices = [
             "Small construction support",
             "Ground leveling and prep"
         ],
-        outro: "Well-maintained equipment + skilled crew = faster and safer builds."
+        outro: "Well-maintained equipment + skilled crew = faster and safer builds.",
+        imageId: "plantHireTlb",
+        imageHint: "tlb hire"
     }
 ];
 
@@ -95,6 +104,8 @@ const faqs = [
 ];
 
 export default function ServicesPage() {
+    const projectsImage = PlaceHolderImages.find(p => p.id === 'constructionServices');
+
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
       {/* Hero Section */}
@@ -122,25 +133,33 @@ export default function ServicesPage() {
           <Wrench /> Our Demolition & Construction Services in Johannesburg
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
-          {jhbServices.map(service => (
-            <Card key={service.title} className="shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">{service.icon} {service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.points.map(point => (
-                    <li key={point} className="flex items-start gap-3">
-                      <Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                      <span className="text-muted-foreground">{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-muted-foreground mt-4">{service.outro}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {jhbServices.map(service => {
+            const image = PlaceHolderImages.find(p => p.id === service.imageId);
+            return(
+                <Card key={service.title} className="shadow-lg flex flex-col">
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-3">{service.icon} {service.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                        <p className="text-muted-foreground mb-4">{service.description}</p>
+                        <ul className="space-y-2">
+                        {service.points.map(point => (
+                            <li key={point} className="flex items-start gap-3">
+                            <Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                            <span className="text-muted-foreground">{point}</span>
+                            </li>
+                        ))}
+                        </ul>
+                        <p className="text-muted-foreground mt-4">{service.outro}</p>
+                        {image && (
+                           <div className="mt-4 aspect-video relative">
+                             <Image src={image.imageUrl} alt={image.description} data-ai-hint={service.imageHint} fill className="rounded-lg object-cover" />
+                           </div>
+                        )}
+                    </CardContent>
+                </Card>
+            )
+        })}
         </div>
       </section>
 
@@ -200,6 +219,7 @@ export default function ServicesPage() {
                     <Check className="text-accent" /> Delivered on time
                 </div>
             </div>
+             {projectsImage && <div className="mt-6 aspect-video relative"><Image src={projectsImage.imageUrl} alt="Work in progress with machinery" data-ai-hint="machinery dust" fill className="rounded-lg object-cover" /></div>}
        </section>
 
       {/* FAQ Section */}
@@ -221,7 +241,7 @@ export default function ServicesPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Quote for Demolition in Johannesburg</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-          Looking for professional, safe, and affordable demolition or construction services in Johannesburg? Siya Demolitions is here to help — fast. We respond quickly, work safely, and leave your site spotless and build-ready.
+          Looking for professional, safe, and affordable demolition or construction services in Johannesburg? Siya Demolitions is here to help — fast. 🚛 We respond quickly, work safely, and leave your site spotless and build-ready.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

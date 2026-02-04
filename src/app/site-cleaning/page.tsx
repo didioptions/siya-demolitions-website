@@ -1,17 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, MessageSquare, Mail, MapPin, Trash2, Home, Building, Sparkles } from "lucide-react";
+import { Check, Phone, MessageSquare, Mail, MapPin, Home, Building, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const whyChooseUs = [
-    { text: "Trusted by local contractors" },
-    { text: "Fast, professional crews" },
-    { text: "Licensed and insured" },
-    { text: "Affordable + reliable quotes" },
-    { text: "Friendly Johannesburg-based service" },
+    "Trusted by local contractors",
+    "Fast, professional crews",
+    "Licensed and insured",
+    "Affordable + reliable quotes",
+    "Friendly Johannesburg-based service",
 ];
 
 const joburgAreas = [
@@ -38,7 +38,6 @@ const faqs = [
 ];
 
 export default function SiteCleaningPage() {
-    const heroImage = PlaceHolderImages.find(p => p.id === 'siteClearing');
     const beforeImage = PlaceHolderImages.find(p => p.id === 'siteCleaningBefore');
     const afterImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
     const workerImage = PlaceHolderImages.find(p => p.id === 'siteCleaningWorker');
@@ -137,9 +136,9 @@ export default function SiteCleaningPage() {
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose Siya Demolitions?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
-                    <div key={reason.text} className="flex items-start gap-3">
+                    <div key={reason} className="flex items-start gap-3">
                         <Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/>
-                        <span className="font-medium text-muted-foreground">{reason.text}</span>
+                        <span className="font-medium text-muted-foreground">{reason}</span>
                     </div>
                 ))}
             </div>

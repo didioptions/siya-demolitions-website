@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves } from "lucide-react";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +33,7 @@ const services = [
     icon: <Sparkles className="w-8 h-8 text-accent" />,
     description: "Complete site cleaning services to prepare your property for handover or the next stage of development.",
     link: "/site-cleaning",
-    buttonText: "Request Site Clearing Services"
+    buttonText: "Request Site Clearing"
   },
   {
     title: "Tree Felling",
@@ -48,6 +48,13 @@ const services = [
     description: "Safe and complete pool removal, from breaking and clearing to site leveling and preparation.",
     link: "/swimming-pool-demolition",
     buttonText: "Remove Your Pool"
+  },
+  {
+    title: "Plant Hire",
+    icon: <Tractor className="w-8 h-8 text-accent" />,
+    description: "Reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation.",
+    link: "/plant-hire",
+    buttonText: "Book Your Machinery"
   }
 ];
 
@@ -121,6 +128,15 @@ const servicesSchema = [
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
     "url": "https://siyademolitions.co.za/swimming-pool-demolition"
+  },
+   {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Plant Hire",
+    "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.",
+    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" },
+    "url": "https://siyademolitions.co.za/plant-hire"
   }
 ];
 
@@ -223,15 +239,15 @@ export default function Home() {
         </section>
 
         {/* Services Highlights Section */}
-        <section id="services" className="py-12 md:py-20 bg-card">
+        <section id="services" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Our Core Services</h2>
                     <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs in Gauteng.</p>
                 </div>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
                     {services.map((service) => (
-                        <div key={service.title} className="text-center flex flex-col items-center p-6 rounded-lg bg-background hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <div key={service.title} className="text-center flex flex-col items-center p-6 rounded-lg bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                             <div className="bg-accent/10 p-4 rounded-full mb-4">
                                 {service.icon}
                             </div>
@@ -251,7 +267,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-12 md:py-20 bg-background">
+        <section id="testimonials" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">What Our Clients Say</h2>
@@ -259,7 +275,7 @@ export default function Home() {
                 </div>
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {testimonials.map((testimonial) => (
-                        <div key={testimonial.name} className="bg-card p-6 rounded-lg shadow-md flex flex-col">
+                        <div key={testimonial.name} className="bg-background p-6 rounded-lg shadow-md flex flex-col">
                             <Quote className="w-8 h-8 text-accent mb-4" />
                             <p className="text-muted-foreground mb-4 flex-grow">"{testimonial.quote}"</p>
                             <div className="flex items-center gap-3 self-end mt-4">
@@ -277,7 +293,7 @@ export default function Home() {
         </section>
 
         {/* Why Choose Us Section */}
-        <section id="about" className="py-12 md:py-20 bg-card">
+        <section id="about" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -308,13 +324,13 @@ export default function Home() {
         </section>
 
         {/* Service Areas Section */}
-        <section id="areas" className="py-12 md:py-20 bg-background">
+        <section id="areas" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6 text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Proudly Serving Residential & Commercial Clients Across Gauteng</h2>
                  <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">We proudly serve residential and commercial clients across the entire Gauteng province.</p>
                  <div className="mt-8 flex flex-wrap justify-center gap-4">
                     {serviceAreas.map(area => (
-                        <div key={area} className="bg-card border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
+                        <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
                             <MapPin className="w-4 h-4 text-accent"/>
                             {area === 'Johannesburg' || area === 'Pretoria' ? (
                                 <Link href={`/${area.toLowerCase()}`} className="hover:underline">{area}</Link>
@@ -323,7 +339,7 @@ export default function Home() {
                             )}
                         </div>
                     ))}
-                     <div className="bg-background border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
+                     <div className="bg-card border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
                  </div>
                  <Button variant="secondary" className="mt-8" asChild>
                     <Link href="/service-areas">View All Service Areas</Link>
