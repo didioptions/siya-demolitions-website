@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User } from "lucide-react";
+import { Check, Phone, MessageSquare, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Truck } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
   title: {
@@ -44,11 +43,11 @@ const services = [
     buttonText: "Safely Remove Trees Today"
   },
   {
-    title: "Construction",
-    icon: <Building className="w-8 h-8 text-accent" />,
-    description: "From foundations to structural work, we provide a reliable start for your new building project.",
-    link: "/services",
-    buttonText: "Start Strong – Book a Builder"
+    title: "Plant Hire",
+    icon: <Truck className="w-8 h-8 text-accent" />,
+    description: "Affordable and reliable plant hire for your construction and demolition needs, including TLBs and more.",
+    link: "/contact",
+    buttonText: "Book Plant Hire"
   }
 ];
 
@@ -112,16 +111,16 @@ const servicesSchema = [
     "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/services"
+    "url": "https://siyademolitions.co.za/tree-felling"
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Construction",
-    "description": "Foundation and structural construction services in Gauteng, providing a solid and reliable start for your new building project.",
+    "serviceType": "Plant Hire",
+    "description": "Affordable and reliable plant hire in Gauteng for construction and demolition projects, including TLBs and more.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/services"
+    "url": "https://siyademolitions.co.za/contact"
   }
 ];
 
