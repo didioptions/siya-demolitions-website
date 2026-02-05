@@ -188,7 +188,7 @@ export default function SiteCleaningPage() {
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
          Looking for reliable site cleaning in Johannesburg? Let Siya Demolitions handle the debris — so you can move forward fast.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
                 <a href="tel:0784292760"><Phone />Call us today</a>
             </Button>

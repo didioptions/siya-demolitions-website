@@ -208,7 +208,7 @@ export default function SwimmingPoolDemolitionPage() {
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
          Whether you’re prepping for landscaping or getting rid of an old hazard, we make pool removal clean, simple, and safe.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
                 <a href="tel:0784292760"><Phone />Call us today</a>
             </Button>

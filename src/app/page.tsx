@@ -191,7 +191,7 @@ export default function Home() {
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-200">
                       With over 20 years of experience, Siya Demolitions Projects is your trusted partner for safe, efficient, and reliable demolition and construction services across Gauteng.
                     </p>
-                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
                             <a href="tel:0784292760">
                             <Phone />
@@ -354,7 +354,7 @@ export default function Home() {
                 <p className="mt-2 max-w-xl mx-auto text-primary-foreground/80">
                     Get in touch for a free, no-obligation quote. We're fully licensed, insured, and ready to help you clear your site efficiently, safely, and professionally anywhere in Gauteng.
                 </p>
-                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
                         <a href="tel:0784292760">
                             <Phone />

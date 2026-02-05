@@ -72,7 +72,7 @@ export default function PretoriaPage() {
         <p className="mt-2 text-muted-foreground">
           Contact us today for a free, no-obligation quote.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
             <a href="tel:0784292760">
                 <Phone />

@@ -215,7 +215,7 @@ export default function RubbleRemovalPage() {
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
           Looking for fast, affordable rubble removal near you? Let Siya Demolitions handle the debris, so you can move forward — safely and stress-free.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
                 <a href="tel:0784292760"><Phone />Call now</a>
             </Button>

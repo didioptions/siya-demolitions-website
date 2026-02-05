@@ -43,7 +43,7 @@ export default function AboutPage() {
                     <p className="mt-2 text-muted-foreground">
                         Contact us to discuss how we can help with your next project.
                     </p>
-                    <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
                         <a href="tel:0784292760">
                             <Phone />

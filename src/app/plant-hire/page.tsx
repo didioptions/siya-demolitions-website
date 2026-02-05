@@ -201,7 +201,7 @@ export default function PlantHirePage() {
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
          Whether you're clearing, digging, or preparing foundations — Siya Demolitions delivers fast, reliable equipment hire with trained operators to get the job done right.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
                 <a href="tel:0784292760"><Phone />Call now</a>
             </Button>

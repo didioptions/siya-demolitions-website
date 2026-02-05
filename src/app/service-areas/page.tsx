@@ -49,7 +49,7 @@ export default function ServiceAreasPage() {
         <p className="mt-2 text-muted-foreground">
           No problem! We are flexible and our service area is always expanding. Contact us to confirm availability.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
             <a href="tel:0784292760">
                 <Phone />

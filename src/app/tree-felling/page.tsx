@@ -198,7 +198,7 @@ export default function TreeFellingPage() {
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
          Need reliable tree felling or land clearing? Let Siya Demolitions handle it — safely, efficiently, and affordably.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
                 <a href="tel:0784292760"><Phone />Call today</a>
             </Button>
