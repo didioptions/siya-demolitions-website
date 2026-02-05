@@ -45,7 +45,7 @@ const services = [
   {
     title: "Swimming Pool Demolition",
     icon: <Waves className="w-8 h-8 text-accent" />,
-    description: "Safe and complete pool removal, from breaking and clearing to site leveling and preparation.",
+    description: "Remove unwanted or damaged pools safely and efficiently. We offer partial or full swimming pool demolition in Johannesburg, including rubble removal and cleanup.",
     link: "/swimming-pool-demolition",
     buttonText: "Remove Your Pool"
   },

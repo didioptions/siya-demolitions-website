@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Swimming Pool Demolition Services in Johannesburg | Siya Demolitions',
-  description: 'Safe, affordable pool removal and site cleanup services in Johannesburg for homes and businesses. Concrete, fibreglass, and tiled pools. Call for a free quote.',
+  title: 'Swimming Pool Demolition Johannesburg | Pool Removal & Site Prep',
+  description: 'Remove unwanted or damaged pools safely and efficiently. We offer partial or full swimming pool demolition in Johannesburg, including rubble removal and cleanup.',
 };
 
 export default function SwimmingPoolDemolitionLayout({
