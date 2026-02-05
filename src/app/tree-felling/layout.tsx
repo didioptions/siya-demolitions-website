@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tree Felling Services in Johannesburg | Siya Demolitions',
-  description: 'Safe, controlled tree cutting and removal services in Johannesburg for residential and commercial sites. Call for a free quote.',
+  title: 'Tree Felling Johannesburg | Safe Tree Cutting & Removal',
+  description: 'Certified tree felling services in Johannesburg. Remove hazardous or unwanted trees safely with our experienced team. Residential and commercial service available.',
 };
 
 export default function TreeFellingLayout({

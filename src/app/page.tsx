@@ -38,7 +38,7 @@ const services = [
   {
     title: "Tree Felling",
     icon: <Axe className="w-8 h-8 text-accent" />,
-    description: "Professional tree felling to safely clear land, remove hazardous trees, and protect your property.",
+    description: "Certified tree felling services in Johannesburg. Remove hazardous or unwanted trees safely with our experienced team. Residential and commercial service available.",
     link: "/tree-felling",
     buttonText: "Safely Remove Trees Today"
   },
