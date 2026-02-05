@@ -17,7 +17,7 @@ const services = [
   {
     title: "Demolition Services",
     icon: <Wrench className="w-8 h-8 text-accent" />,
-    description: "Expert demolition for any project, ensuring fast approvals and safe site prep for new construction.",
+    description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
     link: "/services",
     buttonText: "See Why Builders Trust Us"
   },
