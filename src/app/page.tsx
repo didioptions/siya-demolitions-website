@@ -245,7 +245,7 @@ export default function Home() {
                     <h2 className="text-3xl md:text-4xl font-bold">Our Core Services</h2>
                     <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs in Gauteng.</p>
                 </div>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service) => (
                         <div key={service.title} className="text-center flex flex-col items-center p-6 rounded-lg bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                             <div className="bg-accent/10 p-4 rounded-full mb-4">
