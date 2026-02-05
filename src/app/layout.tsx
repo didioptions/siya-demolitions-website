@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     template: '%s | Siya Demolitions',
   },
   description: 'Expert demolition services in Gauteng, South Africa. Siya Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
-  keywords: ['demolition', 'Gauteng', 'Johannesburg', 'South Africa', 'site clearing', 'construction', 'rubble removal', 'tree felling'],
+  keywords: ['demolition', 'Gauteng', 'Johannesburg', 'South Africa', 'site clearing', 'construction', 'rubble removal', 'tree felling', 'plant hire', 'swimming pool demolition'],
   openGraph: {
     title: 'Siya Demolitions Projects | Demolition & Construction Gauteng',
     description: 'Professional demolition, rubble removal, and site clearing services in Gauteng.',
-    url: 'https://siyademolitions.co.za', // Assuming a domain, will use a placeholder
+    url: 'https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/',
     siteName: 'Siya Demolitions Projects',
     images: [
       {
@@ -36,26 +36,52 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Siya Demolitions Projects',
-  telephone: '078 429 2760',
+  telephone: '+27-78-429-2760',
+  email: 'info@siyademolitions.co.za',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Gauteng',
+    streetAddress: '304 Main Avenue',
+    addressLocality: 'Randburg',
+    addressRegion: 'Gauteng',
+    postalCode: '2194',
     addressCountry: 'ZA',
   },
-  description: 'Siya Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling, and construction services across Gauteng.',
-  url: 'https://siyademolitions.co.za', // Placeholder URL
+  description: 'Professional demolition, rubble removal, site clearing, tree felling, swimming pool demolition, plant hire, and construction services in Johannesburg and Gauteng.',
+  url: 'https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/',
   image: homeHeroImage?.imageUrl || '',
   serviceType: [
     "Demolition",
     "Rubble Removal",
     "Site Cleaning",
     "Tree Felling",
+    "Swimming Pool Demolition",
+    "Plant Hire",
     "Construction"
   ],
   areaServed: {
     '@type': 'AdministrativeArea',
     name: 'Gauteng'
-  }
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+      opens: '07:30',
+      closes: '17:30'
+    }
+  ],
+  priceRange: '$$',
+  sameAs: [
+    'https://www.facebook.com/siya.demolitions',
+    'https://www.instagram.com/siya.demolitions'
+  ]
 };
 
 
