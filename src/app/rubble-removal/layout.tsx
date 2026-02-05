@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Services in Johannesburg | Siya Demolitions',
-  description: 'Fast and reliable rubble removal in Johannesburg. We clear construction debris, renovation waste, and more. Call for a free quote.',
+  title: 'Rubble Removal in Johannesburg | Construction Waste & Site Cleanup',
+  description: 'Quick and affordable rubble removal services in Johannesburg. We clear construction waste, debris, and site materials. Same-day service available. Call for a quote.',
 };
 
 export default function RubbleRemovalLayout({
