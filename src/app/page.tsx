@@ -24,7 +24,7 @@ const services = [
   {
     title: "Rubble Removal",
     icon: <Trash2 className="w-8 h-8 text-accent" />,
-    description: "Quickly clear all construction debris from your site, leaving it spotless, safe, and ready for the next phase.",
+    description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
     link: "/rubble-removal",
     buttonText: "Clear Your Site Fast with Us"
   },
