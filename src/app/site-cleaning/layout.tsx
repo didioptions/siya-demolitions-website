@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Site Cleaning Services in Johannesburg | Siya Demolitions',
-  description: 'Professional site cleaning and clearance in Johannesburg for construction and demolition projects. Keep your site safe and on schedule. Call for a free quote.',
+  title: 'Site Cleaning Services in Johannesburg | Land & Site Cleanup',
+  description: 'Professional site cleaning services for construction and demolition projects in Johannesburg. Perfect for post-project cleanups and land preparation.',
 };
 
 export default function SiteCleaningLayout({

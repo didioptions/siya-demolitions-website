@@ -31,7 +31,7 @@ const services = [
   {
     title: "Site Cleaning",
     icon: <Sparkles className="w-8 h-8 text-accent" />,
-    description: "Complete site cleaning services to prepare your property for handover or the next stage of development.",
+    description: "Professional site cleaning services for construction and demolition projects in Johannesburg. Perfect for post-project cleanups and land preparation.",
     link: "/site-cleaning",
     buttonText: "Request Site Clearing"
   },
