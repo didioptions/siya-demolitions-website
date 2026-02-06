@@ -128,13 +128,13 @@
     },
     {
       "id": "plantHireBobcat",
-      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBoaXJlfGVufDB8fHx8MTc3MDI5ODQxMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBoaXJlfGVufDB8fHx8MTc3MDI5ODQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "description": "A Bobcat compact loader at a construction site.",
       "imageHint": "bobcat hire"
     },
     {
       "id": "plantHireTlb",
-      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "description": "A TLB (Tractor Loader Backhoe) digging at a site.",
       "imageHint": "tlb hire"
     },
@@ -148,7 +148,7 @@
   "galleryImages": [
     {
       "id": "gallery1",
-      "description": "YOUR NEW IMAGE: Interior of a building during demolition.",
+      "description": "Interior of a building during demolition.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolitions%20inte.jpg?alt=media&token=58f804eb-c6f5-4424-9aca-0b245941d8db",
       "imageHint": "interior demolition"
     },
