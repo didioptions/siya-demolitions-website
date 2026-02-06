@@ -26,7 +26,7 @@ export default function GalleryPage() {
     if (!isUserLoading && !user && auth) {
       signInAnonymously(auth).catch((err) => {
         console.error("Anonymous sign-in failed:", err);
-        setError("Could not authenticate. Please try again.");
+        setError(`Authentication failed: ${err.message}`);
       });
     }
   }, [user, isUserLoading, auth]);
@@ -43,9 +43,10 @@ export default function GalleryPage() {
           res.items.map((itemRef) => getDownloadURL(itemRef))
         );
         setImageUrls(urls.reverse()); // Show newest images first
-      } catch (err) {
+        setError(null);
+      } catch (err: any) {
         console.error("Error fetching images:", err);
-        setError("Could not load images. Please try again later.");
+        setError(`Could not load images: ${err.message}. Please try again later.`);
       } finally {
         setIsLoading(false);
       }
@@ -80,11 +81,7 @@ export default function GalleryPage() {
       },
       (error) => {
         console.error("Upload error:", error);
-        if (error.code === 'storage/unauthorized') {
-            setError('Permission denied. You must be signed in to upload files.');
-        } else {
-            setError(`Upload failed: ${error.message}. Please try again.`);
-        }
+        setError(`Upload failed: ${error.message}. Please try again.`);
         setUploadProgress(null);
       },
       () => {
@@ -144,13 +141,15 @@ export default function GalleryPage() {
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 border-2 border-dashed rounded-lg">
-            <ImageIcon className="mx-auto h-12 w-12 text-muted-foreground" />
-            <h3 className="mt-4 text-lg font-semibold">The Gallery is Empty</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Upload an image to get started.
-            </p>
-          </div>
+          !error && (
+            <div className="text-center py-16 border-2 border-dashed rounded-lg">
+              <ImageIcon className="mx-auto h-12 w-12 text-muted-foreground" />
+              <h3 className="mt-4 text-lg font-semibold">The Gallery is Empty</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Upload an image to get started.
+              </p>
+            </div>
+          )
         )}
       </div>
     </div>
