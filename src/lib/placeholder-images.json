@@ -130,9 +130,9 @@
   "galleryImages": [
     {
       "id": "gallery1",
-      "description": "A recently completed demolition project site, cleared and ready for new construction.",
-      "imageUrl": "https://picsum.photos/seed/gallery1/800/600",
-      "imageHint": "demolition site"
+      "description": "A clean site after professional clearing.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.appspot.com/o/site%20cleaning%20(1).jpg?alt=media",
+      "imageHint": "site cleaning"
     },
     {
       "id": "gallery2",
