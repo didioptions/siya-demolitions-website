@@ -126,5 +126,25 @@
       "imageUrl": "https://images.unsplash.com/photo-1719872895913-4a689588229a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JlZW4lMjBiYWNreWFyZHxlbnwwfHx8fDE3NzAyNDI4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green backyard"
     }
+  ],
+  "galleryImages": [
+    {
+      "id": "gallery1",
+      "description": "A recently completed demolition project site, cleared and ready for new construction.",
+      "imageUrl": "https://picsum.photos/seed/gallery1/800/600",
+      "imageHint": "demolition site"
+    },
+    {
+      "id": "gallery2",
+      "description": "Rubble being loaded onto a truck for removal from a commercial site.",
+      "imageUrl": "https://picsum.photos/seed/gallery2/800/600",
+      "imageHint": "rubble removal"
+    },
+    {
+      "id": "gallery3",
+      "description": "An operator using a TLB for site preparation.",
+      "imageUrl": "https://picsum.photos/seed/gallery3/800/600",
+      "imageHint": "plant hire"
+    }
   ]
 }
