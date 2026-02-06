@@ -1,0 +1,107 @@
+/**
+ * This ruleset governs the Firestore database for a public-facing business website.
+ *
+ * Core Philosophy:
+ * The security model is designed to be "secure by default". It allows public, read-only
+ * access to general business information while creating a secure "dropbox" for sensitive
+ * user submissions like contact forms. All write access to business data and read access
+ * to user-submitted data is disabled, requiring explicit administrative override (e.g., via
+ * the Firebase Console or a trusted server environment) for management.
+ *
+ * Data Structure:
+ * The data is organized into three distinct, top-level collections:
+ * - /services: Contains public information about company services.
+ * - /service_areas: Contains public information about company service areas.
+ * - /contact_form_submissions: A write-only collection for public form submissions.
+ * This flat structure ensures collections can be secured independently.
+ *
+ * Key Security Decisions:
+ * - Public Read-Only Content: The '/services' and '/service_areas' collections are
+ *   publicly readable by anyone but cannot be modified by any client. This is ideal for
+ *   displaying static-like content on a website.
+ * - Secure "Dropbox" for Submissions: The '/contact_form_submissions' collection allows
+ *   any user (including anonymous visitors) to create a document. However, reading,
+ *   updating, or deleting these submissions is prohibited to protect the submitter's
+ *   private information from public access.
+ * - Default Deny: All operations that are not explicitly permitted are denied.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // -------------------------------------------------------------------------
+    // Helper Functions
+    // -------------------------------------------------------------------------
+
+    // -------------------------------------------------------------------------
+    // Collection Rules
+    // -------------------------------------------------------------------------
+
+    /**
+     * @description
+     *   Manages the 'services' collection, which contains public information about
+     *   the company's demolition services.
+     * @path
+     *   /services/{serviceId}
+     * @allow
+     *   (get, list) by any user, including unauthenticated ones, to read service details.
+     * @deny
+     *   (create, update, delete) by any user, to prevent public modification of company data.
+     * @principle
+     *   Public Read with No Writes. This protects core business information by making it
+     *   read-only from the client-side, requiring administrative access for content changes.
+     */
+    match /services/{serviceId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description
+     *   Manages the 'service_areas' collection, detailing the geographic areas
+     *   the company serves.
+     * @path
+     *   /service_areas/{serviceAreaId}
+     * @allow
+     *   (get, list) by any user, including unauthenticated ones, to read service area info.
+     * @deny
+     *   (create, update, delete) by any user, to prevent public modification of company data.
+     * @principle
+     *   Public Read with No Writes. This protects core business information by making it
+     *   read-only from the client-side, requiring administrative access for content changes.
+     */
+    match /service_areas/{serviceAreaId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description
+     *   Acts as a secure dropbox for contact form submissions. Anyone can submit a form,
+     *   but nobody can read or alter the submitted data.
+     * @path
+     *   /contact_form_submissions/{contactFormSubmissionId}
+     * @allow
+     *   (create) by any user, including anonymous visitors, to submit a contact form.
+     * @deny
+     *   (get, list, update, delete) by any user to protect the private information (PII)
+     *   contained within the submissions.
+     * @principle
+     *   Secure Dropbox (Write-Only). This pattern allows data collection from the public
+     *   while preventing data leakage by disallowing any client-side reads or modifications.
+     */
+    match /contact_form_submissions/{contactFormSubmissionId} {
+      allow create: if true;
+      allow get: if false;
+      allow list: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

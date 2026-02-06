@@ -1,0 +1,159 @@
+{
+  "entities": {
+    "Service": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Service",
+      "type": "object",
+      "description": "Represents a demolition service offered by Siya Demolitions Projects.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the service."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the service (e.g., Building Demolition, Interior Demolition)."
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the service."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL of an image representing the service.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description"
+      ]
+    },
+    "ServiceArea": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ServiceArea",
+      "type": "object",
+      "description": "Represents a service area in Gauteng, South Africa.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the service area."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the service area (e.g., Johannesburg, Pretoria)."
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the service area."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description"
+      ]
+    },
+    "ContactFormSubmission": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ContactFormSubmission",
+      "type": "object",
+      "description": "Represents a contact form submission from a user.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the contact form submission."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the person submitting the form."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the person submitting the form.",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the person submitting the form."
+        },
+        "message": {
+          "type": "string",
+          "description": "Message content from the form submission."
+        },
+        "submissionDate": {
+          "type": "string",
+          "description": "Date and time the form was submitted.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "message",
+        "submissionDate"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/services/{serviceId}",
+        "definition": {
+          "entityName": "Service",
+          "schema": {
+            "$ref": "#/backend/entities/Service"
+          },
+          "description": "Stores information about demolition services offered by Siya Demolitions Projects.",
+          "params": [
+            {
+              "name": "serviceId",
+              "description": "Unique identifier for the service."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/service_areas/{serviceAreaId}",
+        "definition": {
+          "entityName": "ServiceArea",
+          "schema": {
+            "$ref": "#/backend/entities/ServiceArea"
+          },
+          "description": "Stores information about service areas in Gauteng, South Africa.",
+          "params": [
+            {
+              "name": "serviceAreaId",
+              "description": "Unique identifier for the service area."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/contact_form_submissions/{contactFormSubmissionId}",
+        "definition": {
+          "entityName": "ContactFormSubmission",
+          "schema": {
+            "$ref": "#/backend/entities/ContactFormSubmission"
+          },
+          "description": "Stores contact form submissions from users.",
+          "params": [
+            {
+              "name": "contactFormSubmissionId",
+              "description": "Unique identifier for the contact form submission."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore data structure is designed to store information about services, service areas, and contact form submissions for Siya Demolitions Projects. It prioritizes a flat structure for simplicity and avoids hierarchical dependencies to ensure Authorization Independence. Since there is no user authentication or specific access control requirements outlined beyond potential administrative access to submissions, the structure focuses on data organization rather than complex security rules. All collections are treated as having uniform security needs at this time.\n\nThe structure enables secure `list` operations (QAPs) because each collection is dedicated to a single entity type, preventing the need for complex filtering within rules.\n\n*   `/services`: Stores service details.\n*   `/service_areas`: Stores service area information.\n*   `/contact_form_submissions`: Stores contact form submissions. This might require additional security considerations if PII is stored and access should be restricted."
+  }
+}
