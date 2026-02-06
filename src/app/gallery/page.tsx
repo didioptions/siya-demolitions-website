@@ -70,7 +70,9 @@ export default function GalleryPage() {
       return;
     }
 
-    const storageRef = ref(storage, `gallery/${Date.now()}-${file.name}`);
+    // Sanitize the file name to remove special characters that can cause issues.
+    const sanitizedFileName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
+    const storageRef = ref(storage, `gallery/${Date.now()}-${sanitizedFileName}`);
     const uploadTask = uploadBytesResumable(storageRef, file);
 
     uploadTask.on(
@@ -81,7 +83,12 @@ export default function GalleryPage() {
       },
       (error) => {
         console.error("Upload error:", error);
-        setError(`Upload failed: ${error.message}. Please try again.`);
+        // Provide a more detailed error message to help diagnose CORS or other issues.
+        let errorMessage = `Upload failed: ${error.message}.`;
+        if (error.code === 'storage/unknown') {
+            errorMessage += ' This can be caused by a CORS configuration issue on your storage bucket. Please ensure your bucket is configured to accept requests from this domain.';
+        }
+        setError(errorMessage);
         setUploadProgress(null);
       },
       () => {
@@ -114,7 +121,7 @@ export default function GalleryPage() {
             {uploadProgress !== null && <Progress value={uploadProgress} className="w-full" />}
             <Button onClick={handleUpload} disabled={isUploadDisabled} className="w-full">
               <Upload className="mr-2 h-4 w-4" />
-              {isUserLoading ? 'Authenticating...' : (uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image")}
+              {isUserLoading ? 'Authenticating...' : (uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress ?? 0)}%` : "Upload Image")}
             </Button>
           </div>
           {error && <p className="text-destructive text-sm mt-4 text-center">{error}</p>}
