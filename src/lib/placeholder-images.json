@@ -93,7 +93,7 @@
     {
       "id": "treeCuttingBefore",
       "description": "A large tree in a residential yard before being cut.",
-      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892b3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892b3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "large tree"
     },
     {
@@ -134,13 +134,13 @@
     },
     {
       "id": "plantHireTlb",
-      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "description": "A TLB (Tractor Loader Backhoe) digging at a site.",
       "imageHint": "tlb hire"
     },
     {
       "id": "plantHireResidential",
-      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGV4Y2F2YXRpb258ZW58MHx8fHwxNzcwMjk4NDExfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGV4Y2F2YXRpb258ZW58MHx8fHwxNzcwMjk4NDExfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "description": "Excavation work happening in a residential area.",
       "imageHint": "residential excavation"
     }
@@ -154,9 +154,9 @@
     },
     {
       "id": "gallery2",
-      "description": "Rubble being loaded onto a truck for removal from a commercial site.",
-      "imageUrl": "https://picsum.photos/seed/gallery2/800/600",
-      "imageHint": "rubble removal"
+      "description": "A clean construction site after rubble has been removed.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20(1).jpg?alt=media&token=93e69b83-a198-441e-86c2-bd3bc26ad91f",
+      "imageHint": "site cleaning"
     },
     {
       "id": "gallery3",
