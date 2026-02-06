@@ -1,19 +1,146 @@
+"use client";
+
+import { useState, useEffect, ChangeEvent } from "react";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Input } from "@/components/ui/input";
+import { Progress } from "@/components/ui/progress";
+import { Card, CardContent } from "@/components/ui/card";
+import { useAuth, useStorage, useUser, initiateAnonymousSignIn } from "@/firebase";
+import { ref, uploadBytesResumable, getDownloadURL, listAll } from "firebase/storage";
+import Image from "next/image";
+import { Upload, ImageIcon } from "lucide-react";
 
 export default function GalleryPage() {
+  const [file, setFile] = useState<File | null>(null);
+  const [uploadProgress, setUploadProgress] = useState<number | null>(null);
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const storage = useStorage();
+  const auth = useAuth();
+  const { user, isUserLoading } = useUser();
+
+  // 1. Authenticate user anonymously if not already signed in
+  useEffect(() => {
+    if (!isUserLoading && !user) {
+      initiateAnonymousSignIn(auth);
+    }
+  }, [isUserLoading, user, auth]);
+
+  // 2. Fetch images from Firebase Storage
+  useEffect(() => {
+    const fetchImages = async () => {
+      if (!storage) return;
+      setIsLoading(true);
+      const imagesRef = ref(storage, "gallery");
+      try {
+        const res = await listAll(imagesRef);
+        const urls = await Promise.all(
+          res.items.map((itemRef) => getDownloadURL(itemRef))
+        );
+        setImageUrls(urls.reverse()); // Show newest images first
+      } catch (err) {
+        console.error("Error fetching images:", err);
+        setError("Could not load images. Please try again later.");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchImages();
+  }, [storage]);
+
+  const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setFile(e.target.files[0]);
+    }
+  };
+
+  const handleUpload = () => {
+    if (!file || !storage || !user) {
+      alert("Please select a file to upload and ensure you are signed in.");
+      return;
+    }
+
+    const storageRef = ref(storage, `gallery/${Date.now()}-${file.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file);
+
+    uploadTask.on(
+      "state_changed",
+      (snapshot) => {
+        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        setUploadProgress(progress);
+      },
+      (error) => {
+        console.error("Upload error:", error);
+        setError("Failed to upload image. Please check your permissions and try again.");
+        setUploadProgress(null);
+      },
+      () => {
+        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+          setImageUrls((prevUrls) => [downloadURL, ...prevUrls]);
+        });
+        setFile(null);
+        setUploadProgress(null);
+      }
+    );
+  };
+
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 text-center">
-      <h1 className="text-4xl font-bold tracking-tight">Our Work</h1>
-      <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-        Our gallery is currently being updated. Please check back soon to see photos of our professional demolition, site clearing, and rubble removal projects from across Johannesburg and Gauteng.
-      </p>
-      <div className="mt-8">
-        <Button asChild>
-          <Link href="/contact">
-            Request a Quote
-          </Link>
-        </Button>
+    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold tracking-tight">Our Work</h1>
+        <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+          A collection of our completed demolition, site clearing, and construction projects across Gauteng.
+        </p>
+      </div>
+
+      {user && (
+        <Card className="max-w-xl mx-auto mb-12 shadow-lg">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-semibold mb-4 text-center">Upload New Image</h2>
+            <div className="space-y-4">
+              <Input type="file" accept="image/*" onChange={handleFileChange} className="file:text-primary-foreground" />
+              {uploadProgress !== null && <Progress value={uploadProgress} className="w-full" />}
+              <Button onClick={handleUpload} disabled={!file || uploadProgress !== null} className="w-full">
+                <Upload className="mr-2 h-4 w-4" />
+                {uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image"}
+              </Button>
+            </div>
+            {error && <p className="text-destructive text-sm mt-4 text-center">{error}</p>}
+          </CardContent>
+        </Card>
+      )}
+
+      <div>
+        {isLoading ? (
+          <div className="text-center">
+            <p>Loading gallery...</p>
+          </div>
+        ) : imageUrls.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {imageUrls.map((url) => (
+              <div key={url} className="aspect-square relative overflow-hidden rounded-lg shadow-md group">
+                <Image
+                  src={url}
+                  alt="Gallery image of a Siya Demolitions project"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16 border-2 border-dashed rounded-lg">
+            <ImageIcon className="mx-auto h-12 w-12 text-muted-foreground" />
+            <h3 className="mt-4 text-lg font-semibold">The Gallery is Empty</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Upload an image to get started.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
