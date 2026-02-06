@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { WhatsAppFab } from '@/components/layout/whatsapp-fab';
 
 const homeHeroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
@@ -107,6 +108,7 @@ export default function RootLayout({
           <main className="flex-grow flex flex-col">{children}</main>
           <Footer />
         </div>
+        <WhatsAppFab />
         <Toaster />
       </body>
     </html>
