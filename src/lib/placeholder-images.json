@@ -93,7 +93,7 @@
     {
       "id": "treeCuttingBefore",
       "description": "A large tree in a residential yard before being cut.",
-      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892b3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892b3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8MTc3MDI5NTA3OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "large tree"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "id": "plantHireBobcat",
-      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBoaXJlfGVufDB8fHx8MTc3MDI5ODQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBoaXJlfGVufDB8fHx8MTc3MDI5ODQxMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "description": "A Bobcat compact loader at a construction site.",
       "imageHint": "bobcat hire"
     },
@@ -140,7 +140,7 @@
     },
     {
       "id": "plantHireResidential",
-      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGV4Y2F2YXRpb258ZW58MHx8fHwxNzcwMjk4NDExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGV4Y2F2YXRpb258ZW58MHx8fHwxNzcwMjk4NDExfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "description": "Excavation work happening in a residential area.",
       "imageHint": "residential excavation"
     }
@@ -148,7 +148,7 @@
   "galleryImages": [
     {
       "id": "gallery1",
-      "description": "Interior of a building during demolition.",
+      "description": "YOUR NEW IMAGE: Interior of a building during demolition.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolitions%20inte.jpg?alt=media&token=58f804eb-c6f5-4424-9aca-0b245941d8db",
       "imageHint": "interior demolition"
     },
