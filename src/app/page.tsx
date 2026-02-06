@@ -16,42 +16,42 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Demolition Services",
-    icon: <Wrench className="w-8 h-8 text-accent" />,
+    icon: <Wrench className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
     link: "/demolition-services",
     buttonText: "See Why Builders Trust Us"
   },
   {
     title: "Rubble Removal",
-    icon: <Trash2 className="w-8 h-8 text-accent" />,
+    icon: <Trash2 className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Quick and affordable rubble removal services in Johannesburg. We clear construction waste, debris, and site materials. Same-day service available. Call for a quote.",
     link: "/rubble-removal",
     buttonText: "Clear Your Site Fast with Us"
   },
   {
     title: "Site Cleaning",
-    icon: <Sparkles className="w-8 h-8 text-accent" />,
+    icon: <Sparkles className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Professional site cleaning services for construction and demolition projects in Johannesburg. Perfect for post-project cleanups and land preparation.",
     link: "/site-cleaning",
     buttonText: "Request Site Clearing"
   },
   {
     title: "Tree Felling",
-    icon: <Axe className="w-8 h-8 text-accent" />,
+    icon: <Axe className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Certified tree felling services in Johannesburg. Remove hazardous or unwanted trees safely with our experienced team. Residential and commercial service available.",
     link: "/tree-felling",
     buttonText: "Safely Remove Trees Today"
   },
   {
     title: "Swimming Pool Demolition",
-    icon: <Waves className="w-8 h-8 text-accent" />,
+    icon: <Waves className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Remove unwanted or damaged pools safely and efficiently. We offer partial or full swimming pool demolition in Johannesburg, including rubble removal and cleanup.",
     link: "/swimming-pool-demolition",
     buttonText: "Remove Your Pool"
   },
   {
     title: "Plant Hire",
-    icon: <Tractor className="w-8 h-8 text-accent" />,
+    icon: <Tractor className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation.",
     link: "/plant-hire",
     buttonText: "Book Your Machinery"
@@ -245,7 +245,7 @@ export default function Home() {
                     <h2 className="text-3xl md:text-4xl font-bold">Our Core Services</h2>
                     <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Comprehensive solutions for your demolition and construction needs in Gauteng.</p>
                 </div>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service) => (
                         <div key={service.title} className="text-center flex flex-col items-center p-6 rounded-lg bg-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                             <div className="bg-accent/10 p-4 rounded-full mb-4">
@@ -257,7 +257,7 @@ export default function Home() {
                                 </Link>
                             </h3>
                             <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
-                            <Button variant="outline" asChild>
+                            <Button variant="outline" asChild className="w-full mt-auto">
                                 <Link href={service.link}>{service.buttonText}</Link>
                             </Button>
                         </div>
