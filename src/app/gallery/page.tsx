@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
-import { useAuth, useStorage, useUser, initiateAnonymousSignIn } from "@/firebase";
+import { useStorage } from "@/firebase";
 import { ref, uploadBytesResumable, getDownloadURL, listAll } from "firebase/storage";
 import Image from "next/image";
 import { Upload, ImageIcon } from "lucide-react";
@@ -18,17 +18,8 @@ export default function GalleryPage() {
   const [error, setError] = useState<string | null>(null);
 
   const storage = useStorage();
-  const auth = useAuth();
-  const { user, isUserLoading } = useUser();
 
-  // 1. Authenticate user anonymously if not already signed in
-  useEffect(() => {
-    if (!isUserLoading && !user) {
-      initiateAnonymousSignIn(auth);
-    }
-  }, [isUserLoading, user, auth]);
-
-  // 2. Fetch images from Firebase Storage
+  // Fetch images from Firebase Storage
   useEffect(() => {
     const fetchImages = async () => {
       if (!storage) return;
@@ -48,18 +39,21 @@ export default function GalleryPage() {
       }
     };
 
-    fetchImages();
+    if (storage) {
+      fetchImages();
+    }
   }, [storage]);
 
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setFile(e.target.files[0]);
+      setError(null);
     }
   };
 
   const handleUpload = () => {
-    if (!file || !storage || !user) {
-      alert("Please select a file to upload and ensure you are signed in.");
+    if (!file || !storage) {
+      setError("Please select a file to upload.");
       return;
     }
 
@@ -74,12 +68,13 @@ export default function GalleryPage() {
       },
       (error) => {
         console.error("Upload error:", error);
-        setError("Failed to upload image. Please check your permissions and try again.");
+        setError(`Upload failed: ${error.message}. Please try again.`);
         setUploadProgress(null);
       },
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
           setImageUrls((prevUrls) => [downloadURL, ...prevUrls]);
+          setError(null);
         });
         setFile(null);
         setUploadProgress(null);
@@ -96,22 +91,20 @@ export default function GalleryPage() {
         </p>
       </div>
 
-      {user && (
-        <Card className="max-w-xl mx-auto mb-12 shadow-lg">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-4 text-center">Upload New Image</h2>
-            <div className="space-y-4">
-              <Input type="file" accept="image/*" onChange={handleFileChange} className="file:text-primary-foreground" />
-              {uploadProgress !== null && <Progress value={uploadProgress} className="w-full" />}
-              <Button onClick={handleUpload} disabled={!file || uploadProgress !== null} className="w-full">
-                <Upload className="mr-2 h-4 w-4" />
-                {uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image"}
-              </Button>
-            </div>
-            {error && <p className="text-destructive text-sm mt-4 text-center">{error}</p>}
-          </CardContent>
-        </Card>
-      )}
+      <Card className="max-w-xl mx-auto mb-12 shadow-lg">
+        <CardContent className="p-6">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Upload New Image</h2>
+          <div className="space-y-4">
+            <Input type="file" accept="image/*" onChange={handleFileChange} className="file:text-primary-foreground" />
+            {uploadProgress !== null && <Progress value={uploadProgress} className="w-full" />}
+            <Button onClick={handleUpload} disabled={!file || uploadProgress !== null} className="w-full">
+              <Upload className="mr-2 h-4 w-4" />
+              {uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image"}
+            </Button>
+          </div>
+          {error && <p className="text-destructive text-sm mt-4 text-center">{error}</p>}
+        </CardContent>
+      </Card>
 
       <div>
         {isLoading ? (
