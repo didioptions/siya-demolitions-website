@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/pretoria',
     '/rubble-removal',
     '/service-areas',
-    '/services',
+    '/demolition-services',
     '/site-cleaning',
     '/swimming-pool-demolition',
     '/tree-felling',

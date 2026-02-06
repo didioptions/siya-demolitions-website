@@ -5,7 +5,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   const services = [
-    { href: "/services", label: "Demolition" },
+    { href: "/demolition-services", label: "Demolition" },
     { href: "/rubble-removal", label: "Rubble Removal" },
     { href: "/site-cleaning", label: "Site Cleaning" },
     { href: "/tree-felling", label: "Tree Felling" },

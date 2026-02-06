@@ -30,6 +30,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/services',
+        destination: '/demolition-services',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;

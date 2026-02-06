@@ -24,7 +24,7 @@ const mainNavLinks = [
 ];
 
 const serviceNavLinks = [
-  { href: "/services", label: "Demolition" },
+  { href: "/demolition-services", label: "Demolition" },
   { href: "/rubble-removal", label: "Rubble Removal" },
   { href: "/site-cleaning", label: "Site Cleaning" },
   { href: "/tree-felling", label: "Tree Felling" },
@@ -41,7 +41,7 @@ export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
-  const isServicesActive = serviceNavLinks.some(link => pathname === link.href);
+  const isServicesActive = serviceNavLinks.some(link => pathname === link.href) || pathname === '/services';
 
   const DesktopNav = () => (
     <nav className="hidden md:flex items-center gap-6">

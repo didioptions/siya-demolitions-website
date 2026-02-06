@@ -18,7 +18,7 @@ const services = [
     title: "Demolition Services",
     icon: <Wrench className="w-8 h-8 text-accent" />,
     description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
-    link: "/services",
+    link: "/demolition-services",
     buttonText: "See Why Builders Trust Us"
   },
   {
@@ -91,7 +91,7 @@ const servicesSchema = [
     "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
     "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/services"
+    "url": "https://siyademolitions.co.za/demolition-services"
   },
   {
     "@context": "https://schema.org",
