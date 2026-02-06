@@ -5,6 +5,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { WhatsAppFab } from '@/components/layout/whatsapp-fab';
+import { FirebaseClientProvider } from '@/firebase';
 
 const homeHeroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
@@ -103,13 +104,15 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow flex flex-col">{children}</main>
-          <Footer />
-        </div>
-        <WhatsAppFab />
-        <Toaster />
+        <FirebaseClientProvider>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow flex flex-col">{children}</main>
+            <Footer />
+          </div>
+          <WhatsAppFab />
+          <Toaster />
+        </FirebaseClientProvider>
       </body>
     </html>
   );
