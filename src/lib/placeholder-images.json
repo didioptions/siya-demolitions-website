@@ -125,6 +125,24 @@
       "description": "A lush, green backyard where a swimming pool used to be.",
       "imageUrl": "https://images.unsplash.com/photo-1719872895913-4a689588229a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z3JlZW4lMjBiYWNreWFyZHxlbnwwfHx8fDE3NzAyNDI4NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "green backyard"
+    },
+    {
+      "id": "plantHireBobcat",
+      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2JjYXQlMjBoaXJlfGVufDB8fHx8MTc3MDI5ODQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A Bobcat compact loader at a construction site.",
+      "imageHint": "bobcat hire"
+    },
+    {
+      "id": "plantHireTlb",
+      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A TLB (Tractor Loader Backhoe) digging at a site.",
+      "imageHint": "tlb hire"
+    },
+    {
+      "id": "plantHireResidential",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGV4Y2F2YXRpb258ZW58MHx8fHwxNzcwMjk4NDExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Excavation work happening in a residential area.",
+      "imageHint": "residential excavation"
     }
   ],
   "galleryImages": [
