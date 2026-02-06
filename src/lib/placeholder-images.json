@@ -148,9 +148,9 @@
   "galleryImages": [
     {
       "id": "gallery1",
-      "description": "A clean site after professional clearing.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20(1).jpg?alt=media&token=93e69b83-a198-441e-86c2-bd3bc26ad91f",
-      "imageHint": "site cleaning"
+      "description": "Interior of a building during demolition.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolitions%20inte.jpg?alt=media&token=58f804eb-c6f5-4424-9aca-0b245941d8db",
+      "imageHint": "interior demolition"
     },
     {
       "id": "gallery2",
