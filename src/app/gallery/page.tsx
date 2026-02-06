@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent } from "@/components/ui/card";
-import { useStorage } from "@/firebase";
+import { useStorage, useAuth, useUser } from "@/firebase";
+import { signInAnonymously } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL, listAll } from "firebase/storage";
 import Image from "next/image";
 import { Upload, ImageIcon } from "lucide-react";
@@ -18,6 +19,17 @@ export default function GalleryPage() {
   const [error, setError] = useState<string | null>(null);
 
   const storage = useStorage();
+  const auth = useAuth();
+  const { user, isUserLoading } = useUser();
+
+  useEffect(() => {
+    if (!isUserLoading && !user && auth) {
+      signInAnonymously(auth).catch((err) => {
+        console.error("Anonymous sign-in failed:", err);
+        setError("Could not authenticate. Please try again.");
+      });
+    }
+  }, [user, isUserLoading, auth]);
 
   // Fetch images from Firebase Storage
   useEffect(() => {
@@ -52,8 +64,8 @@ export default function GalleryPage() {
   };
 
   const handleUpload = () => {
-    if (!file || !storage) {
-      setError("Please select a file to upload.");
+    if (!file || !storage || !user) {
+      setError("Please select a file and ensure you are authenticated.");
       return;
     }
 
@@ -68,7 +80,11 @@ export default function GalleryPage() {
       },
       (error) => {
         console.error("Upload error:", error);
-        setError(`Upload failed: ${error.message}. Please try again.`);
+        if (error.code === 'storage/unauthorized') {
+            setError('Permission denied. You must be signed in to upload files.');
+        } else {
+            setError(`Upload failed: ${error.message}. Please try again.`);
+        }
         setUploadProgress(null);
       },
       () => {
@@ -81,6 +97,8 @@ export default function GalleryPage() {
       }
     );
   };
+
+  const isUploadDisabled = !file || uploadProgress !== null || isUserLoading || !user;
 
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
@@ -97,9 +115,9 @@ export default function GalleryPage() {
           <div className="space-y-4">
             <Input type="file" accept="image/*" onChange={handleFileChange} className="file:text-primary-foreground" />
             {uploadProgress !== null && <Progress value={uploadProgress} className="w-full" />}
-            <Button onClick={handleUpload} disabled={!file || uploadProgress !== null} className="w-full">
+            <Button onClick={handleUpload} disabled={isUploadDisabled} className="w-full">
               <Upload className="mr-2 h-4 w-4" />
-              {uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image"}
+              {isUserLoading ? 'Authenticating...' : (uploadProgress !== null ? `Uploading... ${Math.round(uploadProgress)}%` : "Upload Image")}
             </Button>
           </div>
           {error && <p className="text-destructive text-sm mt-4 text-center">{error}</p>}
