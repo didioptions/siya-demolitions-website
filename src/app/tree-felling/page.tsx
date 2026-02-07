@@ -24,7 +24,8 @@ const whyChooseUs = [
 ];
 
 const joburgAreas = [
-    "Sandton", "Randburg", "Roodepoort", "Midrand", "Soweto", "Germiston", "Alberton", "Johannesburg CBD"
+    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD",
+    "Centurion", "Kempton Park", "Benoni", "Boksburg", "Brakpan", "Edenvale", "Nigel", "Springs"
 ];
 
 const faqs = [
@@ -152,7 +153,6 @@ export default function TreeFellingPage() {
                     </div>
                 ))}
             </div>
-             {cleanupImage && <Image src={cleanupImage.imageUrl} alt={cleanupImage.description} data-ai-hint={cleanupImage.imageHint} width={500} height={300} className="rounded-lg shadow-lg mt-6" />}
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
