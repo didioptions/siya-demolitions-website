@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, MessageSquare, Mail, MapPin, Trash2, Home, Building } from "lucide-react";
+import { Check, Phone, MessageSquare, Mail, MapPin, Trash2, Home, Building, Sparkles } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -62,6 +62,9 @@ export default function RubbleRemovalPage() {
       {/* Hero Section */}
       <section className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Rubble Removal & Site Clearing Services in Gauteng</h1>
+        <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
+            <Sparkles /> Clear Construction Sites Quickly, Safely & Affordably
+        </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
           Need fast and reliable rubble removal in Johannesburg or Pretoria? SIMA Demolitions provides licensed and insured site clearing for residential, commercial, and construction projects across Gauteng. Whether you need help after a demolition, home renovation, or new build, our team ensures your site is cleared efficiently, legally, and is ready for the next phase of construction.
         </p>
