@@ -143,7 +143,8 @@ const servicesSchema = [
 const testimonials = [
     {
         quote: "SIMA Demolitions handled our site professionally and left it spotless. Highly recommended!",
-        name: "Lindiwe M., Johannesburg"
+        name: "Lindiwe M., Johannesburg",
+        avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/lindiwe_cropped.jpg?alt=media&token=0cdacf1a-2277-4232-8ffb-023b86338945"
     },
     {
         quote: "Fast, reliable, and very professional. They cleared our rubble in record time. Will definitely use them again.",
