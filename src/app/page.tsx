@@ -148,7 +148,7 @@ const testimonials = [
     {
         quote: "Fast, reliable, and very professional. They cleared our rubble in record time. Will definitely use them again.",
         name: "John D., Pretoria",
-        avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/creation_2340933635%20(1).jpg?alt=media&token=9b74740a-709f-4189-886e-20ee8eb49b09"
+        avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/John%20D%20Pretoria%20%20(1).jpg?alt=media&token=57eb9664-e323-465a-b761-cc4bd85027db"
     },
     {
         quote: "The team was fantastic. They took down an old structure for us safely and efficiently. Great service all around.",
@@ -281,12 +281,12 @@ export default function Home() {
                             <p className="text-muted-foreground mb-4 flex-grow">"{testimonial.quote}"</p>
                             <div className="flex items-center gap-3 self-end mt-4">
                                 <p className="font-semibold text-sm">{testimonial.name}</p>
-                                <Avatar className="h-9 w-9">
+                                <Avatar className="h-12 w-12">
                                     {testimonial.avatarUrl ? (
                                         <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} />
                                     ) : (
                                         <AvatarFallback className="bg-accent/20">
-                                            <User className="h-5 w-5 text-accent" />
+                                            <User className="h-6 w-6 text-accent" />
                                         </AvatarFallback>
                                     )}
                                 </Avatar>
