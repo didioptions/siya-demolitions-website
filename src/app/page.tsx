@@ -4,7 +4,7 @@ import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, Ma
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const metadata: Metadata = {
   title: {
@@ -147,7 +147,8 @@ const testimonials = [
     },
     {
         quote: "Fast, reliable, and very professional. They cleared our rubble in record time. Will definitely use them again.",
-        name: "John D., Pretoria"
+        name: "John D., Pretoria",
+        avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/creation_2340933635%20(1).jpg?alt=media&token=9b74740a-709f-4189-886e-20ee8eb49b09"
     },
     {
         quote: "The team was fantastic. They took down an old structure for us safely and efficiently. Great service all around.",
@@ -274,16 +275,20 @@ export default function Home() {
                     <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">Real feedback from satisfied customers across Gauteng.</p>
                 </div>
                 <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                    {testimonials.map((testimonial) => (
+                    {testimonials.map((testimonial: any) => (
                         <div key={testimonial.name} className="bg-background p-6 rounded-lg shadow-md flex flex-col">
                             <Quote className="w-8 h-8 text-accent mb-4" />
                             <p className="text-muted-foreground mb-4 flex-grow">"{testimonial.quote}"</p>
                             <div className="flex items-center gap-3 self-end mt-4">
                                 <p className="font-semibold text-sm">{testimonial.name}</p>
                                 <Avatar className="h-9 w-9">
-                                    <AvatarFallback className="bg-accent/20">
-                                        <User className="h-5 w-5 text-accent" />
-                                    </AvatarFallback>
+                                    {testimonial.avatarUrl ? (
+                                        <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} />
+                                    ) : (
+                                        <AvatarFallback className="bg-accent/20">
+                                            <User className="h-5 w-5 text-accent" />
+                                        </AvatarFallback>
+                                    )}
                                 </Avatar>
                             </div>
                         </div>
