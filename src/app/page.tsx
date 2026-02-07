@@ -153,7 +153,8 @@ const testimonials = [
     },
     {
         quote: "The team was fantastic. They took down an old structure for us safely and efficiently. Great service all around.",
-        name: "Sarah P., Sandton"
+        name: "Sarah P., Sandton",
+        avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/Sarah%20P%20%20PNG.jpg?alt=media&token=544db08b-c42f-4992-8c96-f8054b32cd2d"
     }
 ];
 
