@@ -80,9 +80,9 @@
     },
     {
       "id": "siteCleaningAfter",
-      "description": "A clean and organized construction site after professional cleaning.",
-      "imageUrl": "https://images.unsplash.com/photo-1578496459868-7d09b8516e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjleanJlZCUyMGNvbnN0cnVjdGlvbiUyMHNpdGV8ZW58MHx8fHwxNzcwMjA3NTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cleared site"
+      "description": "A construction site being cleaned.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20in%20proccess.jpg?alt=media&token=bbf879e9-a084-42ec-adea-b8575d8f1c8a",
+      "imageHint": "site cleaning"
     },
     {
       "id": "siteCleaningWorker",
