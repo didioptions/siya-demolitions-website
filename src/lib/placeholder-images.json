@@ -134,9 +134,9 @@
     },
     {
       "id": "plantHireTlb",
-      "imageUrl": "https://images.unsplash.com/photo-1628560230129-6e72750b447b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0bGIuaGlyZXxlbnwwfHx8fDE3NzAyOTg0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "description": "A TLB (Tractor Loader Backhoe) digging at a site.",
-      "imageHint": "tlb hire"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolition%20google%20ma..._imresizer.jpg?alt=media&token=f3118e0e-417b-409d-abb2-807983544c8e",
+      "description": "A demolition site with a large crane.",
+      "imageHint": "demolition crane"
     },
     {
       "id": "plantHireResidential",
@@ -148,7 +148,7 @@
   "galleryImages": [
     {
       "id": "gallery1",
-      "description": "Interior of a building during demolition.",
+      "description": "Interior demolition work in progress.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolitions%20inte.jpg?alt=media&token=58f804eb-c6f5-4424-9aca-0b245941d8db",
       "imageHint": "interior demolition"
     },
