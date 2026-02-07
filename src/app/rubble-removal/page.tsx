@@ -30,7 +30,8 @@ const whyChooseUs = [
 ];
 
 const joburgAreas = [
-    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD"
+    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD",
+    "Centurion", "Kempton Park", "Benoni", "Boksburg", "Brakpan", "Edenvale", "Nigel", "Springs"
 ];
 
 const faqs = [
@@ -175,7 +176,7 @@ export default function RubbleRemovalPage() {
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve (Johannesburg)</CardTitle>
+                    <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve in Gauteng</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
