@@ -171,7 +171,6 @@ export default function RubbleRemovalPage() {
                     </div>
                 ))}
             </div>
-            {workerImage && <div className="mt-6 aspect-video relative"><Image src={workerImage.imageUrl} alt="Worker loading rubble into a truck" data-ai-hint="worker loading" fill className="rounded-lg object-cover" /></div>}
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
