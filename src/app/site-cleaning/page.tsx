@@ -52,7 +52,7 @@ export default function SiteCleaningPage() {
             <Sparkles /> Professional Site Clearance for a Safer, Smarter Job Site
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Keep your construction or demolition site clean, safe, and on schedule with Siya Demolitions’ professional site cleaning services in Johannesburg. We offer fast, reliable debris and waste clearing for residential, commercial, and industrial projects — ensuring every site is left compliant, hazard-free, and ready for the next phase of work.
+          Keep your construction or demolition site clean, safe, and on schedule with SIMA Demolitions’ professional site cleaning services in Johannesburg. We offer fast, reliable debris and waste clearing for residential, commercial, and industrial projects — ensuring every site is left compliant, hazard-free, and ready for the next phase of work.
         </p>
         <Button size="lg" className="mt-6" asChild>
           <a href="tel:0784292760">
@@ -133,7 +133,7 @@ export default function SiteCleaningPage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose Siya Demolitions?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose SIMA Demolitions?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
@@ -186,7 +186,7 @@ export default function SiteCleaningPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Keep Your Site Clean – Get a Free Cleaning Quote Today</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-         Looking for reliable site cleaning in Johannesburg? Let Siya Demolitions handle the debris — so you can move forward fast.
+         Looking for reliable site cleaning in Johannesburg? Let SIMA Demolitions handle the debris — so you can move forward fast.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

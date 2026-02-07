@@ -29,7 +29,7 @@ export default function PretoriaPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Demolition & Construction Services in Pretoria</h1>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Siya Demolitions Projects offers reliable services throughout Pretoria. We handle residential, commercial, and industrial projects with a focus on safety and efficiency.
+          SIMA Demolitions Projects offers reliable services throughout Pretoria. We handle residential, commercial, and industrial projects with a focus on safety and efficiency.
         </p>
       </div>
 
@@ -90,5 +90,3 @@ export default function PretoriaPage() {
     </div>
   );
 }
-
-    

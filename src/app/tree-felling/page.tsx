@@ -60,7 +60,7 @@ export default function TreeFellingPage() {
             <Axe /> Safe, Controlled Tree Cutting & Removal
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Looking for safe and affordable tree felling in Johannesburg? At Siya Demolitions, we provide professional tree felling, cutting, trimming, and removal services for homes, offices, and development sites.
+          Looking for safe and affordable tree felling in Johannesburg? At SIMA Demolitions, we provide professional tree felling, cutting, trimming, and removal services for homes, offices, and development sites.
         </p>
         <Button size="lg" className="mt-6" asChild>
           <a href="tel:0784292760">
@@ -143,7 +143,7 @@ export default function TreeFellingPage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose Siya for Tree Felling?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose SIMA for Tree Felling?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
@@ -196,7 +196,7 @@ export default function TreeFellingPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Quote for Tree Felling in Johannesburg</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-         Need reliable tree felling or land clearing? Let Siya Demolitions handle it — safely, efficiently, and affordably.
+         Need reliable tree felling or land clearing? Let SIMA Demolitions handle it — safely, efficiently, and affordably.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

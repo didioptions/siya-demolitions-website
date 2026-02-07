@@ -8,7 +8,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export const metadata: Metadata = {
-  title: "Demolition Services in Johannesburg | Siya Demolitions Projects",
+  title: "Demolition Services in Johannesburg | SIMA Demolitions Projects",
   description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
 };
 
@@ -115,7 +115,7 @@ export default function ServicesPage() {
             <Check /> Reliable Demolition, Rubble Removal & Construction Solutions You Can Trust
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Siya Demolitions Projects provides professional demolition and construction services in Johannesburg, serving residential, commercial, and industrial clients. With years of hands-on experience, skilled operators, and the right machinery, we deliver safe, efficient, and cost-effective solutions for projects of all sizes.
+          SIMA Demolitions Projects provides professional demolition and construction services in Johannesburg, serving residential, commercial, and industrial clients. With years of hands-on experience, skilled operators, and the right machinery, we deliver safe, efficient, and cost-effective solutions for projects of all sizes.
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
           Whether you need partial demolition, full building demolition, rubble removal, or site preparation, our Johannesburg team is ready to assist — on time and within budget.
@@ -166,7 +166,7 @@ export default function ServicesPage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose Siya Demolitions in Johannesburg?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose SIMA Demolitions in Johannesburg?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
@@ -241,7 +241,7 @@ export default function ServicesPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Quote for Demolition in Johannesburg</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-          Looking for professional, safe, and affordable demolition or construction services in Johannesburg? Siya Demolitions is here to help — fast. 🚛 We respond quickly, work safely, and leave your site spotless and build-ready.
+          Looking for professional, safe, and affordable demolition or construction services in Johannesburg? SIMA Demolitions is here to help — fast. 🚛 We respond quickly, work safely, and leave your site spotless and build-ready.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

@@ -108,7 +108,7 @@ export function Header() {
             <HardHat className="h-6 w-6 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-              <span className="font-bold text-base uppercase tracking-wider text-foreground">Siya Demolitions</span>
+              <span className="font-bold text-base uppercase tracking-wider text-foreground">SIMA Demolitions</span>
               <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
           </div>
         </Link>
@@ -142,7 +142,7 @@ export function Header() {
             <HardHat className="h-8 w-8 text-primary-foreground" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-lg uppercase tracking-wider text-foreground">Siya Demolitions</span>
+            <span className="font-bold text-lg uppercase tracking-wider text-foreground">SIMA Demolitions</span>
             <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
           </div>
         </Link>

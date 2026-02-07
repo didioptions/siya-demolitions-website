@@ -32,7 +32,7 @@ export function Footer() {
                     <HardHat className="h-8 w-8 text-primary-foreground" />
                 </div>
                 <div className="flex flex-col">
-                    <span className="font-bold text-lg uppercase tracking-wider text-foreground">Siya Demolitions</span>
+                    <span className="font-bold text-lg uppercase tracking-wider text-foreground">SIMA Demolitions</span>
                     <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
                 </div>
             </Link>
@@ -80,7 +80,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary" />
-                <a href="mailto:info@siyademolitions.co.za" className="text-sm hover:text-primary transition-colors">info@siyademolitions.co.za</a>
+                <a href="mailto:info@simademolitions.co.za" className="text-sm hover:text-primary transition-colors">info@simademolitions.co.za</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-primary mt-1" />
@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t pt-6 text-center text-sm">
-          <p>&copy; {year} Siya Demolitions Projects. All rights reserved.</p>
+          <p>&copy; {year} SIMA Demolitions Projects. All rights reserved.</p>
         </div>
       </div>
     </footer>

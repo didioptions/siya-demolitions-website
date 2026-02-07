@@ -20,7 +20,7 @@ export default function AboutPage() {
                 )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center items-center text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold">About Siya Demolitions Projects</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold">About SIMA Demolitions Projects</h1>
                     <p className="mt-2 text-lg text-gray-200 max-w-3xl">Your Trusted Partner in Demolition and Construction</p>
                 </div>
             </section>
@@ -29,7 +29,7 @@ export default function AboutPage() {
                 <div className="max-w-4xl mx-auto space-y-6">
                     <h2 className="text-3xl font-bold text-center">Our Commitment to Excellence</h2>
                     <p className="text-muted-foreground text-lg">
-                       Siya Demolitions Projects has been serving Gauteng since 2000. Our experienced team provides reliable demolition, rubble removal, site cleaning, tree felling, and construction services for residential, commercial, and industrial clients.
+                       SIMA Demolitions Projects has been serving Gauteng since 2000. Our experienced team provides reliable demolition, rubble removal, site cleaning, tree felling, and construction services for residential, commercial, and industrial clients.
                     </p>
                     <p className="text-muted-foreground text-lg">
                        We prioritize safety, efficiency, and customer satisfaction on every project. With the right equipment and skilled professionals, we complete projects on time while maintaining clean and secure sites.

@@ -8,9 +8,9 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export const metadata: Metadata = {
   title: {
-      absolute: "Siya Demolitions Projects | Demolition & Construction Gauteng",
+      absolute: "SIMA Demolitions Projects | Demolition & Construction Gauteng",
   },
-  description: "Siya Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling, and construction services across Gauteng. Call 078 429 2760.",
+  description: "SIMA Demolitions Projects provides professional demolition, rubble removal, site cleaning, tree felling, and construction services across Gauteng. Call 078 429 2760.",
 };
 
 const services = [
@@ -89,60 +89,60 @@ const servicesSchema = [
     "@type": "Service",
     "serviceType": "Demolition Services",
     "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/demolition-services"
+    "url": "https://simademolitions.co.za/demolition-services"
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Rubble Removal",
     "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/rubble-removal"
+    "url": "https://simademolitions.co.za/rubble-removal"
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Site Cleaning",
     "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/site-cleaning"
+    "url": "https://simademolitions.co.za/site-cleaning"
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Tree Felling",
     "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/tree-felling"
+    "url": "https://simademolitions.co.za/tree-felling"
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Swimming Pool Demolition",
     "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://siyademolitions.co.za/swimming-pool-demolition"
+    "url": "https://simademolitions.co.za/swimming-pool-demolition"
   },
    {
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Plant Hire",
     "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.",
-    "provider": { "@type": "Organization", "name": "Siya Demolitions Projects" },
+    "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" },
-    "url": "https://siyademolitions.co.za/plant-hire"
+    "url": "https://simademolitions.co.za/plant-hire"
   }
 ];
 
 const testimonials = [
     {
-        quote: "Siya Demolitions handled our site professionally and left it spotless. Highly recommended!",
+        quote: "SIMA Demolitions handled our site professionally and left it spotless. Highly recommended!",
         name: "Lindiwe M., Johannesburg"
     },
     {
@@ -189,7 +189,7 @@ export default function Home() {
                     </h2>
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Demolition &amp; Construction Services in Gauteng</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-200">
-                      With over 20 years of experience, Siya Demolitions Projects is your trusted partner for safe, efficient, and reliable demolition and construction services across Gauteng.
+                      With over 20 years of experience, SIMA Demolitions Projects is your trusted partner for safe, efficient, and reliable demolition and construction services across Gauteng.
                     </p>
                     <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
@@ -299,7 +299,7 @@ export default function Home() {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Partner in Demolition</h2>
                         <p className="mt-4 text-lg text-muted-foreground">
-                            At Siya Demolitions Projects, we don't just demolish—we clear the path for safe, reliable construction success. We are your reliable partners for making any project a success.
+                            At SIMA Demolitions Projects, we don't just demolish—we clear the path for safe, reliable construction success. We are your reliable partners for making any project a success.
                         </p>
                          <div className="mt-8 grid sm:grid-cols-2 gap-6">
                             {whyChooseUs.map((item) => (

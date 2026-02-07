@@ -36,7 +36,7 @@ export default function ContactPage() {
                 )}
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center items-center text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold">Contact Siya Demolitions Projects</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold">Contact SIMA Demolitions Projects</h1>
                     <p className="mt-2 text-lg text-gray-200 max-w-3xl">Need demolition, rubble removal, site cleaning, tree felling or construction services in Gauteng? Reach out today!</p>
                 </div>
             </section>

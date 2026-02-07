@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Service Areas | Siya Demolitions Projects Gauteng",
-  description: "Siya Demolitions Projects provides demolition, rubble removal, site cleaning, tree felling, and construction services across all Gauteng areas.",
+  title: "Service Areas | SIMA Demolitions Projects Gauteng",
+  description: "SIMA Demolitions Projects provides demolition, rubble removal, site cleaning, tree felling, and construction services across all Gauteng areas.",
 };
 
 const serviceAreas = [

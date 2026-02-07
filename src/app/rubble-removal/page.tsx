@@ -161,7 +161,7 @@ export default function RubbleRemovalPage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose Siya Demolitions?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose SIMA Demolitions?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
@@ -213,7 +213,7 @@ export default function RubbleRemovalPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Quote for Rubble Removal in Johannesburg</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-          Looking for fast, affordable rubble removal near you? Let Siya Demolitions handle the debris, so you can move forward — safely and stress-free.
+          Looking for fast, affordable rubble removal near you? Let SIMA Demolitions handle the debris, so you can move forward — safely and stress-free.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

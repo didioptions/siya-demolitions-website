@@ -60,7 +60,7 @@ export default function PlantHirePage() {
             <Tractor /> Efficient Equipment & Operators for Demolition, Site Prep & Construction Support
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Looking for plant or Bobcat hire in Johannesburg? Siya Demolitions offers affordable, reliable plant hire, TLBs, and Bobcats with trained operators for excavation, trenching, land clearing, and more. From residential foundation work to full commercial site prep — we’ve got the right machinery and the right crew.
+          Looking for plant or Bobcat hire in Johannesburg? SIMA Demolitions offers affordable, reliable plant hire, TLBs, and Bobcats with trained operators for excavation, trenching, land clearing, and more. From residential foundation work to full commercial site prep — we’ve got the right machinery and the right crew.
         </p>
         <Button size="lg" className="mt-6" asChild>
           <a href="tel:0784292760">
@@ -146,7 +146,7 @@ export default function PlantHirePage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose Siya for Plant & Bobcat Hire?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><Check /> Why Choose SIMA for Plant & Bobcat Hire?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
@@ -199,7 +199,7 @@ export default function PlantHirePage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Plant & Bobcat Hire Quote Today</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-         Whether you're clearing, digging, or preparing foundations — Siya Demolitions delivers fast, reliable equipment hire with trained operators to get the job done right.
+         Whether you're clearing, digging, or preparing foundations — SIMA Demolitions delivers fast, reliable equipment hire with trained operators to get the job done right.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>

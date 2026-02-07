@@ -4,7 +4,7 @@
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "Service",
       "type": "object",
-      "description": "Represents a demolition service offered by Siya Demolitions Projects.",
+      "description": "Represents a demolition service offered by SIMA Demolitions Projects.",
       "properties": {
         "id": {
           "type": "string",
@@ -112,7 +112,7 @@
           "schema": {
             "$ref": "#/backend/entities/Service"
           },
-          "description": "Stores information about demolition services offered by Siya Demolitions Projects.",
+          "description": "Stores information about demolition services offered by SIMA Demolitions Projects.",
           "params": [
             {
               "name": "serviceId",
@@ -154,6 +154,6 @@
         }
       }
     ],
-    "reasoning": "The Firestore data structure is designed to store information about services, service areas, and contact form submissions for Siya Demolitions Projects. It prioritizes a flat structure for simplicity and avoids hierarchical dependencies to ensure Authorization Independence. Since there is no user authentication or specific access control requirements outlined beyond potential administrative access to submissions, the structure focuses on data organization rather than complex security rules. All collections are treated as having uniform security needs at this time.\n\nThe structure enables secure `list` operations (QAPs) because each collection is dedicated to a single entity type, preventing the need for complex filtering within rules.\n\n*   `/services`: Stores service details.\n*   `/service_areas`: Stores service area information.\n*   `/contact_form_submissions`: Stores contact form submissions. This might require additional security considerations if PII is stored and access should be restricted."
+    "reasoning": "The Firestore data structure is designed to store information about services, service areas, and contact form submissions for SIMA Demolitions Projects. It prioritizes a flat structure for simplicity and avoids hierarchical dependencies to ensure Authorization Independence. Since there is no user authentication or specific access control requirements outlined beyond potential administrative access to submissions, the structure focuses on data organization rather than complex security rules. All collections are treated as having uniform security needs at this time.\n\nThe structure enables secure `list` operations (QAPs) because each collection is dedicated to a single entity type, preventing the need for complex filtering within rules.\n\n*   `/services`: Stores service details.\n*   `/service_areas`: Stores service area information.\n*   `/contact_form_submissions`: Stores contact form submissions. This might require additional security considerations if PII is stored and access should be restricted."
   }
 }

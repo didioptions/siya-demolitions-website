@@ -11,16 +11,16 @@ const homeHeroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
 export const metadata: Metadata = {
   title: {
-    default: 'Siya Demolitions Projects | Demolition & Construction Gauteng',
-    template: '%s | Siya Demolitions',
+    default: 'SIMA Demolitions Projects | Demolition & Construction Gauteng',
+    template: '%s | SIMA Demolitions',
   },
-  description: 'Expert demolition services in Gauteng, South Africa. Siya Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
+  description: 'Expert demolition services in Gauteng, South Africa. SIMA Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
   keywords: ['demolition', 'Gauteng', 'Johannesburg', 'South Africa', 'site clearing', 'construction', 'rubble removal', 'tree felling', 'plant hire', 'swimming pool demolition'],
   openGraph: {
-    title: 'Siya Demolitions Projects | Demolition & Construction Gauteng',
+    title: 'SIMA Demolitions Projects | Demolition & Construction Gauteng',
     description: 'Professional demolition, rubble removal, and site clearing services in Gauteng.',
     url: 'https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/',
-    siteName: 'Siya Demolitions Projects',
+    siteName: 'SIMA Demolitions Projects',
     images: [
       {
         url: homeHeroImage?.imageUrl || '',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Siya Demolitions Projects',
+  name: 'SIMA Demolitions Projects',
   telephone: '+27-78-429-2760',
-  email: 'info@siyademolitions.co.za',
+  email: 'info@simademolitions.co.za',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '304 Main Avenue',
@@ -81,8 +81,8 @@ const jsonLd = {
   ],
   priceRange: '$$',
   sameAs: [
-    'https://www.facebook.com/siya.demolitions',
-    'https://www.instagram.com/siya.demolitions'
+    'https://www.facebook.com/sima.demolitions',
+    'https://www.instagram.com/sima.demolitions'
   ]
 };
 

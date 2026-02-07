@@ -67,7 +67,7 @@ export default function SwimmingPoolDemolitionPage() {
             <Trash2 /> Safe, Affordable Pool Removal & Site Cleanup
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Looking to remove your unwanted or damaged swimming pool? Siya Demolitions Projects provides fast, safe and efficient swimming pool demolition in Johannesburg, including full removal, rubble clearance, and site preparation for future landscaping or development.
+          Looking to remove your unwanted or damaged swimming pool? SIMA Demolitions Projects provides fast, safe and efficient swimming pool demolition in Johannesburg, including full removal, rubble clearance, and site preparation for future landscaping or development.
         </p>
         <Button size="lg" className="mt-6" asChild>
           <a href="tel:0784292760">
@@ -153,7 +153,7 @@ export default function SwimmingPoolDemolitionPage() {
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
         <div className="md:col-span-3">
-            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose Siya Demolitions?</h2>
+            <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose SIMA Demolitions?</h2>
             <div className="grid sm:grid-cols-2 gap-6">
                 {whyChooseUs.map((reason) => (
                     <div key={reason} className="flex items-start gap-3">
