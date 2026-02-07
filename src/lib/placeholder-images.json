@@ -160,9 +160,9 @@
     },
     {
       "id": "gallery3",
-      "description": "An operator using a TLB for site preparation.",
-      "imageUrl": "https://picsum.photos/seed/gallery3/800/600",
-      "imageHint": "plant hire"
+      "description": "A cleared site after professional cleaning.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20(1).jpg?alt=media&token=93e69b83-a198-441e-86c2-bd3bc26ad91f",
+      "imageHint": "site cleaning"
     }
   ]
 }
