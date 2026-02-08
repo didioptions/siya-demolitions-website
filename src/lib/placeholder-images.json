@@ -74,9 +74,9 @@
     },
     {
       "id": "siteCleaningBefore",
-      "description": "A messy construction site with debris and waste scattered around.",
-      "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdHJ1Y3Rpb24lMjB3YXN0ZXxlbnwwfHx8fDE3NzAyMDc1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "construction waste"
+      "description": "A site being cleaned before work continues.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20johannesburg.jpg?alt=media&token=a7345943-dcf3-4f98-9408-65c13a0b4ff2",
+      "imageHint": "site cleaning"
     },
     {
       "id": "siteCleaningAfter",
