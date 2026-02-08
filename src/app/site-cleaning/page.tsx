@@ -15,7 +15,8 @@ const whyChooseUs = [
 ];
 
 const joburgAreas = [
-    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD"
+    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD",
+    "Centurion", "Kempton Park", "Benoni", "Boksburg", "Brakpan", "Edenvale", "Nigel", "Springs"
 ];
 
 const faqs = [
@@ -142,7 +143,6 @@ export default function SiteCleaningPage() {
                     </div>
                 ))}
             </div>
-             {workerImage && <Image src={workerImage.imageUrl} alt={workerImage.description} data-ai-hint={workerImage.imageHint} width={500} height={300} className="rounded-lg shadow-lg mt-6" />}
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
