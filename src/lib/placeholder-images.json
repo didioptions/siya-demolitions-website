@@ -116,9 +116,9 @@
     },
     {
       "id": "poolDemoWork",
-      "description": "A small excavator with a jackhammer attachment breaking up the concrete of a swimming pool.",
-      "imageUrl": "https://picsum.photos/seed/poolDemoWork/600/400",
-      "imageHint": "excavator pool"
+      "description": "A swimming pool being demolished in Gauteng.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/swimming%20demolitions%20gauteng.jpg?alt=media&token=fc260f59-9b1b-465a-9965-3147a799889c",
+      "imageHint": "pool demolition"
     },
     {
       "id": "poolDemoAfter",
