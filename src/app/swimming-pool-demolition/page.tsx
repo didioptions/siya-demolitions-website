@@ -31,7 +31,8 @@ const whyChooseUs = [
 ];
 
 const joburgAreas = [
-    "Sandton", "Roodepoort", "Midrand", "Randburg", "Soweto", "Germiston", "Alberton", "Johannesburg CBD"
+    "Sandton", "Soweto", "Midrand", "Randburg", "Roodepoort", "Germiston", "Alberton", "Johannesburg CBD",
+    "Centurion", "Kempton Park", "Benoni", "Boksburg", "Brakpan", "Edenvale", "Nigel", "Springs"
 ];
 
 const faqs = [
@@ -162,7 +163,6 @@ export default function SwimmingPoolDemolitionPage() {
                     </div>
                 ))}
             </div>
-             {afterImage && <Image src={afterImage.imageUrl} alt={afterImage.description} data-ai-hint={afterImage.imageHint} width={500} height={300} className="rounded-lg shadow-lg mt-6" />}
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
@@ -170,7 +170,7 @@ export default function SwimmingPoolDemolitionPage() {
                     <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="mb-4 text-muted-foreground">We remove pools across the entire City of Johannesburg, including:</p>
+                    <p className="mb-4 text-muted-foreground">We remove pools across Gauteng, including:</p>
                     <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
                     {joburgAreas.map((area) => (
                         <li key={area} className="flex items-center gap-3">
