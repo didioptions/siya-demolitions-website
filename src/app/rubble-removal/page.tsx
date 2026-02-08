@@ -56,7 +56,6 @@ const faqs = [
 export default function RubbleRemovalPage() {
     const rubbleImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
     const cleanSiteImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
-    const workerImage = PlaceHolderImages.find(p => p.id === 'siteCleaningWorker');
 
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
