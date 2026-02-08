@@ -75,7 +75,8 @@ const whyChooseUs = [
 ];
 
 const joburgAreas = [
-    "Sandton", "Soweto", "Randburg", "Roodepoort", "Midrand", "Germiston", "Alberton", "Johannesburg CBD"
+    "Sandton", "Soweto", "Randburg", "Roodepoort", "Midrand", "Germiston", "Alberton", "Johannesburg CBD",
+    "Centurion", "Kempton Park", "Benoni", "Boksburg", "Brakpan", "Edenvale", "Nigel", "Springs"
 ];
 
 const faqs = [
