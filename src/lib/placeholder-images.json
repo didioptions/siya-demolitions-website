@@ -110,9 +110,9 @@
     },
     {
       "id": "poolDemoHero",
-      "description": "A completely demolished in-ground swimming pool, now an empty space with rubble.",
-      "imageUrl": "https://images.unsplash.com/photo-1598276039467-f65d6b28ae2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW1vbGlzaGVkJTIwcG9vbHxlbnwwfHx8fDE3NzAyNDI4NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "demolished pool"
+      "description": "A swimming pool in Johannesburg during demolition.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/swimming%20deomolition%20in%20johannesburg%20%20(1).jpg?alt=media&token=aef97b6e-07fd-4de7-948f-8f79bfb49d47",
+      "imageHint": "swimming pool demolition"
     },
     {
       "id": "poolDemoWork",
