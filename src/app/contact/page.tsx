@@ -12,6 +12,15 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 // Note: This is a client component because of the form.
 // No form submission logic is implemented as per the request.
+const services = [
+    { value: "demolition-services", label: "Demolition Services" },
+    { value: "rubble-removal", label: "Rubble Removal" },
+    { value: "site-cleaning", label: "Site Cleaning" },
+    { value: "tree-felling", label: "Tree Felling" },
+    { value: "swimming-pool-demolition", label: "Swimming Pool Demolition" },
+    { value: "plant-hire", label: "Plant Hire" },
+    { value: "other", label: "Other" },
+  ];
 
 export default function ContactPage() {
     const contactImage = PlaceHolderImages.find(p => p.id === 'contactPage');
@@ -83,7 +92,7 @@ export default function ContactPage() {
                         <CardHeader>
                             <CardTitle>Send Us a Message</CardTitle>
                             <CardDescription>
-                                Alternatively, fill out the form below (optional) and we will get back to you.
+                                Alternatively, fill out the form below and we will get back to you.
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -99,17 +108,19 @@ export default function ContactPage() {
                                     </div>
                                 </div>
                                 <div className="space-y-2">
+                                    <Label htmlFor="phone">Phone Number (Optional)</Label>
+                                    <Input id="phone" type="tel" placeholder="012 345 6789" />
+                                </div>
+                                <div className="space-y-2">
                                     <Label htmlFor="service">Service of Interest</Label>
                                     <Select>
                                         <SelectTrigger id="service">
                                             <SelectValue placeholder="Select a service" />
                                         </SelectTrigger>
                                         <SelectContent>
-                                            <SelectItem value="residential">Residential Demolition</SelectItem>
-                                            <SelectItem value="commercial">Commercial Demolition</SelectItem>
-                                            <SelectItem value="industrial">Industrial Demolition</SelectItem>
-                                            <SelectItem value="clearing">Site Clearing</SelectItem>
-                                            <SelectItem value="other">Other</SelectItem>
+                                            {services.map((service) => (
+                                                <SelectItem key={service.value} value={service.value}>{service.label}</SelectItem>
+                                            ))}
                                         </SelectContent>
                                     </Select>
                                 </div>
