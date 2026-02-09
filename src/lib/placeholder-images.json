@@ -33,7 +33,7 @@
     {
       "id": "concreteBreaking",
       "description": "A jackhammer breaking up a concrete slab.",
-      "imageUrl": "https://images.unsplash.com/photo-1570541294008-8db52a0d047e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGJyZWFraW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1570541294008-8db52a0d047e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGJyZWFraW5nfGVufDB8fHx8fDE3NzAwNjcyNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "concrete breaking"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "aboutSection",
       "description": "A group of construction workers in a meeting on site, looking at plans.",
-      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtfGVufDB8fHx8MTc3MDEyMDIwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtfGVufDB8fHx8fDE3NzAxMjAyMDMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "construction team"
     },
     {
@@ -92,9 +92,9 @@
     },
     {
       "id": "treeCuttingBefore",
-      "description": "A large tree in a residential yard before being cut.",
-      "imageUrl": "https://images.unsplash.com/photo-1628187816298-65d892b3c5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXJnZSUyMHRyZWUlMjB5YXJkfGVufDB8fHx8fDE3NzAyOTUwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "large tree"
+      "description": "Tree felling in progress in Johannesburg.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/free%20felling%20sima%20demolitions%20johannesburg.jpg?alt=media&token=d69f9480-c4e1-422b-b4c0-37c721f6129c",
+      "imageHint": "tree felling"
     },
     {
       "id": "treeCuttingRopes",
