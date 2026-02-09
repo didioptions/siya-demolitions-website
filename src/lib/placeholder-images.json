@@ -75,14 +75,14 @@
     {
       "id": "siteCleaningBefore",
       "description": "A site being cleaned before work continues.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/SIMA%20Demolitions%20%2Crubbe%20removals%20johannesburg%20.jpg?alt=media&token=2b8c060f-72ae-46a2-b328-ef2b301a0dbd",
-      "imageHint": "site cleaning"
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/SIMA%20Demolitions%20site%20cleaning%20gauteng%20%20.jpg?alt=media&token=ed824805-57ec-4b60-8be7-9bb1675ef3c8",
+      "imageHint": "site cleanup"
     },
     {
       "id": "siteCleaningAfter",
-      "description": "A construction site being cleaned.",
+      "description": "A construction site after being cleaned.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20in%20proccess.jpg?alt=media&token=bbf879e9-a084-42ec-adea-b8575d8f1c8a",
-      "imageHint": "site cleaning"
+      "imageHint": "clean worksite"
     },
     {
       "id": "siteCleaningWorker",
