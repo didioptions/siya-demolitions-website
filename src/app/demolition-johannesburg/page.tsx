@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Shovel } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -46,6 +46,57 @@ const faqSchema = {
     }
   }))
 };
+
+const comprehensiveServices = [
+    {
+        title: "Residential Demolition",
+        icon: Home,
+        imageUrlId: 'residentialDemolition',
+        description: "Complete home demolition services including houses, garages, sheds, and other residential structures. We handle all permits and ensure safe, efficient removal.",
+        subServices: ["Full house demolition", "Garage & shed removal", "Pool demolition", "Foundation removal"],
+        link: "#contact",
+    },
+    {
+        title: "Commercial Demolition",
+        icon: Building,
+        imageUrlId: 'commercialDemolition',
+        description: "Expert demolition of commercial buildings, retail spaces, offices, and warehouses. Minimal disruption to surrounding businesses with strict safety protocols.",
+        subServices: ["Office buildings", "Retail spaces", "Warehouses", "Shopping centers"],
+        link: "#contact",
+    },
+    {
+        title: "Industrial Demolition",
+        icon: Factory,
+        imageUrlId: 'industrialDemolition',
+        description: "Large-scale industrial demolition including factories, plants, and heavy infrastructures. Specialized equipment and experienced crews for complex projects.",
+        subServices: ["Factory demolition", "Plant decommissioning", "Heavy machinery removal", "Industrial site clearing"],
+        link: "#contact",
+    },
+    {
+        title: "Interior Strip Outs",
+        icon: Layers,
+        imageUrlId: 'interiorStripOut',
+        description: "Selective interior demolition for renovations and refurbishment. Careful removal of walls, ceilings, flooring, and fixtures while preserving the structure.",
+        subServices: ["Wall removal", "Ceiling demolition", "Floor removal", "Fixture stripping"],
+        link: "#contact",
+    },
+    {
+        title: "Concrete & Asphalt Removal",
+        icon: Hammer,
+        imageUrlId: 'concreteBreaking',
+        description: "Professional removal of concrete slabs, driveways, parking lots, and asphalt surfaces. Proper disposal and site preparation for new construction.",
+        subServices: ["Concrete breaking", "Driveway removal", "Parking lot demolition", "Slab removal"],
+        link: "#contact",
+    },
+    {
+        title: "Site Clearing & Earthworks",
+        icon: Shovel,
+        imageUrlId: 'siteClearing',
+        description: "Complete site preparation including vegetation clearing, excavation, and grading. Get your site ready for new construction or development.",
+        subServices: ["Land clearing", "Excavation", "Grading & leveling", "Vegetation removal"],
+        link: "#contact",
+    },
+];
 
 export default function DemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
@@ -97,6 +148,56 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
+        {/* Comprehensive Services Section */}
+        <section className="mb-16">
+            <div className="text-center mb-12">
+                <p className="text-accent font-semibold uppercase tracking-widest">Our Services</p>
+                <h2 className="text-3xl md:text-4xl font-bold mt-2">Comprehensive Demolition Solutions</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
+                    From small residential projects to large industrial demolitions, we have the expertise and equipment to handle any job safely and efficiently.
+                </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {comprehensiveServices.map((service) => {
+                    const serviceImage = PlaceHolderImages.find(p => p.id === service.imageUrlId);
+                    return (
+                        <Card key={service.title} className="bg-card/50 hover:shadow-xl transition-shadow duration-300 flex flex-col overflow-hidden">
+                            <CardHeader className="p-0">
+                                <div className="relative aspect-video">
+                                    {serviceImage ? (
+                                        <Image src={serviceImage.imageUrl} alt={serviceImage.description} data-ai-hint={serviceImage.imageHint} fill className="object-cover" />
+                                    ) : (
+                                        <div className="bg-muted w-full h-full"></div>
+                                    )}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                                    <div className="absolute bottom-4 left-4">
+                                        <div className="bg-accent/90 text-accent-foreground p-3 rounded-md inline-block backdrop-blur-sm">
+                                            <service.icon className="h-6 w-6" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent className="p-6 flex-grow flex flex-col">
+                                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                                <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
+                                <ul className="space-y-2 mb-6 text-sm">
+                                    {service.subServices.map((sub, index) => (
+                                        <li key={index} className="flex items-center gap-2">
+                                            <Check className="h-4 w-4 text-accent flex-shrink-0" />
+                                            <span className="text-muted-foreground">{sub}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <Link href={service.link} className="font-semibold text-accent hover:underline mt-auto self-start">
+                                    Get Quote →
+                                </Link>
+                            </CardContent>
+                        </Card>
+                    );
+                })}
+            </div>
+        </section>
+
         {/* Demolition Process Section */}
         <section className="mb-16 bg-card p-8 rounded-lg">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -115,16 +216,6 @@ export default function DemolitionJohannesburgPage() {
                  <div>
                     {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A new building under construction on a cleared site in Johannesburg" data-ai-hint="building construction" fill className="rounded-lg object-cover" /></div>}
                 </div>
-            </div>
-        </section>
-
-        {/* Services Section */}
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Comprehensive Demolition Services in Johannesburg</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Building className="text-accent" />House Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Complete or partial house demolition for renovations, rebuilds, or land clearing. We handle everything from single-story homes to multi-level structures.</p></CardContent></Card>
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Wrench className="text-accent" />Commercial Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Specialized demolition for offices, warehouses, and retail spaces, including interior strip-outs and safe structural dismantling.</p></CardContent></Card>
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 className="text-accent" />Swimming Pool Removal</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Safe removal of concrete, fibreglass, and gunite pools, including all rubble disposal and backfilling to perfectly reclaim your yard space.</p></CardContent></Card>
             </div>
         </section>
 
