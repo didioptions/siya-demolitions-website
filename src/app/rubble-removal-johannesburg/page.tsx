@@ -165,7 +165,7 @@ export default function RubbleRemovalJohannesburgPage() {
 
         {/* Residential & Commercial Section */}
         <section id="project-types" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Rubble Removal for Every Johannesburg Project</h4>
+            <h2 className="text-3xl font-bold text-center mb-8">Rubble Removal for Every Johannesburg Project</h2>
             <div className="grid md:grid-cols-2 gap-8 items-stretch">
                 <Card className="shadow-lg flex flex-col">
                     <CardHeader>
