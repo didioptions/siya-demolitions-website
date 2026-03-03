@@ -9,70 +9,34 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const joburgAreas = [
     { 
-        name: "Sandton", 
-        desc: "Our teams provide fast, discreet rubble removal for high-value residential renovations and large-scale commercial site clearings in Sandton's bustling core. We are experts in working within secure estates, ensuring full compliance with HOA rules. Whether it's debris from an office strip-out in Sandown or garden waste from a property in Bryanston, we leave your site immaculate. We also offer reliable site clearing services in nearby areas like Randburg and Midrand.",
-        link: "/rubble-removal-sandton"
+        name: "Sandton",
+        link: "/rubble-removal-sandton",
+        crossLinks: [
+            { name: "Randburg", href: "/demolition-randburg" },
+            { name: "Midrand", href: "/demolition-midrand" },
+        ]
     },
+    { name: "Randburg", link: "/demolition-randburg", crossLinks: [] },
+    { name: "Roodepoort", link: "/demolition-roodepoort", crossLinks: [] },
+    { name: "Soweto", link: "/demolition-soweto", crossLinks: [] },
+    { name: "Midrand", link: "/demolition-midrand", crossLinks: [] },
+    { name: "Germiston", link: "/demolition-germiston", crossLinks: [] },
+    { name: "Alberton", link: "/demolition-alberton", crossLinks: [] },
     { 
-        name: "Randburg", 
-        desc: "SIMA offers reliable and affordable rubble removal across Randburg's diverse suburbs. From clearing construction debris in Ferndale to removing garden refuse in Northcliff, our teams ensure your site is left spotless and safe. We understand the logistics of working in dense residential areas and provide a service that minimizes disruption. For comprehensive site preparation, consider our expert demolition services in Randburg." 
+        name: "Johannesburg CBD",
+        link: "/demolition-johannesburg",
+        crossLinks: [
+            { name: "Rosebank", href: "/demolition-rosebank" },
+        ]
     },
-    { 
-        name: "Roodepoort", 
-        desc: "Covering the entire West Rand, our Roodepoort rubble removal service is perfect for homeowners and contractors. We provide swift site clearing for new builds in Helderkruin and clear debris from renovations in Wilro Park. Our focus is on efficiency and safety, ensuring your project can proceed without delay. We also serve neighboring communities like Soweto, providing the same level of professional service." 
-    },
-    { 
-        name: "Soweto", 
-        desc: "We are proud to offer community-focused, affordable rubble removal in Soweto. From clearing waste after home extensions in Orlando to preparing sites for new community projects, we help keep our neighborhoods clean. Our service is reliable and accessible, ensuring that all residents have access to professional site clearing. We also provide demolition services in Soweto to support local development." 
-    },
-    { 
-        name: "Midrand", 
-        desc: "Supporting Midrand's rapid growth, we offer efficient rubble removal for new housing estates and large commercial developments. We clear construction debris quickly to keep your project on schedule, whether you're near the Mall of Africa or in a developing residential area. Our teams understand the fast-paced nature of projects in Midrand. We also offer plant hire for excavation and earthmoving." 
-    },
-    { 
-        name: "Germiston", 
-        desc: "As industrial and commercial specialists, we provide robust site clearing services in Germiston. We are equipped to handle heavy construction waste from factories and warehouses, ensuring your industrial site is compliant and ready for the next phase. Our expertise in the East Rand makes us the go-to choice for complex industrial rubble removal, including in nearby Boksburg." 
-    },
-    { 
-        name: "Alberton", 
-        desc: "Your local Alberton rubble removal experts are here to help. We clear waste from home renovations, small demolitions, and landscaping projects across the East Rand. Our friendly and efficient service ensures your property is left tidy and safe, whether you're in Meyersdal or Brackenhurst. We work closely with homeowners to provide a hassle-free experience, similar to our services in Germiston." 
-    },
-    { 
-        name: "Johannesburg CBD", 
-        desc: "Navigating the logistical challenges of the Johannesburg CBD, our teams provide timely and efficient rubble removal for commercial renovations, office strip-outs, and construction projects in the city center. We coordinate with building management to ensure minimal disruption, providing a professional service that meets the demands of a high-density urban environment. We also serve surrounding central suburbs." 
-    },
-    { 
-        name: "Centurion", 
-        desc: "Serving the Centurion area with professional site clearing, we handle debris from residential estates in Irene to commercial sites in Highveld. Our teams are equipped to manage any volume of rubble, providing a reliable service that developers and homeowners trust. We understand the City of Tshwane's regulations, ensuring a compliant and smooth operation, much like our work in nearby Midrand." 
-    },
-    { 
-        name: "Kempton Park", 
-        desc: "We provide specialized rubble removal for commercial and industrial sites around Kempton Park and O.R. Tambo International Airport. We ensure your site is cleared in accordance with all local and airport-related regulations, handling logistics with precision and professionalism. Our services support the area's crucial logistics and business hubs, extending to neighboring areas like Edenvale." 
-    },
-    { 
-        name: "Benoni", 
-        desc: "From small home DIY projects to larger construction sites, we offer comprehensive rubble removal services throughout Benoni. Our goal is to leave your property completely clean and ready for the next step. We handle all types of construction waste, providing a fast and affordable solution for the East Rand community, including nearby Springs." 
-    },
-    { 
-        name: "Boksburg", 
-        desc: "Our efficient and affordable rubble removal teams in Boksburg are equipped to handle any volume of construction or demolition waste. Whether you're renovating your home in Sunward Park or clearing a commercial site, we provide a quick and reliable service. We ensure all waste is disposed of legally, protecting our clients and the environment in the East Rand." 
-    },
-    { 
-        name: "Brakpan", 
-        desc: "SIMA offers reliable rubble removal services across Brakpan. We clear all types of construction, garden, and demolition waste, ensuring a tidy and safe site for your family or workforce. Our commitment is to provide an accessible and professional service to all residents and businesses in the area, helping to keep Brakpan clean and ready for development." 
-    },
-    { 
-        name: "Edenvale", 
-        desc: "As your go-to for residential and commercial rubble removal in Edenvale, we pride ourselves on fast, friendly service. We clear debris from renovations in Greenstone Hill and site preparations in the Avenues, leaving every property spotless. Our local teams are familiar with the area, ensuring a smooth and efficient cleanup every time, similar to our work in Bedfordview." 
-    },
-    { 
-        name: "Nigel", 
-        desc: "We provide comprehensive site clearing and rubble removal services in Nigel and the surrounding areas. We handle everything from soil and bricks to mixed construction debris from industrial and residential projects. Our reliable service ensures your project can proceed without delays caused by site waste, supporting the growth and maintenance of the Nigel community." 
-    },
-    { 
-        name: "Springs", 
-        desc: "Covering the East Rand, our Springs rubble removal service is fast, efficient, and affordable. We ensure your construction or renovation project can proceed without delay by quickly clearing all building waste, soil, and demolition debris. Our teams are committed to providing top-tier service to the Springs community, ensuring all disposal is handled responsibly." 
-    }
+    { name: "Centurion", link: "/demolition-centurion", crossLinks: [] },
+    { name: "Kempton Park", link: "/demolition-kempton-park", crossLinks: [] },
+    { name: "Benoni", link: "/demolition-johannesburg", crossLinks: [] },
+    { name: "Boksburg", link: "/demolition-boksburg", crossLinks: [] },
+    { name: "Brakpan", link: "/demolition-johannesburg", crossLinks: [] },
+    { name: "Edenvale", link: "/demolition-edenvale", crossLinks: [] },
+    { name: "Nigel", link: "/demolition-johannesburg", crossLinks: [] },
+    { name: "Springs", link: "/demolition-johannesburg", crossLinks: [] },
 ];
 
 
@@ -193,7 +157,7 @@ export default function RubbleRemovalJohannesburgPage() {
 
         {/* Fast & Reliable Site Clearance Section */}
         <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Fast, Reliable, and Professional Site Clearance</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Fast & Reliable Site Clearance Across Johannesburg</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <div>
                     <h4 className="font-semibold text-lg">Quick Response Times</h4>
@@ -263,7 +227,7 @@ export default function RubbleRemovalJohannesburgPage() {
                 </ul>
             </div>
             <div className="lg:col-span-2">
-                 <h2 className="text-2xl font-bold mb-4">Understanding Rubble Removal Costs</h2>
+                 <h2 className="text-2xl font-bold mb-4">Cost Factors for Rubble Removal in Johannesburg</h2>
                  <p className="text-muted-foreground mb-4">Our quotes are transparent and based on a few key factors:</p>
                  <ul className="space-y-3">
                     <li><strong className="block">Volume & Type of Debris:</strong> The total amount of rubble (in m³) and its type (e.g., clean concrete vs. mixed waste) are the primary cost drivers.</li>
@@ -287,10 +251,25 @@ export default function RubbleRemovalJohannesburgPage() {
                 {joburgAreas.map((area) => (
                     <Card key={area.name}>
                         <CardHeader>
-                            <CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />{area.name}</CardTitle>
+                           <CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />{area.name}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-muted-foreground text-sm">{area.desc}</p>
+                           <p className="text-sm text-muted-foreground mb-4">
+                                Fast, licensed rubble removal in {area.name}. We handle everything from construction debris to garden refuse.
+                           </p>
+                           {area.crossLinks && area.crossLinks.length > 0 && (
+                               <div className="text-xs text-muted-foreground mb-4">
+                                   Also serving: {area.crossLinks.map((link, index) => (
+                                       <React.Fragment key={link.href}>
+                                           <Link href={link.href} className="text-primary/80 hover:underline">{link.name}</Link>
+                                           {index < area.crossLinks.length - 1 ? ', ' : ''}
+                                       </React.Fragment>
+                                   ))}
+                               </div>
+                           )}
+                           <Button variant="outline" size="sm" asChild>
+                               <Link href={area.link}>Rubble Removal {area.name}</Link>
+                           </Button>
                         </CardContent>
                     </Card>
                 ))}
@@ -345,5 +324,7 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
+    
 
     
