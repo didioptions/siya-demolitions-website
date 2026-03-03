@@ -53,6 +53,11 @@ const nextConfig: NextConfig = {
         destination: '/demolition-johannesburg',
         permanent: true,
       },
+      {
+        source: '/demolishing-a-home-in-johannesburg',
+        destination: '/demolition-johannesburg',
+        permanent: true,
+      },
     ]
   },
 };

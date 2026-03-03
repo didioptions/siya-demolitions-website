@@ -15,27 +15,35 @@ const suburbs = [
 const faqs = [
     {
         question: "Are you a licensed demolition contractor in Johannesburg?",
-        answer: "Yes, SIMA Demolitions Projects is a fully licensed and insured demolition contractor operating across Johannesburg and Gauteng. We strictly adhere to all national and municipal regulations, including those stipulated by the City of Johannesburg Metropolitan Municipality. Our licensing ensures that every project is managed by qualified professionals who understand the legal and safety requirements for structural demolition. This protects you, your property, and the public. We provide our compliance certification and insurance details with every quote, offering you complete peace of mind that your project is in safe, professional hands from start to finish."
+        answer: "Yes, SIMA Demolitions Projects is a fully licensed and insured demolition contractor operating across the entire Johannesburg and Gauteng region. We strictly adhere to all national and municipal regulations, including those stipulated by the City of Johannesburg Metropolitan Municipality. Our licensing is your assurance that every project is planned, managed, and executed by qualified professionals who have a deep understanding of the legal and safety requirements for structural demolition. This protects you from liability, ensures your project is compliant, and provides complete peace of mind. We proudly provide our compliance certifications and insurance details with every quote, so you can be confident that your project is in safe, professional hands from start to finish."
     },
     {
         question: "Do I need council approval for demolition in Johannesburg?",
-        answer: "Almost all structural demolition projects in Johannesburg require a permit from the City of Johannesburg. This is a critical legal step to ensure safety and compliance with building codes. Our service includes managing this entire application process on your behalf. We prepare and submit all necessary documentation, liaise with council inspectors, and ensure all prerequisites are met. By handling this complex process, we save you significant time and protect you from the risk of costly fines or project-halting stop-orders that can arise from non-compliance. This expertise is a core part of our value proposition."
+        answer: "Almost all structural demolition projects in Johannesburg require a permit from the City of Johannesburg. This is a critical legal step to ensure public safety, environmental compliance, and adherence to building codes. Our comprehensive service includes professionally managing this entire application process on your behalf. We prepare and submit all necessary documentation—including site plans and safety protocols—liaise directly with council inspectors, and ensure all prerequisites are met before any work begins. By entrusting this complex process to us, you save significant time and are protected from the risk of costly fines or project-halting stop-orders that can arise from non-compliance. Our expertise here is a core part of our value proposition."
     },
     {
         question: "What is the typical process for a house demolition in Johannesburg?",
-        answer: "Our process is systematic and designed for safety and efficiency. It begins with a thorough site assessment and a detailed, obligation-free quote. Once you approve, we immediately handle the council permit applications. Before any demolition starts, we establish a secure perimeter, manage utility disconnections (water, electricity), and implement dust control measures. The demolition is then performed using modern, controlled techniques by our licensed team. Afterward, we execute a complete site clear-up, loading and transporting all rubble to certified disposal facilities. We leave your Johannesburg property perfectly clean, level, and ready for the next phase of your project."
+        answer: "Our process for house demolition in Johannesburg is systematic, prioritizing safety and efficiency. It begins with a thorough on-site assessment and a detailed, obligation-free quote. Once approved, we immediately handle the permit application with the City of Johannesburg. Before demolition starts, we establish a secure perimeter, manage essential utility disconnections (water, electricity, gas), and implement advanced dust control measures to protect your neighborhood. The demolition is then performed using controlled, modern techniques by our licensed team. Afterward, we execute a complete site clear-up, loading and transporting all rubble to certified disposal and recycling facilities. We guarantee to leave your Johannesburg property perfectly clean, level, and ready for the next phase."
     },
     {
-        question: "How do you ensure safety on a demolition site in a dense area like Johannesburg?",
-        answer: "Safety is our paramount concern, especially in dense urban environments. We implement a multi-layered safety plan that includes comprehensive site hoarding to secure the perimeter, advanced dust suppression systems (e.g., water misting) to protect neighboring properties, and the mandatory use of personal protective equipment (PPE) for all on-site personnel. A dedicated safety officer oversees every Johannesburg project to ensure full compliance with the Occupational Health and Safety Act. Our systematic, top-down demolition methods prevent uncontrolled collapses, ensuring the absolute protection of adjacent buildings, your property, our crew, and the general public."
+        question: "How do you ensure safety on a demolition site in a dense Johannesburg suburb?",
+        answer: "Safety is our paramount concern, especially in dense urban environments like those found across Johannesburg. We implement a multi-layered safety plan that includes comprehensive site hoarding to secure the perimeter, advanced dust suppression systems (e.g., water misting) to protect neighboring properties, and the mandatory use of personal protective equipment (PPE) for all on-site personnel. A dedicated, certified safety officer oversees every Johannesburg project to ensure full compliance with the Occupational Health and Safety Act. Our systematic, top-down demolition methods prevent uncontrolled collapses, ensuring the absolute protection of adjacent buildings, your property, our crew, and the general public. This meticulous approach minimizes risk and disruption."
     },
     {
         question: "What factors influence the cost of demolition in Johannesburg?",
-        answer: "The cost of demolition varies based on several key factors. The size and height of the structure are primary drivers. The materials involved also play a significant role; for example, reinforced concrete is more time-consuming to demolish than brick. Site accessibility in Johannesburg is crucial—narrow roads or tight spaces may require smaller, more specialized machinery. The proximity to neighboring structures necessitates more careful, controlled demolition techniques, which can influence the cost. Finally, the scope of work, including whether it involves asbestos abatement, extensive foundation removal, or complex utility disconnections, will be factored into our transparent, itemized quote."
+        answer: "The cost of demolition in Johannesburg is influenced by several key factors. The primary drivers are the size, height, and materials of the structure; for instance, reinforced concrete is more time-consuming to demolish than standard brick. Site accessibility is also crucial—narrow roads in older suburbs or tight access in secure estates may require smaller, more specialized machinery. The proximity to neighboring structures necessitates more careful, controlled demolition techniques, which can influence the cost. Finally, the total scope of work, including whether it involves hazardous material abatement (like asbestos), extensive foundation removal, or complex utility disconnections, will be factored into our transparent, itemized quote, ensuring you understand every cost involved."
     },
     {
-        question: "Do you handle asbestos removal during demolition projects?",
-        answer: "Yes, we are qualified to manage projects involving asbestos. Asbestos-containing materials (ACMs) are hazardous and require specialized handling by law. If we identify potential ACMs during our initial site assessment, we will inform you immediately. The process involves engaging a certified asbestos abatement contractor who follows a strict protocol for the safe removal, sealing, and disposal of all hazardous materials at a designated waste facility. This is done before any structural demolition begins to ensure the site is completely safe and compliant with all environmental and health regulations. We manage this coordination to provide a seamless, safe service."
+        question: "Do you handle asbestos removal during demolition in Johannesburg?",
+        answer: "Yes, we are qualified to manage projects involving asbestos-containing materials (ACMs) in Johannesburg. ACMs are hazardous and require specialized handling by law. If we identify potential ACMs during our initial site assessment, we will inform you immediately and coordinate the entire process. This involves engaging a certified Type 2 Asbestos Abatement contractor who follows a strict legislative protocol for the safe removal, sealing, and disposal of all hazardous materials at a designated waste facility. This critical step is completed before any structural demolition begins, ensuring the site is completely safe and compliant with all environmental and health regulations. We manage this coordination seamlessly for you."
+    },
+    {
+        question: "What happens to all the rubble and waste after a demolition?",
+        answer: "As part of our commitment to environmental responsibility and legal compliance, we manage the entire waste stream from your demolition project. All rubble, concrete, steel, and other debris are sorted on-site where possible. We then transport these materials to licensed and approved disposal and recycling facilities across Gauteng. Concrete and brick are often crushed for use as aggregate in new construction, while steel and other metals are sent for recycling. We provide a complete 'cradle-to-grave' solution, ensuring your site is left spotless and that all waste is handled in an environmentally conscious manner that complies with all City of Johannesburg and national waste management regulations. This is not just a cleanup service; it's responsible demolition."
+    },
+    {
+        question: "How long does it take to get a demolition permit in Johannesburg?",
+        answer: "The timeline for obtaining a demolition permit from the City of Johannesburg can vary, but it typically takes between 4 to 8 weeks. The process depends on the complexity of the project and the council's current workload. As experienced contractors, we streamline this by ensuring the application is complete and accurate from the outset, which helps prevent unnecessary delays. The application requires detailed site plans, engineering reports in some cases, and proof of compliance with safety regulations. We handle all this paperwork and follow up proactively with the municipality. Starting this process early is key to keeping your project on schedule, which is why we initiate the application as soon as our quote is accepted."
     }
 ];
 
@@ -79,7 +87,7 @@ const comprehensiveServices = [
         link: "/demolition-germiston",
     },
     {
-        title: "Interior Strip Outs for Renovations",
+        title: "Interior Strip Outs for Johannesburg Renovations",
         icon: Layers,
         imageUrlId: 'interiorStripOut',
         description: "Selective interior demolition for renovations and refurbishment. Careful removal of walls, ceilings, flooring, and fixtures while preserving the structure.",
@@ -95,7 +103,7 @@ const comprehensiveServices = [
         link: "/rubble-removal",
     },
     {
-        title: "Full Site Clearing & Earthworks",
+        title: "Full Site Clearing & Earthworks in Johannesburg",
         icon: Shovel,
         imageUrlId: 'siteClearing',
         description: "Complete site preparation including vegetation clearing, excavation, and grading. Get your site ready for new construction or development.",
@@ -161,7 +169,7 @@ export default function DemolitionJohannesburgPage() {
                 <p className="text-accent font-semibold uppercase tracking-widest">Our Services</p>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">Our Expert Demolition Services Across Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    From small residential projects to large industrial demolitions, we have the expertise and equipment to handle any job safely and efficiently.
+                    From small residential projects to large industrial demolitions, we have the expertise and equipment to handle any job safely and efficiently in Johannesburg.
                 </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
