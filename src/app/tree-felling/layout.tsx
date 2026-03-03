@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tree Felling Johannesburg | Safe & Licensed Tree Removal',
+  title: 'Tree Felling Johannesburg | Safe, Licensed & Insured Experts',
   description: 'Expert tree felling in Johannesburg. Safe, licensed & insured tree removal for residential & commercial properties. Emergency service available. Get a free quote.',
 };
 

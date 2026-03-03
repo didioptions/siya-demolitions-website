@@ -10,29 +10,45 @@ import React from "react";
 const faqs = [
     {
         question: "Do I need permission to cut down a tree in Johannesburg?",
-        answer: "In some cases, yes. The City of Johannesburg has regulations to protect certain indigenous or particularly large 'champion' trees. While most common residential and alien invasive species don't require a permit, it's crucial to be sure. As part of our service for tree felling in Johannesburg, we provide expert guidance based on the tree's species, size, and location. Our extensive experience across Johannesburg, from the leafy suburbs of Sandton to older areas in Randburg, means we are familiar with these local nuances. We help ensure your tree removal project remains fully compliant, protecting you from potential fines and legal issues. For very large or clearly protected trees, we can advise on the steps for council consultation."
+        answer: "In Johannesburg, the need for permission depends on the tree. The City of Johannesburg has bylaws to protect certain indigenous, 'Champion', or heritage trees. While common alien invasive species like Syringa or Poplar generally don't require a permit, removing a large, old indigenous tree like a Stinkwood or Yellowwood almost certainly will. As part of our professional tree felling Johannesburg service, we provide expert guidance. We assess the tree's species, size, and location to determine if a council application is necessary. With our extensive experience across Johannesburg, from the large, established properties in Sandton to older suburbs in Randburg, we help ensure your project is fully compliant, protecting you from potential fines."
     },
     {
         question: "What happens to all the wood and branches after a tree is felled?",
-        answer: "Our standard tree felling service is a full-service solution, meaning we handle the complete cleanup. After the tree is safely on the ground, our team cuts the trunk and larger branches into manageable sections for efficient loading and transport. All smaller branches, leaves, and twigs are raked up and removed from the site. We leave your property clean, tidy, and hazard-free. For clients who wish to keep the wood for firewood, we are happy to cut it into smaller, usable logs for you. This process integrates perfectly with our expert <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal Johannesburg</a> service, as all organic and non-organic waste is handled in a single, streamlined operation."
+        answer: "Our standard tree felling Johannesburg service is a comprehensive, all-inclusive solution. Once the tree is safely on the ground, our team processes it completely. The trunk and large limbs are cut into manageable sections, and all smaller branches and leaves are cleared. We then load and transport all organic material from your property, which integrates with our expert <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal Johannesburg</a> services. Your property is left clean, tidy, and hazard-free. If you wish to keep the wood for firewood, we can cut it into smaller logs for you at your request. We also offer stump grinding services to remove the remaining stump, leaving the ground level and ready for new landscaping or construction."
     },
     {
         question: "Can you safely remove a large tree that is very close to my house?",
-        answer: "Absolutely. This is a core specialty and where professional expertise is non-negotiable for any tree removal Johannesburg project. For trees in confined spaces or growing directly over structures in areas like Sandton or Bryanston, we use a meticulous technique called sectional dismantling. Instead of felling the tree in one piece, our certified arborists use safety harnesses and advanced rigging to climb the tree and dismantle it from the top down. Each section is carefully cut and lowered to the ground in a controlled manner using ropes. This precision work prevents any impact or damage to your house, roof, boundary walls, or garden. It is the industry-standard method for safe residential tree removal in dense Johannesburg suburbs."
-    },
-    {
-        question: "How much does affordable tree felling in Johannesburg typically cost?",
-        answer: "There is no one-size-fits-all answer, as the cost of tree felling in Johannesburg depends on several key variables. A small, easily accessible tree may be quite affordable, while a giant tree leaning over a house will cost significantly more due to the risk and labour involved. The main factors are the tree's size and height, its location and proximity to structures, site accessibility for our teams and equipment in suburbs like Roodepoort, and the complexity of the job (e.g., sectional dismantling vs. straight felling). We provide free, detailed, and no-obligation quotes that break down all costs, ensuring you receive transparent and competitive pricing. Our goal is to offer affordable tree felling Johannesburg solutions without ever compromising on safety or professionalism."
-    },
-    {
-        question: "Is your tree felling team insured for residential and commercial work?",
-        answer: "Yes, 100%. SIMA Demolitions Projects is fully insured for all tree felling and demolition operations. We carry comprehensive public liability insurance that covers our work on both residential and commercial properties across Johannesburg. This is a critical aspect of our professional commitment and your protection. It means that in the unlikely event of an accident or damage to your property or a neighboring one, you are completely covered. We will gladly provide our certificate of insurance with your quote, giving you the confidence and peace of mind that you are working with a responsible, professional, and compliant contractor for any tree cutting Johannesburg project."
+        answer: "Absolutely. This is a core specialty of our tree removal Johannesburg service and where professional expertise is non-negotiable. For trees in confined spaces or growing over structures in dense suburbs like Roodepoort or Alberton, we use a meticulous technique called sectional dismantling. Instead of felling the tree in one piece, our certified climbers use safety harnesses and advanced rigging to ascend the tree and cut it down in sections, from the top down. Each section is carefully controlled and lowered to the ground using ropes, preventing any impact on your house, roof, walls, or garden. This is the industry-standard method for safe residential tree removal and guarantees the protection of your valuable property."
     },
     {
         question: "Do you offer emergency tree removal services in Johannesburg?",
-        answer: "Yes, we provide an emergency tree removal Johannesburg service to address urgent and hazardous situations. Johannesburg's highveld storms can cause trees to fall on houses, block driveways in suburbs from Fourways to Alberton, or become dangerously unstable. We prioritize these emergency call-outs to dispatch a team as quickly as possible, often outside of standard business hours. The primary goal of our emergency service is to safely neutralize the immediate threat, remove the fallen tree or hazardous branches, clear access, and prevent further damage to your property. If you are facing a tree-related emergency, call us directly for the fastest possible response."
+        answer: "Yes, we provide an emergency tree removal Johannesburg service for urgent situations. The highveld's powerful storms can cause trees to fall on homes, block driveways, or become dangerously unstable. We prioritize these emergency call-outs to dispatch a team as quickly as possible, often outside of standard business hours, to areas like Fourways, Kempton Park, and across the city. The goal of our emergency service is to safely neutralize the immediate threat, remove the fallen tree, clear access to your property, and prevent further damage. If you're facing a tree-related emergency, call us directly for the fastest possible response."
+    },
+    {
+        question: "How much does affordable tree felling in Johannesburg typically cost?",
+        answer: "The cost for affordable tree felling in Johannesburg is not one-size-fits-all, as it depends on several key factors. A small, easily accessible tree in an open yard will be far more affordable than a giant, complex tree leaning over a building. The primary variables are the tree's height and diameter, its proximity to structures (requiring more complex rigging), site accessibility for our equipment, and the overall risk involved. A tree that can be directionally felled is cheaper than one requiring sectional dismantling. We provide free, detailed, and no-obligation quotes that break down all costs, ensuring you receive transparent and competitive pricing for a safe, professional job."
+    },
+    {
+        question: "Is stump removal included in the tree felling service?",
+        answer: "Standard tree felling services typically include cutting the tree as low to the ground as is safely possible, but it does not automatically include removing the stump and its root system. Stump grinding or removal is a separate, specialized service that requires different machinery. We always discuss this during our quoting process. We highly recommend stump removal as it prevents the stump from becoming a tripping hazard, attracting pests like termites, or resprouting. We offer stump grinding as an add-on service to provide a complete tree removal solution, leaving your property perfectly clean and ready for its next use, whether that's new lawn, paving, or construction."
     }
 ];
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Tree Felling Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "SIMA Demolitions Projects"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Johannesburg"
+  },
+  "description": "Professional and safe tree felling, tree removal, and site clearing services in Johannesburg. Licensed and insured for residential and commercial properties.",
+  "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/tree-felling"
+};
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -55,6 +71,10 @@ export default function TreeFellingPage() {
 
   return (
     <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+    />
     <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -107,10 +127,10 @@ export default function TreeFellingPage() {
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Residential & Commercial Tree Removal</h2>
                     <p className="text-muted-foreground mb-4">
-                        Whether you're a homeowner in a leafy suburb like **Randburg** or a developer clearing a commercial site in **Midrand**, our teams are equipped for the job. For our residential tree removal Johannesburg clients, we safely remove overgrown yard trees, trees with roots damaging foundations, and clear gardens for new landscaping. For our commercial partners, we provide bulk tree removal for large-scale land clearing, site preparation before construction, and ongoing property maintenance. This service often integrates with our <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning services Johannesburg</Link> and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> to offer a complete, one-stop solution for site preparation.
+                        Whether you're a homeowner in a leafy suburb like **Randburg** dealing with an overgrown garden, or a developer clearing a commercial site in **Midrand**, our teams are equipped for the job. For residential tree removal in Johannesburg, we safely remove problem trees with roots damaging foundations in **Roodepoort**, clear sightlines, or open up garden space. In townhouse complexes in **Fourways**, we work with Body Corporates to handle tree removals in confined common areas, ensuring minimal disruption.
                     </p>
                     <p className="text-muted-foreground">
-                        For developers in areas like **Fourways** and **Kempton Park**, clearing a site of all vegetation is the critical first step. Our team coordinates with site managers to efficiently remove all trees, stumps, and shrubs, ensuring the land is ready for excavation and foundation work. This bulk clearing is essential for meeting project timelines. After felling, all organic material is removed from the site, preventing it from becoming a hazard or obstruction for subsequent earthmoving and construction phases. We handle the entire process, from the first cut to the final cleanup, providing a seamless start to your development project.
+                        For our commercial partners, we provide bulk tree removal for large-scale land clearing, site preparation before construction, and ongoing property maintenance. This service often integrates with our <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning services Johannesburg</Link> and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> to offer a complete, one-stop solution for site preparation. Developers in areas like **Sandton** and **Kempton Park** rely on us to efficiently clear all vegetation, including stumps and shrubs, ensuring the land is ready for excavation and foundation work. We handle the entire process, from the first cut to the final cleanup.
                     </p>
                 </div>
             </div>
@@ -121,19 +141,25 @@ export default function TreeFellingPage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
                 <h2 className="text-3xl font-bold mb-4">Our Safe & Controlled Tree Removal Process</h2>
-                <p className="text-muted-foreground mb-4">Tree felling is high-risk work that is only safe in professional hands. We follow a strict, field-tested process for every tree cutting Johannesburg project to guarantee the protection of property and personnel. Our reputation in demanding areas like **Sandton** and **Roodepoort** is built on this meticulous approach.</p>
+                <p className="text-muted-foreground mb-4">Tree felling is high-risk work that is only safe in professional hands. We follow a strict, field-tested process for every tree cutting Johannesburg project to guarantee the protection of property and personnel, adhering to the principles of the Occupational Health and Safety (OHS) Act. Our reputation in demanding areas like **Sandton** and **Alberton** is built on this meticulous approach.</p>
                 <ul className="space-y-3">
-                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Site Assessment:** We first analyze the tree's condition, its lean, and the surrounding environment (including proximity to structures, power lines, and public walkways) to determine the safest felling strategy.</span></li>
-                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Controlled Dismantling:** For trees near structures, we use rope-assisted sectional dismantling. Our certified climbers ascend the tree and cut it down piece by piece from the top, lowering each section safely to the ground using advanced rigging techniques.</span></li>
-                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Professional Equipment:** Our crews are equipped with professional-grade chainsaws, safety harnesses, rigging ropes, and personal protective equipment (PPE) to ensure every job is performed with precision and maximum safety.</span></li>
-                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Perimeter Control:** We establish a secure perimeter around the work zone and use ground-based spotters to ensure the area is clear of people and vehicles during the felling process, which is critical in both residential and busy commercial settings.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Site Assessment:** We analyze the tree's condition, its lean, and proximity to structures to determine the safest felling strategy, compliant with Johannesburg's urban environment.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Controlled Dismantling:** For trees near structures, we use rope-assisted sectional dismantling. Our certified climbers ascend the tree and cut it down piece by piece, lowering each section safely to the ground using advanced rigging.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Professional Equipment:** Our crews use professional-grade chainsaws, safety harnesses, rigging ropes, and personal protective equipment (PPE) to ensure precision and maximum safety.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Perimeter Control:** We establish a secure work zone and use ground-based spotters to ensure the area is clear, a critical step in both residential and busy commercial settings like **Germiston**.</span></li>
                 </ul>
-                <p className="mt-4 font-semibold text-foreground">Precision reduces risk. Insurance protects you. Experience protects your property.</p>
             </div>
             <div>
                 {safetyImage && <Image src={safetyImage.imageUrl} alt="Arborist using safety ropes for sectional tree dismantling" data-ai-hint="arborist ropes" width={600} height={400} className="rounded-lg shadow-lg" />}
             </div>
         </div>
+      </section>
+
+       <section id="stump-grinding" className="mb-16">
+         <h2 className="text-3xl font-bold text-center mb-4">Stump Grinding & Root Removal: The Complete Solution</h2>
+        <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
+            Felling a tree is only half the job. A leftover stump can be an unsightly tripping hazard, attract pests like termites, and prevent you from using the area for new lawn or paving. We offer professional stump grinding services throughout Johannesburg to complete your tree removal project. Using high-powered stump grinders, we can grind the stump down to below ground level, allowing you to reclaim the space immediately. This service is essential for a clean, professional finish and is a crucial step before any new landscaping or construction.
+        </p>
       </section>
 
       {/* Cost Factors Section */}
@@ -147,8 +173,8 @@ export default function TreeFellingPage() {
             <Card><CardHeader><CardTitle className="text-lg">2. Location & Proximity</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Trees growing near houses, walls, fences, or power lines need careful, sectional dismantling, which is more labour-intensive and requires higher skill.</p></CardContent></Card>
             <Card><CardHeader><CardTitle className="text-lg">3. Site Accessibility</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Limited access to backyards in Roodepoort, steep slopes, or difficult terrain can increase manual labour requirements for carrying equipment and hauling debris.</p></CardContent></Card>
             <Card><CardHeader><CardTitle className="text-lg">4. Tree Health & Stability</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Dead or unstable trees are more dangerous and unpredictable, requiring extra precautions and potentially specialized equipment, which can affect the cost.</p></CardContent></Card>
-            <Card><CardHeader><CardTitle className="text-lg">5. Stump & Root Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Removing the trunk and branches costs less than full stump grinding or root system excavation, which requires additional machinery and time.</p></CardContent></Card>
-            <Card><CardHeader><CardTitle className="text-lg">6. Emergency Urgency</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Urgent, same-day, or after-hours call-outs for storm-damaged trees in Kempton Park may affect scheduling and mobilization costs.</p></CardContent></Card>
+            <Card><CardHeader><CardTitle className="text-lg">5. Stump & Root Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Removing the trunk and branches costs less than full stump grinding or root excavation, which requires additional machinery and time.</p></CardContent></Card>
+            <Card><CardHeader><CardTitle className="text-lg">6. Emergency Urgency</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Urgent, same-day, or after-hours call-outs for storm-damaged trees may affect scheduling and mobilization costs.</p></CardContent></Card>
         </div>
       </section>
 
@@ -170,7 +196,7 @@ export default function TreeFellingPage() {
       <section id="areas" className="mb-16">
         <h2 className="text-3xl font-bold text-center mb-8">Areas We Provide Tree Felling in Johannesburg</h2>
         <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-            Our teams are mobile and provide fast, professional tree removal services across the greater Johannesburg metropolitan area. We have extensive experience working in a variety of suburbs, each with its unique challenges.
+            Our teams are mobile and provide fast, professional tree removal services across the greater Johannesburg metropolitan area. We have extensive experience working in a variety of suburbs, each with its unique challenges, from the large properties with established trees in **Sandton** and **Bryanston** to the denser, more complex residential areas of **Randburg** and **Roodepoort**. Whether it's land clearing for new developments in **Midrand** or handling problematic trees in **Alberton**, our local knowledge ensures a safe and efficient job every time.
         </p>
         <div className="max-w-5xl mx-auto p-6 bg-card rounded-lg">
             <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
