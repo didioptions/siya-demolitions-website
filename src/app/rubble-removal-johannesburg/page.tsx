@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -7,22 +8,71 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const joburgAreas = [
-    { name: "Sandton", desc: "Fast rubble removal for residential and commercial sites in Sandton's bustling core. We handle debris from office strip-outs and home renovations with professionalism." },
-    { name: "Randburg", desc: "Reliable and affordable rubble removal services across Randburg. From garden refuse to construction debris, our teams ensure your site is left spotless." },
-    { name: "Roodepoort", desc: "Covering the entire West Rand, we provide swift rubble removal for homeowners and contractors in Roodepoort, clearing sites for new builds and extensions." },
-    { name: "Soweto", desc: "Community-focused rubble removal in Soweto. We offer affordable waste clearing for residential properties, helping keep our neighborhoods clean and safe." },
-    { name: "Midrand", desc: "Supporting Midrand's rapid growth with efficient site clearing for new housing estates and commercial developments. We clear rubble quickly to keep your project on schedule." },
-    { name: "Germiston", desc: "Specializing in industrial and commercial site clearing in Germiston. We handle heavy construction waste, ensuring your industrial site is compliant and clear." },
-    { name: "Alberton", desc: "Your local Alberton rubble removal experts. We clear waste from home renovations, demolitions, and landscaping projects across the East Rand." },
-    { name: "Johannesburg CBD", desc: "Navigating the complexities of the CBD, we provide timely and efficient rubble removal for commercial renovations and construction projects in the city center." },
-    { name: "Centurion", desc: "Serving the Centurion area with professional site clearing services. We handle debris from residential estates and commercial sites with equal expertise." },
-    { name: "Kempton Park", desc: "Rubble removal for commercial and industrial sites around Kempton Park and O.R. Tambo. We ensure your site is cleared according to all regulations." },
-    { name: "Benoni", desc: "From small home projects to larger construction sites, we offer comprehensive rubble removal services throughout Benoni, leaving your property clean." },
-    { name: "Boksburg", desc: "Efficient and affordable rubble removal in Boksburg. Our teams are equipped to handle any volume of construction or demolition waste." },
-    { name: "Brakpan", desc: "Reliable rubble removal services in Brakpan. We clear all types of construction and garden waste, ensuring a tidy and safe site." },
-    { name: "Edenvale", desc: "Your go-to for residential and commercial rubble removal in Edenvale. We pride ourselves on fast, friendly service and spotless site cleanups." },
-    { name: "Nigel", desc: "Providing comprehensive site clearing and rubble removal services in Nigel. We handle everything from soil and bricks to mixed construction debris." },
-    { name: "Springs", desc: "Covering the East Rand, our Springs rubble removal service is fast and efficient, ensuring your construction or renovation project can proceed without delay." }
+    { 
+        name: "Sandton", 
+        desc: "Our teams provide fast, discreet rubble removal for high-value residential renovations and large-scale commercial site clearings in Sandton's bustling core. We are experts in working within secure estates, ensuring full compliance with HOA rules. Whether it's debris from an office strip-out in Sandown or garden waste from a property in Bryanston, we leave your site immaculate. We also offer reliable site clearing services in nearby areas like Randburg and Midrand.",
+        link: "/rubble-removal-sandton"
+    },
+    { 
+        name: "Randburg", 
+        desc: "SIMA offers reliable and affordable rubble removal across Randburg's diverse suburbs. From clearing construction debris in Ferndale to removing garden refuse in Northcliff, our teams ensure your site is left spotless and safe. We understand the logistics of working in dense residential areas and provide a service that minimizes disruption. For comprehensive site preparation, consider our expert demolition services in Randburg." 
+    },
+    { 
+        name: "Roodepoort", 
+        desc: "Covering the entire West Rand, our Roodepoort rubble removal service is perfect for homeowners and contractors. We provide swift site clearing for new builds in Helderkruin and clear debris from renovations in Wilro Park. Our focus is on efficiency and safety, ensuring your project can proceed without delay. We also serve neighboring communities like Soweto, providing the same level of professional service." 
+    },
+    { 
+        name: "Soweto", 
+        desc: "We are proud to offer community-focused, affordable rubble removal in Soweto. From clearing waste after home extensions in Orlando to preparing sites for new community projects, we help keep our neighborhoods clean. Our service is reliable and accessible, ensuring that all residents have access to professional site clearing. We also provide demolition services in Soweto to support local development." 
+    },
+    { 
+        name: "Midrand", 
+        desc: "Supporting Midrand's rapid growth, we offer efficient rubble removal for new housing estates and large commercial developments. We clear construction debris quickly to keep your project on schedule, whether you're near the Mall of Africa or in a developing residential area. Our teams understand the fast-paced nature of projects in Midrand. We also offer plant hire for excavation and earthmoving." 
+    },
+    { 
+        name: "Germiston", 
+        desc: "As industrial and commercial specialists, we provide robust site clearing services in Germiston. We are equipped to handle heavy construction waste from factories and warehouses, ensuring your industrial site is compliant and ready for the next phase. Our expertise in the East Rand makes us the go-to choice for complex industrial rubble removal, including in nearby Boksburg." 
+    },
+    { 
+        name: "Alberton", 
+        desc: "Your local Alberton rubble removal experts are here to help. We clear waste from home renovations, small demolitions, and landscaping projects across the East Rand. Our friendly and efficient service ensures your property is left tidy and safe, whether you're in Meyersdal or Brackenhurst. We work closely with homeowners to provide a hassle-free experience, similar to our services in Germiston." 
+    },
+    { 
+        name: "Johannesburg CBD", 
+        desc: "Navigating the logistical challenges of the Johannesburg CBD, our teams provide timely and efficient rubble removal for commercial renovations, office strip-outs, and construction projects in the city center. We coordinate with building management to ensure minimal disruption, providing a professional service that meets the demands of a high-density urban environment. We also serve surrounding central suburbs." 
+    },
+    { 
+        name: "Centurion", 
+        desc: "Serving the Centurion area with professional site clearing, we handle debris from residential estates in Irene to commercial sites in Highveld. Our teams are equipped to manage any volume of rubble, providing a reliable service that developers and homeowners trust. We understand the City of Tshwane's regulations, ensuring a compliant and smooth operation, much like our work in nearby Midrand." 
+    },
+    { 
+        name: "Kempton Park", 
+        desc: "We provide specialized rubble removal for commercial and industrial sites around Kempton Park and O.R. Tambo International Airport. We ensure your site is cleared in accordance with all local and airport-related regulations, handling logistics with precision and professionalism. Our services support the area's crucial logistics and business hubs, extending to neighboring areas like Edenvale." 
+    },
+    { 
+        name: "Benoni", 
+        desc: "From small home DIY projects to larger construction sites, we offer comprehensive rubble removal services throughout Benoni. Our goal is to leave your property completely clean and ready for the next step. We handle all types of construction waste, providing a fast and affordable solution for the East Rand community, including nearby Springs." 
+    },
+    { 
+        name: "Boksburg", 
+        desc: "Our efficient and affordable rubble removal teams in Boksburg are equipped to handle any volume of construction or demolition waste. Whether you're renovating your home in Sunward Park or clearing a commercial site, we provide a quick and reliable service. We ensure all waste is disposed of legally, protecting our clients and the environment in the East Rand." 
+    },
+    { 
+        name: "Brakpan", 
+        desc: "SIMA offers reliable rubble removal services across Brakpan. We clear all types of construction, garden, and demolition waste, ensuring a tidy and safe site for your family or workforce. Our commitment is to provide an accessible and professional service to all residents and businesses in the area, helping to keep Brakpan clean and ready for development." 
+    },
+    { 
+        name: "Edenvale", 
+        desc: "As your go-to for residential and commercial rubble removal in Edenvale, we pride ourselves on fast, friendly service. We clear debris from renovations in Greenstone Hill and site preparations in the Avenues, leaving every property spotless. Our local teams are familiar with the area, ensuring a smooth and efficient cleanup every time, similar to our work in Bedfordview." 
+    },
+    { 
+        name: "Nigel", 
+        desc: "We provide comprehensive site clearing and rubble removal services in Nigel and the surrounding areas. We handle everything from soil and bricks to mixed construction debris from industrial and residential projects. Our reliable service ensures your project can proceed without delays caused by site waste, supporting the growth and maintenance of the Nigel community." 
+    },
+    { 
+        name: "Springs", 
+        desc: "Covering the East Rand, our Springs rubble removal service is fast, efficient, and affordable. We ensure your construction or renovation project can proceed without delay by quickly clearing all building waste, soil, and demolition debris. Our teams are committed to providing top-tier service to the Springs community, ensuring all disposal is handled responsibly." 
+    }
 ];
 
 
@@ -103,12 +153,13 @@ export default function RubbleRemovalJohannesburgPage() {
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call Now for Fast Site Clearance</a>
                 </Button>
             </div>
+            <p className="mt-2 text-sm text-muted-foreground">Get a fast, no-obligation quote and a clean site, guaranteed.</p>
              {heroImage && <div className="mt-8 max-w-4xl mx-auto"><Image src={heroImage.imageUrl} alt="Professional team clearing demolition rubble in Johannesburg" data-ai-hint="rubble removal team" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
         </section>
 
         <section className="max-w-4xl mx-auto mb-16">
             <p className="text-lg text-muted-foreground text-center">
-            A messy, debris-filled site isn't just an eyesore—it's a safety hazard and a major project bottleneck. SIMA Demolitions Projects provides fast, reliable, and licensed rubble removal services across Johannesburg and Gauteng. Whether you're a homeowner completing a renovation, a contractor managing a building site, or a developer preparing land for a new project, our team ensures your site is cleared efficiently and in full compliance with municipal regulations. We handle everything from loading and transport to responsible disposal, leaving you with a clean, safe, and build-ready property. Our mission is to remove the waste so you can focus on the work.
+            A messy, debris-filled site isn't just an eyesore—it's a safety hazard and a major project bottleneck. SIMA Demolitions Projects provides fast, reliable, and licensed rubble removal services across Johannesburg and Gauteng. Whether you're a homeowner completing a renovation, a contractor managing a building site after a <Link href="/demolition-johannesburg" className="text-primary hover:underline">full or partial demolition</Link>, or a developer preparing land for a new project, our team ensures your site is cleared efficiently and in full compliance with municipal regulations. We handle everything from loading and transport to responsible disposal, leaving you with a clean, safe, and build-ready property. Our mission is to remove the waste so you can focus on the work.
             </p>
         </section>
 
@@ -294,3 +345,5 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
+    
