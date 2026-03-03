@@ -58,7 +58,7 @@ const services = [
   }
 ];
 
-const serviceAreas = [ "Johannesburg", "Pretoria", "Sandton", "Soweto", "Randburg", "Midrand" ];
+const serviceAreas = [ "Johannesburg", "Sandton", "Soweto", "Randburg", "Midrand" ];
 
 const whyChooseUs = [
     {
@@ -341,8 +341,6 @@ export default function Home() {
                             <MapPin className="w-4 h-4 text-accent"/>
                             {area === 'Johannesburg' ? (
                                 <Link href={`/demolition-johannesburg`} className="hover:underline">{area}</Link>
-                            ) : area === 'Pretoria' ? (
-                                <Link href="/pretoria" className="hover:underline">{area}</Link>
                             ) : (
                                 <Link href={`/demolition-${area.toLowerCase()}`} className="hover:underline">{area}</Link>
                             )}
@@ -351,7 +349,7 @@ export default function Home() {
                      <div className="bg-card border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
                  </div>
                  <Button variant="secondary" className="mt-8" asChild>
-                    <Link href="/service-areas">View All Service Areas</Link>
+                    <Link href="/demolition-johannesburg">View All Service Areas</Link>
                  </Button>
             </div>
         </section>

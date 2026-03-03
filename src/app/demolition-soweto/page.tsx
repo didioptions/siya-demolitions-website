@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, MapPin, ShieldCheck } from "lucide-react";
+import { Check, Phone, Mail, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -90,6 +90,7 @@ export default function DemolitionSowetoPage() {
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton</Link></Button>
+                 <Button variant="outline" asChild><Link href="/demolition-randburg">Randburg</Link></Button>
             </div>
         </section>
 

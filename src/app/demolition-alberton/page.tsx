@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, MapPin, ShieldCheck } from "lucide-react";
+import { Check, Phone, Mail, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -33,7 +33,6 @@ export default function DemolitionAlbertonPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
-        {/* Breadcrumbs can be added here if a component exists */}
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Alberton</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
@@ -89,9 +88,9 @@ export default function DemolitionAlbertonPage() {
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-soweto">Soweto</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-germiston">Germiston</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
+                 <Button variant="outline" asChild><Link href="/demolition-soweto">Soweto</Link></Button>
             </div>
         </section>
 
