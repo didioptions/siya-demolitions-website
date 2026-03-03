@@ -62,19 +62,19 @@ const joburgAreas = [
 const faqs = [
     {
         question: "Do I need permission to cut down a tree in Johannesburg?",
-        answer: "Depending on the tree species, size, and location — yes. Certain protected trees require a permit from the City of Johannesburg. We can advise you on the regulations and assist with the application process if necessary, ensuring your tree felling project is fully compliant."
+        answer: "In some cases, protected or heritage trees may require municipal approval before removal. It’s important to confirm regulations before cutting large or protected species. We can guide you on general compliance considerations when providing your quote."
     },
     {
-        question: "What happens to the tree and branches after it is felled?",
-        answer: "Our tree felling service is all-inclusive. We cut the trunk and branches into manageable sections and remove all debris from your property. Our goal is to leave your site cleaner than we found it, with no leftover wood, leaves, or sawdust. We handle the complete disposal at licensed green waste facilities."
+        question: "What happens after a tree is felled?",
+        answer: "After cutting, we remove branches and trunk sections. Cleanup is included unless otherwise specified. Stump removal or root grinding can also be discussed during quotation."
     },
     {
-        question: "How do you safely remove trees that are close to walls, roofs, or power lines?",
-        answer: "This is our specialty. For trees in confined spaces, we use a technique called sectional dismantling. Our skilled climbers ascend the tree and carefully cut it down piece by piece, from the top down. We use an advanced system of ropes and rigging to safely lower each section to the ground, preventing any damage to your home, garden, or surrounding infrastructure. This controlled method ensures maximum safety."
+        question: "Can you remove trees near walls or houses?",
+        answer: "Yes. Controlled sectional dismantling allows us to safely remove trees near buildings, fences, or tight areas without causing structural damage."
     },
     {
-        question: "Do you offer an emergency tree removal service for storm-damaged trees?",
-        answer: "Yes, we prioritize emergency call-outs for trees that have fallen or pose an immediate threat to property or safety after storms or high winds. Based on our team's availability, we can provide a rapid response service across Johannesburg to remove hazardous trees and clear blocked driveways or access routes, helping to secure your property and prevent further damage."
+        question: "Do you offer emergency tree removal?",
+        answer: "Yes. We assist with urgent tree removal when possible, especially after storms or high winds."
     }
 ];
 
@@ -209,6 +209,66 @@ export default function TreeFellingPage() {
         </div>
       </section>
 
+      {/* Cost Factors Section */}
+      <section id="cost-factors" className="mb-16 bg-card p-8 rounded-lg">
+        <h2 className="text-3xl font-bold text-center mb-8">What Affects Tree Felling Costs in Johannesburg?</h2>
+        <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+          Many clients ask how pricing works. The cost of tree cutting in Johannesburg depends on several key factors. We offer transparent, affordable tree felling quotes with no hidden fees.
+        </p>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">Tree Size & Height</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground">Large trees require more time, labor, and specialized safety equipment to dismantle safely.</p>
+                </CardContent>
+            </Card>
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">Location & Proximity</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground">Trees near houses, walls, fences, or power lines need careful, sectional dismantling, which is more labor-intensive.</p>
+                </CardContent>
+            </Card>
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">Site Accessibility</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground">Limited access to backyards or difficult terrain may increase manual labour requirements for hauling debris.</p>
+                </CardContent>
+            </Card>
+             <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">Root & Stump Removal</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground">Removing the trunk alone costs less than full stump grinding or root system excavation, which requires additional machinery.</p>
+                </CardContent>
+            </Card>
+             <Card className="lg:col-span-2 md:col-span-1">
+                <CardHeader>
+                    <CardTitle className="text-lg">Emergency Urgency</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-sm text-muted-foreground">Urgent, same-day, or after-hours call-outs for storm-damaged trees may affect scheduling and costs due to immediate crew mobilization.</p>
+                </CardContent>
+            </Card>
+        </div>
+         <div className="text-center mt-6">
+            <Button asChild>
+                <Link href="/contact">Request a Free, Obligation-Free Quote</Link>
+            </Button>
+        </div>
+      </section>
+
+      {/* Safety & Legal Compliance */}
+       <section className="mb-16 text-center">
+            <h2 className="text-3xl font-bold">Safety & Legal Compliance</h2>
+            <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">Professional tree removal must follow safety standards in Johannesburg. Improper cutting can cause property damage, injury, insurance issues, or legal disputes. Our fully insured and trained teams ensure all tree felling operations meet safety expectations and environmental responsibility. We do the job right the first time.</p>
+       </section>
 
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
@@ -229,7 +289,7 @@ export default function TreeFellingPage() {
                     <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="mb-4 text-muted-foreground">We offer tree felling and trimming across:</p>
+                    <p className="mb-4 text-muted-foreground">We offer tree felling and trimming across Johannesburg, including:</p>
                     <ul className="grid grid-cols-2 gap-x-6 gap-y-3">
                     {joburgAreas.map((area) => (
                         <li key={area} className="flex items-center gap-3">
@@ -239,7 +299,7 @@ export default function TreeFellingPage() {
                     ))}
                     </ul>
                     <p className="mt-4 text-sm text-muted-foreground italic">
-                       Not sure if we service your neighbourhood? Just ask — we probably do!
+                       If you’re unsure whether we service your area — contact us. We likely do.
                     </p>
                 </CardContent>
             </Card>
@@ -248,7 +308,7 @@ export default function TreeFellingPage() {
 
       {/* FAQ Section */}
       <section id="faq" className="max-w-4xl mx-auto mb-16">
-        <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions About Tree Felling</h2>
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
@@ -265,25 +325,25 @@ export default function TreeFellingPage() {
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
         <h2 className="text-3xl font-bold">Get a Free Quote for Tree Felling in Johannesburg</h2>
         <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-         Need reliable tree felling or land clearing? Let SIMA Demolitions handle it — safely, efficiently, and affordably.
+         Need reliable, professional tree felling services in Johannesburg? Let SIMA Demolitions handle it safely, efficiently, and affordably.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-                <a href="tel:0784292760"><Phone />Call today</a>
+                <a href="tel:0784292760"><Phone /> Call today</a>
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                <Link href="/contact"><Mail />Book an Assessment</Link>
+                <Link href="/contact"><Mail /> Request a Quote</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
-                <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
-                    <MessageSquare/> WhatsApp Us
-                </a>
+                 <Link href="/contact">
+                    <Axe/> Book an Assessment
+                </Link>
             </Button>
         </div>
-        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary-foreground/80">
             <span className="flex items-center gap-2"><Check /> Safe service</span>
             <span className="flex items-center gap-2"><Check /> Clean site guarantee</span>
-            <span className="flex items-center gap-2"><Check /> Local Johannesburg company</span>
+            <span className="flex items-center gap-2"><Check /> Trusted across Johannesburg</span>
         </div>
       </section>
     </div>
