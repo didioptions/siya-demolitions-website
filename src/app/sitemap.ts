@@ -30,6 +30,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/demolition-bryanston',
     '/demolition-centurion',
     '/demolition-rosebank',
+    '/rubble-removal-alberton',
+    '/rubble-removal-benoni',
+    '/rubble-removal-boksburg',
+    '/rubble-removal-brakpan',
+    '/rubble-removal-centurion',
+    '/rubble-removal-edenvale',
+    '/rubble-removal-germiston',
+    '/rubble-removal-johannesburg-cbd',
+    '/rubble-removal-kempton-park',
+    '/rubble-removal-midrand',
+    '/rubble-removal-nigel',
+    '/rubble-removal-randburg',
+    '/rubble-removal-roodepoort',
+    '/rubble-removal-soweto',
+    '/rubble-removal-springs',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => ({
@@ -41,5 +56,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return sitemapEntries;
 }
-
-    
