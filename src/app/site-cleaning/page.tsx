@@ -9,28 +9,28 @@ import React from "react";
 
 const faqs = [
     {
-        question: "What's included in a standard construction site clean-up in Johannesburg?",
-        answer: "A standard construction site clean-up service from SIMA Demolitions is a comprehensive process designed to leave your site safe, organised, and ready for the next phase. This typically includes the collection and removal of all loose construction debris, such as wood offcuts, drywall pieces, packaging materials, and scrap metal. We also handle the sweeping and clearing of dust and fine particles from surfaces. For larger projects, our service extends to the full removal of building rubble, soil, and concrete via our dedicated <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal</a> teams. We ensure all walkways are clear, potential hazards are removed, and materials are sorted for responsible disposal, adhering strictly to Johannesburg's municipal standards."
+        question: "Do you offer ongoing site cleaning maintenance for long-term projects in Johannesburg?",
+        answer: "Yes, absolutely. Many of our clients are contractors and developers managing long-term construction projects across Johannesburg. We specialize in providing scheduled, ongoing site cleaning services to maintain a safe, organized, and productive work environment from start to finish. We can arrange for daily, weekly, or bi-weekly clean-ups tailored to your project's specific needs and timeline. This prevents the hazardous buildup of debris, ensures clear access for all tradespeople, and helps you adhere to safety regulations, ultimately saving time and money."
     },
     {
-        question: "How do you handle potentially hazardous materials found during a site clean?",
-        answer: "Safety and compliance are our top priorities. If our team identifies materials suspected of being hazardous (e.g., asbestos sheeting, chemical containers, certain old paints), we immediately cease work in that specific area and inform the site manager. As a licensed contractor, we are trained to recognize these materials, but by law, their removal requires a specialized, certified abatement contractor. We assist our clients by recommending and helping coordinate with a certified hazardous material removal company in Johannesburg. This ensures that materials are handled, contained, and disposed of according to the strictest national safety and environmental regulations, protecting your site and your legal standing."
+        question: "Do you clean sites after demolition projects?",
+        answer: "Yes, post-demolition cleaning is one of our core services and a critical step in the redevelopment process. After a structure is taken down, the site is often left with a complex mix of heavy rubble, sharp materials, and fine dust. Our teams are trained to handle this environment safely and efficiently. We manage the entire process, from the initial separation of materials for recycling to the final removal of all debris. Our goal is to provide a seamless transition from demolition to a clean, level, and build-ready site, allowing your new construction to begin without delay."
     },
     {
-        question: "Is your site cleaning service compliant with Johannesburg's municipal codes?",
-        answer: "Absolutely. Full compliance is a non-negotiable part of our service. SIMA Demolitions is a licensed and insured operator, and we adhere to all City of Johannesburg by-laws concerning waste management, transport, and disposal. Every piece of debris and rubble we remove from your site is transported to a registered, environmentally compliant landfill or recycling facility. This professional approach is crucial for our clients, as it protects them from the significant fines and legal issues associated with illegal dumping. We can provide a full paper trail, offering you complete peace of mind that your project is being managed responsibly."
+        question: "Are your site cleaning crews insured and certified?",
+        answer: "Yes, all SIMA Demolitions Projects teams are fully insured, and every member is trained according to strict safety compliance standards for work in Johannesburg. We carry comprehensive public liability insurance to protect your property and our personnel. Our commitment to safety and professionalism is non-negotiable. This ensures that you are working with a legitimate, responsible contractor, giving you complete peace of mind and protecting you from any liability associated with worksite accidents or improper waste handling."
     },
     {
-        question: "How quickly can you start a site cleaning project in Johannesburg?",
-        answer: "We pride ourselves on our rapid response times across Johannesburg. For most standard site cleaning and post-construction clean-up jobs, we can typically deploy a team within 24 to 48 hours. For urgent requests, we do our best to accommodate same-day service depending on crew availability. Our local Johannesburg-based teams are strategically positioned to provide fast and efficient service, whether your project is in <a href='/demolition-sandton' class='text-primary hover:underline'>Sandton</a>, Soweto, or the CBD. We recommend calling us directly to discuss your timeline so we can schedule your clean-up without delay and keep your project on track."
+        question: "Can you handle large-scale commercial and industrial site cleaning projects?",
+        answer: "Yes. We have extensive experience and the necessary equipment to manage large-scale commercial and industrial site cleaning projects throughout Johannesburg and Gauteng. We regularly assist developers with cleanup for shopping centres, office parks, warehouses, and factory sites. Our service is scalable to handle high volumes of debris and can be scheduled to minimize disruption to your operations. Whether it's a one-off clear-out or ongoing maintenance, we are a trusted partner for major commercial and industrial players."
     },
     {
-        question: "Do you offer ongoing site cleaning for long-term construction projects?",
-        answer: "Yes, we specialize in providing ongoing, scheduled site cleaning support for contractors and developers managing long-term projects in Johannesburg. A consistently clean site is safer, more efficient, and presents a more professional image. We can arrange for daily, weekly, or bi-weekly clean-ups tailored to your project's needs. This service prevents the buildup of hazardous debris, ensures clear access for all tradespeople, and helps you maintain a productive work environment from start to finish. This continuous support is a key part of our service for commercial and residential developments."
+        question: "Is professional site cleaning worth it for smaller residential projects?",
+        answer: "Yes, definitely. Even small residential renovations or landscaping projects can generate a surprising amount of waste and hazardous debris. Leftover materials like broken tiles, wood offcuts with nails, and piles of soil can be dangerous for your family and pets. Professional cleanup ensures all waste is removed safely and disposed of legally, protecting your property's value and preventing potential injuries. It provides a clean, safe space for you to enjoy your newly renovated home without the stress and risk of handling the cleanup yourself."
     },
     {
-        question: "How does professional site cleaning improve project safety and efficiency?",
-        answer: "Professional site cleaning directly translates to a safer and more efficient construction project. A cluttered site is a major source of workplace accidents, including trips, falls, and injuries from sharp materials. By keeping walkways, access points, and work areas clear, we significantly reduce these risks. Efficiency is boosted because tradespeople can move freely and find materials easily without navigating around piles of debris. This saves time and reduces frustration. Furthermore, a clean site prevents damage to finished surfaces and allows for easier and more accurate inspections, ensuring your project runs smoothly and on schedule."
+        question: "What's the difference between site cleaning and rubble removal?",
+        answer: "While related, they are distinct services. Rubble removal, which you can learn about on our <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>Rubble Removal Johannesburg</a> page, focuses specifically on the bulk loading and transport of heavy materials like concrete, bricks, and soil. Site cleaning is a more comprehensive service. It includes the removal of general construction debris (wood, plastic, packaging), sweeping, organizing the site, and clearing hazards. Often, a project requires both. We can provide an integrated quote covering all aspects of your site clearing needs."
     }
 ];
 
@@ -42,7 +42,7 @@ const faqSchema = {
     "name": faq.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.answer
+      "text": faq.answer.replace(/<[^>]*>?/gm, '')
     }
   }))
 };
@@ -51,8 +51,6 @@ export default function SiteCleaningPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
     const constructionCleaningImage = PlaceHolderImages.find(p => p.id === 'siteCleaningWorker');
     const demolitionCleaningImage = PlaceHolderImages.find(p => p.id === 'siteCleaningBefore');
-    const industrialCleaningImage = PlaceHolderImages.find(p => p.id === 'industrialDemolition');
-
 
   return (
     <>
@@ -65,10 +63,10 @@ export default function SiteCleaningPage() {
       <section className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Site Cleaning Services in Johannesburg</h1>
         <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-            <Sparkles /> Professional Site Clearance for a Safer, More Productive Worksite
+            <Sparkles /> Professional Construction Site Cleaning & Clearance in Johannesburg
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          A clean construction site is a safe and efficient one. SIMA Demolitions Projects provides expert site cleaning and post-construction cleanup services across Johannesburg. Our licensed and insured teams remove all forms of construction waste, demolition debris, and general site refuse, ensuring your project remains compliant, on schedule, and hazard-free.
+          Keep your construction or demolition site clean, safe, and fully compliant with SIMA Demolitions’ professional site cleaning services in Johannesburg. We provide fast, reliable, and fully insured site clearing for residential, commercial, and industrial projects across Johannesburg and Gauteng.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
@@ -85,8 +83,18 @@ export default function SiteCleaningPage() {
       {/* Intro Section */}
        <section className="max-w-4xl mx-auto mb-16">
             <p className="text-lg text-muted-foreground text-center">
-                At SIMA Demolitions Projects, we understand that effective site management goes beyond major works like <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> or construction. It requires diligent, professional site cleaning. A cluttered worksite in Johannesburg is not just unprofessional—it’s a direct threat to safety and project timelines. Our dedicated teams of site clean up contractors in Johannesburg provide a vital service for developers, builders, and property owners. We handle everything from post-construction cleaning to ongoing site maintenance, ensuring all debris is cleared promptly. By partnering with us, you ensure your site remains a productive, safe, and compliant environment from groundbreaking to handover.
+                Whether you need post-construction cleaning, post-demolition debris removal, or ongoing contractor support, our experienced teams ensure your site is hazard-free, organized, and ready for the next stage of work. Messy sites cause delays. Unsafe debris increases liability. Poor cleanup affects handover deadlines. We solve all of it — professionally.
             </p>
+            <p className="text-lg text-muted-foreground text-center mt-4">
+                As a leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">Johannesburg demolition</Link> and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal company</Link>, we provide a complete, integrated solution for site preparation.
+            </p>
+            <div className="text-center mt-4">
+                <Button variant="link" asChild>
+                    <a href="tel:0784292760">
+                        <Phone className="mr-2 h-5 w-5" /> Call us today for a free quote on site cleaning in Johannesburg.
+                    </a>
+                </Button>
+            </div>
         </section>
 
         {/* Construction Site Cleaning Section */}
@@ -95,10 +103,10 @@ export default function SiteCleaningPage() {
                  <div>
                     <h2 className="text-3xl font-bold mb-4">Construction Site Cleaning Johannesburg</h2>
                     <p className="text-muted-foreground mb-4">
-                        Maintaining a clean and organised construction site is essential for safety and productivity. Our construction site cleaning Johannesburg service is designed for builders and contractors who need a reliable partner to manage waste and debris throughout the building process. We prevent the accumulation of offcuts, packaging, and rubble that can create hazards and slow down work.
+                        Construction projects in Johannesburg generate large volumes of waste — concrete pieces, bricks, packaging materials, timber offcuts, metal scraps, and general rubble. Our construction site cleaning Johannesburg service is designed to keep active building sites safe and operational. We work with builders, contractors, and developers to provide ongoing construction debris removal, final site cleaning before inspections, pre-handover cleanup services, and emergency cleanup after delays or weather damage.
                     </p>
                     <p className="text-muted-foreground">
-                        Our teams can be scheduled for regular clean-ups on a daily or weekly basis, ensuring walkways are always clear and work areas are free of obstruction. This ongoing support not only enhances safety but also improves the overall efficiency of your project, allowing different trades to work seamlessly. For a complete solution, our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">Johannesburg rubble removal</Link> service can be integrated to handle heavy waste.
+                        Our teams clear walkways, remove trip hazards, and maintain organized zones so your project stays productive and compliant. We understand tight deadlines. Our crews respond quickly across areas including Sandton, Midrand, Randburg, and surrounding regions.
                     </p>
                  </div>
                  <div>
@@ -116,10 +124,7 @@ export default function SiteCleaningPage() {
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Post-Demolition Cleaning Services</h2>
                     <p className="text-muted-foreground mb-4">
-                        After a structure comes down, the real cleanup begins. Our post-demolition cleaning service is a critical step in preparing a site for new construction. Demolition creates a wide range of debris, from large chunks of concrete and brick to smaller, more hazardous materials like shattered glass and exposed rebar. Our teams are trained to handle this complex environment safely.
-                    </p>
-                    <p className="text-muted-foreground">
-                        As leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">site clean up contractors in Johannesburg</Link>, we manage the entire process, including separating materials for recycling and ensuring all waste is removed. We leave the site not just clear, but also safe and level, providing a perfect blank slate for excavation and foundation work to begin without delay.
+                        After demolition, Johannesburg sites are often left covered in broken materials, dust, and hazardous debris. Our post-demolition cleaning services in Johannesburg ensure your property is safe and ready for redevelopment. We handle concrete and masonry debris removal, structural material clearing, site leveling, and bulk waste removal in preparation for new construction. If you’ve used our <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition service</Link>, we seamlessly transition into full site cleanup, saving you time and coordination stress. This integrated approach strengthens safety, reduces risks, and keeps your project moving forward.
                     </p>
                 </div>
             </div>
@@ -127,81 +132,57 @@ export default function SiteCleaningPage() {
 
       {/* Project Types Section */}
       <section id="project-types" className="mb-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Residential, Commercial & Industrial Site Cleaning</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Residential & Commercial Site Cleaning</h2>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="shadow-lg">
                 <CardHeader>
                     <CardTitle className="flex items-center gap-3"><Home className="h-6 w-6 text-accent" /> Residential Site Cleaning</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground text-sm">Perfect for homeowners and small builders, we clear debris from renovations, garden landscaping, and DIY projects. We leave your property spotless and safe for your family.</p>
+                    <p className="text-muted-foreground text-sm">Home renovation projects, yard clearing, boundary wall removals, and property sale preparations often leave behind unwanted waste. Our residential site clean up contractors Johannesburg teams remove garden debris, building rubble, old paving, and garage debris, leaving your property clean, presentable, and compliant.</p>
                 </CardContent>
             </Card>
             <Card className="shadow-lg">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><Building className="h-6 w-6 text-accent" /> Commercial Site Cleaning</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><Building className="h-6 w-6 text-accent" /> Commercial & Developer Site Cleaning</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground text-sm">We provide post-construction cleaning for commercial properties, including office parks in <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link> and retail spaces in <Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link>, ensuring a professional handover to tenants or owners.</p>
+                    <p className="text-muted-foreground text-sm">Commercial projects require precision and reliability. We provide commercial site cleaning Johannesburg services for shopping centres, office developments in <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link>, warehouses, and large land clearing projects. Developers rely on us for efficient large-scale waste clearing across Johannesburg and Gauteng.</p>
                 </CardContent>
             </Card>
             <Card className="shadow-lg lg:col-span-1 md:col-span-2">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-3"><Factory className="h-6 w-6 text-accent" /> Industrial Site Clearing</CardTitle>
+                    <CardTitle className="flex items-center gap-3"><Factory className="h-6 w-6 text-accent" /> Industrial Site Cleaning Johannesburg</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="text-muted-foreground text-sm">Our teams are equipped for heavy-duty industrial site clearing in Johannesburg. We handle waste from factories and warehouses, adhering to strict safety and environmental protocols.</p>
+                    <p className="text-muted-foreground text-sm">Industrial and warehouse sites generate heavy, bulky waste. Our industrial site clearing Johannesburg teams are trained to handle large debris volumes while prioritizing safety compliance. We assist with factory site clean-outs, machinery area debris clearing, storage yard waste removal, and land clearing for redevelopment. Safety is non-negotiable. Our crews are trained, insured, and equipped to work within active industrial environments.</p>
                 </CardContent>
             </Card>
         </div>
       </section>
 
-      {/* CTA Block */}
-        <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg mb-16">
-            <h2 className="text-3xl font-bold">Keep Your Project Moving</h2>
-            <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-                Don't let site debris cause delays or accidents. Contact us for a fast, professional cleaning quote.
-            </p>
-            <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center">
-                <Button size="lg" variant="secondary" asChild>
-                    <a href="tel:0784292760"><Phone />Call for an Immediate Cleanup</a>
-                </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                    <Link href="/contact"><Mail />Get a Free Quote</Link>
-                </Button>
-            </div>
-        </section>
-
         {/* Cost Factors Section */}
         <section id="cost-factors" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">What Affects Site Cleaning Costs in Johannesburg?</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+               Many clients ask what determines pricing for site cleaning in Johannesburg. Costs typically depend on a few key factors. We provide transparent quotes with no hidden costs.
+            </p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2"><DollarSign className="text-accent" /> Volume and Type of Debris</CardTitle>
-                        </CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">The primary cost factor is the amount and nature of the waste. Heavy, dense materials like concrete require more labour and transport capacity than light construction debris. We assess the volume in cubic meters to provide an accurate quote.</p></CardContent>
-                    </Card>
-                     <Card>
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2"><DollarSign className="text-accent" /> Site Access and Location</CardTitle>
-                        </CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">The accessibility of your Johannesburg site is key. Sites with easy truck access allow for faster, more efficient loading. Difficult access in dense areas or properties with narrow entry points may require more manual labour or specialized equipment, influencing the final cost.</p></CardContent>
-                    </Card>
+                    <p><strong>1. Volume of Debris:</strong> Large-scale construction waste requires more labor and transport.</p>
+                    <p><strong>2. Type of Waste:</strong> Heavy concrete, soil, and masonry cost more to remove than light packaging waste.</p>
+                    <p><strong>3. Site Accessibility:</strong> Tight urban spaces, inner-city properties, or limited vehicle access may increase operational time.</p>
+                    <p><strong>4. Urgency:</strong> Same-day or emergency cleanups may require priority scheduling.</p>
+                    <p><strong>5. Ongoing Contractor Support:</strong> Discounted rates may apply for ongoing construction site maintenance.</p>
                 </div>
                  <div className="space-y-4">
                     <Card>
                         <CardHeader>
-                            <CardTitle className="flex items-center gap-2"><DollarSign className="text-accent" /> Project Scope and Urgency</CardTitle>
+                            <CardTitle className="flex items-center gap-2"><DollarSign className="text-accent" /> Transparent, No-Obligation Quotes</CardTitle>
                         </CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">The scope of the project—whether it's a once-off post-construction cleanup or an ongoing maintenance contract—will affect pricing. Urgent or after-hours service requests may also incur additional charges. We provide clear, transparent pricing for all scenarios.</p></CardContent>
-                    </Card>
-                     <Card>
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2"><DollarSign className="text-accent" /> Labour and Disposal Fees</CardTitle>
-                        </CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">Our quotes are all-inclusive, covering the cost of our professional crew, transport to a licensed facility, and all municipal or private disposal fees. This ensures there are no hidden costs, giving you a clear and predictable budget for your site cleaning needs.</p></CardContent>
+                        <CardContent><p className="text-sm text-muted-foreground">We provide a clear, detailed, and obligation-free quote before any work begins. This ensures you understand all costs involved, including labor, transport, and disposal fees, giving you full control over your project budget.</p>
+                        <Button asChild className="mt-4"><Link href="/contact">Request a Free Quote</Link></Button>
+                        </CardContent>
                     </Card>
                 </div>
             </div>
@@ -209,23 +190,25 @@ export default function SiteCleaningPage() {
 
       {/* Why Choose Us & Areas Section */}
       <section className="grid md:grid-cols-5 gap-8 mb-16">
-        <div className="md:col-span-3">
+        <div className="md:col-span-3 bg-card p-6 rounded-lg">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2"><ShieldCheck /> Why Choose SIMA for Site Cleaning?</h2>
-            <p className="text-muted-foreground mb-6">We are more than just cleaners; we are your partners in maintaining a safe, compliant, and efficient worksite. Our professionalism and commitment to standards set us apart as the premier site clean up contractors in Johannesburg.</p>
-            <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>**Fully Licensed & Insured:** Complete peace of mind knowing you're working with compliant professionals.</span></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>**Experienced Crews:** Our teams are trained in safety protocols and efficient cleaning techniques.</span></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>**Local Johannesburg Experts:** We understand local regulations and logistical challenges.</span></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>**Eco-Friendly Disposal:** We prioritize recycling and use only registered disposal sites.</span></div>
-            </div>
+            <p className="text-muted-foreground mb-6">We combine demolition, rubble removal, and site cleaning expertise — making us a complete site preparation partner.</p>
+            <ul className="grid sm:grid-cols-2 gap-4">
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Johannesburg-based professional teams</span></li>
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Fully licensed and insured</span></li>
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Fast response times</span></li>
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Affordable, transparent pricing</span></li>
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Safety-first approach</span></li>
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1"/><span>Trusted by contractors and developers</span></li>
+            </ul>
         </div>
         <div className="md:col-span-2">
             <Card className="shadow-lg h-full">
                 <CardHeader>
-                    <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve in Gauteng</CardTitle>
+                    <CardTitle className="flex items-center gap-2"><MapPin/> Areas We Serve in Johannesburg & Gauteng</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <p className="mb-4 text-muted-foreground">Our site cleaning teams operate across the entire Johannesburg region, including:</p>
+                    <p className="mb-4 text-muted-foreground">Our site cleaning teams cover major areas including:</p>
                     <ul className="columns-2 space-y-2">
                         <li><Link href="/rubble-removal-sandton" className="text-sm hover:text-primary">Sandton</Link></li>
                         <li><Link href="/rubble-removal-midrand" className="text-sm hover:text-primary">Midrand</Link></li>
@@ -235,11 +218,24 @@ export default function SiteCleaningPage() {
                         <li>Alberton</li>
                         <li>Germiston</li>
                         <li>Johannesburg CBD</li>
+                        <li>Centurion</li>
+                        <li>Kempton Park</li>
+                        <li>Benoni</li>
+                        <li>Boksburg</li>
                     </ul>
+                     <p className="mt-4 text-sm text-muted-foreground italic">
+                       Don’t see your area listed? Contact us — we likely serve your location across Gauteng.
+                    </p>
                 </CardContent>
             </Card>
         </div>
       </section>
+
+      {/* Safety & Environmental Responsibility */}
+      <section className="mb-16 text-center">
+            <h2 className="text-3xl font-bold">Safety & Environmental Responsibility</h2>
+            <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">Professional site cleaning services in Johannesburg must meet stringent safety and environmental standards. We prioritize responsible waste disposal, legal dumping compliance, hazard-free cleanup processes, and the safe handling of heavy materials. Improper dumping damages the environment and creates significant legal risks for property owners. Working with licensed professionals like SIMA protects your project, your reputation, and our community.</p>
+       </section>
 
       {/* FAQ Section */}
       <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -257,23 +253,28 @@ export default function SiteCleaningPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="text-center bg-card border-t border-b py-16">
-        <h2 className="text-3xl font-bold">Get a Clean, Safe, and Compliant Site Today</h2>
-        <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">
-         Contact the leading site clean up contractors in Johannesburg. Let SIMA Demolitions handle the mess, so you can focus on the build.
+      <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
+        <h2 className="text-3xl font-bold">Keep Your Site Clean – Get a Free Cleaning Quote Today</h2>
+        <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
+         Looking for reliable site cleaning in Johannesburg? Let SIMA Demolitions handle the debris so you can focus on what matters — building, renovating, and delivering projects on time.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-                <a href="tel:0784292760"><Phone />Call for a Free Assessment</a>
+            <Button size="lg" variant="secondary" asChild>
+                <a href="tel:0784292760"><Phone /> Call us today</a>
             </Button>
-             <Button size="lg" variant="secondary" asChild>
-                <Link href="/contact"><Mail />Request a Quote Online</Link>
+             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                <Link href="/contact"><Mail /> Request a Quote</Link>
             </Button>
             <Button size="lg" variant="secondary" asChild>
                  <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">
-                    <MessageSquare/> WhatsApp for Info
+                    <MessageSquare/> Book a Clean-Up
                 </a>
             </Button>
+        </div>
+        <div className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary-foreground/80">
+            <span className="flex items-center gap-2"><Check /> Fast response.</span>
+            <span className="flex items-center gap-2"><Check /> Safety-first service.</span>
+            <span className="flex items-center gap-2"><Check /> Trusted across Johannesburg.</span>
         </div>
       </section>
     </div>
