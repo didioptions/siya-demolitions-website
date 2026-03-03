@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tree Felling Johannesburg | Safe Tree Cutting & Removal',
-  description: 'Certified tree felling services in Johannesburg. Remove hazardous or unwanted trees safely with our experienced team. Residential and commercial service available.',
+  title: 'Tree Felling Johannesburg | Safe Tree Cutting & Removal | Free Quotes',
+  description: 'Expert tree felling in Johannesburg. Safe, licensed & insured tree removal for residential & commercial properties. Emergency service available. Get a free quote.',
 };
 
 export default function TreeFellingLayout({

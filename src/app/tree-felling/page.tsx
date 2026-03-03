@@ -62,21 +62,39 @@ const joburgAreas = [
 const faqs = [
     {
         question: "Do I need permission to cut down a tree in Johannesburg?",
-        answer: "In some cases, protected or heritage trees may require municipal approval before removal. It’s important to confirm regulations before cutting large or protected species. We can guide you on general compliance considerations when providing your quote."
+        answer: "In some cases, yes. The City of Johannesburg has regulations to protect certain trees, particularly large, indigenous species or those deemed to have heritage value. While most common residential trees don't require a permit, it's always best to be sure. As part of our service, we can help advise you on the likelihood of needing a permit based on the tree's species, size, and location. Our experience across Johannesburg suburbs like Sandton and Randburg means we are familiar with these considerations, ensuring your tree removal project remains fully compliant."
     },
     {
-        question: "What happens after a tree is felled?",
-        answer: "After cutting, we remove branches and trunk sections. Cleanup is included unless otherwise specified. Stump removal or root grinding can also be discussed during quotation."
+        question: "What happens to all the wood and branches after a tree is felled?",
+        answer: "Our standard tree felling service includes the complete removal of all debris from your property. We cut the trunk and larger branches into manageable sections for loading and transport. All leaves, twigs, and smaller branches are raked up and cleared away. We leave your site clean and tidy. For clients who wish to keep the wood for firewood, we can cut it to size for you. We also offer stump grinding and root removal as additional services to leave the ground completely level and ready for new landscaping or construction."
     },
     {
-        question: "Can you remove trees near walls or houses?",
-        answer: "Yes. Controlled sectional dismantling allows us to safely remove trees near buildings, fences, or tight areas without causing structural damage."
+        question: "Can you safely remove a large tree that is very close to my house?",
+        answer: "Absolutely. This is a core part of our expertise. For trees in confined spaces or close to structures, we use a technique called sectional dismantling. Instead of felling the tree in one piece, our skilled arborists climb the tree using safety harnesses and cut it down section by section from the top down. We use ropes and specialized rigging to carefully lower each piece to the ground in a controlled manner. This precision work prevents any damage to your house, roof, walls, or garden, making it the safest method for residential tree removal in Johannesburg."
     },
     {
-        question: "Do you offer emergency tree removal?",
-        answer: "Yes. We assist with urgent tree removal when possible, especially after storms or high winds."
+        question: "Do you offer emergency tree removal services after hours or on weekends?",
+        answer: "Yes, we understand that emergencies like storm damage don't happen on a schedule. We offer an emergency tree removal Johannesburg service to address urgent situations where a fallen or unstable tree poses an immediate threat to your property or safety. We prioritize these call-outs to dispatch a team as quickly as possible, often outside of standard business hours. Our goal is to safely remove the hazard, clear any blocked access, and prevent further damage. If you have a tree-related emergency, call us directly for the fastest response."
+    },
+     {
+        question: "How much does affordable tree felling in Johannesburg typically cost?",
+        answer: "The cost of tree felling varies greatly depending on the project's complexity. Key factors include the tree's size and height, its location and proximity to buildings, site accessibility, and whether you require stump and root removal. A small, easily accessible tree will be more affordable to remove than a large, complex tree in a tight space requiring sectional dismantling. We provide free, detailed, and no-obligation quotes so you know the full cost upfront. Our pricing is competitive, and we aim to deliver affordable tree felling solutions without ever compromising on safety or professionalism."
     }
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
 
 export default function TreeFellingPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'treeCuttingBefore');
@@ -85,6 +103,11 @@ export default function TreeFellingPage() {
     const emergencyImage = PlaceHolderImages.find(p => p.id === 'treeCuttingCleanup');
 
   return (
+    <>
+    <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
       {/* Hero Section */}
       <section className="text-center mb-16">
@@ -93,10 +116,7 @@ export default function TreeFellingPage() {
             <Axe /> Safe, Controlled Tree Cutting & Removal in Johannesburg
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Looking for safe, professional, and affordable tree felling services in Johannesburg? SIMA Demolitions provides expert tree cutting, trimming, controlled removal, and land clearing solutions for residential, commercial, and development properties across Johannesburg and Gauteng.
-        </p>
-        <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-          Tree removal is dangerous when handled incorrectly. Our trained, fully insured team uses professional equipment and controlled felling techniques to ensure safe removal without damage to nearby structures. Whether you need emergency tree removal after a storm or site clearing before a new development, we’ve got you covered.
+          Looking for safe, professional, and affordable tree felling services in Johannesburg? SIMA Demolitions provides expert tree cutting, trimming, controlled removal, and land clearing solutions for residential, commercial, and development properties across Johannesburg and Gauteng. Tree removal is dangerous when handled incorrectly. Our trained, fully insured team uses professional equipment and controlled felling techniques to ensure safe removal without damage to nearby structures. Whether you need emergency tree removal after a storm or site clearing before a new development, we’ve got you covered.
         </p>
         <Button size="lg" className="mt-6" asChild>
           <a href="tel:0784292760">
@@ -347,5 +367,6 @@ export default function TreeFellingPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
