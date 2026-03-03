@@ -58,6 +58,11 @@ const nextConfig: NextConfig = {
         destination: '/demolition-johannesburg',
         permanent: true,
       },
+       {
+        source: '/rubble-removal',
+        destination: '/rubble-removal-johannesburg',
+        permanent: true,
+      },
     ]
   },
 };

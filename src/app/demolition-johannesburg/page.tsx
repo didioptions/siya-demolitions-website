@@ -100,7 +100,7 @@ const comprehensiveServices = [
         imageUrlId: 'concreteBreaking',
         description: "Professional removal of concrete slabs, driveways, parking lots, and asphalt surfaces. Proper disposal and site preparation for new construction.",
         subServices: ["Concrete breaking", "Driveway removal", "Parking lot demolition", "Slab removal"],
-        link: "/rubble-removal",
+        link: "/rubble-removal-johannesburg",
     },
     {
         title: "Full Site Clearing & Earthworks in Johannesburg",

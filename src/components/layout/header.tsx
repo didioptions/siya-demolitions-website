@@ -25,7 +25,7 @@ const mainNavLinks = [
 
 const serviceNavLinks = [
   { href: "/demolition-johannesburg", label: "Demolition Johannesburg" },
-  { href: "/rubble-removal", label: "Rubble Removal" },
+  { href: "/rubble-removal-johannesburg", label: "Rubble Removal" },
   { href: "/site-cleaning", label: "Site Cleaning" },
   { href: "/tree-felling", label: "Tree Felling" },
   { href: "/swimming-pool-demolition", label: "Swimming Pool Demolition" },

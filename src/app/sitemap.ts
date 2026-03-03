@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/gallery',
     '/plant-hire',
-    '/rubble-removal',
+    '/rubble-removal-johannesburg',
     '/site-cleaning',
     '/swimming-pool-demolition',
     '/tree-felling',
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${page}`,
     lastModified: new Date(),
     changeFrequency: 'monthly',
-    priority: page === '/' ? 1 : (page === '/demolition-johannesburg' ? 0.9 : 0.8),
+    priority: page === '/' ? 1 : (page.includes('johannesburg') ? 0.9 : 0.8),
   }));
 
   return sitemapEntries;

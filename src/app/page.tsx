@@ -25,7 +25,7 @@ const services = [
     title: "Rubble Removal",
     icon: <Trash2 className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Quick and affordable rubble removal services in Johannesburg. We clear construction waste, debris, and site materials. Same-day service available. Call for a quote.",
-    link: "/rubble-removal",
+    link: "/rubble-removal-johannesburg",
     buttonText: "Clear Your Site Fast with Us"
   },
   {
@@ -100,7 +100,7 @@ const servicesSchema = [
     "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.",
     "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://simademolitions.co.za/rubble-removal"
+    "url": "https://simademolitions.co.za/rubble-removal-johannesburg"
   },
   {
     "@context": "https://schema.org",
