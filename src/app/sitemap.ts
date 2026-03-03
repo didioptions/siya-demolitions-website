@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/gallery',
     '/plant-hire',
     '/rubble-removal-johannesburg',
+    '/rubble-removal-sandton',
     '/site-cleaning',
     '/swimming-pool-demolition',
     '/tree-felling',
