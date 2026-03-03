@@ -97,7 +97,7 @@ export default function DemolitionRoodepoortPage() {
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-randburg">Randburg Services</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-soweto">Soweto Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-fourways">Projects in Fourways</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Site Clearing Experts</Link></Button>
             </div>
         </section>
 

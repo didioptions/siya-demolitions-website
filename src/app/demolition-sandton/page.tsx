@@ -92,12 +92,12 @@ export default function DemolitionSandtonPage() {
         
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Our Northern Suburbs Service Network</h2>
-             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
+             <p className="mt-2 text-muted-foreground">We offer a full range of demolition and site clearing services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-randburg">Demolition in Randburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-rosebank">Rosebank Services</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-bryanston">Bryanston Demolition</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-randburg">Services in Randburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Licensed Rubble Removal</Link></Button>
             </div>
         </section>
 

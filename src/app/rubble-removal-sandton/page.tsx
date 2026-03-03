@@ -166,8 +166,9 @@ export default function RubbleRemovalSandtonPage() {
             <p className="mt-2 text-muted-foreground">We offer a full range of demolition and site clearing services across the northern suburbs and greater Johannesburg.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Rubble Removal Johannesburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-sandton">Demolition in Sandton</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-randburg">Rubble Removal Randburg</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Demolition Services</Link></Button>
-                <Button variant="outline" asChild><Link href="/rubble-removal-midrand">Rubble Removal Midrand</Link></Button>
             </div>
         </section>
 
