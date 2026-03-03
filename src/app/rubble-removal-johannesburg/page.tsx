@@ -6,39 +6,7 @@ import { Check, Phone, Mail, Building, Home, Sparkles, Trash2, MapPin, Quote } f
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-
-const joburgAreas = [
-    { 
-        name: "Sandton",
-        link: "/rubble-removal-sandton",
-        crossLinks: [
-            { name: "Randburg", href: "/demolition-randburg" },
-            { name: "Midrand", href: "/demolition-midrand" },
-        ]
-    },
-    { name: "Randburg", link: "/demolition-randburg", crossLinks: [] },
-    { name: "Roodepoort", link: "/demolition-roodepoort", crossLinks: [] },
-    { name: "Soweto", link: "/demolition-soweto", crossLinks: [] },
-    { name: "Midrand", link: "/demolition-midrand", crossLinks: [] },
-    { name: "Germiston", link: "/demolition-germiston", crossLinks: [] },
-    { name: "Alberton", link: "/demolition-alberton", crossLinks: [] },
-    { 
-        name: "Johannesburg CBD",
-        link: "/demolition-johannesburg",
-        crossLinks: [
-            { name: "Rosebank", href: "/demolition-rosebank" },
-        ]
-    },
-    { name: "Centurion", link: "/demolition-centurion", crossLinks: [] },
-    { name: "Kempton Park", link: "/demolition-kempton-park", crossLinks: [] },
-    { name: "Benoni", link: "/demolition-johannesburg", crossLinks: [] },
-    { name: "Boksburg", link: "/demolition-boksburg", crossLinks: [] },
-    { name: "Brakpan", link: "/demolition-johannesburg", crossLinks: [] },
-    { name: "Edenvale", link: "/demolition-edenvale", crossLinks: [] },
-    { name: "Nigel", link: "/demolition-johannesburg", crossLinks: [] },
-    { name: "Springs", link: "/demolition-johannesburg", crossLinks: [] },
-];
-
+import React from "react";
 
 const faqs = [
     {
@@ -54,19 +22,19 @@ const faqs = [
         answer: "Yes, all waste removal in Johannesburg must comply with municipal by-laws and national environmental regulations. It is illegal to dump rubble on unauthorized land, and doing so can result in significant fines for the property owner. As a licensed waste carrier, SIMA Demolitions Projects ensures that 100% of the rubble we collect is transported to and disposed of at registered, fully compliant landfill and recycling facilities. Using our professional service protects you from any legal liability associated with improper waste disposal and guarantees your project remains environmentally responsible and compliant from start to finish."
     },
     {
-        question: "Is there a minimum or maximum amount of rubble you collect?",
-        answer: "No job is too big or too small for our team. We cater to a wide range of needs, from removing a small pile of bricks after a weekend DIY project to managing continuous, large-scale rubble removal for major construction developments. Our pricing is flexible and based on the volume of material, so you only pay for what you need cleared. We have the fleet and manpower to handle single loads or arrange for multiple trucks and ongoing service for larger, long-term projects, ensuring we can provide a cost-effective solution for any scenario in Johannesburg."
+        question: "Do you accept small-volume rubble removal jobs?",
+        answer: "Yes, no job is too big or too small. We cater to a wide range of needs, from removing a small pile of bricks after a weekend DIY project to managing continuous, large-scale rubble removal for major construction developments. Our pricing is flexible and based on the volume of material, so you only pay for what you need cleared. We have the fleet and manpower to handle single loads or arrange for multiple trucks and ongoing service for larger, long-term projects, ensuring we can provide a cost-effective solution for any scenario in Johannesburg."
     },
     {
-        question: "How is the cost of rubble removal calculated?",
+        question: "How is the cost of rubble removal calculated in Johannesburg?",
         answer: "The cost is primarily determined by the volume and type of rubble, measured in cubic meters or truckloads. Other factors include the accessibility of your site—if we can easily position our trucks close to the rubble, the loading process is faster and more cost-effective. The total number of loads required and the distance to the nearest registered disposal facility also play a role due to transport costs and municipal dumping fees. We provide a transparent, all-inclusive quote upfront with no hidden costs, so you know exactly what to expect before we begin the work."
     },
     {
-        question: "Do you recycle the rubble you collect?",
+        question: "Do you recycle the rubble you collect in Gauteng?",
         answer: "We are committed to environmental responsibility. Wherever possible, we ensure that the rubble collected is sorted and processed for recycling. Materials like clean concrete, bricks, and asphalt are often crushed and repurposed as aggregate for road construction and other building applications. Metals are sent to scrap dealers for recycling. By diverting waste from landfills, we not only help conserve natural resources but also contribute to a more sustainable construction industry in Gauteng. We always use disposal facilities that have established recycling programs."
     },
     {
-        question: "Do you provide the labour for loading the rubble?",
+        question: "Is the labour for loading the rubble included in the service?",
         answer: "Yes, our rubble removal service is all-inclusive. The quote we provide includes a professional team equipped with the necessary safety gear and tools to load all the debris onto our trucks efficiently and safely. You do not need to provide any labour. Our team will handle the entire process from start to finish, ensuring the site is cleared correctly and left tidy. This full-service approach saves you time, prevents potential injuries associated with heavy lifting, and ensures the job is done to professional standards."
     },
     {
@@ -118,12 +86,12 @@ export default function RubbleRemovalJohannesburgPage() {
                 </Button>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">Get a fast, no-obligation quote and a clean site, guaranteed.</p>
-             {heroImage && <div className="mt-8 max-w-4xl mx-auto"><Image src={heroImage.imageUrl} alt="Professional team clearing demolition rubble in Johannesburg" data-ai-hint="rubble removal team" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
+             {heroImage && <div className="mt-8 max-w-4xl mx-auto"><Image src={heroImage.imageUrl} alt="Rubble removal and site clearing Johannesburg" data-ai-hint="rubble removal team" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
         </section>
 
         <section className="max-w-4xl mx-auto mb-16">
             <p className="text-lg text-muted-foreground text-center">
-            A messy, debris-filled site isn't just an eyesore—it's a safety hazard and a major project bottleneck. SIMA Demolitions Projects provides fast, reliable, and licensed rubble removal services across Johannesburg and Gauteng. Whether you're a homeowner completing a renovation, a contractor managing a building site after a <Link href="/demolition-johannesburg" className="text-primary hover:underline">full or partial demolition</Link>, or a developer preparing land for a new project, our team ensures your site is cleared efficiently and in full compliance with municipal regulations. We handle everything from loading and transport to responsible disposal, leaving you with a clean, safe, and build-ready property. Our mission is to remove the waste so you can focus on the work.
+            A messy, debris-filled site isn't just an eyesore—it's a safety hazard and a major project bottleneck. SIMA Demolitions Projects provides fast, reliable, and licensed rubble removal in Johannesburg. Whether you're a homeowner completing a renovation, a contractor managing a building site after a <Link href="/demolition-johannesburg" className="text-primary hover:underline">full or partial demolition</Link>, or a developer preparing land for a new project, our team ensures your site is cleared efficiently and in full compliance with municipal regulations. As the leading licensed rubble removal company in Johannesburg, we handle everything from loading and transport to responsible disposal, leaving you with a clean, safe, and build-ready property. Our mission is to remove the waste so you can focus on the work.
             </p>
         </section>
 
@@ -137,19 +105,19 @@ export default function RubbleRemovalJohannesburgPage() {
                 <div className="lg:col-span-2 space-y-8">
                      <div>
                         <h3 className="text-xl font-semibold mb-2">Construction Rubble</h3>
-                        <p className="text-muted-foreground">The most common waste we handle. This includes leftover bricks from walling, broken concrete from foundation or slab removal, and discarded roof tiles. We ensure these heavy materials are loaded safely and transported to facilities where they can be crushed and recycled into aggregate, reducing landfill burden and promoting a circular economy in Johannesburg's construction sector.</p>
+                        <p className="text-muted-foreground">The most common waste we handle. This includes leftover bricks from walling, broken concrete from foundation or slab removal, and discarded roof tiles. We ensure these heavy materials are loaded safely and transported from your Johannesburg site to facilities where they can be crushed and recycled into aggregate. This reduces landfill burden and promotes a circular economy in Gauteng's construction sector.</p>
                      </div>
                      <div>
                         <h3 className="text-xl font-semibold mb-2">Mixed Demolition Waste</h3>
-                        <p className="text-muted-foreground">After a partial or full demolition, sites are often left with a complex mix of materials. Our teams are trained to handle wood, drywall, insulation, old wiring, and other general waste. We clear everything, ensuring no hazardous materials are left behind and that the site is completely free of debris for the safety of subsequent contractors and for full compliance with site handover protocols.</p>
+                        <p className="text-muted-foreground">After a partial or full demolition, Johannesburg sites are often left with a complex mix of materials. Our teams are trained to handle wood, drywall, insulation, old wiring, and other general waste. We provide complete site clearing in Johannesburg, ensuring no hazardous materials are left behind and that the site is completely free of debris for the safety of subsequent contractors and for full compliance with site handover protocols.</p>
                      </div>
                      <div>
                         <h3 className="text-xl font-semibold mb-2">Soil, Sand & Stones</h3>
-                        <p className="text-muted-foreground">Excavation and landscaping projects generate large volumes of earth materials. We efficiently remove excess soil, sand from old building mixes, and stones of all sizes. Clearing this heavy, bulky material is essential for site levelling and preparation for new foundations, paving, or landscaping. We ensure it's disposed of correctly according to Gauteng's environmental regulations.</p>
+                        <p className="text-muted-foreground">Excavation and landscaping projects generate large volumes of earth materials. We efficiently remove excess soil, sand from old building mixes, and stones of all sizes. Clearing this heavy, bulky material is essential for site levelling and preparation for new foundations, paving, or landscaping. We ensure all soil and sand is disposed of correctly according to Gauteng's environmental regulations.</p>
                      </div>
                      <div>
                         <h3 className="text-xl font-semibold mb-2">Garden & Land-Clearing Waste</h3>
-                        <p className="text-muted-foreground">Preparing a property for development often involves extensive land clearing. We remove all organic waste, including felled trees, large branches, stumps, shrubs, and general garden refuse. This service is crucial for preventing pests, reducing fire risk, and creating a clean slate for architects and landscapers to begin their work. We turn overgrown plots into build-ready sites.</p>
+                        <p className="text-muted-foreground">Preparing a property for development often involves extensive land clearing. As part of our garden and yard waste clearing in Johannesburg, we remove all organic waste, including felled trees, large branches, stumps, and shrubs. This service is crucial for preventing pests, reducing fire risk, and creating a clean slate for architects and landscapers to begin their work. We turn overgrown plots into build-ready sites.</p>
                      </div>
                 </div>
             </div>
@@ -187,7 +155,7 @@ export default function RubbleRemovalJohannesburgPage() {
                         <CardTitle className="flex items-center gap-3"><Home className="h-6 w-6 text-accent" /> Residential Rubble Removal</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                        <p className="text-muted-foreground">Ideal for homeowners and small builders, we provide a fast and affordable solution for clearing waste from your property. We ensure your home is left clean and safe, with no debris left behind.</p>
+                        <p className="text-muted-foreground">Ideal for homeowners and small builders in Johannesburg, we provide a fast and affordable solution for clearing waste from your property. We ensure your home is left clean and safe, with no debris left behind.</p>
                         <ul className="mt-4 space-y-2">
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span className="text-muted-foreground">Post-renovation debris from kitchens and bathrooms.</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span className="text-muted-foreground">Waste from small-scale demolitions like garages or walls.</span></li>
@@ -200,21 +168,21 @@ export default function RubbleRemovalJohannesburgPage() {
                         <CardTitle className="flex items-center gap-3"><Building className="h-6 w-6 text-accent" /> Construction & Developer Support</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-grow">
-                        <p className="text-muted-foreground">We are a trusted partner for contractors and developers who require reliable, scheduled, and large-scale site clearing services to keep their projects on track and compliant.</p>
+                        <p className="text-muted-foreground">We are a trusted partner for contractors and developers who require reliable, scheduled, and large-scale site clearing services to keep their Johannesburg projects on track and compliant.</p>
                         <ul className="mt-4 space-y-2">
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span className="text-muted-foreground">Ongoing rubble removal for large construction sites.</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span className="text-muted-foreground">Complete site clearance after demolitions.</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span className="text-muted-foreground">Multi-load removals for housing developments.</span></li>
                         </ul>
-                         {commercialImage && <div className="mt-4 aspect-video relative"><Image src={commercialImage.imageUrl} alt="Large-scale commercial rubble removal in Gauteng" data-ai-hint="commercial site" fill className="rounded-lg object-cover" /></div>}
+                         {commercialImage && <div className="mt-4 aspect-video relative"><Image src={commercialImage.imageUrl} alt="Large-scale commercial rubble removal Gauteng" data-ai-hint="commercial site" fill className="rounded-lg object-cover" /></div>}
                     </CardContent>
                 </Card>
             </div>
         </section>
-
+        
         {/* Why Choose Us & Cost Factors Section */}
-        <section className="grid lg:grid-cols-5 gap-8 mb-16">
-            <div className="lg:col-span-3 bg-card p-6 rounded-lg">
+        <section className="grid lg:grid-cols-2 gap-8 mb-16 items-start">
+            <div className="bg-card p-6 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Why Choose SIMA for Rubble Removal in Johannesburg?</h2>
                 <p className="text-muted-foreground mb-6">We combine speed, affordability, and professionalism to provide a service that Johannesburg contractors and homeowners trust.</p>
                 <ul className="grid sm:grid-cols-2 gap-4">
@@ -226,14 +194,14 @@ export default function RubbleRemovalJohannesburgPage() {
                     <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Full Regulatory Compliance:** We handle all waste legally and responsibly.</span></li>
                 </ul>
             </div>
-            <div className="lg:col-span-2">
-                 <h2 className="text-2xl font-bold mb-4">Cost Factors for Rubble Removal in Johannesburg</h2>
-                 <p className="text-muted-foreground mb-4">Our quotes are transparent and based on a few key factors:</p>
+            <div>
+                 <h2 className="text-2xl font-bold mb-4">Understanding Rubble Removal Costs in Johannesburg</h2>
+                 <p className="text-muted-foreground mb-4">Our quotes are transparent and based on a few key factors to ensure you get a fair price:</p>
                  <ul className="space-y-3">
-                    <li><strong className="block">Volume & Type of Debris:</strong> The total amount of rubble (in m³) and its type (e.g., clean concrete vs. mixed waste) are the primary cost drivers.</li>
-                    <li><strong className="block">Site Accessibility:</strong> How easily our trucks can access the rubble impacts loading time and labour costs.</li>
-                    <li><strong className="block">Number of Loads:</strong> The total number of trips required to clear your site.</li>
-                    <li><strong className="block">Disposal Fees:</strong> Municipal and private landfill fees are included in our pricing.</li>
+                    <li><strong className="block">Volume & Type of Debris:</strong> The total amount of rubble (in m³) and its type (e.g., clean concrete vs. mixed waste) are the primary cost drivers. Heavier, denser materials may require more labour.</li>
+                    <li><strong className="block">Site Accessibility:</strong> How easily our trucks can access the rubble impacts loading time. Sites with difficult access in dense Johannesburg suburbs may require more manual labour or specialized equipment.</li>
+                    <li><strong className="block">Number of Loads:</strong> The total number of trips required to clear your site completely. We optimize loads to reduce your costs.</li>
+                    <li><strong className="block">Disposal Fees:</strong> Municipal and private landfill fees in Gauteng are included in our pricing, ensuring no surprise charges.</li>
                  </ul>
             </div>
         </section>
@@ -241,38 +209,67 @@ export default function RubbleRemovalJohannesburgPage() {
          {/* Responsible Disposal Section */}
         <section className="mb-16 text-center">
              <h2 className="text-3xl font-bold">Responsible & Legal Waste Disposal in Gauteng</h2>
-             <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">Illegal dumping is a major problem that harms our communities and environment. SIMA Demolitions Projects is committed to 100% legal and responsible waste disposal. We only use registered, compliant landfill and recycling facilities in Gauteng. This protects you from potential fines and ensures your project contributes positively to a cleaner Johannesburg. We provide full transparency on our disposal methods, giving you complete peace of mind.</p>
+             <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">Illegal dumping is a major problem that harms our communities and environment, leading to significant fines for property owners. As a leading licensed rubble removal company in Johannesburg, SIMA Demolitions Projects is committed to 100% legal and responsible waste disposal. We only use registered, compliant landfill and recycling facilities in Gauteng. This protects you from all legal liability and ensures your project contributes positively to a cleaner Johannesburg. We provide full transparency on our disposal methods, giving you complete peace of mind.</p>
         </section>
 
         {/* Areas Section */}
         <section id="areas" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Rubble Removal Services Across All of Johannesburg</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Rubble Removal Across Johannesburg Suburbs</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {joburgAreas.map((area) => (
-                    <Card key={area.name}>
-                        <CardHeader>
-                           <CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />{area.name}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                           <p className="text-sm text-muted-foreground mb-4">
-                                Fast, licensed rubble removal in {area.name}. We handle everything from construction debris to garden refuse.
-                           </p>
-                           {area.crossLinks && area.crossLinks.length > 0 && (
-                               <div className="text-xs text-muted-foreground mb-4">
-                                   Also serving: {area.crossLinks.map((link, index) => (
-                                       <React.Fragment key={link.href}>
-                                           <Link href={link.href} className="text-primary/80 hover:underline">{link.name}</Link>
-                                           {index < area.crossLinks.length - 1 ? ', ' : ''}
-                                       </React.Fragment>
-                                   ))}
-                               </div>
-                           )}
-                           <Button variant="outline" size="sm" asChild>
-                               <Link href={area.link}>Rubble Removal {area.name}</Link>
-                           </Button>
-                        </CardContent>
-                    </Card>
-                ))}
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Sandton</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                            We provide fast, discreet, and licensed rubble removal in Sandton, specializing in debris clearance for high-value residential estates and commercial properties. Our teams are experienced with HOA rules in areas like Bryanston. We also offer <Link href="/demolition-johannesburg" className="text-primary/80 hover:underline">demolition and site clearing services</Link> in the area. We ensure every job in Sandton is handled with the utmost professionalism.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/rubble-removal-sandton">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Randburg</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                            Our rubble removal services in Randburg are perfect for residential renovations and garden cleanups. We offer affordable rates and fast turnaround times for homeowners and small contractors in suburbs like Ferndale and Linden. For larger projects, our <Link href="/rubble-removal-roodepoort" className="text-primary/80 hover:underline">Roodepoort teams</Link> can also provide support. We handle all construction debris responsibly.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/demolition-randburg">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Midrand</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                            SIMA provides large-scale site clearing and rubble removal in Midrand, supporting the area's rapid commercial and residential development. From clearing construction debris near Waterfall to residential cleanups, we offer scheduled services for developers. Our <Link href="/rubble-removal-sandton" className="text-primary/80 hover:underline">Sandton and Centurion services</Link> provide a wide coverage net for the region.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/demolition-midrand">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Soweto</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                            Affordable and reliable rubble removal in Soweto for community projects, residential renovations, and small business developments. We are proud to be a local contractor supporting Soweto's growth, offering fast service in areas from Orlando to Pimville. We ensure all construction waste is cleared quickly and legally. Our services also cover nearby <Link href="/demolition-roodepoort" className="text-primary/80 hover:underline">Roodepoort</Link>.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/demolition-soweto">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Roodepoort</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                           Serving the West Rand, our rubble removal services in Roodepoort are ideal for residential and commercial site clearing. We handle debris from home renovations in Helderkruin and larger construction projects. Our teams ensure a clean, build-ready site every time. We work closely with our <Link href="/demolition-randburg" className="text-primary/80 hover:underline">Randburg team</Link> to provide full West Rand coverage.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/demolition-roodepoort">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle className="flex items-center gap-2"><MapPin className="text-accent" />Rubble Removal Germiston</CardTitle></CardHeader>
+                    <CardContent>
+                       <p className="text-sm text-muted-foreground mb-4">
+                            Specializing in industrial and commercial site clearing, our rubble removal services in Germiston are essential for large-scale projects. We handle heavy construction debris, factory waste, and more, ensuring full compliance with East Rand regulations. Our expertise in <Link href="/demolition-germiston" className="text-primary/80 hover:underline">industrial demolition</Link> makes us the top choice in the area.
+                       </p>
+                       <Button variant="outline" size="sm" asChild><Link href="/demolition-germiston">Learn More</Link></Button>
+                    </CardContent>
+                </Card>
             </div>
         </section>
 
@@ -324,7 +321,3 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
-
-    
-
-    
