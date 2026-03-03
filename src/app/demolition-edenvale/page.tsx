@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Edenvale?", answer: "Yes, we serve all neighborhoods in Edenvale, from Greenstone Hill to the Avenues. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Edenvale?", answer: "We handle everything from residential home demolition and pool removals to site clearing for new commercial developments." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal work hours to minimize disruption to your Edenvale neighbors." },
-    { question: "Do I need a permit for demolition in Edenvale?", answer: "Yes, a permit from the City of Ekurhuleni is required. We manage the entire permit process for you as part of our service." }
+    { question: "What is your main service area in Edenvale?", answer: "We serve all neighborhoods in Edenvale and its surroundings, from Greenstone Hill to the Avenues. We provide fast, responsive, and local service across the area." },
+    { question: "What is the process for demolishing a house in Edenvale?", answer: "Our process starts with a free site assessment. We then handle the permit application with the City of Ekurhuleni, perform the demolition safely, and finish with a complete rubble removal and site cleanup." },
+    { question: "Do you also remove old paving and garden structures?", answer: "Yes, our site clearing services include the removal of old paving, garden sheds, walls, and other outdoor structures in addition to the main building demolition." },
+    { question: "Are your demolition quotes free?", answer: "Yes, all our quotes are 100% free and come with no obligation. We provide a detailed breakdown of costs so you know exactly what to expect." }
 ];
 
 const faqSchema = {
@@ -28,18 +28,20 @@ const faqSchema = {
 
 export default function DemolitionEdenvalePage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Edenvale</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Edenvale Demolition Services</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
             <ShieldCheck /> Your Local, Licensed Edenvale Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Edenvale. As your local contractors, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners and developers. We know Edenvale's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is a leading demolition contractor serving Edenvale and the surrounding East Rand areas. We provide efficient, safe, and affordable demolition services with a focus on residential projects. Whether you're in Greenstone Hill or the Avenues, our team specializes in house demolition, pool removal, and comprehensive site clearing. We manage the entire process, including City of Ekurhuleni permits, to ensure your project is completed on time, within budget, and to the highest standards of safety and cleanliness.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -48,15 +50,20 @@ export default function DemolitionEdenvalePage() {
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Edenvale Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds or subdivisions in established residential areas.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Edenvale property ready for construction.</p></CardContent></Card>
+            <h2 className="text-3xl font-bold text-center mb-8">Focused Demolition Services for Edenvale</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                 <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Clean site in Edenvale after rubble removal" data-ai-hint="rubble removal" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses, townhouses, and other residential structures to make way for new builds or subdivisions.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard by removing old swimming pools. We handle the breaking, removal, and complete backfilling process.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Complete Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We clear all demolition debris, rubble, and waste, leaving your Edenvale property 100% ready for its next purpose.</p></CardContent></Card>
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Edenvale</h2>
                 <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Edenvale ensures your project runs smoothly and complies with all regulations.</p>
@@ -67,7 +74,7 @@ export default function DemolitionEdenvalePage() {
                 </ul>
             </div>
             <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our Edenvale demolition team planning a project" data-ai-hint="construction planning" width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -88,9 +95,9 @@ export default function DemolitionEdenvalePage() {
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview Demolition</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park Services</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg Demolition</Link></Button>
             </div>
         </section>
 

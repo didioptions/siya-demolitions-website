@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Alberton | SIMA Demolitions',
-  description: 'Local demolition contractors in Alberton. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Alberton Demolition Contractors | House & Pool Demolition',
+  description: 'Licensed demolition contractors in Alberton. We specialize in house demolition, swimming pool removal, and site clearing services in Meyersdal, Brackenhurst, and across the East Rand.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

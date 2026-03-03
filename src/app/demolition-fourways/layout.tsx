@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Fourways | SIMA Demolitions',
-  description: 'Local demolition contractors in Fourways. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Fourways Demolition Contractors | Estate & Residential Demolition',
+  description: 'Specialist demolition contractors for Fourways. We handle house demolition in lifestyle estates, pool removal, and site clearing in Dainfern, Broadacres, and surrounds. Licensed & Insured.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

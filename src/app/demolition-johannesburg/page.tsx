@@ -14,23 +14,23 @@ const suburbs = [
 const faqs = [
     {
         question: "Are you a licensed demolition contractor in Johannesburg?",
-        answer: "Yes, SIMA Demolitions Projects is a fully licensed and insured demolition contractor. We adhere to all municipal and national safety regulations required by the City of Johannesburg."
+        answer: "Yes, SIMA Demolitions Projects is a fully licensed and insured demolition contractor. We adhere to all municipal and national safety regulations required by the City of Johannesburg and City of Tshwane."
     },
     {
         question: "Do I need council approval for demolition in Johannesburg?",
-        answer: "In almost all cases, yes. Any structural demolition requires a permit from the City of Johannesburg. Our service includes managing the entire application process on your behalf to ensure full compliance."
+        answer: "In almost all cases, yes. Any structural demolition requires a permit from the relevant local authority (e.g., City of Johannesburg). Our service includes managing the entire application process on your behalf to ensure full compliance."
     },
     {
         question: "What is the typical process for a house demolition?",
-        answer: "Our process starts with a site assessment and quote. Once approved, we handle permit applications, site preparation, utility disconnections, and a systematic demolition. The process concludes with rubble removal and site cleaning, leaving your property ready for the next step."
+        answer: "Our process starts with a site assessment and a detailed, free quote. Once approved, we handle permit applications, site preparation, and utility disconnections. The demolition is then performed systematically, followed by complete rubble removal and site cleaning, leaving your property ready for its next step."
     },
     {
-        question: "How do you ensure safety on site?",
-        answer: "Safety is our top priority. We implement strict safety protocols, including site hoarding, dust control measures, and having trained safety officers on-site. All work is done in accordance with the Occupational Health and Safety Act."
+        question: "How do you ensure safety on a demolition site?",
+        answer: "Safety is our absolute priority. We implement strict safety protocols, including site hoarding, dust control measures, and having trained safety officers on-site. All work is conducted in accordance with the Occupational Health and Safety Act to protect our crew, our clients, and the public."
     },
     {
-        question: "How long does a demolition project take?",
-        answer: "A standard residential house demolition typically takes 2-5 days, including rubble removal. Larger commercial or industrial projects can take longer and are estimated on a case-by-case basis."
+        question: "How long does a demolition project in Johannesburg typically take?",
+        answer: "A standard residential house demolition usually takes between 2 to 5 days, including full rubble removal. Larger commercial or industrial projects are more complex and are estimated on a case-by-case basis after a thorough site evaluation."
     }
 ];
 
@@ -65,7 +65,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions Projects is Johannesburg's leading team of licensed demolition contractors. We specialize in providing safe, compliant, and efficient demolition solutions for residential, commercial, and industrial properties. From navigating council approvals to executing complex demolitions and clearing the site, we manage every step of the process with professionalism and unmatched expertise.
+            SIMA Demolitions Projects is Johannesburg's leading team of licensed demolition contractors. We specialize in providing safe, compliant, and efficient demolition solutions for residential, commercial, and industrial properties across the greater Johannesburg and Gauteng area. From navigating complex council approvals to executing difficult demolitions and clearing the site completely, we manage every step of the process with professionalism and unmatched expertise. Our mission is to clear the way for your future development, safely and reliably.
           </p>
           <Button size="lg" className="mt-6" asChild>
             <a href="tel:0784292760">
@@ -76,23 +76,23 @@ export default function DemolitionJohannesburgPage() {
 
         {/* Why Choose Us Section */}
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA for Your Johannesburg Project?</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA for Your Johannesburg Demolition Project?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <Card>
                     <CardHeader><CardTitle className="flex items-center gap-3"><ShieldCheck className="text-accent" />Licensed & Insured</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">We are fully licensed contractors, providing peace of mind and ensuring your project meets all City of Johannesburg regulations.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">We are fully licensed contractors, providing complete peace of mind and ensuring your project meets all City of Johannesburg regulations.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle className="flex items-center gap-3"><FileText className="text-accent" />Council Approval Experts</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">We manage the entire permit application process, saving you time and preventing costly delays.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">We expertly manage the entire permit application process, liaising with the council to save you time and prevent costly project delays.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle className="flex items-center gap-3"><Construction className="text-accent" />Decades of Experience</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">With over 20 years of combined experience, we have the knowledge to handle any demolition challenge safely and efficiently.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">With over 20 years of combined experience, our team possesses the deep knowledge required to handle any demolition challenge safely and efficiently.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle className="flex items-center gap-3"><Sparkles className="text-accent" />Complete Site Clearing</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">Our service includes full rubble removal and site cleaning, leaving your property build-ready.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">Our comprehensive service includes full rubble removal and final site cleaning, leaving your property perfectly build-ready.</p></CardContent>
                 </Card>
             </div>
         </section>
@@ -102,18 +102,18 @@ export default function DemolitionJohannesburgPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Demolition Process: Safety and Compliance First</h2>
-                    <p className="text-muted-foreground mb-4">We follow a systematic, authority-driven process to ensure every project is a success:</p>
+                    <p className="text-muted-foreground mb-4">We follow a systematic, authority-compliant process to ensure every Johannesburg project is a success from start to finish:</p>
                     <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Initial Consultation & Quote:</span> We assess your needs and provide a detailed, transparent quote.</li>
-                        <li><span className="font-semibold text-foreground">Permit Application:</span> We prepare and submit all necessary documentation to the City of Johannesburg.</li>
-                        <li><span className="font-semibold text-foreground">Site Preparation:</span> We secure the site, disconnect services, and implement safety measures.</li>
-                        <li><span className="font-semibold text-foreground">Structural Demolition:</span> Our licensed team performs the demolition using controlled, safe techniques.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal & Recycling:</span> We clear all debris and transport it to licensed disposal and recycling facilities.</li>
-                        <li><span className="font-semibold text-foreground">Final Site Cleanup:</span> The site is left clean, level, and ready for your next project.</li>
+                        <li><span className="font-semibold text-foreground">Initial Consultation & Quote:</span> We assess your site and project needs to provide a detailed, transparent, and obligation-free quote.</li>
+                        <li><span className="font-semibold text-foreground">Permit Application:</span> We prepare and submit all necessary documentation to the City of Johannesburg on your behalf.</li>
+                        <li><span className="font-semibold text-foreground">Site Preparation & Safety Setup:</span> We secure the site, manage utility disconnections, and implement all required safety measures.</li>
+                        <li><span className="font-semibold text-foreground">Structural Demolition:</span> Our licensed team performs the demolition using controlled, safe, and modern techniques.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal & Recycling:</span> We efficiently clear all debris from the site and transport it to licensed disposal and recycling facilities.</li>
+                        <li><span className="font-semibold text-foreground">Final Site Cleanup:</span> The site is left clean, level, and ready for your architects and builders to start their work.</li>
                     </ol>
                 </div>
                  <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="Construction work" data-ai-hint="construction work" fill className="rounded-lg object-cover" /></div>}
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A new building under construction on a cleared site in Johannesburg" data-ai-hint="building construction" fill className="rounded-lg object-cover" /></div>}
                 </div>
             </div>
         </section>
@@ -122,9 +122,9 @@ export default function DemolitionJohannesburgPage() {
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Our Comprehensive Demolition Services in Johannesburg</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Building className="text-accent" />Home Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Complete or partial house demolition for renovations, rebuilds, or land clearing. We handle everything from single-story homes to multi-level structures.</p></CardContent></Card>
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Wrench className="text-accent" />Commercial Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Specialized demolition for offices, warehouses, and retail spaces, including interior strip-outs and structural dismantling.</p></CardContent></Card>
-                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 className="text-accent" />Swimming Pool Removal</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Safe removal of concrete, fibreglass, and gunite pools, including rubble disposal and backfilling to reclaim your yard space.</p></CardContent></Card>
+                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Building className="text-accent" />House Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Complete or partial house demolition for renovations, rebuilds, or land clearing. We handle everything from single-story homes to multi-level structures.</p></CardContent></Card>
+                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Wrench className="text-accent" />Commercial Demolition</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Specialized demolition for offices, warehouses, and retail spaces, including interior strip-outs and safe structural dismantling.</p></CardContent></Card>
+                <Card className="flex flex-col"><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 className="text-accent" />Swimming Pool Removal</CardTitle></CardHeader><CardContent className="flex-grow"><p className="text-muted-foreground">Safe removal of concrete, fibreglass, and gunite pools, including all rubble disposal and backfilling to perfectly reclaim your yard space.</p></CardContent></Card>
             </div>
         </section>
 
@@ -132,7 +132,7 @@ export default function DemolitionJohannesburgPage() {
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Demolition Services in Your Johannesburg Suburb</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We provide localized, expert demolition services across all of Johannesburg. Find your area below to learn more about our work in your community.
+                We provide localized, expert demolition services across all of Johannesburg and greater Gauteng. Find your area below to learn more about our work in your community.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                 {suburbs.map(suburb => (

@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Germiston?", answer: "Yes, we serve all neighborhoods in Germiston, from industrial areas to residential suburbs. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Germiston?", answer: "We handle everything from residential home demolition and pool removals to large-scale industrial site clearing." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal work hours to minimize disruption to your Germiston neighbors." },
-    { question: "Do I need a permit for demolition in Germiston?", answer: "Yes, a permit from the City of Ekurhuleni is required. We manage the entire permit process for you as part of our service." }
+    { question: "Can you handle large-scale industrial demolition in Germiston?", answer: "Yes, this is one of our core specialties. We have the heavy-duty equipment and certified teams to safely dismantle large industrial structures like factories and warehouses." },
+    { question: "How do you handle hazardous materials on industrial sites?", answer: "We follow strict safety protocols for identifying and handling potential hazardous materials. If asbestos or other specific hazards are found, we work with certified specialists to ensure safe removal and disposal before demolition." },
+    { question: "Do you provide services for commercial strip-outs?", answer: "Yes. We offer complete interior strip-out services for commercial buildings, offices, and retail spaces, preparing them for renovation or a complete change of use." },
+    { question: "What is your safety record on large projects?", answer: "Safety is our number one priority. We have an excellent safety record and implement rigorous safety plans, site inductions, and have dedicated safety officers on all large-scale projects." }
 ];
 
 const faqSchema = {
@@ -28,6 +28,8 @@ const faqSchema = {
 
 export default function DemolitionGermistonPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'industrialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'commercialDemolition');
 
   return (
     <>
@@ -36,38 +38,43 @@ export default function DemolitionGermistonPage() {
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Germiston</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-            <ShieldCheck /> Your Local, Licensed Germiston Demolition Contractor
+            <ShieldCheck /> Germiston's Industrial & Commercial Demolition Experts
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Germiston. As your local contractors, we specialize in safe house demolition, industrial site clearing, and complete rubble removal for homeowners and businesses. We know Germiston's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is the premier demolition contractor for Germiston's industrial and commercial sectors. With deep experience in the East Rand's industrial heartland, we specialize in large-scale factory demolition, warehouse clearing, and full site preparation. We are experts in navigating the City of Ekurhuleni's regulations for complex industrial projects. Our commitment to safety, efficiency, and environmental compliance makes us the trusted partner for transforming Germiston's industrial landscapes for future development.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+            <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for an Industrial Quote</a></Button>
             <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></Button>
           </div>
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Germiston Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Industrial Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Expert demolition of factories, warehouses, and industrial structures with a focus on safety and environmental compliance.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds or subdivisions in Germiston's residential areas.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Germiston property ready for its next use.</p></CardContent></Card>
+            <h2 className="text-3xl font-bold text-center mb-8">Our Demolition Focus in Germiston</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Large commercial building site being cleared in Germiston" data-ai-hint="commercial site" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Industrial Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Expert demolition of factories, warehouses, and industrial structures with a focus on safety and environmental compliance.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Commercial Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete clearing of commercial properties to prepare large tracts of land for new developments, retail centers, or logistics parks.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Residential & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We also offer safe house demolition and fast rubble removal services for residential projects within Germiston.</p></CardContent></Card>
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Germiston</h2>
                 <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large industrial clearings. Our local knowledge of Germiston ensures your project runs smoothly and complies with all regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
-                    <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Ekurhuleni requirements.</span></li>
+                    <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Ekurhuleni industrial regulations.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Free, no-obligation quotes with transparent pricing.</span></li>
                 </ul>
             </div>
             <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our contractors planning a large-scale industrial demolition in Germiston" data-ai-hint="industrial planning" width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -84,13 +91,13 @@ export default function DemolitionGermistonPage() {
         </section>
         
         <section className="mb-16 text-center">
-            <h2 className="text-2xl font-semibold">Our Service Network</h2>
+            <h2 className="text-2xl font-semibold">Our Service Network in the East Rand</h2>
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview Demolition</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton Services</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-boksburg">Projects in Boksburg</Link></Button>
             </div>
         </section>
 

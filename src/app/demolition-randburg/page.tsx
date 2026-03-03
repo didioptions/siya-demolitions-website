@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Randburg?", answer: "Yes, we serve all neighborhoods in Randburg, from Ferndale to Northcliff. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Randburg?", answer: "We handle everything from residential home demolition and pool removals to site clearing for new commercial developments along Malibongwe Drive." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal work hours to minimize disruption to your Randburg neighbors." },
-    { question: "Do I need a permit for demolition in Randburg?", answer: "Yes, a permit from the City of Johannesburg is required. We manage the entire permit process for you as part of our service." }
+    { question: "What is your main service area within Randburg?", answer: "We cover all of Randburg, from Ferndale and Blairgowrie to Northcliff and Linden. Our teams are local and provide a fast, responsive service across the entire area." },
+    { question: "How long does a typical residential demolition take in Randburg?", answer: "A standard single-story house can typically be demolished and cleared in 2-5 days. We provide a precise timeline after our initial free site assessment." },
+    { question: "Are you licensed for demolition work in Randburg?", answer: "Yes, we are fully licensed by the City of Johannesburg and carry comprehensive insurance. We handle all permit applications to ensure your project is 100% compliant." },
+    { question: "What's included in your site clearing service?", answer: "Our site clearing service is all-inclusive. We demolish the structures, load all rubble and debris, and transport it to certified disposal sites, leaving your property clean and ready for your next project." }
 ];
 
 const faqSchema = {
@@ -28,6 +28,8 @@ const faqSchema = {
 
 export default function DemolitionRandburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function DemolitionRandburgPage() {
             <ShieldCheck /> Your Local, Licensed Randburg Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Randburg. As your local contractors, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners and developers. We know Randburg's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is a leading demolition contractor providing trusted, professional services throughout Randburg. As a core part of the northern Johannesburg suburbs, Randburg requires a contractor who understands its mix of residential properties. We specialize in safe house demolition, efficient pool removal, and thorough site clearing in areas from Ferndale to Northcliff. We are experts in the City of Johannesburg's regulations and are committed to delivering clean, compliant, and hassle-free projects for homeowners and developers alike.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -48,18 +50,23 @@ export default function DemolitionRandburgPage() {
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Randburg Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds or subdivisions in established residential areas.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Randburg property ready for construction.</p></CardContent></Card>
+            <h2 className="text-3xl font-bold text-center mb-8">Residential Demolition Focus in Randburg</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                 <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Rubble from a residential demolition in Randburg being cleared" data-ai-hint="rubble removal" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Full House Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete and safe removal of houses to make way for new builds, subdivisions, or property redevelopment in established suburbs.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and professional backfilling.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We ensure your Randburg property is left spotless and ready for construction by removing all demolition debris and waste.</p></CardContent></Card>
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Randburg</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Randburg ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job. Our local knowledge of Randburg ensures your project runs smoothly and complies with all City of Johannesburg regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg requirements.</span></li>
@@ -67,7 +74,7 @@ export default function DemolitionRandburgPage() {
                 </ul>
             </div>
             <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our team of contractors planning a demolition project in Randburg" data-ai-hint="construction planning" width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -88,9 +95,9 @@ export default function DemolitionRandburgPage() {
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-fourways">Fourways</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton Demolition</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort Projects</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-fourways">Services in Fourways</Link></Button>
             </div>
         </section>
 

@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Bryanston?", answer: "Yes, we serve all neighborhoods in Bryanston, including the area around the Bryanston Country Club. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Bryanston?", answer: "We handle everything from residential home demolition and pool removals to site clearing for new commercial developments and office parks." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal work hours to minimize disruption to your Bryanston neighbors." },
-    { question: "Do I need a permit for demolition in Bryanston?", answer: "Yes, a permit from the City of Johannesburg is required. We manage the entire permit process for you as part of our service." }
+    { question: "Do you have experience working in Bryanston's secure estates?", answer: "Yes, a significant portion of our work is within Bryanston's secure lifestyle and golf estates. We are highly experienced in adhering to strict HOA rules for access, noise, and site tidiness." },
+    { question: "How do you protect landscaping and adjacent structures during demolition?", answer: "We use precision techniques and protective barriers to safeguard valuable trees, established gardens, and neighboring properties. Our planning phase includes a full risk assessment to protect your assets." },
+    { question: "Is your team insured for work on high-value Bryanston properties?", answer: "Absolutely. We carry comprehensive insurance coverage specifically for high-value residential projects, giving you complete confidence and peace of mind." },
+    { question: "What is the process for obtaining demolition permits in Bryanston?", answer: "As part of our full-service offering, we manage the entire permit application process with the City of Johannesburg. We handle all paperwork and inspections to ensure your project is fully compliant." }
 ];
 
 const faqSchema = {
@@ -28,6 +28,8 @@ const faqSchema = {
 
 export default function DemolitionBryanstonPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
 
   return (
     <>
@@ -36,10 +38,10 @@ export default function DemolitionBryanstonPage() {
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Bryanston</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-            <ShieldCheck /> Your Local, Licensed Bryanston Demolition Contractor
+            <ShieldCheck /> Bryanston's Premier Luxury Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Bryanston. As your local contractors, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners and developers. We know Bryanston's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is the contractor of choice for high-end demolition projects throughout Bryanston. Our service is defined by precision, discretion, and an intimate understanding of the standards expected in Johannesburg's northern suburbs. We specialize in the careful dismantling of luxury homes, complex pool removals, and immaculate site clearing for discerning homeowners, architects, and developers, especially for properties near landmarks like the Bryanston Country Club. We manage every detail, from City of Johannesburg permits to estate approvals, ensuring a seamless and superior result.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -48,15 +50,20 @@ export default function DemolitionBryanstonPage() {
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Bryanston Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds or subdivisions in upmarket residential areas.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Bryanston property ready for construction.</p></CardContent></Card>
+            <h2 className="text-3xl font-bold text-center mb-8">Our Elite Demolition Services for Bryanston</h2>
+             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Careful demolition of a swimming pool in a Bryanston garden" data-ai-hint="pool demolition garden" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Luxury Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Surgical dismantling of large homes, preserving mature trees and adjacent structures for high-end rebuilds.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Architectural & Pool Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Precision removal of swimming pools, tennis courts, and outbuildings with minimal impact on the surrounding landscape.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Immaculate Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We leave your Bryanston property pristine, perfectly prepared, and ready for your architect and construction team.</p></CardContent></Card>
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Bryanston</h2>
                 <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Bryanston ensures your project runs smoothly and complies with all regulations.</p>
@@ -67,7 +74,7 @@ export default function DemolitionBryanstonPage() {
                 </ul>
             </div>
             <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Demolition experts discussing a high-end project in Bryanston" data-ai-hint="construction planning" width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -84,13 +91,13 @@ export default function DemolitionBryanstonPage() {
         </section>
         
         <section className="mb-16 text-center">
-            <h2 className="text-2xl font-semibold">Our Service Network</h2>
+            <h2 className="text-2xl font-semibold">Our Northern Suburbs Service Network</h2>
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-randburg">Randburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-fourways">Fourways</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton Demolition Services</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-randburg">Explore Randburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-fourways">Fourways Demolition</Link></Button>
             </div>
         </section>
 

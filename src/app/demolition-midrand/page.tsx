@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Midrand?", answer: "Yes, we serve all neighborhoods in Midrand, from Kyalami to Waterfall Estate. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Midrand?", answer: "We handle everything from residential home demolition in secure estates to site clearing for new commercial developments near the Mall of Africa." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal and estate-specific work hours to minimize disruption to your Midrand neighbors." },
-    { question: "Do I need a permit for demolition in Midrand?", answer: "Yes, a permit from the City of Johannesburg is required. We manage the entire permit process for you as part of our service." }
+    { question: "Are you experienced with demolitions in Midrand's secure estates like Waterfall?", answer: "Yes, we specialize in working within high-end secure estates. We are fully compliant with HOA regulations regarding safety, work hours, and site cleanliness to ensure a smooth project." },
+    { question: "What is your process for commercial site clearing near the Mall of Africa?", answer: "We provide a comprehensive service that includes structural demolition, breaking up foundations and parking areas, and complete rubble removal, preparing the site for new commercial development." },
+    { question: "Do I need a demolition permit in Midrand?", answer: "Yes, a permit from the City of Johannesburg is required for structural demolition. Our team manages the entire application process on your behalf to ensure full legal compliance." },
+    { question: "How do you ensure the protection of adjacent properties during demolition?", answer: "We use precision demolition techniques, protective screening, and careful site management to prevent any damage to neighboring homes, businesses, or infrastructure." }
 ];
 
 const faqSchema = {
@@ -28,6 +28,8 @@ const faqSchema = {
 
 export default function DemolitionMidrandPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'commercialDemolition');
 
   return (
     <>
@@ -36,10 +38,10 @@ export default function DemolitionMidrandPage() {
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Midrand</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-            <ShieldCheck /> Your Local, Licensed Midrand Demolition Contractor
+            <ShieldCheck /> Midrand's Specialist in Estate & Commercial Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Midrand. As your local contractors, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners and developers. We know Midrand's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is the trusted demolition contractor for Midrand's rapidly growing landscape. We specialize in projects that require precision and expertise, from house demolitions in premier estates like Waterfall to large-scale site clearing for commercial developments near the Mall of Africa. As local experts, we seamlessly manage City of Johannesburg permits and estate HOA compliance. Our focus is on delivering safe, efficient, and impeccably clean sites, making us the go-to choice for developers and homeowners in Midrand.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -49,25 +51,30 @@ export default function DemolitionMidrandPage() {
 
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Midrand Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds or subdivisions in Midrand's many lifestyle estates.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Midrand property ready for construction.</p></CardContent></Card>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Estate Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Expert demolition of luxury homes in secure estates, adhering to the strictest HOA rules for minimal disruption.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Commercial Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Large-scale site preparation for new office parks, retail centers, and residential developments in the Midrand area.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Pool & Foundation Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete removal of old swimming pools, foundations, and concrete slabs, leaving your property perfectly level and build-ready.</p></CardContent></Card>
+                </div>
+                <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Clearing a large commercial site in Midrand" data-ai-hint="commercial site" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
+            <div className="md:col-span-2">
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our team planning a complex demolition project in Midrand" data-ai-hint="construction planning" width={600} height={500} className="rounded-lg shadow-lg" />}
+            </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Midrand</h2>
                 <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Midrand ensures your project runs smoothly and complies with all regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
-                    <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg requirements.</span></li>
+                    <li className="flex items-center gap-3"><Check className="text-accent" /><span>Expertise in City of Johannesburg and estate compliance.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Free, no-obligation quotes with transparent pricing.</span></li>
                 </ul>
-            </div>
-            <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -88,9 +95,9 @@ export default function DemolitionMidrandPage() {
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-centurion">Centurion</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-centurion">Centurion Demolition</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park Projects</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-sandton">Services in Sandton</Link></Button>
             </div>
         </section>
 

@@ -7,10 +7,10 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Are your demolition services available throughout Soweto?", answer: "Yes, we serve all neighborhoods in Soweto, from Orlando to Pimville. We provide fast, local service across the area." },
-    { question: "What kind of projects do you handle in Soweto?", answer: "We handle everything from residential home demolition and pool removals to site clearing for new community and commercial developments." },
-    { question: "How do you manage dust and noise during demolition?", answer: "We use dust suppression techniques like water spraying and adhere to municipal work hours to minimize disruption to your Soweto neighbors." },
-    { question: "Do I need a permit for demolition in Soweto?", answer: "Yes, a permit from the City of Johannesburg is required. We manage the entire permit process for you as part of our service." }
+    { question: "Do you offer affordable demolition services for homeowners in Soweto?", answer: "Yes, providing affordable and reliable demolition is a cornerstone of our service in Soweto. We offer competitive pricing and transparent quotes for all residential projects." },
+    { question: "Are your demolition services available throughout all of Soweto?", answer: "Absolutely. We serve all neighborhoods in Soweto, from Orlando and Pimville to Diepkloof. We are proud to be a local contractor supporting the community." },
+    { question: "How do you handle rubble removal after the demolition?", answer: "Our service is all-inclusive. We load and transport all rubble and debris to a licensed City of Johannesburg disposal facility, ensuring your site is left completely clean." },
+    { question: "Do I need a permit from the council for my demolition project?", answer: "For most structural demolitions, a permit from the City of Johannesburg is required. We assist all our clients by managing this application process to ensure everything is done legally." }
 ];
 
 const faqSchema = {
@@ -28,6 +28,8 @@ const faqSchema = {
 
 export default function DemolitionSowetoPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const servicesImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
 
   return (
     <>
@@ -39,7 +41,7 @@ export default function DemolitionSowetoPage() {
             <ShieldCheck /> Your Local, Licensed Soweto Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services across Soweto. As your local contractors, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners and developers. We know Soweto's regulations and are committed to delivering compliant, hassle-free projects.
+            SIMA Demolitions is proud to provide expert, affordable demolition services across Soweto. As a dedicated local contractor, we specialize in safe house demolition, pool removal, and complete site clearing for homeowners, small businesses, and community projects. From Orlando to Pimville, we understand the local landscape and are committed to delivering City of Johannesburg-compliant projects that support Soweto's growth. We focus on reliability, safety, and leaving every site ready for a new beginning.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -48,15 +50,23 @@ export default function DemolitionSowetoPage() {
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Specialized Demolition for Soweto Properties</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds, extensions, or subdivisions in Soweto's vibrant communities.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We manage the breaking, removal, and backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Clearing & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site preparation, including removing all demolition debris and waste, leaving your Soweto property ready for construction.</p></CardContent></Card>
+            <h2 className="text-3xl font-bold text-center mb-8">Community-Focused Demolition in Soweto</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <Card><CardHeader><CardTitle>Affordable Home Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses to make way for new builds, extensions, or subdivisions in Soweto's vibrant communities.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Small Business Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Preparing land for new local businesses, community centers, or commercial ventures by clearing old structures.</p></CardContent></Card>
+                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Complete Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our all-in-one service ensures all demolition debris is removed, leaving your Soweto property clean and ready for what's next.</p></CardContent></Card>
+                </div>
+                <div className="lg:col-span-2">
+                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Clearing rubble from a demolition site in Soweto" data-ai-hint="rubble removal" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
             </div>
         </section>
 
-        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center">
+        <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
+            <div className="md:col-span-2">
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our team working on a community project in Soweto" data-ai-hint="community project" width={600} height={500} className="rounded-lg shadow-lg" />}
+            </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Soweto</h2>
                 <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Soweto ensures your project runs smoothly and complies with all regulations.</p>
@@ -65,9 +75,6 @@ export default function DemolitionSowetoPage() {
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg requirements.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Free, no-obligation quotes with transparent pricing.</span></li>
                 </ul>
-            </div>
-            <div className="md:col-span-2">
-               {heroImage && <Image src={heroImage.imageUrl} alt={heroImage.description} data-ai-hint={heroImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -88,9 +95,9 @@ export default function DemolitionSowetoPage() {
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton</Link></Button>
-                 <Button variant="outline" asChild><Link href="/demolition-randburg">Randburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort Services</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-alberton">Demolition in Alberton</Link></Button>
+                 <Button variant="outline" asChild><Link href="/demolition-randburg">Explore Randburg</Link></Button>
             </div>
         </section>
 

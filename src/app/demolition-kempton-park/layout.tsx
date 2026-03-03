@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Kempton Park | SIMA Demolitions',
-  description: 'Local demolition contractors in Kempton Park. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Kempton Park Demolition | Commercial & Residential Services',
+  description: 'Top demolition contractors in Kempton Park. We offer commercial and residential demolition, site clearing, and rubble removal near O.R. Tambo. Licensed and insured.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

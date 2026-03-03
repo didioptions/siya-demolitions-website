@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Centurion | SIMA Demolitions',
-  description: 'Local demolition contractors in Centurion. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Centurion Demolition Services | House Demolition & Site Clearing',
+  description: 'Professional demolition contractors in Centurion. We offer residential house demolition, pool removal, and full site clearing services in Irene, Highveld, and more. Licensed and compliant.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

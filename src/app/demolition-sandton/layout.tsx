@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Sandton | SIMA Demolitions',
-  description: 'Local demolition contractors in Sandton. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Sandton Demolition Contractors | Luxury Home & Pool Demolition',
+  description: 'Elite demolition contractors in Sandton. We specialize in luxury home demolition, pool removal, and site clearing in Morningside, Rivonia, and more. Licensed & Insured.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Bedfordview | SIMA Demolitions',
-  description: 'Local demolition contractors in Bedfordview. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Bedfordview Demolition Services | High-End Home & Site Clearing',
+  description: 'Premier demolition contractors in Bedfordview. We specialize in high-end home demolition, delicate site clearing, and pool removal in Senderwood and St Andrews. Licensed and insured.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Rosebank | SIMA Demolitions',
-  description: 'Local demolition contractors in Rosebank. We offer house demolition, pool removal, and site clearing services. Fully licensed and insured. Get your free quote.',
+  title: 'Rosebank Demolition Services | Commercial & Residential',
+  description: 'Premier demolition contractors in Rosebank for commercial strip-outs, office clearing, and residential demolition. We work around the Rosebank Mall and business district. Licensed & Insured.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
