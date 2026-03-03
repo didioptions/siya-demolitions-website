@@ -86,7 +86,7 @@ export default function RubbleRemovalJohannesburgPage() {
                 </Button>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">Get a fast, no-obligation quote and a clean site, guaranteed.</p>
-             {heroImage && <div className="mt-8 max-w-4xl mx-auto"><Image src={heroImage.imageUrl} alt="Rubble removal and site clearing Johannesburg" data-ai-hint="rubble removal team" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
+             {heroImage && <div className="mt-8 max-w-2xl mx-auto"><Image src={heroImage.imageUrl} alt="Rubble removal and site clearing Johannesburg" data-ai-hint="rubble removal team" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
         </section>
 
         <section className="max-w-4xl mx-auto mb-16">
@@ -321,3 +321,5 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
+    
