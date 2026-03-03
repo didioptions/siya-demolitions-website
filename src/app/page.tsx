@@ -18,7 +18,7 @@ const services = [
     title: "Demolition Services",
     icon: <Wrench className="h-7 w-7 md:h-8 md:w-8 text-accent" />,
     description: "Professional demolition, rubble removal, and site preparation services in Gauteng. Trusted by commercial and residential clients across Johannesburg. Call now.",
-    link: "/demolition-services",
+    link: "/demolition-johannesburg",
     buttonText: "See Why Builders Trust Us"
   },
   {
@@ -91,7 +91,7 @@ const servicesSchema = [
     "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.",
     "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" },
     "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" },
-    "url": "https://simademolitions.co.za/demolition-services"
+    "url": "https://simademolitions.co.za/demolition-johannesburg"
   },
   {
     "@context": "https://schema.org",
@@ -339,10 +339,12 @@ export default function Home() {
                     {serviceAreas.map(area => (
                         <div key={area} className="bg-background border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
                             <MapPin className="w-4 h-4 text-accent"/>
-                            {area === 'Johannesburg' || area === 'Pretoria' ? (
-                                <Link href={`/${area.toLowerCase()}`} className="hover:underline">{area}</Link>
+                            {area === 'Johannesburg' ? (
+                                <Link href={`/demolition-johannesburg`} className="hover:underline">{area}</Link>
+                            ) : area === 'Pretoria' ? (
+                                <Link href="/pretoria" className="hover:underline">{area}</Link>
                             ) : (
-                                area
+                                <Link href={`/demolition-${area.toLowerCase()}`} className="hover:underline">{area}</Link>
                             )}
                         </div>
                     ))}

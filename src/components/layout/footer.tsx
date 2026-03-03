@@ -5,7 +5,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   const services = [
-    { href: "/demolition-services", label: "Demolition" },
+    { href: "/demolition-johannesburg", label: "Demolition" },
     { href: "/rubble-removal", label: "Rubble Removal" },
     { href: "/site-cleaning", label: "Site Cleaning" },
     { href: "/tree-felling", label: "Tree Felling" },
@@ -16,7 +16,7 @@ export function Footer() {
   const quickLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
+    { href: "/demolition-johannesburg", label: "Services" },
     { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
   ];

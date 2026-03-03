@@ -32,7 +32,7 @@ export default function ServiceAreasPage() {
               <li key={area} className="flex items-center gap-3">
                 <Check className="h-5 w-5 text-accent flex-shrink-0" />
                 {area === 'Johannesburg' ? (
-                  <Link href="/johannesburg" className="font-medium text-primary hover:underline">{area}</Link>
+                  <Link href="/demolition-johannesburg" className="font-medium text-primary hover:underline">{area}</Link>
                 ) : area === 'Pretoria' ? (
                   <Link href="/pretoria" className="font-medium text-primary hover:underline">{area}</Link>
                 ) : (

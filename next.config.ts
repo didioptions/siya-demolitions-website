@@ -40,7 +40,17 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/services',
-        destination: '/demolition-services',
+        destination: '/demolition-johannesburg',
+        permanent: true,
+      },
+      {
+        source: '/demolition-services',
+        destination: '/demolition-johannesburg',
+        permanent: true,
+      },
+      {
+        source: '/johannesburg',
+        destination: '/demolition-johannesburg',
         permanent: true,
       },
     ]
