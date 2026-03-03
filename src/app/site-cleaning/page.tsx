@@ -37,14 +37,40 @@ const faqs = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faqs.map(faq => ({
-    "@type": "Question",
-    "name": faq.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer.replace(/<[^>]*>?/gm, '')
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer construction site cleaning in Johannesburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we provide professional construction site cleaning services in Johannesburg, including debris removal, post-build cleanups, and ongoing contractor support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide post-demolition cleanup services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our team handles post-demolition debris removal, site leveling, and preparation for redevelopment projects across Johannesburg."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your site cleaning teams licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, our site cleaning crews are fully licensed, insured, and operate according to safety regulations in Johannesburg and Gauteng."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does site cleaning cost in Johannesburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Site cleaning costs depend on debris volume, waste type, site access, and urgency. We offer free, transparent quotes with no hidden fees."
+      }
     }
-  }))
+  ]
 };
 
 export default function SiteCleaningPage() {
