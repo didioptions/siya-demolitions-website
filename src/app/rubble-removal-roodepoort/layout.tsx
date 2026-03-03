@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Roodepoort | Licensed Debris & Site Clearing',
-  description: 'Fast, licensed rubble removal in Roodepoort. SIMA Demolitions offers professional site clearing for construction debris, garden refuse, and renovation waste across the West Rand. Call for a quote.',
+  title: 'Rubble Removal Roodepoort | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Roodepoort? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalRoodepoortLayout({

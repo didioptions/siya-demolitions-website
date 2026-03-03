@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Licensed Demolition Contractors in Johannesburg | SIMA',
-  description: 'Expert home, commercial, and industrial demolition services across Johannesburg. We are licensed contractors managing council approvals, safety, and full site clearing. Get your free quote.',
+  title: 'Demolition Contractors Johannesburg | Residential & Commercial Experts',
+  description: 'Professional demolition services in Johannesburg. Safe, licensed and insured contractors for residential & commercial projects. Request a free quote.',
 };
 
 export default function DemolitionJohannesburgLayout({

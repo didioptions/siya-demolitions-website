@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Johannesburg | Site Clearing & Waste Removal',
-  description: 'Fast, licensed, and affordable rubble removal in Johannesburg. SIMA Demolitions Projects offers same-day site clearing for construction, commercial, and residential waste. Call for a free quote.',
-  keywords: ['rubble removal johannesburg', 'site clearing johannesburg', 'construction waste removal', 'debris removal gauteng', 'building rubble removal', 'licensed rubble removal'],
+  title: 'Rubble Removal Johannesburg | Same-Day Service | Licensed & Affordable',
+  description: 'Professional rubble removal in Johannesburg. Fast, licensed & affordable debris removal for residential & construction sites. Get a free quote today.',
 };
 
 export default function RubbleRemovalJohannesburgLayout({

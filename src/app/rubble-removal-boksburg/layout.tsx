@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Boksburg | Licensed Debris & Site Clearing',
-  description: 'Licensed rubble removal in Boksburg. SIMA Demolitions offers fast site clearing for construction waste, residential debris, and garden refuse in Sunward Park, Impala Park, and all of Boksburg. Call for a quote.',
+  title: 'Rubble Removal Boksburg | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Boksburg? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalBoksburgLayout({

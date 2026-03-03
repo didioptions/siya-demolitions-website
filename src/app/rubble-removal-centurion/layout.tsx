@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Centurion | Licensed Debris & Site Clearing',
-  description: 'Fast, licensed rubble removal in Centurion. SIMA Demolitions offers professional site clearing for residential, estate, and commercial construction debris. Call for a free quote.',
+  title: 'Rubble Removal Centurion | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Centurion? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalCenturionLayout({

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Brakpan | Site Clearing & Debris Removal',
-  description: 'Your local specialists for rubble removal in Brakpan. SIMA Demolitions offers affordable site clearing for construction debris, garden refuse, and industrial waste. Licensed and reliable. Call today.',
+  title: 'Rubble Removal Brakpan | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Brakpan? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalBrakpanLayout({

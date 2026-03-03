@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Johannesburg CBD | Licensed Site Clearing',
-  description: 'Specialist rubble removal for Johannesburg CBD. SIMA Demolitions handles construction debris from high-rises, commercial strip-outs, and renovations with logistical precision. Licensed and insured.',
+  title: 'Rubble Removal JHB CBD | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in the Johannesburg CBD? Professional debris clearing for high-rises, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalJohannesburgCbdLayout({

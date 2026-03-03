@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Kempton Park | Commercial & Industrial Clearing',
-  description: 'Licensed rubble removal in Kempton Park. SIMA Demolitions clears construction debris and industrial waste from sites near O.R. Tambo and across the area. Call for a fast quote.',
+  title: 'Rubble Removal Kempton Park | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Kempton Park? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalKemptonParkLayout({

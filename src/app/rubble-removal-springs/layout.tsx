@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Springs | Industrial & Residential Site Clearing',
-  description: 'Licensed and reliable rubble removal in Springs. SIMA Demolitions offers affordable site clearing for industrial, commercial, and residential debris. Call for a fast, free quote.',
+  title: 'Rubble Removal Springs | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Springs? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalSpringsLayout({

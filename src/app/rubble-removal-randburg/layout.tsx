@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Randburg | Licensed Debris & Site Clearing',
-  description: 'Fast and affordable rubble removal in Randburg. SIMA Demolitions offers licensed site clearing for residential renovations, garden refuse, and construction debris. Call for a free quote.',
+  title: 'Rubble Removal Randburg | Fast & Affordable Site Clearing',
+  description: 'Need rubble removal in Randburg? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
 };
 
 export default function RubbleRemovalRandburgLayout({
