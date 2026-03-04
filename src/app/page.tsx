@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 };
 
 const organizationSchema = {
-    "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "SIMA Demolitions Projects",
     "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -50,22 +49,30 @@ const organizationSchema = {
 };
 
 const servicesSchema = [
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Demolition Services", "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/demolition-johannesburg" },
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Rubble Removal", "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/rubble-removal-johannesburg" },
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Site Cleaning", "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/site-cleaning" },
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Tree Felling", "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/tree-felling" },
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Swimming Pool Demolition", "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/swimming-pool-demolition" },
-    { "@context": "https://schema.org", "@type": "Service", "serviceType": "Plant Hire", "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/plant-hire" }
+    { "@type": "Service", "serviceType": "Demolition Services", "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/demolition-johannesburg" },
+    { "@type": "Service", "serviceType": "Rubble Removal", "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/rubble-removal-johannesburg" },
+    { "@type": "Service", "serviceType": "Site Cleaning", "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/site-cleaning" },
+    { "@type": "Service", "serviceType": "Tree Felling", "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/tree-felling" },
+    { "@type": "Service", "serviceType": "Swimming Pool Demolition", "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/swimming-pool-demolition" },
+    { "@type": "Service", "serviceType": "Plant Hire", "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/plant-hire" }
 ];
 
 const faqSchema = {
-    "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
         { "@type": "Question", "name": "How quickly can you clear a site in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "For most standard rubble removal and site cleaning projects in Johannesburg, we can typically offer same-day or next-day service. Our locally-based teams across Gauteng, including Sandton, Randburg, and the East Rand, allow for rapid dispatch. The exact timing depends on the scale of the job and our schedule, but we prioritize urgent requests to prevent delays to your project. Complex demolitions require more planning for permits and safety, but the cleanup phase is always executed with maximum efficiency. Call us directly for the fastest response." } },
         { "@type": "Question", "name": "Are your demolition and site clearing teams insured and certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. SIMA Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind." } },
         { "@type": "Question", "name": "Do you clean up the site after a demolition or rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, complete site cleanup is a core part of our service promise. Our service is not finished until your site is left clean, safe, and ready for the next phase of your project. After any demolition or rubble removal, our teams perform a thorough site cleanup, which includes removing all remaining debris, sweeping hard surfaces, and ensuring no hazards are left behind. Our goal is to provide a true end-to-end solution, saving you the time and expense of hiring a separate cleanup crew. This commitment to a spotless finish is why contractors and homeowners across Johannesburg trust us." } }
     ]
+};
+
+const allSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    organizationSchema,
+    ...servicesSchema,
+    faqSchema
+  ]
 };
 
 const testimonials = [
@@ -88,11 +95,7 @@ export default function Home() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-      {servicesSchema.map((schema, index) => (
-        <script key={`service-schema-${index}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      ))}
-       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(allSchema) }} />
 
         {/* Hero Section */}
         <section className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center text-center text-white">
