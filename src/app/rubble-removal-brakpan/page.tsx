@@ -63,7 +63,7 @@ export default function RubbleRemovalBrakpanPage() {
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Industrial & Commercial Waste:** Specializing in the removal of heavy debris from Brakpan’s industrial zones.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Residential Rubble Removal:** Fast and affordable clearing for home renovations, garden services, and general cleanups.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Construction Site Support:** We partner with contractors to provide ongoing site clearing, ensuring projects in Brakpan stay on schedule.</span></li>
+                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Contractor & Builder Support:** Reliable and scheduled collections to keep building projects in Brakpan clean and on track.</span></li>
                     </ul>
                 </div>
             </div>
@@ -105,9 +105,9 @@ export default function RubbleRemovalBrakpanPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
             {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Cleared site in Brakpan" data-ai-hint="clean site brakpan" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
-                <h2 className="text-3xl font-bold">Get Your Brakpan Site Cleared Today</h2>
+                <h2 className="text-3xl font-bold">Get Your Brakpan Site Cleared Professionally</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-                    Contact SIMA for a fast, free quote on licensed rubble removal in Brakpan. Let our local team handle the heavy lifting for you.
+                    For licensed, affordable, and reliable rubble removal in Brakpan, trust the local experts. Contact SIMA Demolitions for your free quote.
                 </p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Quote className="mr-2" /> Get Your Free Quote</Link></Button>
