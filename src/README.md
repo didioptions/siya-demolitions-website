@@ -1,31 +1,14 @@
-# How to Get Your Website Link
+# Your Project is Ready for Deployment
 
-You are very close! Let's get this done together.
+All the coding and setup is complete! The final step is to connect your project to Firebase Hosting.
 
-There are two steps left. **Please do them in this order.**
+Once your billing account issues are resolved and you have upgraded your Firebase project to the Blaze plan, you will be able to deploy your website.
 
----
+**Next Steps:**
 
-### **Step 1: Publish Your Code to GitHub**
+1.  Go to the **Firebase Console** for your project (`sima-demolitions-live`).
+2.  Navigate to the **App Hosting** section.
+3.  Follow the instructions to connect your GitHub account and select the `siya-demolitions-website` repository.
+4.  Deploy the `main` branch.
 
-You must do this step inside your **code editor**.
-
-1.  **Click the Source Control icon** on the left side of your editor (it looks like a fork in a road).
-2.  In the text box at the top, type the message: **`Initial commit`**
-3.  Click the blue button below that says **"Publish Branch"**.
-
-![Visual guide showing where to click](https://storage.googleapis.com/static-studio-public-bucket/step_by_step_publish.png)
-
-This will send your code to your empty GitHub repository.
-
----
-
-### **Step 2: Finish Firebase Setup**
-
-Now, go back to the Firebase page in your browser: [https://console.firebase.google.com/project/sima-demolitions-live/apphosting](https://console.firebase.google.com/project/sima-demolitions-live/apphosting)
-
-1.  In the box that says **"Choose a branch"**, type: **`main`**
-2.  The error message should now be gone.
-3.  Click the **"Next"** button to finish.
-
-Firebase will then give you your public website link.
+This will make your website live on the internet.
