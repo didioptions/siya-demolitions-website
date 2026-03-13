@@ -93,7 +93,7 @@ export default function RubbleRemovalBrakpanPage() {
 
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Our East Rand Service Area</h2>
-            <p className="mt-2 text-muted-foreground">Our network covers all major towns in the East Rand.</p>
+            <p className="mt-2 text-muted-foreground">Our network covers all major towns in the region.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Rubble Removal Johannesburg</Link></Button>
                 <Button variant="outline" asChild><Link href="/rubble-removal-springs">Site Clearing in Springs</Link></Button>
