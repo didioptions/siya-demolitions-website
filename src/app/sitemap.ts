@@ -10,7 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/gallery',
     '/plant-hire',
     '/rubble-removal-johannesburg',
-    '/rubble-removal-sandton',
     '/site-cleaning',
     '/swimming-pool-demolition',
     '/tree-felling',
@@ -47,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rubble-removal-soweto',
     '/rubble-removal-springs',
     '/rubble-removal-bedfordview',
+    '/rubble-removal-sandton',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => ({
