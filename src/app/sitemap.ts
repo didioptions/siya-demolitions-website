@@ -47,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rubble-removal-springs',
     '/rubble-removal-bedfordview',
     '/rubble-removal-sandton',
+    '/rubble-removal-fourways',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => ({
