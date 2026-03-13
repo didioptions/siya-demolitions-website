@@ -22,7 +22,7 @@ This will send your code to your empty GitHub repository.
 
 ### **Step 2: Finish Firebase Setup**
 
-Now, go back to the Firebase page in your browser: [https://console.firebase.google.com/project/siya-demolitions-projects/apphosting](https://console.firebase.google.com/project/siya-demolitions-projects/apphosting)
+Now, go back to the Firebase page in your browser: [https://console.firebase.google.com/project/sima-demolitions-live/apphosting](https://console.firebase.google.com/project/sima-demolitions-live/apphosting)
 
 1.  In the box that says **"Choose a branch"**, type: **`main`**
 2.  The error message should now be gone.
