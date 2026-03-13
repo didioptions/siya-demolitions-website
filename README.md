@@ -1,72 +1,27 @@
-# Project Title
+# SIMA Demolitions Projects Website
 
-A brief description of your project.
+This is the official website for SIMA Demolitions Projects, a leading demolition and site services company based in Gauteng, South Africa. The site provides information about the company's services, service areas, and contact details.
 
-## Getting Started
+## Project Overview
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+The website is designed to be a comprehensive online presence for the business, showcasing its expertise in:
+- Residential, Commercial, and Industrial Demolition
+- Rubble Removal
+- Site Cleaning
+- Tree Felling
+- Swimming Pool Demolition
+- Plant & Bobcat Hire
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-'''
-Give examples
-'''
-
-### Installing
-
-A step-by-step series of examples that tell you how to get a development environment running.
-
-Say what the step will be
-
-'''
-Give the example
-'''
-
-And repeat
-
-'''
-until finished
-'''
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Running the tests
-
-Explain how to run the automated tests for this system.
-
-### Break down into end-to-end tests
-
-Explain what these tests test and why.
-
-'''
-Give an example
-'''
-
-### And coding style tests
-
-Explain what these tests test and why.
-
-'''
-Give an example
-'''
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
+It features dedicated pages for various service areas across Johannesburg and the greater Gauteng region, providing localized information for potential clients.
 
 ## Built With
 
-* [Next.js](https://nextjs.org/) - The React Framework
-* [ShadCN](https://ui.shadcn.com/) - UI Components
-* [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
-* [Genkit](https://firebase.google.com/docs/genkit) - AI Framework
+* [Next.js](https://nextjs.org/) - The React Framework for Production
+* [ShadCN UI](https://ui.shadcn.com/) - A set of reusable UI components.
+* [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework.
+* [Genkit](https://firebase.google.com/docs/genkit) - The AI framework used for potential future generative features.
+* [Firebase](https://firebase.google.com/) - Used for hosting and backend services.
 
-## Authors
+## Deployment
 
-* **Your Name** - *Initial work* - [Your GitHub](https://github.com/your-username)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+The application is configured for deployment on Firebase App Hosting. Once the billing account quota issue is resolved and the project is upgraded to the Blaze plan, the site can be deployed by connecting the `main` branch of this GitHub repository in the Firebase Console's App Hosting section.
