@@ -92,11 +92,11 @@ export default function RubbleRemovalNigelPage() {
         </section>
 
         <section className="mb-16 text-center">
-            <h2 className="text-2xl font-semibold">Covering the Far East Rand</h2>
+            <h2 className="text-2xl font-semibold">Our East Rand Service Area</h2>
             <p className="mt-2 text-muted-foreground">Our service area includes all key towns in the region.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Rubble Removal Johannesburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/rubble-removal-springs">Springs Site Clearing</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-springs">Site Clearing in Springs</Link></Button>
                 <Button variant="outline" asChild><Link href="/rubble-removal-brakpan">Brakpan Rubble Removal</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Full Demolition Services</Link></Button>
             </div>
