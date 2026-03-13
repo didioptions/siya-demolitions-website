@@ -169,6 +169,36 @@
       "description": "A cleared site after professional cleaning.",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/site%20cleaning%20(1).jpg?alt=media&token=93e69b83-a198-441e-86c2-bd3bc26ad91f",
       "imageHint": "site cleaning"
+    },
+    {
+      "id": "gallery4",
+      "description": "An excavator clearing rubble from a construction site.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolitions%20gauteng%20SIMA%20Demolitions%20.jpg?alt=media&token=112a80ef-6efe-4259-9774-df4a0ee8fab9",
+      "imageHint": "site clearing"
+    },
+    {
+      "id": "gallery5",
+      "description": "A pile of rubble ready for removal in Johannesburg.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/SIMA%20Demolitions%20%2Crubbe%20removals%20johannesburg%20.jpg?alt=media&token=2b8c060f-72ae-46a2-b328-ef2b301a0dbd",
+      "imageHint": "rubble removal"
+    },
+    {
+      "id": "gallery6",
+      "description": "A swimming pool in Johannesburg during demolition.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/sima%20swimming%20demolitions%20gauteng.jpg?alt=media&token=705340d3-8bb7-4acc-b507-3623c18f4e4a",
+      "imageHint": "swimming pool demolition"
+    },
+    {
+      "id": "gallery7",
+      "description": "An arborist using ropes to safely dismantle a large tree.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/sima%20demolitons%20%2C%20tree%20felling%20johannesburg%20(1).jpg?alt=media&token=857c23c9-c6e2-469c-a31c-8b4ca68f2408",
+      "imageHint": "arborist ropes"
+    },
+    {
+      "id": "gallery8",
+      "description": "A TLB machine moving earth on a construction site.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/demolition%20google%20ma..._imresizer.jpg?alt=media&token=f3118e0e-417b-409d-abb2-807983544c8e",
+      "imageHint": "tlb hire"
     }
   ]
 }
