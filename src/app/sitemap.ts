@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/demolition-bryanston',
     '/demolition-centurion',
     '/demolition-rosebank',
+    '/demolition-pretoria',
     '/rubble-removal-alberton',
     '/rubble-removal-benoni',
     '/rubble-removal-boksburg',
