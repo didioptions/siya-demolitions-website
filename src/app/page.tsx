@@ -104,10 +104,10 @@ export default function Home() {
             <div className="relative z-10 container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto">
                     <div className="mb-4">
-                      <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/50 text-accent-foreground px-4 py-2 rounded-full">
+                      <a href="tel:0784292760" className="inline-flex items-center gap-2 bg-accent/20 border border-accent/50 text-accent-foreground px-4 py-2 rounded-full hover:bg-accent/30 transition-colors">
                         <Phone className="h-5 w-5 text-accent" />
                         <span className="font-semibold text-white">Call Us for a Free Quote: 078 429 2760</span>
-                      </div>
+                      </a>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">Johannesburg's Demolition & Site Clearing Experts</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
