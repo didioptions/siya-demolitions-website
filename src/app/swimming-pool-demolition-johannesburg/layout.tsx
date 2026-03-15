@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Swimming Pool Demolition Johannesburg | Professional Pool Removal Contractors',
-  description: 'Professional swimming pool demolition and removal services across Johannesburg. Serving all suburbs including Sandton, Randburg, Roodepoort, and more.',
+  description: 'Professional swimming pool demolition services in Johannesburg. Safe pool removal, rubble clearing, and full site preparation across all Johannesburg suburbs.',
 };
 
 export default function SwimmingPoolDemolitionJohannesburgLayout({

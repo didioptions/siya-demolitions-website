@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Plant Hire Johannesburg | Professional Plant Hire Contractors',
-  description: 'Professional plant hire services across Johannesburg. We offer excavators, bulldozers, tipper trucks, and cranes for hire. Serving all suburbs including Sandton, Randburg, Roodepoort, and more.',
+  description: 'Affordable plant hire services in Johannesburg. Excavators, TLBs, tipper trucks and construction equipment available across all Johannesburg suburbs.',
 };
 
 export default function PlantHireJohannesburgLayout({
