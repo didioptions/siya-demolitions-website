@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Sparkles, Trash2, ShieldCheck, Quote } from "lucide-react";
+import { Check, Phone, Mail, Quote } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -9,70 +8,60 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const faqs = [
     {
         question: "How do you manage rubble removal in Fourways' secure lifestyle estates?",
-        answer: "We are experts in operating within the secure estates of Fourways, such as Dainfern and Broadacres. Our process involves direct coordination with estate management to ensure full compliance with their rules on work hours, noise, and vehicle access. Our teams are professional, discreet, and take great care to protect paving, landscaping, and other property features, delivering a service that meets the high standards of these communities."
+        answer: "We are experts in operating within the secure estates of Fourways, such as Dainfern and Broadacres. Our process involves direct coordination with estate management to ensure full compliance with their rules on work hours, noise, and vehicle access. We are professional, discreet, and take great care to protect property."
     },
     {
         question: "Can you provide a fast rubble removal service for a small renovation in Fourways?",
-        answer: "Yes, we provide a rapid and affordable service for homeowners in Fourways. Whether you're clearing debris from a kitchen renovation, a garden cleanup, or a small DIY project, we can typically schedule a same-day or next-day collection. No job is too small, and our pricing is based on the volume of rubble, making it a cost-effective choice for residential cleanups."
+        answer: "Yes, we provide a rapid and affordable service for homeowners in Fourways. Whether you're clearing debris from a kitchen renovation, a garden cleanup, or a small DIY project, we can typically schedule a same-day or next-day collection."
     },
     {
         question: "Is your rubble removal service licensed for work in the Fourways area?",
-        answer: "Absolutely. SIMA Demolitions Projects is a fully licensed waste carrier with the City of Johannesburg. This is your guarantee that all rubble from your Fourways property will be transported and disposed of legally and responsibly at a registered facility. This compliance protects you from the risk of fines for illegal dumping and ensures your project is handled professionally."
+        answer: "Absolutely. We are a fully licensed waste carrier with the City of Johannesburg. This guarantees that all rubble from your Fourways property will be transported and disposed of legally and responsibly at a registered facility, protecting you from fines."
     }
 ];
 
 export default function RubbleRemovalFourwaysPage() {
-    const heroImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
     const servicesImage = PlaceHolderImages.find(p => p.id === 'siteCleaning');
     const clearedSiteImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
 
   return (
-    <>
-      <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
+    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Rubble Removal in Fourways, Johannesburg</h1>
-            <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-                <ShieldCheck /> Estate, Residential & Commercial Site Clearing
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Rubble Removal Services Fourways</h1>
+            <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
+                Keep your project in Fourways moving with fast, professional, and licensed rubble removal from SIMA Demolitions Projects. We specialize in serving the needs of this dynamic area, from clearing renovation debris in secure lifestyle estates to managing waste for commercial developments.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
+                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for Quick Clearance</a>
+                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
                 </Button>
             </div>
-             {heroImage && <div className="mt-8 max-w-4xl mx-auto"><Image src={heroImage.imageUrl} alt="Rubble removal from a secure estate in Fourways" data-ai-hint="rubble removal fourways" width={1200} height={600} className="rounded-lg shadow-lg" /></div>}
-        </section>
-
-        <section className="max-w-4xl mx-auto mb-16">
-            <p className="text-lg text-muted-foreground text-center">
-                Keep your project in Fourways moving with fast, professional, and licensed rubble removal from SIMA Demolitions Projects. We specialize in serving the needs of this dynamic area, from clearing renovation debris in secure lifestyle estates to managing waste for commercial developments. Our local teams understand the high standards of the Fourways community and deliver a discreet, efficient, and fully compliant service every time, leaving your site impeccably clean and safe.
-            </p>
         </section>
 
         <section id="services" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Fourways Site Clearing Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Professional Rubble Removal Services in Fourways</h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
                  <div>
-                    {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Clearing a site in a Fourways estate" data-ai-hint="site clearing fourways" fill className="rounded-lg object-cover" /></div>}
+                    {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Site clearing in Fourways" data-ai-hint="site clearing fourways" fill className="rounded-lg object-cover" /></div>}
                 </div>
                 <div>
-                    <h3 className="font-semibold text-xl mb-4">Specialized Solutions for the Fourways Area</h3>
-                    <p className="text-muted-foreground mb-4">We handle all types of rubble removal projects in Fourways.</p>
+                    <p className="text-muted-foreground mb-4">Specialized solutions for the Fourways area.</p>
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Secure Estate Cleanups:** We are experts at working within the rules of Fourways' premier estates like Dainfern and Broadacres.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Residential Renovation Debris:** Fast, affordable removal of rubble from home improvement projects, big or small.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Commercial & Retail Site Clearing:** Supporting the numerous commercial and retail developments in the Fourways area.</span></li>
+                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Garden & Garage Clean-Up:** We clear soil, branches, old furniture, and general clutter.</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA in Fourways?</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Team in Fourways?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div><h4 className="font-semibold text-lg">Estate Specialists</h4><p className="text-muted-foreground mt-2 text-sm">We have proven experience working respectfully and efficiently within secure estates.</p></div>
+                <div><h4 className="font-semibold text-lg">Estate Specialists</h4><p className="text-muted-foreground mt-2 text-sm">Proven experience working respectfully and efficiently within secure estates.</p></div>
                 <div><h4 className="font-semibold text-lg">Licensed & Compliant</h4><p className="text-muted-foreground mt-2 text-sm">Fully licensed by the CoJ, we protect you from the risks of illegal dumping.</p></div>
                 <div><h4 className="font-semibold text-lg">Fast & Local</h4><p className="text-muted-foreground mt-2 text-sm">Our nearby teams provide a rapid response to keep your Fourways project on track.</p></div>
                 <div><h4 className="font-semibold text-lg">Professional & Discreet</h4><p className="text-muted-foreground mt-2 text-sm">Our uniformed crews work with minimal disruption to you and your neighbors.</p></div>
@@ -80,7 +69,7 @@ export default function RubbleRemovalFourwaysPage() {
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Fourways Rubble Removal FAQs</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">FAQ About Rubble Removal in Fourways</h2>
             <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
@@ -92,30 +81,29 @@ export default function RubbleRemovalFourwaysPage() {
         </section>
 
         <section className="mb-16 text-center">
-            <h2 className="text-2xl font-semibold">Serving the Greater Northern Suburbs</h2>
-            <p className="mt-2 text-muted-foreground">Our service network connects all key areas around Fourways.</p>
+            <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
+            <p className="mt-2 text-muted-foreground">Serving the greater Northern Suburbs.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/rubble-removal-johannesburg">Rubble Removal Johannesburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/rubble-removal-sandton">Sandton Site Clearing</Link></Button>
-                <Button variant="outline" asChild><Link href="/rubble-removal-bryanston">Bryanston Rubble Removal</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-fourways">Fourways Demolition Services</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-sandton">Sandton</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-bryanston">Bryanston</Link></Button>
+                <Button variant="outline" asChild><Link href="/rubble-removal-midrand">Midrand</Link></Button>
             </div>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
-            {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Cleared residential site in Fourways" data-ai-hint="clean site fourways" fill className="object-cover opacity-20" />}
+            {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine site after rubble removal in Fourways" data-ai-hint="clean site fourways" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
-                <h2 className="text-3xl font-bold">Get Your Fourways Property Cleared Today</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-                    For a professional, licensed, and reliable rubble removal service in Fourways, contact the experts at SIMA Demolitions.
-                </p>
+                <h2 className="text-3xl font-bold">Get Your Fourways Property Cleared</h2>
+                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">For a professional, licensed, and reliable rubble removal service in Fourways, contact the experts at SIMA Demolitions.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Quote className="mr-2" /> Get Your Free Quote</Link></Button>
+                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call for an Urgent Pickup</a></Button>
                 </div>
             </div>
         </section>
-      </div>
-    </>
+        <div className="mt-12 text-center">
+            <Link href="/rubble-removal-johannesburg" className="text-sm text-muted-foreground hover:text-primary">Back to Rubble Removal Johannesburg</Link> | <Link href="/rubble-removal-services-johannesburg" className="text-sm text-muted-foreground hover:text-primary">All Johannesburg Services</Link>
+        </div>
+    </div>
   );
 }

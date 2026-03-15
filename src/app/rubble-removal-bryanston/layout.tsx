@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Bryanston | Fast & Affordable Site Clearing',
-  description: 'Need rubble removal in Bryanston? Professional debris clearing for homes, construction & businesses in secure estates. Same-day service available. Get a quote now.',
+  title: 'Rubble Removal Services Bryanston | Garden & Garage Clean-Up',
+  description: 'Licensed rubble removal contractors in Bryanston, Johannesburg. We handle garden refuse, garage clean-up, and construction debris in secure estates.',
 };
 
 export default function RubbleRemovalBryanstonLayout({

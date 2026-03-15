@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Kempton Park | Fast & Affordable Site Clearing',
-  description: 'Need rubble removal in Kempton Park? Professional debris clearing for homes, construction & businesses. Same-day service available. Get a quote now.',
+  title: 'Rubble Removal Services Kempton Park | Garden & Garage Clean-Up',
+  description: 'Licensed rubble removal contractors in Kempton Park, Johannesburg. We handle garden refuse, garage clean-up, industrial and construction debris.',
 };
 
 export default function RubbleRemovalKemptonParkLayout({

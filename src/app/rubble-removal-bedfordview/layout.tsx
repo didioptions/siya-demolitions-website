@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Bedfordview | Fast & Affordable Site Clearing',
-  description: 'Need rubble removal in Bedfordview? Professional debris clearing for high-end homes, construction & businesses. Same-day service available. Get a quote now.',
+  title: 'Rubble Removal Services Bedfordview | Garden & Garage Clean-Up',
+  description: 'Licensed rubble removal contractors in Bedfordview, Johannesburg. We handle garden refuse, garage clean-up, construction debris for high-end homes.',
 };
 
 export default function RubbleRemovalBedfordviewLayout({
