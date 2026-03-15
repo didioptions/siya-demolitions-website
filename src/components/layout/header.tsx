@@ -24,12 +24,12 @@ const mainNavLinks = [
 ];
 
 const serviceNavLinks = [
-  { href: "/demolition-johannesburg", label: "Demolition Johannesburg" },
+  { href: "/demolition-johannesburg", label: "Demolition" },
   { href: "/rubble-removal-johannesburg", label: "Rubble Removal" },
   { href: "/site-cleaning", label: "Site Cleaning" },
-  { href: "/tree-felling", label: "Tree Felling" },
-  { href: "/swimming-pool-demolition", label: "Swimming Pool Demolition" },
-  { href: "/plant-hire", label: "Plant Hire" },
+  { href: "/tree-felling-johannesburg", label: "Tree Felling" },
+  { href: "/swimming-pool-demolition-johannesburg", label: "Swimming Pool Demolition" },
+  { href: "/plant-hire-johannesburg", label: "Plant Hire" },
 ];
 
 const otherNavLinks = [

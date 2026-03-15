@@ -72,6 +72,21 @@ const nextConfig: NextConfig = {
         source: '/site-cleaning-johannesburg',
         destination: '/site-cleaning',
         permanent: true,
+       },
+       {
+        source: '/tree-felling',
+        destination: '/tree-felling-johannesburg',
+        permanent: true,
+       },
+       {
+        source: '/swimming-pool-demolition',
+        destination: '/swimming-pool-demolition-johannesburg',
+        permanent: true,
+       },
+       {
+        source: '/plant-hire',
+        destination: '/plant-hire-johannesburg',
+        permanent: true,
        }
     ]
   },
