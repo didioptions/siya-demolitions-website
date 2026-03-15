@@ -1,3 +1,5 @@
+"use client";
+
 // This page now redirects to /rubble-removal-johannesburg in next.config.ts
 // This file can be removed or left as is. For safety, we'll leave a placeholder.
 
@@ -20,5 +22,3 @@ export default function OldRubbleRemovalPage() {
     </div>
   );
 }
-
-    
