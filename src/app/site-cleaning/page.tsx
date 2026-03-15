@@ -32,24 +32,24 @@ const suburbs = [
 
 const faqs = [
     {
-        question: "Do you offer ongoing site cleaning for long-term projects in Johannesburg?",
-        answer: "Yes, absolutely. We specialize in providing scheduled, ongoing site cleaning services for long-term construction projects across Johannesburg. We can arrange for daily, weekly, or bi-weekly clean-ups to prevent the hazardous buildup of debris, ensure clear access for all tradespeople, and help you adhere to safety regulations."
-    },
-    {
-        question: "What's the difference between site cleaning and rubble removal?",
-        answer: "While related, they are distinct services. Rubble removal, which you can learn about on our <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>Rubble Removal Johannesburg</a> page, focuses specifically on the bulk loading and transport of heavy materials. Site cleaning is a more comprehensive service that includes removing general construction debris (wood, plastic, packaging), sweeping, organizing the site, and clearing hazards. We can provide an integrated quote covering all your needs."
-    },
-    {
-        question: "Are your site cleaning crews insured and certified?",
-        answer: "Yes, all SIMA Demolitions Projects teams are fully insured, and every member is trained according to strict safety compliance standards. We carry comprehensive public liability insurance to protect your property and our personnel, giving you complete peace of mind."
-    },
-    {
         question: "How much does site cleaning cost in Johannesburg?",
         answer: "Site cleaning costs in Johannesburg depend on the size of the site, the volume and type of debris, site accessibility, and the frequency of cleaning required. We provide free, transparent quotes with no hidden fees, ensuring you get a fair price for a professional service."
     },
     {
-        question: "Can you handle large-scale commercial and industrial site cleaning?",
-        answer: "Yes. We have extensive experience and the necessary equipment to manage large-scale commercial and industrial site cleaning projects throughout Johannesburg and Gauteng, including for shopping centres, office parks, warehouses, and factory sites."
+        question: "Do you clean construction debris?",
+        answer: "Yes, cleaning construction debris is a core part of our service. We remove wood offcuts, packaging, concrete, drywall, and other materials to keep your site safe and productive. We offer both one-off cleanups and ongoing site maintenance."
+    },
+    {
+        question: "Can you clean both residential and commercial sites?",
+        answer: "Absolutely. We are equipped to handle site cleaning for all types of properties, from residential homes undergoing renovation in Randburg to large-scale commercial construction sites in Sandton and industrial properties in Germiston."
+    },
+    {
+        question: "How quickly can you complete a site cleaning?",
+        answer: "For most one-off residential or small commercial cleanups, we can often schedule service for the same or next day. The duration depends on the site's condition and size, but our teams work efficiently to get the job done with minimal disruption. For large ongoing projects, we create a schedule that works for you."
+    },
+    {
+        question: "Are you licensed and insured for site cleaning?",
+        answer: "Yes, SIMA Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance, and our crews are trained in health and safety compliance. This protects your property and gives you complete peace of mind."
     }
 ];
 
@@ -61,7 +61,7 @@ const faqSchema = {
     "name": faq.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.answer.replace(/<a href='(.*?)' class='(.*?)'>(.*?)<\/a>/g, '$3') // Strip HTML for schema
+      "text": faq.answer
     }
   }))
 };
@@ -79,12 +79,12 @@ export default function SiteCleaningPage() {
       />
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
       <section className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Site Cleaning Contractors in Johannesburg</h1>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Site Cleaning Services in Johannesburg</h1>
         <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
             <Sparkles /> Construction, Commercial & Residential Cleanup
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-         As leading site cleaning contractors in Johannesburg, SIMA Demolitions Projects ensures your construction, demolition, or renovation site is impeccably clean, safe, and compliant. Our professional site cleaning services in Johannesburg cater to residential, commercial, and industrial projects across all suburbs, from Sandton and Randburg to Soweto and Roodepoort. A clean site is a productive site—let us handle the debris so you can focus on the work.
+         As leading site cleaning contractors in Johannesburg, SIMA Demolitions Projects ensures your construction, demolition, or renovation site is impeccably clean, safe, and compliant. Our professional site cleaning services in Johannesburg cater to residential, commercial, and industrial projects across all suburbs, from Sandton and Randburg to Soweto and Roodepoort. A clean site is a productive site—let our site cleaners in Johannesburg handle the debris so you can focus on the work.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
@@ -111,13 +111,13 @@ export default function SiteCleaningPage() {
       </section>
 
       <section className="mb-16 bg-card p-8 rounded-lg">
-          <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA Site Cleaning Contractors in Johannesburg?</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Johannesburg Site Cleaning Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Licensed & Insured</h3><p className="text-sm text-muted-foreground">Full compliance and insurance for your complete peace of mind.</p></div></div>
-              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Crews</h3><p className="text-sm text-muted-foreground">Our professional teams are trained for safety and efficiency on any site.</p></div></div>
-              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Eco-Friendly Disposal</h3><p className="text-sm text-muted-foreground">We prioritize recycling and responsible disposal at registered facilities.</p></div></div>
+              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Crew</h3><p className="text-sm text-muted-foreground">Our professional teams are trained for safety and efficiency on any site.</p></div></div>
+              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Eco-Friendly Waste Disposal</h3><p className="text-sm text-muted-foreground">We prioritize recycling and responsible disposal at registered facilities.</p></div></div>
               <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">Get a fair, transparent quote with no hidden costs.</p></div></div>
-              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Full Johannesburg Coverage</h3><p className="text-sm text-muted-foreground">Our teams operate across all suburbs, providing fast, local service.</p></div></div>
+              <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Fast & Thorough Cleaning</h3><p className="text-sm text-muted-foreground">We work efficiently to ensure your site is spotless, safe, and ready for work.</p></div></div>
               <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Integrated Service</h3><p className="text-sm text-muted-foreground">Combine with our demolition and rubble removal for a seamless solution.</p></div></div>
           </div>
       </section>
@@ -126,10 +126,10 @@ export default function SiteCleaningPage() {
             <h2 className="text-3xl font-bold text-center mb-8">Our Johannesburg Site Cleaning Process</h2>
             <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-4 text-center">
                 <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">1</div><p className="mt-2 text-sm font-semibold">Site Assessment & Free Quote</p></div>
-                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">2</div><p className="mt-2 text-sm font-semibold">Debris & Waste Sorting</p></div>
-                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">3</div><p className="mt-2 text-sm font-semibold">Safe Loading & Removal</p></div>
-                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">4</div><p className="mt-2 text-sm font-semibold">Sweeping & Final Cleanup</p></div>
-                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">5</div><p className="mt-2 text-sm font-semibold">Responsible Disposal</p></div>
+                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">2</div><p className="mt-2 text-sm font-semibold">Debris Sorting</p></div>
+                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">3</div><p className="mt-2 text-sm font-semibold">Cleaning & Sweeping</p></div>
+                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">4</div><p className="mt-2 text-sm font-semibold">Waste Disposal</p></div>
+                <div className="flex flex-col items-center"><div className="bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center font-bold text-xl">5</div><p className="mt-2 text-sm font-semibold">Final Inspection</p></div>
             </div>
       </section>
 
@@ -150,7 +150,7 @@ export default function SiteCleaningPage() {
       </section>
 
       <section id="faq" className="max-w-4xl mx-auto mb-16">
-        <h2 className="text-3xl font-bold text-center mb-8">FAQs About Site Cleaning in Johannesburg</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">FAQ – Site Cleaning Johannesburg</h2>
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`}>

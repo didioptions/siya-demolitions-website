@@ -67,6 +67,11 @@ const nextConfig: NextConfig = {
         source: '/pretoria',
         destination: '/demolition-pretoria',
         permanent: true,
+       },
+       {
+        source: '/site-cleaning-johannesburg',
+        destination: '/site-cleaning',
+        permanent: true,
        }
     ]
   },

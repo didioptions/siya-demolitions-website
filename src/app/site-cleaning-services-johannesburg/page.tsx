@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Phone, Mail, MapPin, ShieldCheck, Construction } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Construction } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -38,7 +37,6 @@ const services = [
 ];
 
 export default function SiteCleaningServicesJohannesburgPage() {
-    const heroImage = PlaceHolderImages.find(p => p.id === 'siteCleaning');
     const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (

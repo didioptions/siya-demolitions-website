@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Site Cleaning Johannesburg | Professional Construction & Demolition Cleanup Contractors',
-  description: 'Professional site cleaning contractors in Johannesburg. We offer post-construction, commercial, and residential site cleaning and debris removal across all Johannesburg suburbs.',
+  title: 'Site Cleaning Johannesburg | Professional Site Cleaning Contractors',
+  description: 'Professional site cleaning services in Johannesburg. We handle residential, commercial, and construction site cleaning across all suburbs including Sandton, Randburg, and Soweto.',
 };
 
-export default function SiteCleaningLayout({
+export default function SiteCleaningJohannesburgLayout({
   children,
 }: {
   children: React.ReactNode;
