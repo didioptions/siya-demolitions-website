@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, MapPin, Quote, Axe } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Quote, Axe, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const suburbs = [
     { name: "Sandton", href: "/tree-felling-sandton" }, { name: "Randburg", href: "/tree-felling-randburg" },
@@ -19,103 +20,153 @@ const suburbs = [
 ];
 
 const faqs = [
-    { question: "How much does tree felling cost in Johannesburg?", answer: "The cost depends on the tree's size, location, accessibility, and the complexity of the removal. We provide free, no-obligation quotes for an accurate price." },
-    { question: "Do I need a permit for tree felling in Johannesburg?", answer: "For certain protected indigenous trees, yes. We will advise you on any necessary permits from the City of Johannesburg during our site assessment." },
-    { question: "How do you ensure safety during tree removal?", answer: "Our teams are fully trained and insured. We use professional equipment and proven techniques like sectional dismantling to ensure no damage to your property." },
-    { question: "Do you also remove the tree stump?", answer: "Yes, we offer stump grinding and removal services to leave your property completely clear and level after the tree has been felled." },
-    { question: "How quickly can you remove a fallen or dangerous tree?", answer: "We offer an emergency tree felling service for urgent situations and prioritize these calls to ensure your property is made safe as quickly as possible." }
+    { question: "How much does tree felling cost in Johannesburg?", answer: "The cost of tree felling in Johannesburg varies based on several factors, including the tree's size, height, and accessibility. The complexity of the job, such as proximity to buildings or power lines, also plays a role. We provide free, on-site assessments and detailed, no-obligation quotes to give you an accurate price." },
+    { question: "Do I need a permit for tree felling in Johannesburg?", answer: "In most cases, you do not need a permit for trees on private residential property. However, certain indigenous trees are protected by law. As part of our service, we will advise you if a permit from the City of Johannesburg is required and can assist with the application process." },
+    { question: "How do you ensure safety during tree removal?", answer: "Safety is our top priority. Our teams are fully trained and insured. We use professional-grade equipment and follow strict safety protocols, including sectional dismantling for large trees in confined spaces, to ensure no damage to your property or surrounding structures." },
+    { question: "Do you also remove the tree stump?", answer: "Yes, we offer a complete service that includes stump grinding and removal. After the tree is felled, we can grind the stump down below ground level, allowing you to lay lawn, pave, or build over the area. This leaves your property completely clear and level." },
+    { question: "How quickly can you remove a fallen or dangerous tree?", answer: "We offer an emergency tree felling service for urgent situations like storm-damaged or hazardous trees. We prioritize these calls to ensure your property is made safe as quickly as possible. Please call us directly for the fastest response." }
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Tree Felling Service",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "SIMA Demolitions Projects"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Johannesburg"
+    },
+    "description": "Professional tree felling, tree removal, stump grinding, and site clearing services in Johannesburg. Licensed and insured contractors for residential and commercial properties.",
+    "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/tree-felling-johannesburg"
+};
+
 
 export default function TreeFellingJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'treeFelling');
     const servicesImage = PlaceHolderImages.find(p => p.id === 'treeCuttingRopes');
+    const processImage = PlaceHolderImages.find(p => p.id === 'treeCuttingCleanup');
 
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
-        <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Tree Felling Services in Johannesburg</h1>
-            <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                SIMA Demolitions Projects offers safe, professional, and licensed tree felling services in Johannesburg. Our experienced tree felling contractors Johannesburg team handles everything from single tree removal to large-scale vegetation clearing for residential and commercial clients across all suburbs.
-            </p>
-             <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Free Quote</a>
-                </Button>
-                <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request an Assessment</Link>
-                </Button>
-            </div>
-        </section>
-
-        <section id="services" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Tree Felling Services Johannesburg</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                 <div>
-                    {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Professional tree felling services in Johannesburg" data-ai-hint="tree felling" fill className="rounded-lg object-cover" /></div>}
-                </div>
-                <div>
-                    <ul className="space-y-3">
-                        <li className="flex items-start gap-3"><Axe className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Tree Cutting & Removal:** Safe felling of trees of all sizes.</span></li>
-                        <li className="flex items-start gap-3"><Axe className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Stump Grinding & Removal:** Complete removal of stumps below ground level.</span></li>
-                        <li className="flex items-start gap-3"><Axe className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Tree Pruning & Trimming:** Improving tree health and safety.</span></li>
-                        <li className="flex items-start gap-3"><Axe className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Vegetation & Site Clearing:** Preparing land for construction or landscaping.</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Tree Felling in Johannesburg?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Licensed & Insured</h3><p className="text-sm text-muted-foreground">Full compliance and insurance for your peace of mind.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Safety First</h3><p className="text-sm text-muted-foreground">We use advanced techniques to protect your property.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Team</h3><p className="text-sm text-muted-foreground">Our arborists are trained and experienced in handling complex removals.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Full Cleanup Service</h3><p className="text-sm text-muted-foreground">We remove all wood, branches, and debris from your property.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">Competitive and transparent quotes with no hidden costs.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Emergency Services</h3><p className="text-sm text-muted-foreground">Fast response for storm-damaged or hazardous trees.</p></div></div>
-            </div>
-        </section>
-
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Tree Felling Across All Johannesburg Suburbs</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We offer localized tree felling services across Johannesburg. Click on your suburb to learn more, or visit our <Link href="/tree-felling-services-johannesburg" className="text-primary hover:underline">main services hub</Link>.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-                {suburbs.map(suburb => (
-                    <Button key={suburb.name} variant="outline" asChild>
-                        <Link href={suburb.href}><MapPin className="mr-2" /> {suburb.name}</Link>
+    <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+        <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
+            <section className="text-center mb-16">
+                <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Tree Felling Contractors in Johannesburg</h1>
+                <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
+                    <ShieldCheck /> Safe, Licensed & Insured Tree Removal Experts
+                </p>
+                <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
+                    As premier tree felling contractors in Johannesburg, SIMA Demolitions Projects offers expert, safe, and reliable tree felling services Johannesburg residents and businesses can depend on. An overgrown or hazardous tree can pose a significant risk to your property. Our licensed and insured team provides professional solutions across all Johannesburg suburbs, including Sandton, Randburg, Roodepoort, and Soweto. From precision tree cutting in tight spaces to complete stump removal, we handle every aspect of the job, ensuring your property is left safe and clean.
+                </p>
+                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+                    <Button size="lg" asChild>
+                        <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Free Quote</a>
                     </Button>
+                    <Button size="lg" variant="secondary" asChild>
+                        <Link href="/contact"><Quote className="mr-2"/>Request an Assessment</Link>
+                    </Button>
+                </div>
+            </section>
+
+            <section id="services" className="mb-16">
+                <h2 className="text-3xl font-bold text-center mb-12">Our Tree Felling Services in Johannesburg</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Axe /> Tree Cutting & Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Safe felling and sectional dismantling of trees of all sizes.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Axe /> Stump Grinding & Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Complete removal of stumps below ground level for a clear site.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Axe /> Tree Pruning & Trimming</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Improving tree health, shape, and safety by removing dead or overgrown branches.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Axe /> Vegetation & Site Clearing</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Preparing land for construction or landscaping by clearing all unwanted trees and bush.</p></CardContent></Card>
+                </div>
+            </section>
+            
+            <section className="mb-16 bg-card p-8 rounded-lg">
+                <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Tree Felling in Johannesburg?</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Licensed & Insured</h3><p className="text-sm text-muted-foreground">Full compliance and comprehensive insurance for your complete peace of mind.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Safety First Approach</h3><p className="text-sm text-muted-foreground">We use advanced techniques like sectional dismantling to protect your property.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Team</h3><p className="text-sm text-muted-foreground">Our arborists are trained and experienced in handling complex and dangerous tree removals.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Full Cleanup Service</h3><p className="text-sm text-muted-foreground">We don't just cut the tree; we remove all wood, branches, and debris from your property.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">We provide competitive and transparent quotes with no hidden costs.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Emergency Services</h3><p className="text-sm text-muted-foreground">We offer a fast response for storm-damaged or hazardous trees that pose an immediate threat.</p></div></div>
+                </div>
+            </section>
+            
+            <section className="mb-16">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 className="text-3xl font-bold mb-4">Our Johannesburg Tree Felling Process</h2>
+                        <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
+                            <li><span className="font-semibold text-foreground">Site Assessment:</span> We provide a free, on-site evaluation and a detailed, no-obligation quote.</li>
+                            <li><span className="font-semibold text-foreground">Permit Check:</span> We advise if any permits are needed for protected trees.</li>
+                            <li><span className="font-semibold text-foreground">Safety Preparation:</span> We secure the area and plan the felling path to protect your property.</li>
+                            <li><span className="font-semibold text-foreground">Controlled Felling:</span> Our team uses sectional dismantling to safely bring the tree down piece by piece.</li>
+                            <li><span className="font-semibold text-foreground">Debris Removal & Cleanup:</span> We chip smaller branches and remove all logs, leaving your site tidy.</li>
+                            <li><span className="font-semibold text-foreground">Stump Grinding:</span> On request, we grind the stump below ground level for a perfectly flat finish.</li>
+                        </ol>
+                    </div>
+                     <div>
+                        {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="Cleaning up wood chips after tree felling in Johannesburg" data-ai-hint="wood chips cleanup" fill className="rounded-lg object-cover" /></div>}
+                    </div>
+                </div>
+            </section>
+
+            <section className="mb-16">
+                <h2 className="text-3xl font-bold text-center mb-8">Tree Felling Services Across Johannesburg Suburbs</h2>
+                <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                    We offer localized tree felling services across Johannesburg. Click on your suburb to learn more, or visit our <Link href="/tree-felling-services-johannesburg" className="text-primary hover:underline">main services hub</Link>.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                    {suburbs.map(suburb => (
+                        <Button key={suburb.name} variant="outline" asChild>
+                            <Link href={suburb.href}><MapPin className="mr-2" /> {suburb.name}</Link>
+                        </Button>
+                    ))}
+                </div>
+            </section>
+
+            <section id="faq" className="max-w-4xl mx-auto mb-16">
+              <h2 className="text-3xl font-bold text-center mb-8">FAQ – Tree Felling Johannesburg</h2>
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`}>
+                    <AccordionTrigger>{faq.question}</AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
+                  </AccordionItem>
                 ))}
-            </div>
-      </section>
+              </Accordion>
+            </section>
 
-        <section id="faq" className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">FAQ – Tree Felling Johannesburg</h2>
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </section>
-
-        <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Get a Free Tree Felling Quote in Johannesburg</h2>
-          <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            For safe and professional tree removal, contact SIMA Demolitions today. We serve all of Johannesburg with licensed and insured services.
-          </p>
-          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                  <a href="tel:0784292760"><Phone />Call for a Fast Quote</a>
-              </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                  <Link href="/contact"><Mail />Request a Free Quote</Link>
-              </Button>
-          </div>
-        </section>
-    </div>
+            <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
+              <h2 className="text-3xl font-bold">Get a Free Tree Felling Quote in Johannesburg</h2>
+              <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
+                For safe and professional tree removal, contact SIMA Demolitions today. We serve all of Johannesburg with licensed and insured services.
+              </p>
+              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+                  <Button size="lg" variant="secondary" asChild>
+                      <a href="tel:0784292760"><Phone />Call for a Fast Quote</a>
+                  </Button>
+                  <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                      <Link href="/contact"><Mail />Request a Free Quote</Link>
+                  </Button>
+              </div>
+            </section>
+        </div>
+    </>
   );
 }
