@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Site Cleaning Services Johannesburg | Construction & Demolition Cleanup',
-  description: 'Expert site cleaning services in Johannesburg. Construction, post-demolition & commercial cleanups. Licensed, insured & fast response. Call today.',
+  title: 'Site Cleaning Johannesburg | Professional Construction & Demolition Cleanup Contractors',
+  description: 'Professional site cleaning contractors in Johannesburg. We offer post-construction, commercial, and residential site cleaning and debris removal across all Johannesburg suburbs.',
 };
 
 export default function SiteCleaningLayout({

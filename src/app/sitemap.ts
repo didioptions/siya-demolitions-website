@@ -59,12 +59,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/rubble-removal-linden',
     '/rubble-removal-parkhurst',
     '/rubble-removal-greenside',
-    // Legacy Rubble Pages (can be pruned if redirects are permanent)
     '/rubble-removal-brakpan',
     '/rubble-removal-centurion',
     '/rubble-removal-johannesburg-cbd',
     '/rubble-removal-nigel',
     '/rubble-removal-springs',
+    // Site Cleaning Pages
+    '/site-cleaning-services-johannesburg',
+    '/site-cleaning-sandton',
+    '/site-cleaning-randburg',
+    '/site-cleaning-roodepoort',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => ({
