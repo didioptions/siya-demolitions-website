@@ -33,8 +33,6 @@ export default function SiteCleaningPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
     const processImage = PlaceHolderImages.find(p => p.id === 'siteCleaningWorker');
 
-    const serviceAreas = [ "Sandton", "Randburg", "Midrand", "Roodepoort", "Boksburg", "Germiston", "Kempton Park", "Soweto" ];
-
   return (
     <div>
         {/* Hero Section */}
@@ -129,22 +127,83 @@ export default function SiteCleaningPage() {
             </div>
         </section>
 
-        {/* Service Areas Section */}
-        <section className="py-12 md:py-20 bg-background">
-            <div className="container mx-auto px-4 md:px-6 text-center">
-                 <h2 className="text-3xl md:text-4xl font-bold">Serving All of Johannesburg with Local Expertise</h2>
-                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">Our site cleaning crews are active across every corner of the city, providing fast, localized service. We cover all major suburbs including:</p>
-                 <div className="mt-8 flex flex-wrap justify-center gap-2 md:gap-4">
-                    {serviceAreas.map(area => (
-                        <div key={area} className="bg-card border rounded-full px-4 py-2 text-sm font-medium">
-                            {area}
-                        </div>
-                    ))}
-                    <div className="bg-card border rounded-full px-4 py-2 text-sm font-medium">...and more!</div>
-                 </div>
-                 <Button asChild size="lg" className="mt-8">
-                    <Link href="/site-cleaning-services-johannesburg">View All Our Service Areas</Link>
-                </Button>
+        {/* Service Areas Section - REPLACED */}
+        <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Cleaning Across Greater Johannesburg</h2>
+                    <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
+                        Apex Demolitions offers a fully comprehensive site cleaning and rubble removal service to every corner of the Johannesburg metropolitan area. Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is.
+                    </p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">North Johannesburg</h3>
+                        <p className="text-sm text-muted-foreground mb-4">We provide elite site cleaning services in Johannesburg's northern suburbs, perfect for post-renovation cleanups in luxury estates and commercial properties.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Sandton</li>
+                            <li>Randburg</li>
+                            <li>Fourways</li>
+                            <li>Bryanston</li>
+                            <li>Rosebank</li>
+                        </ul>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">East Rand (Ekurhuleni)</h3>
+                        <p className="text-sm text-muted-foreground mb-4">Our teams are experts in industrial and residential site clearance across the East Rand, offering reliable rubble removal in Johannesburg's industrial heartland.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Kempton Park</li>
+                            <li>Boksburg</li>
+                            <li>Benoni</li>
+                            <li>Germiston</li>
+                            <li>Alberton</li>
+                            <li>Bedfordview & Edenvale</li>
+                            <li>Brakpan, Springs & Nigel</li>
+                        </ul>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">West Rand</h3>
+                        <p className="text-sm text-muted-foreground mb-4">Apex Demolitions provides thorough construction site cleaning and debris removal throughout the West Rand, serving both residential and commercial clients.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Roodepoort</li>
+                            <li>Krugersdorp</li>
+                            <li>Randfontein</li>
+                            <li>Westonaria</li>
+                        </ul>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">South Johannesburg</h3>
+                        <p className="text-sm text-muted-foreground mb-4">We are proud to offer affordable and efficient site cleaning and waste removal services to the communities of Johannesburg South.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Soweto</li>
+                            <li>Lenasia</li>
+                            <li>Ennerdale</li>
+                            <li>Kliprivier</li>
+                        </ul>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">Central Johannesburg</h3>
+                        <p className="text-sm text-muted-foreground mb-4">Our specialized teams handle complex site clearance projects in the dense urban environment of the Johannesburg CBD and its surrounding areas.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Johannesburg CBD</li>
+                            <li>Hillbrow</li>
+                            <li>Braamfontein</li>
+                            <li>Melville & Northcliff</li>
+                        </ul>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg">
+                        <h3 className="font-semibold text-lg mb-2">Surrounding Areas</h3>
+                        <p className="text-sm text-muted-foreground mb-4">Our service extends to key areas connecting greater Johannesburg, including the rapidly growing Midrand corridor.</p>
+                        <ul className="text-sm space-y-1 list-disc list-inside">
+                            <li>Midrand</li>
+                            <li>Parts of Ekurhuleni Metro</li>
+                            <li>And other surrounding suburbs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="text-center mt-12">
+                    <p className="text-lg font-semibold">Don't see your suburb? We likely cover it. Call us today on 078 429 2760 or WhatsApp us for a free quote – we cover all Johannesburg suburbs and surrounding areas!</p>
+                </div>
             </div>
         </section>
 
