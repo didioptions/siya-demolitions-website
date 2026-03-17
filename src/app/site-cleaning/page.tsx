@@ -52,23 +52,27 @@ const faqs = [
     },
     {
         question: "Is rubble removal included in your site cleaning service?",
-        answer: "Yes, absolutely. Our site cleaning service is comprehensive and includes the removal of all debris and rubble. We are a licensed rubble removal company, ensuring all waste is loaded, transported, and disposed of legally and responsibly. You do not need to hire a separate rubble removal contractor."
+        answer: "Yes, absolutely. Our site cleaning service is comprehensive and includes the removal of all debris and rubble. We are a licensed rubble removal company, ensuring all waste is loaded, transported, and disposed of legally and responsibly. You do not need to hire a separate contractor."
     },
     {
         question: "What areas in Johannesburg do you cover?",
-        answer: "We cover all of Johannesburg and the greater Gauteng region. Our teams are strategically located to provide fast service to all suburbs, including Sandton, Randburg, Roodepoort, Midrand, the Johannesburg South, Soweto, and the entire East Rand."
+        answer: "We cover all of Johannesburg and the greater Gauteng region. Our teams are strategically located to provide fast service to all suburbs, including Sandton, Randburg, Roodepoort, Midrand, Johannesburg South, Soweto, and the entire East Rand."
     },
     {
-        question: "What types of jobs do you handle?",
-        answer: "We handle all types of site cleaning jobs, big or small. This includes post-construction cleaning for major developers, final handover cleaning for contractors, post-renovation tidy-ups for homeowners, and regular waste management for active building sites."
+        question: "What makes your service different from a regular cleaning company?",
+        answer: "We are construction industry specialists, not a domestic cleaning service. Our teams are equipped to handle heavy materials, construction dust, and potentially hazardous debris safely. We understand the workflow of a building site and provide a robust, heavy-duty service that a regular cleaning company is not equipped for."
     },
      {
         question: "Are your site cleaning teams licensed and insured?",
         answer: "Yes, 100%. Apex Demolitions is a fully licensed and insured company. We carry comprehensive public liability insurance, and our teams are trained to adhere to the highest safety standards, giving you complete peace of mind."
     },
     {
-        question: "What makes you different from a regular cleaning company?",
-        answer: "We are not a domestic cleaning company; we are construction and demolition industry specialists. Our teams are equipped to handle heavy materials, construction dust, and hazardous debris safely. We understand the workflow of a building site and provide a robust service that a regular cleaning company cannot."
+        question: "Do I need to be on-site during the cleaning?",
+        answer: "It is not essential for you to be present for the entire duration, but we recommend being there for the initial walkthrough to clarify your exact requirements and for the final inspection to ensure you are 100% satisfied with the work."
+    },
+    {
+        question: "What safety measures do you take on-site?",
+        answer: "Safety is our top priority. All our staff wear appropriate Personal Protective Equipment (PPE). We secure the work area to prevent unauthorized access, manage dust to ensure air quality, and handle all waste materials according to safety regulations to prevent accidents or injuries."
     }
 ];
 
@@ -105,30 +109,28 @@ export default function SiteCleaningPage() {
     <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }} />
 
-        {/* Hero Section */}
         <section className="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center text-center text-white">
             {heroImage && <Image src={heroImage.imageUrl} alt="Pristine construction site after professional cleaning in Johannesburg" data-ai-hint="clean construction site" fill className="object-cover" priority />}
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 container mx-auto px-4 md:px-6">
                 <div className="max-w-4xl mx-auto">
-                     <p className="text-accent font-semibold uppercase tracking-widest">Trusted Across Johannesburg</p>
+                    <p className="text-accent font-semibold uppercase tracking-widest">FAST, RELIABLE, AND AFFORDABLE</p>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mt-2">Site Cleaning Johannesburg</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
-                        Fast, reliable, and affordable cleanup for construction, commercial, and residential sites. Get your Johannesburg project site spotless, safe, and ready for handover.
+                        Professional builders cleans, post-construction cleaning, and final handover preparation. We leave your site spotless, safe, and ready for action. Trusted across Johannesburg.
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
                             <a href="tel:0784292760"><Phone /> Call for a Free Quote</a>
                         </Button>
                         <Button size="lg" variant="secondary" asChild>
-                            <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp Us Now</a>
+                            <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for a Fast Response</a>
                         </Button>
                     </div>
                 </div>
             </div>
         </section>
 
-        {/* Introduction Section */}
         <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Turn Your Messy Worksite into a Clean, Safe, and Productive Space</h2>
@@ -138,20 +140,19 @@ export default function SiteCleaningPage() {
             </div>
         </section>
 
-        {/* Detailed Services Section */}
         <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Our Comprehensive Site Cleaning Services</h2>
-                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We offer a complete range of cleaning and clearing solutions tailored to any project in Johannesburg.</p>
+                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We offer a complete range of cleaning and clearing solutions tailored to any project in Johannesburg. No job is too big or too small.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><Home className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Residential Site Cleaning</h3></div><p className="text-muted-foreground">Perfect for homeowners after a renovation, extension, or garden project. We remove all building debris, clear away garden refuse, and ensure your home is spotless and ready to be enjoyed.</p></div>
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><Building className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Construction Site Cleaning</h3></div><p className="text-muted-foreground">We partner with builders and developers to provide ongoing site cleaning. We manage waste and debris throughout the project, ensuring a safe and productive environment for all contractors on site.</p></div>
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><Factory className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Commercial & Industrial Cleaning</h3></div><p className="text-muted-foreground">From retail strip-outs to warehouse clear-outs in Johannesburg's industrial hubs. We handle heavy debris, commercial waste, and large-scale cleanups with minimal disruption to your operations.</p></div>
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><Trash2 className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Rubble & Debris Removal</h3></div><p className="text-muted-foreground">Our service includes full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>. We load and legally dispose of all concrete, bricks, soil, wood, and mixed waste, so you don't need a separate contractor.</p></div>
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><Sparkles className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Final Handover Cleaning</h3></div><p className="text-muted-foreground">The final, detailed clean before a project is handed over to the client. We ensure every surface is free from dust and construction residue, guaranteeing a professional first impression.</p></div>
-                    <div className="flex flex-col gap-4"><div className="flex items-center gap-3"><ShieldCheck className="w-8 h-8 text-primary" /> <h3 className="font-bold text-xl">Site Safety Preparation</h3></div><p className="text-muted-foreground">Beyond cleaning, we prepare your site by removing hazards, clearing access ways, and ensuring it meets safety standards for the next phase of work or for public access.</p></div>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><Building className="w-8 h-8 text-primary" /> Post-Construction Cleaning</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our core service. We perform a deep clean of new builds or renovated areas, removing all construction debris, fine dust from surfaces, floors, and windows, and any leftover materials. We make your site ready for snagging and final inspection.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><Sparkles className="w-8 h-8 text-primary" /> Final Handover Cleaning</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">The meticulous final clean before you hand over the keys. We ensure every surface is polished, floors are shining, and the property is presented in immaculate, move-in ready condition for your client.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><Home className="w-8 h-8 text-primary" /> Residential Site Cleaning</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Perfect for homeowners after a renovation, extension, or garden project. We remove all building debris, clear away garden refuse, and ensure your home is spotless and ready to be enjoyed.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 className="w-8 h-8 text-primary" /> Rubble & Debris Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our service includes full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>. We load and legally dispose of all concrete, bricks, soil, wood, and mixed waste, so you don't need a separate contractor.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><Factory className="w-8 h-8 text-primary" /> Commercial & Industrial Cleaning</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">From retail strip-outs to warehouse clear-outs in Johannesburg's industrial hubs. We handle heavy debris, commercial waste, and large-scale cleanups with minimal disruption to your operations.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-3"><ShieldCheck className="w-8 h-8 text-primary" /> Site Safety Preparation</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Beyond cleaning, we prepare your site by removing hazards, clearing access ways, and ensuring it meets safety standards for the next phase of work or for public access.</p></CardContent></Card>
                 </div>
                  <div className="text-center mt-12">
                     <Button size="lg" asChild><Link href="/contact">Get a Tailored Cleaning Plan <ArrowRight className="ml-2" /></Link></Button>
@@ -159,7 +160,6 @@ export default function SiteCleaningPage() {
             </div>
         </section>
 
-        {/* Our Process Section */}
         <section className="py-12 md:py-20 bg-background">
              <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
@@ -175,7 +175,6 @@ export default function SiteCleaningPage() {
             </div>
         </section>
 
-        {/* Why Choose Us Section */}
         <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -184,49 +183,43 @@ export default function SiteCleaningPage() {
                     </div>
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold">Why Choose Apex Demolitions for Site Cleaning?</h2>
-                        <p className="mt-4 text-lg text-muted-foreground">We are more than just cleaners; we are your partners in project success.</p>
+                        <p className="mt-4 text-lg text-muted-foreground">We are more than just cleaners; we are your partners in project success. We deliver a fast, safe, and professional service that Johannesburg's top builders and homeowners trust.</p>
                          <div className="mt-8 grid gap-6">
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">As experts in <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and rubble removal, we provide a seamless, integrated service from start to finish. No need to manage multiple contractors.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast & Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money. Our teams are punctual and efficient, with same-day service available in many Johannesburg areas to keep your project moving.</p></div></div>
-                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Experienced & Professional Crew</h3><p className="text-muted-foreground mt-1 text-sm">Our uniformed teams are trained, insured, and dedicated to delivering a high-quality service with a professional attitude.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Safe & Compliant Waste Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are a licensed waste carrier, ensuring all rubble and debris is disposed of legally and responsibly at registered facilities.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">True One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">As experts in <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, we provide a seamless, integrated service from start to finish. No need to manage multiple contractors.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast & Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money. Our teams are punctual and efficient, with same-day service available in many Johannesburg areas to keep your project moving without delays.</p></div></div>
+                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Experienced & Professional Crew</h3><p className="text-muted-foreground mt-1 text-sm">Our uniformed teams are trained, insured, and dedicated to delivering a high-quality service with a professional attitude. We respect your property and get the job done right the first time.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Safe & Compliant Waste Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are a licensed waste carrier, ensuring all rubble and debris is disposed of legally and responsibly at registered facilities. This protects you from fines and is better for the environment.</p></div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        {/* Areas We Serve Section */}
+        
         <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Cleaning Across Greater Johannesburg</h2>
                     <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                        Apex Demolitions offers a fully comprehensive site cleaning and rubble removal service to every corner of the Johannesburg metropolitan area. Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is.
+                        Apex Demolitions offers a fully comprehensive site cleaning and rubble removal service to every corner of the Johannesburg metropolitan area. Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is. From the estates of Sandton to the industrial hubs of the East Rand, our site clearance Johannesburg service is unparalleled.
                     </p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     <div className="bg-card p-6 rounded-lg">
                         <h3 className="font-semibold text-lg mb-2">North Johannesburg</h3>
-                        <p className="text-sm text-muted-foreground mb-4">We provide elite site cleaning services in Johannesburg's northern suburbs, perfect for post-renovation cleanups in luxury estates and commercial properties.</p>
+                        <p className="text-sm text-muted-foreground mb-4">Elite site cleaning services for Johannesburg's northern suburbs, perfect for post-renovation cleanups in luxury estates and commercial properties.</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li><Link href="/site-cleaning-sandton" className="hover:underline">Sandton</Link></li>
-                            <li><Link href="/site-cleaning-randburg" className="hover:underline">Randburg</Link></li>
-                            <li><Link href="/site-cleaning-fourways" className="hover:underline">Fourways</Link></li>
-                            <li><Link href="/site-cleaning-bryanston" className="hover:underline">Bryanston</Link></li>
-                            <li><Link href="/site-cleaning-rosebank" className="hover:underline">Rosebank</Link></li>
+                            <li><Link href="/site-cleaning-sandton" className="hover:underline">Sandton</Link>, <Link href="/site-cleaning-bryanston" className="hover:underline">Bryanston</Link> & <Link href="/site-cleaning-fourways" className="hover:underline">Fourways</Link></li>
+                            <li><Link href="/site-cleaning-randburg" className="hover:underline">Randburg</Link> & <Link href="/site-cleaning-rosebank" className="hover:underline">Rosebank</Link></li>
                         </ul>
                     </div>
                     <div className="bg-card p-6 rounded-lg">
                         <h3 className="font-semibold text-lg mb-2">East Rand (Ekurhuleni)</h3>
                         <p className="text-sm text-muted-foreground mb-4">Our teams are experts in industrial and residential site clearance across the East Rand, offering reliable rubble removal in Johannesburg's industrial heartland.</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li><Link href="/site-cleaning-kempton-park" className="hover:underline">Kempton Park</Link></li>
-                            <li><Link href="/site-cleaning-boksburg" className="hover:underline">Boksburg</Link></li>
-                            <li><Link href="/site-cleaning-benoni" className="hover:underline">Benoni</Link></li>
-                            <li><Link href="/site-cleaning-germiston" className="hover:underline">Germiston</Link></li>
-                            <li><Link href="/site-cleaning-alberton" className="hover:underline">Alberton</Link></li>
-                            <li><Link href="/site-cleaning-bedfordview" className="hover:underline">Bedfordview & Edenvale</Link></li>
+                            <li><Link href="/site-cleaning-kempton-park" className="hover:underline">Kempton Park</Link> & <Link href="/site-cleaning-edenvale" className="hover:underline">Edenvale</Link></li>
+                            <li><Link href="/site-cleaning-boksburg" className="hover:underline">Boksburg</Link> & <Link href="/site-cleaning-benoni" className="hover:underline">Benoni</Link></li>
+                            <li><Link href="/site-cleaning-germiston" className="hover:underline">Germiston</Link> & <Link href="/site-cleaning-alberton" className="hover:underline">Alberton</Link></li>
+                            <li>Brakpan, Springs & Nigel</li>
                         </ul>
                     </div>
                     <div className="bg-card p-6 rounded-lg">
@@ -234,8 +227,7 @@ export default function SiteCleaningPage() {
                         <p className="text-sm text-muted-foreground mb-4">Apex Demolitions provides thorough construction site cleaning and debris removal throughout the West Rand, serving both residential and commercial clients.</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
                             <li><Link href="/site-cleaning-roodepoort" className="hover:underline">Roodepoort</Link></li>
-                            <li>Krugersdorp</li>
-                            <li>Randfontein</li>
+                            <li>Krugersdorp & Randfontein</li>
                         </ul>
                     </div>
                     <div className="bg-card p-6 rounded-lg">
@@ -243,13 +235,12 @@ export default function SiteCleaningPage() {
                         <p className="text-sm text-muted-foreground mb-4">We are proud to offer affordable and efficient site cleaning and waste removal services to the communities of Johannesburg South.</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
                             <li><Link href="/site-cleaning-soweto" className="hover:underline">Soweto</Link></li>
-                            <li>Lenasia</li>
-                            <li>Ennerdale</li>
+                            <li>Lenasia & Ennerdale</li>
                         </ul>
                     </div>
                     <div className="bg-card p-6 rounded-lg">
                         <h3 className="font-semibold text-lg mb-2">Central Johannesburg</h3>
-                        <p className="text-sm text-muted-foreground mb-4">Our specialized teams handle complex site clearance projects in the dense urban environment of the Johannesburg CBD and its surrounding areas.</p>
+                        <p className="text-sm text-muted-foreground mb-4">Our specialized teams handle complex site clearance projects in the dense urban environment of the Johannesburg CBD and its surrounding suburbs.</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
                             <li>Johannesburg CBD</li>
                             <li><Link href="/site-cleaning-melville" className="hover:underline">Melville</Link> & <Link href="/site-cleaning-northcliff" className="hover:underline">Northcliff</Link></li>
@@ -271,7 +262,6 @@ export default function SiteCleaningPage() {
             </div>
         </section>
 
-        {/* FAQ Section */}
         <section id="faq" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
@@ -288,12 +278,11 @@ export default function SiteCleaningPage() {
             </div>
         </section>
         
-        {/* Final CTA */}
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
              <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">Ready for a Spotless Site?</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-primary-foreground/80">
-                    Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free, and no-obligation quote on professional site cleaning anywhere in Johannesburg.
+                    Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free, and no-obligation quote on professional site cleaning anywhere in Johannesburg. Same-day service available in many areas!
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
