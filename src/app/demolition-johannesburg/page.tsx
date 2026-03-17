@@ -93,7 +93,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading demolition contractors in Johannesburg, SIMA Demolitions Projects provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in Sandton, Randburg, Soweto, or Roodepoort, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
+            As the leading demolition contractors in Johannesburg, Apex Demolitions Projects provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in Sandton, Randburg, Soweto, or Roodepoort, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
           </p>
           <Button size="lg" className="mt-6" asChild>
             <a href="tel:0784292760">
@@ -138,7 +138,7 @@ export default function DemolitionJohannesburgPage() {
         </section>
         
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA Demolition Contractors in Johannesburg?</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex Demolition Contractors in Johannesburg?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Card><CardHeader><CardTitle className="flex items-center gap-3"><ShieldCheck className="text-accent" />Licensed Contractors</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We are fully licensed, ensuring your project meets all City of Johannesburg regulations.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle className="flex items-center gap-3"><FileText className="text-accent" />Council Approval Assistance</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We expertly manage the permit process to save you time and prevent delays.</p></CardContent></Card>
@@ -209,7 +209,7 @@ export default function DemolitionJohannesburgPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Get a Free Demolition Quote in Johannesburg</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to start your project? Contact SIMA Demolitions for a professional, no-obligation quote. We have full coverage across all Johannesburg suburbs.
+            Ready to start your project? Contact Apex Demolitions for a professional, no-obligation quote. We have full coverage across all Johannesburg suburbs.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>

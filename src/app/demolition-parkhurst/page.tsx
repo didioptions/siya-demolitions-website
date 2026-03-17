@@ -24,7 +24,7 @@ export default function DemolitionParkhurstPage() {
             <ShieldCheck /> Precision Demolition for Parkhurst Renovations
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions offers expert demolition services tailored for the unique, high-density environment of Parkhurst, Johannesburg. We specialize in residential demolition for the area's popular renovation and rebuild projects. Our licensed teams are skilled in working on small stands, ensuring every project is executed with precision, safety, and minimal disruption to the vibrant Parkhurst community.
+            Apex Demolitions offers expert demolition services tailored for the unique, high-density environment of Parkhurst, Johannesburg. We specialize in residential demolition for the area's popular renovation and rebuild projects. Our licensed teams are skilled in working on small stands, ensuring every project is executed with precision, safety, and minimal disruption to the vibrant Parkhurst community.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>

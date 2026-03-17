@@ -41,7 +41,7 @@ export default function DemolitionRandburgPage() {
             <ShieldCheck /> Your Local, Licensed Randburg Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions is a leading demolition contractor providing trusted, professional services throughout Randburg. As a core part of the northern Johannesburg suburbs, Randburg requires a contractor who understands its mix of residential properties. We specialize in safe house demolition, efficient pool removal, and thorough site clearing in areas from Ferndale to Northcliff. We are experts in the City of Johannesburg's regulations and are committed to delivering clean, compliant, and hassle-free projects for homeowners and developers alike.
+            Apex Demolitions is a leading demolition contractor providing trusted, professional services throughout Randburg. As a core part of the northern Johannesburg suburbs, Randburg requires a contractor who understands its mix of residential properties. We specialize in safe house demolition, efficient pool removal, and thorough site clearing in areas from Ferndale to Northcliff. We are experts in the City of Johannesburg's regulations and are committed to delivering clean, compliant, and hassle-free projects for homeowners and developers alike.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -66,7 +66,7 @@ export default function DemolitionRandburgPage() {
         <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Randburg</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job. Our local knowledge of Randburg ensures your project runs smoothly and complies with all City of Johannesburg regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job. Our local knowledge of Randburg ensures your project runs smoothly and complies with all City of Johannesburg regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg requirements.</span></li>

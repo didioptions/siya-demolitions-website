@@ -41,7 +41,7 @@ export default function DemolitionMidrandPage() {
             <ShieldCheck /> Midrand's Specialist in Estate & Commercial Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions is the trusted demolition contractor for Midrand's rapidly growing landscape. We specialize in projects that require precision and expertise, from house demolitions in premier estates like Waterfall to large-scale site clearing for commercial developments near the Mall of Africa. As local experts, we seamlessly manage City of Johannesburg permits and estate HOA compliance. Our focus is on delivering safe, efficient, and impeccably clean sites, making us the go-to choice for developers and homeowners in Midrand.
+            Apex Demolitions is the trusted demolition contractor for Midrand's rapidly growing landscape. We specialize in projects that require precision and expertise, from house demolitions in premier estates like Waterfall to large-scale site clearing for commercial developments near the Mall of Africa. As local experts, we seamlessly manage City of Johannesburg permits and estate HOA compliance. Our focus is on delivering safe, efficient, and impeccably clean sites, making us the go-to choice for developers and homeowners in Midrand.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -69,7 +69,7 @@ export default function DemolitionMidrandPage() {
             </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Midrand</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Midrand ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Midrand ensures your project runs smoothly and complies with all regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Expertise in City of Johannesburg and estate compliance.</span></li>

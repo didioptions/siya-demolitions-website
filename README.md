@@ -1,6 +1,6 @@
-# SIMA Demolitions Projects Website
+# Apex Demolitions Projects Website
 
-This is the official website for SIMA Demolitions Projects, a leading demolition and site services company based in Gauteng, South Africa. The site provides information about the company's services, service areas, and contact details.
+This is the official website for Apex Demolitions Projects, a leading demolition and site services company based in Gauteng, South Africa. The site provides information about the company's services, service areas, and contact details.
 
 ## Project Overview
 

@@ -41,7 +41,7 @@ export default function DemolitionRosebankPage() {
             <ShieldCheck /> Rosebank's Commercial & Residential Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides specialized demolition services for the dynamic, mixed-use environment of Rosebank. As a leading contractor in Johannesburg's central suburbs, we excel in commercial interior strip-outs for the area's bustling office and retail spaces, as well as precision residential demolitions in leafy suburbs like Parkwood. We are experts at navigating the logistical complexities of high-traffic areas and ensuring full compliance with the City of Johannesburg. Our focus is on delivering projects with minimal disruption and maximum professionalism.
+            Apex Demolitions provides specialized demolition services for the dynamic, mixed-use environment of Rosebank. As a leading contractor in Johannesburg's central suburbs, we excel in commercial interior strip-outs for the area's bustling office and retail spaces, as well as precision residential demolitions in leafy suburbs like Parkwood. We are experts at navigating the logistical complexities of high-traffic areas and ensuring full compliance with the City of Johannesburg. Our focus is on delivering projects with minimal disruption and maximum professionalism.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -69,7 +69,7 @@ export default function DemolitionRosebankPage() {
             </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Rosebank</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from complex commercial strip-outs to sensitive residential demolitions. Our local knowledge of Rosebank ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from complex commercial strip-outs to sensitive residential demolitions. Our local knowledge of Rosebank ensures your project runs smoothly and complies with all regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg commercial & heritage codes.</span></li>

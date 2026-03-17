@@ -24,7 +24,7 @@ export default function DemolitionLindenPage() {
             <ShieldCheck /> Safe & Reliable Demolition in Linden
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides expert demolition services for the leafy suburb of Linden, Johannesburg. As local contractors, we specialize in residential demolition, helping homeowners clear old properties to make way for modern renovations and new builds. We operate with respect for Linden's community feel, ensuring every project is safe, clean, and fully compliant with City of Johannesburg regulations.
+            Apex Demolitions provides expert demolition services for the leafy suburb of Linden, Johannesburg. As local contractors, we specialize in residential demolition, helping homeowners clear old properties to make way for modern renovations and new builds. We operate with respect for Linden's community feel, ensuring every project is safe, clean, and fully compliant with City of Johannesburg regulations.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>

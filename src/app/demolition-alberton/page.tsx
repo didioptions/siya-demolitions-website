@@ -41,7 +41,7 @@ export default function DemolitionAlbertonPage() {
             <ShieldCheck /> Your Local, Licensed Alberton Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As one of the leading demolition companies on the East Rand, SIMA Demolitions provides expert demolition services across Alberton. From family homes in Meyersdal to properties in New Redruth, our local contractors specialize in safe house demolition, swimming pool removal, and complete site clearing. We understand Alberton's community and the City of Ekurhuleni's regulations, ensuring we deliver compliant, efficient, and hassle-free projects every time. Our commitment is to prepare your land for its next chapter with professionalism and care.
+            As one of the leading demolition companies on the East Rand, Apex Demolitions provides expert demolition services across Alberton. From family homes in Meyersdal to properties in New Redruth, our local contractors specialize in safe house demolition, swimming pool removal, and complete site clearing. We understand Alberton's community and the City of Ekurhuleni's regulations, ensuring we deliver compliant, efficient, and hassle-free projects every time. Our commitment is to prepare your land for its next chapter with professionalism and care.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -66,7 +66,7 @@ export default function DemolitionAlbertonPage() {
         <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Alberton</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and community respect. We are committed to upholding the highest standards on every job, from small residential tasks in Brackenhurst to larger clearings. Our local knowledge of Alberton ensures your project runs smoothly, complies with all City of Ekurhuleni regulations, and minimizes disruption to your neighbourhood.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and community respect. We are committed to upholding the highest standards on every job, from small residential tasks in Brackenhurst to larger clearings. Our local knowledge of Alberton ensures your project runs smoothly, complies with all City of Ekurhuleni regulations, and minimizes disruption to your neighbourhood.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of Ekurhuleni municipal requirements.</span></li>

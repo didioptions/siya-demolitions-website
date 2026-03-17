@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gallery | SIMA Demolitions Projects',
+  title: 'Gallery | Apex Demolitions Projects',
   description: 'View a gallery of our completed demolition, rubble removal, and site clearing projects across Gauteng.',
 };
 

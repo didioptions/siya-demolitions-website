@@ -11,16 +11,16 @@ const homeHeroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
 export const metadata: Metadata = {
   title: {
-    default: 'SIMA Demolitions Projects | Demolition & Construction Gauteng',
-    template: '%s | SIMA Demolitions',
+    default: 'Apex Demolitions Projects | Demolition & Construction Gauteng',
+    template: '%s | Apex Demolitions',
   },
-  description: 'Expert demolition services in Gauteng, South Africa. SIMA Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
+  description: 'Expert demolition services in Gauteng, South Africa. Apex Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
   keywords: ['demolition', 'Gauteng', 'Johannesburg', 'South Africa', 'site clearing', 'construction', 'rubble removal', 'tree felling', 'plant hire', 'swimming pool demolition'],
   openGraph: {
-    title: 'SIMA Demolitions Projects | Demolition & Construction Gauteng',
+    title: 'Apex Demolitions Projects | Demolition & Construction Gauteng',
     description: 'Professional demolition, rubble removal, and site clearing services in Gauteng.',
-    url: 'https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/',
-    siteName: 'SIMA Demolitions Projects',
+    url: 'https://apex-demolitions-website.vercel.app/',
+    siteName: 'Apex Demolitions Projects',
     images: [
       {
         url: homeHeroImage?.imageUrl || '',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'SIMA Demolitions Projects',
+  name: 'Apex Demolitions Projects',
   telephone: '+27-78-429-2760',
-  email: 'info@simademolitions.co.za',
+  email: 'info@apexdemolitions.co.za',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '304 Main Avenue',
@@ -49,7 +49,7 @@ const jsonLd = {
     addressCountry: 'ZA',
   },
   description: 'Professional demolition, rubble removal, site clearing, tree felling, swimming pool demolition, plant hire, and construction services in Johannesburg and Gauteng.',
-  url: 'https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/',
+  url: 'https://apex-demolitions-website.vercel.app/',
   image: homeHeroImage?.imageUrl || '',
   serviceType: [
     "Demolition",
@@ -81,8 +81,8 @@ const jsonLd = {
   ],
   priceRange: '$$',
   sameAs: [
-    'https://www.facebook.com/sima.demolitions',
-    'https://www.instagram.com/sima.demolitions'
+    'https://www.facebook.com/apex.demolitions',
+    'https://www.instagram.com/apex.demolitions'
   ]
 };
 

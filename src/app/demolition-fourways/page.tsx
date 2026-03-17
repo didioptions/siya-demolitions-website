@@ -41,7 +41,7 @@ export default function DemolitionFourwaysPage() {
             <ShieldCheck /> The Estate & Residential Demolition Specialists in Fourways
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides specialized demolition services tailored for the unique environment of Fourways. As premier contractors in Johannesburg's northern suburbs, we excel in navigating the requirements of secure lifestyle estates. From full house demolitions in Dainfern to site clearing in Broadacres, our focus is on precision, safety, and compliance. We manage all City of Johannesburg permits and estate approvals, ensuring your project is handled with the utmost professionalism for a clean, build-ready site.
+            Apex Demolitions provides specialized demolition services tailored for the unique environment of Fourways. As premier contractors in Johannesburg's northern suburbs, we excel in navigating the requirements of secure lifestyle estates. From full house demolitions in Dainfern to site clearing in Broadacres, our focus is on precision, safety, and compliance. We manage all City of Johannesburg permits and estate approvals, ensuring your project is handled with the utmost professionalism for a clean, build-ready site.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -69,7 +69,7 @@ export default function DemolitionFourwaysPage() {
             </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Fourways</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job. Our local knowledge of Fourways and its estates ensures your project runs smoothly and complies with all City of Johannesburg and HOA regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job. Our local knowledge of Fourways and its estates ensures your project runs smoothly and complies with all City of Johannesburg and HOA regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Expertise in managing estate and council approvals.</span></li>

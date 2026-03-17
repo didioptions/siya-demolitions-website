@@ -11,17 +11,17 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Johannesburg Demolition, Rubble Removal & Site Clearing Experts | SIMA",
+        absolute: "Johannesburg Demolition, Rubble Removal & Site Clearing Experts | Apex",
     },
-    description: "SIMA Demolitions offers licensed demolition, rubble removal, site cleaning, tree felling & plant hire in Johannesburg. Trusted experts for residential & commercial projects. Get a free quote.",
+    description: "Apex Demolitions offers licensed demolition, rubble removal, site cleaning, tree felling & plant hire in Johannesburg. Trusted experts for residential & commercial projects. Get a free quote.",
 };
 
 const organizationSchema = {
     "@type": "LocalBusiness",
-    "name": "SIMA Demolitions Projects",
+    "name": "Apex Demolitions Projects",
     "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-    "@id": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/",
-    "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/",
+    "@id": "https://apex-demolitions-website.vercel.app/",
+    "url": "https://apex-demolitions-website.vercel.app/",
     "telephone": "+27784292760",
     "priceRange": "$$",
     "address": {
@@ -44,24 +44,24 @@ const organizationSchema = {
         "closes": "17:30"
     },
     "sameAs": [
-        "https://www.facebook.com/sima.demolitions"
+        "https://www.facebook.com/apex.demolitions"
     ]
 };
 
 const servicesSchema = [
-    { "@type": "Service", "serviceType": "Demolition Services", "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/demolition-johannesburg" },
-    { "@type": "Service", "serviceType": "Rubble Removal", "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/rubble-removal-johannesburg" },
-    { "@type": "Service", "serviceType": "Site Cleaning", "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/site-cleaning" },
-    { "@type": "Service", "serviceType": "Tree Felling", "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/tree-felling" },
-    { "@type": "Service", "serviceType": "Swimming Pool Demolition", "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/swimming-pool-demolition" },
-    { "@type": "Service", "serviceType": "Plant Hire", "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.", "provider": { "@type": "Organization", "name": "SIMA Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" }, "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/plant-hire" }
+    { "@type": "Service", "serviceType": "Demolition Services", "description": "Expert residential and commercial demolition across Gauteng, handled with precision to ensure a safe and compliant site ready for development.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://apex-demolitions-website.vercel.app/demolition-johannesburg" },
+    { "@type": "Service", "serviceType": "Rubble Removal", "description": "Fast and reliable rubble removal in Gauteng. We clear all construction debris to ensure a spotless, hazard-free job site.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://apex-demolitions-website.vercel.app/rubble-removal-johannesburg" },
+    { "@type": "Service", "serviceType": "Site Cleaning", "description": "Thorough site cleaning to prepare your Gauteng property for its next phase, ensuring you're ready for excavation or building.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://apex-demolitions-website.vercel.app/site-cleaning" },
+    { "@type": "Service", "serviceType": "Tree Felling", "description": "Safe and professional tree felling in Gauteng. We efficiently remove hazardous or unwanted trees to protect your property and clear land.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://apex-demolitions-website.vercel.app/tree-felling" },
+    { "@type": "Service", "serviceType": "Swimming Pool Demolition", "description": "Safe and affordable swimming pool demolition in Gauteng, including rubble removal and site preparation for landscaping or new builds.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Gauteng" }, "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition" },
+    { "@type": "Service", "serviceType": "Plant Hire", "description": "Affordable and reliable TLB and Bobcat hire with trained operators for excavation, trenching, and site preparation across Johannesburg.", "provider": { "@type": "Organization", "name": "Apex Demolitions Projects" }, "areaServed": { "@type": "AdministrativeArea", "name": "Johannesburg" }, "url": "https://apex-demolitions-website.vercel.app/plant-hire" }
 ];
 
 const faqSchema = {
     "@type": "FAQPage",
     "mainEntity": [
         { "@type": "Question", "name": "How quickly can you clear a site in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "For most standard rubble removal and site cleaning projects in Johannesburg, we can typically offer same-day or next-day service. Our locally-based teams across Gauteng, including Sandton, Randburg, and the East Rand, allow for rapid dispatch. The exact timing depends on the scale of the job and our schedule, but we prioritize urgent requests to prevent delays to your project. Complex demolitions require more planning for permits and safety, but the cleanup phase is always executed with maximum efficiency. Call us directly for the fastest response." } },
-        { "@type": "Question", "name": "Are your demolition and site clearing teams insured and certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. SIMA Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind." } },
+        { "@type": "Question", "name": "Are your demolition and site clearing teams insured and certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. Apex Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind." } },
         { "@type": "Question", "name": "Do you clean up the site after a demolition or rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, complete site cleanup is a core part of our service promise. Our service is not finished until your site is left clean, safe, and ready for the next phase of your project. After any demolition or rubble removal, our teams perform a thorough site cleanup, which includes removing all remaining debris, sweeping hard surfaces, and ensuring no hazards are left behind. Our goal is to provide a true end-to-end solution, saving you the time and expense of hiring a separate cleanup crew. This commitment to a spotless finish is why contractors and homeowners across Johannesburg trust us." } }
     ]
 };
@@ -76,7 +76,7 @@ const allSchema = {
 };
 
 const testimonials = [
-    { quote: "SIMA Demolitions handled our site professionally and left it spotless. Highly recommended for any project in Johannesburg!", name: "Lindiwe M., Johannesburg", avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/lindiwe_cropped.jpg?alt=media&token=0cdacf1a-2277-4232-8ffb-023b86338945" },
+    { quote: "Apex Demolitions handled our site professionally and left it spotless. Highly recommended for any project in Johannesburg!", name: "Lindiwe M., Johannesburg", avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/lindiwe_cropped.jpg?alt=media&token=0cdacf1a-2277-4232-8ffb-023b86338945" },
     { quote: "Fast, reliable, and very professional. They cleared our rubble in record time in Pretoria. Will definitely use them again.", name: "John D., Pretoria", avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/John%20D%20Pretoria%20%20(1).jpg?alt=media&token=57eb9664-e323-465a-b761-cc4bd85027db" },
     { quote: "The team was fantastic. They took down an old structure for us safely and efficiently in Sandton. Great service all around.", name: "Sarah P., Sandton", avatarUrl: "https://firebasestorage.googleapis.com/v0/b/siya-demolitions-projects.firebasestorage.app/o/Sarah%20P%20%20PNG.jpg?alt=media&token=544db08b-c42f-4992-8c96-f8054b32cd2d" }
 ];
@@ -111,7 +111,7 @@ export default function Home() {
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">Johannesburg's Demolition & Site Clearing Experts</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
-                      SIMA Demolitions Projects: Your trusted, licensed partner for demolition, rubble removal, site cleaning, and tree felling in Johannesburg and across Gauteng.
+                      Apex Demolitions Projects: Your trusted, licensed partner for demolition, rubble removal, site cleaning, and tree felling in Johannesburg and across Gauteng.
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="lg" asChild>
@@ -221,7 +221,7 @@ export default function Home() {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Partner in Demolition & Site Preparation</h2>
                         <p className="mt-4 text-lg text-muted-foreground">
-                            At SIMA Demolitions Projects, we don't just demolish structures; we build trust. With a track record of safety, reliability, and excellence since 2000, we are the go-to partner for contractors and homeowners who demand a professional, hassle-free experience.
+                            At Apex Demolitions Projects, we don't just demolish structures; we build trust. With a track record of safety, reliability, and excellence since 2000, we are the go-to partner for contractors and homeowners who demand a professional, hassle-free experience.
                         </p>
                          <div className="mt-8 grid gap-6">
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-accent mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Experience & Expertise</h3><p className="text-muted-foreground mt-1 text-sm">With over two decades of hands-on experience, we’ve successfully completed hundreds of complex projects across Gauteng. Our deep industry knowledge means we anticipate challenges and deliver solutions, not problems.</p></div></div>
@@ -241,7 +241,7 @@ export default function Home() {
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">Safety, Insurance & Compliance: Our Non-Negotiables</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    In the high-risk demolition and construction industry, safety and compliance aren't just buzzwords—they are our license to operate. SIMA Demolitions Projects adheres strictly to the Occupational Health and Safety (OHS) Act and all City of Johannesburg municipal bylaws. Our teams undergo continuous training, and we conduct rigorous on-site risk assessments before any project begins. We are fully insured, protecting your property and investment against any unforeseen circumstances. This professional oversight is your guarantee that your project will be completed without incident, on time, and to the highest legal standard.
+                    In the high-risk demolition and construction industry, safety and compliance aren't just buzzwords—they are our license to operate. Apex Demolitions Projects adheres strictly to the Occupational Health and Safety (OHS) Act and all City of Johannesburg municipal bylaws. Our teams undergo continuous training, and we conduct rigorous on-site risk assessments before any project begins. We are fully insured, protecting your property and investment against any unforeseen circumstances. This professional oversight is your guarantee that your project will be completed without incident, on time, and to the highest legal standard.
                 </p>
                 <div className="mt-8">
                     <Button size="lg" asChild>
@@ -300,7 +300,7 @@ export default function Home() {
                     </AccordionItem>
                     <AccordionItem value="item-2">
                         <AccordionTrigger className="text-lg">Are your demolition and site clearing teams insured and certified?</AccordionTrigger>
-                        <AccordionContent className="text-muted-foreground">Yes, absolutely. SIMA Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind.</AccordionContent>
+                        <AccordionContent className="text-muted-foreground">Yes, absolutely. Apex Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind.</AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
                         <AccordionTrigger className="text-lg">Do you clean up the site after a demolition or rubble removal?</AccordionTrigger>

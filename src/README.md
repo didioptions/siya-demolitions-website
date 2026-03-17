@@ -6,9 +6,9 @@ Once your billing account issues are resolved and you have upgraded your Firebas
 
 **Next Steps:**
 
-1.  Go to the **Firebase Console** for your project (`sima-demolitions-live`).
+1.  Go to the **Firebase Console** for your project (`apex-demolitions-live`).
 2.  Navigate to the **App Hosting** section.
-3.  Follow the instructions to connect your GitHub account and select the `siya-demolitions-website` repository.
+3.  Follow the instructions to connect your GitHub account and select the `apex-demolitions-website` repository.
 4.  Deploy the `main` branch.
 
 This will make your website live on the internet.

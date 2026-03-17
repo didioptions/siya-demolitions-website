@@ -41,7 +41,7 @@ export default function DemolitionSandtonPage() {
             <ShieldCheck /> Sandton's Premier Luxury Home Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides a premium, specialized demolition service for Sandton's most exclusive properties. As the leading contractors in Johannesburg's wealthiest suburb, we understand the precision, discretion, and high standards required. We specialize in luxury home demolition, complex swimming pool removals, and immaculate site clearing for discerning homeowners, architects, and developers in areas like Morningside, Rivonia, and Sandhurst. Our expertise in managing City of Johannesburg permits and strict estate protocols is unparalleled.
+            Apex Demolitions provides a premium, specialized demolition service for Sandton's most exclusive properties. As the leading contractors in Johannesburg's wealthiest suburb, we understand the precision, discretion, and high standards required. We specialize in luxury home demolition, complex swimming pool removals, and immaculate site clearing for discerning homeowners, architects, and developers in areas like Morningside, Rivonia, and Sandhurst. Our expertise in managing City of Johannesburg permits and strict estate protocols is unparalleled.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Private Consultation</a></Button>
@@ -69,7 +69,7 @@ export default function DemolitionSandtonPage() {
             </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Sandton</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Sandton ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Sandton ensures your project runs smoothly and complies with all regulations.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Johannesburg requirements.</span></li>

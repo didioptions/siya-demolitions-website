@@ -24,7 +24,7 @@ export default function DemolitionNorthcliffPage() {
             <ShieldCheck /> Specialist Demolition for Northcliff Properties
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions offers expert demolition services tailored for the unique properties of Northcliff, Johannesburg. We specialize in navigating the challenges of hillside demolitions, providing safe, licensed, and precise services for residential and commercial clients. Our team respects the established character of Northcliff, working carefully to protect surrounding properties and landscapes while clearing the way for your new vision.
+            Apex Demolitions offers expert demolition services tailored for the unique properties of Northcliff, Johannesburg. We specialize in navigating the challenges of hillside demolitions, providing safe, licensed, and precise services for residential and commercial clients. Our team respects the established character of Northcliff, working carefully to protect surrounding properties and landscapes while clearing the way for your new vision.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>

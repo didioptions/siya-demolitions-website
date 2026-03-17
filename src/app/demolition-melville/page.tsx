@@ -24,7 +24,7 @@ export default function DemolitionMelvillePage() {
             <ShieldCheck /> Sensitive Demolition for Melville's Unique Character
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides specialized demolition services for the historic and vibrant suburb of Melville, Johannesburg. We understand the unique challenges of working with older properties on smaller stands. Our licensed teams offer careful residential and commercial demolition, ensuring projects are completed safely, with respect for the area's heritage and minimal disruption to the community.
+            Apex Demolitions provides specialized demolition services for the historic and vibrant suburb of Melville, Johannesburg. We understand the unique challenges of working with older properties on smaller stands. Our licensed teams offer careful residential and commercial demolition, ensuring projects are completed safely, with respect for the area's heritage and minimal disruption to the community.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>

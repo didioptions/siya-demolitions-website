@@ -24,7 +24,7 @@ export default function DemolitionGreensidePage() {
             <ShieldCheck /> Expert Demolition for Greenside's Leafy Suburbs
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions offers professional, licensed demolition services for the prestigious suburb of Greenside, Johannesburg. We specialize in residential projects on large stands, working with care to preserve the area's lush, established character. Whether you're clearing an old property for a modern masterpiece or renovating a classic home, our team ensures a safe, clean, and compliant demolition process.
+            Apex Demolitions offers professional, licensed demolition services for the prestigious suburb of Greenside, Johannesburg. We specialize in residential projects on large stands, working with care to preserve the area's lush, established character. Whether you're clearing an old property for a modern masterpiece or renovating a classic home, our team ensures a safe, clean, and compliant demolition process.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>

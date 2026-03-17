@@ -24,7 +24,7 @@ export default function DemolitionBenoniPage() {
             <ShieldCheck /> Your Local, Licensed Benoni Demolition Experts
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions provides reliable and professional demolition services across Benoni. As a trusted local contractor on the East Rand, we specialize in safe residential house demolition, commercial site clearing, swimming pool removal, and comprehensive rubble removal. Our team is well-versed in Benoni's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth and compliant project.
+            Apex Demolitions provides reliable and professional demolition services across Benoni. As a trusted local contractor on the East Rand, we specialize in safe residential house demolition, commercial site clearing, swimming pool removal, and comprehensive rubble removal. Our team is well-versed in Benoni's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth and compliant project.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -45,7 +45,7 @@ export default function DemolitionBenoniPage() {
         <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Why Choose Our Demolition Contractors?</h2>
-                <p className="text-muted-foreground mb-4">Choosing SIMA Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. Our local knowledge of Benoni ensures your project runs smoothly.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. Our local knowledge of Benoni ensures your project runs smoothly.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Expertise in City of Ekurhuleni regulations.</span></li>
