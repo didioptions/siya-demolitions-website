@@ -15,13 +15,13 @@ const localBusinessSchema = {
     "telephone": "+27784292760",
     "areaServed": [
       { "@type": "Place", "name": "Fourways" },
-      { "@type": "Place", "name": "Dainfern" },
-      { "@type": "Place", "name": "Broadacres" },
-      { "@type": "Place", "name": "Lonehill" },
-      { "@type": "Place", "name": "Craigavon" },
-      { "@type": "Place", "name": "Magaliessig" },
+      { "@type": "Place", "name": "Bryanston" },
       { "@type": "Place", "name": "Sandton" },
-      { "@type": "Place", "name": "Bryanston" }
+      { "@type": "Place", "name": "Lonehill" },
+      { "@type": "Place", "name": "Dainfern" },
+      { "@type": "Place", "name": "Magaliessig" },
+      { "@type": "Place", "name": "Hyde Park" },
+      { "@type": "Place", "name": "Paulshof" }
     ],
     "makesOffer": {
       "@type": "Offer",
@@ -134,21 +134,22 @@ export default function DemolitionFourwaysPage() {
                 <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Increase Your Property's Value</h4><p className="text-sm text-muted-foreground">A large, functional garden is often more appealing to buyers than an old, high-maintenance pool.</p></div></div>
             </div>
         </section>
-
+        
         <section className="mb-16 text-center">
             <h2 className="text-3xl font-bold mb-8">Swimming Pool Demolition in Fourways & Nearby Areas</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide pool demolition services across Fourways and its surrounding suburbs, including:</p>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide pool demolition services across Fourways and nearby areas, including:</p>
             <div className="flex flex-wrap justify-center gap-4">
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Dainfern</span>
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Broadacres</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Bryanston</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Sandton</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Lonehill</span>
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Craigavon</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Dainfern</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Magaliessig</span>
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Chartwell</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Hyde Park</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Paulshof</span>
             </div>
-             <p className="text-center text-muted-foreground max-w-3xl mx-auto mt-6">Wherever you are in the greater Fourways area, our team is ready to provide fast, professional, and safe pool removal services.</p>
+            <p className="mt-4 text-muted-foreground">Wherever you are in Fourways, we provide fast, professional, and safe pool removal services.</p>
         </section>
-        
+
         <section id="faq" className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions – Pool Demolition Fourways</h2>
           <Accordion type="single" collapsible className="w-full">
@@ -166,10 +167,12 @@ export default function DemolitionFourwaysPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Fourways</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to reclaim your backyard? Contact Apex Demolitions for a professional, no-obligation quote. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-randburg" className="text-primary-foreground underline">Randburg</Link>, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
+            Ready to remove your pool? Apex Demolitions is here to help. Fast response & free quotes.
+            <br />
+            We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-roodepoort" className="text-primary-foreground underline">Roodepoort</Link>, <Link href="/swimming-pool-demolition-midrand" className="text-primary-foreground underline">Midrand</Link>, <Link href="/swimming-pool-demolition-bryanston" className="text-primary-foreground underline">Bryanston</Link>, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now: 078 429 2760</a></Button>
+            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call Now: 078 429 2760</a></Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
           </div>
         </section>
