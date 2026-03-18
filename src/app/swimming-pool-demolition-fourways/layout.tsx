@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Swimming Pool Demolition Fourways | Professional Pool Removal',
-  description: 'Licensed swimming pool demolition contractors in Fourways, Johannesburg. Safe removal of all pool types in estates like Dainfern and Broadacres, including rubble clearing.',
+  title: 'Swimming Pool Demolition Fourways | Fast Pool Removal Experts',
+  description: 'Affordable swimming pool demolition in Fourways. Fast, safe pool removal with full rubble cleanup for estates in Dainfern, Broadacres, and Lonehill. Call now for a free quote.',
 };
 
 export default function SwimmingPoolDemolitionFourwaysLayout({

@@ -1,100 +1,171 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Quote } from "lucide-react";
+import { Check, Phone, Mail, ShieldCheck, ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Apex Demolitions",
+    "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-fourways",
+    "telephone": "+27784292760",
+    "areaServed": [
+      { "@type": "Place", "name": "Fourways" },
+      { "@type": "Place", "name": "Dainfern" },
+      { "@type": "Place", "name": "Broadacres" },
+      { "@type": "Place", "name": "Lonehill" },
+      { "@type": "Place", "name": "Craigavon" },
+      { "@type": "Place", "name": "Magaliessig" },
+      { "@type": "Place", "name": "Sandton" },
+      { "@type": "Place", "name": "Bryanston" }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Swimming Pool Demolition"
+      }
+    }
+};
 
 const faqs = [
-    { question: "How do you manage pool demolition in Fourways' secure lifestyle estates?", answer: "We are experts at working within the strict rules of Fourways estates like Dainfern and Broadacres. We coordinate with estate management to ensure our work is compliant, clean, and minimally disruptive to the community." },
-    { question: "Can you safely remove a pool that is very close to my house?", answer: "Yes, this is a common scenario. We use precision equipment and techniques to break up the pool shell without causing any vibrations or damage to your home's foundation or surrounding structures. Safety is our top priority." },
-    { question: "What is included in your pool demolition service?", answer: "Our service is a complete, all-in-one solution. It includes draining the pool, disconnecting services, breaking up the pool shell and paving, removing all rubble, backfilling and compacting the area, and a final cleanup." }
+    { question: "How do you manage pool demolition in Fourways' secure lifestyle estates?", answer: "We are experts at working within the strict rules of Fourways estates like Dainfern, Cedar Lakes, and Broadacres. We coordinate directly with estate management to ensure our work is compliant, clean, and minimally disruptive to the community. Our professional teams operate with the discretion these environments require." },
+    { question: "Can you safely remove a pool that is very close to my house or a boundary wall?", answer: "Yes, this is a common scenario in the Fourways area. We use precision equipment and techniques like sectional dismantling to break up the pool shell without causing any vibrations or damage to your home's foundation, paving, or surrounding structures. Safety is our top priority." },
+    { question: "What is included in your standard pool demolition service?", answer: "Our service is a complete, all-in-one solution. It includes draining the pool, disconnecting services, breaking up the pool shell and paving, removing all rubble, backfilling and compacting the area, and a final site cleanup. You are left with a level, clean space ready for its next use." },
+    { question: "How much does it cost to demolish a pool in Fourways?", answer: "The cost depends on the pool's size, material (concrete, fibreglass, etc.), and site accessibility. We offer a free, no-obligation on-site assessment in Fourways to provide you with a transparent, highly competitive, and fixed-price quote." },
+    { question: "Will demolishing my pool increase my property's value in Fourways?", answer: "In many cases, yes. Removing an old, high-maintenance pool and replacing it with a larger, more functional garden or entertainment area is a significant selling point for buyers in lifestyle-focused areas like Fourways. It increases the usable square meterage of your property." }
 ];
 
-export default function SwimmingPoolDemolitionFourwaysPage() {
-    const servicesImage = PlaceHolderImages.find(p => p.id === 'poolDemoWork');
-    const clearedSiteImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [localBusinessSchema, faqSchema]
+};
+
+
+export default function DemolitionFourwaysPage() {
+    const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
 
   return (
-    <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }} />
+      <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Swimming Pool Demolition Services Fourways</h1>
-            <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Apex Demolitions provides professional and insured pool demolition services tailored for the Fourways area. We specialize in safe and efficient pool removal within secure lifestyle estates and residential suburbs.
-            </p>
-             <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
-                </Button>
-                <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
-                </Button>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Swimming Pool Demolition Fourways – Fast & Professional Pool Removal</h1>
+          <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
+            <ShieldCheck /> The Estate & Residential Pool Removal Specialists in Fourways
+          </p>
+          <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
+            Looking for reliable swimming pool demolition in Fourways? Apex Demolitions provides fast, safe, and affordable pool removal services tailored for the unique environment of Fourways and its surrounding suburbs like Dainfern, Broadacres, Lonehill, Bryanston, and Sandton. Whether your pool is old, damaged, or simply unused, our experienced team removes it efficiently, leaving your property immaculate and ready for your new vision.
+          </p>
+          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+            <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Free Quote</a></Button>
+            <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp for a Fast Quote</a></Button>
+          </div>
+        </section>
+
+        <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Pool Removal in Fourways?</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Estate Specialists</h3><p className="text-sm text-muted-foreground">We are experts in working within the strict rules of Fourways' secure estates, ensuring a compliant, clean, and minimally disruptive process.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fully Insured</h3><p className="text-sm text-muted-foreground">Our comprehensive insurance protects your valuable property during all operations, giving you complete peace of mind.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">One-Stop Solution</h3><p className="text-sm text-muted-foreground">We handle the entire project: demolition, a full <Link href="/rubble-removal-fourways" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning-fourways" className="text-primary hover:underline">site cleaning</Link>.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Property Protection</h3><p className="text-sm text-muted-foreground">We use precision techniques and protective measures to safeguard your home, garden, and other assets during the removal process.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast & Efficient</h3><p className="text-sm text-muted-foreground">Most residential pool removals in Fourways are completed within 2-4 days to minimize disruption to your home life.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Clean & Tidy</h3><p className="text-sm text-muted-foreground">Our guarantee is a spotless site, ready for its next purpose, be it a new lawn, patio, or cottage.</p></div></div>
             </div>
         </section>
 
-        <section id="services" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Professional Pool Removal Services in Fourways</h2>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                 <div>
-                    {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Demolishing a swimming pool in a Fourways estate" data-ai-hint="pool demolition fourways" fill className="rounded-lg object-cover" /></div>}
+        <section id="pool-types" className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Types of Pools We Remove in Fourways</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Our experienced Fourways team is equipped to handle the demolition of any swimming pool, regardless of its construction type or condition. We have the specialized tools and expertise for:</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card><CardHeader><CardTitle>Concrete & Gunite Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Common in many established Fourways homes. We use powerful hydraulic breakers to efficiently break up the reinforced concrete shell.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Fibreglass Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We carefully cut the fibreglass shell into manageable sections, lift it out, and dismantle any surrounding structures before backfilling.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Estate & Complex Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We have the capacity to handle larger or more complex pools found at the clubhouses of residential estates and apartment complexes.</p></CardContent></Card>
+            </div>
+        </section>
+
+        <section className="mb-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 className="text-3xl font-bold mb-4">Our Safe & Efficient 5-Step Pool Demolition Process</h2>
+                    <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Fourways pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
+                    <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
+                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection and provide a fixed quote. For estate work, we review all HOA guidelines.</li>
+                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all services are safely disconnected.</li>
+                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Our expert team carefully breaks up the pool shell and paving.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property.</li>
+                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the cavity and compact it in layers to ensure stability.</li>
+                    </ol>
                 </div>
                 <div>
-                    <p className="text-muted-foreground mb-4">Complete solutions for your Fourways property.</p>
-                    <ul className="space-y-3">
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Secure Estate Pool Removal:** Compliant and discreet demolition in estates like Dainfern, Cedar Lakes, and Broadacres.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Full Demolition & Site Prep:** Complete removal of concrete, gunite, or fibreglass pools and preparation for your new garden.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**All Rubble Removed:** We handle the loading and legal disposal of all demolition debris.</span></li>
-                    </ul>
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Fourways" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
                 </div>
             </div>
-        </section>
-
-        <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Team in Fourways?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div><h4 className="font-semibold text-lg">Estate Specialists</h4><p className="text-muted-foreground mt-2 text-sm">We are experts in adhering to the strict rules of Fourways' secure lifestyle estates.</p></div>
-                <div><h4 className="font-semibold text-lg">Fully Insured</h4><p className="text-muted-foreground mt-2 text-sm">Our comprehensive insurance protects your valuable property during all operations.</p></div>
-                <div><h4 className="font-semibold text-lg">Local & Responsive</h4><p className="text-muted-foreground mt-2 text-sm">Our nearby teams ensure a fast and efficient service for Fourways residents.</p></div>
-                <div><h4 className="font-semibold text-lg">Safety is Key</h4><p className="text-muted-foreground mt-2 text-sm">We use advanced techniques to guarantee a safe removal every time.</p></div>
+             <div className="text-center mt-12">
+                <Button size="lg" asChild><Link href="/contact">Get Your Free Demolition Quote <ArrowRight className="ml-2" /></Link></Button>
             </div>
-        </section>
-        
-        <section id="faq" className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">FAQ About Pool Demolition in Fourways</h2>
-            <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
-                </AccordionItem>
-            ))}
-            </Accordion>
         </section>
 
         <section className="mb-16 text-center">
-            <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
-            <p className="mt-2 text-muted-foreground">Serving the greater Northern Suburbs.</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-sandton">Sandton</Link></Button>
-                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-bryanston">Bryanston</Link></Button>
-                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-randburg">Randburg</Link></Button>
+            <h2 className="text-3xl font-bold mb-8">Swimming Pool Demolition in Fourways & Nearby Areas</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide pool demolition services across Fourways and its surrounding suburbs, including:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Dainfern</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Broadacres</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Lonehill</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Craigavon</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Magaliessig</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Chartwell</span>
             </div>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mt-6">Wherever you are in the greater Fourways area, our team is ready to provide fast, professional, and safe pool removal services.</p>
+        </section>
+        
+        <section id="faq" className="max-w-4xl mx-auto mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions – Pool Demolition Fourways</h2>
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </section>
 
-        <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
-            {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine lawn after pool removal in Fourways" data-ai-hint="clean lawn fourways" fill className="object-cover opacity-20" />}
-            <div className="relative z-10">
-                <h2 className="text-3xl font-bold">Reclaim Your Fourways Garden</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a professional, insured, and reliable pool demolition service in Fourways.</p>
-                <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
-                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call for an Urgent Removal</a></Button>
-                </div>
-            </div>
+        <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
+          <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Fourways</h2>
+          <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
+            Ready to reclaim your backyard? Contact Apex Demolitions for a professional, no-obligation quote. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-randburg" className="text-primary-foreground underline">Randburg</Link>, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
+          </p>
+          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now: 078 429 2760</a></Button>
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
+          </div>
         </section>
-        <div className="mt-12 text-center">
+         <div className="mt-12 text-center">
             <Link href="/swimming-pool-demolition-johannesburg" className="text-sm text-muted-foreground hover:text-primary">Back to Pool Demolition Johannesburg</Link> | <Link href="/swimming-pool-demolition-services-johannesburg" className="text-sm text-muted-foreground hover:text-primary">All Johannesburg Services</Link>
         </div>
-    </div>
+      </div>
+    </>
   );
 }
