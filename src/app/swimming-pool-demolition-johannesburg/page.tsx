@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, MapPin, Quote, Waves, ShieldCheck, ArrowRight, Star } from "lucide-react";
@@ -66,6 +67,13 @@ const combinedSchema = {
     "@context": "https://schema.org",
     "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
+
+const suburbs = [
+    "Sandton", "Randburg", "Roodepoort", "Midrand", "Fourways", "Soweto", 
+    "Alberton", "Germiston", "Boksburg", "Benoni", "Kempton Park", 
+    "Bedfordview", "Edenvale", "Bryanston", "Rosebank", "Northcliff", 
+    "Melville", "Linden", "Parkhurst", "Greenside"
+];
 
 export default function SwimmingPoolDemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
@@ -136,7 +144,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                 <Card><CardHeader><CardTitle>Vinyl-Liner Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The process involves removing the liner, dismantling the wall structure (steel or polymer), and clearing the sand base before filling the cavity.</p></CardContent></Card>
             </div>
         </section>
-
+        
         <section id="why-choose-us" className="mb-16">
              <div className="grid md:grid-cols-2 gap-12 items-center">
                  <div>
@@ -154,12 +162,29 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="areas-we-serve" className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Serving All of Johannesburg and Surrounding Suburbs</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                Our teams are strategically located to provide fast, reliable swimming pool demolition across the entire Johannesburg region. We are proud to be the trusted pool removal contractors in:
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+                {suburbs.map(suburb => (
+                    <Button key={suburb} variant="outline" asChild>
+                        <Link href={`/swimming-pool-demolition-${suburb.toLowerCase().replace(/\s+/g, '-')}`}>
+                           <MapPin className="mr-2" /> {suburb}
+                        </Link>
+                    </Button>
+                ))}
+            </div>
              <div className="text-center mt-12">
-                 <h3 className="text-2xl font-semibold">Ready to reclaim your garden?</h3>
-                <p className="text-muted-foreground mt-2">Let Johannesburg's trusted pool demolition contractors handle the hard work.</p>
-                <Button size="lg" className="mt-4" asChild><a href="tel:0784292760"><Phone /> Call Us Now for a Free Assessment</a></Button>
+                 <h3 className="text-2xl font-semibold">Don't see your area? We likely cover it.</h3>
+                <p className="text-muted-foreground mt-2">Contact us today for a confirmation and a free quote.</p>
+                <Button size="lg" className="mt-4" asChild><a href="tel:0784292760"><Phone /> Call Us Now</a></Button>
             </div>
         </section>
+
 
         <section id="faq" className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">FAQ – Swimming Pool Demolition Johannesburg</h2>
