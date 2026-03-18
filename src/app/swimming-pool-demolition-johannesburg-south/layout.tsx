@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Swimming Pool Demolition Johannesburg South | Fast Pool Removal',
+  title: 'Swimming Pool Demolition Johannesburg South | Pool Removal Experts',
   description: 'Affordable swimming pool demolition in Johannesburg South. Fast, safe pool removal with full rubble cleanup for residential properties in Glenvista, Bassonia, and more. Call now for a free quote.',
 };
 
