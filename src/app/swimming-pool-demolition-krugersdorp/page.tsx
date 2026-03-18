@@ -47,7 +47,7 @@ export default function DemolitionKrugersdorpPage() {
                     <h2 className="text-3xl font-bold mb-4">Our Safe & Efficient 5-Step Process</h2>
                     <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
                         <li><span className="font-semibold text-foreground">Site Inspection & Quote:</span> A detailed, fixed-price quote after a free on-site assessment.</li>
-                        <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We secure the site and plan for a safe and efficient demolition.</li>
+                        <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We secure the site for a safe and efficient demolition.</li>
                         <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Careful breaking and removal of the pool structure.</li>
                         <li><span className="font-semibold text-foreground">Rubble Removal:</span> Complete clearing of all demolition debris.</li>
                         <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill and compact the area, leaving it stable and level.</li>
