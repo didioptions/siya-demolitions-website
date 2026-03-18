@@ -67,6 +67,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/swimming-pool-demolition-brakpan', '/swimming-pool-demolition-nigel', '/swimming-pool-demolition-johannesburg-south',
     '/swimming-pool-demolition-johannesburg-cbd',
     '/swimming-pool-demolition-glenvista',
+    '/swimming-pool-demolition-rivonia',
+    '/swimming-pool-demolition-kyalami',
+    '/swimming-pool-demolition-parkview',
+    '/swimming-pool-demolition-constantia-kloof',
 
     // Plant Hire
     '/plant-hire-johannesburg',

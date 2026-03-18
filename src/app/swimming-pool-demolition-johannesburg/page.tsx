@@ -69,10 +69,37 @@ const combinedSchema = {
 };
 
 const suburbs = [
-    "Sandton", "Randburg", "Roodepoort", "Midrand", "Fourways", "Soweto", 
-    "Alberton", "Germiston", "Boksburg", "Benoni", "Kempton Park", 
-    "Bedfordview", "Edenvale", "Bryanston", "Rosebank", "Northcliff", 
-    "Melville", "Linden", "Parkhurst", "Greenside"
+    { name: "Sandton", href: "/swimming-pool-demolition-sandton" },
+    { name: "Randburg", href: "/swimming-pool-demolition-randburg" },
+    { name: "Roodepoort", href: "/swimming-pool-demolition-roodepoort" },
+    { name: "Midrand", href: "/swimming-pool-demolition-midrand" },
+    { name: "Fourways", href: "/swimming-pool-demolition-fourways" },
+    { name: "Soweto", href: "/swimming-pool-demolition-soweto" }, 
+    { name: "Alberton", href: "/swimming-pool-demolition-alberton" },
+    { name: "Germiston", href: "/swimming-pool-demolition-germiston" },
+    { name: "Boksburg", href: "/swimming-pool-demolition-boksburg" },
+    { name: "Benoni", href: "/swimming-pool-demolition-benoni" },
+    { name: "Kempton Park", href: "/swimming-pool-demolition-kempton-park" }, 
+    { name: "Bedfordview", href: "/swimming-pool-demolition-bedfordview" },
+    { name: "Edenvale", href: "/swimming-pool-demolition-edenvale" },
+    { name: "Bryanston", href: "/swimming-pool-demolition-bryanston" },
+    { name: "Rosebank", href: "/swimming-pool-demolition-rosebank" },
+    { name: "Northcliff", href: "/swimming-pool-demolition-northcliff" }, 
+    { name: "Melville", href: "/swimming-pool-demolition-melville" },
+    { name: "Linden", href: "/swimming-pool-demolition-linden" },
+    { name: "Parkhurst", href: "/swimming-pool-demolition-parkhurst" },
+    { name: "Greenside", href: "/swimming-pool-demolition-greenside" },
+    { name: "Johannesburg South", href: "/swimming-pool-demolition-johannesburg-south"},
+    { name: "Glenvista", href: "/swimming-pool-demolition-glenvista"},
+    { name: "Krugersdorp", href: "/swimming-pool-demolition-krugersdorp"},
+    { name: "Springs", href: "/swimming-pool-demolition-springs"},
+    { name: "Brakpan", href: "/swimming-pool-demolition-brakpan"},
+    { name: "Nigel", href: "/swimming-pool-demolition-nigel"},
+    { name: "Johannesburg CBD", href: "/swimming-pool-demolition-johannesburg-cbd"},
+    { name: "Rivonia", href: "/swimming-pool-demolition-rivonia"},
+    { name: "Kyalami", href: "/swimming-pool-demolition-kyalami"},
+    { name: "Parkview", href: "/swimming-pool-demolition-parkview"},
+    { name: "Constantia Kloof", href: "/swimming-pool-demolition-constantia-kloof"}
 ];
 
 export default function SwimmingPoolDemolitionJohannesburgPage() {
@@ -171,9 +198,9 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                 {suburbs.map(suburb => (
-                    <Button key={suburb} variant="outline" asChild>
-                        <Link href={`/swimming-pool-demolition-${suburb.toLowerCase().replace(/\s+/g, '-')}`}>
-                           <MapPin className="mr-2" /> {suburb}
+                    <Button key={suburb.name} variant="outline" asChild>
+                        <Link href={suburb.href}>
+                           <MapPin className="mr-2" /> {suburb.name}
                         </Link>
                     </Button>
                 ))}
