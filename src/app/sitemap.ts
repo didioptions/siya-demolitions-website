@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/demolition-edenvale', '/demolition-bryanston', '/demolition-rosebank', '/demolition-northcliff',
     '/demolition-melville', '/demolition-linden', '/demolition-parkhurst', '/demolition-greenside',
     '/demolition-pretoria',
+    '/demolition-centurion',
 
     // Rubble Removal
     '/rubble-removal-johannesburg',
