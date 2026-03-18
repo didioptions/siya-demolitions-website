@@ -19,7 +19,8 @@ const localBusinessSchema = {
         "Meyersdal",
         "Oakdene",
         "Winchester Hills",
-        "Johannesburg South"
+        "Mondeor",
+        "Kibler Park"
     ],
     "service": {
       "@type": "Service",
@@ -102,13 +103,24 @@ export default function DemolitionGlenvistaPage() {
                         <li><span className="font-semibold text-foreground">Site Inspection:</span> Assess the pool type, size, and access requirements for a safe removal plan.</li>
                         <li><span className="font-semibold text-foreground">Planning & Preparation:</span> Choose the safest and most effective demolition method.</li>
                         <li><span className="font-semibold text-foreground">Pool Demolition:</span> Break and remove the pool using professional equipment.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> Clear all debris from your property quickly.</li>
-                        <li><span className="font-semibold text-foreground">Site Cleanup:</span> Leave your property clean, level, and ready for landscaping or construction.</li>
+                        <li><span className="font-semibold text-foreground"><Link href="/rubble-removal" className="text-primary hover:underline">Rubble Removal</Link>:</span> Clear all debris from your property quickly.</li>
+                        <li><span className="font-semibold text-foreground"><Link href="/site-cleaning" className="text-primary hover:underline">Site Cleanup</Link>:</span> Leave your property clean, level, and ready for landscaping or construction.</li>
                     </ol>
                 </div>
                 <div>
                     {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Glenvista" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
                 </div>
+            </div>
+        </section>
+
+         <section className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Benefits of Swimming Pool Demolition</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Removing your old pool offers many advantages:</p>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Create more usable outdoor space</h4><p className="text-sm text-muted-foreground">Reclaim your garden for a larger lawn, a modern entertainment area, or a home extension.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reduce maintenance and water costs</h4><p className="text-sm text-muted-foreground">Eliminate the constant expense of chemicals, electricity for the pump, and costly water top-ups.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Improve safety for children and pets</h4><p className="text-sm text-muted-foreground">Remove the potential hazard an unfenced or unused pool poses to children and pets.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Increase property value</h4><p className="text-sm text-muted-foreground">A large, functional garden is often more appealing to buyers than an old, high-maintenance pool.</p></div></div>
             </div>
         </section>
 
@@ -125,11 +137,26 @@ export default function DemolitionGlenvistaPage() {
             ))}
           </Accordion>
         </section>
+        
+        <section className="mb-16 text-center">
+            <h2 className="text-3xl font-bold mb-8">Swimming Pool Demolition in Glenvista & Nearby Areas</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide professional pool demolition services across Glenvista and nearby areas, including:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Bassonia</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Mulbarton</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Meyersdal</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Oakdene</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Winchester Hills</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Mondeor</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Kibler Park</span>
+            </div>
+             <p className="mt-4 text-muted-foreground">Wherever you are in or around Glenvista, our team is ready to assist with fast and professional service.</p>
+        </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Glenvista</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-johannesburg-south" className="text-primary-foreground underline">Johannesburg South</Link>, <Link href="/swimming-pool-demolition-meyersdal" className="text-primary-foreground underline">Meyersdal</Link>, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
+            We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-johannesburg-south" className="text-primary-foreground underline">Johannesburg South</Link>, Bassonia, Meyersdal, Mulbarton, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now: 078 429 2760</a></Button>
