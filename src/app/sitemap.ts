@@ -1,3 +1,4 @@
+
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -62,6 +63,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/swimming-pool-demolition-edenvale', '/swimming-pool-demolition-bryanston', '/swimming-pool-demolition-rosebank',
     '/swimming-pool-demolition-northcliff', '/swimming-pool-demolition-melville', '/swimming-pool-demolition-linden',
     '/swimming-pool-demolition-parkhurst', '/swimming-pool-demolition-greenside',
+    '/swimming-pool-demolition-centurion', '/swimming-pool-demolition-krugersdorp', '/swimming-pool-demolition-springs',
+    '/swimming-pool-demolition-brakpan', '/swimming-pool-demolition-nigel', '/swimming-pool-demolition-johannesburg-south',
+    '/swimming-pool-demolition-johannesburg-cbd',
 
     // Plant Hire
     '/plant-hire-johannesburg',

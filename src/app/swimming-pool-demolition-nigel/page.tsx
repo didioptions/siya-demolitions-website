@@ -35,8 +35,8 @@ export default function DemolitionNigelPage() {
         <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Pool Removal in Nigel?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Local East Rand Team</h3><p className="text-sm text-muted-foreground">Our local presence ensures a fast and reliable service for the Nigel community.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">We offer competitive pricing to make professional pool removal accessible to all.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Local East Rand Team</h3><p className="text-sm text-muted-foreground">Our local presence ensures we provide a fast, reliable, and community-trusted service in Nigel.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Affordable & Transparent</h3><p className="text-sm text-muted-foreground">We offer competitive quotes with no hidden costs, making professional service accessible.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Complete Service</h3><p className="text-sm text-muted-foreground">Our service includes full rubble removal and site cleanup, leaving your property spotless.</p></div></div>
             </div>
         </section>

@@ -48,8 +48,8 @@ export default function DemolitionBrakpanPage() {
                     <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
                         <li><span className="font-semibold text-foreground">Site Inspection & Quote:</span> A detailed, fixed-price quote after a free assessment.</li>
                         <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We secure the site for a safe demolition.</li>
-                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Careful breaking of the pool structure.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> Complete clearing of all debris.</li>
+                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Careful breaking and removal of the pool structure.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> Complete clearing of all demolition debris.</li>
                         <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill and compact the area, leaving it stable and level.</li>
                     </ol>
                 </div>
