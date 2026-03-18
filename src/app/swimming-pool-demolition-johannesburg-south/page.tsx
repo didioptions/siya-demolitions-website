@@ -22,10 +22,10 @@ const schema = {
     "Ennerdale"
   ],
   "service": {
-      "@type": "Service",
-      "name": "Swimming Pool Demolition"
-  },
-  "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-johannesburg-south"
+    "@type": "Service",
+    "name": "Swimming Pool Demolition"
+    },
+   "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-johannesburg-south"
 };
 
 
@@ -37,6 +37,7 @@ const faqs = [
 
 export default function DemolitionJohannesburgSouthPage() {
     const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
+    const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
@@ -62,14 +63,15 @@ export default function DemolitionJohannesburgSouthPage() {
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">JHB South Specialists</h3><p className="text-sm text-muted-foreground">We are the go-to experts for pool demolition in the South, known for our local knowledge and experience.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast Turnaround</h3><p className="text-sm text-muted-foreground">We complete most residential pool removals in 2-4 days, minimizing disruption.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">Our transparent quotes ensure you get the best value with no hidden costs.</p></div></div>
-                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">One-Stop Solution</h3><p className="text-sm text-muted-foreground">Our service includes demolition, full <Link href="/rubble-removal" className="text-primary hover:underline">rubble removal</Link>, and <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link>.</p></div></div>
+                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">One-Stop Solution</h3><p className="text-sm text-muted-foreground">Our service includes demolition, full <Link href="/rubble-removal" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link>.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fully Insured</h3><p className="text-sm text-muted-foreground">Our comprehensive insurance gives you complete peace of mind.</p></div></div>
                  <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Clean Finish</h3><p className="text-sm text-muted-foreground">We guarantee a spotless site, ready for its next purpose.</p></div></div>
             </div>
         </section>
 
         <section id="services" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Pool Demolition Services in JHB South</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Professional Swimming Pool Demolition Services in Johannesburg South</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">At Apex Demolitions, we specialize in complete swimming pool removal in Johannesburg South. From initial inspection to final cleanup, we handle every step of the process.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card><CardHeader><CardTitle>Residential Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Safe removal of pools from homes, preparing your yard for a new entertainment area, garden, or extension.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Commercial Pool Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Demolition of pools at hotels, gyms, and other commercial properties, complying with all safety standards.</p></CardContent></Card>
@@ -81,12 +83,13 @@ export default function DemolitionJohannesburgSouthPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Safe & Efficient 5-Step Process</h2>
+                    <p className="text-muted-foreground mb-6">We follow a proven step-by-step process to ensure safe and efficient results:</p>
                     <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Site Inspection & Quote:</span> A detailed, fixed-price quote after a free on-site assessment.</li>
-                        <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We secure the site and plan for a safe and efficient demolition.</li>
-                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Careful breaking and removal of the pool structure.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> Complete clearing of all demolition debris.</li>
-                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill and compact the area, leaving it stable and level.</li>
+                        <li><span className="font-semibold text-foreground">Site Inspection:</span> We evaluate the pool type, size, and access requirements to provide a free, accurate quote.</li>
+                        <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We choose the safest demolition method and secure the site to protect your property.</li>
+                        <li><span className="font-semibold text-foreground">Pool Demolition:</span> Our professional team breaks and removes the pool structure using specialized equipment.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> We clear all debris from your site quickly and efficiently.</li>
+                        <li><span className="font-semibold text-foreground">Site Cleanup & Leveling:</span> We leave your property clean, level, and ready for its next use.</li>
                     </ol>
                 </div>
                 <div>
@@ -112,13 +115,13 @@ export default function DemolitionJohannesburgSouthPage() {
         <section className="mb-16 text-center">
             <h2 className="text-3xl font-bold mb-8">Areas We Serve in Johannesburg South</h2>
              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                Our services are available across all of Johannesburg South. Each of these areas can also have its own dedicated page for even stronger SEO performance.
+                Our services are available across all of Johannesburg South. Click on a suburb to learn more about our dedicated local services.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Glenvista</span>
+                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-glenvista">Glenvista</Link></Button>
+                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-meyersdal">Meyersdal</Link></Button>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Bassonia</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Mulbarton</span>
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Meyersdal</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Lenasia</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Ennerdale</span>
             </div>
