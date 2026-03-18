@@ -46,16 +46,15 @@ const serviceSchema = {
     "serviceType": "Plant Hire",
     "provider": {
         "@type": "LocalBusiness",
-        "name": "SIMA Demolitions Projects"
+        "name": "Apex Demolitions"
     },
     "areaServed": {
         "@type": "City",
         "name": "Johannesburg"
     },
     "description": "Professional and affordable plant hire in Johannesburg. We offer TLBs, Bobcats, excavators, tipper trucks, and more, with certified operators for all construction, demolition, and earthmoving projects.",
-    "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/plant-hire-johannesburg"
+    "url": "https://apex-demolitions-website.vercel.app/plant-hire-johannesburg"
 };
-
 
 export default function PlantHireJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'plantHireTlb');
@@ -73,7 +72,7 @@ export default function PlantHireJohannesburgPage() {
                 <Tractor /> Your Partner for Reliable Construction Machinery
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Get the right machinery for your project with our professional plant hire in Johannesburg. SIMA Demolitions Projects provides a fleet of well-maintained equipment with certified operators for all construction, demolition, and earthmoving work. Our plant hire services Johannesburg contractors and homeowners can trust are available across all suburbs, from Sandton to Soweto. We offer flexible hire periods and competitive rates to keep your project on schedule and within budget.
+                Get the right machinery for your project with our professional plant hire in Johannesburg. Apex Demolitions provides a fleet of well-maintained equipment with certified operators for all construction, demolition, and earthmoving work. Our plant hire services Johannesburg contractors and homeowners can trust are available across all suburbs, from Sandton to Soweto. We offer flexible hire periods and competitive rates to keep your project on schedule and within budget.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -98,7 +97,7 @@ export default function PlantHireJohannesburgPage() {
         </section>
 
         <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose SIMA for Plant Hire in Johannesburg?</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Plant Hire in Johannesburg?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Operator Included</h3><p className="text-sm text-muted-foreground">Every hire includes a certified, experienced operator for maximum safety and efficiency.</p></div></div>
                 <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Well-Maintained Fleet</h3><p className="text-sm text-muted-foreground">Our machinery is regularly serviced to prevent breakdowns and costly downtime on your site.</p></div></div>
@@ -126,7 +125,6 @@ export default function PlantHireJohannesburgPage() {
                 </div>
             </div>
         </section>
-
 
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Plant Hire Across All Johannesburg Suburbs</h2>
@@ -157,7 +155,7 @@ export default function PlantHireJohannesburgPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Book Your Construction Machinery Today</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Contact SIMA Demolitions for a reliable and affordable plant hire solution anywhere in Johannesburg.
+            Contact Apex Demolitions for a reliable and affordable plant hire solution anywhere in Johannesburg.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>

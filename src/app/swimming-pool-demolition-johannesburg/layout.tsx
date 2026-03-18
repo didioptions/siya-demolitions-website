@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Swimming Pool Demolition Johannesburg | Professional Pool Removal Contractors',
-  description: 'Professional swimming pool demolition services in Johannesburg. Safe pool removal, rubble clearing, and full site preparation across all Johannesburg suburbs.',
+  title: 'Swimming Pool Demolition Johannesburg | Fast Pool Removal',
+  description: 'Affordable swimming pool demolition in Johannesburg. Fast, professional pool removal with full cleanup for residential and commercial properties. Call now for a free quote.',
 };
 
 export default function SwimmingPoolDemolitionJohannesburgLayout({

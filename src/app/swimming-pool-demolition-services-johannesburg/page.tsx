@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check, Phone, Mail, MapPin, Construction } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Construction, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -56,7 +56,7 @@ export default function SwimmingPoolDemolitionServicesJohannesburgPage() {
             <Construction /> Your One-Stop Solution for Pool Removal
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions Projects offers a complete range of professional swimming pool demolition and removal services for every suburb of Johannesburg. Our licensed and insured teams are equipped to handle any job, from removing old residential pools to clearing multiple units for developers. We are your reliable partner for reclaiming valuable land, ensuring all work is done safely, efficiently, and with a thorough cleanup.
+            Apex Demolitions offers a complete range of professional swimming pool demolition and removal services for every suburb of Johannesburg. Our licensed and insured teams are equipped to handle any job, from removing old residential pools to clearing multiple units for developers. We are your reliable partner for reclaiming valuable land, ensuring all work is done safely, efficiently, and with a thorough cleanup.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
           <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Free Assessment</a></Button>
@@ -67,7 +67,7 @@ export default function SwimmingPoolDemolitionServicesJohannesburgPage() {
       <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
           <div className="md:col-span-3">
               <h2 className="text-3xl font-bold mb-6">Johannesburg's Trusted Pool Demolition Team</h2>
-              <p className="text-muted-foreground mb-4">Choosing SIMA for your pool removal needs means partnering with a team that values safety, efficiency, and client satisfaction. We are committed to upholding the highest standards on every job.</p>
+              <p className="text-muted-foreground mb-4">Choosing Apex for your pool removal needs means partnering with a team that values safety, efficiency, and client satisfaction. We are committed to upholding the highest standards on every job.</p>
               <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your complete protection.</span></li>
                   <li className="flex items-center gap-3"><Check className="text-accent" /><span>Decades of experience in safe pool demolition across Johannesburg.</span></li>

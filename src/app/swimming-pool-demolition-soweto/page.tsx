@@ -85,7 +85,7 @@ export default function SwimmingPoolDemolitionSowetoPage() {
             {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine yard after pool removal in Soweto" data-ai-hint="clean yard soweto" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
                 <h2 className="text-3xl font-bold">Get a Free Pool Demolition Quote in Soweto</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a free quote on affordable and professional pool demolition in Soweto. We're here to help.</p>
+                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a free quote on affordable and professional pool demolition in Soweto. We're here to help our community.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call for an Urgent Removal</a></Button>

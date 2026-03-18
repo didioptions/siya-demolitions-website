@@ -1,23 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, MapPin, Quote, Waves } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Quote, Waves, ShieldCheck, ArrowRight, Star } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const suburbs = [
-    { name: "Sandton", href: "/swimming-pool-demolition-sandton" }, { name: "Randburg", href: "/swimming-pool-demolition-randburg" },
-    { name: "Roodepoort", href: "/swimming-pool-demolition-roodepoort" }, { name: "Midrand", href: "/swimming-pool-demolition-midrand" },
-    { name: "Fourways", href: "/swimming-pool-demolition-fourways" }, { name: "Soweto", href: "/swimming-pool-demolition-soweto" },
-    { name: "Alberton", href: "/swimming-pool-demolition-alberton" }, { name: "Germiston", href: "/swimming-pool-demolition-germiston" },
-    { name: "Boksburg", href: "/swimming-pool-demolition-boksburg" }, { name: "Benoni", href: "/swimming-pool-demolition-benoni" },
-    { name: "Kempton Park", href: "/swimming-pool-demolition-kempton-park" }, { name: "Bedfordview", href: "/swimming-pool-demolition-bedfordview" },
-    { name: "Edenvale", href: "/swimming-pool-demolition-edenvale" }, { name: "Bryanston", href: "/swimming-pool-demolition-bryanston" },
-    { name: "Rosebank", href: "/swimming-pool-demolition-rosebank" }, { name: "Northcliff", href: "/swimming-pool-demolition-northcliff" },
-    { name: "Melville", href: "/swimming-pool-demolition-melville" }, { name: "Linden", href: "/swimming-pool-demolition-linden" },
-    { name: "Parkhurst", href: "/swimming-pool-demolition-parkhurst" }, { name: "Greenside", href: "/swimming-pool-demolition-greenside" },
-];
+const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Apex Demolitions",
+    "image": "https://apex-demolitions-website.vercel.app/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsiya-demolitions-projects.firebasestorage.app%2Fo%2Fsima%2520swimming%2520demolitions%2520gauteng.jpg%3Falt%3Dmedia%26token%3D705340d3-8bb7-4acc-b507-3623c18f4e4a&w=1920&q=75",
+    "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-johannesburg",
+    "telephone": "078 429 2760",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Johannesburg",
+      "addressRegion": "Gauteng",
+      "addressCountry": "ZA"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Gauteng"
+    }
+};
+
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Swimming Pool Demolition",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "Apex Demolitions"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Johannesburg"
+    },
+    "description": "Professional swimming pool demolition, removal, and site preparation services in Johannesburg. We handle concrete, gunite, and fibreglass pools, including all rubble removal and backfilling.",
+    "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-johannesburg"
+};
 
 const faqs = [
     { question: "How much does it cost to demolish a swimming pool in Johannesburg?", answer: "The cost of swimming pool demolition in Johannesburg depends on several factors: the pool's size, the material (gunite, concrete, or fibreglass), ease of access for machinery, and whether you choose full or partial removal. We provide a free, detailed, on-site assessment to give you a transparent and accurate quote with no hidden costs." },
@@ -40,111 +62,111 @@ const faqSchema = {
   }))
 };
 
-const serviceSchema = {
+const combinedSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Swimming Pool Demolition",
-    "provider": {
-        "@type": "LocalBusiness",
-        "name": "SIMA Demolitions Projects"
-    },
-    "areaServed": {
-        "@type": "City",
-        "name": "Johannesburg"
-    },
-    "description": "Professional swimming pool demolition, removal, and site preparation services in Johannesburg. We handle concrete, gunite, and fibreglass pools, including all rubble removal and backfilling.",
-    "url": "https://siya-demolitions-website--siya-demolitions-projects.europe-west4.hosted.app/swimming-pool-demolition-johannesburg"
+    "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
 
 export default function SwimmingPoolDemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
-    const servicesImage = PlaceHolderImages.find(p => p.id === 'poolDemoWork');
     const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
+    const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Professional Swimming Pool Demolition in Johannesburg</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Swimming Pool Demolition in Johannesburg – Fast, Safe & Affordable Pool Removal</h1>
             <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-                <Waves /> Your Trusted Pool Removal Contractors
+                <ShieldCheck /> Your Trusted Pool Removal Contractors
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Reclaim your backyard with expert swimming pool demolition in Johannesburg from SIMA Demolitions Projects. An old, damaged, or unused pool can be a liability and an eyesore. Our professional pool demolition contractors provide a safe, fast, and affordable solution for swimming pool removal across all Johannesburg suburbs. Whether you are in Sandton, Randburg, Roodepoort or Soweto, we handle everything from breaking and removal to backfilling and site preparation, transforming your garden and adding value to your property.
+                Looking for professional swimming pool demolition in Johannesburg? Apex Demolitions provides a fast, reliable, and affordable pool removal service across Sandton, Randburg, Roodepoort, and all surrounding suburbs. As experienced pool demolition contractors, we handle everything from breaking and removal to complete site cleanup, giving you back your valuable garden space.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Free Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Site Visit</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp for a Fast Quote</a>
                 </Button>
             </div>
         </section>
 
         <section id="services" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Swimming Pool Removal Services in Johannesburg</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Professional Swimming Pool Demolition in Johannesburg</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">Our comprehensive swimming pool removal Johannesburg service is a full-service solution designed to make the process completely hassle-free for you. We handle every detail, from the initial assessment to the final cleanup, ensuring your property is treated with the utmost care.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <Card><CardHeader><CardTitle>Full Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Complete removal of the pool shell (concrete, gunite, fibreglass) and all plumbing.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Partial Demolition & Fill-In</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A cost-effective option where the shell is broken up and used for engineered backfill.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Complete Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We load and transport all demolition debris to licensed disposal facilities.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Site Preparation</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We compact and level the area, leaving it ready for lawn, paving, or new construction.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Full Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Complete removal of the pool shell (concrete, gunite, fibreglass) and all plumbing, ensuring the ground is ready for future construction.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Partial Demolition & Fill-In</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A cost-effective option where the shell is broken up and used for engineered backfill, perfect for landscaping purposes.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Complete Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We load and transport all demolition debris to licensed disposal facilities, leaving your site clean.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Site Preparation</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We compact and level the area, leaving it ready for new lawn, paving, or any other purpose.</p></CardContent></Card>
+            </div>
+             <div className="text-center mt-12">
+                <Button size="lg" asChild><Link href="/contact">Get a Tailored Quote <ArrowRight className="ml-2" /></Link></Button>
             </div>
         </section>
 
-        <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Pool Demolition in Johannesburg?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced & Insured</h3><p className="text-sm text-muted-foreground">Our teams are experts in all types of pool removal, and our work is fully insured.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">All-Inclusive Service</h3><p className="text-sm text-muted-foreground">We handle everything from the initial breaking to final cleanup and rubble disposal.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Property Protection</h3><p className="text-sm text-muted-foreground">We use techniques and equipment that protect your home, garden, and paving during the project.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Fast Turnaround</h3><p className="text-sm text-muted-foreground">Most residential pool demolition projects in Johannesburg are completed in just 2-4 days.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Transparent Pricing</h3><p className="text-sm text-muted-foreground">Our free, on-site quotes are detailed and have no hidden costs.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Johannesburg-Wide Coverage</h3><p className="text-sm text-muted-foreground">We serve all suburbs, from the northern estates to the south of Johannesburg.</p></div></div>
-            </div>
-        </section>
-        
         <section className="mb-16">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold mb-4">Our Johannesburg Pool Demolition Process</h2>
-                    <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Site Inspection & Quote:</span> We assess your pool, access, and provide a detailed quote.</li>
-                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> We safely drain the pool and disconnect all electrical and plumbing lines.</li>
-                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Using specialized equipment, we break up the pool shell and paving.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All debris is loaded and transported off your property.</li>
-                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the cavity with soil/aggregate and compact it in layers to prevent future sinking.</li>
-                        <li><span className="font-semibold text-foreground">Final Site Cleanup:</span> The area is graded and left neat, tidy, and ready for its new purpose.</li>
+                    <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process</h2>
+                    <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Johannesburg pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
+                    <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
+                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection of your pool, property access, and surrounding structures to create a detailed project plan and provide a fixed quote.</li>
+                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all electrical and plumbing lines are safely disconnected and capped by qualified personnel.</li>
+                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Using specialized equipment, our expert team carefully breaks up the pool shell and any surrounding paving, ensuring no damage to your home or garden.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property to a licensed, eco-friendly disposal facility. This is a core part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal services</Link>.</li>
+                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the pool cavity with soil or rubble and compact it in engineered layers to ensure ground stability and prevent future sinking, leaving the area perfectly prepped.</li>
                     </ol>
                 </div>
-                 <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover" /></div>}
+                <div>
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
                 </div>
             </div>
         </section>
 
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Pool Demolition Services Across Johannesburg Suburbs</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We offer localized pool removal services across Johannesburg. Click on your suburb to learn more, or visit our <Link href="/swimming-pool-demolition-services-johannesburg" className="text-primary hover:underline">main services hub</Link>.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-                {suburbs.map(suburb => (
-                    <Button key={suburb.name} variant="outline" asChild>
-                        <Link href={suburb.href}><MapPin className="mr-2" /> {suburb.name}</Link>
-                    </Button>
-                ))}
+        <section id="pool-types" className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Types of Pools We Remove in Johannesburg</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">Our experienced team is equipped to handle the demolition of any swimming pool, regardless of its construction type or condition. We have the specialized tools and expertise for:</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card><CardHeader><CardTitle>Concrete & Gunite Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The most common type in older Johannesburg homes. We use powerful hydraulic breakers to efficiently break up the reinforced concrete shell and paving surrounds.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Fibreglass Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We carefully cut the fibreglass shell into manageable sections, lift it out, and dismantle any surrounding structures before backfilling.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Vinyl-Liner Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The process involves removing the liner, dismantling the wall structure (steel or polymer), and clearing the sand base before filling the cavity.</p></CardContent></Card>
             </div>
-      </section>
+        </section>
+
+        <section id="why-choose-us" className="mb-16">
+             <div className="grid md:grid-cols-2 gap-12 items-center">
+                 <div>
+                    {whyChooseImage && <div className="aspect-video relative"><Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a pool removal project in Johannesburg" data-ai-hint="demolition team planning" fill className="rounded-lg object-cover shadow-lg" /></div>}
+                </div>
+                <div>
+                    <h2 className="text-3xl font-bold mb-4">Why Choose Apex Demolitions in Johannesburg?</h2>
+                    <p className="mt-4 text-lg text-muted-foreground">
+                        When it comes to demolishing a pool, you need a team you can trust. We are more than just contractors; we are your partners in transforming your property safely and professionally.
+                    </p>
+                     <div className="mt-8 grid gap-6">
+                         <div className="flex gap-4 items-start"><Star className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Local Johannesburg Experts</h3><p className="text-muted-foreground mt-1 text-sm">With decades of experience across all suburbs, we understand the unique challenges of Johannesburg properties, from Sandton estates to Soweto homes.</p></div></div>
+                        <div className="flex gap-4 items-start"><Star className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We handle everything. Our service includes the demolition, a full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and a final <Link href="/site-cleaning" className="text-primary hover:underline">site clean</Link>, saving you the hassle of coordinating multiple companies.</p></div></div>
+                        <div className="flex gap-4 items-start"><Star className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fully Insured & Compliant</h3><p className="text-muted-foreground mt-1 text-sm">We are fully insured and adhere to all City of Johannesburg bylaws, giving you complete peace of mind.</p></div></div>
+                    </div>
+                </div>
+            </div>
+             <div className="text-center mt-12">
+                 <h3 className="text-2xl font-semibold">Ready to reclaim your garden?</h3>
+                <p className="text-muted-foreground mt-2">Let Johannesburg's trusted pool demolition contractors handle the hard work.</p>
+                <Button size="lg" className="mt-4" asChild><a href="tel:0784292760"><Phone /> Call Us Now for a Free Assessment</a></Button>
+            </div>
+        </section>
 
         <section id="faq" className="max-w-4xl mx-auto mb-16">
           <h2 className="text-3xl font-bold text-center mb-8">FAQ – Swimming Pool Demolition Johannesburg</h2>
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
               </AccordionItem>
             ))}
@@ -154,14 +176,14 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Get a Free Pool Demolition Quote in Johannesburg</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to reclaim your backyard? Contact SIMA Demolitions for a professional, no-obligation quote on your pool removal project.
+            Ready to reclaim your backyard? Contact Apex Demolitions for a professional, no-obligation quote on your pool removal project. We serve all of Johannesburg.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
                   <a href="tel:0784292760"><Phone />Call for a Fast Quote</a>
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                  <Link href="/contact"><Mail />Request a Free Quote</Link>
+                  <Link href="/contact"><Mail />Request a Free Quote Online</Link>
               </Button>
           </div>
         </section>

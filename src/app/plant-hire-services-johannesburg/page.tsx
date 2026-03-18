@@ -56,7 +56,7 @@ export default function PlantHireServicesJohannesburgPage() {
             <Construction /> Your One-Stop Solution for Construction Machinery
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            SIMA Demolitions Projects offers a complete range of professional plant hire services for any project, big or small, across every suburb of Johannesburg. Our fleet of well-maintained machinery, complete with certified operators, is ready to support your construction, demolition, or landscaping project. We are your reliable partner for getting the job done efficiently and safely.
+            Apex Demolitions offers a complete range of professional plant hire services for any project, big or small, across every suburb of Johannesburg. Our fleet of well-maintained machinery, complete with certified operators, is ready to support your construction, demolition, or landscaping project. We are your reliable partner for getting the job done efficiently and safely.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
           <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for Rates & Availability</a></Button>
@@ -67,7 +67,7 @@ export default function PlantHireServicesJohannesburgPage() {
       <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
           <div className="md:col-span-3">
               <h2 className="text-3xl font-bold mb-6">Johannesburg's Trusted Plant Hire Team</h2>
-              <p className="text-muted-foreground mb-4">Choosing SIMA for your plant hire means partnering with a team that values reliability, safety, and customer satisfaction. We are committed to providing the best equipment and service to keep your project moving.</p>
+              <p className="text-muted-foreground mb-4">Choosing Apex for your plant hire means partnering with a team that values reliability, safety, and customer satisfaction. We are committed to providing the best equipment and service to keep your project moving.</p>
               <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center gap-3"><Check className="text-accent" /><span>**Reliable Equipment:** Our machinery is regularly serviced and maintained to prevent downtime.</span></li>
                   <li className="flex items-center gap-3"><Check className="text-accent" /><span>**Professional Operators:** All hires include a certified and experienced operator for safety and efficiency.</span></li>

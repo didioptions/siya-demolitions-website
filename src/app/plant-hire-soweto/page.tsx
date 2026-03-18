@@ -52,7 +52,7 @@ export default function PlantHireSowetoPage() {
         <section className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Our Team in Soweto?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <div><h4 className="font-semibold text-lg">Community Focused</h4><p className="text-muted-foreground mt-2 text-sm">We are committed to providing accessible and reliable service for the people of Soweto.</p></div>
+                <div><h4 className="font-semibold text-lg">Community Focused</h4><p className="text-muted-foreground mt-2 text-sm">We are committed to providing an accessible and reliable service for the people of Soweto.</p></div>
                 <div><h4 className="font-semibold text-lg">Affordable Pricing</h4><p className="text-muted-foreground mt-2 text-sm">Our rates are competitive to ensure professional service is within reach for everyone.</p></div>
                 <div><h4 className="font-semibold text-lg">Safety & Reliability</h4><p className="text-muted-foreground mt-2 text-sm">Our operators are certified, and our machines are well-maintained to prevent delays.</p></div>
                 <div><h4 className="font-semibold text-lg">Local Soweto Knowledge</h4><p className="text-muted-foreground mt-2 text-sm">Our teams know the area well, allowing for fast, efficient, and respectful service.</p></div>
