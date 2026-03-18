@@ -143,7 +143,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     {whyChooseImage && <div className="aspect-video relative"><Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a pool removal project in Johannesburg" data-ai-hint="demolition team planning" fill className="rounded-lg object-cover shadow-lg" /></div>}
                 </div>
                 <div>
-                    <h2 className="text-3xl font-bold mb-4">Why Choose Apex Demolitions in Johannesburg?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Why Choose Apex Demolitions in Johannesburg?</h2>
                     <p className="mt-4 text-lg text-muted-foreground">
                         When it comes to demolishing a pool, you need a team you can trust. We are more than just contractors; we are your partners in transforming your property safely and professionally.
                     </p>
