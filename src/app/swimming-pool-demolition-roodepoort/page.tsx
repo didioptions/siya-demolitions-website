@@ -7,27 +7,29 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const serviceSchema = {
+const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Swimming Pool Demolition",
-  "provider": {
-      "@type": "LocalBusiness",
-      "name": "Apex Demolitions",
-      "telephone": "+27784292760",
-       "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Johannesburg",
-        "addressRegion": "Gauteng",
-        "addressCountry": "ZA"
-      }
-  },
-  "areaServed": {
-      "@type": "Place",
-      "name": "Roodepoort"
-  },
-  "description": "Professional and insured swimming pool demolition and removal services in Roodepoort, Johannesburg. We handle all pool types including concrete, gunite, and fibreglass, with full rubble removal and site preparation.",
-  "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-roodepoort"
+  "@type": "LocalBusiness",
+  "name": "Apex Demolitions",
+  "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-roodepoort",
+  "telephone": "+27784292760",
+  "areaServed": [
+    { "@type": "Place", "name": "Roodepoort" },
+    { "@type": "Place", "name": "Florida" },
+    { "@type": "Place", "name": "Wilgeheuwel" },
+    { "@type": "Place", "name": "Horizon View" },
+    { "@type": "Place", "name": "Constantia Kloof" },
+    { "@type": "Place", "name": "Little Falls" },
+    { "@type": "Place", "name": "Randburg" },
+    { "@type": "Place", "name": "Krugersdorp" }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Swimming Pool Demolition"
+    }
+  }
 };
 
 const faqs = [
@@ -44,7 +46,7 @@ export default function DemolitionRoodepoortPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Swimming Pool Demolition Roodepoort – Fast & Professional Pool Removal</h1>
@@ -52,7 +54,7 @@ export default function DemolitionRoodepoortPage() {
             <ShieldCheck /> Your Trusted West Rand Pool Removal Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Looking for professional swimming pool demolition in Roodepoort? Apex Demolitions provides fast, safe, and affordable pool removal services in Roodepoort and nearby suburbs, including Florida, Wilgeheuwel, Horizon View, Constantia Kloof, Little Falls, Randburg, and Krugersdorp. Whether your pool is old, damaged, or no longer in use, our skilled team removes it efficiently while leaving your property clean and ready for its next project. With years of experience and a commitment to safety and professionalism, Apex Demolitions is the trusted choice for homeowners and businesses across Roodepoort and surrounding Johannesburg areas.
+            Looking for professional swimming pool demolition in Roodepoort? Apex Demolitions provides fast, safe, and affordable pool removal services in Roodepoort and nearby suburbs, including Florida, Wilgeheuwel, Horizon View, Constantia Kloof, Little Falls, Randburg, and Krugersdorp. Whether your pool is old, damaged, or no longer in use, our skilled team removes it efficiently while leaving your property clean and ready for its next project.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Free Quote</a></Button>
@@ -151,7 +153,7 @@ export default function DemolitionRoodepoortPage() {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="font-semibold">{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   {faq.answer}
                 </AccordionContent>
@@ -161,15 +163,18 @@ export default function DemolitionRoodepoortPage() {
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Get a Free Pool Demolition Quote in Roodepoort</h2>
+          <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Roodepoort</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to reclaim your backyard? Contact Apex Demolitions for a professional, no-obligation quote on your pool removal project in Roodepoort.
+            Ready to remove your pool? Apex Demolitions is here to help. Contact us for a fast response and a free quote.
+            <br />
+            We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-bryanston" className="text-primary-foreground underline">Bryanston</Link>, <Link href="/swimming-pool-demolition-midrand" className="text-primary-foreground underline">Midrand</Link>, <Link href="/swimming-pool-demolition-fourways" className="text-primary-foreground underline">Fourways</Link>, and across Johannesburg.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now</a></Button>
+            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call Now: 078 429 2760</a></Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
           </div>
         </section>
+
          <div className="mt-12 text-center">
             <Link href="/swimming-pool-demolition-johannesburg" className="text-sm text-muted-foreground hover:text-primary">Back to Pool Demolition Johannesburg</Link>
         </div>
