@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, ShieldCheck, ArrowRight, Star } from "lucide-react";
@@ -33,13 +34,32 @@ const faqs = [
     { question: "Can you remove a pool to make way for a new home extension?", answer: "Yes. When we perform a full demolition and use engineered backfilling techniques with proper compaction, the land is stabilized and made safe for building a home extension, cottage, or other structure." }
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+
+const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [localBusinessSchema, faqSchema]
+};
+
+
 export default function DemolitionMidrandPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
     const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Swimming Pool Demolition Midrand – Fast & Professional Pool Removal</h1>
@@ -100,17 +120,18 @@ export default function DemolitionMidrandPage() {
         </section>
 
         <section className="mb-16 text-center">
-            <h2 className="text-3xl font-bold mb-8">Serving Midrand & Surrounding Suburbs</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Our pool demolition services cover all of Midrand and its neighbouring suburbs, ensuring fast and reliable service across this key growth area. We are the trusted pool removal contractors in:</p>
+            <h2 className="text-3xl font-bold mb-8">Swimming Pool Demolition in Midrand & Nearby Areas</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide pool demolition services across Midrand and nearby areas, including:</p>
             <div className="flex flex-wrap justify-center gap-4">
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Waterfall</span>
-                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Kyalami</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Carlswald</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Halfway Gardens</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Vorna Valley</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Randjespark</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Noordwyk</span>
-                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Randjespark</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Woodmead</span>
+                <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Kosmosdal</span>
             </div>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto mt-6">Wherever you are in the greater Midrand area, we provide fast, professional, and safe pool removal services.</p>
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -118,7 +139,7 @@ export default function DemolitionMidrandPage() {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="font-semibold">{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="font-semibold text-left">{faq.question}</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   {faq.answer}
                 </AccordionContent>
@@ -128,12 +149,12 @@ export default function DemolitionMidrandPage() {
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Get a Free Pool Demolition Quote in Midrand</h2>
+          <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Midrand</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to reclaim your property? Contact Apex Demolitions for a professional, no-obligation quote on your pool removal project in Midrand. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-randburg" className="text-primary-foreground underline">Randburg</Link>, and across Johannesburg.
+            Ready to remove your pool? Apex Demolitions is here to help. Contact us for a fast response and a free quote. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-roodepoort" className="text-primary-foreground underline">Roodepoort</Link>, and across Johannesburg.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now</a></Button>
+            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now: 078 429 2760</a></Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
           </div>
         </section>
