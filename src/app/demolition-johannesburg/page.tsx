@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Shovel, Star } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -29,7 +29,7 @@ const localBusinessSchema = {
 const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Demolition Contractor",
+    "serviceType": "Demolition Services",
     "provider": {
         "@type": "LocalBusiness",
         "name": "Apex Demolitions"
@@ -228,7 +228,7 @@ export default function DemolitionJohannesburgPage() {
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Demolition Services Across All Johannesburg Suburbs</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We provide localized, expert demolition services across all of Johannesburg and greater Gauteng. We have dedicated pages for many suburbs, including our <Link href="/demolition-services-johannesburg" className="text-primary hover:underline">main Johannesburg services hub</Link>. Find your area below.
+                We provide localized, expert demolition services across all of Johannesburg and greater Gauteng. We also offer demolition services in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link> and across Johannesburg. Find your area below.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
                 {suburbs.map(suburb => (
