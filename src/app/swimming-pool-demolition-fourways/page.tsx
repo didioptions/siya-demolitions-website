@@ -72,7 +72,7 @@ export default function DemolitionFourwaysPage() {
             <ShieldCheck /> The Estate & Residential Pool Removal Specialists in Fourways
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Looking for reliable swimming pool demolition in Fourways? Apex Demolitions provides fast, safe, and affordable pool removal services tailored for the unique environment of Fourways and its surrounding suburbs like Dainfern, Broadacres, Lonehill, Bryanston, and Sandton. Whether your pool is old, damaged, or simply unused, our experienced team removes it efficiently, leaving your property immaculate and ready for your new vision.
+            Looking for reliable swimming pool demolition in Fourways? Apex Demolitions provides fast, safe, and affordable pool removal services in Fourways and nearby suburbs, including Bryanston, Sandton, Lonehill, Dainfern, and Magaliessig. Whether your pool is old, damaged, or no longer in use, our experienced team removes it efficiently while leaving your property clean and ready for its next project.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Free Quote</a></Button>
@@ -83,12 +83,12 @@ export default function DemolitionFourwaysPage() {
         <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Pool Removal in Fourways?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Estate Specialists</h3><p className="text-sm text-muted-foreground">We are experts in working within the strict rules of Fourways' secure estates, ensuring a compliant, clean, and minimally disruptive process.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fully Insured</h3><p className="text-sm text-muted-foreground">Our comprehensive insurance protects your valuable property during all operations, giving you complete peace of mind.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">One-Stop Solution</h3><p className="text-sm text-muted-foreground">We handle the entire project: demolition, a full <Link href="/rubble-removal-fourways" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning-fourways" className="text-primary hover:underline">site cleaning</Link>.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Property Protection</h3><p className="text-sm text-muted-foreground">We use precision techniques and protective measures to safeguard your home, garden, and other assets during the removal process.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast & Efficient</h3><p className="text-sm text-muted-foreground">Most residential pool removals in Fourways are completed within 2-4 days to minimize disruption to your home life.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Clean & Tidy</h3><p className="text-sm text-muted-foreground">Our guarantee is a spotless site, ready for its next purpose, be it a new lawn, patio, or cottage.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Experienced Team</h3><p className="text-sm text-muted-foreground">Our skilled team has years of hands-on experience specifically in pool demolition across Johannesburg's northern suburbs.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast Turnaround</h3><p className="text-sm text-muted-foreground">We pride ourselves on completing most residential pool removals in Fourways within 2-4 days.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Affordable Pricing</h3><p className="text-sm text-muted-foreground">We provide competitive, transparent quotes with no hidden costs. What we quote is what you pay.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Complete Cleanup</h3><p className="text-sm text-muted-foreground">Our service includes a full <Link href="/rubble-removal-fourways" className="text-primary hover:underline">rubble removal</Link> and final <Link href="/site-cleaning-fourways" className="text-primary hover:underline">site clean</Link>, leaving your property spotless.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Local Experts</h3><p className="text-sm text-muted-foreground">As local contractors, we understand the area and provide a reliable, community-trusted service.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fully Insured</h3><p className="text-sm text-muted-foreground">Our comprehensive insurance protects your valuable property during all operations.</p></div></div>
             </div>
         </section>
 
@@ -96,9 +96,9 @@ export default function DemolitionFourwaysPage() {
             <h2 className="text-3xl font-bold text-center mb-8">Types of Pools We Remove in Fourways</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Our experienced Fourways team is equipped to handle the demolition of any swimming pool, regardless of its construction type or condition. We have the specialized tools and expertise for:</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle>Concrete & Gunite Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Common in many established Fourways homes. We use powerful hydraulic breakers to efficiently break up the reinforced concrete shell.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Concrete & Marbelite Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Common in many established Fourways homes. We use powerful hydraulic breakers to efficiently break up the reinforced concrete shell.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Fibreglass Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We carefully cut the fibreglass shell into manageable sections, lift it out, and dismantle any surrounding structures before backfilling.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Estate & Complex Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We have the capacity to handle larger or more complex pools found at the clubhouses of residential estates and apartment complexes.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Commercial & Complex Pools</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We have the capacity to handle larger or more complex pools found at the clubhouses of residential estates and apartment complexes.</p></CardContent></Card>
             </div>
         </section>
 
@@ -106,13 +106,13 @@ export default function DemolitionFourwaysPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Safe & Efficient 5-Step Pool Demolition Process</h2>
-                    <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Fourways pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
+                    <p className="text-muted-foreground mb-6">Our step-by-step process guarantees a safe and smooth demolition:</p>
                     <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection and provide a fixed quote. For estate work, we review all HOA guidelines.</li>
-                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all services are safely disconnected.</li>
-                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Our expert team carefully breaks up the pool shell and paving.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property.</li>
-                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the cavity and compact it in layers to ensure stability.</li>
+                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection to assess the pool type, size, and access for a safe removal plan and provide a fixed quote.</li>
+                        <li><span className="font-semibold text-foreground">Planning & Preparation:</span> We determine the most effective demolition method and secure the site to protect your property.</li>
+                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Our team uses professional equipment to break and remove the pool efficiently.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All debris and waste materials are cleared from your property and legally disposed of.</li>
+                        <li><span className="font-semibold text-foreground">Site Cleanup:</span> We backfill and compact the area, leaving it clean, level, and ready for new construction or landscaping.</li>
                     </ol>
                 </div>
                 <div>
@@ -121,6 +121,17 @@ export default function DemolitionFourwaysPage() {
             </div>
              <div className="text-center mt-12">
                 <Button size="lg" asChild><Link href="/contact">Get Your Free Demolition Quote <ArrowRight className="ml-2" /></Link></Button>
+            </div>
+        </section>
+
+        <section className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Benefits of Swimming Pool Demolition</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Removing your old pool offers many advantages for your Fourways property:</p>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Create More Usable Outdoor Space</h4><p className="text-sm text-muted-foreground">Reclaim your garden for a larger lawn, a modern entertainment area, or a home extension.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reduce Your Monthly Costs</h4><p className="text-sm text-muted-foreground">Eliminate the constant expense of chemicals, electricity for the pump, and costly water top-ups.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Improve Family Safety</h4><p className="text-sm text-muted-foreground">Remove the potential hazard an unfenced or unused pool poses to children and pets.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Increase Your Property's Value</h4><p className="text-sm text-muted-foreground">A large, functional garden is often more appealing to buyers than an old, high-maintenance pool.</p></div></div>
             </div>
         </section>
 
