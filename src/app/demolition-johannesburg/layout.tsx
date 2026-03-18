@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Johannesburg | Professional Demolition Contractors',
-  description: 'Professional demolition contractors in Johannesburg. House demolition, commercial demolition, pool demolition and rubble removal across all Johannesburg suburbs.',
+  title: 'Demolition Johannesburg | Licensed Demolition Contractors',
+  description: 'Expert demolition contractors in Johannesburg. We offer licensed residential, commercial, and industrial demolition with full rubble removal. Get a free quote.',
 };
 
 export default function DemolitionJohannesburgLayout({
