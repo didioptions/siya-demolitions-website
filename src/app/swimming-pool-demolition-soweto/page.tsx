@@ -7,7 +7,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
     { question: "Do you offer affordable pool demolition for homeowners in Soweto?", answer: "Yes, providing affordable and reliable pool demolition is a key part of our service in Soweto. We offer competitive pricing and free, no-obligation quotes to ensure our services are accessible to all residents." },
-    { question: "Is your pool demolition service available throughout all of Soweto?", answer: "Absolutely. We serve all neighborhoods in Soweto, from Orlando and Pimville to Diepkloof. We are proud to be a local contractor supporting community members in reclaiming their yard space." },
+    { question: "Is your pool demolition service available throughout all of Soweto?", answer: "Absolutely. We serve all neighborhoods in Soweto, from Orlando and Diepkloof to Pimville and beyond. We are proud to be a local contractor supporting community members in reclaiming their yard space." },
     { question: "What happens to the rubble after you demolish a pool in Soweto?", answer: "Our service is all-inclusive. We load and transport all rubble and debris to a licensed City of Johannesburg disposal facility, ensuring your site is left completely clean and that all waste is handled responsibly." }
 ];
 

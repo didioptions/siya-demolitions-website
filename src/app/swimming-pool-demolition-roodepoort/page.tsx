@@ -76,7 +76,7 @@ export default function SwimmingPoolDemolitionRoodepoortPage() {
             <p className="mt-2 text-muted-foreground">Serving the entire West Rand.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/swimming-pool-demolition-randburg">Randburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-krugersdorp">Krugersdorp</Link></Button>
+                <Button variant="outline" asChild><Link href="/swimming-pool-demolition-soweto">Soweto</Link></Button>
                 <Button variant="outline" asChild><Link href="/swimming-pool-demolition-northcliff">Northcliff</Link></Button>
             </div>
         </section>
