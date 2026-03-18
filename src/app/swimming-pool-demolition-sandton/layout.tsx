@@ -1,14 +1,10 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Swimming Pool Demolition Sandton | Professional Pool Removal',
-  description: 'Licensed swimming pool demolition contractors in Sandton. Safe removal of all pool types for luxury homes and estates in Morningside, Rivonia, and surrounds.',
+  title: 'Swimming Pool Demolition Sandton | Fast Pool Removal',
+  description: 'Affordable swimming pool demolition in Sandton. Fast, professional pool removal with full cleanup for residential and commercial properties in Sandton, Bryanston, Fourways, and Rivonia. Call for a free quote.',
 };
 
-export default function SwimmingPoolDemolitionSandtonLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
