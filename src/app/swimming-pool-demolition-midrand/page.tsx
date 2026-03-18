@@ -13,10 +13,16 @@ const localBusinessSchema = {
     "name": "Apex Demolitions",
     "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-midrand",
     "telephone": "+27784292760",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Midrand"
-    },
+    "areaServed": [
+      { "@type": "Place", "name": "Midrand" },
+      { "@type": "Place", "name": "Carlswald" },
+      { "@type": "Place", "name": "Halfway Gardens" },
+      { "@type": "Place", "name": "Vorna Valley" },
+      { "@type": "Place", "name": "Randjespark" },
+      { "@type": "Place", "name": "Noordwyk" },
+      { "@type": "Place", "name": "Woodmead" },
+      { "@type": "Place", "name": "Kosmosdal" }
+    ],
     "makesOffer": {
       "@type": "Offer",
       "itemOffered": {
@@ -56,6 +62,7 @@ const combinedSchema = {
 export default function DemolitionMidrandPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
     const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
+    const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
@@ -151,7 +158,7 @@ export default function DemolitionMidrandPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Get a Free Quote for Pool Removal in Midrand</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to remove your pool? Apex Demolitions is here to help. Contact us for a fast response and a free quote. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-roodepoort" className="text-primary-foreground underline">Roodepoort</Link>, and across Johannesburg.
+            Ready to remove your pool? Apex Demolitions is here to help. Contact us for a fast response and a free quote. We also offer swimming pool demolition in <Link href="/swimming-pool-demolition-sandton" className="text-primary-foreground underline">Sandton</Link>, <Link href="/swimming-pool-demolition-roodepoort" className="text-primary-foreground underline">Roodepoort</Link>, <Link href="/swimming-pool-demolition-bryanston" className="text-primary-foreground underline">Bryanston</Link>, <Link href="/swimming-pool-demolition-fourways" className="text-primary-foreground underline">Fourways</Link>, and across <Link href="/swimming-pool-demolition-johannesburg" className="text-primary-foreground underline">Johannesburg</Link>.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now: 078 429 2760</a></Button>
@@ -165,3 +172,5 @@ export default function DemolitionMidrandPage() {
     </>
   );
 }
+
+    
