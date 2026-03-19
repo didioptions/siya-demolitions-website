@@ -84,26 +84,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = pages.map((page) => {
-    let url = `${baseUrl}${page}`;
-    // A mapping to handle the main page for site cleaning which doesn't follow the pattern
-    const urlMapping: {[key: string]: string} = {
-      '/site-cleaning-johannesburg': '/site-cleaning',
-    };
-    if (urlMapping[page]) {
-      url = `${baseUrl}${urlMapping[page]}`;
-    }
-    
+    const url = `${baseUrl}${page}`;
     return {
         url,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: page === '/' ? 1 : (page.includes('johannesburg') ? 0.9 : 0.8),
       };
-  }).filter((entry, index, self) =>
-    index === self.findIndex((t) => (
-      t.url === entry.url
-    ))
-  );
+  });
 
   return sitemapEntries;
 }
