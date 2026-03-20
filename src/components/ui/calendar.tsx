@@ -1,4 +1,3 @@
-cat > src/components/ui/calendar.tsx <<'EOF'
 // fix
 "use client"
 
@@ -36,4 +35,3 @@ function Calendar({
 }
 
 export { Calendar }
-EOF
