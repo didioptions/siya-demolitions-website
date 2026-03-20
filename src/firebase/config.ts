@@ -1,9 +1,22 @@
-export const firebaseConfig = {
-  "apiKey": "AIzaSyAfVSBWXuea8oQm8ChY_7_9BMaqS5HWya4",
-  "authDomain": "sima-demolitions-live.firebaseapp.com",
-  "projectId": "sima-demolitions-live",
-  "storageBucket": "sima-demolitions-live.appspot.com",
-  "messagingSenderId": "398595526812",
-  "appId": "1:398595526812:web:f7c5894ac7c6befa71dd59",
-  "measurementId": "G-WGF4MFS50Y"
+// This function now securely reads Firebase configuration from environment variables.
+// It is essential that you set these variables in your Vercel project settings.
+export const getFirebaseConfig = () => {
+  const firebaseConfig = {
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  };
+
+  // Basic validation to ensure all required keys are present
+  for (const [key, value] of Object.entries(firebaseConfig)) {
+    if (!value) {
+      console.error(`Firebase config missing: NEXT_PUBLIC_${key.replace(/([A-Z])/g, '_$1').toUpperCase()}`);
+    }
+  }
+
+  return firebaseConfig;
 };
