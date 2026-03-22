@@ -85,11 +85,6 @@ const combinedSchema = {
 };
 
 const suburbs = [
-    { name: "Sandton", href: "/demolition-sandton" },
-    { name: "Randburg", href: "/demolition-randburg" },
-    { name: "Roodepoort", href: "/demolition-roodepoort" },
-    { name: "Midrand", href: "/demolition-midrand" },
-    { name: "Fourways", href: "/demolition-fourways" },
     { name: "Soweto", href: "/demolition-soweto" },
     { name: "Alberton", href: "/demolition-alberton" },
     { name: "Germiston", href: "/demolition-germiston" },
@@ -279,19 +274,41 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Demolition Services Across All Johannesburg Suburbs</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We provide localized, expert demolition services across all of Johannesburg and greater Gauteng. We also offer demolition services in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link> and across Johannesburg. Find your area below.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-                {suburbs.map(suburb => (
-                    <Button key={suburb.name} variant="outline" asChild>
-                        <Link href={suburb.href}>
-                           <MapPin className="mr-2" /> {suburb.name}
-                        </Link>
-                    </Button>
-                ))}
+        <section id="areas-we-serve" className="py-12 md:py-20">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center">Serving Every Corner of Johannesburg</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">Our teams are strategically positioned to provide fast, reliable demolition services across all of Johannesburg's key suburbs. We are your local experts, from the northern estates to the southern communities.</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
+                    
+                    <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
+                        <p className="text-muted-foreground text-sm">As the premier demolition contractors in Sandton, we specialize in high-end residential and commercial projects. Our teams are experts in navigating secure estates in Morningside and Bryanston, providing discreet and efficient demolition in Sandton for luxury homes and office blocks.</p>
+                    </div>
+
+                    <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:text-primary">Demolition Randburg</Link></h3>
+                        <p className="text-muted-foreground text-sm">We are the trusted demolition contractors for Randburg's diverse suburbs. From residential house demolition in Ferndale to commercial site clearing, our reliable demolition Randburg services ensure every project is completed on time, safely, and with a thorough cleanup.</p>
+                    </div>
+
+                     <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:text-primary">Demolition Roodepoort</Link></h3>
+                        <p className="text-muted-foreground text-sm">Our demolition Roodepoort services cover the entire West Rand. We handle projects on complex, sloped terrain and in dense residential areas, providing expert house demolition and site clearing with a focus on safety and community respect.</p>
+                    </div>
+
+                     <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:text-primary">Demolition Midrand</Link></h3>
+                        <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our demolition Midrand team specializes in large-scale site clearing for new residential and commercial developments. We work closely with developers to ensure projects in areas like Waterfall and Carlswald are cleared efficiently.</p>
+                    </div>
+                </div>
+                <div className="flex flex-wrap justify-center gap-4 mt-8">
+                    {suburbs.map(suburb => (
+                        <Button key={suburb.name} variant="outline" asChild>
+                            <Link href={suburb.href}>
+                               <MapPin className="mr-2" /> {suburb.name}
+                            </Link>
+                        </Button>
+                    ))}
+                </div>
             </div>
         </section>
 
