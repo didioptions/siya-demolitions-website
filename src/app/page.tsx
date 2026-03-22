@@ -341,27 +341,31 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <h3 className="font-bold text-xl mb-2"><Link href="/rubble-removal-sandton" className="hover:underline">Sandton</Link></h3>
-                        <p className="text-muted-foreground">We provide elite demolition and <Link href="/rubble-removal-sandton" className="text-primary hover:underline">rubble removal in Sandton</Link>, specializing in luxury home projects and discreet service in exclusive estates like Sandhurst and Morningside.</p>
+                        <p className="text-muted-foreground">We provide elite demolition and rubble removal in Sandton, specializing in luxury home projects and discreet service in exclusive estates. As leading demolition contractors in Sandton, our teams are equipped for complex projects, ensuring a clean, compliant, and professional site clearing every time.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:underline">Randburg</Link></h3>
-                        <p className="text-muted-foreground">As trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors in Randburg</Link>, we offer fast and affordable house demolition and reliable rubble removal that residents can count on across all suburbs, from Ferndale to Northcliff.</p>
+                        <p className="text-muted-foreground">As trusted demolition contractors in Randburg, we offer fast and affordable house demolition for the area's many renovations. Our reliable rubble removal in Randburg ensures residents can count on us to clear debris from any project, big or small, across all suburbs from Ferndale to Northcliff.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-midrand" className="hover:underline">Midrand</Link></h3>
-                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale site clearing, demolition services, and scheduled <Link href="/rubble-removal-midrand" className="text-primary hover:underline">rubble removal in Midrand</Link> for developers and residential estates like Waterfall.</p>
+                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale site clearing, demolition services, and scheduled rubble removal in Midrand for developers and residential estates like Waterfall. Our expert teams are familiar with the unique logistical needs of this fast-developing area.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2"><Link href="/rubble-removal-roodepoort" className="hover:underline">Roodepoort</Link></h3>
-                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition in Roodepoort</Link> and fast rubble removal services for residential and commercial clients on its varied terrain.</p>
+                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive demolition in Roodepoort and fast rubble removal services for residential and commercial clients. We are experienced in working on the varied and often challenging terrain found across Roodepoort's suburbs.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-soweto" className="hover:underline">Soweto</Link></h3>
-                        <p className="text-muted-foreground">We are proud to offer affordable, community-focused demolition and <Link href="/rubble-removal-soweto" className="text-primary hover:underline">rubble removal services in Soweto</Link>, helping homeowners and small businesses clear sites safely and efficiently.</p>
+                        <p className="text-muted-foreground">We are proud to offer affordable, community-focused demolition and rubble removal services in Soweto. We help homeowners, small businesses, and community projects clear sites safely and efficiently, supporting the area's growth and development.</p>
                     </div>
                     <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-alberton" className="hover:underline">Alberton & Germiston</Link></h3>
-                        <p className="text-muted-foreground">As East Rand specialists, we offer expert <Link href="/demolition-alberton" className="text-primary hover:underline">demolition in Alberton</Link> and industrial <Link href="/demolition-germiston" className="text-primary hover:underline">demolition in Germiston</Link>. Our fast rubble removal ensures your property is cleared professionally and on schedule.</p>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-alberton" className="hover:underline">Alberton</Link></h3>
+                        <p className="text-muted-foreground">As East Rand specialists, we offer expert demolition in Alberton for residential and commercial properties. Our fast rubble removal in Alberton ensures your property is cleared professionally and on schedule, from Meyersdal to Alberton North.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-germiston" className="hover:underline">Germiston</Link></h3>
+                        <p className="text-muted-foreground">We are the go-to contractors for industrial demolition in Germiston. We also provide comprehensive rubble removal and site clearing services for the area's many factories, warehouses, and commercial hubs, ensuring compliance and safety.</p>
                     </div>
                 </div>
             </div>
