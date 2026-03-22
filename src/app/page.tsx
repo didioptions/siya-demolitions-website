@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor, HardHat, Mail, MessageSquare } from "lucide-react";
@@ -139,7 +137,7 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        
+
         {/* SEO Intro Section */}
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
@@ -169,21 +167,37 @@ export default function Home() {
                 </div>
             </div>
         </section>
-        
-        {/* New Long-Form Section */}
+
+        {/* Demolition Contractors Johannesburg Section */}
         <section className="py-12 md:py-20 bg-background">
-            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-                <h2 className="text-3xl md:text-4xl font-bold text-center">Rubble Removal & Demolition Services in Johannesburg</h2>
-                <div className="prose prose-lg max-w-none mx-auto mt-6 text-muted-foreground">
-                    <p>At Apex Demolitions, we are Johannesburg's premier experts in transforming spaces through professional demolition and rubble removal. Our core mission is to provide safe, efficient, and reliable services that pave the way for new developments across Gauteng. Whether you're undertaking a major construction project in the heart of Sandton or renovating a home in the leafy suburbs of Randburg, our team has the experience and equipment to manage the entire process from start to finish.</p>
-                    <p>Our comprehensive **demolition Johannesburg** services cater to residential, commercial, and industrial projects. We handle everything from precise interior strip-outs to full-scale building demolitions. In parallel, our **rubble removal Johannesburg** division ensures that every site is left immaculately clean. A clean worksite is a safe worksite, and our fast-response teams are active daily in areas like Roodepoort and Midrand, clearing construction debris, soil, and garden refuse to keep projects on schedule. Effective **site clearing in Johannesburg** is not just about removing waste; it's about preparing a stable, hazard-free foundation for the future. We combine these services to offer a seamless, one-stop solution, eliminating the need for multiple contractors and ensuring your project transitions smoothly from demolition to the next phase of construction.</p>
-                    <p>Understanding the local landscape is key. From navigating the dense commercial hubs of Sandton to managing residential projects in Randburg, we bring localized expertise that makes a tangible difference. Our commitment to safety, compliance with all municipal bylaws, and eco-friendly disposal practices makes us the trusted partner for Joburg's most demanding projects.</p>
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center">Demolition Contractors Johannesburg</h2>
+                    <div className="prose prose-lg max-w-none mx-auto mt-6 text-muted-foreground">
+                        <p>When it comes to professional **demolition in Johannesburg**, choosing a contractor with a proven track record of safety, reliability, and compliance is paramount. Apex Demolitions Projects stands as a leader in the field, offering a comprehensive suite of demolition services tailored for the unique demands of the city. From residential **house demolition in Johannesburg** suburbs like Sandton to large-scale **commercial demolition** in bustling hubs like Randburg, our expertise ensures that every project is executed flawlessly. We understand that demolition is not just about tearing structures down; it's the crucial first step in urban renewal and development.</p>
+                        <p>Our services cover every type of structural removal. For homeowners, we provide careful and precise **house demolition Johannesburg** services, ensuring minimal disruption to neighboring properties. For our commercial clients, we handle complex projects including office blocks, warehouses, and retail centers. Our **building demolition Johannesburg** capabilities extend to partial demolitions for renovations, interior strip-outs to prepare for new tenants, and the removal of hazardous structures. We have the heavy-duty equipment and skilled operators to manage projects of any scale, from a single residential wall to a multi-story commercial block.</p>
+                        <p>Safety and compliance are the cornerstones of our operation. Every **demolition Johannesburg** project begins with a meticulous safety plan that adheres to the Occupational Health and Safety (OHS) Act. Our sites are secured, our teams are equipped with the correct Personal Protective Equipment (PPE), and we employ dust-suppression techniques to minimize environmental impact. Furthermore, we manage the entire permit process with the City of Johannesburg, ensuring every project has the necessary legal approvals before work commences. This protects our clients from costly delays and fines. Choosing Apex means choosing a partner who values safety as much as you do. Our experience across Johannesburg, from Midrand to Roodepoort, makes us the go-to contractors for safe, legal, and efficient demolition.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        {/* Rubble Removal Johannesburg Section */}
+        <section className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center">Rubble Removal Johannesburg Services</h2>
+                    <div className="prose prose-lg max-w-none mx-auto mt-6 text-muted-foreground">
+                        <p>A clean worksite is a safe and productive worksite. At Apex Demolitions, our **rubble removal Johannesburg** service is designed to be fast, efficient, and thoroughly reliable. We understand that leftover construction debris, garden refuse, or demolition waste can halt a project and create significant safety hazards. That's why we offer a comprehensive **construction waste removal** solution for contractors, developers, and homeowners across all Johannesburg suburbs. Whether you need an urgent cleanup in Sandton or scheduled debris removal for a large project in Roodepoort, our service is tailored to meet your needs.</p>
+                        <p>We handle all types of rubble. This includes heavy materials like broken concrete, bricks, and soil from earthworks, as well as lighter waste from **garden refuse removal** such as branches, stumps, and grass. Our process is simple and transparent: you call us, we provide a clear quote based on the volume and type of waste, and upon approval, our team arrives to load and transport the rubble. We pride ourselves on offering **same day rubble removal** in many parts of Johannesburg, ensuring your site can be cleared with minimal delay. Our pricing is determined by factors like truckloads required, material type (which affects disposal fees), and site accessibility in areas like Randburg or Midrand. We always aim to provide the most cost-effective solution.</p>
+                        <p>Choosing a licensed waste carrier is not just best practice; it's a legal requirement. As a fully licensed rubble remover, we guarantee that all waste collected is transported to registered, environmentally compliant disposal and recycling facilities. This protects you from the serious legal and financial risks of illegal dumping. Our commitment to fast, professional service and responsible disposal makes us the premier choice for **rubble removal in Johannesburg**.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         {/* Core Services Section (existing) */}
-        <section id="services" className="py-12 md:py-20 bg-card">
+        <section id="services" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Services for Gauteng</h2>
@@ -242,7 +256,7 @@ export default function Home() {
             </div>
         </section>
 
-        {/* New "Why Choose Us" Section */}
+        {/* Why Choose Us Section */}
         <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center">Why Johannesburg Clients Choose Us</h2>
@@ -272,7 +286,7 @@ export default function Home() {
             </div>
         </section>
 
-        {/* New "Our Process" Section */}
+        {/* Our Process Section */}
         <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
@@ -288,7 +302,7 @@ export default function Home() {
             </div>
         </section>
 
-        {/* New Recent Projects Section */}
+        {/* Recent Projects Section */}
         <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Projects in Johannesburg</h2>
@@ -324,7 +338,7 @@ export default function Home() {
             </div>
         </section>
 
-        {/* New Areas We Serve Section */}
+        {/* Areas We Serve Section */}
         <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Areas We Serve in Johannesburg</h2>
