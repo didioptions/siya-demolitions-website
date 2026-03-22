@@ -61,7 +61,7 @@ export default function DemolitionSandtonPage() {
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                 <p className="text-lg text-muted-foreground">
-                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice. We also offer same-day demolition Johannesburg services for urgent projects.
+                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice. We also offer same-day demolition services in Sandton for urgent projects.
                 </p>
             </div>
         </section>
@@ -181,7 +181,7 @@ export default function DemolitionSandtonPage() {
                 {faqs.map((faq, index) => (
                     <div key={index} className="p-4 border rounded-lg">
                         <p className="font-semibold text-lg">{faq.question}</p>
-                        <div className="prose prose-sm max-w-none text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                        <p className="text-muted-foreground mt-2">{faq.answer}</p>
                     </div>
                 ))}
             </div>
@@ -190,7 +190,7 @@ export default function DemolitionSandtonPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg mt-16">
           <h2 className="text-3xl font-bold">Need Demolition Services in Sandton?</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            For urgent projects, we offer **same-day demolition Johannesburg** services. Contact us for a fast, competitive, and no-obligation quote. Our Sandton team is ready to provide a professional assessment.
+            For urgent projects, we offer **same-day demolition services in Sandton**. Contact us for a fast, competitive, and no-obligation quote. Our Sandton team is ready to provide a professional assessment.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now for a Same-Day Quote</a></Button>
