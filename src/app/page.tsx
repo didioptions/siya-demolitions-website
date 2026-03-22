@@ -279,7 +279,17 @@ export default function Home() {
                             <p className="text-sm text-muted-foreground">Sandton</p>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
+                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
+                            <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{demolitionImage && <Image src={demolitionImage.imageUrl} alt={demolitionImage.description} data-ai-hint={demolitionImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{cleaningImage && <Image src={cleaningImage.imageUrl} alt={cleaningImage.description} data-ai-hint={cleaningImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
                     <Card>
@@ -288,7 +298,17 @@ export default function Home() {
                             <p className="text-sm text-muted-foreground">Randburg</p>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm">Provided ongoing rubble removal for a commercial renovation project. Our team ensured the site remained safe and clear of debris, allowing other trades to work efficiently without delays. The client was impressed with our reliability.</p>
+                            <p className="text-sm mb-4">Provided ongoing rubble removal for a commercial renovation project. Our team ensured the site remained safe and clear of debris, allowing other trades to work efficiently without delays. The client was impressed with our reliability.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{rubbleImage && <Image src={rubbleImage.imageUrl} alt={rubbleImage.description} data-ai-hint={rubbleImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{cleaningImage && <Image src={cleaningImage.imageUrl} alt={cleaningImage.description} data-ai-hint={cleaningImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
                     <Card>
@@ -297,7 +317,17 @@ export default function Home() {
                             <p className="text-sm text-muted-foreground">Roodepoort</p>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn to be planted.</p>
+                            <p className="text-sm mb-4">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn to be planted.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{poolImage && <Image src={poolImage.imageUrl} alt={poolImage.description} data-ai-hint={poolImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
                         </CardContent>
                     </Card>
                 </div>
