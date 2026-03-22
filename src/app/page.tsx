@@ -13,7 +13,7 @@ import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Johannesburg Demolition, Rubble Removal & Site Clearing Experts | Apex",
+        absolute: "Demolition & Rubble Removal Johannesburg | Apex",
     },
     description: "Apex Demolitions offers licensed demolition, rubble removal, site cleaning, tree felling & plant hire in Johannesburg. Trusted experts for residential & commercial projects. Get a free quote.",
 };
@@ -66,14 +66,14 @@ const testimonials = [
 ];
 
 const faqs = [
-    { question: "How quickly can you clear a site in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "For most standard rubble removal and site cleaning projects in Johannesburg, we can typically offer same-day or next-day service. Our locally-based teams across Gauteng, including Sandton, Randburg, and the East Rand, allow for rapid dispatch. The exact timing depends on the scale of the job and our schedule, but we prioritize urgent requests to prevent delays to your project. Complex demolitions require more planning for permits and safety, but the cleanup phase is always executed with maximum efficiency. Call us directly for the fastest response." } },
-    { question: "Are your demolition and site clearing teams insured and certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. Apex Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind." } },
-    { question: "Do you clean up the site after a demolition or rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, complete site cleanup is a core part of our service promise. Our service is not finished until your site is left clean, safe, and ready for the next phase of your project. After any demolition or rubble removal, our teams perform a thorough site cleanup, which includes removing all remaining debris, sweeping hard surfaces, and ensuring no hazards are left behind. Our goal is to provide a true end-to-end solution, saving you the time and expense of hiring a separate cleanup crew. This commitment to a spotless finish is why contractors and homeowners across Johannesburg trust us." } },
     { question: "How much does demolition cost in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "Demolition costs in Johannesburg are based on the structure's size, materials (e.g., brick vs. concrete), and site accessibility. A small residential wall will be much cheaper than a full house demolition. We provide free, on-site assessments to give you a detailed, fixed-price quote with no hidden fees." } },
     { question: "What are your rubble removal prices?", "acceptedAnswer": { "@type": "Answer", "text": "Our rubble removal prices are highly competitive and based on the volume of debris (per truckload) and the type of material. We offer free quotes so you know the cost upfront. For a quick estimate, you can also send us a photo of the rubble pile on WhatsApp." } },
     { question: "How long does a demolition project take?", "acceptedAnswer": { "@type": "Answer", "text": "The timeline varies. A small demolition might take a few hours, while a full house demolition can take 2-5 days, including rubble removal. We provide a clear project timeline with every quote so you can plan accordingly." } },
     { question: "Do I need a permit for demolition in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "For most structural demolitions, yes, a permit from the City of Johannesburg is required to ensure safety and compliance. As part of our professional service, we can guide you through and assist with the entire permit application process." } },
-    { question: "Do you offer same-day rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer same-day rubble removal in many Johannesburg suburbs, subject to our schedule and truck availability. We prioritize urgent requests to help keep your site safe and clear. Please call us directly for the fastest service." } }
+    { question: "Do you offer same-day rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer same-day rubble removal in many Johannesburg suburbs, subject to our schedule and truck availability. We prioritize urgent requests to help keep your site safe and clear. Please call us directly for the fastest service." } },
+    { question: "How quickly can you clear a site in Johannesburg?", "acceptedAnswer": { "@type": "Answer", "text": "For most standard rubble removal and site cleaning projects in Johannesburg, we can typically offer same-day or next-day service. Our locally-based teams across Gauteng, including Sandton, Randburg, and the East Rand, allow for rapid dispatch. The exact timing depends on the scale of the job and our schedule, but we prioritize urgent requests to prevent delays to your project. Complex demolitions require more planning for permits and safety, but the cleanup phase is always executed with maximum efficiency. Call us directly for the fastest response." } },
+    { question: "Are your demolition and site clearing teams insured and certified?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, absolutely. Apex Demolitions Projects is a fully licensed and insured company. We carry comprehensive public liability insurance to protect your property, our team, and the public. Our operators are certified and trained to adhere to the highest safety standards, including the Occupational Health and Safety (OHS) Act. We are committed to full compliance with all City of Johannesburg municipal bylaws, ensuring every project we undertake is managed professionally and responsibly. We provide all compliance documentation upon request for your peace of mind." } },
+    { question: "Do you clean up the site after a demolition or rubble removal?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, complete site cleanup is a core part of our service promise. Our service is not finished until your site is left clean, safe, and ready for the next phase of your project. After any demolition or rubble removal, our teams perform a thorough site cleanup, which includes removing all remaining debris, sweeping hard surfaces, and ensuring no hazards are left behind. Our goal is to provide a true end-to-end solution, saving you the time and expense of hiring a separate cleanup crew. This commitment to a spotless finish is why contractors and homeowners across Johannesburg trust us." } },
 ];
 
 const faqSchema = {
@@ -143,7 +143,8 @@ export default function Home() {
         {/* SEO Intro Section */}
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
-                <p className="text-lg text-muted-foreground">
+                 <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Demolition & Rubble Removal Partner in Johannesburg</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
                     As Johannesburg's top-rated demolition and rubble removal specialists, we provide fast, safe, and fully insured services across the entire city. From large-scale commercial <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link> central to residential <Link href="/site-cleaning" className="text-primary hover:underline">site clearing in Sandton</Link>, and urgent <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal in Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, and <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, our expert teams are equipped for any project. We are your trusted partner for creating a clean, safe, and build-ready site.
                 </p>
             </div>
@@ -219,7 +220,7 @@ export default function Home() {
                         <CardContent className="flex-grow">
                             <p className="text-sm text-muted-foreground">Need safe and professional <Link href="/tree-felling-johannesburg" className="text-primary hover:underline">tree felling in Johannesburg</Link>? Our insured teams handle hazardous, overgrown, or unwanted trees in tight spaces, especially in leafy suburbs like Fourways and Edenvale. We perform sectional dismantling to protect your property and provide full cleanup services.</p>
                         </CardContent>
-                         <div className="p-6 pt-0"><Button variant="outline" className="w-full" asChild><Link href="/tree-felling">Explore Tree Felling</Link></Button></div>
+                         <div className="p-6 pt-0"><Button variant="outline" className="w-full" asChild><Link href="/tree-felling-johannesburg">Explore Tree Felling</Link></Button></div>
                     </Card>
                     <Card className="flex flex-col">
                         {poolImage && <div className="relative aspect-video"><Image src={poolImage.imageUrl} alt={poolImage.description} data-ai-hint={poolImage.imageHint} fill className="object-cover rounded-t-lg" /></div>}
@@ -235,7 +236,7 @@ export default function Home() {
                         <CardContent className="flex-grow">
                             <p className="text-sm text-muted-foreground">Our <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">plant hire service in Johannesburg</Link> provides TLBs and Bobcats with certified operators for excavation, trenching, and site preparation. Ideal for builders and landscapers in areas like Kempton Park or Boksburg needing reliable machinery for projects of any scale. Flexible short and long-term hire available.</p>
                         </CardContent>
-                         <div className="p-6 pt-0"><Button variant="outline" className="w-full" asChild><Link href="/plant-hire">View Plant Hire Options</Link></Button></div>
+                         <div className="p-6 pt-0"><Button variant="outline" className="w-full" asChild><Link href="/plant-hire-johannesburg">View Plant Hire Options</Link></Button></div>
                     </Card>
                 </div>
             </div>
@@ -330,27 +331,27 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div>
                         <h3 className="font-bold text-xl mb-2">Sandton</h3>
-                        <p className="text-muted-foreground">We provide elite **demolition services in Sandton**, specializing in luxury home demolitions and discreet **rubble removal in Sandton**'s exclusive estates.</p>
+                        <p className="text-muted-foreground">We provide elite <Link href="/demolition-sandton" className="text-primary hover:underline">demolition services in Sandton</Link>, specializing in luxury home demolitions and discreet <Link href="/rubble-removal-sandton" className="text-primary hover:underline">rubble removal in Sandton</Link>'s exclusive estates.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2">Randburg</h3>
-                        <p className="text-muted-foreground">As trusted **demolition contractors in Randburg**, we offer fast and affordable house demolition and reliable **rubble removal Randburg** residents can count on.</p>
+                        <p className="text-muted-foreground">As trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors in Randburg</Link>, we offer fast and affordable house demolition and reliable <Link href="/rubble-removal-randburg" className="text-primary hover:underline">rubble removal Randburg</Link> residents can count on.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2">Midrand</h3>
-                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale **site clearing** and **demolition services**, along with scheduled **rubble removal in Midrand** for developers.</p>
+                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale <Link href="/site-cleaning-midrand" className="text-primary hover:underline">site clearing</Link> and <Link href="/demolition-midrand" className="text-primary hover:underline">demolition services</Link>, along with scheduled <Link href="/rubble-removal-midrand" className="text-primary hover:underline">rubble removal in Midrand</Link> for developers.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2">Roodepoort</h3>
-                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive **demolition in Roodepoort** and fast **rubble removal Roodepoort** services for residential and commercial clients.</p>
+                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition in Roodepoort</Link> and fast <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">rubble removal Roodepoort</Link> services for residential and commercial clients.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2">Soweto</h3>
-                        <p className="text-muted-foreground">We are proud to offer affordable community-focused **demolition and rubble removal services in Soweto**, helping homeowners and small businesses grow.</p>
+                        <p className="text-muted-foreground">We are proud to offer affordable community-focused <Link href="/demolition-soweto" className="text-primary hover:underline">demolition</Link> and <Link href="/rubble-removal-soweto" className="text-primary hover:underline">rubble removal services in Soweto</Link>, helping homeowners and small businesses grow.</p>
                     </div>
                     <div>
                         <h3 className="font-bold text-xl mb-2">Alberton & Germiston</h3>
-                        <p className="text-muted-foreground">As East Rand specialists, we handle everything from industrial **demolition in Germiston** to residential **rubble removal in Alberton** with local expertise.</p>
+                        <p className="text-muted-foreground">As East Rand specialists, we handle everything from industrial <Link href="/demolition-germiston" className="text-primary hover:underline">demolition in Germiston</Link> to residential <Link href="/rubble-removal-alberton" className="text-primary hover:underline">rubble removal in Alberton</Link> with local expertise.</p>
                     </div>
                 </div>
             </div>
