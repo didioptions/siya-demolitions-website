@@ -459,9 +459,9 @@ export default function DemolitionJohannesburgPage() {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground"
-                    dangerouslySetInnerHTML={{ __html: faq.answer }}
-                />
+                <AccordionContent>
+                    <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
