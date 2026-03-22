@@ -261,6 +261,71 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
+        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Johannesburg</h2>
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Full House Demolition</CardTitle>
+                            <p className="text-sm text-muted-foreground">Sandton</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
+                            <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='residentialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaningAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Commercial Site Clearing</CardTitle>
+                            <p className="text-sm text-muted-foreground">Randburg</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Dismantled and cleared an old commercial structure to prepare the site for a new retail development. The project involved careful coordination to minimize disruption to neighboring businesses.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='commercialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaning') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Swimming Pool Removal</CardTitle>
+                            <p className="text-sm text-muted-foreground">Roodepoort</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoWork') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+
         <section id="safety" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
