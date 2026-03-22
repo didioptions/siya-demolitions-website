@@ -158,6 +158,14 @@ export default function DemolitionJohannesburgPage() {
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
             As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-soweto" className="text-primary hover:underline">Soweto</Link>, or <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
           </p>
+          <div className="mt-6 text-left max-w-3xl mx-auto bg-card p-4 rounded-lg border">
+            <p className="text-lg font-semibold text-foreground">We are one of the leading demolition contractors in Johannesburg, trusted by homeowners, builders, and commercial clients across Sandton, Randburg, Midrand, and Roodepoort. Our team delivers safe, compliant, and cost-effective demolition services, making us a top choice for projects of all sizes in Gauteng.</p>
+             <ul className="mt-4 space-y-1 text-sm text-muted-foreground list-disc list-inside">
+                <li>Affordable demolition Johannesburg</li>
+                <li>Same-day demolition services Johannesburg</li>
+                <li>Emergency demolition contractors near you</li>
+            </ul>
+          </div>
           <Button size="lg" className="mt-6" asChild>
             <a href="tel:0784292760">
               <Phone className="mr-2 h-5 w-5" /> Get Your Free Quote Now
@@ -423,22 +431,22 @@ export default function DemolitionJohannesburgPage() {
                     
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
-                        <p className="text-muted-foreground text-sm">As the premier <Link href="/demolition-sandton" className="text-primary hover:underline">demolition contractors in Sandton</Link>, we specialize in high-end residential and commercial projects. Our teams are experts in navigating secure estates in Morningside and Bryanston, providing discreet and efficient demolition in Sandton for luxury homes and office blocks.</p>
+                        <p className="text-muted-foreground text-sm">We provide professional demolition services in Sandton, including residential and commercial demolition with fast turnaround times.</p>
                     </div>
 
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:text-primary">Demolition Randburg</Link></h3>
-                        <p className="text-muted-foreground text-sm">We are the trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors for Randburg's</Link> diverse suburbs. From residential house demolition in Ferndale to commercial site clearing, our reliable demolition Randburg services ensure every project is completed on time, safely, and with a thorough cleanup.</p>
+                        <p className="text-muted-foreground text-sm">We provide professional demolition services in Randburg, including residential and commercial demolition with fast turnaround times.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:text-primary">Demolition Roodepoort</Link></h3>
-                        <p className="text-muted-foreground text-sm">Our <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition Roodepoort services</Link> cover the entire West Rand. We handle projects on complex, sloped terrain and in dense residential areas, providing expert house demolition and site clearing with a focus on safety and community respect.</p>
+                         <p className="text-muted-foreground text-sm">We provide professional demolition services in Roodepoort, including residential and commercial demolition with fast turnaround times.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:text-primary">Demolition Midrand</Link></h3>
-                        <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our <Link href="/demolition-midrand" className="text-primary hover:underline">demolition Midrand team</Link> specializes in large-scale site clearing for new residential and commercial developments. We work closely with developers to ensure projects in areas like Waterfall and Carlswald are cleared efficiently.</p>
+                         <p className="text-muted-foreground text-sm">We provide professional demolition services in Midrand, including residential and commercial demolition with fast turnaround times.</p>
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -467,19 +475,20 @@ export default function DemolitionJohannesburgPage() {
           </Accordion>
         </section>
 
-        <section id="contact-form" className="py-12 md:py-20 bg-card text-center rounded-lg">
+        <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground text-center rounded-lg">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold">Get a Free Demolition Quote Today</h2>
-                <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Don't delay your project. Contact us now for a fast, free, no-obligation quote. Our expert team is ready to provide a detailed assessment for your demolition needs anywhere in Johannesburg.</p>
-                <div className="mt-8 mb-12 flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size="lg" asChild>
+                <h2 className="text-3xl md:text-4xl font-bold">Need demolition services in Johannesburg?</h2>
+                <p className="mt-4 max-w-2xl mx-auto">
+                    Call now or WhatsApp us for a fast, free quote. Our team is ready to assist with safe and professional demolition anywhere in Gauteng.
+                </p>
+                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button size="lg" variant="secondary" asChild>
                         <a href="tel:0784292760"><Phone /> Call for an Instant Quote</a>
                     </Button>
-                    <Button size="lg" variant="secondary" asChild>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                         <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp Us Now</a>
                     </Button>
                 </div>
-                <HomePageContactForm />
             </div>
         </section>
       </div>
