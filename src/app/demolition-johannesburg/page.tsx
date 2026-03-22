@@ -141,6 +141,7 @@ const comprehensiveServices = [
 export default function DemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
     const processImage = PlaceHolderImages.find(p => p.id === 'constructionServices');
+    const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
@@ -270,15 +271,25 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
         
-        <section id="why-choose-us" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex Demolition Contractors in Johannesburg?</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><ShieldCheck className="text-accent" />Licensed & Insured</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We are fully licensed and carry comprehensive public liability insurance, ensuring your project meets all City of Johannesburg regulations and is completely protected.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><FileText className="text-accent" />Council Approval Experts</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We save you time and prevent costly delays by expertly managing the entire permit and approval process with the local authorities on your behalf.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><Construction className="text-accent" />Decades of Experience</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">With over 20 years of experience in Johannesburg, our seasoned team has the expertise to handle any demolition challenge safely and efficiently.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><Wrench className="text-accent" />Professional Equipment</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We utilize a fleet of modern, well-maintained demolition equipment, from excavators to Bobcats, ensuring a safe, effective, and reliable process.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><Sparkles className="text-accent" />Complete Site Cleanup</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our service includes a full rubble removal and site cleaning, leaving your property perfectly level and ready for the next phase of your building project.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-3"><Star className="text-accent" />Affordable & Transparent</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We provide competitive, transparent quotes with no hidden costs. The price we quote is the price you pay for a complete, professional service.</p></CardContent></Card>
+        <section id="why-choose-us" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-bold">Why Clients Trust Our Demolition Services</h2>
+                        <p className="mt-4 text-lg text-muted-foreground">
+                            We are more than just contractors; we are your partners in transforming your property safely and professionally. Here’s why Johannesburg’s top builders and homeowners choose us.
+                        </p>
+                         <div className="mt-8 grid gap-6">
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed, insured, and compliant with all City of Johannesburg bylaws. Your project and property are completely protected, giving you total peace of mind.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our local teams have the expertise to navigate any challenge, from Sandton's estates to Soweto's residential stands.</p></div></div>
+                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money in any project. Our crews are punctual, efficient, and committed to meeting your deadlines without compromising on safety or quality.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full rubble removal, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
+                        </div>
+                    </div>
+                    <div>
+                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a demolition project in Johannesburg" data-ai-hint="demolition team planning" width={600} height={500} className="rounded-lg shadow-lg" />}
+                    </div>
+                </div>
             </div>
         </section>
 
