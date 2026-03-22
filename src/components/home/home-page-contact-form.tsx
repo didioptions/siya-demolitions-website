@@ -16,9 +16,9 @@ export function HomePageContactForm() {
     return (
         <Card className="mt-12 max-w-2xl mx-auto text-left shadow-lg text-card-foreground">
             <CardHeader>
-                <CardTitle className="text-card-foreground">Send Us a Message</CardTitle>
+                <CardTitle className="text-card-foreground">Get a Free Quote</CardTitle>
                 <CardDescription>
-                    Prefer to write? Fill out the form and we'll get back to you.
+                    Fill out the form and we'll get back to you shortly.
                 </CardDescription>
             </CardHeader>
             <CardContent>
@@ -29,17 +29,19 @@ export function HomePageContactForm() {
                             <Input id="home-name" placeholder="John Doe" required />
                         </div>
                         <div className="space-y-2">
-                            <Label htmlFor="home-email">Email Address</Label>
-                            <Input id="home-email" type="email" placeholder="john.doe@example.com" required />
+                            <Label htmlFor="home-phone">Phone Number</Label>
+                            <Input id="home-phone" type="tel" placeholder="078 123 4567" />
                         </div>
                     </div>
                     <div className="space-y-2">
                         <Label htmlFor="home-message">Message</Label>
                         <Textarea id="home-message" placeholder="Tell us about your project..." rows={4} required />
                     </div>
-                    <Button type="submit" className="w-full">Submit</Button>
+                    <Button type="submit" className="w-full" size="lg">Request Quote</Button>
                 </form>
             </CardContent>
         </Card>
     );
 }
+
+    

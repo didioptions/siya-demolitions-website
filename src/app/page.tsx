@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor, HardHat, Mail, MessageSquare } from "lucide-react";
@@ -8,6 +9,7 @@ import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
     title: {
@@ -109,7 +111,7 @@ export default function Home() {
                         <span className="font-semibold text-white">Call Us for a Free Quote: 078 429 2760</span>
                       </a>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">Johannesburg's Demolition & Site Clearing Experts</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">Demolition & Rubble Removal Johannesburg Experts</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
                       Apex Demolitions Projects: Your trusted, licensed partner for demolition, rubble removal, site cleaning, and tree felling in Johannesburg and across Gauteng.
                     </p>
@@ -125,6 +127,15 @@ export default function Home() {
                         </Button>
                     </div>
                 </div>
+            </div>
+        </section>
+        
+        {/* SEO Intro Section */}
+        <section className="py-12 md:py-16 bg-background">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
+                <p className="text-lg text-muted-foreground">
+                    As Johannesburg's top-rated demolition and rubble removal specialists, we provide fast, safe, and fully insured services across the entire city. From large-scale commercial <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link> central to residential <Link href="/site-cleaning" className="text-primary hover:underline">site clearing in Sandton</Link>, and urgent <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal in Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, and <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, our expert teams are equipped for any project. We are your trusted partner for creating a clean, safe, and build-ready site.
+                </p>
             </div>
         </section>
 
@@ -147,9 +158,25 @@ export default function Home() {
                 </div>
             </div>
         </section>
+        
+        {/* Our Process Section */}
+        <section className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Demolition & Rubble Removal Process</h2>
+                    <p className="mt-2 max-w-2xl mx-auto text-muted-foreground">A simple, transparent, and professional process from start to finish.</p>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
+                    <Card className="text-center"><CardHeader><CardTitle>Step 1: Free Site Inspection</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We visit your site to assess the job and provide a free, detailed, no-obligation quote.</p></CardContent></Card>
+                    <Card className="text-center"><CardHeader><CardTitle>Step 2: Planning & Compliance</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We handle all necessary planning and ensure the project complies with all municipal bylaws.</p></CardContent></Card>
+                    <Card className="text-center"><CardHeader><CardTitle>Step 3: Demolition & Removal</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Our expert team carries out the demolition and rubble removal safely and efficiently.</p></CardContent></Card>
+                    <Card className="text-center"><CardHeader><CardTitle>Step 4: Final Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We perform a thorough site cleanup, leaving your property spotless and ready for the next phase.</p></CardContent></Card>
+                </div>
+            </div>
+        </section>
 
         {/* Core Services Section */}
-        <section id="services" className="py-12 md:py-20 bg-background">
+        <section id="services" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Services for Gauteng</h2>
@@ -214,40 +241,41 @@ export default function Home() {
             </div>
         </section>
 
-        {/* Why Choose Us Section */}
-        <section id="why-choose-us" className="py-12 md:py-20 bg-card">
-            <div className="container mx-auto px-4 md:px-6">
+        {/* New Demolition Section */}
+        <section className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6 max-w-5xl">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold">Your Trusted Partner in Demolition & Site Preparation</h2>
-                        <p className="mt-4 text-lg text-muted-foreground">
-                            At Apex Demolitions Projects, we don't just demolish structures; we build trust. With a track record of safety, reliability, and excellence since 2000, we are the go-to partner for contractors and homeowners who demand a professional, hassle-free experience.
+                        <h2 className="text-3xl font-bold">Demolition Contractors Johannesburg</h2>
+                        <p className="mt-4 text-muted-foreground">
+                            As Johannesburg's premier demolition contractors, we provide a comprehensive range of services tailored to any project size. Our expertise covers residential house demolition, large-scale commercial building clearing, and complex industrial site dismantling. We handle every stage with precision, from obtaining permits to the final site handover. We have a proven track record in challenging environments, from dense urban settings in the CBD to exclusive residential estates in Sandton. Our commitment to safety and efficiency makes us the trusted choice for developers and homeowners who require a professional and reliable demolition partner in Johannesburg.
                         </p>
-                         <div className="mt-8 grid gap-6">
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-accent mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Experience & Expertise</h3><p className="text-muted-foreground mt-1 text-sm">With over two decades of hands-on experience, we’ve successfully completed hundreds of complex projects across Gauteng. Our deep industry knowledge means we anticipate challenges and deliver solutions, not problems.</p></div></div>
-                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-accent mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Fully Insured</h3><p className="text-muted-foreground mt-1 text-sm">Your project is protected. We are fully licensed and carry comprehensive public liability insurance, ensuring every job is compliant with all regulations and giving you complete peace of mind.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-accent mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Customer Satisfaction Guaranteed</h3><p className="text-muted-foreground mt-1 text-sm">We are committed to clear communication, punctual service, and leaving your site better than we found it. Your satisfaction is the measure of our success.</p></div></div>
-                        </div>
                     </div>
-                    <div>
-                       {safetyImage && <Image src={safetyImage.imageUrl} alt={safetyImage.description} data-ai-hint={safetyImage.imageHint} width={600} height={500} className="rounded-lg shadow-lg" />}
-                    </div>
+                    {demolitionImage && <div className="relative aspect-video"><Image src={demolitionImage.imageUrl} alt={demolitionImage.description} data-ai-hint={demolitionImage.imageHint} fill className="object-cover rounded-lg shadow-lg" /></div>}
                 </div>
             </div>
         </section>
 
-        {/* Safety & Compliance Section */}
-        <section id="safety" className="py-12 md:py-20 bg-background">
-            <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold">Safety, Insurance & Compliance: Our Non-Negotiables</h2>
-                <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    In the high-risk demolition and construction industry, safety and compliance aren't just buzzwords—they are our license to operate. Apex Demolitions Projects adheres strictly to the Occupational Health and Safety (OHS) Act and all City of Johannesburg municipal bylaws. Our teams undergo continuous training, and we conduct rigorous on-site risk assessments before any project begins. We are fully insured, protecting your property and investment against any unforeseen circumstances. This professional oversight is your guarantee that your project will be completed without incident, on time, and to the highest legal standard.
-                </p>
-                <div className="mt-8">
-                    <Button size="lg" asChild>
-                        <Link href="/contact">Request a Quote & Our Compliance Documents</Link>
-                    </Button>
+        {/* New Rubble Removal Section */}
+        <section className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+                 <div className="grid md:grid-cols-2 gap-12 items-center">
+                    {rubbleImage && <div className="relative aspect-video"><Image src={rubbleImage.imageUrl} alt={rubbleImage.description} data-ai-hint={rubbleImage.imageHint} fill className="object-cover rounded-lg shadow-lg" /></div>}
+                    <div>
+                        <h2 className="text-3xl font-bold">Rubble Removal Johannesburg</h2>
+                        <p className="mt-4 text-muted-foreground">
+                            A clean site is a safe site. Our rubble removal Johannesburg service is designed to be fast, reliable, and affordable. We clear all types of construction and demolition waste, including concrete, bricks, soil, wood, and garden refuse. With teams based across the city, we offer same-day service in many suburbs to keep your project moving without delays. As a licensed waste carrier, we guarantee that all debris is transported to certified disposal and recycling facilities. From small residential cleanups to ongoing waste management for large construction sites, we are Johannesburg's trusted partner for efficient rubble removal.
+                        </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        
+        <section id="contact-form" className="py-12 md:py-20 bg-background text-center">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold">Get a Free, No-Obligation Quote Today</h2>
+                <p className="mt-2 max-w-xl mx-auto text-muted-foreground">Fill out the form below or call us on 078 429 2760 for a fast response.</p>
+                <HomePageContactForm />
             </div>
         </section>
 
@@ -273,24 +301,8 @@ export default function Home() {
             </div>
         </section>
 
-        {/* Service Areas Section */}
-        <section id="areas" className="py-12 md:py-20 bg-background">
-            <div className="container mx-auto px-4 md:px-6 text-center">
-                 <h2 className="text-3xl md:text-4xl font-bold">Serving Residential & Commercial Clients Across Johannesburg</h2>
-                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">We provide fast, reliable, and localized demolition and site clearing services across all major Johannesburg suburbs and the greater Gauteng region. Our local teams are ready to respond.</p>
-                 <div className="mt-8 flex flex-wrap justify-center gap-4">
-                    {serviceAreas.map(area => (
-                        <div key={area} className="bg-card border rounded-full px-4 py-2 text-sm font-medium flex items-center gap-2 hover:bg-accent/10 transition-colors">
-                            <MapPin className="w-4 h-4 text-accent"/>
-                            <Link href={`/demolition-${area.toLowerCase().replace(/\s+/g, '-')}`} className="hover:underline">{area}</Link>
-                        </div>
-                    ))}
-                 </div>
-            </div>
-        </section>
-
         {/* Mini FAQ Section */}
-        <section id="faq" className="py-12 md:py-20 bg-card">
+        <section id="faq" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
                 <Accordion type="single" collapsible className="w-full">
@@ -333,3 +345,5 @@ export default function Home() {
     </>
   );
 }
+
+    
