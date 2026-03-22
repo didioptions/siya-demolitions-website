@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -431,22 +432,22 @@ export default function DemolitionJohannesburgPage() {
                     
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
-                        <p className="text-muted-foreground text-sm">We provide professional demolition services in Sandton, including residential and commercial demolition with fast turnaround times.</p>
+                        <p className="text-muted-foreground text-sm">As premier demolition contractors in Sandton, we provide elite services for luxury homes and commercial properties. Our teams are experts in navigating secure estates in suburbs like Morningside and Bryanston, ensuring a discreet, professional, and compliant project.</p>
                     </div>
 
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:text-primary">Demolition Randburg</Link></h3>
-                        <p className="text-muted-foreground text-sm">We provide professional demolition services in Randburg, including residential and commercial demolition with fast turnaround times.</p>
+                        <p className="text-muted-foreground text-sm">We are the trusted demolition contractors Randburg residents rely on for house demolitions and site clearing. We offer fast, affordable services across all suburbs, from Ferndale to Northcliff, ensuring every project is completed safely and efficiently.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:text-primary">Demolition Roodepoort</Link></h3>
-                         <p className="text-muted-foreground text-sm">We provide professional demolition services in Roodepoort, including residential and commercial demolition with fast turnaround times.</p>
+                         <p className="text-muted-foreground text-sm">Our demolition Roodepoort services cover the entire West Rand. We are experienced in handling projects on varied terrains, providing expert house demolition, site clearing, and rubble removal for residential and commercial clients.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:text-primary">Demolition Midrand</Link></h3>
-                         <p className="text-muted-foreground text-sm">We provide professional demolition services in Midrand, including residential and commercial demolition with fast turnaround times.</p>
+                         <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our demolition services are tailored for large-scale residential estates and commercial developments. We are the demolition contractors Midrand developers partner with for reliable and scalable site preparation.</p>
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -468,7 +469,7 @@ export default function DemolitionJohannesburgPage() {
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
                 <AccordionContent>
-                    <div className="text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                  <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </AccordionContent>
               </AccordionItem>
             ))}
