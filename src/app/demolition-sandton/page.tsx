@@ -1,11 +1,11 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, ShieldCheck, Building, Home, Layers, Waves, Sparkles, Star, ArrowRight, MessageSquare } from "lucide-react";
+import { Check, Phone, Mail, ShieldCheck, Building, Home, Layers, Waves, Sparkles, Star, ArrowRight, MessageSquare, Quote } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const faqs = [
     { 
@@ -61,7 +61,7 @@ export default function DemolitionSandtonPage() {
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                 <p className="text-lg text-muted-foreground">
-                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice.
+                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice. We also offer same-day demolition Johannesburg services for urgent projects.
                 </p>
             </div>
         </section>
@@ -88,7 +88,7 @@ export default function DemolitionSandtonPage() {
         <section id="demolition-process" className="py-12 md:py-16">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Our Meticulous Demolition Process in Sandton</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Demolition Process in Sandton</h2>
                     <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We follow a systematic, authority-compliant process to ensure every project is seamless, safe, and efficient from start to finish.</p>
                 </div>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
@@ -102,9 +102,9 @@ export default function DemolitionSandtonPage() {
 
         <section id="demolition-cost" className="py-12 md:py-16 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Cost in Sandton</h2>
+                <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Costs in Sandton</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
-                    While we offer **affordable demolition Sandton** solutions, the **demolition cost in Sandton** is influenced by the premium nature of the area. We provide transparent, detailed quotes that account for these unique factors.
+                    How much does demolition cost? While we offer **affordable demolition Sandton** solutions, the **demolition cost in Sandton** is influenced by the premium nature of the area. We provide transparent, detailed quotes that account for these unique factors.
                 </p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <Card><CardHeader><CardTitle>Property Size & Complexity</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">The square meterage and complexity of the build (e.g., multi-story, deep foundations, difficult materials) are the primary cost drivers.</p></CardContent></Card>
@@ -121,7 +121,7 @@ export default function DemolitionSandtonPage() {
                     <Card>
                         <CardHeader><CardTitle>Luxury Home Demolition</CardTitle><p className="text-sm text-muted-foreground">Sandhurst</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Full demolition of a 5-bedroom luxury home to clear a prime plot for a new architectural masterpiece. The project required careful protection of champion trees and was completed in 5 days.</p>
+                            <p className="text-sm mb-4">Full demolition of a 5-bedroom luxury home to clear a prime plot for a new architectural masterpiece. The project required careful protection of champion trees and was completed in 5 days, with all rubble removed and the site left pristine.</p>
                             <div className="grid grid-cols-2 gap-2">
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='residentialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageUrl} alt="Old luxury house in Sandhurst" data-ai-hint="luxury house" fill className="rounded-md object-cover" />}</div></div>
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaningAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageUrl} alt="Cleared plot in Sandhurst" data-ai-hint="clean site" fill className="rounded-md object-cover" />}</div></div>
@@ -131,7 +131,7 @@ export default function DemolitionSandtonPage() {
                     <Card>
                         <CardHeader><CardTitle>Office Interior Strip-Out</CardTitle><p className="text-sm text-muted-foreground">Rivonia</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Complete interior strip-out of two floors of an office building to prepare a 'white box' for a new corporate tenant. Work was completed out of hours to avoid disruption to other businesses.</p>
+                            <p className="text-sm mb-4">Complete interior strip-out of two floors of an office building to prepare a 'white box' for a new corporate tenant. Work was completed out of hours to avoid disruption to other businesses, resulting in a perfectly clean and ready-to-fit space.</p>
                              <div className="grid grid-cols-2 gap-2">
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='interiorStripOut') && <Image src={PlaceHolderImages.find(p=>p.id==='interiorStripOut')!.imageUrl} alt="Dated office interior" data-ai-hint="old office" fill className="rounded-md object-cover" />}</div></div>
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaning') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageUrl} alt="Empty white box office" data-ai-hint="empty office" fill className="rounded-md object-cover" />}</div></div>
@@ -141,7 +141,7 @@ export default function DemolitionSandtonPage() {
                     <Card>
                         <CardHeader><CardTitle>Swimming Pool Removal</CardTitle><p className="text-sm text-muted-foreground">Morningside</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Removal of a large, old marbelite pool and extensive paving to create a larger, modern garden and entertainment area. The site was left perfectly level and ready for new landscaping.</p>
+                            <p className="text-sm mb-4">Removal of a large, old marbelite pool and extensive paving to create a larger, modern garden and entertainment area. The site was left perfectly level, compacted, and ready for new landscaping, transforming the client's backyard.</p>
                              <div className="grid grid-cols-2 gap-2">
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoWork') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageUrl} alt="Old swimming pool in Morningside" data-ai-hint="old pool" fill className="rounded-md object-cover" />}</div></div>
                                 <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageUrl} alt="New lawn where pool was" data-ai-hint="green lawn" fill className="rounded-md object-cover" />}</div></div>
@@ -177,16 +177,14 @@ export default function DemolitionSandtonPage() {
 
         <section id="faq" className="py-12 md:py-16">
             <h2 className="text-3xl font-bold text-center mb-8">Sandton Demolition FAQs</h2>
-            <Accordion type="single" collapsible className="w-full max-w-4xl mx-auto">
+            <div className="w-full max-w-4xl mx-auto space-y-4">
                 {faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index}`}>
-                        <AccordionTrigger className="text-left font-semibold text-lg">{faq.question}</AccordionTrigger>
-                        <AccordionContent>
-                           <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
-                        </AccordionContent>
-                    </AccordionItem>
+                    <div key={index} className="p-4 border rounded-lg">
+                        <p className="font-semibold text-lg">{faq.question}</p>
+                        <div className="prose prose-sm max-w-none text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                    </div>
                 ))}
-            </Accordion>
+            </div>
         </section>
         
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg mt-16">
