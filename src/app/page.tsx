@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
     "@type": "LocalBusiness",
     "name": "Apex Demolitions Projects",
-    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHxfHNlYXJjaHwxMHx8ZGVtb2xpdC0builduing%7C%27fen%20oM%7C%7C%7CMTM6NzY%3D&ixlib=rb-4.1.0&q=80&w=1080",
     "@id": "https://apex-demolitions-website.vercel.app/",
     "url": "https://apex-demolitions-website.vercel.app/",
     "telephone": "+27784292760",
@@ -271,7 +271,7 @@ export default function Home() {
         {/* Recent Projects Section */}
         <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Projects in Johannesburg</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition & Rubble Removal Projects</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
                         <CardHeader>
@@ -442,3 +442,5 @@ export default function Home() {
     </>
   );
 }
+
+    
