@@ -2,10 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -62,6 +63,26 @@ const faqs = [
     {
         question: "Do you offer swimming pool demolition?",
         answer: "Yes, we specialize in swimming pool demolition in Johannesburg. Whether you want to remove an old, damaged pool or reclaim your garden space, we handle the entire process. This includes breaking up the pool shell (concrete, fibreglass, or marbelite), removing all debris, and backfilling and compacting the area to leave it level and ready for new lawn or construction."
+    },
+    {
+        question: "What areas of Johannesburg do you serve?",
+        answer: "We provide demolition services across the entire greater Johannesburg area. Our teams are strategically located to serve all suburbs, including Sandton, Randburg, Roodepoort, Midrand, Soweto, Johannesburg South, and the full East Rand. No matter where your project is, we have a local team ready to assist."
+    },
+    {
+        question: "Can you handle demolitions in tight or complex spaces?",
+        answer: "Yes, absolutely. We specialize in complex demolitions in dense urban environments. Using precision equipment and techniques like sectional dismantling, we can safely remove structures that are close to other buildings, on steep slopes, or have limited site access. Safety and property protection are our top priorities."
+    },
+    {
+        question: "Do you recycle the demolition waste?",
+        answer: "Yes, we are committed to environmentally responsible demolition. We sort materials on-site wherever possible, and transport concrete, steel, wood, and other recyclable materials to registered recycling facilities. This reduces landfill waste and is part of our commitment to sustainable practices."
+    },
+    {
+        question: "What happens during a site inspection?",
+        answer: "During a free site inspection, one of our expert project managers will visit your property to assess the structure, measure the size, identify the materials, check site access, and discuss any specific requirements or hazards. This allows us to provide you with a comprehensive, accurate, and fixed-price quote with no hidden surprises."
+    },
+    {
+        question: "Why is using a licensed and insured contractor so important?",
+        answer: "Using a licensed and insured contractor like Apex Demolitions protects you completely. Our license ensures we are compliant with all municipal by-laws and safety regulations, avoiding fines and stop-orders. Our comprehensive public liability insurance covers your property, your neighbours' property, and the public against any unforeseen incidents, giving you total peace of mind."
     }
 ];
 
@@ -391,19 +412,20 @@ export default function DemolitionJohannesburgPage() {
           </Accordion>
         </section>
 
-        <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Get a Free Demolition Quote in Johannesburg</h2>
-          <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Ready to start your project? Contact Apex Demolitions for a professional, no-obligation quote. We have full coverage across all Johannesburg suburbs.
-          </p>
-          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
-                  <a href="tel:0784292760"><Phone />Call for a Fast Quote</a>
-              </Button>
-              <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                  <Link href="/contact"><Mail />Request a Free Quote</Link>
-              </Button>
-          </div>
+        <section id="contact-form" className="py-12 md:py-20 bg-card text-center rounded-lg">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold">Get a Free Demolition Quote Today</h2>
+                <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">Don't delay your project. Contact us now for a fast, free, no-obligation quote. Our expert team is ready to provide a detailed assessment for your demolition needs anywhere in Johannesburg.</p>
+                <div className="mt-8 mb-12 flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button size="lg" asChild>
+                        <a href="tel:0784292760"><Phone /> Call for an Instant Quote</a>
+                    </Button>
+                    <Button size="lg" variant="secondary" asChild>
+                        <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp Us Now</a>
+                    </Button>
+                </div>
+                <HomePageContactForm />
+            </div>
         </section>
       </div>
     </>
