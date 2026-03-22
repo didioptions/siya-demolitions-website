@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare, Quote, AlertTriangle } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare, Quote, AlertTriangle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -58,15 +58,15 @@ const faqs = [
     },
     {
         question: "Do you remove all the rubble after the demolition?",
-        answer: "Yes, absolutely. Our service is a complete, end-to-end solution. After the structure is safely dismantled, our team manages the full rubble removal and site clearing process. We load and transport all debris to licensed, environmentally compliant disposal and recycling facilities, leaving your site clean, level, and ready for the next phase of your project. This is a core part of our dedicated rubble removal Johannesburg service."
+        answer: "Yes, absolutely. Our service is a complete, end-to-end solution. After the structure is safely dismantled, our team manages the full rubble removal and site clearing process. We load and transport all debris to licensed, environmentally compliant disposal and recycling facilities, leaving your site clean, level, and ready for the next phase of your project. This is a core part of our dedicated <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal Johannesburg</a> service."
     },
     {
         question: "Do you offer swimming pool demolition?",
-        answer: "Yes, we specialize in swimming pool demolition in Johannesburg. Whether you want to remove an old, damaged pool or reclaim your garden space, we handle the entire process. This includes breaking up the pool shell (concrete, fibreglass, or marbelite), removing all debris, and backfilling and compacting the area to leave it level and ready for new lawn or construction."
+        answer: "Yes, we specialize in <a href='/swimming-pool-demolition-johannesburg' class='text-primary hover:underline'>swimming pool demolition in Johannesburg</a>. Whether you want to remove an old, damaged pool or reclaim your garden space, we handle the entire process. This includes breaking up the pool shell (concrete, fibreglass, or marbelite), removing all debris, and backfilling and compacting the area to leave it level and ready for new lawn or construction."
     },
     {
         question: "What areas of Johannesburg do you serve?",
-        answer: "We provide demolition services across the entire greater Johannesburg area. Our teams are strategically located to serve all suburbs, including Sandton, Randburg, Roodepoort, Midrand, Soweto, Johannesburg South, and the full East Rand. No matter where your project is, we have a local team ready to assist."
+        answer: "We provide demolition services across the entire greater Johannesburg area. Our teams are strategically located to serve all suburbs, including <a href='/demolition-sandton' class='text-primary hover:underline'>Sandton</a>, <a href='/demolition-randburg' class='text-primary hover:underline'>Randburg</a>, <a href='/demolition-roodepoort' class='text-primary hover:underline'>Roodepoort</a>, <a href='/demolition-midrand' class='text-primary hover:underline'>Midrand</a>, <a href='/demolition-soweto' class='text-primary hover:underline'>Soweto</a>, Johannesburg South, and the full East Rand. No matter where your project is, we have a local team ready to assist."
     },
     {
         question: "Can you handle demolitions in tight or complex spaces?",
@@ -156,7 +156,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading demolition contractors in Johannesburg, Apex Demolitions Projects provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in Sandton, Randburg, Soweto, or Roodepoort, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
+            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-soweto" className="text-primary hover:underline">Soweto</Link>, or <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
           </p>
           <Button size="lg" className="mt-6" asChild>
             <a href="tel:0784292760">
@@ -170,7 +170,7 @@ export default function DemolitionJohannesburgPage() {
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Johannesburg's Premier Demolition Service</h2>
                 <p className="mt-4 text-lg text-muted-foreground text-left">
-                    When it comes to demolition in Johannesburg, you need a contractor with a proven track record of safety, reliability, and regulatory compliance. Apex Demolitions Projects is a leader in the field, offering a full spectrum of demolition services tailored to the unique demands of this vibrant city. From meticulous residential house demolition in leafy suburbs to large-scale commercial demolition in bustling business districts, our expertise ensures every project is executed flawlessly. We understand that demolition is not just about tearing down structures; it's the critical first step in urban renewal and development. Our team combines state-of-the-art equipment with decades of experience to deliver results that are efficient and meticulously safe. As your trusted demolition contractors in Johannesburg, we are your partners in transformation, clearing the path for progress across Sandton, Randburg, Roodepoort, and beyond.
+                    When it comes to <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link>, you need a contractor with a proven track record of safety, reliability, and regulatory compliance. <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> is a leader in the field, offering a full spectrum of demolition services tailored to the unique demands of this vibrant city. From meticulous residential house demolition in leafy suburbs to large-scale commercial demolition in bustling business districts, our expertise ensures every project is executed flawlessly. We understand that demolition is not just about tearing down structures; it's the critical first step in urban renewal and development. Our team combines state-of-the-art equipment with decades of experience to deliver results that are efficient and meticulously safe. As your trusted <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, we are your partners in transformation, clearing the path for progress across <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and beyond.
                 </p>
             </div>
         </section>
@@ -188,7 +188,7 @@ export default function DemolitionJohannesburgPage() {
                         <CardTitle className="flex items-center gap-3"><Home className="text-primary" /> Residential Demolition</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Specializing in house demolition Johannesburg wide, we safely dismantle single-family homes, townhouses, garages, and outbuildings. We work with precision to protect neighbouring properties, making us the ideal choice for projects in dense suburbs. This service is perfect for clearing land for a new dream home or subdivision.</p>
+                        <p className="text-muted-foreground">Specializing in <Link href="/demolition-johannesburg" className="text-primary hover:underline">house demolition Johannesburg</Link> wide, we safely dismantle single-family homes, townhouses, garages, and outbuildings. We work with precision to protect neighbouring properties, making us the ideal choice for projects in dense suburbs. This service is perfect for clearing land for a new dream home or subdivision.</p>
                     </CardContent>
                 </Card>
                 <Card>
@@ -283,7 +283,7 @@ export default function DemolitionJohannesburgPage() {
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed, insured, and compliant with all City of Johannesburg bylaws. Your project and property are completely protected, giving you total peace of mind.</p></div></div>
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our local teams have the expertise to navigate any challenge, from Sandton's estates to Soweto's residential stands.</p></div></div>
                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money in any project. Our crews are punctual, efficient, and committed to meeting your deadlines without compromising on safety or quality.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full rubble removal, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
                         </div>
                     </div>
                     <div>
@@ -423,22 +423,22 @@ export default function DemolitionJohannesburgPage() {
                     
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
-                        <p className="text-muted-foreground text-sm">As the premier demolition contractors in Sandton, we specialize in high-end residential and commercial projects. Our teams are experts in navigating secure estates in Morningside and Bryanston, providing discreet and efficient demolition in Sandton for luxury homes and office blocks.</p>
+                        <p className="text-muted-foreground text-sm">As the premier <Link href="/demolition-sandton" className="text-primary hover:underline">demolition contractors in Sandton</Link>, we specialize in high-end residential and commercial projects. Our teams are experts in navigating secure estates in Morningside and Bryanston, providing discreet and efficient demolition in Sandton for luxury homes and office blocks.</p>
                     </div>
 
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:text-primary">Demolition Randburg</Link></h3>
-                        <p className="text-muted-foreground text-sm">We are the trusted demolition contractors for Randburg's diverse suburbs. From residential house demolition in Ferndale to commercial site clearing, our reliable demolition Randburg services ensure every project is completed on time, safely, and with a thorough cleanup.</p>
+                        <p className="text-muted-foreground text-sm">We are the trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors for Randburg's</Link> diverse suburbs. From residential house demolition in Ferndale to commercial site clearing, our reliable demolition Randburg services ensure every project is completed on time, safely, and with a thorough cleanup.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:text-primary">Demolition Roodepoort</Link></h3>
-                        <p className="text-muted-foreground text-sm">Our demolition Roodepoort services cover the entire West Rand. We handle projects on complex, sloped terrain and in dense residential areas, providing expert house demolition and site clearing with a focus on safety and community respect.</p>
+                        <p className="text-muted-foreground text-sm">Our <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition Roodepoort services</Link> cover the entire West Rand. We handle projects on complex, sloped terrain and in dense residential areas, providing expert house demolition and site clearing with a focus on safety and community respect.</p>
                     </div>
 
                      <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:text-primary">Demolition Midrand</Link></h3>
-                        <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our demolition Midrand team specializes in large-scale site clearing for new residential and commercial developments. We work closely with developers to ensure projects in areas like Waterfall and Carlswald are cleared efficiently.</p>
+                        <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our <Link href="/demolition-midrand" className="text-primary hover:underline">demolition Midrand team</Link> specializes in large-scale site clearing for new residential and commercial developments. We work closely with developers to ensure projects in areas like Waterfall and Carlswald are cleared efficiently.</p>
                     </div>
                 </div>
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -459,9 +459,9 @@ export default function DemolitionJohannesburgPage() {
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {faq.answer}
-                </AccordionContent>
+                <AccordionContent className="text-muted-foreground"
+                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
               </AccordionItem>
             ))}
           </Accordion>
