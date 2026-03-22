@@ -169,8 +169,8 @@ export default function DemolitionSandtonPage() {
                     <p className="text-sm text-muted-foreground">We are the premier demolition contractors for Bryanston's large residential stands and secure estates, handling everything from pool removals to full house demolitions with expert care.</p>
                 </div>
                 <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold text-lg mb-2">Sandton CBD & Surrounds</h3>
-                    <p className="text-sm text-muted-foreground">Our teams are experts in commercial demolition and strip-outs in the high-density urban environment of the Sandton CBD, working around business hours to minimize disruption.</p>
+                    <h3 className="font-bold text-lg mb-2">Sandton CBD, <Link href="/demolition-rosebank" className="text-primary hover:underline">Rosebank</Link> & Surrounds</h3>
+                    <p className="text-sm text-muted-foreground">Our teams are experts in commercial demolition and strip-outs in the high-density urban environments of the Sandton CBD and Rosebank, working around business hours to minimize disruption.</p>
                 </div>
             </div>
         </section>
@@ -181,7 +181,7 @@ export default function DemolitionSandtonPage() {
                 {faqs.map((faq, index) => (
                     <div key={index} className="p-4 border rounded-lg">
                         <p className="font-semibold text-lg">{faq.question}</p>
-                        <p className="text-muted-foreground mt-2">{faq.answer}</p>
+                        <div className="text-muted-foreground mt-2" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                     </div>
                 ))}
             </div>
