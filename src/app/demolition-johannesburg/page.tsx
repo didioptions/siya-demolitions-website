@@ -224,20 +224,32 @@ export default function DemolitionJohannesburgPage() {
         <section id="demolition-cost" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Cost in Johannesburg</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                The cost of demolition in Johannesburg is not one-size-fits-all. Several key variables influence the final price, and understanding them helps you budget effectively. We believe in full transparency, providing itemized quotes that clearly explain every cost.
+                One of the most common questions we receive is, "how much does demolition cost in Johannesburg?" The answer depends on several key variables, as each project is unique. At Apex Demolitions, we believe in full transparency, which is why we provide a detailed, itemized quote after a free site inspection. Understanding these factors will help you budget effectively for your project.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <Card>
                     <CardHeader><CardTitle>Size and Height of Structure</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The total square meterage and number of stories are the most significant cost factors. A larger or taller building requires more labor, time, and larger machinery to demolish safely.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">The total square meterage and number of stories are the most significant cost factors. A larger or taller building requires more labor, time, and larger machinery to demolish safely and efficiently, directly influencing the overall demolition cost in Johannesburg.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Construction Materials</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The building's materials greatly affect the demolition timeline and cost. Reinforced concrete and structural steel are more complex and time-consuming to break down than standard brick or timber frames, requiring specialized heavy equipment.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">The building's materials greatly affect the demolition timeline and cost. Reinforced concrete and structural steel are more complex and time-consuming to break down than standard brick or timber frames, requiring specialized heavy equipment and more man-hours.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Site Accessibility</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">How easily we can access your site with our machinery is crucial. A site in a dense suburb like Melville with narrow access may require smaller, more specialized equipment, whereas an open commercial site in Midrand allows for larger, more efficient machinery.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">How easily we can access your site with our machinery is crucial. A site in a dense suburb with narrow access may require smaller, more specialized equipment and more manual labor, whereas an open commercial site allows for larger, more efficient machinery, reducing the time required.</p></CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle>Proximity & Safety Requirements</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">Demolishing a structure that is close to neighboring properties, public roads, or delicate infrastructure requires more complex safety measures. This includes protective scaffolding, dust screens, and more controlled, surgical demolition methods to ensure no damage occurs, which can affect the cost.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Hazardous Materials</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">The presence of hazardous materials like asbestos is a major factor. Asbestos must be handled and removed by certified specialists before demolition can begin, which is a separate and additional cost to the main demolition project.</p></CardContent>
+                </Card>
+                 <Card>
+                    <CardHeader><CardTitle>Scope of Work</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">The total scope also affects the price. Does the project require the removal of deep foundations and footings, or just the superstructure? Will extensive site leveling be required after demolition? A clearer scope helps determine a more accurate cost.</p></CardContent>
                 </Card>
             </div>
         </section>
