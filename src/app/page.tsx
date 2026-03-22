@@ -1,6 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor, HardHat, Mail, MessageSquare } from "lucide-react";
+import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor, HardHat, Mail, MessageSquare, ArrowRight } from "lucide-react";
 import type { Metadata } from 'next';
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 
 export const metadata: Metadata = {
     title: {
-        absolute: "Demolition & Rubble Removal Johannesburg | Apex",
+        absolute: "Demolition & Rubble Removal Johannesburg Experts | Apex",
     },
     description: "Apex Demolitions offers licensed demolition, rubble removal, site cleaning, tree felling & plant hire in Johannesburg. Trusted experts for residential & commercial projects. Get a free quote.",
 };
@@ -339,34 +340,36 @@ export default function Home() {
         </section>
 
         {/* Areas We Serve Section */}
-        <section className="py-12 md:py-20 bg-card">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Areas We Serve in Johannesburg</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Sandton</h3>
-                        <p className="text-muted-foreground">We provide elite <Link href="/demolition-sandton" className="text-primary hover:underline">demolition services in Sandton</Link>, specializing in luxury home demolitions and discreet <Link href="/rubble-removal-sandton" className="text-primary hover:underline">rubble removal in Sandton</Link>'s exclusive estates.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Randburg</h3>
-                        <p className="text-muted-foreground">As trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors in Randburg</Link>, we offer fast and affordable house demolition and reliable <Link href="/rubble-removal-randburg" className="text-primary hover:underline">rubble removal Randburg</Link> residents can count on.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Midrand</h3>
-                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale <Link href="/site-cleaning-midrand" className="text-primary hover:underline">site clearing</Link> and <Link href="/demolition-midrand" className="text-primary hover:underline">demolition services</Link>, along with scheduled <Link href="/rubble-removal-midrand" className="text-primary hover:underline">rubble removal in Midrand</Link> for developers.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Roodepoort</h3>
-                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition in Roodepoort</Link> and fast <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">rubble removal Roodepoort</Link> services for residential and commercial clients.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Soweto</h3>
-                        <p className="text-muted-foreground">We are proud to offer affordable community-focused <Link href="/demolition-soweto" className="text-primary hover:underline">demolition</Link> and <Link href="/rubble-removal-soweto" className="text-primary hover:underline">rubble removal services in Soweto</Link>, helping homeowners and small businesses grow.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2">Alberton & Germiston</h3>
-                        <p className="text-muted-foreground">As East Rand specialists, we handle everything from industrial <Link href="/demolition-germiston" className="text-primary hover:underline">demolition in Germiston</Link> to residential <Link href="/rubble-removal-alberton" className="text-primary hover:underline">rubble removal in Alberton</Link> with local expertise.</p>
-                    </div>
+        <section className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Areas We Serve in Johannesburg</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:underline">Sandton</Link></h3>
+                    <p className="text-muted-foreground">We provide elite <Link href="/demolition-sandton" className="text-primary hover:underline">demolition services in Sandton</Link>, specializing in luxury home demolitions and discreet <Link href="/rubble-removal-sandton" className="text-primary hover:underline">rubble removal in Sandton</Link>'s exclusive estates.</p>
+                </div>
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:underline">Randburg</Link></h3>
+                    <p className="text-muted-foreground">As trusted <Link href="/demolition-randburg" className="text-primary hover:underline">demolition contractors in Randburg</Link>, we offer fast and affordable house demolition and reliable <Link href="/rubble-removal-randburg" className="text-primary hover:underline">rubble removal Randburg</Link> residents can count on.</p>
+                </div>
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:underline">Midrand</Link></h3>
+                    <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale <Link href="/site-cleaning-midrand" className="text-primary hover:underline">site clearing</Link> and <Link href="/demolition-midrand" className="text-primary hover:underline">demolition services</Link>, along with scheduled <Link href="/rubble-removal-midrand" className="text-primary hover:underline">rubble removal in Midrand</Link> for developers.</p>
+                </div>
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:underline">Roodepoort</Link></h3>
+                    <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition in Roodepoort</Link> and fast <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">rubble removal Roodepoort</Link> services for residential and commercial clients.</p>
+                </div>
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-soweto" className="hover:underline">Soweto</Link></h3>
+                    <p className="text-muted-foreground">We are proud to offer affordable community-focused <Link href="/demolition-soweto" className="text-primary hover:underline">demolition</Link> and <Link href="/rubble-removal-soweto" className="text-primary hover:underline">rubble removal services in Soweto</Link>, helping homeowners and small businesses grow.</p>
+                </div>
+                <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-alberton" className="hover:underline">Alberton</Link></h3>
+                    <p className="text-muted-foreground">As East Rand specialists, we offer expert <Link href="/demolition-alberton" className="text-primary hover:underline">demolition in Alberton</Link> and fast <Link href="/rubble-removal-alberton" className="text-primary hover:underline">rubble removal Alberton</Link> services for residential and industrial clients.</p>
+                </div>
+                 <div>
+                    <h3 className="font-bold text-xl mb-2"><Link href="/demolition-germiston" className="hover:underline">Germiston</Link></h3>
+                    <p className="text-muted-foreground">We are experts in industrial <Link href="/demolition-germiston" className="text-primary hover:underline">demolition in Germiston</Link> and provide comprehensive <Link href="/rubble-removal-germiston" className="text-primary hover:underline">rubble removal services</Link> for the East Rand's industrial heartland.</p>
                 </div>
             </div>
         </section>
