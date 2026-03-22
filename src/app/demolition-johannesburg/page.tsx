@@ -149,52 +149,63 @@ export default function DemolitionJohannesburgPage() {
           <p className="mt-2 text-sm text-muted-foreground">No-obligation, detailed quote within 24 hours.</p>
         </section>
 
-        <section id="services" className="mb-16">
-            <div className="text-center mb-12">
-                <p className="text-accent font-semibold uppercase tracking-widest">Our Services</p>
-                <h2 className="text-3xl md:text-4xl font-bold mt-2">Comprehensive Demolition Services in Johannesburg</h2>
-                <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    We offer a full spectrum of demolition services across Johannesburg, tailored to projects of any scale. From single-family homes to large industrial plants, we have the expertise and equipment to handle it all.
+        <section className="py-12 md:py-16 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
+                 <h2 className="text-3xl md:text-4xl font-bold">Johannesburg's Premier Demolition Service</h2>
+                <p className="mt-4 text-lg text-muted-foreground text-left">
+                    When it comes to demolition in Johannesburg, you need a contractor with a proven track record of safety, reliability, and regulatory compliance. Apex Demolitions Projects is a leader in the field, offering a full spectrum of demolition services tailored to the unique demands of this vibrant city. From meticulous residential house demolition in leafy suburbs to large-scale commercial demolition in bustling business districts, our expertise ensures every project is executed flawlessly. We understand that demolition is not just about tearing down structures; it's the critical first step in urban renewal and development. Our team combines state-of-the-art equipment with decades of experience to deliver results that are efficient and meticulously safe. As your trusted demolition contractors in Johannesburg, we are your partners in transformation, clearing the path for progress across Sandton, Randburg, Roodepoort, and beyond.
                 </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {comprehensiveServices.map((service) => {
-                    const serviceImage = PlaceHolderImages.find(p => p.id === service.imageUrlId);
-                    return (
-                        <Card key={service.title} className="bg-card/50 hover:shadow-xl transition-shadow duration-300 flex flex-col overflow-hidden">
-                            <CardHeader className="p-0">
-                                {serviceImage && (
-                                <div className="relative aspect-video">
-                                    <Image src={serviceImage.imageUrl} alt={serviceImage.description} data-ai-hint={serviceImage.imageHint} fill className="object-cover" />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                                </div>
-                                )}
-                            </CardHeader>
-                            <CardContent className="p-6 flex-grow flex flex-col">
-                                <h3 className="text-xl font-bold mb-2 flex items-center gap-2"><service.icon className="h-6 w-6 text-primary" />{service.title}</h3>
-                                <p className="text-muted-foreground text-sm mb-4 flex-grow">{service.description}</p>
-                                <Link href={service.link} className="font-semibold text-accent hover:underline mt-auto self-start">
-                                    Learn More →
-                                </Link>
-                            </CardContent>
-                        </Card>
-                    );
-                })}
             </div>
         </section>
 
-        <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Benefits of Professional Demolition Services</h2>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Safety and Compliance</h4><p className="text-sm text-muted-foreground">Professional contractors adhere to strict safety protocols and are fully insured, protecting you from liability and ensuring the job is done according to all municipal regulations.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Efficiency and Speed</h4><p className="text-sm text-muted-foreground">With specialized heavy machinery and experienced crews, professional teams complete projects far faster than any DIY or smaller-scale effort, saving you valuable time.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Complete Waste Management</h4><p className="text-sm text-muted-foreground">A key benefit is the integrated <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>. All debris is loaded and transported to legal disposal sites, a task that is difficult and costly to manage independently.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Structural and Environmental Protection</h4><p className="text-sm text-muted-foreground">Experts know how to demolish structures without damaging adjacent properties, foundations, or protected trees, and manage environmental factors like dust and runoff.</p></div></div>
+        <section id="types-of-demolition" className="mb-16">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services We Offer</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
+                    Our capabilities cover every kind of structural removal project in Johannesburg, from small residential jobs to major commercial and industrial sites.
+                </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-3"><Home className="text-primary" /> Residential Demolition</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Specializing in house demolition Johannesburg wide, we safely dismantle single-family homes, townhouses, garages, and outbuildings. We work with precision to protect neighbouring properties, making us the ideal choice for projects in dense suburbs. This service is perfect for clearing land for a new dream home or subdivision.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-3"><Building className="text-primary" /> Commercial Demolition</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Our commercial demolition services cater to businesses across Johannesburg. We handle the dismantling of office blocks, retail centers, warehouses, and other commercial structures. We focus on minimizing disruption to nearby businesses and manage projects with strict safety protocols to ensure a smooth process for large-scale redevelopments.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-3"><Layers className="text-primary" /> Interior Demolition (Strip-Outs)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Ideal for renovations and tenant changeovers, our interior strip-out services involve the selective removal of non-structural elements. We carefully dismantle walls, ceilings, flooring, fixtures, and fittings while preserving the building's main structure, preparing the space for a complete redesign.</p>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-3"><Waves className="text-primary" /> Swimming Pool Demolition</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Reclaim your garden and reduce maintenance costs with our expert <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">swimming pool demolition service</Link>. We handle the breaking of concrete or fibreglass shells, remove all debris, and backfill the area with proper compaction, leaving it ready for a new lawn or structure.</p>
+                    </CardContent>
+                </Card>
             </div>
         </section>
 
         <section className="mb-16 bg-background p-8 rounded-lg">
             <div className="grid md:grid-cols-2 gap-8 items-center">
+                 <div>
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A new building under construction on a cleared site in Johannesburg" data-ai-hint="building construction" fill className="rounded-lg object-cover" /></div>}
+                </div>
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Johannesburg Demolition Process</h2>
                     <p className="text-muted-foreground mb-4">We follow a systematic, authority-compliant process to ensure every project is seamless, safe, and efficient from start to finish:</p>
@@ -203,13 +214,31 @@ export default function DemolitionJohannesburgPage() {
                         <li><span className="font-semibold text-foreground">Council Approvals & Permits:</span> We professionally manage all permit applications with the City of Johannesburg to ensure full legal compliance.</li>
                         <li><span className="font-semibold text-foreground">Site Preparation & Safety:</span> Our team secures the site perimeter, implements safety measures, and manages the disconnection of all utilities.</li>
                         <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Our licensed team performs a controlled demolition using modern equipment and techniques to dismantle the structure safely.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal & Recycling:</span> We clear all debris and transport it to licensed facilities, prioritizing recycling wherever possible.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal & Recycling:</span> We clear all debris and transport it to licensed facilities, prioritizing recycling wherever possible as part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> service.</li>
                         <li><span className="font-semibold text-foreground">Final Site Cleanup:</span> The project is only complete when your site is left clean, level, and ready for your builders. This is part of our comprehensive <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning service</Link>.</li>
                     </ol>
                 </div>
-                 <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A new building under construction on a cleared site in Johannesburg" data-ai-hint="building construction" fill className="rounded-lg object-cover" /></div>}
-                </div>
+            </div>
+        </section>
+
+        <section id="demolition-cost" className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Cost in Johannesburg</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                The cost of demolition in Johannesburg is not one-size-fits-all. Several key variables influence the final price, and understanding them helps you budget effectively. We believe in full transparency, providing itemized quotes that clearly explain every cost.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <Card>
+                    <CardHeader><CardTitle>Size and Height of Structure</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">The total square meterage and number of stories are the most significant cost factors. A larger or taller building requires more labor, time, and larger machinery to demolish safely.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Construction Materials</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">The building's materials greatly affect the demolition timeline and cost. Reinforced concrete and structural steel are more complex and time-consuming to break down than standard brick or timber frames, requiring specialized heavy equipment.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Site Accessibility</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">How easily we can access your site with our machinery is crucial. A site in a dense suburb like Melville with narrow access may require smaller, more specialized equipment, whereas an open commercial site in Midrand allows for larger, more efficient machinery.</p></CardContent>
+                </Card>
             </div>
         </section>
         
@@ -222,6 +251,19 @@ export default function DemolitionJohannesburgPage() {
                 <Card><CardHeader><CardTitle className="flex items-center gap-3"><Wrench className="text-accent" />Professional Equipment</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We utilize a fleet of modern, well-maintained demolition equipment, from excavators to Bobcats, ensuring a safe, effective, and reliable process.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle className="flex items-center gap-3"><Sparkles className="text-accent" />Complete Site Cleanup</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our service includes a full rubble removal and site cleaning, leaving your property perfectly level and ready for the next phase of your building project.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle className="flex items-center gap-3"><Star className="text-accent" />Affordable & Transparent</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We provide competitive, transparent quotes with no hidden costs. The price we quote is the price you pay for a complete, professional service.</p></CardContent></Card>
+            </div>
+        </section>
+
+        <section id="safety" className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
+            </p>
+             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-sm text-muted-foreground">We carry comprehensive public liability insurance, giving you complete peace of mind.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Licensed Professionals</h4><p className="text-sm text-muted-foreground">Our teams are trained, certified, and experienced in all aspects of safe demolition practices.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Regulatory Compliance</h4><p className="text-sm text-muted-foreground">We adhere to all City of Johannesburg bylaws and national Occupational Health and Safety (OHS) Act regulations.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Site Safety Protocols</h4><p className="text-sm text-muted-foreground">Every project begins with securing the site, implementing dust control measures, and ensuring all personnel have the correct PPE.</p></div></div>
             </div>
         </section>
 
