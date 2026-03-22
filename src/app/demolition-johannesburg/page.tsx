@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare, Quote, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -282,6 +282,50 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
+        <section id="emergency-demolition" className="py-12 md:py-20 bg-destructive/10 text-destructive-foreground rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 text-center">
+                <AlertTriangle className="h-12 w-12 mx-auto text-destructive" />
+                <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">Same-Day & Emergency Demolition Johannesburg</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks.
+                </p>
+                <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <div className="flex gap-4">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-destructive/20 flex-shrink-0">
+                            <Phone className="h-6 w-6 text-destructive" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-semibold text-foreground">24/7 Emergency Call-Out</h3>
+                            <p className="mt-1 text-sm text-muted-foreground">For situations requiring immediate attention, call us anytime. We provide urgent assessments and action for <strong>emergency demolition in Johannesburg</strong>.</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-4">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-destructive/20 flex-shrink-0">
+                            <Check className="h-6 w-6 text-destructive" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-semibold text-foreground">Fast, Same-Day Service</h3>
+                            <p className="mt-1 text-sm text-muted-foreground">For non-emergency but urgent projects, we offer reliable <strong>same day demolition Johannesburg</strong> service to keep your project on its critical path.</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-4 sm:col-span-2 lg:col-span-1">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-destructive/20 flex-shrink-0">
+                            <ShieldCheck className="h-6 w-6 text-destructive" />
+                        </div>
+                        <div>
+                            <h3 className="text-lg font-semibold text-foreground">Safety & Compliance Assured</h3>
+                            <p className="mt-1 text-sm text-muted-foreground">Urgency never compromises safety. Our emergency services are fully insured and adhere to all safety and municipal regulations, even under pressure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-12">
+                     <Button size="lg" variant="destructive" asChild>
+                        <a href="tel:0784292760"><Phone className="mr-2"/> Call Now for Immediate Assistance</a>
+                    </Button>
+                </div>
+            </div>
+        </section>
+
         <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Johannesburg</h2>
@@ -347,7 +391,7 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section id="safety" className="mb-16 bg-card p-8 rounded-lg">
+        <section id="safety-compliance" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
                 At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
