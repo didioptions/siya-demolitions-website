@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rubble Removal Johannesburg | Garden & Garage Clean-Up Services',
-  description: 'Professional rubble removal in Johannesburg. We handle garden refuse, garage clean-up, yard clearing, construction debris, and more across all suburbs.',
+  title: 'Rubble Removal Johannesburg | Fast, Affordable Site Clearing',
+  description: 'Need rubble removal in Johannesburg? We offer same-day service for builders rubble, garden refuse, and junk removal. Fast, affordable, and licensed. Get a free quote!',
 };
 
 export default function RubbleRemovalJohannesburgLayout({
