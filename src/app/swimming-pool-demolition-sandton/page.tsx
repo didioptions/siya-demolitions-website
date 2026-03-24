@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, ShieldCheck, Waves, Star, ArrowRight, MessageSquare } from "lucide-react";
+import { Check, Phone, Mail, ShieldCheck, Waves, Star, ArrowRight, MessageSquare, Quote } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -18,7 +18,7 @@ const faqs = [
     },
     { 
         question: "What is your process for demolishing a luxury home's swimming pool?", 
-        answer: "Our process for luxury homes is meticulous. It begins with a thorough site assessment and planning phase, where we identify all elements to be protected (like mature trees or boundary walls). We then use a precision dismantling process, often breaking the structure down piece by piece to avoid damage. This is followed by a full <a href='/rubble-removal-sandton' class='text-primary hover:underline'>rubble removal</a> and <a href='/site-cleaning-sandton' class='text-primary hover:underline'>site cleaning</a> service, leaving the property pristine and ready for your new architectural vision." 
+        answer: "Our process for luxury homes is meticulous. It begins with a thorough site assessment and planning phase, where we identify all elements to be protected (like mature trees or boundary walls). We then use a precision dismantling process, often breaking the structure down piece by piece to avoid damage. This is followed by a full <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal</a> and <a href='/site-cleaning' class='text-primary hover:underline'>site cleaning</a> service, leaving the property pristine and ready for your new architectural vision." 
     },
     {
         question: "Can the ground be built on after the pool is removed?",
@@ -72,6 +72,7 @@ const combinedSchema = {
 
 export default function SwimmingPoolDemolitionSandtonPage() {
     const processImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
+    const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
 
   return (
     <>
@@ -90,7 +91,7 @@ export default function SwimmingPoolDemolitionSandtonPage() {
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                 <p className="text-lg text-muted-foreground text-center">
-                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice. We also offer same-day demolition services in Sandton for urgent projects.
+                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice.
                 </p>
             </div>
         </section>
@@ -105,7 +106,7 @@ export default function SwimmingPoolDemolitionSandtonPage() {
             </div>
         </section>
 
-        <section id="types-of-demolition" className="py-12 md:py-16 bg-card rounded-lg mb-16">
+        <section id="types-of-demolition" className="py-12 md:py-16 bg-background rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services in Sandton</h2>
@@ -134,7 +135,7 @@ export default function SwimmingPoolDemolitionSandtonPage() {
                     <Card className="text-center"><CardHeader><CardTitle>1. Site Inspection & Planning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A thorough on-site assessment to provide a detailed quotation and project plan that respects all estate and municipal regulations.</p></CardContent></Card>
                     <Card className="text-center"><CardHeader><CardTitle>2. Planning & Permits</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We professionally manage all permit applications with the City of Johannesburg and liaise with estate management to ensure full legal compliance.</p></CardContent></Card>
                     <Card className="text-center"><CardHeader><CardTitle>3. Safe Demolition Work</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Our licensed team performs a controlled, surgical demolition using modern equipment and techniques to dismantle the structure safely.</p></CardContent></Card>
-                    <Card className="text-center"><CardHeader><CardTitle>4. Rubble Removal & Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We clear all debris and transport it to licensed facilities, leaving your site spotless and ready for your builders with our full <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link> service.</p></CardContent></Card>
+                    <Card className="text-center"><CardHeader><CardTitle>4. Rubble Removal & Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We clear all debris and transport it to licensed facilities, leaving your site spotless with our full <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link> service.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -142,12 +143,12 @@ export default function SwimmingPoolDemolitionSandtonPage() {
         <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold mb-4">Pool Removal vs. Pool Fill-In – Which Is Better?</h2>
-                    <p className="text-muted-foreground mb-6">Clients often ask whether they should completely remove their pool or just fill it in. The best choice depends on your budget and future plans for the space.</p>
+                    <h2 className="text-3xl font-bold mb-4">Pool Removal vs. Pool Fill-In – Which Is Better for Your Sandton Property?</h2>
+                    <p className="text-muted-foreground mb-6">Clients often ask whether they should completely remove their pool or just fill it in. In a premium area like Sandton, the choice can impact property value and future plans.</p>
                     <h3 className="font-semibold text-xl mb-2">Full Demolition & Removal</h3>
-                    <p className="text-muted-foreground mb-4">This involves breaking up and removing the entire pool shell and all associated concrete and rebar. We then backfill the area with an engineered mix of rubble and soil, compacting it in layers. This is the **only method that makes the land safe for future construction**, such as a home extension or cottage. It is the most comprehensive and recommended solution.</p>
-                    <h3 className="font-semibold text-xl mb-2">Partial Demolition (Fill-In)</h3>
-                    <p className="text-muted-foreground">This more affordable option involves punching holes in the bottom of the pool for drainage, breaking down the top portion of the walls, and then filling the shell with the rubble and soil. While cheaper, this method is **not suitable for building over** and should only be considered if the area will be used for landscaping, like a new lawn or garden.</p>
+                    <p className="text-muted-foreground mb-4">This involves breaking up and removing the entire pool shell and all associated concrete and rebar. We then backfill the area with an engineered mix of rubble and soil, compacting it in layers. This is the **only method that makes the land safe for future construction**, such as a home extension or cottage. For Sandton properties where future development is a possibility, this is the most highly recommended solution.</p>
+                     <h3 className="font-semibold text-xl mb-2">Why Proper Pool Demolition Matters</h3>
+                    <p className="text-muted-foreground mb-4">A professional pool demolition is more than just breaking concrete. It involves a structural assessment, the use of safe, controlled methods to protect your luxury home, and ensuring all <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link> is handled responsibly. Most importantly, proper backfilling and compaction are essential to prevent the ground from sinking later, which could cause major issues with new landscaping or structures.</p>
                 </div>
                 <div>
                     {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Sandton" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
@@ -198,7 +199,7 @@ export default function SwimmingPoolDemolitionSandtonPage() {
         
         <section className="py-12 md:py-16 bg-card rounded-lg mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Areas We Serve in and Around Sandton</h2>
-             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite **demolition services** across all of Sandton's prestigious suburbs. Our teams are the local experts for demolition, rubble removal, and site clearing in:</p>
+             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite **demolition services** across all of Sandton's prestigious suburbs. Our teams regularly work on properties in and around Sandton City, Bryanston, and Fourways, and are the local experts for demolition, rubble removal, and site clearing in:</p>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-background p-6 rounded-lg shadow-sm">
                     <h3 className="font-bold text-lg mb-2">Sandhurst, Hyde Park & Inanda</h3>
