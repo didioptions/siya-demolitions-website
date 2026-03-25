@@ -44,11 +44,26 @@ const serviceSchema = {
 };
 
 const faqs = [
-    { question: "How much does it cost to demolish a swimming pool in Johannesburg?", answer: "The cost of swimming pool demolition in Johannesburg typically ranges from R15,000 for a small, easily accessible pool to over R40,000 for a large, complex removal. The final price depends on the pool's size, the material (gunite and concrete are tougher than fibreglass), ease of access for machinery, and whether you choose full or partial removal. We provide a free, detailed, on-site assessment to give you a transparent and accurate quote with no hidden costs, ensuring you receive affordable pool demolition services." },
-    { question: "Do I need municipal approval for pool demolition in Johannesburg?", answer: "In most cases, yes. The City of Johannesburg requires plans and approval for pool demolitions to ensure they are done safely and correctly, especially regarding compaction and drainage. As part of our professional service, we guide you through and can assist with this entire approval process to ensure your project is fully compliant, protecting you from future legal and structural issues. This is a critical step that we manage for our clients." },
-    { question: "How long does the pool demolition process take?", answer: "A standard residential pool demolition in Johannesburg typically takes between 2 to 4 days. This timeline includes the complete process: draining the pool, breaking up the structure, removing all the debris, and then backfilling and compacting the area. For larger pools or sites with difficult access, it might take slightly longer. We provide a clear and realistic timeline with every quote so you can plan your project accordingly." },
-    { question: "Do you remove all the rubble after the demolition?", answer: "Yes, our service is a complete, all-in-one solution. We handle the demolition, load all the rubble and debris, and transport it to a licensed and environmentally responsible disposal facility. Our goal is to leave your site clean, level, and ready for its next purpose, whether that's a new garden, a patio, or a building extension. You won't need to hire a separate rubble removal company." },
-    { question: "Can the space be used for new construction after the pool is removed?", answer: "Absolutely. This is a key reason many clients choose a full demolition. When we remove the entire pool structure and use engineered backfilling techniques with proper compaction in layers, the land is stabilized and made suitable for new construction. This makes it safe to build a home extension, a cottage, or another permanent structure on the site. We can advise on the best demolition method based on your future plans for the space." }
+    {
+        question: "How much does it cost to demolish a swimming pool in Johannesburg?",
+        answer: "The cost of swimming pool demolition in Johannesburg typically ranges from R15,000 for a small, easily accessible pool to over R40,000 for a large, complex removal. The final price depends on the pool's size, the material (gunite and concrete are tougher than fibreglass), ease of access for machinery, and whether you choose full or partial removal. We provide a free, detailed, on-site assessment to give you a transparent and accurate quote with no hidden costs, ensuring you receive affordable pool demolition services."
+    },
+    {
+        question: "Do I need municipal approval for pool demolition in Johannesburg?",
+        answer: "In most cases, yes. The City of Johannesburg requires plans and approval for pool demolitions to ensure they are done safely and correctly, especially regarding compaction and drainage. As part of our professional service, we guide you through and can assist with this entire approval process to ensure your project is fully compliant, protecting you from future legal and structural issues. This is a critical step that we manage for our clients."
+    },
+    {
+        question: "How long does the pool demolition process take?",
+        answer: "A standard residential pool demolition in Johannesburg typically takes between 2 to 4 days. This timeline includes the complete process: draining the pool, breaking up the structure, removing all the debris, and then backfilling and compacting the area. For larger pools or sites with difficult access, it might take slightly longer. We provide a clear and realistic timeline with every quote so you can plan your project accordingly."
+    },
+    {
+        question: "Do you remove all the rubble after the demolition?",
+        answer: "Yes, our service is a complete, all-in-one solution. We handle the demolition, load all the rubble and debris, and transport it to a licensed and environmentally responsible disposal facility. Our goal is to leave your site clean, level, and ready for its next purpose, whether that's a new garden, a patio, or a building extension. You won't need to hire a separate rubble removal company."
+    },
+    {
+        question: "Can the space be used for new construction after the pool is removed?",
+        answer: "Absolutely. This is a key reason many clients choose a full demolition. When we remove the entire pool structure and use engineered backfilling techniques with proper compaction in layers, the land is stabilized and made suitable for new construction. This makes it safe to build a home extension, a cottage, or another permanent structure on the site. We can advise on the best demolition method based on your future plans for the space."
+    }
 ];
 
 const faqSchema = {
@@ -144,25 +159,6 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                 <p className="text-center text-sm text-muted-foreground mt-8">*Disclaimer: These prices are estimates. For a precise, fixed-price quote, we provide a free, no-obligation on-site assessment.</p>
             </div>
         </section>
-
-        <section className="mb-16">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process</h2>
-                    <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Johannesburg pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
-                    <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection of your pool, property access, and surrounding structures to create a detailed project plan and provide a fixed quote.</li>
-                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all electrical and plumbing lines are safely disconnected and capped by qualified personnel.</li>
-                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Using specialized equipment, our expert team carefully breaks up the pool shell and any surrounding paving, ensuring no damage to your home or garden.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property to a licensed, eco-friendly disposal facility. This is a core part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal services</Link>.</li>
-                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the pool cavity with soil or rubble and compact it in engineered layers to ensure ground stability and prevent future sinking, leaving the area perfectly prepped.</li>
-                    </ol>
-                </div>
-                <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
-                </div>
-            </div>
-        </section>
         
         <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
@@ -186,6 +182,39 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                             <p className="text-sm mb-4">Demolished the communal pool for a townhouse complex that was upgrading its facilities. The job was completed efficiently over a weekend to minimize disruption to residents, with all rubble removed and the site left safe and clean.</p>
                         </CardContent>
                     </Card>
+                </div>
+            </div>
+        </section>
+
+        <section className="mb-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process</h2>
+                    <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Johannesburg pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
+                    <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
+                        <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection of your pool, property access, and surrounding structures to create a detailed project plan and provide a fixed quote.</li>
+                        <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all electrical and plumbing lines are safely disconnected and capped by qualified personnel.</li>
+                        <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Using specialized equipment, our expert team carefully breaks up the pool shell and any surrounding paving, ensuring no damage to your home or garden.</li>
+                        <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property to a licensed, eco-friendly disposal facility. This is a core part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal services</Link>.</li>
+                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the pool cavity with soil or rubble and compact it in engineered layers to ensure ground stability and prevent future sinking, leaving the area perfectly prepped.</li>
+                    </ol>
+                </div>
+                <div>
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
+                </div>
+            </div>
+        </section>
+
+         <section id="fill-in-vs-removal" className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Full Removal vs. Partial Fill-In: What's Best for You?</h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div>
+                    <h3 className="font-semibold text-xl mb-2">Full Demolition & Removal</h3>
+                    <p className="text-muted-foreground">This involves breaking up and removing the entire pool shell. We then backfill the area with an engineered mix and compact it in layers. This is the **only method that makes the land safe for future construction**, like a home extension or cottage. For most properties where future development is a possibility, this is the highly recommended solution.</p>
+                </div>
+                <div>
+                    <h3 className="font-semibold text-xl mb-2">Partial Demolition (Fill-In)</h3>
+                    <p className="text-muted-foreground">This cheaper option involves punching holes in the pool floor for drainage and breaking down the top layer of the walls, then filling the shell. While faster, this method is **not suitable for building over** and may need to be declared to future buyers. It's a viable choice if you only plan to create a new lawn or garden bed.</p>
                 </div>
             </div>
         </section>
