@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, MapPin, Quote, Waves, ShieldCheck, ArrowRight, Star } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Quote, Waves, ShieldCheck, ArrowRight, Star, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -46,23 +46,23 @@ const serviceSchema = {
 const faqs = [
     {
         question: "How much does it cost to demolish a swimming pool in Johannesburg?",
-        answer: "The cost of swimming pool demolition in Johannesburg typically ranges from R15,000 for a small, easily accessible pool to over R40,000 for a large, complex removal. The final price depends on the pool's size, the material (gunite and concrete are tougher than fibreglass), ease of access for machinery, and whether you choose full or partial removal. We provide a free, detailed, on-site assessment to give you a transparent and accurate quote with no hidden costs, ensuring you receive affordable pool demolition services."
+        answer: "The cost of swimming pool demolition in Johannesburg typically ranges from R15,000 for a small, easily accessible pool to over R40,000 for a large, complex removal. The final price depends on the pool's size, the material (gunite and concrete are tougher than fibreglass), ease of access for machinery, and whether you choose full or partial removal. We provide a free, detailed, on-site assessment to give you a transparent and accurate quote with no hidden costs, ensuring you receive affordable pool demolition services that fit your budget."
     },
     {
         question: "Do I need municipal approval for pool demolition in Johannesburg?",
-        answer: "In most cases, yes. The City of Johannesburg requires plans and approval for pool demolitions to ensure they are done safely and correctly, especially regarding compaction and drainage. As part of our professional service, we guide you through and can assist with this entire approval process to ensure your project is fully compliant, protecting you from future legal and structural issues. This is a critical step that we manage for our clients."
+        answer: "In most cases, yes. The City of Johannesburg requires plans and approval for pool demolitions to ensure they are done safely and correctly, especially regarding compaction and drainage. As part of our professional service, we guide you through and can assist with this entire approval process to ensure your project is fully compliant, protecting you from future legal and structural issues. This is a critical step that we manage for our clients to guarantee a hassle-free project."
     },
     {
         question: "How long does the pool demolition process take?",
-        answer: "A standard residential pool demolition in Johannesburg typically takes between 2 to 4 days. This timeline includes the complete process: draining the pool, breaking up the structure, removing all the debris, and then backfilling and compacting the area. For larger pools or sites with difficult access, it might take slightly longer. We provide a clear and realistic timeline with every quote so you can plan your project accordingly."
+        answer: "A standard residential pool demolition in Johannesburg typically takes between 2 to 4 days. This timeline includes the complete process: draining the pool, breaking up the structure, removing all the debris, and then backfilling and compacting the area. For larger pools or sites with difficult access in suburbs like Sandton or Northcliff, it might take slightly longer. We provide a clear and realistic timeline with every quote so you can plan your project accordingly."
     },
     {
         question: "Do you remove all the rubble after the demolition?",
-        answer: "Yes, our service is a complete, all-in-one solution. We handle the demolition, load all the rubble and debris, and transport it to a licensed and environmentally responsible disposal facility. Our goal is to leave your site clean, level, and ready for its next purpose, whether that's a new garden, a patio, or a building extension. You won't need to hire a separate rubble removal company."
+        answer: "Yes, our service is a complete, all-in-one solution. We handle the demolition, load all the rubble and debris, and transport it to a licensed and environmentally responsible disposal facility. This is a core part of our professional <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal Johannesburg</a> service. Our goal is to leave your site clean, level, and ready for its next purpose, whether that's a new garden, a patio, or a building extension. You won't need to hire a separate rubble removal company."
     },
     {
         question: "Can the space be used for new construction after the pool is removed?",
-        answer: "Absolutely. This is a key reason many clients choose a full demolition. When we remove the entire pool structure and use engineered backfilling techniques with proper compaction in layers, the land is stabilized and made suitable for new construction. This makes it safe to build a home extension, a cottage, or another permanent structure on the site. We can advise on the best demolition method based on your future plans for the space."
+        answer: "Absolutely. This is a key reason many clients choose a full demolition. When we remove the entire pool structure and use engineered backfilling techniques with proper compaction in layers, the land is stabilized and made suitable for new construction. This makes it safe to build a home extension, a cottage, or another permanent structure on the site. We can provide an engineer's certificate for the compaction if required for your building plans, which is often a necessity for projects in areas like Sandton and Bryanston."
     }
 ];
 
@@ -140,12 +140,34 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Free Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp for a Fast Quote</a>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare/> WhatsApp for a Fast Quote</a>
                 </Button>
             </div>
         </section>
 
-        <section className="mb-16">
+         <section id="why-choose-us" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                   <div>
+                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a pool demolition project" data-ai-hint="demolition team planning" width={600} height={500} className="rounded-lg shadow-lg" />}
+                    </div>
+                  <div>
+                      <h2 className="text-3xl md:text-4xl font-bold">Why Johannesburg Trusts Apex Demolitions</h2>
+                      <p className="mt-4 text-lg text-muted-foreground">
+                          We are more than just contractors; we are your partners in transforming your property safely and professionally. Here’s why Johannesburg’s top builders and homeowners choose us for pool demolition.
+                      </p>
+                       <div className="mt-8 grid gap-6">
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed and carry comprehensive public liability insurance. This protects your property and gives you total peace of mind throughout the project.</p></div></div>
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our teams have the expertise to navigate any challenge, from tight access in Randburg to luxury estates in Sandton.</p></div></div>
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We know your time is valuable. We pride ourselves on providing prompt quotes and completing most residential pool removals within 2-4 days, keeping your project on schedule.</p></div></div>
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link>, saving you the hassle of managing multiple contractors.</p></div></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+        <section id="benefits" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Why Homeowners Remove Pools in Johannesburg</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Removing an old or unused pool is a practical decision for many Johannesburg homeowners. It provides several key benefits that can significantly improve your lifestyle and property value.</p>
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
@@ -171,7 +193,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section className="mb-16">
+        <section id="process" className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process in Johannesburg</h2>
@@ -185,7 +207,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     </ol>
                 </div>
                 <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" />}</div>}
                 </div>
             </div>
         </section>
@@ -258,7 +280,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left text-lg">{faq.question}</AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-base text-muted-foreground">{faq.answer}</p>
+                  <p className="text-base text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                 </AccordionContent>
               </AccordionItem>
             ))}
