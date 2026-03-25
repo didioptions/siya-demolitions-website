@@ -11,23 +11,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const faqs = [
     { 
         question: "How do you handle demolitions in Sandton's exclusive, secure estates?", 
-        answer: "This is our specialty. We have extensive experience working within Sandton's most exclusive secure estates like Sandhurst, Hyde Park, and Morningside. Our process begins with liaising directly with the estate management to understand all rules regarding work hours, noise levels, vehicle access, and site cleanliness. Our teams are professional, discreet, and work with the utmost respect for the community and its residents, ensuring a smooth, compliant, and disruption-free project from start to finish." 
+        answer: "This is our specialty. We have extensive experience working within Sandton's most exclusive secure estates like Sandhurst, Hyde Park, and Morningside. Our process begins with liaising directly with the estate management to understand all rules regarding work hours, noise levels, vehicle access, and site cleanliness. Our teams are professional, discreet, and work with the utmost respect for the community and its residents, ensuring a smooth, compliant, and disruption-free project from start to finish. We understand the high standards expected and deliver a service to match." 
     },
     { 
         question: "Is your company insured for high-value properties?", 
-        answer: "Yes. We carry comprehensive public liability insurance specifically designed for working on high-value residential and commercial properties. This provides our clients in Sandton with complete peace of mind, knowing their valuable assets, as well as neighbouring properties, are fully protected throughout the demolition process. We can provide all necessary documentation for your records or for your estate's requirements." 
+        answer: "Yes, absolutely. We carry comprehensive public liability insurance specifically designed for working on high-value residential and commercial properties. This provides our clients in Sandton with complete peace of mind, knowing their valuable assets, as well as neighbouring properties, are fully protected throughout the demolition process. We can provide all necessary documentation for your records or for your estate's requirements, ensuring a transparent and professional engagement from the start." 
     },
     { 
         question: "What is your process for demolishing a luxury home's swimming pool?", 
-        answer: "Our process for luxury homes is meticulous. It begins with a thorough site assessment and planning phase, where we identify all elements to be protected (like mature trees, irrigation systems, or boundary walls). We then use a precision dismantling process, often breaking the structure down piece by piece to avoid damage. This is followed by a full <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal</a> and <a href='/site-cleaning' class='text-primary hover:underline'>site cleaning</a> service, leaving the property pristine and ready for your new architectural vision." 
+        answer: "Our process for luxury homes is meticulous. It begins with a thorough site assessment and planning phase, where we identify all elements to be protected, such as mature trees, irrigation systems, or boundary walls. We then use a precision dismantling process, often breaking the structure down piece by piece to avoid damage. This is followed by a full <a href='/rubble-removal-johannesburg' class='text-primary hover:underline'>rubble removal</a> and <a href='/site-cleaning' class='text-primary hover:underline'>site cleaning</a> service, leaving the property pristine and ready for your new architectural vision or landscaped garden." 
     },
     {
         question: "Can the ground be built on after the pool is removed?",
-        answer: "Yes, this is a critical outcome of a professional pool demolition. When we perform a full demolition and use engineered backfilling with proper compaction in layers, the ground is stabilized and made safe for building a home extension, cottage, or other structure. We test the compaction to ensure it meets engineering standards, providing a certificate if required for your building plans, which is often a necessity for projects in areas like Sandton and Bryanston."
+        answer: "Yes, this is a critical outcome of a professional pool demolition. When we perform a full demolition and use engineered backfilling with proper compaction in layers, the land is stabilized and made safe for building a home extension, cottage, or other structure. We test the compaction to ensure it meets engineering standards, providing a certificate if required for your building plans, which is often a necessity for projects in areas like Sandton and Bryanston. This step is crucial for ensuring the long-term value and safety of your property."
     },
     {
         question: "How much does pool demolition cost in Sandton?",
-        answer: "The cost of pool demolition in Sandton varies based on the pool's size, material (concrete is tougher than fibreglass), and site access. For a small plunge pool, you can expect prices from R15,000, while medium-sized pools range from R20,000 to R30,000. Larger, more complex pools on properties with difficult access can be R35,000+. We provide a free, no-obligation on-site assessment to give you a transparent and accurate quote."
+        answer: "The cost of pool demolition in Sandton varies based on the pool's size, material (concrete is tougher than fibreglass), and site access. For a small plunge pool, you can expect prices from R15,000, while medium-sized pools range from R20,000 to R30,000. Larger, more complex pools on properties with difficult access can be R35,000+. We provide a free, no-obligation on-site assessment to give you a transparent and accurate quote, solidifying our reputation for affordable yet premium service in the Sandton area."
     }
 ];
 
@@ -66,9 +66,25 @@ const faqSchema = {
     }
 };
 
+const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Swimming Pool Demolition",
+    "provider": {
+        "@type": "LocalBusiness",
+        "name": "Apex Demolitions"
+    },
+    "areaServed": {
+        "@type": "City",
+        "name": "Sandton"
+    },
+    "description": "Professional swimming pool demolition and removal services in Sandton. We are specialists in complex pool removals in secure estates, offering a fully insured and compliant service.",
+    "url": "https://apex-demolitions-website.vercel.app/swimming-pool-demolition-sandton"
+};
+
 const combinedSchema = {
     "@context": "https://schema.org",
-    "@graph": [localBusinessSchema, faqSchema]
+    "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
 
 export default function SwimmingPoolDemolitionSandtonPage() {
@@ -85,11 +101,11 @@ export default function SwimmingPoolDemolitionSandtonPage() {
             <ShieldCheck /> Sandton's Premier Luxury Home & Pool Removal Service
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-             As Sandton's leading pool removal specialists, Apex Demolitions provides a premium service for Johannesburg's most exclusive properties. We handle everything from complex demolitions in secure estates to meticulous site cleanups, ensuring a seamless, professional, and fully insured process.
+             As Sandton's leading pool removal specialists, Apex Demolitions provides a premium service for Johannesburg's most exclusive properties. We handle everything from complex demolitions in secure estates to meticulous site cleanups, ensuring a seamless, professional, and fully insured process. For a fast and reliable response, contact our team today.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone /> Call for a Free Quote</a>
+                    <a href="tel:0784292760"><Phone /> Call for an Immediate Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
                     <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for a Fast Response</a>
@@ -98,19 +114,19 @@ export default function SwimmingPoolDemolitionSandtonPage() {
         </section>
 
         <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Sandton Homeowners Choose Us</h2>
-             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">Our reputation in Sandton is built on trust, precision, and an intimate understanding of the area's unique requirements. We are the preferred choice for homeowners in Sandhurst, Morningside, Bryanston, and Rivonia because we deliver a service that matches the quality of their properties.</p>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Pool Demolition in Sandton?</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">Our reputation in Sandton is built on trust, precision, and an intimate understanding of the area's unique requirements. We are the preferred choice for homeowners in Sandhurst, Morningside, Bryanston, and Rivonia because we deliver a service that matches the quality of their properties.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Estate Work Specialists</h3><p className="text-sm text-muted-foreground">We have extensive experience working within Sandton's secure lifestyle estates and adhere to all HOA rules.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Luxury Property Protection</h3><p className="text-sm text-muted-foreground">We use advanced techniques to safeguard your home, landscaping, and valuable assets during demolition.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Discreet & Professional</h3><p className="text-sm text-muted-foreground">Our teams are professional, uniformed, and operate with the discretion required in high-end neighborhoods.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast, Reliable Turnaround</h3><p className="text-sm text-muted-foreground">We pride ourselves on completing most pool removals in Sandton within 2-4 days to minimize disruption.</p></div></div>
             </div>
         </section>
-        
+
         <section id="sandton-challenges" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">The Unique Challenges of Pool Demolition in Sandton</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
-                Removing a pool in Sandton isn't just about breaking concrete; it's about navigating a unique environment with precision and professionalism. We are experts in overcoming these specific challenges.
+                Removing a pool in Sandton isn't just about breaking concrete; it's about navigating a unique environment with precision and professionalism. We are experts in overcoming these specific challenges. We regularly work on properties in and around Sandton City, Bryanston, Rivonia, and nearby residential estates where access, site protection, and clean <a href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</a> are especially important.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
                 <Card>
@@ -209,7 +225,7 @@ export default function SwimmingPoolDemolitionSandtonPage() {
                 </div>
                 <div className="bg-card p-6 rounded-lg shadow-sm">
                     <h3 className="font-bold text-lg mb-2">Bryanston, Fourways & Lonehill</h3>
-                    <p className="text-sm text-muted-foreground">We are the trusted contractors for pool removals in Sandton's popular lifestyle estates, handling everything from HOA approvals to immaculate <Link href="/site-cleaning-sandton" className="text-primary hover:underline">site cleanup</Link> with expert care.</p>
+                    <p className="text-sm text-muted-foreground">We are the trusted contractors for pool removals in Sandton's popular lifestyle estates, handling everything from HOA approvals to immaculate <Link href="/site-cleaning" className="text-primary hover:underline">site cleanup</Link> with expert care.</p>
                 </div>
                  <div className="bg-card p-6 rounded-lg shadow-sm md:col-span-2">
                     <h3 className="font-bold text-lg mb-2">Rivonia, Gallo Manor & Woodmead</h3>
