@@ -207,7 +207,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     </ol>
                 </div>
                 <div>
-                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" />}</div>}
+                    {processImage && <div className="aspect-video relative"><Image src={processImage.imageUrl} alt="A clean, green lawn where a swimming pool used to be in Johannesburg" data-ai-hint="green lawn backyard" fill className="rounded-lg object-cover shadow-lg" /></div>}
                 </div>
             </div>
         </section>
@@ -217,7 +217,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div>
                     <h3 className="font-semibold text-xl mb-2">Full Demolition & Removal</h3>
-                    <p className="text-muted-foreground">This involves breaking up and removing the entire pool shell. We then backfill the area with an engineered mix and compact it in layers. This is the **only method that makes the land safe for future construction**, like a home extension or cottage. For most properties where future development is a possibility, this is the highly recommended solution.</p>
+                    <p className="text-muted-foreground">This involves breaking up and removing the entire pool shell. We then backfill the area with an engineered mix of rubble and soil, compacting it in layers. This is the **only method that makes the land safe for future construction**, like a home extension or cottage. For most properties where future development is a possibility, this is the highly recommended solution.</p>
                 </div>
                 <div>
                     <h3 className="font-semibold text-xl mb-2">Partial Demolition (Fill-In)</h3>
