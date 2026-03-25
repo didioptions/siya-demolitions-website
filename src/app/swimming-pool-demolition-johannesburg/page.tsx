@@ -145,7 +145,18 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section id="pricing" className="py-12 md:py-20 bg-background">
+        <section className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Why Homeowners Remove Pools in Johannesburg</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Removing an old or unused pool is a practical decision for many Johannesburg homeowners. It provides several key benefits that can significantly improve your lifestyle and property value.</p>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reclaim Valuable Garden Space</h4><p className="text-sm text-muted-foreground">Free up your yard for a larger lawn, a modern entertainment area, a garden cottage, or a home extension.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reduce High Maintenance Costs</h4><p className="text-sm text-muted-foreground">Eliminate the constant expense of chemicals, electricity for the pump, and costly water top-ups, especially during water restrictions.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Improve Family Safety</h4><p className="text-sm text-muted-foreground">Remove the potential hazard an unfenced or unused pool poses to small children and pets, giving you peace of mind.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Increase Property Appeal & Value</h4><p className="text-sm text-muted-foreground">A large, functional garden is often more appealing to potential buyers than an old, high-maintenance pool.</p></div></div>
+            </div>
+        </section>
+        
+        <section id="pricing" className="py-12 md:py-20 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl font-bold text-center mb-8">Pool Demolition Prices in Johannesburg</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
@@ -161,46 +172,9 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
         </section>
 
         <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Homeowners Remove Pools in Johannesburg</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">Removing an old or unused pool is a practical decision for many Johannesburg homeowners. It provides several key benefits that can significantly improve your lifestyle and property value.</p>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reclaim Valuable Garden Space</h4><p className="text-sm text-muted-foreground">Free up your yard for a larger lawn, a modern entertainment area, a garden cottage, or a home extension.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Reduce High Maintenance Costs</h4><p className="text-sm text-muted-foreground">Eliminate the constant expense of chemicals, electricity for the pump, and costly water top-ups, especially during water restrictions.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Improve Family Safety</h4><p className="text-sm text-muted-foreground">Remove the potential hazard an unfenced or unused pool poses to small children and pets, giving you peace of mind.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Increase Property Appeal & Value</h4><p className="text-sm text-muted-foreground">A large, functional garden is often more appealing to potential buyers than an old, high-maintenance pool.</p></div></div>
-            </div>
-        </section>
-        
-        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Pool Demolition Projects in Johannesburg</h2>
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card>
-                        <CardHeader><CardTitle>Pool Removal in Sandton</CardTitle><p className="text-sm text-muted-foreground">Morningside Estate</p></CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">Removed a large, leaking marbelite pool from a luxury home. The project required careful protection of surrounding paving and a prized garden. The area was backfilled and compacted, creating a large, level lawn for the family. The project was completed in 3 days.</p>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader><CardTitle>Fibreglass Pool Demolition</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">A client in Ferndale needed to remove an old fibreglass pool to make way for a home extension. Our team carefully cut and removed the shell in sections and prepared the ground with engineered compaction, making it ready for the builders in just 2 days.</p>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader><CardTitle>Complex Demolition</CardTitle><p className="text-sm text-muted-foreground">Midrand</p></CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">Demolished the communal pool for a townhouse complex that was upgrading its facilities. The job was completed efficiently over a weekend to minimize disruption to residents, with all rubble removed and the site left safe and clean.</p>
-                        </CardContent>
-                    </Card>
-                </div>
-            </div>
-        </section>
-
-        <section className="mb-16">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process</h2>
+                    <h2 className="text-3xl font-bold mb-4">Our 5-Step Pool Demolition Process in Johannesburg</h2>
                     <p className="text-muted-foreground mb-6">We follow a strict, professional process to ensure every Johannesburg pool demolition is safe, efficient, and leaves your property in pristine condition.</p>
                     <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
                         <li><span className="font-semibold text-foreground">Site Inspection & Planning:</span> We conduct a thorough inspection of your pool, property access, and surrounding structures to create a detailed project plan and provide a fixed quote.</li>
@@ -230,6 +204,32 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
             </div>
         </section>
 
+        <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Pool Demolition Projects in Johannesburg</h2>
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <Card>
+                        <CardHeader><CardTitle>Pool Removal in Sandton</CardTitle><p className="text-sm text-muted-foreground">Morningside Estate</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Removed a large, leaking marbelite pool from a luxury home. The project required careful protection of surrounding paving and a prized garden. The area was backfilled and compacted, creating a large, level lawn for the family. The project was completed in 3 days.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Fibreglass Pool Demolition</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">A client in Ferndale needed to remove an old fibreglass pool to make way for a home extension. Our team carefully cut and removed the shell in sections and prepared the ground with engineered compaction, making it ready for the builders in just 2 days.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Complex Demolition</CardTitle><p className="text-sm text-muted-foreground">Midrand</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Demolished the communal pool for a townhouse complex that was upgrading its facilities. The job was completed efficiently over a weekend to minimize disruption to residents, with all rubble removed and the site left safe and clean.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+        
         <section id="areas-we-serve" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Serving All of Johannesburg and Surrounding Suburbs</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
@@ -283,4 +283,3 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
     </>
   );
 }
-
