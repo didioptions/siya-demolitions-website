@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Check, Phone, Wrench, Trash2, Sparkles, Axe, Building, Award, Users, MapPin, ShieldCheck, Quote, User, Waves, Tractor, HardHat, Mail, MessageSquare, ArrowRight } from "lucide-react";
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 const organizationSchema = {
     "@type": "LocalBusiness",
     "name": "Apex Demolitions Projects",
-    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHxfHNlYXJjaHwxMHx8ZGVtb2xpdC0builduing%7C%27fen%20oM%7C%7C%7CMTM6NzY%3D&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdC0builduing%7C%27fen%20oM%7C%7C%7CMTM6NzY%3D&ixlib=rb-4.1.0&q=80&w=1080",
     "@id": "https://apex-demolitions-website.vercel.app/",
     "url": "https://apex-demolitions-website.vercel.app/",
     "telephone": "+27784292760",
@@ -148,6 +149,66 @@ export default function Home() {
                 </p>
             </div>
         </section>
+
+        {/* Why Choose Us Section */}
+        <section className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center">Why Johannesburg Clients Choose Us</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">We are built on a foundation of trust, reliability, and professionalism. Our goal is to provide a seamless service that gives you complete peace of mind.</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 max-w-5xl mx-auto">
+                    <div className="text-center">
+                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><ShieldCheck className="h-6 w-6 text-primary" /></div>
+                        <h3 className="mt-4 text-lg font-semibold">Licensed & Insured</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection.</p>
+                    </div>
+                    <div className="text-center">
+                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Award className="h-6 w-6 text-primary" /></div>
+                        <h3 className="mt-4 text-lg font-semibold">Decades of Experience</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">With over 20 years serving Johannesburg, our teams have the expertise to handle any project, big or small.</p>
+                    </div>
+                    <div className="text-center">
+                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Users className="h-6 w-6 text-primary" /></div>
+                        <h3 className="mt-4 text-lg font-semibold">Local, Expert Teams</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">Our experienced, local teams understand the specific needs of different Johannesburg suburbs.</p>
+                    </div>
+                    <div className="text-center">
+                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Quote className="h-6 w-6 text-primary" /></div>
+                        <h3 className="mt-4 text-lg font-semibold">Affordable, Free Quotes</h3>
+                        <p className="mt-1 text-sm text-muted-foreground">We provide competitive, transparent, and no-obligation quotes with no hidden costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Areas We Serve Section */}
+        <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl font-bold text-center mb-8">Serving Every Corner of Johannesburg</h2>
+                 <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">Our teams are strategically positioned to provide fast, reliable demolition and rubble removal services across all of Johannesburg's key suburbs. We are your local experts, from the northern estates to the southern communities.</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
+                    
+                    <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2">North Johannesburg</h3>
+                        <p className="text-muted-foreground text-sm">Elite services for the northern suburbs, specializing in luxury home projects, secure estate compliance, and rapid service for the area's fast-paced development. Our teams are the trusted choice for <Link href="/demolition-sandton" className="text-primary hover:underline">demolition in Sandton</Link>, <Link href="/rubble-removal-randburg" className="text-primary hover:underline">rubble removal in Randburg</Link>, and site clearing in <Link href="/site-cleaning-midrand" className="text-primary hover:underline">Midrand</Link> & <Link href="/rubble-removal-fourways" className="text-primary hover:underline">Fourways</Link>.</p>
+                    </div>
+
+                    <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2">East Rand (Ekurhuleni)</h3>
+                        <p className="text-muted-foreground text-sm">As East Rand specialists, we provide robust industrial demolition, commercial site clearing, and residential services. We are the go-to contractors for projects in <Link href="/demolition-germiston" className="text-primary hover:underline">Germiston</Link>, <Link href="/rubble-removal-boksburg" className="text-primary hover:underline">Boksburg</Link>, <Link href="/demolition-alberton" className="text-primary hover:underline">Alberton</Link>, <Link href="/rubble-removal-bedfordview" className="text-primary hover:underline">Bedfordview</Link>, and <Link href="/demolition-edenvale" className="text-primary hover:underline">Edenvale</Link>.</p>
+                    </div>
+
+                     <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2">West Rand</h3>
+                         <p className="text-muted-foreground text-sm">Our service coverage extends throughout the West Rand. We offer affordable and dependable <Link href="/demolition-roodepoort" className="text-primary hover:underline">demolition in Roodepoort</Link> and expert <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">rubble removal</Link>, managing everything from garden refuse to builders rubble on the area's varied terrain.</p>
+                    </div>
+
+                     <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2">South Johannesburg</h3>
+                         <p className="text-muted-foreground text-sm">We are proud to offer our full range of services to the communities of Johannesburg South. This includes affordable <Link href="/rubble-removal-soweto" className="text-primary hover:underline">rubble removal in Soweto</Link> and expert <Link href="/demolition-soweto" className="text-primary hover:underline">demolition services</Link> for community projects, small businesses, and homeowners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         {/* Demolition Section */}
         <section className="py-12 md:py-20 bg-background">
@@ -218,36 +279,6 @@ export default function Home() {
                      <Button size="lg" asChild>
                         <a href="tel:0784292760"><Phone className="mr-2"/> Call Now for Immediate Rubble Removal</a>
                     </Button>
-                </div>
-            </div>
-        </section>
-
-        {/* Why Choose Us Section */}
-        <section className="py-12 md:py-20 bg-card">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center">Why Johannesburg Clients Choose Us</h2>
-                <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">We are built on a foundation of trust, reliability, and professionalism. Our goal is to provide a seamless service that gives you complete peace of mind.</p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 max-w-5xl mx-auto">
-                    <div className="text-center">
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><ShieldCheck className="h-6 w-6 text-primary" /></div>
-                        <h3 className="mt-4 text-lg font-semibold">Licensed & Insured</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection.</p>
-                    </div>
-                    <div className="text-center">
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Wrench className="h-6 w-6 text-primary" /></div>
-                        <h3 className="mt-4 text-lg font-semibold">Fast Response</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">With teams across Johannesburg, we offer same-day or next-day service for many rubble removal jobs.</p>
-                    </div>
-                    <div className="text-center">
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Users className="h-6 w-6 text-primary" /></div>
-                        <h3 className="mt-4 text-lg font-semibold">Local, Expert Team</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">Our experienced, local teams understand the specific needs of different Johannesburg suburbs.</p>
-                    </div>
-                    <div className="text-center">
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-primary/10"><Quote className="h-6 w-6 text-primary" /></div>
-                        <h3 className="mt-4 text-lg font-semibold">Affordable Pricing</h3>
-                        <p className="mt-1 text-sm text-muted-foreground">We provide competitive, transparent, and no-obligation quotes with no hidden costs.</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -333,43 +364,6 @@ export default function Home() {
                 </div>
             </div>
         </section>
-
-        {/* Areas We Serve Section */}
-        <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl font-bold text-center mb-8">Areas We Serve in Johannesburg</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/rubble-removal-sandton" className="hover:underline">Sandton</Link></h3>
-                        <p className="text-muted-foreground">We provide elite demolition and rubble removal in Sandton, specializing in luxury home projects and discreet service in exclusive estates. As leading demolition contractors in Sandton, our teams are equipped for complex projects, ensuring a clean, compliant, and professional site clearing every time.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:underline">Randburg</Link></h3>
-                        <p className="text-muted-foreground">As trusted demolition contractors in Randburg, we offer fast and affordable house demolition for the area's many renovations. Our reliable rubble removal in Randburg ensures residents can count on us to clear debris from any project, big or small, across all suburbs from Ferndale to Northcliff.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-midrand" className="hover:underline">Midrand</Link></h3>
-                        <p className="text-muted-foreground">We support Midrand's rapid growth with large-scale site clearing, demolition services, and scheduled rubble removal in Midrand for developers and residential estates like Waterfall. Our expert teams are familiar with the unique logistical needs of this fast-developing area.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/rubble-removal-roodepoort" className="hover:underline">Roodepoort</Link></h3>
-                        <p className="text-muted-foreground">Our teams cover the West Rand, offering comprehensive demolition in Roodepoort and fast rubble removal services for residential and commercial clients. We are experienced in working on the varied and often challenging terrain found across Roodepoort's suburbs.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-soweto" className="hover:underline">Soweto</Link></h3>
-                        <p className="text-muted-foreground">We are proud to offer affordable, community-focused demolition and rubble removal services in Soweto. We help homeowners, small businesses, and community projects clear sites safely and efficiently, supporting the area's growth and development.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-alberton" className="hover:underline">Alberton</Link></h3>
-                        <p className="text-muted-foreground">As East Rand specialists, we offer expert demolition in Alberton for residential and commercial properties. Our fast rubble removal in Alberton ensures your property is cleared professionally and on schedule, from Meyersdal to Alberton North.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-germiston" className="hover:underline">Germiston</Link></h3>
-                        <p className="text-muted-foreground">We are the go-to contractors for industrial demolition in Germiston. We also provide comprehensive rubble removal and site clearing services for the area's many factories, warehouses, and commercial hubs, ensuring compliance and safety.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
         
         {/* Testimonials Section */}
         <section id="testimonials" className="py-12 md:py-20 bg-card">
@@ -442,5 +436,7 @@ export default function Home() {
     </>
   );
 }
+
+    
 
     
