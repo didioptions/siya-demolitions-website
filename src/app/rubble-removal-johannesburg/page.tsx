@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -179,6 +180,68 @@ export default function RubbleRemovalJohannesburgPage() {
           </div>
       </section>
       
+        {/* Why Fast Rubble Removal Matters Section */}
+        <section className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl font-bold text-center mb-12">Why Fast Rubble Removal Matters on Johannesburg Sites</h2>
+                <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Enhances Site Safety</h3><p className="text-muted-foreground">Piles of rubble, sharp materials, and unstable debris are major safety hazards on any worksite. Prompt **builders rubble removal** eliminates trip hazards, prevents injuries, and creates a safer environment for your family, staff, or construction crew. A clean site is a safe site.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Boosts Project Productivity</h3><p className="text-muted-foreground">Clutter and debris get in the way, slowing down other trades and hindering progress. Our **same-day rubble removal Johannesburg** service clears the way for electricians, plumbers, and painters to do their jobs efficiently, keeping your project on schedule and on budget.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Ensures Legal Compliance</h3><p className="text-muted-foreground">Illegal dumping is a serious offence in Johannesburg with heavy fines. As a licensed waste carrier, we guarantee that all your rubble is transported and disposed of at registered facilities, providing you with full legal compliance and peace of mind.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Maintains Professionalism</h3><p className="text-muted-foreground">A tidy worksite reflects professionalism and respect for your property and the surrounding neighbourhood. Whether it’s a residential renovation or a large commercial build, a clean site maintains good relations with neighbours and presents a better image for your business.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-12 md:py-20 bg-card">
+          <div className="container mx-auto px-4 md:px-6">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                   <div>
+                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a rubble removal project" data-ai-hint="rubble removal team" width={600} height={500} className="rounded-lg shadow-lg" />}
+                    </div>
+                  <div>
+                      <h2 className="text-3xl md:text-4xl font-bold">Why Choose Apex Demolitions?</h2>
+                      <p className="mt-4 text-lg text-muted-foreground">
+                          We are built on a foundation of trust, reliability, and professionalism. Our goal is to provide a seamless rubble removal service that gives you complete peace of mind.
+                      </p>
+                       <div className="mt-8 grid gap-6">
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection. This means your project is handled legally and safely from start to finish.</p></div></div>
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Service</h3><p className="text-muted-foreground mt-1 text-sm">With teams across Johannesburg, we offer same-day or next-day service to keep your project on schedule. We pride ourselves on punctuality and efficient work.</p></div></div>
+                          <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Eco-Friendly Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are committed to responsible waste management. We prioritize recycling and guarantee all waste is disposed of legally at registered facilities, protecting our city and you from fines.</p></div></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      {/* Recent Projects Section */}
+      <section id="recent-projects" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Rubble Removal Jobs in Johannesburg</h2>
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <Card>
+                        <CardHeader><CardTitle>Renovation Rubble Removal</CardTitle><p className="text-sm text-muted-foreground">Sandton</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">A client in a secure Sandton estate required urgent removal of renovation debris (tiles, bricks, drywall). Our team responded the same day, carefully loading and removing 3 truckloads without damaging the new paving. The site was left spotless, allowing painters to start the next day.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Builders Rubble Removal</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">We provided scheduled weekly rubble removal for a contractor building a new home in Randburg. Our reliable service kept the site safe and clear of builders rubble, ensuring the project ran smoothly and on schedule without any delays caused by waste buildup.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Garden Refuse & Soil</CardTitle><p className="text-sm text-muted-foreground">Midrand</p></CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">A homeowner was landscaping their large garden in a Midrand estate. We removed multiple loads of excess soil, rocks, and large tree branches. The job was completed in a single afternoon, transforming the property and preparing it for the new lawn.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+
       {/* Areas We Cover Section */}
       <section id="areas-we-serve" className="py-12 md:py-20 bg-card">
         <div className="container mx-auto px-4 md:px-6">
@@ -205,7 +268,6 @@ export default function RubbleRemovalJohannesburgPage() {
         </div>
       </section>
       
-
       {/* Pricing Section */}
       <section id="pricing" className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
@@ -218,41 +280,6 @@ export default function RubbleRemovalJohannesburgPage() {
             </div>
             <p className="text-center text-sm text-muted-foreground mt-8">*Disclaimer: Prices are a guideline and depend on the exact volume, type of material, site access, and your location in Johannesburg. Contact us for a precise, free quote.</p>
         </div>
-      </section>
-
-      {/* Why Fast Rubble Removal Matters Section */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Fast Rubble Removal Matters on Johannesburg Sites</h2>
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-                <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Enhances Site Safety</h3><p className="text-muted-foreground">Piles of rubble, sharp materials, and unstable debris are major safety hazards on any worksite. Prompt **builders rubble removal** eliminates trip hazards, prevents injuries, and creates a safer environment for your family, staff, or construction crew. A clean site is a safe site.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Boosts Project Productivity</h3><p className="text-muted-foreground">Clutter and debris get in the way, slowing down other trades and hindering progress. Our **same-day rubble removal Johannesburg** service clears the way for electricians, plumbers, and painters to do their jobs efficiently, keeping your project on schedule and on budget.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Ensures Legal Compliance</h3><p className="text-muted-foreground">Illegal dumping is a serious offence in Johannesburg with heavy fines. As a licensed waste carrier, we guarantee that all your rubble is transported and disposed of at registered facilities, providing you with full legal compliance and peace of mind.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-8 w-8 mt-1 flex-shrink-0" /><div><h3 className="font-semibold text-xl">Maintains Professionalism</h3><p className="text-muted-foreground">A tidy worksite reflects professionalism and respect for your property and the surrounding neighbourhood. Whether it’s a residential renovation or a large commercial build, a clean site maintains good relations with neighbours and presents a better image for your business.</p></div></div>
-            </div>
-        </div>
-    </section>
-
-      {/* Why Choose Us Section */}
-      <section className="py-12 md:py-20 bg-card">
-          <div className="container mx-auto px-4 md:px-6">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                   <div>
-                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a rubble removal project" data-ai-hint="rubble removal team" width={600} height={500} className="rounded-lg shadow-lg" />}
-                    </div>
-                  <div>
-                      <h2 className="text-3xl md:text-4xl font-bold">Why Choose Apex Demolitions?</h2>
-                      <p className="mt-4 text-lg text-muted-foreground">
-                          We are built on a foundation of trust, reliability, and professionalism. Our goal is to provide a seamless rubble removal service that gives you complete peace of mind.
-                      </p>
-                       <div className="mt-8 grid gap-6">
-                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection. This means your project is handled legally and safely from start to finish.</p></div></div>
-                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Service</h3><p className="text-muted-foreground mt-1 text-sm">With teams across Johannesburg, we offer same-day or next-day service to keep your project on schedule. We pride ourselves on punctuality and efficient work.</p></div></div>
-                          <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Eco-Friendly Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are committed to responsible waste management. We prioritize recycling and guarantee all waste is disposed of legally at registered facilities, protecting our city and you from fines.</p></div></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
       </section>
 
       {/* Google Review CTA */}
