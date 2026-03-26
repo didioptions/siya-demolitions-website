@@ -279,15 +279,21 @@ export default function RubbleRemovalJohannesburgPage() {
             <div className="max-w-5xl mx-auto space-y-8">
                 <div>
                     <h3 className="text-2xl font-semibold mb-4 text-center">North Johannesburg: Sandton, Randburg, Midrand & Fourways</h3>
-                    <p className="text-muted-foreground text-center">We offer a premium, discreet rubble removal service for Johannesburg's northern suburbs. Our teams are experts at navigating the secure estates of <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link> and <Link href="/demolition-bryanston" className="text-primary hover:underline">Bryanston</Link>, providing fast cleanups for high-end renovations. For the diverse properties in <Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link> and the rapidly growing developments in <Link href="/rubble-removal-midrand" className="text-primary hover:underline">Midrand</Link> and Fourways, our reliable service keeps projects on schedule.</p>
+                    <p className="text-muted-foreground text-center">
+                        We offer a premium, discreet rubble removal service for Johannesburg's northern suburbs. Our teams are experts at navigating the secure estates of <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link> and <Link href="/demolition-bryanston" className="text-primary hover:underline">Bryanston</Link>, providing fast cleanups for high-end renovations. For the diverse properties in <Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link> and the rapidly growing developments in <Link href="/rubble-removal-midrand" className="text-primary hover:underline">Midrand</Link> and Fourways, our reliable service keeps projects on schedule, reinforcing our status as the top choice for <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal in Johannesburg</Link>.
+                    </p>
                 </div>
                 <div>
                     <h3 className="text-2xl font-semibold mb-4 text-center">East Rand: Bedfordview, Edenvale, Kempton Park & More</h3>
-                    <p className="text-muted-foreground text-center">As East Rand specialists, we provide robust rubble removal services across Ekurhuleni. We handle heavy industrial waste in Germiston, construction debris in <Link href="/rubble-removal-boksburg" className="text-primary hover:underline">Boksburg</Link>, and residential cleanups in Alberton, <Link href="/rubble-removal-bedfordview" className="text-primary hover:underline">Bedfordview</Link>, and <Link href="/rubble-removal-edenvale" className="text-primary hover:underline">Edenvale</Link>. Our local teams ensure a fast response across the region.</p>
+                    <p className="text-muted-foreground text-center">
+                        As East Rand specialists, we provide robust rubble removal services across Ekurhuleni. We handle heavy industrial waste in Germiston, construction debris in <Link href="/rubble-removal-boksburg" className="text-primary hover:underline">Boksburg</Link>, and residential cleanups in <Link href="/rubble-removal-alberton" className="text-primary hover:underline">Alberton</Link>, <Link href="/rubble-removal-bedfordview" className="text-primary hover:underline">Bedfordview</Link>, and <Link href="/rubble-removal-edenvale" className="text-primary hover:underline">Edenvale</Link>. Our local teams ensure a fast response across the region for any construction or renovation project.
+                    </p>
                 </div>
                 <div>
                     <h3 className="text-2xl font-semibold mb-4 text-center">West Rand & Johannesburg South</h3>
-                    <p className="text-muted-foreground text-center">Our service coverage extends throughout the West Rand and the South. We offer affordable and dependable rubble removal in <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, managing everything from garden refuse to builders rubble on varied terrain. In Johannesburg South, including Soweto, we provide a vital service for community projects, small businesses, and homeowners.</p>
+                    <p className="text-muted-foreground text-center">
+                        Our service coverage extends throughout the West Rand and the South. We offer affordable and dependable rubble removal in <Link href="/rubble-removal-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, managing everything from garden refuse to builders rubble on varied terrain. In Johannesburg South, including Soweto, we provide a vital service for community projects, small businesses, and homeowners completing a <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>.
+                    </p>
                 </div>
             </div>
             <div className="text-center mt-12">
@@ -362,14 +368,36 @@ export default function RubbleRemovalJohannesburgPage() {
           <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
               <Accordion type="single" collapsible className="w-full">
-                  {faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index + 1}`}>
-                      <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
-                      <AccordionContent className="text-base text-muted-foreground">
-                        <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
+                  <AccordionItem value="item-1">
+                    <AccordionTrigger className="text-lg text-left">How much does rubble removal cost in Johannesburg?</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                        <p>The cost for professional rubble removal in Johannesburg is competitive and depends on several key factors. The price is primarily based on the volume of waste (per truckload), the type of material (e.g., light garden refuse vs. heavy builders rubble), and site accessibility. For instance, a small load of garden refuse might cost significantly less than multiple truckloads of dense concrete from a demolition site. To give you a clear and transparent price, we offer a free, no-obligation quote. This ensures you get an affordable price for your rubble removal in Johannesburg with no hidden surprises.</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-2">
+                    <AccordionTrigger className="text-lg text-left">Do you offer same-day rubble removal?</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                        <p>Yes, we proudly offer same-day rubble removal in Johannesburg, subject to our schedule and truck availability. We understand that debris can halt a project, which is why we prioritize urgent requests from our clients who need 'rubble removal near me' immediately. For the fastest service, it's best to call us directly as early in the day as possible. Our extensive network of local teams across the city enables us to provide a rapid response for most urgent cleanups, ensuring your site is cleared without delay.</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-3">
+                    <AccordionTrigger className="text-lg text-left">What kind of rubble do you remove?</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                        <p>We are equipped to remove a wide variety of non-hazardous waste from any site in Johannesburg. This includes heavy builders rubble such as bricks, concrete, sand, and soil from construction and demolition sites. We also specialize in garden refuse removal, clearing branches, leaves, and other organic waste. Furthermore, our service covers renovation waste like tiles and drywall, as well as general household or garage junk. This makes us a complete junk removal solution for any project, big or small, across the city.</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-4">
+                    <AccordionTrigger className="text-lg text-left">Do you remove builders rubble and garden refuse?</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                        <p>Yes, we are experts in handling both builders rubble and garden refuse in Johannesburg. Our construction rubble removal service is perfect for builders and contractors who need to maintain a clean and safe worksite by removing heavy, dense materials. Simultaneously, our garden refuse removal service is ideal for homeowners and landscapers needing to clear bulky organic waste. We have the right equipment and vehicles to handle both types of waste efficiently, offering a comprehensive rubble removal Johannesburg service for any need, no matter how big or small the job is.</p>
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item-5">
+                    <AccordionTrigger className="text-lg text-left">Which Johannesburg areas do you cover?</AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                        <p>We cover the entire greater Johannesburg metropolitan area and beyond. Our extensive network of teams ensures we can provide fast and reliable rubble removal services in all major suburbs. This includes Sandton, Randburg, Roodepoort, Midrand, Fourways, Soweto, Johannesburg South, and the full East Rand (including Alberton, Germiston, and Boksburg). Our widespread presence means that no matter where your project is located, you can find a reliable 'rubble removal near me' solution with us, ensuring prompt and professional service.</p>
+                    </AccordionContent>
+                  </AccordionItem>
               </Accordion>
           </div>
       </section>
