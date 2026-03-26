@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -107,7 +106,6 @@ const areas = [
 export default function RubbleRemovalJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
     const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
-    const clearedSiteImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
     const bobcatImage = PlaceHolderImages.find(p => p.id === 'plantHireBobcat');
     
   return (
