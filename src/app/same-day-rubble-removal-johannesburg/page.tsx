@@ -9,19 +9,19 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const faqs = [
     {
         question: "How does your same-day service work?",
-        answer: "Our same-day rubble removal in Johannesburg is designed for speed. When you call or WhatsApp us, we get the details of your rubble and location. We then dispatch the nearest available team to your site. To secure a same-day slot, it's best to contact us as early in the day as possible, as our schedule fills up quickly. We prioritize urgent requests to ensure your site is cleared without delay."
+        answer: "Our same-day rubble removal in Johannesburg is designed for speed and efficiency. When you call or WhatsApp us with your requirements, we immediately assess the job and dispatch the nearest available team to your location. To secure a same-day slot, we recommend contacting us as early in the day as possible, as our schedule can fill up quickly. We always prioritize urgent requests to ensure your site is cleared without delay, helping you keep your project on track."
     },
     {
         question: "How quickly can your team arrive at my site?",
-        answer: "Our arrival time depends on your location in Johannesburg, current traffic conditions, and our team's schedule for the day. However, for same-day requests, we make every effort to get to you within a few hours. We have teams strategically positioned across Sandton, Randburg, and the East and West Rand, which allows us to provide a genuinely fast response time. We will always give you an estimated arrival window when you book."
+        answer: "Our arrival time for same-day rubble removal depends on your exact location within Johannesburg, the day's traffic, and our team's existing schedule. However, we make every effort to get to you within a few hours of your confirmed booking. Our teams are strategically positioned across Sandton, Randburg, the East Rand, and the West Rand, which allows us to provide a genuinely rapid response time for most urgent cleanups. We will always provide you with an estimated arrival window when you book."
     },
     {
         question: "Can you remove all types of rubble on the same day?",
-        answer: "Yes, our teams are equipped to handle most types of non-hazardous waste for same-day removal. This includes builders rubble from construction sites, garden refuse like branches and soil, and waste from residential renovations. Whether it's concrete, bricks, tiles, or general junk, we can usually clear it on the same day. For specialized or potentially hazardous materials, please inform us when you call."
+        answer: "Yes, our versatile teams are equipped to handle most types of non-hazardous waste for same-day removal. This includes common builders rubble like bricks and concrete, garden refuse such as branches and soil, and general waste from residential renovations. Whether you're dealing with debris from a small DIY project or waste from a professional construction site, our same-day rubble removal Johannesburg service is designed to manage it efficiently. For any specialized materials, please let us know when you call."
     },
     {
         question: "Can you handle very large jobs on a same-day basis?",
-        answer: "For very large jobs that require multiple truckloads or heavy machinery, we can often begin the clearing process on the same day. We will assess the scope of the job when you contact us and dispatch a team to start immediately. If the entire job cannot be completed in one day, we will work with you to schedule the remaining collections as quickly as possible to ensure your site is cleared without unnecessary delays."
+        answer: "For very large rubble removal jobs that require multiple truckloads or heavy machinery, we can almost always begin the clearing process on the same day you call. When you contact us, we'll assess the scope of the job and dispatch a team to start work immediately. If the entire job cannot be completed in one day, we will work with you to create a rapid schedule for the remaining collections, ensuring your site is cleared as quickly and efficiently as possible without unnecessary delays."
     }
 ];
 
@@ -50,14 +50,14 @@ export default function SameDayRubbleRemovalPage() {
         </section>
 
         <section className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Fast Rubble Removal When You Need It Most</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Fast Rubble Removal Matters on Johannesburg Sites</h2>
              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
                 Delays in removing rubble can slow down your project, create safety risks, and make your property unusable. Our same-day rubble removal service in Johannesburg ensures your site is cleared quickly so you can continue with your work without delays.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
-                <div><Truck className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Avoid Project Delays</h4><p className="text-muted-foreground mt-1 text-sm">Clear your site fast so plumbers, electricians, and painters can get to work.</p></div>
-                <div><ShieldCheck className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Improve Site Safety</h4><p className="text-muted-foreground mt-1 text-sm">Remove hazardous debris and reduce the risk of accidents for your family or workers.</p></div>
-                <div><Home className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Reclaim Your Space</h4><p className="text-muted-foreground mt-1 text-sm">Get your garden, garage, or worksite back to a clean and usable state immediately.</p></div>
+                <div><Truck className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Avoid Project Delays</h4><p className="text-muted-foreground mt-1 text-sm">Clear your site fast so plumbers, electricians, and painters can get to work. A clean site boosts productivity and keeps your timeline on track.</p></div>
+                <div><ShieldCheck className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Improve Site Safety</h4><p className="text-muted-foreground mt-1 text-sm">Remove hazardous debris, nails, and sharp materials to reduce the risk of accidents for your family or workers. A tidy site is a safe site.</p></div>
+                <div><Home className="mx-auto h-10 w-10 text-primary" /><h4 className="font-semibold text-lg mt-2">Ensure Legal Compliance</h4><p className="text-muted-foreground mt-1 text-sm">As licensed waste carriers, we guarantee legal disposal of all rubble, protecting you from the heavy fines associated with illegal dumping in Johannesburg.</p></div>
             </div>
         </section>
 
@@ -80,7 +80,7 @@ export default function SameDayRubbleRemovalPage() {
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold">Equipment for Large & Urgent Jobs</h3>
-                    <p className="text-muted-foreground mt-2">For larger or urgent jobs, we use professional equipment like Bobcats and TLB machines to speed up the loading process and handle large volumes of heavy material efficiently. This means we can clear your site faster and more safely than with manual labour alone, a key part of our effective <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> service.</p>
+                    <p className="text-muted-foreground mt-2">For larger rubble removal jobs in Johannesburg, we use professional equipment to handle high volumes quickly and safely. If rubble, soil, or construction waste is too much for manual loading, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time. This is ideal for large construction sites, full <Link href="/site-cleaning" className="text-primary hover:underline">site clearance</Link> projects, and heavy debris from <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">pool demolitions</Link>.</p>
                 </div>
             </div>
         </section>
@@ -99,7 +99,7 @@ export default function SameDayRubbleRemovalPage() {
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <Card><CardHeader><CardTitle>Small Loads</CardTitle></CardHeader><CardContent><p className="font-bold text-2xl">R600 - R1200</p><p className="text-sm text-muted-foreground mt-2">Perfect for garden refuse or waste from a small DIY project.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Medium Loads</CardTitle></CardHeader><CardContent><p className="font-bold text-2xl">R1200 - R2500</p><p className="text-sm text-muted-foreground mt-2">Ideal for renovation debris from a kitchen or bathroom.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Large Loads</CardTitle></CardHeader><CardContent><p className="font-bold text-2xl">R2500+</p><p className="text-sm text-muted-foreground mt-2">For large-scale builders rubble, demolition waste, or full <Link href="/site-cleaning" className="text-primary hover:underline">site clearing</Link>.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Large Loads</CardTitle></CardHeader><CardContent><p className="font-bold text-2xl">R2500+</p><p className="text-sm text-muted-foreground mt-2">For large-scale builders rubble, demolition waste, or full site clearing.</p></CardContent></Card>
             </div>
         </section>
 
