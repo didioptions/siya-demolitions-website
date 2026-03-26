@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, MapPin, Quote, ShieldCheck, Star, Trash2, Leaf, BrickWall, Home, Building, ArrowRight, MessageSquare } from "lucide-react";
+import { Check, Phone, Mail, MapPin, Quote, ShieldCheck, Star, Trash2, Leaf, BrickWall, Home, Building, ArrowRight, MessageSquare, Waves } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
