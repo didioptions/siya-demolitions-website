@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -256,9 +257,9 @@ export default function RubbleRemovalJohannesburgPage() {
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Garden Refuse & Soil</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
+                        <CardHeader><CardTitle>Garden Refuse & Soil Removal</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A homeowner was landscaping their large garden in Blairgowrie and needed multiple loads of excess soil, rocks, and large tree branches removed. Our team arrived the next morning and cleared two full truckloads, transforming the messy yard into a clean, usable space.</p>
+                            <p className="text-sm">After a major landscaping project, a homeowner in Blairgowrie was left with several large piles of soil and tree branches. Our team arrived the next morning and cleared two full truckloads, transforming the messy yard into a clean, usable space.</p>
                         </CardContent>
                     </Card>
                     <Card>
