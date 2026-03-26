@@ -108,6 +108,7 @@ export default function RubbleRemovalJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
     const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
     const clearedSiteImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
+    const bobcatImage = PlaceHolderImages.find(p => p.id === 'plantHireBobcat');
     
   return (
     <>
@@ -163,6 +164,37 @@ export default function RubbleRemovalJohannesburgPage() {
           </div>
       </section>
 
+      {/* Heavy-Duty Rubble Removal Section */}
+      <section id="machinery-rubble-removal" className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-accent font-semibold uppercase tracking-widest">Efficient & Powerful</p>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2">Heavy-Duty Rubble Removal with Machinery</h2>
+              <p className="mt-4 text-lg text-muted-foreground">
+                For larger rubble removal jobs in Johannesburg, we use professional equipment to handle high volumes quickly and safely. If rubble, soil, or construction waste is too much for manual loading, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time.
+              </p>
+              <div className="mt-6">
+                <h3 className="font-semibold text-lg mb-3">This service is ideal for:</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Large construction sites needing regular clearing.</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Full <Link href="/site-cleaning" className="text-primary hover:underline">site clearance</Link> projects after demolition.</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Heavy soil, rock, or mixed rubble removal.</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Major renovation and <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> clean-ups.</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Commercial and industrial property waste management.</span></li>
+                </ul>
+              </div>
+              <p className="mt-6 text-muted-foreground">
+                Using the right equipment allows us to complete jobs faster, keep sites safe, and handle even the most demanding rubble removal projects across Johannesburg, including <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link>, and <Link href="/rubble-removal-midrand" className="text-primary hover:underline">Midrand</Link>.
+              </p>
+            </div>
+            <div>
+              {bobcatImage && <div className="aspect-video relative"><Image src={bobcatImage.imageUrl} alt="Bobcat machine clearing heavy rubble at a Johannesburg site" data-ai-hint="bobcat clearing rubble" fill className="rounded-lg object-cover shadow-lg" /></div>}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Same-Day Rubble Removal Section */}
       <section id="same-day-rubble-removal" className="py-12 md:py-20 bg-background">
           <div className="container mx-auto px-4 md:px-6 text-center">
@@ -198,7 +230,7 @@ export default function RubbleRemovalJohannesburgPage() {
           <div className="container mx-auto px-4 md:px-6">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                    <div>
-                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a rubble removal project" data-ai-hint="rubble removal team" width={600} height={500} className="rounded-lg shadow-lg" />}
+                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a rubble removal project" data-ai-hint="rubble removal team" fill className="rounded-lg object-cover shadow-lg" />}
                     </div>
                   <div>
                       <h2 className="text-3xl md:text-4xl font-bold">Why Choose Apex Demolitions?</h2>
