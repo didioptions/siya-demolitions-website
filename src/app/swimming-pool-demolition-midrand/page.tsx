@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, ShieldCheck, ArrowRight, Star, MessageSquare } from "lucide-react";
@@ -32,11 +33,11 @@ const localBusinessSchema = {
 };
 
 const faqs = [
-    { question: "How do you handle pool demolition in Midrand's secure estates like Waterfall and Kyalami?", answer: "We specialize in working within Midrand's premier secure estates. Our teams are professional, discreet, and fully compliant with all HOA rules regarding noise, work hours, and site access. We coordinate directly with estate management to ensure a smooth and disruption-free process, protecting the high standards of your community." },
-    { question: "Do you offer ongoing pool removal for large housing developments in Midrand?", answer: "Yes, we are a key partner for property developers in the fast-growing Midrand area. We provide scalable, scheduled pool removal services for large residential developments, ensuring sites are prepared efficiently and on schedule. Our capacity allows us to manage multiple removals as your project progresses." },
-    { question: "How quickly can you schedule a pool removal in a suburb like Carlswald or Vorna Valley?", answer: "We pride ourselves on our rapid response time in Midrand. For standard residential pools, we can typically provide a free on-site assessment within 24-48 hours and schedule the demolition shortly thereafter to fit your timeline. For urgent requests, we always do our best to accommodate." },
-    { question: "Is your team insured for work in high-value Midrand estates?", answer: "Absolutely. We carry comprehensive public liability insurance that is suited for work on high-value residential and commercial properties, giving you complete peace of mind. We can provide all necessary documentation for your records or for estate management approval." },
-    { question: "Can you remove a pool to make way for a new home extension?", answer: "Yes. This is a primary reason for pool removals in Midrand. When we perform a full demolition and use engineered backfilling techniques with proper compaction, the land is stabilized and made safe for building a home extension, cottage, or other structure. We can provide a compaction certificate if required for your building plans." }
+    { question: "How do you handle pool demolition in Midrand's secure estates like Waterfall and Kyalami?", answer: "We specialize in working within Midrand's premier secure estates. Our teams are professional, discreet, and fully compliant with all HOA rules regarding noise, work hours, and site access. We coordinate directly with estate management to ensure a smooth and disruption-free process, protecting the high standards of your community. Our experience means we understand the nuances of working in these controlled environments, from vehicle access to site cleanliness." },
+    { question: "Do you offer ongoing pool removal for large housing developments in Midrand?", answer: "Yes, we are a key partner for property developers in the fast-growing Midrand area. We provide scalable, scheduled pool removal services for large residential developments, ensuring sites are prepared efficiently and on schedule. Our capacity allows us to manage multiple removals as your project progresses, making us a reliable contractor for large-scale site clearing and preparation." },
+    { question: "How quickly can you schedule a pool removal in a suburb like Carlswald or Vorna Valley?", answer: "We pride ourselves on our rapid response time in Midrand. For standard residential pools, we can typically provide a free on-site assessment within 24-48 hours and schedule the demolition shortly thereafter to fit your timeline. For urgent requests, such as preparing a site for an imminent sale or construction start, we always do our best to accommodate and provide same-day or next-day service where possible." },
+    { question: "Is your team insured for work in high-value Midrand estates?", answer: "Absolutely. We carry comprehensive public liability insurance that is suited for work on high-value residential and commercial properties, giving you complete peace of mind. We can provide all necessary documentation for your records or for estate management approval, ensuring a transparent and professional engagement from the very beginning. Your property is fully protected with us." },
+    { question: "Can you remove a pool to make way for a new home extension?", answer: "Yes. This is a primary reason for pool removals in Midrand. When we perform a full demolition and use engineered backfilling techniques with proper compaction, the land is stabilized and made safe for building a home extension, cottage, or other structure. We can provide a compaction certificate if required for your building plans, which is often a necessity for projects in areas like Waterfall and Kyalami where engineering standards are paramount." }
 ];
 
 const faqSchema = {
@@ -96,7 +97,7 @@ export default function DemolitionMidrandPage() {
         </section>
 
         <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Pool Removal in Midrand?</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Pool Demolition in Midrand?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Estate Specialists</h3><p className="text-sm text-muted-foreground">Unmatched experience complying with the high standards of Midrand's secure estates like Waterfall and Kyalami.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Developer's Partner</h3><p className="text-sm text-muted-foreground">We provide reliable, scalable services to keep large residential and commercial developments on schedule.</p></div></div>
@@ -204,7 +205,7 @@ export default function DemolitionMidrandPage() {
 
         <section className="mb-16 text-center">
             <h2 className="text-3xl font-bold mb-8">Areas We Cover in and Around Midrand</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide expert pool demolition services across all of Midrand's suburbs and estates, including:</p>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">We provide expert pool demolition services across all of Midrand's suburbs and estates. Our local teams have extensive experience working in key areas like Halfway House, Noordwyk, Vorna Valley, and Blue Hills. Whether you are in a bustling commercial node or a quiet residential street, we have the local knowledge to provide a fast, professional, and safe pool removal service.</p>
             <div className="flex flex-wrap justify-center gap-4">
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Waterfall City</span>
                 <span className="bg-card border rounded-full px-4 py-2 text-sm font-medium">Kyalami</span>
