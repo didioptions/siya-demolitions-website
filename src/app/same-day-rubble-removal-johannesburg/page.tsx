@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Clock, Truck, ShieldCheck, Leaf, BrickWall, Home, MessageSquare, Quote, Star } from "lucide-react";
+import { Check, Phone, Mail, Clock, Truck, ShieldCheck, Leaf, BrickWall, Home, MessageSquare, Quote, Star, Waves, Building, Trash2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -90,10 +90,11 @@ export default function SameDayRubbleRemovalPage() {
         <section className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us for Same-Day Service?</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">When you need rubble gone today, you need a team you can trust to be fast, professional, and reliable. That's our guarantee.</p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Rapid Dispatch</h3><p className="text-sm text-muted-foreground">With teams positioned across Johannesburg, we dispatch the closest crew to your site for the fastest possible response time.</p></div></div>
-                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Professional Crews</h3><p className="text-sm text-muted-foreground">Our uniformed teams are experienced, efficient, and trained to work safely and cleanly, respecting your property.</p></div></div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Rapid Dispatch</h3><p className="text-sm text-muted-foreground">With local teams across Johannesburg, we dispatch the closest crew for the fastest possible response.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Professional Crews</h3><p className="text-sm text-muted-foreground">Our experienced teams work safely and cleanly, respecting your property and timeline.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Licensed & Insured</h3><p className="text-sm text-muted-foreground">We are fully licensed waste carriers, guaranteeing legal disposal and giving you complete peace of mind.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">All Job Sizes</h3><p className="text-sm text-muted-foreground">From a few bags to large-scale clearances with Bobcats and TLBs, we have the right equipment for your job.</p></div></div>
             </div>
         </section>
 
@@ -110,16 +111,21 @@ export default function SameDayRubbleRemovalPage() {
             </div>
         </section>
 
-        <section id="what-we-remove" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">What We Can Remove Today</h2>
-            <div className="max-w-4xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><BrickWall className="h-6 w-6 text-accent" />Builders Rubble</CardTitle></CardHeader></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><Leaf className="h-6 w-6 text-accent" />Garden Refuse</CardTitle></CardHeader></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><Home className="h-6 w-6 text-accent" />Renovation Waste</CardTitle></CardHeader></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><Check className="h-6 w-6 text-accent" />Mixed Debris</CardTitle></CardHeader></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><Check className="h-6 w-6 text-accent" />Soil and Sand</CardTitle></CardHeader></Card>
-                <Card><CardHeader><CardTitle className="flex items-center gap-2"><Check className="h-6 w-6 text-accent" />General Junk</CardTitle></CardHeader></Card>
-            </div>
+        <section id="what-we-remove" className="py-12 md:py-20 bg-card">
+          <div className="container mx-auto px-4 md:px-6">
+               <div className="text-center mb-12">
+                  <h2 className="text-3xl md:text-4xl font-bold">What We Remove: A Complete Junk Removal Service</h2>
+                  <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">Our teams are equipped to handle a wide variety of waste materials from any residential, commercial, or construction site in Johannesburg.</p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><BrickWall /> Builders Rubble</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete removal of bricks, concrete, sand, soil, and other heavy materials from building sites.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Home /> Renovation Waste</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We clear all debris from home renovations, including tiles, drywall, wood, and old fittings.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Leaf /> Garden Refuse</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our garden refuse removal service handles branches, leaves, soil, and grass cuttings.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 /> Household Junk</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We offer a full junk removal service for clearing old furniture, appliances, and general clutter.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Waves /> Pool Demolition Debris</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We clear all concrete, rebar, and pipes after a <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">swimming pool demolition</Link>.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Building /> Commercial Waste</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reliable waste management for offices, retail stores, and commercial properties after a strip-out or remodel.</p></CardContent></Card>
+              </div>
+          </div>
         </section>
 
         <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
@@ -129,19 +135,19 @@ export default function SameDayRubbleRemovalPage() {
                     <Card>
                         <CardHeader><CardTitle>Urgent Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">Sandton</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A contractor in a Bryanston estate needed immediate removal of renovation debris to allow for flooring installation the next day. Our team was on-site within 3 hours of the call and cleared two truckloads of tiles and bricks, leaving the site ready for the next trade.</p>
+                            <p className="text-sm"><strong>Situation:</strong> A contractor in a Bryanston estate needed immediate removal of renovation debris to allow for flooring installation the next day. <br/><strong>Response Time:</strong> On-site within 3 hours. <br/><strong>Result:</strong> Two truckloads of tiles and bricks were cleared, leaving the site ready for the next trade.</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader><CardTitle>Pre-Weekend Garden Cleanup</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A homeowner in Linden called us on a Friday morning with large piles of garden refuse before a weekend event. We dispatched a team that afternoon and cleared all branches and leaves, transforming their garden in time for their guests.</p>
+                            <p className="text-sm"><strong>Situation:</strong> A homeowner in Linden called on a Friday morning with large piles of garden refuse before a weekend event. <br/><strong>Response Time:</strong> Arrived same afternoon. <br/><strong>Result:</strong> All branches and leaves were cleared, transforming their garden in time for guests.</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader><CardTitle>Construction Site Hazard Removal</CardTitle><p className="text-sm text-muted-foreground">Midrand</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A site manager for a new development in Midrand required urgent clearing of illegally dumped waste that was posing a safety hazard. We responded immediately, clearing the waste and ensuring the site was secure and compliant by the end of the day.</p>
+                            <p className="text-sm"><strong>Situation:</strong> A site manager for a new development required urgent clearing of illegally dumped waste that was posing a safety hazard. <br/><strong>Response Time:</strong> Responded immediately. <br/><strong>Result:</strong> The waste was cleared, and the site was secured and compliant by the end of the day.</p>
                         </CardContent>
                     </Card>
                 </div>
@@ -155,7 +161,7 @@ export default function SameDayRubbleRemovalPage() {
                 </div>
                 <div>
                     <h3 className="text-2xl font-bold">Equipment for Large & Urgent Jobs</h3>
-                    <p className="text-muted-foreground mt-2">For larger rubble removal jobs in Johannesburg, we use professional equipment to handle high volumes quickly and safely. If rubble, soil, or construction waste is too much for manual loading, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time. This is ideal for large construction sites, full <Link href="/site-cleaning" className="text-primary hover:underline">site clearance</Link> projects, and heavy debris from a <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">pool demolition</Link>.</p>
+                    <p className="text-muted-foreground mt-2">For larger rubble removal jobs in Johannesburg, we use professional equipment to handle high volumes quickly and safely. If rubble, soil, or construction waste is too much for manual loading, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time. This is ideal for large construction sites, full <Link href="/site-cleaning" className="text-primary hover:underline">site clearance</Link> projects after a <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, and heavy debris from a <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">pool demolition</Link>.</p>
                 </div>
             </div>
         </section>
