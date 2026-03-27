@@ -10,11 +10,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const faqs = [
     {
         question: "What is construction site cleaning?",
-        answer: "Construction site cleaning, often called a 'builders clean', is a heavy-duty cleaning service for after a build, renovation, or demolition. Unlike regular cleaning, it focuses on removing construction debris like wood offcuts, plaster dust, rubble, and packaging. The goal is to transform a hazardous worksite into a safe, clean, and presentable space, ready for the next phase of work or for the final client handover. It's a crucial step that requires specialized knowledge of construction waste and safety protocols."
+        answer: "Construction site cleaning, often called a 'builders clean', is a heavy-duty cleaning service for after a build, renovation, or demolition. Unlike regular cleaning, it focuses on removing construction debris like wood offcuts, plaster dust, rubble, and packaging. The goal is to transform a hazardous worksite into a safe, clean, and presentable space, ready for the next phase of work or for the final client handover. It's a job for construction site cleaning specialists, not a general cleaning service."
     },
     {
         question: "When is professional site cleaning needed?",
-        answer: "Professional site cleaning is essential at several key stages of a project. It's often required during construction to maintain a safe working environment for all trades. The most common need is for a 'post-construction clean' after all building work is complete to prepare the property for its occupants. It is also a critical final step after any demolition project to ensure all hazardous materials and debris are completely removed, leaving the site safe and ready for new development."
+        answer: "Professional site cleaning is essential at several key stages of a project. It's often required during construction to maintain a safe working environment for all trades. The most common need is for a 'post-construction clean' after all building work is complete to prepare the property for its occupants. It is also a critical final step after any demolition project to ensure all hazardous materials and debris are completely removed."
     },
     {
         question: "How long does a builders clean take?",
@@ -23,10 +23,6 @@ const faqs = [
     {
         question: "What is included in a post-construction clean?",
         answer: "Our post-construction cleaning service is a comprehensive, top-to-bottom process. It includes the removal of all building debris and rubble from the site. We then conduct a deep clean to remove fine construction dust from all surfaces, including walls, floors, windows (and window sills), cabinets, and fixtures. We ensure the property is not just visually clean but free of the dust and grime that can linger after construction, making it truly move-in ready."
-    },
-    {
-        question: "Is rubble removal included in your site cleaning service?",
-        answer: "Yes, absolutely. Our site cleaning service is comprehensive and includes the removal of all debris and rubble. We are a licensed rubble removal company, ensuring all waste is loaded, transported, and disposed of legally and responsibly. You do not need to hire a separate contractor."
     }
 ];
 
@@ -43,7 +39,7 @@ export default function SiteCleaningJohannesburgPage() {
                     <Sparkles /> Your Construction & Post-Build Cleaning Experts
                 </p>
                 <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                    After the builders, renovators, or demolition crews have left, your site is often a chaotic mix of rubble, dust, and debris. As Johannesburg's leading site cleaning contractors, Apex Demolitions specializes in heavy-duty cleanups for construction, renovation, and demolition projects. We transform hazardous worksites into pristine, safe environments, ready for handover or the next phase of work.
+                    After the builders, renovators, or demolition crews have left, your site is often a chaotic mix of rubble, dust, and debris. This isn't a job for a regular cleaning service; it's a job for construction site cleaning specialists. As Johannesburg's leading site cleaning contractors, Apex Demolitions specializes in heavy-duty cleanups for construction, renovation, and demolition projects. We transform hazardous worksites into pristine, safe environments, ready for handover or the next phase of work.
                 </p>
                  <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" asChild>
@@ -79,15 +75,17 @@ export default function SiteCleaningJohannesburgPage() {
                     </div>
                 </div>
             </section>
-            
-            <section id="areas-we-serve" className="mb-16">
-                <h2 className="text-3xl font-bold text-center mb-8">Serving All Key Johannesburg Areas</h2>
-                <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                    Our site cleaning crews are active across the greater Johannesburg area, providing reliable service to key commercial and residential hubs. We offer expert construction cleaning in Sandton's luxury estates, ongoing site maintenance for new developments in Midrand, and fast post-renovation cleanups in Randburg and Roodepoort.
-                </p>
+
+             <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
+                <div className="container mx-auto px-4 md:px-6">
+                    <h2 className="text-3xl font-bold text-center mb-8">Serving All Key Johannesburg Areas</h2>
+                    <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                        Our site cleaning crews are active across the greater Johannesburg area, providing reliable service to key commercial and residential hubs. We offer expert construction cleaning in Sandton's luxury estates, ongoing site maintenance for new developments in Midrand, and fast post-renovation cleanups in Randburg and Roodepoort.
+                    </p>
+                </div>
             </section>
-            
-            <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+
+             <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
                 <div className="container mx-auto px-4 md:px-6">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
