@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -26,7 +27,7 @@ const mainNavLinks = [
 const serviceNavLinks = [
   { href: "/demolition-johannesburg", label: "Demolition" },
   { href: "/rubble-removal-johannesburg", label: "Rubble Removal" },
-  { href: "/site-cleaning", label: "Site Cleaning" },
+  { href: "/site-cleaning-johannesburg", label: "Site Cleaning" },
   { href: "/tree-felling-johannesburg", label: "Tree Felling" },
   { href: "/swimming-pool-demolition-johannesburg", label: "Swimming Pool Demolition" },
   { href: "/plant-hire-johannesburg", label: "Plant Hire" },

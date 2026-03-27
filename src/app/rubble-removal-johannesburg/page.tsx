@@ -189,7 +189,7 @@ export default function RubbleRemovalJohannesburgPage() {
                 <h3 className="font-semibold text-lg mb-3">This service is ideal for:</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Large construction sites needing regular clearing.</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Full <Link href="/site-cleaning" className="text-primary hover:underline">site clearance</Link> projects after demolition.</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Full <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site clearance</Link> projects after demolition.</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Heavy soil, rock, or mixed rubble removal.</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Major renovation and <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> clean-ups.</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Commercial and industrial property waste management.</span></li>

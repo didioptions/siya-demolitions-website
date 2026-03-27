@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote, ShieldCheck, Star, MessageSquare } from "lucide-react";
@@ -129,7 +130,7 @@ export default function RubbleRemovalRandburgPage() {
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Areas We Serve in and Around Randburg</h2>
             <p className="mt-2 text-muted-foreground max-w-3xl mx-auto">
-                Our service covers the entire Randburg municipality and its surrounding suburbs. As the premier rubble removal contractors in Randburg, our local teams have deep experience in areas like **Northcliff**, with its challenging slopes, the leafy suburbs of **Linden** and **Blairgowrie** with their renovation projects, and the commercial and residential hub of **Ferndale**. We provide fast, reliable service to these communities and beyond, solidifying our reputation as the go-to solution for any rubble removal or <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link> needs.
+                Our service covers the entire Randburg municipality and its surrounding suburbs. As the premier rubble removal contractors in Randburg, our local teams have deep experience in areas like **Northcliff**, with its challenging slopes, the leafy suburbs of **Linden** and **Blairgowrie** with their renovation projects, and the commercial and residential hub of **Ferndale**. We provide fast, reliable service to these communities and beyond, solidifying our reputation as the go-to solution for any rubble removal or <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> needs.
             </p>
         </section>
 

@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -63,8 +64,8 @@ const nextConfig: NextConfig = {
         permanent: true,
        },
        {
-        source: '/site-cleaning-johannesburg',
-        destination: '/site-cleaning',
+        source: '/site-cleaning',
+        destination: '/site-cleaning-johannesburg',
         permanent: true,
        },
        {

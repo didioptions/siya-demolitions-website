@@ -152,7 +152,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                         {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a pool demolition project" data-ai-hint="demolition team planning" width={600} height={500} className="rounded-lg shadow-lg" />}
                     </div>
                   <div>
-                      <h2 className="text-3xl md:text-4xl font-bold">Why Johannesburg Trusts Apex Demolitions</h2>
+                      <h2 className="text-3xl md:text-4xl font-bold">Why Johannesburg Trusts Apex Demolitions?</h2>
                       <p className="mt-4 text-lg text-muted-foreground">
                           We are more than just contractors; we are your partners in transforming your property safely and professionally. Here’s why Johannesburg’s top builders and homeowners choose us for pool demolition.
                       </p>
@@ -160,7 +160,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed and carry comprehensive public liability insurance. This protects your property and gives you total peace of mind throughout the project.</p></div></div>
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our teams have the expertise to navigate any challenge, from tight access in Randburg to luxury estates in Sandton.</p></div></div>
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We know your time is valuable. We pride ourselves on providing prompt quotes and completing most residential pool removals within 2-4 days, keeping your project on schedule.</p></div></div>
-                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning" className="text-primary hover:underline">site cleaning</Link>, saving you the hassle of managing multiple contractors.</p></div></div>
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>, saving you the hassle of managing multiple contractors.</p></div></div>
                       </div>
                   </div>
               </div>
@@ -203,7 +203,7 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                         <li><span className="font-semibold text-foreground">Draining & Disconnection:</span> The pool is completely drained, and all electrical and plumbing lines are safely disconnected and capped by qualified personnel.</li>
                         <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Using specialized equipment, our expert team carefully breaks up the pool shell and any surrounding paving, ensuring no damage to your home or garden.</li>
                         <li><span className="font-semibold text-foreground">Rubble Removal:</span> All demolition debris is loaded and transported from your property to a licensed, eco-friendly disposal facility. This is a core part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal services</Link>.</li>
-                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the pool cavity with soil or rubble and compact it in engineered layers to ensure ground stability and prevent future sinking, leaving the area perfectly prepped.</li>
+                        <li><span className="font-semibold text-foreground">Backfilling & Compaction:</span> We fill the cavity with soil or rubble and compact it in engineered layers to ensure ground stability and prevent future sinking, leaving the area perfectly prepped.</li>
                     </ol>
                 </div>
                 <div>
