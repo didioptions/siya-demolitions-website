@@ -23,6 +23,10 @@ const faqs = [
     {
         question: "What is included in a post-construction clean?",
         answer: "Our post-construction cleaning service is a comprehensive, top-to-bottom process. It includes the removal of all building debris and rubble from the site. We then conduct a deep clean to remove fine construction dust from all surfaces, including walls, floors, windows (and window sills), cabinets, and fixtures. We ensure the property is not just visually clean but free of the dust and grime that can linger after construction, making it truly move-in ready."
+    },
+    {
+        question: "Is rubble removal included in your site cleaning service?",
+        answer: "Yes, absolutely. Our site cleaning service is comprehensive and includes the removal of all debris and rubble. We are a licensed rubble removal company, ensuring all waste is loaded, transported, and disposed of legally and responsibly. You do not need to hire a separate contractor."
     }
 ];
 
@@ -39,7 +43,7 @@ export default function SiteCleaningJohannesburgPage() {
                     <Sparkles /> Your Construction & Post-Build Cleaning Experts
                 </p>
                 <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                    After the construction, renovation, or demolition dust has settled, you need a professional team to handle the cleanup. Apex Demolitions provides expert construction site cleaning in Johannesburg. We transform messy, hazardous worksites into clean, safe, and ready-to-use spaces with our fast, reliable, and insured builders cleaning services.
+                    After the builders, renovators, or demolition crews have left, your site is often a chaotic mix of rubble, dust, and debris. As Johannesburg's leading site cleaning contractors, Apex Demolitions specializes in heavy-duty cleanups for construction, renovation, and demolition projects. We transform hazardous worksites into pristine, safe environments, ready for handover or the next phase of work.
                 </p>
                  <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" asChild>
@@ -50,17 +54,17 @@ export default function SiteCleaningJohannesburgPage() {
                     </Button>
                 </div>
             </section>
-            
+
             <section id="services" className="mb-16">
                  <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Our Comprehensive Site Cleaning Services</h2>
-                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We offer a complete range of cleaning and clearing solutions tailored to any project in Johannesburg. No job is too big or too small.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Specialised Site Cleaning Services</h2>
+                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We are not a general cleaning company. We provide heavy-duty cleaning and clearing solutions for the construction and demolition industries.</p>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Building /> Construction Site Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Ongoing cleanup during a building project to maintain safety and productivity.</p></CardContent></Card>
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Home /> Post-Construction Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A deep, final clean for new builds or renovations before client handover.</p></CardContent></Card>
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Factory /> Demolition Site Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Complete clearing of all debris after a full or partial <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><ShieldCheck /> Builders Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The final, meticulous clean that makes a property sparkle and ready for occupancy.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><ShieldCheck /> Builders Clean</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The final, meticulous clean that makes a property sparkle and ready for occupancy.</p></CardContent></Card>
                 </div>
             </section>
 
@@ -68,25 +72,19 @@ export default function SiteCleaningJohannesburgPage() {
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <h2 className="text-3xl font-bold">Heavy-Duty Site Clearance Capability</h2>
-                        <p className="mt-4 text-muted-foreground">Our site cleaning service isn't just about sweeping up dust. As a full-service demolition company, we have the heavy machinery required for complete site clearance. This includes our comprehensive <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> service to haul away tons of debris, and our <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcat and TLB hire</Link> to handle bulk earth and rubble loading efficiently. This makes us your true one-stop solution for transforming a messy site into a blank canvas.</p>
+                        <p className="mt-4 text-muted-foreground">Our site cleaning service isn't just about sweeping up dust. As a full-service demolition company, we have the heavy machinery required for complete site clearance. This includes our comprehensive <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> service to haul away tons of debris, and our Bobcat and TLB hire to handle bulk earth and rubble loading efficiently. This makes us your true one-stop solution for transforming a messy site into a blank canvas.</p>
                     </div>
                     <div>
                         {bobcatImage && <div className="aspect-video relative"><Image src={bobcatImage.imageUrl} alt="Bobcat clearing heavy debris from a construction site" data-ai-hint="bobcat clearing rubble" fill className="rounded-lg object-cover" /></div>}
                     </div>
                 </div>
             </section>
-
-             <section id="areas-we-serve" className="mb-16">
+            
+            <section id="areas-we-serve" className="mb-16">
                 <h2 className="text-3xl font-bold text-center mb-8">Serving All Key Johannesburg Areas</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
                     Our site cleaning crews are active across the greater Johannesburg area, providing reliable service to key commercial and residential hubs. We offer expert construction cleaning in Sandton's luxury estates, ongoing site maintenance for new developments in Midrand, and fast post-renovation cleanups in Randburg and Roodepoort.
                 </p>
-                 <div className="flex flex-wrap justify-center gap-4">
-                    <Button variant="outline" asChild><Link href="/demolition-sandton">Sandton</Link></Button>
-                    <Button variant="outline" asChild><Link href="/demolition-randburg">Randburg</Link></Button>
-                    <Button variant="outline" asChild><Link href="/demolition-midrand">Midrand</Link></Button>
-                    <Button variant="outline" asChild><Link href="/demolition-roodepoort">Roodepoort</Link></Button>
-                </div>
             </section>
             
             <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
