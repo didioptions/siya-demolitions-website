@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Clock, Truck, ShieldCheck, Leaf, BrickWall, Home, MessageSquare, Quote, Star, Waves, Building, Trash2 } from "lucide-react";
+import { Check, Phone, Mail, Clock, Truck, ShieldCheck, Leaf, BrickWall, Home, MessageSquare, Quote, Star, Waves, Building, Trash2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -22,7 +22,6 @@ const serviceSchema = {
     "description": "Fast, affordable, and licensed same-day rubble removal in Johannesburg for builders waste, garden refuse, and construction debris. Servicing Sandton, Randburg, Midrand, and Roodepoort.",
     "url": "https://apex-demolitions-website.vercel.app/same-day-rubble-removal-johannesburg"
 };
-
 
 const faqs = [
     {
@@ -98,7 +97,6 @@ export default function SameDayRubbleRemovalPage() {
             </div>
         </section>
 
-
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Why Fast Rubble Removal Matters on Johannesburg Sites</h2>
              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
@@ -120,15 +118,15 @@ export default function SameDayRubbleRemovalPage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   <Card><CardHeader><CardTitle className="flex items-center gap-3"><BrickWall /> Builders Rubble</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete removal of bricks, concrete, sand, soil, and other heavy materials from building sites.</p></CardContent></Card>
                   <Card><CardHeader><CardTitle className="flex items-center gap-3"><Home /> Renovation Waste</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We clear all debris from home renovations, including tiles, drywall, wood, and old fittings.</p></CardContent></Card>
-                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Leaf /> Garden Refuse</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our garden refuse removal service handles branches, leaves, soil, and grass cuttings.</p></CardContent></Card>
-                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 /> Household Junk</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We offer a full junk removal service for clearing old furniture, appliances, and general clutter.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Leaf /> Garden Refuse</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our **garden refuse removal Johannesburg** service handles branches, leaves, soil, and grass cuttings.</p></CardContent></Card>
+                  <Card><CardHeader><CardTitle className="flex items-center gap-3"><Trash2 /> Household Junk</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We offer a full **junk removal Johannesburg** service for clearing old furniture, appliances, and general clutter.</p></CardContent></Card>
                   <Card><CardHeader><CardTitle className="flex items-center gap-3"><Waves /> Pool Demolition Debris</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We clear all concrete, rebar, and pipes after a <Link href="/swimming-pool-demolition-johannesburg" className="text-primary hover:underline">swimming pool demolition</Link>.</p></CardContent></Card>
                   <Card><CardHeader><CardTitle className="flex items-center gap-3"><Building /> Commercial Waste</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reliable waste management for offices, retail stores, and commercial properties after a strip-out or remodel.</p></CardContent></Card>
               </div>
           </div>
         </section>
-
-        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+        
+        <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Same-Day Jobs in Johannesburg</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
