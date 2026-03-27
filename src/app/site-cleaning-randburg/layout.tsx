@@ -1,8 +1,9 @@
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Site Cleaning Randburg | Professional Site Cleaning Contractors',
-  description: 'Licensed site cleaning contractors in Randburg, Johannesburg. Post-construction, commercial, and residential site cleaning and debris removal.',
+  title: 'Site Cleaning Randburg | Construction & Post-Build Cleaning Experts',
+  description: 'Professional site cleaning in Randburg for renovations, construction sites, and demolition cleanup. Fast, reliable service in Northcliff, Linden, and Ferndale.',
 };
 
 export default function SiteCleaningRandburgLayout({
