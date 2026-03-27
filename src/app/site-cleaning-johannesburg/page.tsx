@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Sparkles, ShieldCheck, Home, Building, Factory, Trash2, ArrowRight, Quote, MessageSquare } from "lucide-react";
@@ -26,7 +27,7 @@ const faqs = [
 ];
 
 export default function SiteCleaningJohannesburgPage() {
-    const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const heroImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
     const bobcatImage = PlaceHolderImages.find(p => p.id === 'plantHireBobcat');
 
   return (
@@ -50,18 +51,7 @@ export default function SiteCleaningJohannesburgPage() {
                 </div>
             </section>
 
-             <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
-                <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Site Cleaning in Johannesburg?</h2>
-                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We are more than just cleaners; we are your partners in project success. We deliver a fast, safe, and professional service that Johannesburg's top builders and homeowners trust.</p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Team</h3><p className="text-sm text-muted-foreground">Our crews are trained specifically for construction sites, not domestic cleaning.</p></div></div>
-                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Fast Turnaround</h3><p className="text-sm text-muted-foreground">We work efficiently to meet your deadlines, with <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline">same-day service</Link> often available.</p></div></div>
-                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Equipment & Manpower</h3><p className="text-sm text-muted-foreground">We have the teams and machinery to handle projects of any scale.</p></div></div>
-                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Reliable & Professional</h3><p className="text-sm text-muted-foreground">We are a licensed, insured, and trusted partner to builders across Johannesburg.</p></div></div>
-                </div>
-            </section>
-
-            <section id="services" className="mb-16">
+             <section id="services" className="mb-16">
                  <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Our Comprehensive Site Cleaning Services</h2>
                     <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We offer a complete range of cleaning and clearing solutions tailored to any project in Johannesburg. No job is too big or too small.</p>
@@ -86,7 +76,43 @@ export default function SiteCleaningJohannesburgPage() {
                 </div>
             </section>
 
-             <section id="recent-projects" className="py-12 md:py-20">
+             <section id="areas-we-serve" className="mb-16">
+                <h2 className="text-3xl font-bold text-center mb-8">Serving All Key Johannesburg Areas</h2>
+                <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                    Our site cleaning crews are active across the greater Johannesburg area, providing reliable service to key commercial and residential hubs. We offer expert construction cleaning in Sandton's luxury estates, ongoing site maintenance for new developments in Midrand, and fast post-renovation cleanups in Randburg and Roodepoort.
+                </p>
+                 <div className="flex flex-wrap justify-center gap-4">
+                    <Button variant="outline" asChild><Link href="/site-cleaning-sandton">Sandton</Link></Button>
+                    <Button variant="outline" asChild><Link href="/site-cleaning-randburg">Randburg</Link></Button>
+                    <Button variant="outline" asChild><Link href="/site-cleaning-midrand">Midrand</Link></Button>
+                    <Button variant="outline" asChild><Link href="/site-cleaning-roodepoort">Roodepoort</Link></Button>
+                </div>
+            </section>
+
+            <section id="why-choose-us" className="mb-16 bg-card p-8 rounded-lg">
+                <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Site Cleaning in Johannesburg?</h2>
+                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We are more than just cleaners; we are your partners in project success. We deliver a fast, safe, and professional service that Johannesburg's top builders and homeowners trust.</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Experienced Team</h3><p className="text-sm text-muted-foreground">Our crews are trained specifically for construction sites, not domestic cleaning.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Fast Turnaround</h3><p className="text-sm text-muted-foreground">We work efficiently to meet your deadlines, with <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline">same-day service</Link> often available.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Equipment & Manpower</h3><p className="text-sm text-muted-foreground">We have the teams and machinery to handle projects of any scale.</p></div></div>
+                    <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Reliable & Professional</h3><p className="text-sm text-muted-foreground">We are a licensed, insured, and trusted partner to builders across Johannesburg.</p></div></div>
+                </div>
+            </section>
+             
+            <section id="pricing" className="py-12 md:py-16 bg-background rounded-lg mb-16">
+                <div className="container mx-auto px-4 md:px-6">
+                    <h2 className="text-3xl font-bold text-center mb-8">Site Cleaning Prices in Johannesburg</h2>
+                    <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We provide transparent pricing based on the scope of your project. Below are some common scenarios to give you an idea of our competitive rates.</p>
+                    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        <Card><CardHeader><CardTitle>Small Site Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-DIY project or small trade job.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,500</p><p className="text-sm mt-2 text-muted-foreground">Includes labour for clearing and one load of rubble removal.</p></CardContent></Card>
+                        <Card><CardHeader><CardTitle>Full Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-renovation deep clean for a standard house.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R4,500</p><p className="text-sm mt-2 text-muted-foreground">Includes a small team, deep cleaning of surfaces, and multiple loads of rubble.</p></CardContent></Card>
+                        <Card><CardHeader><CardTitle>Large Construction Site</CardTitle><p className="text-muted-foreground text-sm">e.g., Ongoing or final clean for a new build.</p></CardHeader><CardContent><p className="text-3xl font-bold">By Quote</p><p className="text-sm mt-2 text-muted-foreground">Requires an on-site assessment to quote accurately based on size and scope.</p></CardContent></Card>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="recent-projects" className="py-12 md:py-20">
                 <div className="container mx-auto px-4 md:px-6">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -103,31 +129,6 @@ export default function SiteCleaningJohannesburgPage() {
                             <CardContent><p className="text-sm">After a major home renovation in Randburg, our team performed a deep clean, removing all builders rubble, dust, and packaging. The house was left spotless and ready for the family to move back in, all completed in a single day.</p></CardContent>
                         </Card>
                     </div>
-                </div>
-            </section>
-
-             <section id="pricing" className="py-12 md:py-16 bg-card rounded-lg mb-16">
-                <div className="container mx-auto px-4 md:px-6">
-                    <h2 className="text-3xl font-bold text-center mb-8">Site Cleaning Prices in Johannesburg</h2>
-                    <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We provide transparent pricing based on the scope of your project. Below are some common scenarios to give you an idea of our competitive rates.</p>
-                    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                        <Card><CardHeader><CardTitle>Small Site Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-DIY project or small trade job.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,500</p><p className="text-sm mt-2 text-muted-foreground">Includes labour for clearing and one load of rubble removal.</p></CardContent></Card>
-                        <Card><CardHeader><CardTitle>Full Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-renovation deep clean for a standard house.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R4,500</p><p className="text-sm mt-2 text-muted-foreground">Includes a small team, deep cleaning of surfaces, and multiple loads of rubble.</p></CardContent></Card>
-                        <Card><CardHeader><CardTitle>Large Construction Site</CardTitle><p className="text-muted-foreground text-sm">e.g., Ongoing or final clean for a new build.</p></CardHeader><CardContent><p className="text-3xl font-bold">By Quote</p><p className="text-sm mt-2 text-muted-foreground">Requires an on-site assessment to quote accurately based on size and scope.</p></CardContent></Card>
-                    </div>
-                </div>
-            </section>
-
-            <section id="areas-we-serve" className="mb-16">
-                <h2 className="text-3xl font-bold text-center mb-8">Serving All Key Johannesburg Areas</h2>
-                <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                    Our site cleaning crews are active across the greater Johannesburg area, providing reliable service to key commercial and residential hubs. We offer expert construction cleaning in Sandton's luxury estates, ongoing site maintenance for new developments in Midrand, and fast post-renovation cleanups in Randburg and Roodepoort.
-                </p>
-                 <div className="flex flex-wrap justify-center gap-4">
-                    <Button variant="outline" asChild><Link href="/site-cleaning-sandton">Sandton</Link></Button>
-                    <Button variant="outline" asChild><Link href="/site-cleaning-randburg">Randburg</Link></Button>
-                    <Button variant="outline" asChild><Link href="/site-cleaning-midrand">Midrand</Link></Button>
-                    <Button variant="outline" asChild><Link href="/site-cleaning-roodepoort">Roodepoort</Link></Button>
                 </div>
             </section>
 
