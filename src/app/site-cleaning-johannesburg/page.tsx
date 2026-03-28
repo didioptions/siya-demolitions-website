@@ -196,6 +196,33 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
         
+        <section id="safety-compliance" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Safety & Compliance: Our Commitment</h2>
+                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">
+                        We don't just clean; we ensure your site is safe and fully compliant with all regulations.
+                    </p>
+                </div>
+                <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div className="flex items-start gap-4">
+                        <ShieldCheck className="text-accent h-8 w-8 mt-1 flex-shrink-0" />
+                        <div>
+                            <h3 className="font-semibold text-xl">On-Site Safety Standards</h3>
+                            <p className="text-muted-foreground">All site cleaning and clearance work is carried out in line with the highest safety standards. We ensure that all debris, dust, and construction waste is removed safely, reducing slip-and-trip hazards and preparing the property for safe occupation by your family or the next team of contractors.</p>
+                        </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                        <Trash2 className="text-accent h-8 w-8 mt-1 flex-shrink-0" />
+                        <div>
+                            <h3 className="font-semibold text-xl">Responsible Waste Disposal</h3>
+                            <p className="text-muted-foreground">Our team follows proper handling procedures for all construction materials. As licensed waste carriers, we guarantee that all rubble and waste is transported to approved, registered facilities for responsible disposal, protecting you from fines and ensuring environmental compliance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
