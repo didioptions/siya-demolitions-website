@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/demolition-services-johannesburg',
     '/rubble-removal-johannesburg',
     '/rubble-removal-services-johannesburg',
-    '/site-cleaning',
     '/site-cleaning-johannesburg',
     '/site-cleaning-services-johannesburg',
     '/tree-felling-johannesburg',

@@ -1,8 +1,9 @@
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Site Cleaning Midrand | Professional Site Cleaning Contractors',
-  description: 'Licensed site cleaning contractors in Midrand, Johannesburg. Post-construction, commercial, and residential site cleaning for estates like Waterfall.',
+  title: 'Site Cleaning Midrand | Construction & Post-Build Cleaning Experts',
+  description: 'Professional site cleaning in Midrand for construction sites, developments, and post-build cleanup. Fast, reliable service in Noordwyk, Carlswald, and Halfway House.',
 };
 
 export default function SiteCleaningMidrandLayout({
