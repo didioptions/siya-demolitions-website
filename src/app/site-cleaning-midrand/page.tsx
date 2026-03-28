@@ -36,14 +36,14 @@ export default function SiteCleaningMidrandPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Site Cleaning Midrand</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                In the heart of Gauteng's development corridor, Apex Demolitions provides expert site cleaning for Midrand's dynamic mix of residential estates, commercial hubs, and large-scale construction projects. A clean site is a productive and safe site—trust us to be your professional cleanup partner.
+                In the heart of Gauteng's development corridor, Apex Demolitions provides expert site cleaning services for Midrand's dynamic mix of residential estates, commercial hubs, and large-scale construction projects. A clean site is a productive and safe site—trust us to be your professional cleanup partner.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Project Quote</a>
+                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Site Cleanup Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Get a Detailed Quote</Link>
+                    <Link href="/contact"><Quote className="mr-2"/>Book Your Site Cleanup</Link>
                 </Button>
             </div>
         </section>
@@ -129,7 +129,7 @@ export default function SiteCleaningMidrandPage() {
             {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine construction site after cleaning in Midrand" data-ai-hint="clean site midrand" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
                 <h2 className="text-3xl font-bold">Keep Your Midrand Project Clean & On Schedule</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a professional quote on site cleaning for your Midrand estate, development, or commercial property. We are ready to support your project.</p>
+                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free, and no-obligation quote on professional site cleaning anywhere in Midrand. Same-day service available in many areas!</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call for a Site Assessment</a></Button>
@@ -142,5 +142,3 @@ export default function SiteCleaningMidrandPage() {
     </div>
   );
 }
-
-    
