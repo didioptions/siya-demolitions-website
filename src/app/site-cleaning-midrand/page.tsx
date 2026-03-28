@@ -36,14 +36,14 @@ export default function SiteCleaningMidrandPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Site Cleaning Midrand</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                In the heart of Gauteng's development corridor, Apex Demolitions provides expert site cleaning for Midrand's large-scale residential estates, commercial hubs, and construction projects. A clean site is a productive and safe site—trust us to be your professional cleanup partner.
+                In the heart of Gauteng's development corridor, Apex Demolitions provides expert site cleaning for Midrand's dynamic mix of residential estates, commercial hubs, and large-scale construction projects. A clean site is a productive and safe site—trust us to be your professional cleanup partner.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Project Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Tender</Link>
+                    <Link href="/contact"><Quote className="mr-2"/>Get a Detailed Quote</Link>
                 </Button>
             </div>
         </section>
@@ -78,7 +78,7 @@ export default function SiteCleaningMidrandPage() {
         <section id="heavy-capability" className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold mb-4">Heavy Cleaning & Full Site Clearance</h2>
+                    <h2 className="text-3xl font-bold mb-4">Heavy Cleaning & Full Site Clearance Capability</h2>
                     <p className="text-muted-foreground mb-4">Our service goes far beyond brooms and bags. As a full-service demolition company, we integrate our <Link href="/rubble-removal-midrand" className="text-primary hover:underline">rubble removal Midrand</Link> division for a complete site clearance solution. For large volumes of construction debris, soil, or rubble, we deploy heavy machinery like Bobcats and TLBs to handle bulk loading efficiently. This makes us your ideal single-point-of-contact for keeping your entire development site clear and on schedule.</p>
                 </div>
                 <div>
@@ -96,9 +96,9 @@ export default function SiteCleaningMidrandPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Midrand</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card><CardHeader><CardTitle>Development Cleanup</CardTitle><p className="text-sm text-muted-foreground">Noordwyk</p></CardHeader><CardContent><p className="text-sm">**Result:** Managed weekly waste and debris clearing for a 50-unit housing development, ensuring site safety and cleanliness throughout the 12-month build.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Construction Site Cleaning</CardTitle><p className="text-sm text-muted-foreground">Carlswald</p></CardHeader><CardContent><p className="text-sm">**Result:** Performed the final builders clean for a new lifestyle shopping center, delivering a spotless environment ready for tenant shop-fitting ahead of schedule.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">Halfway House</p></CardHeader><CardContent><p className="text-sm">**Result:** Completed a rapid post-renovation cleanup for a commercial office space, allowing the new business to move in without any delays.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Development Cleanup</CardTitle><p className="text-sm text-muted-foreground">Noordwyk</p></CardHeader><CardContent><p className="text-sm">**Result:** The site remained safe and productive, preventing any delays and ensuring a professional appearance throughout the 12-month build.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Construction Site Cleaning</CardTitle><p className="text-sm text-muted-foreground">Carlswald</p></CardHeader><CardContent><p className="text-sm">**Result:** The new lifestyle shopping center was delivered in immaculate, handover-ready condition, allowing for on-time tenant occupation.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">Halfway House</p></CardHeader><CardContent><p className="text-sm">**Result:** The commercial office was made move-in ready within a single day, allowing the new business to begin operations without any project delays.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -107,9 +107,9 @@ export default function SiteCleaningMidrandPage() {
             <h2 className="text-3xl font-bold text-center mb-8">Pricing for Site Cleaning in Midrand</h2>
              <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We provide transparent quotes based on the scale of your project. Our pricing reflects the high standards and logistical needs of Midrand's developments.</p>
             <div className="grid md:grid-cols-3 gap-8">
-                <Card><CardHeader><CardTitle>Small Job</CardTitle><p className="text-sm text-muted-foreground">e.g., single unit cleanup</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,000</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">e.g., commercial office</p></CardHeader><CardContent><p className="text-3xl font-bold">from R5,000</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Development Site</CardTitle><p className="text-sm text-muted-foreground">e.g., ongoing cleaning contract</p></CardHeader><CardContent><p className="text-3xl font-bold">By Assessment</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Small Job</CardTitle><p className="text-sm text-muted-foreground">e.g., single unit cleanup</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,000</p><p className="text-xs text-muted-foreground mt-1">Includes basic debris removal and sweeping for a small area.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">e.g., commercial office</p></CardHeader><CardContent><p className="text-3xl font-bold">from R5,000</p><p className="text-xs text-muted-foreground mt-1">A deep clean including dust removal, surface wiping, and rubble clearing.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Development Site</CardTitle><p className="text-sm text-muted-foreground">e.g., ongoing cleaning contract</p></CardHeader><CardContent><p className="text-3xl font-bold">By Assessment</p><p className="text-xs text-muted-foreground mt-1">Custom quote based on size, frequency, and scope of work.</p></CardContent></Card>
             </div>
         </section>
         
@@ -128,8 +128,8 @@ export default function SiteCleaningMidrandPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
             {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine construction site after cleaning in Midrand" data-ai-hint="clean site midrand" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
-                <h2 className="text-3xl font-bold">Keep Your Midrand Project on Track</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">For professional, insured, and reliable site cleaning services in Midrand, contact the experts at Apex Demolitions. We are ready to support your project.</p>
+                <h2 className="text-3xl font-bold">Keep Your Midrand Project Clean & On Schedule</h2>
+                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a professional quote on site cleaning for your Midrand estate, development, or commercial property. We are ready to support your project.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call for a Site Assessment</a></Button>
@@ -142,3 +142,5 @@ export default function SiteCleaningMidrandPage() {
     </div>
   );
 }
+
+    
