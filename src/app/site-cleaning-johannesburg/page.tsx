@@ -172,21 +172,6 @@ export default function SiteCleaningJohannesburgPage() {
         </section>
 
         <section className="py-12 md:py-20 bg-card">
-             <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Our Simple 4-Step Site Cleaning Process</h2>
-                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We make professional site cleaning straightforward, transparent, and efficient from start to finish.</p>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <Card><CardHeader><CardTitle>1. Site Assessment & Quote</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We visit your Johannesburg site to assess the scope of work and provide a detailed, fixed-price quote with no hidden costs.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>2. Planning & Scheduling</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We create a strategic cleaning plan and schedule the work at a time that suits your project timeline, ensuring minimal disruption.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>3. Cleaning & Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Our professional team arrives on time to sort, clear, and clean the entire site, removing all specified debris and waste.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>4. Final Disposal & Inspection</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We transport all waste for legal, eco-friendly disposal and conduct a final walkthrough with you to ensure you are 100% satisfied.</p></CardContent></Card>
-                </div>
-            </div>
-        </section>
-
-        <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -208,7 +193,7 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
         
-        <section id="safety-compliance" className="py-12 md:py-20 bg-card">
+        <section id="safety-compliance" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Safety & Compliance: Our Commitment</h2>
@@ -235,7 +220,41 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
         
-        <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg mb-16">
+        <section id="specialized-areas" className="py-12 md:py-20 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Specialized Site Cleaning Across Key Johannesburg Hubs</h2>
+                    <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
+                        We provide professional site cleaning services across Johannesburg, with specialized teams and experience in the city's key residential and commercial nodes.
+                    </p>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-sandton" className="hover:text-primary">Sandton</Link></h3>
+                        <p className="text-muted-foreground text-sm">Elite post-construction cleaning for luxury homes, commercial properties, and high-end renovations, with expertise in secure estate protocols.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-randburg" className="hover:text-primary">Randburg</Link></h3>
+                        <p className="text-muted-foreground text-sm">Specializing in post-renovation cleanups for residential properties, handling everything from builders rubble to fine dust with care and efficiency.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-midrand" className="hover:text-primary">Midrand</Link></h3>
+                        <p className="text-muted-foreground text-sm">Scalable, ongoing site cleaning services for large new housing and commercial developments, keeping major projects on schedule.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-roodepoort" className="hover:text-primary">Roodepoort</Link></h3>
+                        <p className="text-muted-foreground text-sm">Reliable cleanup services for the West Rand’s diverse properties, including new builds and renovations on varied or sloped terrain.</p>
+                    </div>
+                </div>
+                <div className="text-center mt-12">
+                    <Button asChild>
+                        <Link href="/site-cleaning-services-johannesburg">View All Our Service Areas <ArrowRight className="ml-2" /></Link>
+                    </Button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -261,39 +280,7 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
 
-        <section id="areas-we-serve" className="py-12 md:py-20">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Cleaning Across Greater Johannesburg</h2>
-                    <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                        Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is. Our site clearance Johannesburg service is unparalleled, from the luxury estates of Sandton to the industrial hubs of the East Rand.
-                    </p>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-sandton" className="hover:text-primary">Sandton</Link></h3>
-                        <p className="text-muted-foreground text-sm">We provide elite post-construction cleaning for luxury homes and commercial properties, specializing in the high standards and strict rules of secure estates.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-randburg" className="hover:text-primary">Randburg</Link></h3>
-                        <p className="text-muted-foreground text-sm">Our teams are experts at handling post-renovation cleanups for the area's many residential projects, managing everything from rubble to fine dust.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-midrand" className="hover:text-primary">Midrand</Link></h3>
-                        <p className="text-muted-foreground text-sm">We offer scalable, ongoing site cleaning services for Midrand's large new housing and commercial developments, keeping major projects on schedule.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-roodepoort" className="hover:text-primary">Roodepoort</Link></h3>
-                        <p className="text-muted-foreground text-sm">We are equipped to handle site cleaning on the West Rand's varied terrain, providing a reliable service for both residential and commercial clients.</p>
-                    </div>
-                </div>
-                 <div className="text-center mt-12">
-                    <Button asChild><Link href="/site-cleaning-services-johannesburg">Explore All Our Service Areas <ArrowRight className="ml-2" /></Link></Button>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" className="py-12 md:py-20 bg-card">
+        <section id="faq" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
                 <div className="space-y-6">
@@ -326,4 +313,5 @@ export default function SiteCleaningJohannesburgPage() {
     </div>
   );
 }
+
 
