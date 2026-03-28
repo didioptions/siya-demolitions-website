@@ -12,7 +12,7 @@ const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Apex Demolitions",
-    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+    "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdion20Z0aW9uJTIwYnVpbGRpbmcm25fDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     "url": "https://apex-demolitions-website.vercel.app/site-cleaning-johannesburg",
     "telephone": "078 429 2760",
     "address": {
@@ -45,36 +45,24 @@ const serviceSchema = {
 
 const faqs = [
     {
-        question: "How much does site cleaning cost in Johannesburg?",
-        answer: "The cost of site cleaning in Johannesburg depends on the size of the site, the volume and type of debris (e.g., light building waste vs. heavy rubble), and the level of detail required. A small post-renovation cleanup will cost less than a full-scale construction site cleanup. We provide free, detailed, no-obligation quotes so you know the exact cost upfront."
+        question: "What is construction site cleaning?",
+        answer: "Construction site cleaning, or a 'builders clean,' is a heavy-duty service performed after construction or renovation. Unlike regular cleaning, it focuses on removing construction debris, fine dust, rubble, and packaging. The goal is to transform a hazardous worksite into a safe, clean space ready for the next phase of work or for client handover. This is a job for specialists, not domestic cleaners."
     },
     {
-        question: "How long does it take to clean a site?",
-        answer: "The timeframe varies. A standard residential post-renovation cleanup can often be done in a single day, and we frequently offer same-day service. Larger construction or industrial sites may require a phased approach over several days. We work efficiently to meet your project deadlines and provide a clear timeline with our quote."
+        question: "How long does it take to clean a site in Johannesburg?",
+        answer: "The timeframe varies significantly based on the project. A standard post-renovation cleanup for a residential home can often be done in a single day, and we frequently offer same-day service. However, a full builders clean for a new large-scale construction site or a post-demolition cleanup might take several days. We provide a clear, accurate timeline with every free on-site assessment."
     },
     {
         question: "Is rubble removal included in your site cleaning service?",
-        answer: "Yes, absolutely. Our site cleaning service is comprehensive and includes the removal of all debris and rubble. We are a licensed rubble removal company, ensuring all waste is loaded, transported, and disposed of legally and responsibly. You do not need to hire a separate contractor."
+        answer: "Yes, absolutely. Our site cleaning service is a comprehensive, all-in-one solution that includes the removal of all associated debris and rubble. As a licensed rubble removal company, we ensure all waste is loaded, transported, and disposed of legally and responsibly. This means you do not need to hire a separate contractor for rubble removal, saving you time and coordination hassles."
     },
     {
-        question: "What areas in Johannesburg do you cover?",
-        answer: "We cover all of Johannesburg and the greater Gauteng region. Our teams are strategically located to provide fast service to all suburbs, including Sandton, Randburg, Roodepoort, Midrand, Johannesburg South, Soweto, and the entire East Rand."
+        question: "What areas in Johannesburg do you cover for site cleaning?",
+        answer: "We proudly cover all of Johannesburg and the greater Gauteng region. Our teams are strategically located to provide fast and efficient service to all major suburbs. This includes the northern suburbs like Sandton and Randburg, the rapidly developing Midrand corridor, the West Rand including Roodepoort, Johannesburg South, Soweto, and the entire East Rand industrial basin."
     },
     {
         question: "What makes your service different from a regular cleaning company?",
-        answer: "We are construction industry specialists, not a domestic cleaning service. Our teams are equipped to handle heavy materials, construction dust, and potentially hazardous debris safely. We understand the workflow of a building site and provide a robust, heavy-duty service that a regular cleaning company is not equipped for."
-    },
-     {
-        question: "Are your site cleaning teams licensed and insured?",
-        answer: "Yes, 100%. Apex Demolitions is a fully licensed and insured company. We carry comprehensive public liability insurance, and our teams are trained to adhere to the highest safety standards, giving you complete peace of mind."
-    },
-    {
-        question: "Do I need to be on-site during the cleaning?",
-        answer: "It is not essential for you to be present for the entire duration, but we recommend being there for the initial walkthrough to clarify your exact requirements and for the final inspection to ensure you are 100% satisfied with the work."
-    },
-    {
-        question: "What safety measures do you take on-site?",
-        answer: "Safety is our top priority. All our staff wear appropriate Personal Protective Equipment (PPE). We secure the work area to prevent unauthorized access, manage dust to ensure air quality, and handle all waste materials according to safety regulations to prevent accidents or injuries."
+        answer: "We are construction and demolition industry specialists, not a domestic cleaning service. Our teams are equipped and trained to handle heavy materials, fine construction dust, and potentially hazardous debris safely and efficiently. We understand the workflow and safety requirements of a building site and provide a robust, heavy-duty service that a regular cleaning company is not equipped to handle, ensuring your site is truly ready for its next phase."
     }
 ];
 
@@ -159,7 +147,31 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-background">
+        <section id="equipment-capability" className="py-12 md:py-20 bg-background">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                {bobcatImage && <div className="aspect-video relative"><Image src={bobcatImage.imageUrl} alt="Bobcat machine clearing heavy debris for site cleaning" data-ai-hint="bobcat clearing" fill className="rounded-lg object-cover shadow-lg" /></div>}
+              </div>
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold">Equipment & Site Clearance Capability</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  We are fully equipped to handle both small and large-scale site cleaning projects. Depending on the size and complexity of the job, we use the appropriate machinery to ensure efficient and fast results. This capability distinguishes us from standard cleaning companies and allows us to provide a true end-to-end site clearance solution.
+                </p>
+                <div className="mt-6">
+                  <h3 className="font-semibold text-lg mb-3">Our equipment includes:</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>**Bobcats:** For loading rubble and debris in tight or residential spaces.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>**TLB Machines:** For larger site clearance jobs requiring bulk earthmoving and loading.</span></li>
+                    <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>**Tipper Trucks:** For the efficient removal of bulk waste from any site.</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 md:py-20 bg-card">
              <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Our Simple 4-Step Site Cleaning Process</h2>
@@ -174,7 +186,7 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-card">
+        <section className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -196,7 +208,7 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
         
-        <section id="safety-compliance" className="py-12 md:py-20 bg-background">
+        <section id="safety-compliance" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Safety & Compliance: Our Commitment</h2>
@@ -228,19 +240,19 @@ export default function SiteCleaningJohannesburgPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>Sandton Construction Cleanup</CardTitle></CardHeader>
+                        <CardHeader><CardTitle>Sandton (Construction Cleanup)</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm">Performed a final, meticulous builders clean on a new luxury home in a secure Sandton estate before handover. **Result:** An immaculate, handover-ready property that met the developer's high standards and delighted the new owners.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Midrand Development Site</CardTitle></CardHeader>
+                        <CardHeader><CardTitle>Midrand (Development Site)</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm">Provided ongoing weekly site cleaning and rubble removal for a large housing development. **Result:** Kept the site safe, productive, and accessible for all trades, preventing costly delays caused by waste buildup over a 12-month period.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Randburg Renovation Cleanup</CardTitle></CardHeader>
+                        <CardHeader><CardTitle>Randburg (Renovation Cleanup)</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm">Conducted a deep clean after a major home renovation in Randburg. **Result:** All construction dust and debris were removed within a single day, allowing the family to move back into their spotless new space immediately.</p>
                         </CardContent>
@@ -314,3 +326,4 @@ export default function SiteCleaningJohannesburgPage() {
     </div>
   );
 }
+
