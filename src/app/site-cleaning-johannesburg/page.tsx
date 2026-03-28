@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Sparkles, ShieldCheck, Home, Building, Factory, Trash2, ArrowRight, Quote, MessageSquare } from "lucide-react";
@@ -195,16 +196,60 @@ export default function SiteCleaningJohannesburgPage() {
             </div>
         </section>
         
-        <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
+        <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Johannesburg</h2>
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <Card>
+                        <CardHeader><CardTitle>Sandton Construction Cleanup</CardTitle></CardHeader>
+                        <CardContent>
+                            <p className="text-sm">Performed a final, meticulous builders clean on a new luxury home in a secure Sandton estate before handover. **Result:** An immaculate, handover-ready property that met the developer's high standards and delighted the new owners.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Midrand Development Site</CardTitle></CardHeader>
+                        <CardContent>
+                            <p className="text-sm">Provided ongoing weekly site cleaning and rubble removal for a large housing development. **Result:** Kept the site safe, productive, and accessible for all trades, preventing costly delays caused by waste buildup over a 12-month period.</p>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader><CardTitle>Randburg Renovation Cleanup</CardTitle></CardHeader>
+                        <CardContent>
+                            <p className="text-sm">Conducted a deep clean after a major home renovation in Randburg. **Result:** All construction dust and debris were removed within a single day, allowing the family to move back into their spotless new space immediately.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas-we-serve" className="py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">Comprehensive Site Cleaning Across Greater Johannesburg</h2>
                     <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                        Apex Demolitions offers a fully comprehensive site cleaning and rubble removal service to every corner of the Johannesburg metropolitan area. Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is. From the estates of Sandton to the industrial hubs of the East Rand, our site clearance Johannesburg service is unparalleled.
+                        Our strategically located teams ensure a fast, reliable, and professional response, no matter where your project is. Our site clearance Johannesburg service is unparalleled, from the luxury estates of Sandton to the industrial hubs of the East Rand.
                     </p>
                 </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div>
+                        <h3 className="font-bold text-xl mb-2">Sandton</h3>
+                        <p className="text-muted-foreground text-sm">We provide elite post-construction cleaning for luxury homes and commercial properties, specializing in the high standards and strict rules of secure estates.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2">Randburg</h3>
+                        <p className="text-muted-foreground text-sm">Our teams are experts at handling post-renovation cleanups for the area's many residential projects, managing everything from rubble to fine dust.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2">Midrand</h3>
+                        <p className="text-muted-foreground text-sm">We offer scalable, ongoing site cleaning services for Midrand's large new housing and commercial developments, keeping major projects on schedule.</p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl mb-2">Roodepoort</h3>
+                        <p className="text-muted-foreground text-sm">We are equipped to handle site cleaning on the West Rand's varied terrain, providing a reliable service for both residential and commercial clients.</p>
+                    </div>
+                </div>
                  <div className="text-center mt-12">
-                    <p className="text-lg font-semibold">Don't see your suburb? We likely cover it. Call us today on 078 429 2760 or WhatsApp us for a free quote – we cover all Johannesburg suburbs and surrounding areas!</p>
+                    <Button asChild><Link href="/site-cleaning-services-johannesburg">Explore All Our Service Areas <ArrowRight className="ml-2" /></Link></Button>
                 </div>
             </div>
         </section>
@@ -212,31 +257,29 @@ export default function SiteCleaningJohannesburgPage() {
         <section id="faq" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-                <Accordion type="single" collapsible className="w-full">
+                <div className="space-y-6">
                   {faqs.map((faq, index) => (
-                    <AccordionItem key={index} value={`item-${index}`}>
-                      <AccordionTrigger className="text-lg font-semibold">{faq.question}</AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground text-base">
-                        {faq.answer}
-                      </AccordionContent>
-                    </AccordionItem>
+                    <div key={index}>
+                      <h3 className="text-lg font-semibold">{faq.question}</h3>
+                      <p className="text-muted-foreground mt-2">{faq.answer}</p>
+                    </div>
                   ))}
-                </Accordion>
+                </div>
             </div>
         </section>
         
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
              <div className="container mx-auto px-4 md:px-6 text-center">
-                <h2 className="text-3xl md:text-4xl font-bold">Ready for a Spotless Site?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">Ready for a Spotless, Safe, and Productive Site?</h2>
                 <p className="mt-4 max-w-2xl mx-auto text-primary-foreground/80">
-                    Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free, and no-obligation quote on professional site cleaning anywhere in Johannesburg. Same-day service available in many areas!
+                    Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free, no-obligation quote on professional site cleaning anywhere in Johannesburg. Our teams are on standby for same-day service in many areas!
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
-                        <a href="tel:0784292760"><Phone /> Call for an Instant Quote</a>
+                        <a href="tel:0784292760"><Phone /> Call for a Quote for Site Cleaning</a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                         <Link href="/contact"><Mail /> Request a Detailed Quote</Link>
+                         <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for Fast Site Cleaning</a>
                     </Button>
                 </div>
              </div>
@@ -244,3 +287,4 @@ export default function SiteCleaningJohannesburgPage() {
     </div>
   );
 }
+
