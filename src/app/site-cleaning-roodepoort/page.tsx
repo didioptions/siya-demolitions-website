@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Sparkles, ShieldCheck, Home, Building, Factory, Trash2, ArrowRight, Quote, MessageSquare } from "lucide-react";
@@ -17,7 +18,7 @@ const faqs = [
         answer: "The timeframe depends on the project size. A standard post-renovation cleanup for a few rooms in a Roodepoort home can often be completed in a single day. A full builders clean for a newly constructed house typically takes 1-2 days. We provide a clear, accurate timeline after a free on-site assessment to meet your project deadlines."
     },
     {
-        question: "What is included in your post-construction cleaning service?",
+        question: "What is included in your post-construction clean?",
         answer: "Our service is a comprehensive, top-to-bottom process. It includes the removal of all building debris and rubble. We then conduct a deep clean to remove fine construction dust from all surfaces, including walls, floors, windows, cabinets, and fixtures, making the property truly move-in ready."
     },
     {
@@ -58,7 +59,7 @@ export default function SiteCleaningRoodepoortPage() {
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Your Local Experts for Construction & Renovation Cleaning in Roodepoort</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                    After a renovation or building project in Roodepoort, the final hurdle is often the biggest: the mess. Apex Demolitions provides a specialized <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning Johannesburg</Link> service tailored for the homes, contractors, and small developments of the West Rand. We handle the heavy-duty work of clearing construction dust, debris, and rubble, turning your worksite from a hazardous mess into a clean, safe, and professional-looking space.
+                    After a renovation or building project in Roodepoort, the final hurdle is often the biggest: the mess. Apex Demolitions provides a specialized <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> service tailored for the homes, contractors, and small developments of the West Rand. We handle the heavy-duty work of clearing construction dust, debris, and rubble, turning your worksite from a hazardous mess into a clean, safe, and professional-looking space.
                 </p>
             </div>
         </section>
@@ -119,7 +120,7 @@ export default function SiteCleaningRoodepoortPage() {
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">Serving All of Roodepoort and the West Rand</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    Our teams provide fast, reliable, and professional site cleaning across all of Roodepoort's key suburbs. We have extensive experience performing post-renovation cleanups in **Florida** and **Weltevreden Park**, and are the trusted contractors for builders cleans on new developments in **Ruimsig**. We also specialize in cleaning sites on the challenging slopes of **Constantia Kloof** and throughout **Horizon View**.
+                    Our teams provide fast, reliable, and professional site cleaning across all of Roodepoort's key suburbs. We have extensive experience performing post-renovation cleanups in **Florida** and **Weltevreden Park**, and are the trusted contractors for builders cleans on new developments in **Ruimsig**. We also specialize in cleaning sites on the challenging slopes of **Constantia Kloof** and throughout **Horizon View**. Our service area seamlessly connects with neighbouring <Link href="/site-cleaning-randburg" className="text-primary hover:underline">Randburg</Link> for similar residential and commercial projects.
                 </p>
             </div>
         </section>
@@ -128,9 +129,9 @@ export default function SiteCleaningRoodepoortPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Roodepoort</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card><CardHeader><CardTitle>Florida Renovation Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** After a full home renovation, our team performed a deep clean and removed all builders rubble. The house was left spotless and safe for the family to move back in ahead of schedule.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Ruimsig Post-Build Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Performed a meticulous final builders clean on a newly built luxury home in a Ruimsig estate, ensuring every surface was dust-free and perfect for client handover.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Weltevreden Park Site Maintenance</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Provided weekly site cleaning for a contractor building a new townhouse complex, keeping the site productive and compliant with all safety standards from start to finish.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Florida (Renovation Cleanup)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** After a full home renovation, our team performed a deep clean and removed all builders rubble. The house was left spotless and safe for the family to move back in ahead of schedule.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Ruimsig (Post-Build Cleaning)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Performed a meticulous final builders clean on a newly built luxury home in a Ruimsig estate, ensuring every surface was dust-free and perfect for client handover.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Weltevreden Park (Construction Site Maintenance)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Provided weekly site cleaning and rubble removal for a contractor building a new townhouse complex, keeping the site productive and compliant with all safety standards from start to finish.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -164,7 +165,7 @@ export default function SiteCleaningRoodepoortPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Ready for a Spotless Site in Roodepoort?</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free quote on professional site cleaning in Roodepoort. Ask about our <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day rubble removal</Link> for urgent jobs.
+            Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free quote on professional site cleaning in Roodepoort. Ask about our <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day service</Link> for urgent jobs.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
@@ -181,3 +182,4 @@ export default function SiteCleaningRoodepoortPage() {
     </div>
   );
 }
+

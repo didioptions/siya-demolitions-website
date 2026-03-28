@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Sparkles, ShieldCheck, Home, Building, Factory, Trash2, ArrowRight, Quote, MessageSquare } from "lucide-react";
@@ -58,7 +59,7 @@ export default function SiteCleaningRandburgPage() {
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Your Local Experts for Renovation & Construction Cleaning in Randburg</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                    After your renovation or building project in Randburg, the final hurdle is often the biggest: the mess. Apex Demolitions provides a specialized **site cleaning Johannesburg** service tailored for the homes and contractors of Randburg. We handle the heavy-duty work of clearing construction dust, debris, and rubble, turning your worksite from a hazardous mess into a clean, safe, and professional-looking space. This isn't general housekeeping; this is professional **post-construction cleaning Johannesburg** can rely on.
+                    After your renovation or building project in Randburg, the final hurdle is often the biggest: the mess. Apex Demolitions provides a specialized <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> service tailored for the homes and contractors of Randburg. We handle the heavy-duty work of clearing construction dust, debris, and rubble, turning your worksite from a hazardous mess into a clean, safe, and professional-looking space. This isn't general housekeeping; this is professional post-construction cleaning Johannesburg can rely on.
                 </p>
             </div>
         </section>
@@ -72,7 +73,7 @@ export default function SiteCleaningRandburgPage() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Building /> Construction Site Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Ongoing cleanup during a build to keep your site safe and productive.</p></CardContent></Card>
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Home /> Post-Construction Cleaning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A deep clean after building work is complete, removing all dust and debris.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Factory /> Demolition Site Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Complete clearing of all materials after a full or partial <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle className="flex items-center gap-2"><Factory /> Demolition Site Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Comprehensive clearing of all materials after a full or partial <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>.</p></CardContent></Card>
                     <Card><CardHeader><CardTitle className="flex items-center gap-2"><Sparkles /> Builders Clean</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The final, meticulous clean that makes a property ready for handover.</p></CardContent></Card>
                 </div>
             </div>
@@ -85,7 +86,7 @@ export default function SiteCleaningRandburgPage() {
                 <div className="grid md:grid-cols-3 gap-8">
                     <Card>
                         <CardHeader><CardTitle>Renovation & Demolition Debris</CardTitle></CardHeader>
-                        <CardContent><p className="text-muted-foreground">With many homes in areas like Linden and Blairgowrie being renovated, managing builders rubble is a constant need. We offer a fast, all-in-one service that includes a full cleanup and rubble removal, perfect for keeping your project on track.</p></CardContent>
+                        <CardContent><p className="text-muted-foreground">With many homes in areas like Linden and Blairgowrie being renovated, managing builders rubble is a constant need. We offer a fast, all-in-one service that includes a full cleanup and rubble removal, perfect for keeping your renovation on track.</p></CardContent>
                     </Card>
                     <Card>
                         <CardHeader><CardTitle>Older Homes & Established Gardens</CardTitle></CardHeader>
@@ -119,7 +120,7 @@ export default function SiteCleaningRandburgPage() {
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold">Serving All Corners of Randburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    Our teams provide fast, reliable, and professional site cleaning across all of Randburg's key suburbs. We have extensive experience performing post-renovation cleanups on the sloped properties of **Northcliff** and are the go-to contractors for builders cleans in the leafy suburbs of **Linden** and **Blairgowrie**. We also service the bustling commercial and residential hubs of **Ferndale** and **Cresta**.
+                    Our teams provide fast, reliable, and professional site cleaning across all of Randburg's key suburbs. We have extensive experience performing post-renovation cleanups on the sloped properties of **Northcliff** and are the go-to contractors for builders cleans in the leafy suburbs of **Linden** and **Blairgowrie**. We also service the bustling commercial and residential hubs of **Ferndale** and **Cresta**. Our service area seamlessly connects with neighbouring hubs like <Link href="/site-cleaning-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/site-cleaning-midrand" className="text-primary hover:underline">Midrand</Link>, and <Link href="/site-cleaning-roodepoort" className="text-primary hover:underline">Roodepoort</Link>.
                 </p>
             </div>
         </section>
@@ -128,9 +129,9 @@ export default function SiteCleaningRandburgPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Randburg</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card><CardHeader><CardTitle>Post-Renovation Cleanup</CardTitle><p className="text-sm text-muted-foreground">Northcliff</p></CardHeader><CardContent><p className="text-sm">**Result:** After a major home renovation on a sloped property, our team conducted a full builders clean and removed all rubble, leaving the site spotless and safe for the family to move back in.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Final Builders Clean</CardTitle><p className="text-sm text-muted-foreground">Linden</p></CardHeader><CardContent><p className="text-sm">**Result:** Performed a meticulous final clean on a newly built home, ensuring every surface was free of dust and debris before the new homeowners took occupation.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Construction Site Maintenance</CardTitle><p className="text-sm text-muted-foreground">Ferndale</p></CardHeader><CardContent><p className="text-sm">**Result:** Provided weekly site cleaning and rubble removal for a contractor building a new townhouse complex, keeping the site productive and compliant with safety standards.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Northcliff (Renovation Cleanup)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** After a major home renovation on a sloped property, our team conducted a full builders clean and removed all rubble, leaving the site spotless and safe for the family to move back in.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Linden (Final Builders Clean)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Performed a meticulous final clean on a newly built home, ensuring every surface was free of dust and debris before the new homeowners took occupation.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Ferndale (Construction Site Maintenance)</CardTitle></CardHeader><CardContent><p className="text-sm">**Result:** Provided weekly site cleaning and rubble removal for a contractor building a new townhouse complex, keeping the site productive and compliant with safety standards.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -141,7 +142,7 @@ export default function SiteCleaningRandburgPage() {
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We provide transparent pricing based on the scope of your project, factoring in property size, access, and the complexity of the cleanup.</p>
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     <Card><CardHeader><CardTitle>Small Job</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-DIY project or small trade cleanup.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,500</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Full Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Deep clean for a standard house renovation.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R4,000</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Full Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Deep clean after a standard house renovation.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R4,000</p></CardContent></Card>
                     <Card><CardHeader><CardTitle>Larger Construction Site</CardTitle><p className="text-muted-foreground text-sm">e.g., New build or ongoing site maintenance.</p></CardHeader><CardContent><p className="text-3xl font-bold">By Assessment</p></CardContent></Card>
                 </div>
             </div>
@@ -164,7 +165,7 @@ export default function SiteCleaningRandburgPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Ready for a Spotless Site in Randburg?</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free quote on professional site cleaning in Randburg. Ask about our <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day rubble removal</Link> service for urgent jobs.
+            Don't let post-construction mess delay your project. Contact Apex Demolitions for a fast, free quote on professional site cleaning in Randburg. Ask about our <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day service</Link> for urgent jobs.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
@@ -181,3 +182,4 @@ export default function SiteCleaningRandburgPage() {
     </div>
   );
 }
+

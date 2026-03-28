@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Sparkles, ShieldCheck, Home, Building, Factory, Trash2, ArrowRight, Quote, MessageSquare } from "lucide-react";
@@ -10,7 +11,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const faqs = [
     {
         question: "What is construction site cleaning?",
-        answer: "Construction site cleaning, or a 'builders clean', is a specialized service for after a build or renovation. It focuses on removing heavy debris, fine construction dust, and rubble. The goal is to transform a hazardous worksite into a safe, spotless environment ready for client handover, a task regular domestic cleaners are not equipped for."
+        answer: "Construction site cleaning, or a 'builders clean,' is a specialized service for after a build or renovation. It focuses on removing heavy debris, fine construction dust, and rubble. The goal is to transform a hazardous worksite into a safe, spotless environment ready for client handover, a task regular domestic cleaners are not equipped for."
     },
     {
         question: "How long does a post-construction clean take in Sandton?",
@@ -57,7 +58,7 @@ export default function SiteCleaningSandtonPage() {
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Premium Site Cleaning for Sandton's Premier Properties</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                    In Sandton's high-value property market, the final finish is everything. After construction or renovation, a site is left with more than just dust—it’s a landscape of debris, offcuts, and packaging that undermines the quality of your project. Apex Demolitions provides a premier site cleaning service specifically for Sandton's luxury homes, secure estates, and commercial properties. We deliver a post-construction and post-demolition cleanup that goes beyond domestic cleaning, ensuring your property is not just clean, but immaculately presented and safe.
+                    In Sandton's high-value property market, the final finish is everything. After construction or renovation, a site is left with more than just dust—it’s a landscape of debris, offcuts, and packaging that undermines the quality of your project. Apex Demolitions provides a premier <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> service specifically for Sandton's luxury homes, secure estates, and commercial properties. We deliver a post-construction and post-demolition cleanup that goes beyond domestic cleaning, ensuring your property is not just clean, but immaculately presented and safe.
                 </p>
             </div>
         </section>
@@ -105,16 +106,16 @@ export default function SiteCleaningSandtonPage() {
 
         <section className="py-12 md:py-20 bg-background">
             <h2 className="text-3xl font-bold text-center mb-8">Areas We Serve In and Around Sandton</h2>
-             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite site cleaning services across all of Sandton's prestigious suburbs. Our teams regularly work on properties in **Bryanston**, **Rivonia**, and **Fourways**, and are the local experts for post-construction cleaning in **Morningside** and **Lonehill**.</p>
+             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite site cleaning services across all of Sandton's prestigious suburbs. Our teams regularly work on properties in and around Sandton City, and are the local experts for post-construction cleaning in Morningside and Lonehill. Our expertise also extends to neighbouring business hubs like <Link href="/site-cleaning-randburg" className="text-primary hover:underline">Randburg</Link> and the fast-growing developments in <Link href="/site-cleaning-midrand" className="text-primary hover:underline">Midrand</Link>.</p>
         </section>
 
         <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Site Cleaning Projects in Sandton</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card><CardHeader><CardTitle>Bryanston Construction Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm">Performed a final builders clean on a new luxury home in a secure estate. **Result:** A spotless, dust-free property ready for immediate client handover, meeting the contractor's high standards.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Rivonia Renovation Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm">Conducted a deep clean after a major kitchen and living area renovation. **Result:** All fine dust and construction debris were removed, allowing the homeowners to enjoy their new space without the hassle of post-build mess.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Fourways Development Site</CardTitle></CardHeader><CardContent><p className="text-sm">Provided ongoing site cleaning for a new commercial development. **Result:** The site was kept safe and productive, with waste managed efficiently throughout the project, preventing delays.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Bryanston (Construction Cleanup)</CardTitle></CardHeader><CardContent><p className="text-sm">Performed a final builders clean on a new luxury home in a secure estate. **Result:** A spotless, dust-free property ready for immediate client handover, meeting the contractor's high standards.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Rivonia (Renovation Cleanup)</CardTitle></CardHeader><CardContent><p className="text-sm">Conducted a deep clean after a major kitchen and living area renovation. **Result:** All fine dust and construction debris were removed, allowing the homeowners to enjoy their new space without the hassle of post-build mess.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Fourways (Development Site)</CardTitle></CardHeader><CardContent><p className="text-sm">Provided ongoing site cleaning for a new commercial development. **Result:** The site was kept safe and productive, with waste managed efficiently throughout the project, preventing delays.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -124,9 +125,9 @@ export default function SiteCleaningSandtonPage() {
                 <h2 className="text-3xl font-bold text-center mb-8">Site Cleaning Prices in Sandton</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We provide transparent pricing based on the scope of your project, factoring in site access, property type, and the complexity required for Sandton's high-end properties.</p>
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    <Card><CardHeader><CardTitle>Small Job</CardTitle><p className="text-muted-foreground text-sm">e.g., Post-trade cleanup.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,500</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., Full clean after a luxury home renovation.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R5,500</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Large Construction Site</CardTitle><p className="text-muted-foreground text-sm">e.g., New build or commercial site.</p></CardHeader><CardContent><p className="text-3xl font-bold">By Assessment</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Small Job</CardTitle><p className="text-muted-foreground text-sm">e.g., single unit cleanup</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,500</p><p className="text-xs text-muted-foreground mt-1">Includes basic debris removal and sweeping for a small area.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Renovation Cleanup</CardTitle><p className="text-muted-foreground text-sm">e.g., commercial office</p></CardHeader><CardContent><p className="text-3xl font-bold">from R5,500</p><p className="text-xs text-muted-foreground mt-1">A deep clean including dust removal, surface wiping, and rubble clearing.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Large Construction Site</CardTitle><p className="text-muted-foreground text-sm">e.g., new build or commercial site</p></CardHeader><CardContent><p className="text-3xl font-bold">By Assessment</p><p className="text-xs text-muted-foreground mt-1">Custom quote based on size, frequency, and scope of work.</p></CardContent></Card>
                 </div>
             </div>
         </section>
@@ -148,7 +149,7 @@ export default function SiteCleaningSandtonPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Ready for an Immaculate Site in Sandton?</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Contact Apex Demolitions today for a professional, no-obligation quote on your construction site cleaning needs in Sandton. We also provide full <Link href="/demolition-johannesburg" className="text-primary-foreground underline hover:text-secondary">demolition services</Link> and <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day rubble removal</Link> across Johannesburg.
+            Contact Apex Demolitions today for a professional, no-obligation quote on your construction site cleaning needs in Sandton. For urgent projects, we offer a <Link href="/same-day-rubble-removal-johannesburg" className="text-primary-foreground underline hover:text-secondary">same-day cleaning and rubble removal</Link> service.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
@@ -165,3 +166,4 @@ export default function SiteCleaningSandtonPage() {
     </div>
   );
 }
+

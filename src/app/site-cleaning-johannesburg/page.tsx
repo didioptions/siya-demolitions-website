@@ -315,7 +315,7 @@ export default function SiteCleaningJohannesburgPage() {
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
-                        <a href="tel:0784292760"><Phone /> Call for a Quote for Site Cleaning</a>
+                        <a href="tel:0784292760"><Phone /> Get a Quote for Site Cleaning</a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                          <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for Fast Site Cleaning</a>
