@@ -134,7 +134,7 @@ export default function SiteCleaningJohannesburgPage() {
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Turn Your Messy Worksite into a Clean, Safe, and Productive Space</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                    After the builders, renovators, or demolition crews have left, your site is often a chaotic mix of rubble, dust, offcuts, and packaging. This isn't just an eyesore—it's a safety hazard that halts progress. Professional site cleaning is the essential final step that transforms this mess into a pristine, hazard-free environment. As Johannesburg's leading site cleaning contractors, Apex Demolitions specializes in turning your worksite from chaos to completion, ensuring it's ready for inspection, handover, or the next phase of construction.
+                    After the builders, renovators, or demolition crews have left, your site is often a chaotic mix of rubble, dust, offcuts, and packaging. This isn't just an eyesore—it's a safety hazard that halts progress. Professional site cleaning is the essential final step that transforms this mess into a pristine, hazard-free environment. This isn't a job for a regular cleaning service; it's a job for construction site cleaning specialists. As Johannesburg's leading site cleaning contractors, Apex Demolitions specializes in turning your worksite from chaos to completion, ensuring it's ready for inspection, handover, or the next phase of construction.
                 </p>
             </div>
         </section>
@@ -232,19 +232,19 @@ export default function SiteCleaningJohannesburgPage() {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
-                        <h3 className="font-bold text-xl mb-2">Sandton</h3>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-sandton" className="hover:text-primary">Sandton</Link></h3>
                         <p className="text-muted-foreground text-sm">We provide elite post-construction cleaning for luxury homes and commercial properties, specializing in the high standards and strict rules of secure estates.</p>
                     </div>
                     <div>
-                        <h3 className="font-bold text-xl mb-2">Randburg</h3>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-randburg" className="hover:text-primary">Randburg</Link></h3>
                         <p className="text-muted-foreground text-sm">Our teams are experts at handling post-renovation cleanups for the area's many residential projects, managing everything from rubble to fine dust.</p>
                     </div>
                     <div>
-                        <h3 className="font-bold text-xl mb-2">Midrand</h3>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-midrand" className="hover:text-primary">Midrand</Link></h3>
                         <p className="text-muted-foreground text-sm">We offer scalable, ongoing site cleaning services for Midrand's large new housing and commercial developments, keeping major projects on schedule.</p>
                     </div>
                     <div>
-                        <h3 className="font-bold text-xl mb-2">Roodepoort</h3>
+                        <h3 className="font-bold text-xl mb-2"><Link href="/site-cleaning-roodepoort" className="hover:text-primary">Roodepoort</Link></h3>
                         <p className="text-muted-foreground text-sm">We are equipped to handle site cleaning on the West Rand's varied terrain, providing a reliable service for both residential and commercial clients.</p>
                     </div>
                 </div>
@@ -287,4 +287,3 @@ export default function SiteCleaningJohannesburgPage() {
     </div>
   );
 }
-
