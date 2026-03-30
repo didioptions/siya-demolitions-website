@@ -188,7 +188,7 @@ export default function DemolitionJohannesburgPage() {
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services We Offer</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    Our capabilities cover every kind of structural removal project in Johannesburg, from small residential jobs to major commercial and industrial sites.
+                    Our capabilities cover every kind of structural removal project in Johannesburg. We provide different types of demolition depending on the project, from full demolition where the entire structure is removed, to partial demolition for renovations where sections are removed without damaging surrounding areas. Each project is handled with careful planning and the right equipment.
                 </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -240,11 +240,18 @@ export default function DemolitionJohannesburgPage() {
                         <li><span className="font-semibold text-foreground">Council Approvals & Permits:</span> We professionally manage all permit applications with the City of Johannesburg to ensure full legal compliance.</li>
                         <li><span className="font-semibold text-foreground">Site Preparation & Safety:</span> Our team secures the site perimeter, implements safety measures, and manages the disconnection of all utilities.</li>
                         <li><span className="font-semibold text-foreground">Controlled Demolition:</span> Our licensed team performs a controlled demolition using modern equipment and techniques to dismantle the structure safely.</li>
-                        <li><span className="font-semibold text-foreground">Rubble Removal & Recycling:</span> We clear all debris and transport it to licensed facilities, prioritizing recycling wherever possible as part of our <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link> service.</li>
-                        <li><span className="font-semibold text-foreground">Final Site Cleanup:</span> The project is only complete when your site is left clean, level, and ready for your builders. This is part of our comprehensive <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning service</Link>.</li>
+                        <li><span className="font-semibold text-foreground"><Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">Rubble Removal & Recycling</Link>:</span> We clear all debris and transport it to licensed facilities, prioritizing recycling wherever possible as part of our rubble removal service.</li>
+                        <li><span className="font-semibold text-foreground"><Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">Final Site Cleanup</Link>:</span> The project is only complete when your site is left clean, level, and ready for your builders. This is part of our comprehensive site cleaning service.</li>
                     </ol>
                 </div>
             </div>
+        </section>
+        
+        <section className="mb-16">
+             <h2 className="text-3xl font-bold text-center mb-8">After the Demolition Process</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto">
+                Once demolition is complete, all rubble, concrete, and debris is removed from the site. The area is then levelled and prepared depending on the client’s needs, whether for new construction, landscaping, or paving. Our goal is to leave the site clean, safe, and ready for the next phase of your project.
+             </p>
         </section>
 
         <section id="demolition-cost" className="mb-16">
@@ -302,12 +309,19 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
+        <section className="mb-16">
+             <h2 className="text-3xl font-bold text-center mb-8">Demolition Equipment & Methods</h2>
+             <p className="text-center text-muted-foreground max-w-3xl mx-auto">
+                We use the appropriate equipment for each project to ensure efficient and safe demolition. This includes TLB machines, breakers, and trucks for rubble removal. Our approach ensures controlled demolition, minimal disruption, and safe handling of all materials.
+             </p>
+        </section>
+
         <section id="emergency-demolition" className="py-12 md:py-20 bg-destructive/10 text-destructive-foreground rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <AlertTriangle className="h-12 w-12 mx-auto text-destructive" />
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">Same-Day & Emergency Demolition Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks.
+                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
                 </p>
                 <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     <div className="flex gap-4">
@@ -414,7 +428,7 @@ export default function DemolitionJohannesburgPage() {
         <section id="safety-compliance" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
+                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public. All demolition work is carried out safely and in line with industry standards, ensuring proper handling of materials and responsible disposal of debris at approved sites.
             </p>
              <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-sm text-muted-foreground">We carry comprehensive public liability insurance, giving you complete peace of mind.</p></div></div>
