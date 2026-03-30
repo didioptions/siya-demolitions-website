@@ -86,13 +86,11 @@ export default function PlantHireJohannesburgPage() {
 
         <section id="services" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">Our Plant Hire Fleet for Johannesburg</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 <Card><CardHeader><CardTitle>TLB Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Versatile Tractor-Loader-Backhoes for trenching, digging, loading, and general earthworks.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Bobcat Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Compact and agile skid-steer loaders, perfect for tight spaces, site leveling, and debris loading.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Excavator Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Powerful excavators for bulk earthworks, foundation digging, and demolition projects.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Tipper Truck Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Reliable tipper trucks for efficient transport of soil, rubble, and construction materials.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Bulldozer & Grader Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">For large-scale land clearing, site leveling, and road preparation projects.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Roller Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Compaction equipment to ensure a stable and solid foundation for your construction.</p></CardContent></Card>
             </div>
         </section>
 
