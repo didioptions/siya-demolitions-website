@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare, Quote, AlertTriangle, ArrowRight } from "lucide-react";
+import { Check, Phone, Mail, Building, Trash2, Sparkles, Wrench, MapPin, ShieldCheck, FileText, Construction, Home, Factory, Layers, Hammer, Waves, Star, MessageSquare, Quote, AlertTriangle, ArrowRight, Clock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -321,7 +321,7 @@ export default function DemolitionJohannesburgPage() {
                 <AlertTriangle className="h-12 w-12 mx-auto text-destructive" />
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">Same-Day & Emergency Demolition Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
+                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Urgent and same-day demolition services are available in selected Johannesburg areas, depending on project size and access. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
                 </p>
                 <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     <div className="flex gap-4">
@@ -492,9 +492,9 @@ export default function DemolitionJohannesburgPage() {
 
         <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground text-center rounded-lg">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold">Need demolition services in Johannesburg?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">Start Your Demolition Project Today</h2>
                 <p className="mt-4 max-w-2xl mx-auto">
-                    Call now or WhatsApp us for a fast, free quote. Our team is ready to assist with safe and professional demolition anywhere in Gauteng.
+                    Call or WhatsApp now for a fast, professional demolition quote in Johannesburg. We handle everything from demolition to full site clearance. Fast response. Reliable service. Done right.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
