@@ -73,7 +73,7 @@ export default function PlantHireJohannesburgPage() {
                 <Tractor /> Your Partner for Reliable Construction Machinery
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                As leading contractors for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> in Johannesburg, we understand that the right machinery is critical for project success. Our professional plant hire service provides contractors and homeowners with access to a fleet of powerful, well-maintained equipment, complete with certified operators. Whether you're preparing a site for new construction, clearing debris after a demolition, or tackling a major landscaping project, our plant hire service is the reliable, efficient, and affordable solution to get the job done right.
+                Unlike standard equipment rental companies, we provide plant hire as part of a full-service solution, supporting demolition, site clearance, and construction projects. As leading contractors, we understand that the right machinery is critical for project success. Our professional plant hire service provides contractors and homeowners with access to a fleet of powerful, well-maintained equipment, complete with certified operators. Our plant hire services are commonly used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition Johannesburg</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> projects, ensuring full site clearance from start to finish.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -83,6 +83,11 @@ export default function PlantHireJohannesburgPage() {
                     <Link href="/contact"><Quote className="mr-2"/>Book Your Machinery</Link>
                 </Button>
             </div>
+        </section>
+
+        <section className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-4">Plant Hire Across Johannesburg</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto">We provide plant hire services across Johannesburg, including Sandton, Randburg, Midrand, and Roodepoort. Our equipment supports projects in both residential and commercial areas.</p>
         </section>
 
         <section id="services" className="mb-16">
@@ -96,11 +101,26 @@ export default function PlantHireJohannesburgPage() {
             </div>
         </section>
 
+        <section id="use-cases" className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12">What Our Plant Hire Is Used For</h2>
+            <div className="max-w-2xl mx-auto bg-card p-8 rounded-lg">
+                <p className="text-center text-muted-foreground mb-6">Our equipment is commonly used for:</p>
+                <ul className="space-y-3 text-muted-foreground grid grid-cols-1 sm:grid-cols-2">
+                    <li className="flex items-center gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0" /> Demolition Projects</li>
+                    <li className="flex items-center gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0" /> Swimming Pool Removal</li>
+                    <li className="flex items-center gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0" /> Site Clearance</li>
+                    <li className="flex items-center gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0" /> Construction Work</li>
+                    <li className="flex items-center gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0" /> Rubble & Waste Removal</li>
+                </ul>
+                <p className="text-center text-sm text-muted-foreground mt-6">We provide the right machinery depending on your project size and requirements.</p>
+            </div>
+        </section>
+
         <section className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Plant Hire in Johannesburg?</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We are more than a rental company; we are your project partners. Our service is designed to be seamless, professional, and reliable.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Professional Operator Included</h3><p className="text-sm text-muted-foreground">Every hire includes a certified, experienced operator to guarantee maximum safety and efficiency on your site.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Professional Operator Included</h3><p className="text-sm text-muted-foreground">All plant hire equipment can be provided with experienced operators, ensuring safe, efficient, and professional handling on-site.</p></div></div>
                 <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Well-Maintained Fleet</h3><p className="text-sm text-muted-foreground">Our machinery is regularly serviced and inspected to prevent breakdowns and costly downtime.</p></div></div>
                 <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Flexible Hire Periods</h3><p className="text-sm text-muted-foreground">We offer daily, weekly, and long-term hire options to suit your project's specific needs and budget.</p></div></div>
                 <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Competitive, Clear Rates</h3><p className="text-sm text-muted-foreground">Our pricing is transparent and affordable, providing excellent value for projects of all sizes in Johannesburg.</p></div></div>
@@ -172,3 +192,4 @@ export default function PlantHireJohannesburgPage() {
     </>
   );
 }
+    
