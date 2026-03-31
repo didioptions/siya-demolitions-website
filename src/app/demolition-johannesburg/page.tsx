@@ -106,30 +106,6 @@ const combinedSchema = {
     "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
 
-const suburbs = [
-    { name: "Soweto", href: "/demolition-soweto" },
-    { name: "Alberton", href: "/demolition-alberton" },
-    { name: "Germiston", href: "/demolition-germiston" },
-    { name: "Boksburg", href: "/demolition-boksburg" },
-    { name: "Benoni", href: "/demolition-benoni" },
-    { name: "Kempton Park", href: "/demolition-kempton-park" },
-    { name: "Bedfordview", href: "/demolition-bedfordview" },
-    { name: "Edenvale", href: "/demolition-edenvale" },
-    { name: "Bryanston", href: "/demolition-bryanston" },
-    { name: "Rosebank", href: "/demolition-rosebank" },
-    { name: "Northcliff", href: "/demolition-northcliff" },
-    { name: "Melville", href: "/demolition-melville" },
-    { name: "Linden", href: "/demolition-linden" },
-    { name: "Parkhurst", href: "/demolition-parkhurst" },
-    { name: "Greenside", href: "/demolition-greenside" },
-    { name: "Pretoria", href: "/demolition-pretoria" },
-    { name: "Centurion", href: "/demolition-centurion" },
-    { name: "Krugersdorp", href: "/demolition-krugersdorp" },
-    { name: "Springs", href: "/demolition-springs" },
-    { name: "Brakpan", href: "/demolition-brakpan" },
-    { name: "Nigel", href: "/demolition-nigel" },
-];
-
 const comprehensiveServices = [
     { title: "House Demolition Johannesburg", icon: Home, imageUrlId: 'residentialDemolition', description: "Complete home demolition services including houses, garages, sheds, and other residential structures. We handle all permits and ensure safe, efficient removal.", link: "/demolition-johannesburg" },
     { title: "Commercial Demolition Johannesburg", icon: Building, imageUrlId: 'commercialDemolition', description: "Expert demolition of commercial buildings, retail spaces, offices, and warehouses. Minimal disruption to surrounding businesses with strict safety protocols.", link: "/demolition-rosebank" },
@@ -321,7 +297,7 @@ export default function DemolitionJohannesburgPage() {
                 <AlertTriangle className="h-12 w-12 mx-auto text-destructive" />
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">Same-Day & Emergency Demolition Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Urgent and same-day demolition services are available in selected Johannesburg areas, depending on project size and access. Our rapid-response teams are on standby 24/7 to secure your site and mitigate risks. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
+                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Urgent and same-day demolition services are available in selected Johannesburg areas, depending on project size and access. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
                 </p>
                 <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     <div className="flex gap-4">
@@ -442,36 +418,33 @@ export default function DemolitionJohannesburgPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center">Serving Every Corner of Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">Our teams are strategically positioned to provide fast, reliable demolition services across all of Johannesburg's key suburbs. We are your local experts, from the northern estates to the southern communities.</p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
-                    
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
-                        <p className="text-muted-foreground text-sm">As premier demolition contractors in Sandton, we provide elite services for luxury homes and commercial properties. Our teams are experts in navigating secure estates in suburbs like Morningside and Bryanston, ensuring a discreet, professional, and compliant project.</p>
+                        <p className="text-muted-foreground text-sm">As premier demolition contractors in Sandton, we provide elite services for luxury homes and commercial properties. Our teams are experts in navigating secure estates and ensuring a discreet, professional project.</p>
                     </div>
-
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-randburg" className="hover:text-primary">Demolition Randburg</Link></h3>
-                        <p className="text-muted-foreground text-sm">We are the trusted demolition contractors Randburg residents rely on for house demolitions and site clearing. We offer fast, affordable services across all suburbs, from Ferndale to Northcliff, ensuring every project is completed safely and efficiently.</p>
+                        <p className="text-muted-foreground text-sm">We are the trusted demolition contractors Randburg residents rely on for house demolitions and site clearing. We offer fast, affordable services across all suburbs, from Ferndale to Northcliff.</p>
                     </div>
-
-                     <div className="bg-card p-6 rounded-lg shadow-md">
+                    <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-roodepoort" className="hover:text-primary">Demolition Roodepoort</Link></h3>
-                         <p className="text-muted-foreground text-sm">Our demolition Roodepoort services cover the entire West Rand. We are experienced in handling projects on varied terrains, providing expert house demolition, site clearing, and rubble removal for residential and commercial clients.</p>
+                        <p className="text-muted-foreground text-sm">Our demolition Roodepoort services cover the entire West Rand. We are experienced in handling projects on varied terrains, providing expert house demolition and site clearing.</p>
                     </div>
-
-                     <div className="bg-card p-6 rounded-lg shadow-md">
+                    <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-midrand" className="hover:text-primary">Demolition Midrand</Link></h3>
-                         <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our demolition services are tailored for large-scale residential estates and commercial developments. We are the demolition contractors Midrand developers partner with for reliable and scalable site preparation.</p>
+                        <p className="text-muted-foreground text-sm">Supporting Midrand's rapid growth, our demolition services are tailored for large-scale residential estates and commercial developments.</p>
+                    </div>
+                    <div className="bg-card p-6 rounded-lg shadow-md">
+                        <h3 className="font-bold text-xl mb-2"><Link href="/demolition-germiston" className="hover:text-primary">Demolition Germiston</Link></h3>
+                        <p className="text-muted-foreground text-sm">As industrial demolition experts, our services in Germiston are tailored for large-scale factory, warehouse, and commercial site clearing projects in the East Rand.</p>
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-center gap-4 mt-8">
-                    {suburbs.map(suburb => (
-                        <Button key={suburb.name} variant="outline" asChild>
-                            <Link href={suburb.href}>
-                               <MapPin className="mr-2" /> {suburb.name}
-                            </Link>
-                        </Button>
-                    ))}
+                 <div className="text-center mt-12 border-t pt-8">
+                     <h3 className="text-2xl font-semibold">We Also Serve...</h3>
+                    <p className="mt-4 max-w-4xl mx-auto text-muted-foreground">
+                        Our extensive service network also provides expert demolition in Soweto, Alberton, Boksburg, Benoni, Kempton Park, Bedfordview, Edenvale, Bryanston, Rosebank, Northcliff, Melville, Linden, Parkhurst, Greenside, Pretoria, Centurion, Krugersdorp, Springs, Brakpan, and Nigel.
+                    </p>
                 </div>
             </div>
         </section>
