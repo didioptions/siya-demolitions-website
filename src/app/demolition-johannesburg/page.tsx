@@ -106,19 +106,16 @@ const combinedSchema = {
     "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
 
-const comprehensiveServices = [
-    { title: "House Demolition Johannesburg", icon: Home, imageUrlId: 'residentialDemolition', description: "Complete home demolition services including houses, garages, sheds, and other residential structures. We handle all permits and ensure safe, efficient removal.", link: "/demolition-johannesburg" },
-    { title: "Commercial Demolition Johannesburg", icon: Building, imageUrlId: 'commercialDemolition', description: "Expert demolition of commercial buildings, retail spaces, offices, and warehouses. Minimal disruption to surrounding businesses with strict safety protocols.", link: "/demolition-rosebank" },
-    { title: "Industrial Demolition Johannesburg", icon: Factory, imageUrlId: 'industrialDemolition', description: "Large-scale industrial demolition including factories, plants, and heavy infrastructures. Specialized equipment and experienced crews for complex projects.", link: "/demolition-germiston" },
-    { title: "Interior Strip-Outs Johannesburg", icon: Layers, imageUrlId: 'interiorStripOut', description: "Selective interior demolition for renovations and refurbishment. Careful removal of walls, ceilings, flooring, and fixtures while preserving the structure.", link: "/site-cleaning-johannesburg" },
-    { title: "Concrete Demolition Johannesburg", icon: Hammer, imageUrlId: 'concreteBreaking', description: "Professional removal of concrete slabs, driveways, parking lots, and asphalt surfaces. Proper disposal and site preparation for new construction.", link: "/rubble-removal-johannesburg" },
-    { title: "Swimming Pool Demolition", icon: Waves, imageUrlId: 'poolDemoWork', description: "Safe and efficient removal of unwanted or damaged swimming pools, including complete rubble removal and site backfilling.", link: "/swimming-pool-demolition-johannesburg" },
-];
-
 export default function DemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
     const processImage = PlaceHolderImages.find(p => p.id === 'constructionServices');
     const whyChooseImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
+    const interiorStripOutImage = PlaceHolderImages.find(p => p.id === 'interiorStripOut');
+    const plantHireTlbImage = PlaceHolderImages.find(p => p.id === 'plantHireTlb');
+    const commercialDemolitionImage = PlaceHolderImages.find(p => p.id === 'commercialDemolition');
+    const siteCleaningAfterImage = PlaceHolderImages.find(p => p.id === 'siteCleaningAfter');
+    const poolDemoWorkImage = PlaceHolderImages.find(p => p.id === 'poolDemoWork');
+    const poolDemoAfterImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
 
   return (
     <>
@@ -164,7 +161,7 @@ export default function DemolitionJohannesburgPage() {
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services We Offer</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    We provide different types of demolition depending on the project. Each project is handled with careful planning and the right equipment.
+                    We provide a range of demolition types, from complete structural removal to delicate partial demolitions. Each project is handled with careful planning and the right equipment to meet its unique requirements.
                 </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -292,10 +289,68 @@ export default function DemolitionJohannesburgPage() {
              </p>
         </section>
 
-        <section id="recent-projects" className="py-12 md:py-16">
+        <section id="recent-projects" className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl font-bold text-center mb-8">Recent Demolition Project in Johannesburg</h2>
-                <p className="text-center text-muted-foreground max-w-3xl mx-auto">We recently completed a full residential demolition in Johannesburg, removing an old structure and clearing all rubble from the site. The result was a clean, level area ready for new construction, completed on time and without disruption to surrounding properties.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Johannesburg</h2>
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Full House Demolition</CardTitle>
+                            <p className="text-sm text-muted-foreground">Sandton</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
+                            <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{interiorStripOutImage && <Image src={interiorStripOutImage.imageUrl} alt="Old house interior before demolition" data-ai-hint={interiorStripOutImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{plantHireTlbImage && <Image src={plantHireTlbImage.imageUrl} alt="Cleared site after demolition" data-ai-hint={plantHireTlbImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Commercial Site Clearing</CardTitle>
+                            <p className="text-sm text-muted-foreground">Randburg</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Dismantled and cleared an old commercial structure to prepare the site for a new retail development. The project involved careful coordination to minimize disruption to neighboring businesses.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{commercialDemolitionImage && <Image src={commercialDemolitionImage.imageUrl} alt="Old commercial building before clearing" data-ai-hint={commercialDemolitionImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{siteCleaningAfterImage && <Image src={siteCleaningAfterImage.imageUrl} alt="Cleared commercial site" data-ai-hint={siteCleaningAfterImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Swimming Pool Removal</CardTitle>
+                            <p className="text-sm text-muted-foreground">Roodepoort</p>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm mb-4">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn.</p>
+                             <div className="grid grid-cols-2 gap-2">
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
+                                    <div className="aspect-video relative">{poolDemoWorkImage && <Image src={poolDemoWorkImage.imageUrl} alt="Old leaking swimming pool" data-ai-hint={poolDemoWorkImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                                <div>
+                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
+                                    <div className="aspect-video relative">{poolDemoAfterImage && <Image src={poolDemoAfterImage.imageUrl} alt="New lawn where pool was" data-ai-hint={poolDemoAfterImage.imageHint} fill className="rounded-md object-cover" />}</div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </section>
         
