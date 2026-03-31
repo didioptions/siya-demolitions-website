@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, MapPin, Quote, Tractor } from "lucide-react";
@@ -6,19 +7,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
-const suburbs = [
-    { name: "Sandton", href: "/plant-hire-sandton" }, { name: "Randburg", href: "/plant-hire-randburg" },
-    { name: "Roodepoort", href: "/plant-hire-roodepoort" }, { name: "Midrand", href: "/plant-hire-midrand" },
-    { name: "Fourways", href: "/plant-hire-fourways" }, { name: "Soweto", href: "/plant-hire-soweto" },
-    { name: "Alberton", href: "/plant-hire-alberton" }, { name: "Germiston", href: "/plant-hire-germiston" },
-    { name: "Boksburg", href: "/plant-hire-boksburg" }, { name: "Benoni", href: "/plant-hire-benoni" },
-    { name: "Kempton Park", href: "/plant-hire-kempton-park" }, { name: "Bedfordview", href: "/plant-hire-bedfordview" },
-    { name: "Edenvale", href: "/plant-hire-edenvale" }, { name: "Bryanston", href: "/plant-hire-bryanston" },
-    { name: "Rosebank", href: "/plant-hire-rosebank" }, { name: "Northcliff", href: "/plant-hire-northcliff" },
-    { name: "Melville", href: "/plant-hire-melville" }, { name: "Linden", href: "/plant-hire-linden" },
-    { name: "Parkhurst", href: "/plant-hire-parkhurst" }, { name: "Greenside", href: "/plant-hire-greenside" },
-];
 
 const faqs = [
     { question: "What types of equipment do you offer for plant hire in Johannesburg?", answer: "We offer a wide range of heavy machinery for hire, including TLBs (Tractor-Loader-Backhoes), Bobcats (skid-steer loaders), various sizes of excavators, and tipper trucks for material transport. We can advise on the best machine for your specific job." },
@@ -61,6 +49,16 @@ export default function PlantHireJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'plantHireTlb');
     const bobcatImage = PlaceHolderImages.find(p => p.id === 'plantHireBobcat');
     const residentialImage = PlaceHolderImages.find(p => p.id === 'plantHireResidential');
+
+    const mainSuburbs = [
+        { name: "Sandton", href: "/plant-hire-sandton" },
+        { name: "Randburg", href: "/plant-hire-randburg" },
+        { name: "Midrand", href: "/plant-hire-midrand" },
+        { name: "Roodepoort", href: "/plant-hire-roodepoort" },
+        { name: "Germiston", href: "/plant-hire-germiston" },
+    ];
+    const otherSuburbsText = "Fourways, Soweto, Alberton, Boksburg, Benoni, Kempton Park, Bedfordview, Edenvale, Bryanston, Rosebank, Northcliff, Melville, Linden, Parkhurst, and Greenside.";
+
 
   return (
     <>
@@ -151,15 +149,18 @@ export default function PlantHireJohannesburgPage() {
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Plant Hire Across All Johannesburg Suburbs</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                We offer localized plant hire services across Johannesburg. Click on your suburb to learn more, or visit our <Link href="/plant-hire-services-johannesburg" className="text-primary hover:underline">main services hub</Link>.
+                We offer localized plant hire services across Johannesburg's key areas. Click a suburb to learn about our specialized local services, or see other areas we serve below.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-                {suburbs.map(suburb => (
+                {mainSuburbs.map(suburb => (
                     <Button key={suburb.name} variant="outline" asChild>
                         <Link href={suburb.href}><MapPin className="mr-2" /> {suburb.name}</Link>
                     </Button>
                 ))}
             </div>
+            <p className="text-center text-sm text-muted-foreground mt-8 max-w-4xl mx-auto">
+                Our service area also includes: {otherSuburbsText} Visit our <Link href="/plant-hire-services-johannesburg" className="text-primary hover:underline">main services hub</Link> for more information.
+            </p>
       </section>
 
         <section id="faq" className="max-w-4xl mx-auto mb-16">
