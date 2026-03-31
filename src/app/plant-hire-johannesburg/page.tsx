@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, MapPin, Quote, Tractor } from "lucide-react";
@@ -20,7 +21,7 @@ const suburbs = [
 ];
 
 const faqs = [
-    { question: "What types of equipment do you offer for plant hire in Johannesburg?", answer: "We offer a wide range of heavy machinery for hire, including TLBs (Tractor-Loader-Backhoes), Bobcats (skid-steer loaders), various sizes of excavators, tipper trucks for material transport, bulldozers, and rollers. We can advise on the best machine for your specific job." },
+    { question: "What types of equipment do you offer for plant hire in Johannesburg?", answer: "We offer a wide range of heavy machinery for hire, including TLBs (Tractor-Loader-Backhoes), Bobcats (skid-steer loaders), various sizes of excavators, and tipper trucks for material transport. We can advise on the best machine for your specific job." },
     { question: "Does your plant hire in Johannesburg include a certified operator?", answer: "Yes, all our plant hire services come with a fully certified, experienced, and professional operator. This ensures the machinery is used safely and efficiently, saving you time and reducing risk on your site." },
     { question: "Can I hire equipment for just one day?", answer: "Absolutely. We offer flexible hire periods to suit projects of all sizes. You can hire our equipment for a single day for small residential jobs, or on a weekly or long-term basis for large construction projects. We tailor the hire agreement to your needs." },
     { question: "How quickly can you deliver machinery to a site in Johannesburg?", answer: "We pride ourselves on prompt and reliable service. Depending on availability and your location within Johannesburg, we can often deliver equipment to your site within 24 to 48 hours of a confirmed booking." },
@@ -72,7 +73,7 @@ export default function PlantHireJohannesburgPage() {
                 <Tractor /> Your Partner for Reliable Construction Machinery
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Get the right machinery for your project with our professional plant hire in Johannesburg. Apex Demolitions provides a fleet of well-maintained equipment with certified operators for all construction, demolition, and earthmoving work. Our plant hire services Johannesburg contractors and homeowners can trust are available across all suburbs, from Sandton to Soweto. We offer flexible hire periods and competitive rates to keep your project on schedule and within budget.
+                As leading contractors for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> in Johannesburg, we understand that the right machinery is critical for project success. Our professional plant hire service provides contractors and homeowners with access to a fleet of powerful, well-maintained equipment, complete with certified operators. Whether you're preparing a site for new construction, clearing debris after a demolition, or tackling a major landscaping project, our plant hire service is the reliable, efficient, and affordable solution to get the job done right.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -86,23 +87,25 @@ export default function PlantHireJohannesburgPage() {
 
         <section id="services" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">Our Plant Hire Fleet for Johannesburg</h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <Card><CardHeader><CardTitle>TLB Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Versatile Tractor-Loader-Backhoes for trenching, digging, loading, and general earthworks.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Bobcat Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Compact and agile skid-steer loaders, perfect for tight spaces, site leveling, and debris loading.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Excavator Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Powerful excavators for bulk earthworks, foundation digging, and demolition projects.</p></CardContent></Card>
-                <Card><CardHeader><CardTitle>Tipper Truck Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Reliable tipper trucks for efficient transport of soil, rubble, and construction materials.</p></CardContent></Card>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We offer a range of powerful and versatile machinery to suit any project, from residential landscaping to large-scale construction.</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <Card><CardHeader><CardTitle>TLB Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The ultimate multi-purpose machine. Ideal for trenching, foundation digging, loading rubble, and general earthworks. The workhorse of any Johannesburg construction site.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Bobcat Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Compact, agile, and powerful. Our Bobcats (skid-steer loaders) are perfect for working in tight spaces, site leveling, and efficient loading of debris.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Excavator Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">For heavy-duty jobs, our excavators provide the power needed for bulk earthworks, deep foundation digging, and larger-scale <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> projects.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Tipper Truck Hire</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">The essential support vehicle for any site. Our reliable tipper trucks are used for efficient transport of soil, building materials, and for bulk <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>.</p></CardContent></Card>
             </div>
         </section>
 
         <section className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Why Choose Apex for Plant Hire in Johannesburg?</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We are more than a rental company; we are your project partners. Our service is designed to be seamless, professional, and reliable.</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Operator Included</h3><p className="text-sm text-muted-foreground">Every hire includes a certified, experienced operator for maximum safety and efficiency.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Well-Maintained Fleet</h3><p className="text-sm text-muted-foreground">Our machinery is regularly serviced to prevent breakdowns and costly downtime on your site.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Flexible Hire Periods</h3><p className="text-sm text-muted-foreground">We offer daily, weekly, and long-term hire options to suit your project's specific needs.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Competitive, Clear Rates</h3><p className="text-sm text-muted-foreground">Our pricing is transparent and affordable for all types of projects in Johannesburg.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Full Insurance</h3><p className="text-sm text-muted-foreground">Our plant hire service is fully insured for your complete peace of mind.</p></div></div>
-                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Johannesburg-Wide Service</h3><p className="text-sm text-muted-foreground">We deliver and operate machinery across all Johannesburg suburbs, from Midrand to Alberton.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Professional Operator Included</h3><p className="text-sm text-muted-foreground">Every hire includes a certified, experienced operator to guarantee maximum safety and efficiency on your site.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Well-Maintained Fleet</h3><p className="text-sm text-muted-foreground">Our machinery is regularly serviced and inspected to prevent breakdowns and costly downtime.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Flexible Hire Periods</h3><p className="text-sm text-muted-foreground">We offer daily, weekly, and long-term hire options to suit your project's specific needs and budget.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Competitive, Clear Rates</h3><p className="text-sm text-muted-foreground">Our pricing is transparent and affordable, providing excellent value for projects of all sizes in Johannesburg.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Fully Insured Service</h3><p className="text-sm text-muted-foreground">Our comprehensive insurance gives you complete peace of mind when our equipment is on your property.</p></div></div>
+                <div className="flex items-start gap-4"><Check className="text-accent h-6 w-6 mt-1"/><div><h3 className="font-semibold">Johannesburg-Wide Delivery</h3><p className="text-sm text-muted-foreground">We deliver and operate machinery across all Johannesburg suburbs, from Midrand to Alberton.</p></div></div>
             </div>
         </section>
         
@@ -110,12 +113,13 @@ export default function PlantHireJohannesburgPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h2 className="text-3xl font-bold mb-4">Our Johannesburg Plant Hire Process</h2>
+                    <p className="text-muted-foreground mb-6">We make hiring heavy machinery simple, professional, and efficient.</p>
                     <ol className="space-y-3 list-decimal list-inside text-muted-foreground">
-                        <li><span className="font-semibold text-foreground">Consultation & Booking:</span> Tell us about your project, and we'll recommend the right machine.</li>
+                        <li><span className="font-semibold text-foreground">Consultation & Booking:</span> Tell us about your project, and we'll recommend the right machine and provide a clear quote.</li>
                         <li><span className="font-semibold text-foreground">Site Delivery:</span> We deliver the equipment to your Johannesburg site on the agreed-upon date and time.</li>
                         <li><span className="font-semibold text-foreground">Operated Hire:</span> Our professional operator carries out the work efficiently and safely according to your instructions.</li>
-                        <li><span className="font-semibold text-foreground">Project Support:</span> We ensure the machinery is productive for the full duration of the hire period.</li>
-                        <li><span className="font-semibold text-foreground">Collection:</span> Once your project is complete, we arrange for the prompt collection of the equipment.</li>
+                        <li><span className="font-semibold text-foreground">Project Support:</span> We ensure the machinery is productive for the full duration of the hire period, integrating with your other site activities.</li>
+                        <li><span className="font-semibold text-foreground">Collection:</span> Once your project phase is complete, we arrange for the prompt collection of the equipment.</li>
                     </ol>
                 </div>
                  <div>
@@ -153,7 +157,7 @@ export default function PlantHireJohannesburgPage() {
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
           <h2 className="text-3xl font-bold">Book Your Construction Machinery Today</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
-            Contact Apex Demolitions for a reliable and affordable plant hire solution anywhere in Johannesburg.
+            Contact Apex Demolitions for a reliable and affordable plant hire solution anywhere in Johannesburg. Our team is ready to equip your project for success.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
