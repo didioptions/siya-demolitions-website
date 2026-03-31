@@ -31,16 +31,27 @@ export default function PlantHireGermistonPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Plant Hire Services Germiston</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                In the industrial heartland of the East Rand, Apex Demolitions is the leading provider of heavy-duty plant hire in Germiston. As seasoned contractors, not just a rental company, we understand the demands of industrial sites. We supply reliable machinery complete with certified operators for all industrial, commercial, and residential projects, ensuring every job is done safely and to professional standards.
+                In the industrial heartland of the East Rand, Apex Demolitions is the leading provider of heavy-duty plant hire in Germiston. As seasoned contractors, not just a rental company, we understand the demands of industrial sites. We supply reliable machinery complete with certified operators for all industrial, commercial, and residential projects, ensuring every job is done safely and to professional standards. Same-day and urgent services are available across Johannesburg depending on project size and location.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Site Assessment</a>
+                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request an Industrial Quote</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Quote className="mr-2"/>WhatsApp for Fast Response</a>
                 </Button>
             </div>
+        </section>
+
+        <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section id="services" className="mb-16">
@@ -50,7 +61,7 @@ export default function PlantHireGermistonPage() {
                     {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Excavator at an industrial site in Germiston" data-ai-hint="excavator germiston" fill className="rounded-lg object-cover" /></div>}
                 </div>
                 <div>
-                    <p className="text-muted-foreground mb-4">Heavy-duty equipment for Germiston's industries.</p>
+                    <p className="text-muted-foreground mb-4">Heavy-duty equipment for Germiston's industries. All our plant hire equipment is provided with experienced operators, ensuring safe, efficient, and professional handling on-site.</p>
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Excavators & Bulldozers:** For large-scale site clearing, <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, and bulk earthworks.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Tipper Trucks:** High-capacity trucks for efficient industrial waste and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>.</span></li>
@@ -90,6 +101,9 @@ export default function PlantHireGermistonPage() {
                     <CardContent><p className="text-muted-foreground">TLB hire for pool excavations, landscaping, and foundation work.</p></CardContent>
                 </Card>
             </div>
+             <div className="text-center mt-8">
+                 <p className="text-muted-foreground">We recently completed a project in Johannesburg, removing debris and preparing the site for the next phase, ensuring a clean and safe handover.</p>
+            </div>
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -102,6 +116,9 @@ export default function PlantHireGermistonPage() {
                 </AccordionItem>
             ))}
             </Accordion>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
 
         <section className="mb-16 text-center">
@@ -117,8 +134,10 @@ export default function PlantHireGermistonPage() {
                 <h2 className="text-3xl font-bold">Equip Your Germiston Project for Success</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a professional assessment and quote for your industrial or commercial plant hire needs in Germiston.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get a Project Quote</Link></Button>
-                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Speak to a Specialist</a></Button>
+                    <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+                       <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail /> WhatsApp for Fast Response</a>
+                    </Button>
                 </div>
             </div>
         </section>

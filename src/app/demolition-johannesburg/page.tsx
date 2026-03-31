@@ -130,7 +130,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We provide demolition services across Johannesburg, including <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and industrial areas like <Link href="/demolition-germiston" className="text-primary hover:underline">Germiston</Link>. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively.
+            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We provide demolition services across Johannesburg, including Sandton, Randburg, Midrand, Roodepoort, and industrial areas like Germiston. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively. Same-day and urgent services are available across Johannesburg depending on project size and location.
           </p>
           <div className="mt-6 text-left max-w-3xl mx-auto bg-card p-4 rounded-lg border">
             <p className="text-lg font-semibold text-foreground">We are one of the leading demolition contractors in Johannesburg, trusted by homeowners, builders, and commercial clients across Sandton, Randburg, Midrand, and Roodepoort. Our team delivers safe, compliant, and cost-effective demolition services, making us a top choice for projects of all sizes in Gauteng.</p>
@@ -142,10 +142,21 @@ export default function DemolitionJohannesburgPage() {
           </div>
           <Button size="lg" className="mt-6" asChild>
             <a href="tel:0784292760">
-              <Phone className="mr-2 h-5 w-5" /> Get Your Free Quote Now
+              <Phone className="mr-2 h-5 w-5" /> Call for a Quote
             </a>
           </Button>
           <p className="mt-2 text-sm text-muted-foreground">No-obligation, detailed quote within 24 hours.</p>
+        </section>
+
+        <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section className="py-12 md:py-16 bg-card rounded-lg mb-16">
@@ -161,7 +172,7 @@ export default function DemolitionJohannesburgPage() {
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services We Offer</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    We provide a range of demolition types, from complete structural removal to delicate partial demolitions. Each project is handled with careful planning and the right equipment to meet its unique requirements.
+                    We provide a range of demolition types, from complete structural removal (full demolition) to delicate partial demolitions for renovations. Each project is handled with careful planning and the right equipment to meet its unique requirements.
                 </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -351,6 +362,9 @@ export default function DemolitionJohannesburgPage() {
                         </CardContent>
                     </Card>
                 </div>
+                 <div className="text-center mt-8">
+                     <p className="text-muted-foreground">We recently completed a project in Johannesburg, removing debris and preparing the site for the next phase, ensuring a clean and safe handover.</p>
+                </div>
             </div>
         </section>
         
@@ -405,7 +419,7 @@ export default function DemolitionJohannesburgPage() {
                 </div>
                 <div className="mt-12">
                      <Button size="lg" variant="destructive" asChild>
-                        <a href="tel:0784292760"><Phone className="mr-2"/> Call Now for Immediate Assistance</a>
+                        <a href="tel:0784292760"><Phone className="mr-2"/> Call for Urgent Service</a>
                     </Button>
                 </div>
             </div>
@@ -458,6 +472,9 @@ export default function DemolitionJohannesburgPage() {
               </AccordionItem>
             ))}
           </Accordion>
+          <div className="text-center mt-8">
+            <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+          </div>
         </section>
 
         <section id="contact" className="py-12 md:py-20 bg-primary text-primary-foreground text-center rounded-lg">
@@ -468,10 +485,10 @@ export default function DemolitionJohannesburgPage() {
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild>
-                        <a href="tel:0784292760"><Phone /> Call for an Instant Quote</a>
+                        <a href="tel:0784292760"><Phone /> Call for a Quote</a>
                     </Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                        <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp Us Now</a>
+                        <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for Fast Response</a>
                     </Button>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote } from "lucide-react";
@@ -20,16 +21,27 @@ export default function PlantHireBenoniPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Plant Hire Services Benoni</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Apex Demolitions provides professional and reliable plant hire services for residential, commercial, and agricultural clients throughout Benoni. Get the job done faster with our well-maintained machinery and certified operators.
+                Apex Demolitions provides professional and reliable plant hire services for residential, commercial, and agricultural clients throughout Benoni. Get the job done faster with our well-maintained machinery and certified operators. Same-day and urgent services are available across Johannesburg depending on project size and location.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Quote className="mr-2"/>WhatsApp for Fast Response</a>
                 </Button>
             </div>
+        </section>
+
+        <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section id="services" className="mb-16">
@@ -39,7 +51,7 @@ export default function PlantHireBenoniPage() {
                     {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="TLB machine ready for hire in Benoni" data-ai-hint="tlb hire benoni" fill className="rounded-lg object-cover" /></div>}
                 </div>
                 <div>
-                    <p className="text-muted-foreground mb-4">The right equipment for Benoni's diverse needs.</p>
+                    <p className="text-muted-foreground mb-4">The right equipment for Benoni's diverse needs, often used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and full <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>.</p>
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**TLB Hire:** Our most versatile machine, perfect for trenching, digging, and loading.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Bobcat Hire:** Ideal for landscaping and moving material in confined spaces.</span></li>
@@ -57,6 +69,9 @@ export default function PlantHireBenoniPage() {
                 <div><h4 className="font-semibold text-lg">Fully Insured & Compliant</h4><p className="text-muted-foreground mt-2 text-sm">We are licensed and adhere to all Ekurhuleni regulations.</p></div>
                 <div><h4 className="font-semibold text-lg">Professional & Reliable</h4><p className="text-muted-foreground mt-2 text-sm">Count on our experienced crews and well-serviced machines.</p></div>
             </div>
+            <div className="text-center mt-8">
+                 <p className="text-muted-foreground">We recently completed a project in Benoni, providing a TLB to assist with <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link> and ensuring a clean handover.</p>
+            </div>
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -69,16 +84,14 @@ export default function PlantHireBenoniPage() {
                 </AccordionItem>
             ))}
             </Accordion>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
 
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
-            <p className="mt-2 text-muted-foreground">Proudly serving the East Rand.</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/plant-hire-boksburg">Boksburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-kempton-park">Kempton Park</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-springs">Springs</Link></Button>
-            </div>
+            <p className="mt-2 text-muted-foreground">Proudly serving the East Rand. Our services are also available in Boksburg, Kempton Park, and Springs.</p>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
@@ -87,8 +100,8 @@ export default function PlantHireBenoniPage() {
                 <h2 className="text-3xl font-bold">Get Your Benoni Project Underway</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a free, no-obligation quote on professional plant hire in Benoni.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
-                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call to Book Now</a></Button>
+                    <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail /> WhatsApp for Fast Response</a></Button>
                 </div>
             </div>
         </section>

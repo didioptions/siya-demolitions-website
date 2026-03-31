@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote } from "lucide-react";
@@ -20,16 +21,27 @@ export default function PlantHireBedfordviewPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Plant Hire Services Bedfordview</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Apex Demolitions offers a premier plant hire service for the discerning residents and contractors of Bedfordview. We understand that projects in this area demand a higher level of care, professionalism, and discretion.
+                Apex Demolitions offers a premier plant hire service for the discerning residents and contractors of Bedfordview. We understand that projects in this area demand a higher level of care, professionalism, and discretion. Same-day and urgent services are available across Johannesburg depending on project size and location.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Consultation</a>
+                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Quote className="mr-2"/>WhatsApp for Fast Response</a>
                 </Button>
             </div>
+        </section>
+
+        <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section id="services" className="mb-16">
@@ -39,7 +51,7 @@ export default function PlantHireBedfordviewPage() {
                     {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="Bobcat working on a landscaping project in Bedfordview" data-ai-hint="landscaping bedfordview" fill className="rounded-lg object-cover" /></div>}
                 </div>
                 <div>
-                    <p className="text-muted-foreground mb-4">Elite equipment for Bedfordview's finest properties.</p>
+                    <p className="text-muted-foreground mb-4">Elite equipment for Bedfordview's finest properties. Our machinery is often used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and full <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>.</p>
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**TLB & Bobcat Hire:** Perfect for landscaping, pool excavation, and foundation preparation for luxury homes.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Mini-Excavators:** For precision digging with minimal impact on your garden.</span></li>
@@ -57,6 +69,9 @@ export default function PlantHireBedfordviewPage() {
                 <div><h4 className="font-semibold text-lg">Discreet & Professional</h4><p className="text-muted-foreground mt-2 text-sm">Our uniformed operators work with the professionalism your neighborhood expects.</p></div>
                 <div><h4 className="font-semibold text-lg">Property Protection</h4><p className="text-muted-foreground mt-2 text-sm">We treat your garden and home with respect, preventing damage.</p></div>
             </div>
+             <div className="text-center mt-8">
+                 <p className="text-muted-foreground">We recently completed a project in Bedfordview, providing a Bobcat for a landscaping project, ensuring a clean and safe handover with our <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline">same-day rubble removal</Link> service.</p>
+            </div>
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -69,16 +84,14 @@ export default function PlantHireBedfordviewPage() {
                 </AccordionItem>
             ))}
             </Accordion>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
 
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
-            <p className="mt-2 text-muted-foreground">Serving Bedfordview and surrounding luxury suburbs.</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/plant-hire-sandton">Sandton</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-edenvale">Edenvale</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-bryanston">Bryanston</Link></Button>
-            </div>
+            <p className="mt-2 text-muted-foreground">Serving Bedfordview and surrounding luxury suburbs, including Sandton, Edenvale and Bryanston.</p>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
@@ -87,8 +100,8 @@ export default function PlantHireBedfordviewPage() {
                 <h2 className="text-3xl font-bold">Book Equipment for Your Bedfordview Project</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">For a professional, discreet, and reliable plant hire service in Bedfordview, contact the experts at Apex Demolitions.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get a Free Quote</Link></Button>
-                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Speak to a Specialist</a></Button>
+                    <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail /> WhatsApp for Fast Response</a></Button>
                 </div>
             </div>
         </section>

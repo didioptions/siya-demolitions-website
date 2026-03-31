@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Mail, MapPin, Construction, ShieldCheck } from "lucide-react";
 import Link from "next/link";
@@ -10,23 +11,11 @@ const suburbs = [
     { name: "Randburg", href: "/plant-hire-randburg" },
     { name: "Roodepoort", href: "/plant-hire-roodepoort" },
     { name: "Midrand", href: "/plant-hire-midrand" },
-    { name: "Fourways", href: "/plant-hire-fourways" },
-    { name: "Soweto", href: "/plant-hire-soweto" },
-    { name: "Alberton", href: "/plant-hire-alberton" },
     { name: "Germiston", href: "/plant-hire-germiston" },
-    { name: "Boksburg", href: "/plant-hire-boksburg" },
-    { name: "Benoni", href: "/plant-hire-benoni" },
-    { name: "Kempton Park", href: "/plant-hire-kempton-park" },
-    { name: "Bedfordview", href: "/plant-hire-bedfordview" },
-    { name: "Edenvale", href: "/plant-hire-edenvale" },
-    { name: "Bryanston", href: "/plant-hire-bryanston" },
-    { name: "Rosebank", href: "/plant-hire-rosebank" },
-    { name: "Northcliff", href: "/plant-hire-northcliff" },
-    { name: "Melville", href: "/plant-hire-melville" },
-    { name: "Linden", href: "/plant-hire-linden" },
-    { name: "Parkhurst", href: "/plant-hire-parkhurst" },
-    { name: "Greenside", href: "/plant-hire-greenside" },
 ];
+
+const otherSuburbsText = "Fourways, Soweto, Alberton, Boksburg, Benoni, Kempton Park, Bedfordview, Edenvale, Bryanston, Rosebank, Northcliff, Melville, Linden, Parkhurst, and Greenside.";
+
 
 const services = [
     "TLB Hire with Operator",
@@ -56,11 +45,22 @@ export default function PlantHireServicesJohannesburgPage() {
             <Construction /> Your One-Stop Solution for Construction Machinery
         </p>
         <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions offers a complete range of professional plant hire services for any project, big or small, across every suburb of Johannesburg. Our fleet of well-maintained machinery, complete with certified operators, is ready to support your construction, demolition, or landscaping project. We are your reliable partner for getting the job done efficiently and safely.
+            Apex Demolitions offers a complete range of professional plant hire services for any project, big or small, across every suburb of Johannesburg. Our fleet of well-maintained machinery, complete with certified operators, is ready to support your construction, demolition, or landscaping project. We are your reliable partner for getting the job done efficiently and safely. Same-day and urgent services are available across Johannesburg depending on project size and location.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-          <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for Rates & Availability</a></Button>
-          <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
+          <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+          <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail />WhatsApp for Fast Response</a></Button>
+        </div>
+      </section>
+
+      <section className="bg-card border-b border-t mb-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+              <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+              <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+              <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+              <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+          </div>
         </div>
       </section>
 
@@ -106,6 +106,9 @@ export default function PlantHireServicesJohannesburgPage() {
                 </Button>
             ))}
         </div>
+        <div className="text-center mt-8">
+            <p className="text-muted-foreground">We recently completed a plant hire project in Johannesburg, providing machinery for a <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>, ensuring a clean and safe handover.</p>
+        </div>
       </section>
 
        <section className="mb-16 bg-card p-8 rounded-lg">
@@ -129,6 +132,9 @@ export default function PlantHireServicesJohannesburgPage() {
                 </AccordionItem>
             ))}
             </Accordion>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
 
       <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
@@ -137,8 +143,8 @@ export default function PlantHireServicesJohannesburgPage() {
           No matter where your project is in Johannesburg, we're ready to supply the machinery you need. Contact us for a fast, competitive, and professional quote.
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-          <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now</a></Button>
-          <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
+          <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call for a Quote</a></Button>
+          <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail />WhatsApp for Fast Response</a></Button>
         </div>
       </section>
     </div>

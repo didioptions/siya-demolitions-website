@@ -71,16 +71,27 @@ export default function PlantHireJohannesburgPage() {
                 <Tractor /> Your Partner for Reliable Construction Machinery
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Unlike standard equipment rental companies, we provide plant hire as part of a full-service solution, supporting demolition, site clearance, and construction projects. As leading contractors, we understand that the right machinery is critical for project success. Our professional plant hire service provides contractors and homeowners with access to a fleet of powerful, well-maintained equipment, complete with certified operators. Our plant hire services are commonly used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition Johannesburg</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> projects, ensuring full site clearance from start to finish.
+                Unlike standard equipment rental companies, we provide plant hire as part of a full-service solution, supporting demolition, site clearance, and construction projects. As leading contractors, we understand that the right machinery is critical for project success. Our professional plant hire service provides contractors and homeowners with access to a fleet of powerful, well-maintained equipment, complete with certified operators. Our plant hire services are commonly used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition Johannesburg</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal Johannesburg</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link> projects, ensuring full site clearance from start to finish. Same-day and urgent services are available across Johannesburg depending on project size and location.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for Availability & Rates</a>
+                    <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Book Your Machinery</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Quote className="mr-2"/>WhatsApp for Fast Response</a>
                 </Button>
             </div>
+        </section>
+
+        <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section className="mb-16 bg-card p-8 rounded-lg">
@@ -182,10 +193,10 @@ export default function PlantHireJohannesburgPage() {
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild>
-                  <a href="tel:0784292760"><Phone />Call to Book</a>
+                  <a href="tel:0784292760"><Phone />Call for a Quote</a>
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-                  <Link href="/contact"><Mail />Request Rates</Link>
+                 <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail />WhatsApp for Fast Response</a>
               </Button>
           </div>
         </section>

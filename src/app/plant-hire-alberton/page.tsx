@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote } from "lucide-react";
@@ -20,16 +21,27 @@ export default function PlantHireAlbertonPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Plant Hire Services Alberton</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Get your project moving with professional plant hire in Alberton from Apex Demolitions. We provide a range of well-maintained machinery with certified operators for all residential, commercial, and industrial jobs in the East Rand.
+                Get your project moving with professional plant hire in Alberton from Apex Demolitions. We provide a range of well-maintained machinery with certified operators for all residential, commercial, and industrial jobs in the East Rand. Same-day and urgent services are available across Johannesburg depending on project size and location.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                     <a href="tel:0784292760"><Phone className="mr-2"/>Call for a Quote</a>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/contact"><Quote className="mr-2"/>Request a Free Quote</Link>
+                    <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Quote className="mr-2"/>WhatsApp for Fast Response</a>
                 </Button>
             </div>
+        </section>
+
+         <section className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Same-Day Service Available</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Experienced Operators</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fast & Reliable</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Serving All Johannesburg</div>
+            </div>
+          </div>
         </section>
 
         <section id="services" className="mb-16">
@@ -39,7 +51,7 @@ export default function PlantHireAlbertonPage() {
                     {servicesImage && <div className="aspect-video relative"><Image src={servicesImage.imageUrl} alt="TLB hire for a project in Alberton" data-ai-hint="tlb hire alberton" fill className="rounded-lg object-cover" /></div>}
                 </div>
                 <div>
-                    <p className="text-muted-foreground mb-4">The right machine for any job in Alberton.</p>
+                    <p className="text-muted-foreground mb-4">The right machine for any job in Alberton, often used for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>.</p>
                     <ul className="space-y-3">
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**TLB & Bobcat Hire:** For site clearing, trenching, and earthmoving on residential and commercial sites.</span></li>
                         <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Excavator Hire:** For larger jobs, including bulk excavation and demolition projects.</span></li>
@@ -57,6 +69,9 @@ export default function PlantHireAlbertonPage() {
                 <div><h4 className="font-semibold text-lg">Safety-First Culture</h4><p className="text-muted-foreground mt-2 text-sm">Our certified operators ensure every job is done safely and correctly.</p></div>
                 <div><h4 className="font-semibold text-lg">Reliable Machinery</h4><p className="text-muted-foreground mt-2 text-sm">Our fleet is well-maintained to avoid breakdowns and keep your project on schedule.</p></div>
             </div>
+             <div className="text-center mt-8">
+                 <p className="text-muted-foreground">We recently completed a project in Alberton, providing a TLB for a small <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and ensuring a full <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site clean</Link> and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link> for a safe handover.</p>
+            </div>
         </section>
         
         <section id="faq" className="max-w-4xl mx-auto mb-16">
@@ -69,16 +84,14 @@ export default function PlantHireAlbertonPage() {
                 </AccordionItem>
             ))}
             </Accordion>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
 
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
-            <p className="mt-2 text-muted-foreground">Serving the greater East Rand area.</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/plant-hire-germiston">Germiston</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-boksburg">Boksburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-benoni">Benoni</Link></Button>
-            </div>
+            <p className="mt-2 text-muted-foreground">Serving the greater East Rand area. Our services are also available in Germiston, Boksburg, and Benoni.</p>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
@@ -87,8 +100,8 @@ export default function PlantHireAlbertonPage() {
                 <h2 className="text-3xl font-bold">Get Your Alberton Project Equipped for Success</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact Apex Demolitions for a fast, free, and no-obligation quote. Our local Alberton team is ready to provide the right machinery for your job.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
-                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Call to Book Now</a></Button>
+                    <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
+                    <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail /> WhatsApp for Fast Response</a></Button>
                 </div>
             </div>
         </section>
