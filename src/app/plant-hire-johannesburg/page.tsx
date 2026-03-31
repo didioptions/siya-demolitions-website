@@ -85,7 +85,7 @@ export default function PlantHireJohannesburgPage() {
 
         <section className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-4">Plant Hire Across Johannesburg</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto">We provide plant hire services across Johannesburg, including Sandton, Randburg, Midrand, and Roodepoort. Our equipment supports projects in both residential and commercial areas.</p>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto">We provide plant hire across Johannesburg, including Sandton, Randburg, Midrand, Roodepoort, and industrial areas like Germiston.</p>
         </section>
 
         <section id="services" className="mb-16">
