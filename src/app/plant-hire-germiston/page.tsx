@@ -8,9 +8,18 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const faqs = [
-    { question: "Can you provide plant hire for large industrial sites in Germiston?", answer: "Yes, we specialize in servicing Germiston's industrial sector. We offer a range of heavy machinery, including large excavators and tipper trucks, perfect for factory sites, warehouses, and new industrial developments. Our teams are experienced in industrial site safety." },
-    { question: "Do you offer ongoing plant hire for construction contractors in Germiston?", answer: "Absolutely. We partner with numerous contractors to provide reliable, scheduled plant hire for long-term projects. This ensures you have the machinery you need on-site without the capital outlay of purchasing, complete with a professional operator." },
-    { question: "How do you ensure safety on a busy industrial site?", answer: "Safety is our top priority. Our operators are fully certified and adhere to all Occupational Health and Safety (OHS) standards. The machinery is regularly inspected, and we conduct on-site risk assessments before commencing work to ensure a safe environment for everyone." }
+    {
+        question: "Can you provide plant hire for large industrial sites in Germiston?",
+        answer: "Yes, absolutely. We specialize in providing heavy-duty machinery for large industrial sites throughout Germiston's industrial basin. Our fleet includes large excavators and tipper trucks capable of handling bulk earthworks, site clearing, and waste from factory demolitions. We understand the high demands of industrial projects and our experienced, certified operators are trained in the specific safety protocols required for these environments, ensuring your project proceeds safely and without delay."
+    },
+    {
+        question: "Do you offer ongoing plant hire for construction contractors in Germiston?",
+        answer: "Yes, we frequently partner with construction contractors in Germiston for ongoing plant hire on long-term projects. This service provides you with reliable machinery and a certified operator on a scheduled basis, eliminating the need for large capital investment in equipment. By ensuring you have the right machine on-site when you need it, we help keep your project on schedule, improve site safety, and manage costs effectively."
+    },
+    {
+        question: "How do you ensure safety on a busy industrial site?",
+        answer: "Safety is paramount on any site, especially a busy industrial one in Germiston. Our operators are fully certified and rigorously trained to adhere to all Occupational Health and Safety (OHS) Act standards. Before any work begins, we conduct a thorough on-site risk assessment and ensure all our machinery has been recently inspected and is in perfect working order. This proactive approach to safety protects your staff, our team, and your property, preventing accidents and costly project delays."
+    }
 ];
 
 export default function PlantHireGermistonPage() {
@@ -97,12 +106,9 @@ export default function PlantHireGermistonPage() {
 
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Nearby Areas We Serve</h2>
-            <p className="mt-2 text-muted-foreground">Covering the entire East Rand industrial basin.</p>
-            <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/plant-hire-alberton">Alberton</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-boksburg">Boksburg</Link></Button>
-                <Button variant="outline" asChild><Link href="/plant-hire-benoni">Benoni</Link></Button>
-            </div>
+            <p className="mt-4 text-center text-muted-foreground">
+                Our service network covers the entire East Rand industrial basin, including Alberton, Boksburg, and Benoni.
+            </p>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg relative overflow-hidden">
