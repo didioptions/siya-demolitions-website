@@ -133,7 +133,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We offer safe, licensed, and efficient solutions for residential, commercial, and industrial properties across all Johannesburg suburbs. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise. Whether you're in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-soweto" className="text-primary hover:underline">Soweto</Link>, or <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, we are the demolition Johannesburg team equipped to clear the way for your new development safely and effectively.
+            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We provide demolition services across Johannesburg, including <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and industrial areas like <Link href="/demolition-germiston" className="text-primary hover:underline">Germiston</Link>. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively.
           </p>
           <div className="mt-6 text-left max-w-3xl mx-auto bg-card p-4 rounded-lg border">
             <p className="text-lg font-semibold text-foreground">We are one of the leading demolition contractors in Johannesburg, trusted by homeowners, builders, and commercial clients across Sandton, Randburg, Midrand, and Roodepoort. Our team delivers safe, compliant, and cost-effective demolition services, making us a top choice for projects of all sizes in Gauteng.</p>
@@ -164,7 +164,7 @@ export default function DemolitionJohannesburgPage() {
             <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">Types of Demolition Services We Offer</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                    Our capabilities cover every kind of structural removal project in Johannesburg. We provide different types of demolition depending on the project, from full demolition where the entire structure is removed, to partial demolition for renovations where sections are removed without damaging surrounding areas. Each project is handled with careful planning and the right equipment.
+                    We provide different types of demolition depending on the project. Each project is handled with careful planning and the right equipment.
                 </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -186,10 +186,10 @@ export default function DemolitionJohannesburgPage() {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle className="flex items-center gap-3"><Layers className="text-primary" /> Interior Demolition (Strip-Outs)</CardTitle>
+                        <CardTitle className="flex items-center gap-3"><Layers className="text-primary" /> Partial Demolition (Strip-Outs)</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Ideal for renovations and tenant changeovers, our interior strip-out services involve the selective removal of non-structural elements. We carefully dismantle walls, ceilings, flooring, fixtures, and fittings while preserving the building's main structure, preparing the space for a complete redesign.</p>
+                        <p className="text-muted-foreground">Ideal for renovations, our partial demolition or interior strip-out services involve the selective removal of non-structural elements like walls, ceilings, and fixtures while preserving the building's main structure for a redesign.</p>
                     </CardContent>
                 </Card>
                 <Card>
@@ -224,10 +224,10 @@ export default function DemolitionJohannesburgPage() {
         </section>
         
         <section className="mb-16">
-             <h2 className="text-3xl font-bold text-center mb-8">After the Demolition Process</h2>
-             <p className="text-center text-muted-foreground max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4">After the Demolition Process</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto">
                 Once demolition is complete, all rubble, concrete, and debris is removed from the site. The area is then levelled and prepared depending on the client’s needs, whether for new construction, landscaping, or paving. Our goal is to leave the site clean, safe, and ready for the next phase of your project.
-             </p>
+            </p>
         </section>
 
         <section id="demolition-cost" className="mb-16">
@@ -285,11 +285,31 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section className="mb-16">
-             <h2 className="text-3xl font-bold text-center mb-8">Demolition Equipment & Methods</h2>
+         <section className="mb-16">
+             <h2 className="text-3xl font-bold text-center mb-4">Demolition Equipment & Methods</h2>
              <p className="text-center text-muted-foreground max-w-3xl mx-auto">
                 We use the appropriate equipment for each project to ensure efficient and safe demolition. This includes TLB machines, breakers, and trucks for rubble removal. Our approach ensures controlled demolition, minimal disruption, and safe handling of all materials.
              </p>
+        </section>
+
+        <section id="recent-projects" className="py-12 md:py-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl font-bold text-center mb-8">Recent Demolition Project in Johannesburg</h2>
+                <p className="text-center text-muted-foreground max-w-3xl mx-auto">We recently completed a full residential demolition in Johannesburg, removing an old structure and clearing all rubble from the site. The result was a clean, level area ready for new construction, completed on time and without disruption to surrounding properties.</p>
+            </div>
+        </section>
+        
+        <section id="safety-compliance" className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
+            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
+                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. All demolition work is carried out safely and in line with industry standards, ensuring proper handling of materials and responsible disposal of debris at approved sites. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
+            </p>
+             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-sm text-muted-foreground">We carry comprehensive public liability insurance, giving you complete peace of mind.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Licensed Professionals</h4><p className="text-sm text-muted-foreground">Our teams are trained, certified, and experienced in all aspects of safe demolition practices.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Regulatory Compliance</h4><p className="text-sm text-muted-foreground">We adhere to all City of Johannesburg bylaws and national Occupational Health and Safety (OHS) Act regulations.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Site Safety Protocols</h4><p className="text-sm text-muted-foreground">Every project begins with securing the site, implementing dust control measures, and ensuring all personnel have the correct PPE.</p></div></div>
+            </div>
         </section>
 
         <section id="emergency-demolition" className="py-12 md:py-20 bg-destructive/10 text-destructive-foreground rounded-lg mb-16">
@@ -336,89 +356,11 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
-        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Johannesburg</h2>
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Full House Demolition</CardTitle>
-                            <p className="text-sm text-muted-foreground">Sandton</p>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
-                            <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='residentialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaningAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Commercial Site Clearing</CardTitle>
-                            <p className="text-sm text-muted-foreground">Randburg</p>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">Dismantled and cleared an old commercial structure to prepare the site for a new retail development. The project involved careful coordination to minimize disruption to neighboring businesses.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='commercialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='commercialDemolition')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaning') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                    <Card>
-                        <CardHeader>
-                            <CardTitle>Swimming Pool Removal</CardTitle>
-                            <p className="text-sm text-muted-foreground">Roodepoort</p>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-sm mb-4">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoWork') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageUrl} alt={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.description} data-ai-hint={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </div>
-            </div>
-        </section>
-
-        <section id="safety-compliance" className="mb-16 bg-card p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public. All demolition work is carried out safely and in line with industry standards, ensuring proper handling of materials and responsible disposal of debris at approved sites.
-            </p>
-             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-sm text-muted-foreground">We carry comprehensive public liability insurance, giving you complete peace of mind.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Licensed Professionals</h4><p className="text-sm text-muted-foreground">Our teams are trained, certified, and experienced in all aspects of safe demolition practices.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Regulatory Compliance</h4><p className="text-sm text-muted-foreground">We adhere to all City of Johannesburg bylaws and national Occupational Health and Safety (OHS) Act regulations.</p></div></div>
-                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Site Safety Protocols</h4><p className="text-sm text-muted-foreground">Every project begins with securing the site, implementing dust control measures, and ensuring all personnel have the correct PPE.</p></div></div>
-            </div>
-        </section>
-
         <section id="areas-we-serve" className="py-12 md:py-20">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center">Serving Every Corner of Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-center text-muted-foreground">Our teams are strategically positioned to provide fast, reliable demolition services across all of Johannesburg's key suburbs. We are your local experts, from the northern estates to the southern communities.</p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mt-12">
                     <div className="bg-card p-6 rounded-lg shadow-md">
                         <h3 className="font-bold text-xl mb-2"><Link href="/demolition-sandton" className="hover:text-primary">Demolition Sandton</Link></h3>
                         <p className="text-muted-foreground text-sm">As premier demolition contractors in Sandton, we provide elite services for luxury homes and commercial properties. Our teams are experts in navigating secure estates and ensuring a discreet, professional project.</p>
