@@ -1,9 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const faqs = [
     { question: "Can you provide plant hire for large industrial sites in Germiston?", answer: "Yes, we specialize in servicing Germiston's industrial sector. We offer a range of heavy machinery, including large excavators and tipper trucks, perfect for factory sites, warehouses, and new industrial developments. Our teams are experienced in industrial site safety." },
@@ -20,7 +22,7 @@ export default function PlantHireGermistonPage() {
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Plant Hire Services Germiston</h1>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                In the industrial heartland of the East Rand, Apex Demolitions is the leading provider of heavy-duty plant hire in Germiston. We supply reliable machinery and certified operators for industrial, commercial, and residential projects.
+                In the industrial heartland of the East Rand, Apex Demolitions is the leading provider of heavy-duty plant hire in Germiston. As seasoned contractors, not just a rental company, we understand the demands of industrial sites. We supply reliable machinery complete with certified operators for all industrial, commercial, and residential projects, ensuring every job is done safely and to professional standards.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -41,9 +43,9 @@ export default function PlantHireGermistonPage() {
                 <div>
                     <p className="text-muted-foreground mb-4">Heavy-duty equipment for Germiston's industries.</p>
                     <ul className="space-y-3">
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Excavators & Bulldozers:** For large-scale site clearing, demolition, and bulk earthworks.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Tipper Trucks:** High-capacity trucks for efficient removal of industrial waste and construction materials.</span></li>
-                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**TLBs & Bobcats:** Versatile machinery for smaller commercial and residential jobs in the Germiston area.</span></li>
+                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Excavators & Bulldozers:** For large-scale site clearing, <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link>, and bulk earthworks.</span></li>
+                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**Tipper Trucks:** High-capacity trucks for efficient industrial waste and <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>.</span></li>
+                        <li className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><span>**TLBs & Bobcats:** Versatile machinery for smaller commercial jobs and post-project <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site cleaning</Link>.</span></li>
                     </ul>
                 </div>
             </div>
@@ -56,6 +58,28 @@ export default function PlantHireGermistonPage() {
                 <div><h4 className="font-semibold text-lg">Safety Certified</h4><p className="text-muted-foreground mt-2 text-sm">Our teams follow rigorous safety protocols for hazardous industrial environments.</p></div>
                 <div><h4 className="font-semibold text-lg">Reliable & On-Time</h4><p className="text-muted-foreground mt-2 text-sm">We understand that downtime costs money. Our service is punctual and efficient.</p></div>
                 <div><h4 className="font-semibold text-lg">Local East Rand Crew</h4><p className="text-muted-foreground mt-2 text-sm">Our local presence ensures responsive and knowledgeable service for Germiston.</p></div>
+            </div>
+        </section>
+
+        <section id="use-cases" className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12">Common Use Cases for Plant Hire in Germiston</h2>
+            <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-6">
+                <Card>
+                    <CardHeader><CardTitle>Industrial Site Preparation</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">Bulk earthworks and clearing for new factories and warehouses.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Commercial Construction</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">Digging foundations and trenches for new business premises.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Demolition & Rubble Removal</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">Using heavy machinery to assist with <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> and large-scale <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>.</p></CardContent>
+                </Card>
+                <Card>
+                    <CardHeader><CardTitle>Residential Projects</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">TLB hire for pool excavations, landscaping, and foundation work.</p></CardContent>
+                </Card>
             </div>
         </section>
         
