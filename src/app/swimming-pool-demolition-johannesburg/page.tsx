@@ -84,39 +84,18 @@ const combinedSchema = {
     "@graph": [localBusinessSchema, serviceSchema, faqSchema]
 };
 
-const suburbs = [
+const mainSuburbs = [
     { name: "Sandton", href: "/swimming-pool-demolition-sandton" },
     { name: "Randburg", href: "/swimming-pool-demolition-randburg" },
-    { name: "Roodepoort", href: "/swimming-pool-demolition-roodepoort" },
     { name: "Midrand", href: "/swimming-pool-demolition-midrand" },
+    { name: "Roodepoort", href: "/swimming-pool-demolition-roodepoort" },
     { name: "Fourways", href: "/swimming-pool-demolition-fourways" },
-    { name: "Soweto", href: "/swimming-pool-demolition-soweto" }, 
-    { name: "Alberton", href: "/swimming-pool-demolition-alberton" },
-    { name: "Germiston", href: "/swimming-pool-demolition-germiston" },
-    { name: "Boksburg", href: "/swimming-pool-demolition-boksburg" },
-    { name: "Benoni", href: "/swimming-pool-demolition-benoni" },
-    { name: "Kempton Park", href: "/swimming-pool-demolition-kempton-park" }, 
-    { name: "Bedfordview", href: "/swimming-pool-demolition-bedfordview" },
-    { name: "Edenvale", href: "/swimming-pool-demolition-edenvale" },
     { name: "Bryanston", href: "/swimming-pool-demolition-bryanston" },
-    { name: "Rosebank", href: "/swimming-pool-demolition-rosebank" },
-    { name: "Northcliff", href: "/swimming-pool-demolition-northcliff" }, 
-    { name: "Melville", href: "/swimming-pool-demolition-melville" },
-    { name: "Linden", href: "/swimming-pool-demolition-linden" },
-    { name: "Parkhurst", href: "/swimming-pool-demolition-parkhurst" },
-    { name: "Greenside", href: "/swimming-pool-demolition-greenside" },
-    { name: "Johannesburg South", href: "/swimming-pool-demolition-johannesburg-south"},
-    { name: "Glenvista", href: "/swimming-pool-demolition-glenvista"},
-    { name: "Krugersdorp", href: "/swimming-pool-demolition-krugersdorp"},
-    { name: "Springs", href: "/swimming-pool-demolition-springs"},
-    { name: "Brakpan", href: "/swimming-pool-demolition-brakpan"},
-    { name: "Nigel", href: "/swimming-pool-demolition-nigel"},
-    { name: "Johannesburg CBD", href: "/swimming-pool-demolition-johannesburg-cbd"},
-    { name: "Rivonia", href: "/swimming-pool-demolition-rivonia"},
-    { name: "Kyalami", href: "/swimming-pool-demolition-kyalami"},
-    { name: "Parkview", href: "/swimming-pool-demolition-parkview"},
-    { name: "Constantia Kloof", href: "/swimming-pool-demolition-constantia-kloof"}
+    { name: "Rivonia", href: "/swimming-pool-demolition-rivonia" },
 ];
+
+const otherSuburbsText = "Soweto, Alberton, Germiston, Boksburg, Benoni, Kempton Park, Bedfordview, Edenvale, Rosebank, Northcliff, Melville, Linden, Parkhurst, Greenside, Johannesburg South, Glenvista, Krugersdorp, Springs, Brakpan, Nigel, Johannesburg CBD, Kyalami, Parkview, and Constantia Kloof.";
+
 
 export default function SwimmingPoolDemolitionJohannesburgPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'poolDemoHero');
@@ -255,10 +234,10 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
         <section id="areas-we-serve" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Serving All of Johannesburg and Surrounding Suburbs</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                Our teams are strategically located to provide fast, reliable swimming pool demolition across the entire Johannesburg region. We are proud to be the trusted pool removal contractors in key areas like <Link href="/swimming-pool-demolition-sandton" className="text-primary hover:underline">Sandton</Link> and <Link href="/swimming-pool-demolition-randburg" className="text-primary hover:underline">Randburg</Link>, offering specialized services for luxury estates and dense residential suburbs. Our reach extends across the West Rand for clients in <Link href="/swimming-pool-demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and into the rapidly growing northern corridor of <Link href="/swimming-pool-demolition-midrand" className="text-primary hover:underline">Midrand</Link>. No matter where you are, we have a local team ready to assist.
+                Our teams are strategically located to provide fast, reliable swimming pool demolition across the entire Johannesburg region. We are proud to be the trusted pool removal contractors in key areas like Sandton, Randburg, and Roodepoort. Click on a service area to learn more.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-                {suburbs.map(suburb => (
+                {mainSuburbs.map(suburb => (
                     <Button key={suburb.name} variant="outline" asChild>
                         <Link href={suburb.href}>
                            <MapPin className="mr-2" /> {suburb.name}
@@ -266,6 +245,9 @@ export default function SwimmingPoolDemolitionJohannesburgPage() {
                     </Button>
                 ))}
             </div>
+             <p className="text-center text-sm text-muted-foreground mt-8 max-w-4xl mx-auto">
+                Our service area also includes: {otherSuburbsText} Visit our <Link href="/swimming-pool-demolition-services-johannesburg" className="text-primary hover:underline">main services hub</Link> for more information.
+            </p>
              <div className="text-center mt-12">
                  <h3 className="text-2xl font-semibold">Don't see your area? We likely cover it.</h3>
                 <p className="text-muted-foreground mt-2">Contact us today for a confirmation and a free quote.</p>
