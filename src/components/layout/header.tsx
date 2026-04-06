@@ -108,10 +108,7 @@ export function Header() {
           <div className="bg-primary p-2 rounded-md">
             <HardHat className="h-6 w-6 text-primary-foreground" />
           </div>
-          <div className="flex flex-col">
-              <span className="font-bold text-base uppercase tracking-wider text-foreground">Apex Demolitions</span>
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
-          </div>
+          <span className="font-bold text-base uppercase tracking-wider text-foreground">Apex Demolitions Projects</span>
         </Link>
       </div>
       <div className="flex flex-col gap-4 mt-6 flex-grow">
@@ -142,10 +139,7 @@ export function Header() {
           <div className="bg-primary p-2 rounded-md">
             <HardHat className="h-8 w-8 text-primary-foreground" />
           </div>
-          <div className="flex flex-col">
-            <span className="font-bold text-lg uppercase tracking-wider text-foreground">Apex Demolitions</span>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
-          </div>
+          <span className="font-bold text-lg uppercase tracking-wider text-foreground">Apex Demolitions Projects</span>
         </Link>
         
         <div className="hidden md:flex flex-1 items-center justify-end gap-6">

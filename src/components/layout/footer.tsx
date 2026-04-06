@@ -32,10 +32,7 @@ export function Footer() {
                 <div className="bg-primary p-2 rounded-md">
                     <HardHat className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <div className="flex flex-col">
-                    <span className="font-bold text-lg uppercase tracking-wider text-foreground">Apex Demolitions</span>
-                    <span className="text-xs uppercase tracking-widest text-muted-foreground">Projects & Services</span>
-                </div>
+                <span className="font-bold text-lg uppercase tracking-wider text-foreground">Apex Demolitions Projects</span>
             </Link>
             <p className="text-sm">
                 Leading demolition and site clearing specialists in Gauteng. We provide professional services for residential and commercial projects.
