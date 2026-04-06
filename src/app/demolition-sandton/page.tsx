@@ -9,8 +9,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const faqs = [
     { 
-        question: "Are your demolition services available throughout Sandton?", 
-        answer: "Yes, absolutely. Our team provides elite demolition services across all of Sandton's suburbs. We have dedicated teams regularly working in Sandhurst, Hyde Park, Morningside, Bryanston, Rivonia, and the Sandton CBD itself. We understand the unique requirements of each area, from navigating secure estates to managing logistics in busy commercial zones." 
+        question: "How much does demolition cost in Sandton?", 
+        answer: "The cost for demolition in Sandton is competitive but reflects the high standards required. A small structure might start from R20,000, while a full luxury house demolition can range from R60,000 to R150,000+. Factors include the property's size, materials (e.g., reinforced concrete), site access within secure estates, and the scope of site clearing. We provide a free, detailed on-site assessment to give you a transparent, fixed-price quote with no surprises."
+    },
+    { 
+        question: "Do you offer same-day demolition in Sandton?", 
+        answer: "For urgent situations, such as a fire-damaged or structurally unsound building, we offer a rapid-response emergency service. While a full demolition can't be completed in one day, we can be on-site the same day to assess, secure the property, and begin the teardown process immediately. Call us directly for our fastest response."
     },
     { 
         question: "How do you handle demolitions in Sandton's exclusive, secure estates?", 
@@ -19,10 +23,6 @@ const faqs = [
     { 
         question: "Is your company insured for high-value properties?", 
         answer: "Yes. We carry comprehensive public liability insurance specifically designed for working on high-value residential and commercial properties. This provides our clients in Sandton with complete peace of mind, knowing their valuable assets, as well as neighbouring properties, are fully protected throughout the demolition process." 
-    },
-    { 
-        question: "What is your process for demolishing a luxury home?", 
-        answer: "Our process for luxury homes is meticulous. It begins with a thorough site assessment and planning phase, where we identify all elements to be protected (like mature trees or boundary walls). We then use a precision dismantling process, often breaking the structure down piece by piece to avoid damage. This is followed by a full <a href='/rubble-removal-sandton' class='text-primary hover:underline'>rubble removal</a> and <a href='/site-cleaning-sandton' class='text-primary hover:underline'>site cleaning</a> service, leaving the property pristine and ready for your new architectural vision." 
     }
 ];
 
@@ -49,22 +49,35 @@ export default function DemolitionSandtonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Contractors Sandton</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Sandton – Professional Demolition Contractors Near You</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
             <ShieldCheck /> Sandton's Premier Luxury Home & Building Demolition Service
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading **demolition contractors in Sandton**, Apex Demolitions provides a premium, specialized service tailored for Johannesburg's most exclusive properties. We understand the precision, discretion, and high standards required for **demolition in Sandton**, from large-scale **residential demolition** in Sandhurst to complex **commercial demolition** near the Sandton CBD. Our expertise in managing City of Johannesburg permits and strict estate protocols is unparalleled. 
+            As the leading **demolition contractors in Sandton**, Apex Demolitions provides a premium, specialized service for Johannesburg's most exclusive properties. We have extensive experience serving Sandton and nearby areas like Bryanston and Fourways, offering fast, reliable, and fully insured demolition services. Same-day and urgent services are available across Johannesburg depending on project size and location.
           </p>
         </section>
 
         <section className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
-                <p className="text-lg text-muted-foreground">
-                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice. We also offer same-day demolition services in Sandton for urgent projects.
+                <h2 className="text-3xl md:text-4xl font-bold">Sandton's Premier Demolition Service</h2>
+                <p className="mt-4 text-lg text-muted-foreground text-left">
+                    We are the trusted **demolition contractors Sandton** architects and homeowners rely on for safe, compliant, and professional demolition services. Our extensive experience covers both large-scale **residential demolition** in suburbs like Morningside and Rivonia, and complex **commercial demolition** projects within the Sandton CBD. Our team is committed to delivering a superior service that respects the value of your property and the standards of your neighborhood. For any **building demolition Sandton** project, large or small, we are the insured, licensed, and reliable choice.
                 </p>
             </div>
         </section>
+        
+        <section id="trust-block" className="bg-card border-b border-t mb-16">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-4">
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> 15+ Years Experience</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Professional Teams</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Fully Equipped Machinery</div>
+                <div className="flex items-center justify-center gap-2 text-sm font-medium"><Check className="text-primary" /> Legal Waste Disposal</div>
+            </div>
+          </div>
+        </section>
+
 
         <section id="types-of-demolition" className="py-12 md:py-16 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
@@ -85,31 +98,14 @@ export default function DemolitionSandtonPage() {
             </div>
         </section>
 
-        <section id="demolition-process" className="py-12 md:py-16">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Our Demolition Process in Sandton</h2>
-                    <p className="mt-2 max-w-3xl mx-auto text-muted-foreground">We follow a systematic, authority-compliant process to ensure every project is seamless, safe, and efficient from start to finish.</p>
-                </div>
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
-                    <Card className="text-center"><CardHeader><CardTitle>1. Site Inspection & Planning</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">A thorough on-site assessment to provide a detailed quotation and project plan that respects all estate and municipal regulations.</p></CardContent></Card>
-                    <Card className="text-center"><CardHeader><CardTitle>2. Planning & Permits</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We professionally manage all permit applications with the City of Johannesburg and liaise with estate management to ensure full legal compliance.</p></CardContent></Card>
-                    <Card className="text-center"><CardHeader><CardTitle>3. Safe Demolition Work</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">Our licensed team performs a controlled, surgical demolition using modern equipment and techniques to dismantle the structure safely.</p></CardContent></Card>
-                    <Card className="text-center"><CardHeader><CardTitle>4. Rubble Removal & Cleanup</CardTitle></CardHeader><CardContent><p className="text-sm text-muted-foreground">We clear all debris and transport it to licensed facilities, leaving your site spotless and ready for your builders.</p></CardContent></Card>
-                </div>
-            </div>
-        </section>
-
-        <section id="demolition-cost" className="py-12 md:py-16 bg-card rounded-lg mb-16">
-            <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Costs in Sandton</h2>
-                <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
-                    How much does demolition cost? While we offer **affordable demolition Sandton** solutions, the **demolition cost in Sandton** is influenced by the premium nature of the area. We provide transparent, detailed quotes that account for these unique factors.
-                </p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <Card><CardHeader><CardTitle>Property Size & Complexity</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">The square meterage and complexity of the build (e.g., multi-story, deep foundations, difficult materials) are the primary cost drivers.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Access & Estate Rules</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Restricted work hours, noise limitations, and difficult access for heavy machinery in secure estates can influence the project timeline and cost.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Rubble Removal Volume</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">The total volume of debris that needs to be removed from the site and transported to registered disposal facilities will directly impact the final price.</p></CardContent></Card>
+        <section className="py-12 md:py-20 bg-background text-center">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Leading Demolition & Plant Hire Company in Johannesburg</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of Johannesburg’s most trusted demolition and plant hire companies, handling projects across <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, and surrounding areas. From small residential jobs to large-scale construction projects, our team delivers reliable, fast, and professional service every time. Our commitment to quality, safety, and efficiency has made us a preferred choice for homeowners, builders, and businesses across Johannesburg.
+                 </p>
+                  <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-card p-4 rounded-lg shadow-sm">
+                    <Check className="text-green-500 h-6 w-6" /> Successfully completed hundreds of demolition projects across Johannesburg.
                 </div>
             </div>
         </section>
@@ -119,33 +115,21 @@ export default function DemolitionSandtonPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Sandton</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>Luxury Home Demolition</CardTitle><p className="text-sm text-muted-foreground">Sandhurst</p></CardHeader>
+                        <CardHeader><CardTitle>Luxury Home Demolition</CardTitle><p className="text-sm text-muted-foreground">Sandton – House demolition completed safely</p></CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Full demolition of a 5-bedroom luxury home to clear a prime plot for a new architectural masterpiece. The project required careful protection of champion trees and was completed in 5 days, with all rubble removed and the site left pristine.</p>
-                            <div className="grid grid-cols-2 gap-2">
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='residentialDemolition') && <Image src={PlaceHolderImages.find(p=>p.id==='residentialDemolition')!.imageUrl} alt="Old luxury house in Sandhurst" data-ai-hint="luxury house" fill className="rounded-md object-cover" />}</div></div>
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaningAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaningAfter')!.imageUrl} alt="Cleared plot in Sandhurst" data-ai-hint="clean site" fill className="rounded-md object-cover" />}</div></div>
-                            </div>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Office Interior Strip-Out</CardTitle><p className="text-sm text-muted-foreground">Rivonia</p></CardHeader>
+                        <CardHeader><CardTitle>Office Interior Strip-Out</CardTitle><p className="text-sm text-muted-foreground">Bryanston – Renovation strip-out</p></CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Complete interior strip-out of two floors of an office building to prepare a 'white box' for a new corporate tenant. Work was completed out of hours to avoid disruption to other businesses, resulting in a perfectly clean and ready-to-fit space.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='interiorStripOut') && <Image src={PlaceHolderImages.find(p=>p.id==='interiorStripOut')!.imageUrl} alt="Dated office interior" data-ai-hint="old office" fill className="rounded-md object-cover" />}</div></div>
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='siteCleaning') && <Image src={PlaceHolderImages.find(p=>p.id==='siteCleaning')!.imageUrl} alt="Empty white box office" data-ai-hint="empty office" fill className="rounded-md object-cover" />}</div></div>
-                            </div>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Swimming Pool Removal</CardTitle><p className="text-sm text-muted-foreground">Morningside</p></CardHeader>
+                        <CardHeader><CardTitle>Site Clearance Project</CardTitle><p className="text-sm text-muted-foreground">Fourways – Site clearance project</p></CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Removal of a large, old marbelite pool and extensive paving to create a larger, modern garden and entertainment area. The site was left perfectly level, compacted, and ready for new landscaping, transforming the client's backyard.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoWork') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoWork')!.imageUrl} alt="Old swimming pool in Morningside" data-ai-hint="old pool" fill className="rounded-md object-cover" />}</div></div>
-                                <div><p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p><div className="aspect-video relative">{PlaceHolderImages.find(p=>p.id==='poolDemoAfter') && <Image src={PlaceHolderImages.find(p=>p.id==='poolDemoAfter')!.imageUrl} alt="New lawn where pool was" data-ai-hint="green lawn" fill className="rounded-md object-cover" />}</div></div>
-                            </div>
+                            <p className="text-sm mb-4">Managed the demolition of an old warehouse on schedule to make way for a new logistics park. The project included the removal of deep foundations and extensive site clearing.</p>
                         </CardContent>
                     </Card>
                 </div>
@@ -153,26 +137,8 @@ export default function DemolitionSandtonPage() {
         </section>
         
         <section className="py-12 md:py-16 bg-card rounded-lg mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Areas We Serve in and Around Sandton</h2>
-             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite **demolition services** across all of Sandton's prestigious suburbs. Our teams are the local experts for demolition, rubble removal, and site clearing in:</p>
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold text-lg mb-2">Sandhurst, Hyde Park & Inanda</h3>
-                    <p className="text-sm text-muted-foreground">Specializing in luxury residential demolition, our teams work with precision and discretion to prepare plots for new architectural masterpieces, always protecting valuable trees and neighbouring properties.</p>
-                </div>
-                <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold text-lg mb-2">Morningside & Rivonia</h3>
-                    <p className="text-sm text-muted-foreground">We are the trusted contractors for both residential and commercial projects, from home demolitions to office strip-outs, providing a fast and reliable service.</p>
-                </div>
-                 <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold text-lg mb-2"><Link href="/demolition-bryanston" className="text-primary hover:underline">Bryanston</Link></h3>
-                    <p className="text-sm text-muted-foreground">We are the premier demolition contractors for Bryanston's large residential stands and secure estates, handling everything from pool removals to full house demolitions with expert care.</p>
-                </div>
-                <div className="bg-background p-6 rounded-lg shadow-sm">
-                    <h3 className="font-bold text-lg mb-2">Sandton CBD, <Link href="/demolition-rosebank" className="text-primary hover:underline">Rosebank</Link> & Surrounds</h3>
-                    <p className="text-sm text-muted-foreground">Our teams are experts in commercial demolition and strip-outs in the high-density urban environments of the Sandton CBD and Rosebank, working around business hours to minimize disruption.</p>
-                </div>
-            </div>
+            <h2 className="text-3xl font-bold text-center mb-8">Trusted Demolition Contractors in Sandton</h2>
+             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We provide elite **demolition services** across all of Sandton's prestigious suburbs. Our teams are the local experts for demolition, rubble removal, and site clearing in Sandton, Bryanston, and Fourways.</p>
         </section>
 
         <section id="faq" className="py-12 md:py-16">
@@ -185,16 +151,19 @@ export default function DemolitionSandtonPage() {
                     </div>
                 ))}
             </div>
+             <div className="text-center mt-8">
+                <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
+             </div>
         </section>
         
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg mt-16">
-          <h2 className="text-3xl font-bold">Need Demolition Services in Sandton?</h2>
+          <h2 className="text-3xl font-bold">Need demolition in Sandton today?</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">
             For urgent projects, we offer **same-day demolition services in Sandton**. Contact us for a fast, competitive, and no-obligation quote. Our Sandton team is ready to provide a professional assessment.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now for a Same-Day Quote</a></Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp Us</a></Button>
+            <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call for a Quote</a></Button>
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for Fast Response</a></Button>
           </div>
           <p className="mt-4 text-xs text-primary-foreground/70">As the most trusted <Link href="/demolition-johannesburg" className="text-primary-foreground underline hover:text-secondary">demolition contractors in Johannesburg</Link>, we also serve <Link href="/demolition-randburg" className="text-primary-foreground underline hover:text-secondary">Demolition Randburg</Link> clients.</p>
         </section>
