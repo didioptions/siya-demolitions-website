@@ -274,7 +274,14 @@ export default function DemolitionJohannesburgPage() {
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our local teams have the expertise to navigate any challenge, from Sandton's estates to Soweto's residential stands.</p></div></div>
                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money in any project. Our crews are punctual, efficient, and committed to meeting your deadlines without compromising on safety or quality.</p></div></div>
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Proven Track Record</h3><p className="text-muted-foreground mt-1 text-sm"><strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong> <strong>✔ We handle demolition projects daily across Johannesburg, from small homes to large commercial sites.</strong> Our portfolio of successful residential and commercial projects speaks for itself. <strong>✔ Trusted by homeowners, builders, and businesses across Johannesburg.</strong></p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div>
+                                <h3 className="text-xl font-semibold">Proven Track Record</h3>
+                                <p className="text-muted-foreground mt-1 text-sm">
+                                    <strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong><br/>
+                                    <strong>✔ Trusted demolition contractors working across Johannesburg every day.</strong><br/>
+                                    Our portfolio of successful residential and commercial projects speaks for itself, making us a trusted partner for homeowners, builders, and businesses alike.
+                                </p>
+                            </div></div>
                         </div>
                     </div>
                     <div>
