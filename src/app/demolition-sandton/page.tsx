@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, ShieldCheck, Building, Home, Layers, Waves, Sparkles, Star, ArrowRight, MessageSquare, Quote } from "lucide-react";
@@ -78,6 +79,20 @@ export default function DemolitionSandtonPage() {
           </div>
         </section>
 
+        <section className="py-12 md:py-20 bg-background text-center">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Leading Demolition Contractors in Sandton</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of the most trusted demolition contractors in Sandton, delivering fast and professional services for residential, commercial, and construction projects. Our team works across Sandton, Bryanston, and Fourways, providing reliable demolition solutions tailored to each project.
+                 </p>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    With years of experience and the right equipment, we handle everything from small home demolitions to large-scale site clearance projects efficiently and safely.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-card p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Completed multiple demolition projects across Sandton and surrounding areas</strong></p>
+                </div>
+            </div>
+        </section>
 
         <section id="types-of-demolition" className="py-12 md:py-16 bg-card rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6">
@@ -115,19 +130,19 @@ export default function DemolitionSandtonPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Sandton</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>Luxury Home Demolition</CardTitle><p className="text-sm text-muted-foreground">Sandton – House demolition completed safely</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Sandton – Residential house demolition completed safely and on time</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Full demolition of a 5-bedroom luxury home to clear a prime plot for a new architectural masterpiece. The project required careful protection of champion trees and was completed in 5 days, with all rubble removed and the site left pristine.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Office Interior Strip-Out</CardTitle><p className="text-sm text-muted-foreground">Bryanston – Renovation strip-out</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Bryanston – Interior strip-out for renovation project</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Complete interior strip-out of two floors of an office building to prepare a 'white box' for a new corporate tenant. Work was completed out of hours to avoid disruption to other businesses, resulting in a perfectly clean and ready-to-fit space.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Site Clearance Project</CardTitle><p className="text-sm text-muted-foreground">Fourways – Site clearance project</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Fourways – Site clearance for new development</CardTitle></CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Managed the demolition of an old warehouse on schedule to make way for a new logistics park. The project included the removal of deep foundations and extensive site clearing.</p>
                         </CardContent>
