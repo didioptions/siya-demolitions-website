@@ -123,7 +123,22 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="pricing" className="py-12 md:py-20 bg-card">
+        <section className="py-12 md:py-20 bg-card">
+            <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
+                <h2 className="text-3xl md:text-4xl font-bold">Leading Demolition & Plant Hire Company in Johannesburg</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of Johannesburg’s most trusted demolition and plant hire companies, handling projects across Sandton, Randburg, Midrand, and surrounding areas. From small residential jobs to large-scale construction projects, our team delivers reliable, fast, and professional service every time.
+                </p>
+                <p className="mt-4 text-lg text-muted-foreground">
+                    Our commitment to quality, safety, and efficiency has made us a preferred choice for homeowners, builders, and businesses across Johannesburg.
+                </p>
+                <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <Check className="text-green-500 h-6 w-6" /> Successfully completed hundreds of projects across Johannesburg
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl font-bold text-center mb-8">Affordable Pricing in Johannesburg</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">We believe in clear, upfront pricing with no hidden costs. Here's a guideline for our most popular services.</p>
@@ -158,7 +173,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="py-12 md:py-20 bg-background">
+        <section className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold">How Our Service Works</h2>
@@ -174,27 +189,39 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="recent-projects" className="py-12 md:py-20 bg-card">
+        <section id="recent-projects" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Projects in Johannesburg</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Projects Completed</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>✔ Sandton – Demolition</CardTitle></CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">Full house demolition completed in a secure estate. Managed all logistics and left the property ready for a new build in just 4 days.</p></CardContent>
+                        <CardHeader>
+                            <CardTitle>✔ Sandton – Full house demolition completed within 5 days</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm text-muted-foreground">Complete demolition of a luxury home in a secure estate, including foundation removal and site leveling, preparing the plot for a new build ahead of schedule.</p>
+                        </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>✔ Randburg – Rubble Removal</CardTitle></CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">Same-day removal of 3 truckloads of renovation debris from a residential property, allowing other contractors to proceed without delay.</p></CardContent>
+                        <CardHeader>
+                            <CardTitle>✔ Randburg – 6 cube rubble removal after renovation</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm text-muted-foreground">Same-day service to remove a full truckload of renovation debris from a residential property, allowing other contractors to proceed without delay.</p>
+                        </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>✔ Midrand – Site Clearance</CardTitle></CardHeader>
-                        <CardContent><p className="text-sm text-muted-foreground">Provided ongoing site clearance for a new development, including vegetation removal and bulk earthworks with our plant hire equipment.</p></CardContent>
+                        <CardHeader>
+                             <CardTitle>✔ Midrand – Full site clearance for new development project</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-sm text-muted-foreground">Ongoing site clearance, including vegetation removal and bulk earthworks with our plant hire equipment, keeping a large development safe and productive.</p>
+                        </CardContent>
                     </Card>
                 </div>
             </div>
         </section>
         
-        <section className="py-12 md:py-20 bg-background text-center">
+        <section className="py-12 md:py-20 bg-card text-center">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl font-bold">Complete Construction & Demolition Solutions</h2>
                  <p className="mt-4 text-lg text-muted-foreground">
@@ -203,7 +230,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="areas-we-serve" className="py-12 md:py-20 bg-card">
+        <section id="areas-we-serve" className="py-12 md:py-20 bg-background">
             <div className="container mx-auto px-4 md:px-6 text-center">
                 <h2 className="text-3xl font-bold mb-8">Serving All of Johannesburg and Surrounds</h2>
                 <p className="text-muted-foreground max-w-3xl mx-auto mb-10">Our teams are strategically positioned to provide fast, reliable services across all of Johannesburg's key suburbs.</p>
@@ -219,7 +246,7 @@ export default function Home() {
             </div>
         </section>
         
-        <section id="faq" className="py-12 md:py-20 bg-background">
+        <section id="faq" className="py-12 md:py-20 bg-card">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl">
                  <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
                 <Accordion type="single" collapsible className="w-full">
