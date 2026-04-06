@@ -12,7 +12,7 @@ import { HomePageContactForm } from "@/components/home/home-page-contact-form";
 const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Apex Demolitions",
+    "name": "Apex Demolitions Projects",
     "image": "https://images.unsplash.com/photo-1584460715199-eebff7891315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVtb2xpdGlvbiUyMGJ1aWxkaW5nfGVufDB8fHx8MTc3MDA2NzI2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     "url": "https://apex-demolitions-website.vercel.app/demolition-johannesburg",
     "telephone": "078 429 2760",
@@ -34,7 +34,7 @@ const serviceSchema = {
     "serviceType": "Demolition Services",
     "provider": {
         "@type": "LocalBusiness",
-        "name": "Apex Demolitions"
+        "name": "Apex Demolitions Projects"
     },
     "areaServed": {
         "@type": "City",
@@ -83,7 +83,7 @@ const faqs = [
     },
     {
         question: "Why is using a licensed and insured contractor so important?",
-        answer: "Using a licensed and insured contractor like Apex Demolitions protects you completely. Our license ensures we are compliant with all municipal by-laws and safety regulations, avoiding fines and stop-orders. Our comprehensive public liability insurance covers your property, your neighbours' property, and the public against any unforeseen incidents, giving you total peace of mind."
+        answer: "Using a licensed and insured contractor like Apex Demolitions Projects protects you completely. Our license ensures we are compliant with all municipal by-laws and safety regulations, avoiding fines and stop-orders. Our comprehensive public liability insurance covers your property, your neighbours' property, and the public against any unforeseen incidents, giving you total peace of mind."
     }
 ];
 
@@ -132,20 +132,14 @@ export default function DemolitionJohannesburgPage() {
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
             As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We provide demolition services across Johannesburg, including Sandton, Randburg, Midrand, Roodepoort, and industrial areas like Germiston. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively. Same-day and urgent services are available across Johannesburg depending on project size and location.
           </p>
-          <div className="mt-6 text-left max-w-3xl mx-auto bg-card p-4 rounded-lg border">
-            <p className="text-lg font-semibold text-foreground">We are one of the leading demolition contractors in Johannesburg, trusted by homeowners, builders, and commercial clients across Sandton, Randburg, Midrand, and Roodepoort. Our team delivers safe, compliant, and cost-effective demolition services, making us a top choice for projects of all sizes in Gauteng.</p>
-             <ul className="mt-4 space-y-1 text-sm text-muted-foreground list-disc list-inside">
-                <li>Affordable demolition Johannesburg</li>
-                <li>Same-day demolition services Johannesburg</li>
-                <li>Emergency demolition contractors near you</li>
-            </ul>
+          <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+            <Button size="lg" asChild>
+                <a href="tel:0784292760"><Phone /> Call for a Quote</a>
+            </Button>
+            <Button size="lg" variant="secondary" asChild>
+                <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare /> WhatsApp for Fast Response</a>
+            </Button>
           </div>
-          <Button size="lg" className="mt-6" asChild>
-            <a href="tel:0784292760">
-              <Phone className="mr-2 h-5 w-5" /> Call for a Quote
-            </a>
-          </Button>
-          <p className="mt-2 text-sm text-muted-foreground">No-obligation, detailed quote within 24 hours.</p>
         </section>
 
         <section className="bg-card border-b border-t mb-16">
@@ -159,7 +153,7 @@ export default function DemolitionJohannesburgPage() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 bg-card rounded-lg mb-16">
+        <section className="py-12 md:py-16 bg-background rounded-lg mb-16">
             <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
                  <h2 className="text-3xl md:text-4xl font-bold">Johannesburg's Premier Demolition Service</h2>
                 <p className="mt-4 text-lg text-muted-foreground text-left">
@@ -181,7 +175,7 @@ export default function DemolitionJohannesburgPage() {
                         <CardTitle className="flex items-center gap-3"><Home className="text-primary" /> Residential Demolition</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-muted-foreground">Specializing in <Link href="/demolition-johannesburg" className="text-primary hover:underline">house demolition Johannesburg</Link> wide, we safely dismantle single-family homes, townhouses, garages, and outbuildings. We work with precision to protect neighbouring properties, making us the ideal choice for projects in dense suburbs. This service is perfect for clearing land for a new dream home or subdivision.</p>
+                        <p className="text-muted-foreground">Specializing in <Link href="/demolition-johannesburg" className="text-primary hover:underline">house demolition Johannesburg</Link> wide, we safely dismantle single-family homes, townhouses, garages, and outbuildings. We work with precision to protect neighbouring properties, making us the ideal choice for projects in dense suburbs.</p>
                     </CardContent>
                 </Card>
                 <Card>
@@ -211,6 +205,16 @@ export default function DemolitionJohannesburgPage() {
             </div>
         </section>
 
+        <section className="mb-16 bg-card p-8 rounded-lg">
+            <h2 className="text-3xl font-bold text-center mb-8">Demolition Methods & Techniques</h2>
+             <p className="mt-2 text-muted-foreground text-center max-w-3xl mx-auto mb-10">We use different demolition methods depending on the project size, structure, and safety requirements.</p>
+            <ul className="space-y-4 max-w-2xl mx-auto text-muted-foreground">
+                <li className="flex items-start gap-4"><Check className="text-accent h-5 w-5 mt-1" /><div><strong className="font-semibold text-foreground">Mechanical Demolition:</strong> Using heavy machinery like excavators and breakers for fast and efficient demolition of large structures.</div></li>
+                <li className="flex items-start gap-4"><Check className="text-accent h-5 w-5 mt-1" /><div><strong className="font-semibold text-foreground">Manual Demolition:</strong> Controlled, hands-on demolition for smaller or more sensitive structures where precision is paramount.</div></li>
+                <li className="flex items-start gap-4"><Check className="text-accent h-5 w-5 mt-1" /><div><strong className="font-semibold text-foreground">Selective Demolition:</strong> Removing specific parts of a structure (like internal walls or facades) during renovations while protecting the remaining building.</div></li>
+            </ul>
+        </section>
+
         <section className="mb-16 bg-background p-8 rounded-lg">
             <div className="grid md:grid-cols-2 gap-8 items-center">
                  <div>
@@ -230,44 +234,14 @@ export default function DemolitionJohannesburgPage() {
                 </div>
             </div>
         </section>
-        
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-4">After the Demolition Process</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto">
-                Once demolition is complete, all rubble, concrete, and debris is removed from the site. The area is then levelled and prepared depending on the client’s needs, whether for new construction, landscaping, or paving. Our goal is to leave the site clean, safe, and ready for the next phase of your project.
-            </p>
-        </section>
 
-        <section id="demolition-cost" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Understanding Demolition Cost in Johannesburg</h2>
-            <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                One of the most common questions we receive is, "how much does demolition cost in Johannesburg?" The answer depends on several key variables, as each project is unique. At Apex Demolitions, we believe in full transparency, which is why we provide a detailed, itemized quote after a free site inspection. Understanding these factors will help you budget effectively for your project.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <Card>
-                    <CardHeader><CardTitle>Size and Height of Structure</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The total square meterage and number of stories are the most significant cost factors. A larger or taller building requires more labor, time, and larger machinery to demolish safely and efficiently, directly influencing the overall demolition cost in Johannesburg.</p></CardContent>
-                </Card>
-                <Card>
-                    <CardHeader><CardTitle>Construction Materials</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The building's materials greatly affect the demolition timeline and cost. Reinforced concrete and structural steel are more complex and time-consuming to break down than standard brick or timber frames, requiring specialized heavy equipment and more man-hours.</p></CardContent>
-                </Card>
-                <Card>
-                    <CardHeader><CardTitle>Site Accessibility</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">How easily we can access your site with our machinery is crucial. A site in a dense suburb with narrow access may require smaller, more specialized equipment and more manual labor, whereas an open commercial site allows for larger, more efficient machinery, reducing the time required.</p></CardContent>
-                </Card>
-                 <Card>
-                    <CardHeader><CardTitle>Proximity & Safety Requirements</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">Demolishing a structure that is close to neighboring properties, public roads, or delicate infrastructure requires more complex safety measures. This includes protective scaffolding, dust screens, and more controlled, surgical demolition methods to ensure no damage occurs, which can affect the cost.</p></CardContent>
-                </Card>
-                <Card>
-                    <CardHeader><CardTitle>Hazardous Materials</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The presence of hazardous materials like asbestos is a major factor. Asbestos must be handled and removed by certified specialists before demolition can begin, which is a separate and additional cost to the main demolition project.</p></CardContent>
-                </Card>
-                 <Card>
-                    <CardHeader><CardTitle>Scope of Work</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">The total scope also affects the price. Does the project require the removal of deep foundations and footings, or just the superstructure? Will extensive site leveling be required after demolition? A clearer scope helps determine a more accurate cost.</p></CardContent>
-                </Card>
+        <section className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-8">Why Professional Demolition is Important</h2>
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Ensures Safety On Site</h4><p className="text-sm text-muted-foreground">Prevents unexpected collapses and manages hazards effectively.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Protects Surrounding Property</h4><p className="text-sm text-muted-foreground">Prevents structural damage to neighbouring buildings and infrastructure.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Allows Proper Site Preparation</h4><p className="text-sm text-muted-foreground">A clean, professionally demolished site is crucial for accurate surveys and foundation work.</p></div></div>
+                <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Guarantees Legal Compliance</h4><p className="text-sm text-muted-foreground">Ensures all municipal by-laws and national safety regulations are met.</p></div></div>
             </div>
         </section>
         
@@ -284,86 +258,44 @@ export default function DemolitionJohannesburgPage() {
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our local teams have the expertise to navigate any challenge, from Sandton's estates to Soweto's residential stands.</p></div></div>
                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money in any project. Our crews are punctual, efficient, and committed to meeting your deadlines without compromising on safety or quality.</p></div></div>
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Proven Track Record</h3><p className="text-muted-foreground mt-1 text-sm"><strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong> Our portfolio of successful residential and commercial projects speaks for itself.</p></div></div>
                         </div>
                     </div>
                     <div>
-                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions team planning a demolition project in Johannesburg" data-ai-hint="demolition team planning" width={600} height={500} className="rounded-lg shadow-lg" />}
+                        {whyChooseImage && <Image src={whyChooseImage.imageUrl} alt="Apex Demolitions Projects team planning a demolition project in Johannesburg" data-ai-hint="demolition team planning" width={600} height={500} className="rounded-lg shadow-lg" />}
                     </div>
                 </div>
             </div>
         </section>
 
-         <section className="mb-16">
-             <h2 className="text-3xl font-bold text-center mb-4">Demolition Equipment & Methods</h2>
-             <p className="text-center text-muted-foreground max-w-3xl mx-auto">
-                We use the appropriate equipment for each project to ensure efficient and safe demolition. This includes TLB machines, breakers, and trucks for rubble removal. Our approach ensures controlled demolition, minimal disruption, and safe handling of all materials.
-             </p>
-        </section>
-
         <section id="recent-projects" className="py-12 md:py-16 bg-background">
             <div className="container mx-auto px-4 md:px-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Johannesburg</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
                         <CardHeader>
-                            <CardTitle>Full House Demolition</CardTitle>
-                            <p className="text-sm text-muted-foreground">Sandton</p>
+                            <CardTitle><Link href="/demolition-sandton" className="hover:text-primary">Sandton</Link> – Residential House Demolition</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished in 4 days, including full rubble removal and site leveling, ahead of schedule.</p>
-                            <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{interiorStripOutImage && <Image src={interiorStripOutImage.imageUrl} alt="Old house interior before demolition" data-ai-hint={interiorStripOutImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{plantHireTlbImage && <Image src={plantHireTlbImage.imageUrl} alt="Cleared site after demolition" data-ai-hint={plantHireTlbImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
+                            <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished safely ahead of schedule, including full rubble removal and site leveling.</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader>
-                            <CardTitle>Commercial Site Clearing</CardTitle>
-                            <p className="text-sm text-muted-foreground">Randburg</p>
+                            <CardTitle><Link href="/demolition-randburg" className="hover:text-primary">Randburg</Link> – Concrete Structure Removal</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Dismantled and cleared an old commercial structure to prepare the site for a new retail development. The project involved careful coordination to minimize disruption to neighboring businesses.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{commercialDemolitionImage && <Image src={commercialDemolitionImage.imageUrl} alt="Old commercial building before clearing" data-ai-hint={commercialDemolitionImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{siteCleaningAfterImage && <Image src={siteCleaningAfterImage.imageUrl} alt="Cleared commercial site" data-ai-hint={siteCleaningAfterImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
+                            <p className="text-sm mb-4">Dismantled and cleared an old, reinforced concrete commercial structure to prepare the site for a new retail development, coordinating with neighbouring businesses to minimize disruption.</p>
                         </CardContent>
                     </Card>
                     <Card>
                         <CardHeader>
-                            <CardTitle>Swimming Pool Removal</CardTitle>
-                            <p className="text-sm text-muted-foreground">Roodepoort</p>
+                            <CardTitle><Link href="/demolition-midrand" className="hover:text-primary">Midrand</Link> – Commercial Demolition Project</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <p className="text-sm mb-4">Removed an old, leaking concrete swimming pool, reclaiming over 50 square meters of garden space for the family. The area was backfilled, compacted, and left perfectly level for a new lawn.</p>
-                             <div className="grid grid-cols-2 gap-2">
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">Before</p>
-                                    <div className="aspect-video relative">{poolDemoWorkImage && <Image src={poolDemoWorkImage.imageUrl} alt="Old leaking swimming pool" data-ai-hint={poolDemoWorkImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                                <div>
-                                    <p className="text-xs font-semibold uppercase text-muted-foreground mb-1">After</p>
-                                    <div className="aspect-video relative">{poolDemoAfterImage && <Image src={poolDemoAfterImage.imageUrl} alt="New lawn where pool was" data-ai-hint={poolDemoAfterImage.imageHint} fill className="rounded-md object-cover" />}</div>
-                                </div>
-                            </div>
+                            <p className="text-sm mb-4">Managed the demolition of an old warehouse on schedule to make way for a new logistics park. The project included the removal of deep foundations and extensive site clearing.</p>
                         </CardContent>
                     </Card>
-                </div>
-                 <div className="text-center mt-8">
-                     <p className="text-muted-foreground">We recently completed a project in Johannesburg, removing debris and preparing the site for the next phase, ensuring a clean and safe handover.</p>
                 </div>
             </div>
         </section>
@@ -371,7 +303,7 @@ export default function DemolitionJohannesburgPage() {
         <section id="safety-compliance" className="mb-16 bg-card p-8 rounded-lg">
             <h2 className="text-3xl font-bold text-center mb-8">Safety & Compliance: Our Top Priority</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-6">
-                At Apex Demolitions, safety is not just a policy—it's the foundation of everything we do. All demolition work is carried out safely and in line with industry standards, ensuring proper handling of materials and responsible disposal of debris at approved sites. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
+                At Apex Demolitions Projects, safety is not just a policy—it's the foundation of everything we do. All demolition work is carried out safely and in line with industry standards, ensuring proper handling of materials and responsible disposal of debris at approved sites. We are committed to maintaining the highest safety standards to protect our crew, your property, and the public.
             </p>
              <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3"><Check className="h-5 w-5 text-accent flex-shrink-0 mt-1" /><div><h4 className="font-semibold">Fully Insured</h4><p className="text-sm text-muted-foreground">We carry comprehensive public liability insurance, giving you complete peace of mind.</p></div></div>
@@ -386,7 +318,7 @@ export default function DemolitionJohannesburgPage() {
                 <AlertTriangle className="h-12 w-12 mx-auto text-destructive" />
                 <h2 className="text-3xl md:text-4xl font-bold mt-4 text-foreground">Same-Day & Emergency Demolition Johannesburg</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Urgent and same-day demolition services are available in selected Johannesburg areas, depending on project size and access. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
+                    When disaster strikes or a deadline is critical, you need a demolition contractor that responds immediately. Apex Demolitions Projects offers a dedicated <strong>same-day and emergency demolition Johannesburg</strong> service for urgent situations like storm damage, fire damage, or sudden structural instability. Urgent and same-day demolition services are available in selected Johannesburg areas, depending on project size and access. We can also provide <Link href="/same-day-rubble-removal-johannesburg" className="text-primary hover:underline font-semibold">same-day rubble removal</Link> for urgent cleanups.
                 </p>
                 <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                     <div className="flex gap-4">
@@ -497,3 +429,4 @@ export default function DemolitionJohannesburgPage() {
     </>
   );
 }
+
