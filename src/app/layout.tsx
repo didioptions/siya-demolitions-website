@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
@@ -11,14 +12,14 @@ const homeHeroImage = PlaceHolderImages.find(p => p.id === 'homeHero');
 
 export const metadata: Metadata = {
   title: {
-    default: 'Apex Demolitions Projects | Demolition & Construction Gauteng',
-    template: '%s | Apex Demolitions',
+    default: 'Demolition, Plant Hire & Rubble Removal Johannesburg | Apex',
+    template: '%s | Apex Demolitions Projects',
   },
-  description: 'Expert demolition services in Gauteng, South Africa. Apex Demolitions Projects offers residential, commercial, and industrial demolition, site clearing, and more.',
-  keywords: ['demolition', 'Gauteng', 'Johannesburg', 'South Africa', 'site clearing', 'construction', 'rubble removal', 'tree felling', 'plant hire', 'swimming pool demolition'],
+  description: 'Top-rated demolition, plant hire, and rubble removal in Johannesburg. Licensed contractors for site clearing, tree felling, and more. Same-day service available. Get a free quote.',
+  keywords: ['demolition Johannesburg', 'rubble removal Johannesburg', 'plant hire Johannesburg', 'site clearing', 'tree felling', 'Gauteng', 'Sandton', 'Randburg'],
   openGraph: {
-    title: 'Apex Demolitions Projects | Demolition & Construction Gauteng',
-    description: 'Professional demolition, rubble removal, and site clearing services in Gauteng.',
+    title: 'Demolition, Plant Hire & Rubble Removal Johannesburg | Apex',
+    description: 'Professional demolition, rubble removal, and site clearing services in Johannesburg.',
     url: 'https://apex-demolitions-website.vercel.app/',
     siteName: 'Apex Demolitions Projects',
     images: [
@@ -48,7 +49,7 @@ const jsonLd = {
     postalCode: '2194',
     addressCountry: 'ZA',
   },
-  description: 'Professional demolition, rubble removal, site clearing, tree felling, swimming pool demolition, plant hire, and construction services in Johannesburg and Gauteng.',
+  description: 'Professional demolition, rubble removal, site clearing, tree felling, swimming pool demolition, and plant hire services in Johannesburg and Gauteng.',
   url: 'https://apex-demolitions-website.vercel.app/',
   image: homeHeroImage?.imageUrl || '',
   serviceType: [
@@ -97,7 +98,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
