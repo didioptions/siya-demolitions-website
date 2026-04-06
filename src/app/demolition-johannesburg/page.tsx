@@ -54,8 +54,12 @@ const faqs = [
         answer: "Almost all structural demolition projects in Johannesburg require a permit from the City of Johannesburg. This is a critical legal step to ensure public safety, environmental compliance, and adherence to building codes. Our comprehensive service includes professionally managing this entire application process on your behalf. We prepare and submit all necessary documentation—including site plans and safety protocols—liaise directly with council inspectors, and ensure all prerequisites are met before any work begins. By entrusting this complex process to us, you save significant time and are protected from the risk of costly fines or project-halting stop-orders that can arise from non-compliance. Our expertise here is a core part of our value proposition."
     },
     {
-        question: "How long does a demolition project typically take?",
-        answer: "A standard single-story house demolition in Johannesburg, including full rubble removal, can typically be completed in 2-5 days. Larger or more complex projects, like commercial buildings or structures with difficult access, can take longer. The timeline is affected by the permit approval process, which can take several weeks. Once on-site, our team works efficiently to complete the project within the agreed-upon timeframe."
+        question: "How long does demolition take?",
+        answer: "Most residential demolition projects are completed within 1–3 days depending on size and complexity."
+    },
+    {
+        question: "Do you handle large commercial demolition projects?",
+        answer: "Yes, we handle both small residential and large commercial demolition projects across Johannesburg."
     },
     {
         question: "Do you remove all the rubble after the demolition?",
@@ -130,7 +134,7 @@ export default function DemolitionJohannesburgPage() {
               <ShieldCheck /> Your Trusted Partner for Safe & Compliant Demolition
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We provide demolition services across Johannesburg, including <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and industrial areas like Germiston. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively. Same-day and urgent services are available across Johannesburg depending on project size and location.
+            As the leading <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition contractors in Johannesburg</Link>, <Link href="/" className="text-primary hover:underline">Apex Demolitions Projects</Link> provides a comprehensive range of professional demolition services Johannesburg residents and businesses can rely on. We are trusted by homeowners, builders, and businesses across Johannesburg for reliable demolition services. We provide demolition services across Johannesburg, including <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>, <Link href="/demolition-midrand" className="text-primary hover:underline">Midrand</Link>, <Link href="/demolition-roodepoort" className="text-primary hover:underline">Roodepoort</Link>, and industrial areas like Germiston. From initial planning and council approvals to the final site cleanup, our team manages every aspect of your project with expertise, clearing the way for your new development safely and effectively. Same-day and urgent services are available across Johannesburg depending on project size and location.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
@@ -270,7 +274,7 @@ export default function DemolitionJohannesburgPage() {
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Decades of Local Experience</h3><p className="text-muted-foreground mt-1 text-sm">With over 20 years serving Johannesburg, our local teams have the expertise to navigate any challenge, from Sandton's estates to Soweto's residential stands.</p></div></div>
                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Turnaround</h3><p className="text-muted-foreground mt-1 text-sm">We understand that time is money in any project. Our crews are punctual, efficient, and committed to meeting your deadlines without compromising on safety or quality.</p></div></div>
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">One-Stop Solution</h3><p className="text-muted-foreground mt-1 text-sm">We provide a seamless, integrated service. Our quote includes demolition, full <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>, and final site cleaning, saving you the hassle of managing multiple contractors.</p></div></div>
-                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Proven Track Record</h3><p className="text-muted-foreground mt-1 text-sm"><strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong> Our portfolio of successful residential and commercial projects speaks for itself. <strong>✔ Trusted by homeowners, builders, and businesses across Johannesburg.</strong></p></div></div>
+                             <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Proven Track Record</h3><p className="text-muted-foreground mt-1 text-sm"><strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong> <strong>✔ We handle demolition projects daily across Johannesburg, from small homes to large commercial sites.</strong> Our portfolio of successful residential and commercial projects speaks for itself. <strong>✔ Trusted by homeowners, builders, and businesses across Johannesburg.</strong></p></div></div>
                         </div>
                     </div>
                     <div>
@@ -286,7 +290,7 @@ export default function DemolitionJohannesburgPage() {
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
                         <CardHeader>
-                            <CardTitle><Link href="/demolition-sandton" className="hover:text-primary">Sandton</Link> – Residential House Demolition</CardTitle>
+                            <CardTitle><Link href="/demolition-sandton" className="hover:text-primary">Sandton</Link> – Residential house demolition completed safely</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Successfully completed a full demolition of a 4-bedroom house to clear the plot for a new modern home. The project was finished safely ahead of schedule, including full rubble removal and site leveling.</p>
@@ -294,7 +298,7 @@ export default function DemolitionJohannesburgPage() {
                     </Card>
                     <Card>
                         <CardHeader>
-                            <CardTitle><Link href="/demolition-randburg" className="hover:text-primary">Randburg</Link> – Concrete Structure Removal</CardTitle>
+                            <CardTitle><Link href="/demolition-randburg" className="hover:text-primary">Randburg</Link> – Concrete structure removal and site clearing</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Dismantled and cleared an old, reinforced concrete commercial structure to prepare the site for a new retail development, coordinating with neighbouring businesses to minimize disruption.</p>
@@ -302,7 +306,7 @@ export default function DemolitionJohannesburgPage() {
                     </Card>
                     <Card>
                         <CardHeader>
-                            <CardTitle><Link href="/demolition-midrand" className="hover:text-primary">Midrand</Link> – Commercial Demolition Project</CardTitle>
+                            <CardTitle><Link href="/demolition-midrand" className="hover:text-primary">Midrand</Link> – Commercial demolition project completed on schedule</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-sm mb-4">Managed the demolition of an old warehouse on schedule to make way for a new logistics park. The project included the removal of deep foundations and extensive site clearing.</p>
