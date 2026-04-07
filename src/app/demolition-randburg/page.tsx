@@ -1,11 +1,12 @@
 
+
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const faqs = [
     { 
@@ -80,7 +81,7 @@ export default function DemolitionRandburgPage() {
                     We are one of the most trusted demolition contractors in Randburg, providing fast and professional services for residential, commercial, and construction projects across the area. Our deep understanding of Randburg's suburbs and regulations makes us the reliable choice for any project.
                  </p>
                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-card p-4 rounded-lg shadow-sm">
-                    <p><strong>✔ Trusted by homeowners, builders, and businesses across Johannesburg for reliable demolition services.</strong></p>
+                    <p><strong>✔ Trusted demolition contractors working across Randburg and surrounding areas every day</strong></p>
                 </div>
             </div>
         </section>
