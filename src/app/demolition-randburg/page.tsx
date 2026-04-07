@@ -81,7 +81,7 @@ export default function DemolitionRandburgPage() {
                     We are one of the most trusted demolition contractors in Randburg, providing fast and professional services for residential, commercial, and construction projects across the area. Our deep understanding of Randburg's suburbs and regulations makes us the reliable choice for any project.
                  </p>
                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-card p-4 rounded-lg shadow-sm">
-                    <p><strong>✔ Trusted demolition contractors working across Randburg and surrounding areas every day</strong></p>
+                    <p><strong>✔ We complete demolition projects across Randburg daily with fast and reliable service</strong></p>
                 </div>
             </div>
         </section>
@@ -149,7 +149,7 @@ export default function DemolitionRandburgPage() {
             </Accordion>
              <div className="text-center mt-8">
                 <p className="text-sm text-muted-foreground">See our Google Reviews or <a href="https://g.page/r/CZ4yPlKY6ihdEAE/review" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">leave us a review</a> to hear what our clients say about our work.</p>
-            </div>
+             </div>
         </section>
         
         <section className="mb-16 text-center">
