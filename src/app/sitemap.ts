@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/demolition-kyalami',
     '/demolition-parkview',
     '/demolition-constantia-kloof',
+    '/demolition-johannesburg-south',
     
     // Add other service areas as they are confirmed
     '/rubble-removal-sandton',
