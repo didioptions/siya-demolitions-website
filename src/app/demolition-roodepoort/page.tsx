@@ -50,7 +50,7 @@ export default function DemolitionRoodepoortPage() {
             <ShieldCheck /> The West Rand's Trusted Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions provides top-tier demolition services throughout Roodepoort and the West Rand. As trusted local contractors, our specialty is residential projects, from house demolitions in Helderkruin and Florida to site clearing for new developments in Weltevreden Park and Horizon. We have a deep understanding of the City of Johannesburg's regulations and are committed to delivering safe, compliant, and efficient projects. We pride ourselves on leaving every Roodepoort site clean, clear, and ready for its next phase.
+            Apex Demolitions provides top-tier demolition services throughout Roodepoort and the West Rand. As trusted local contractors, our specialty is residential projects, from house demolitions in Helderkruin and Florida to site clearing for new developments in Weltevreden Park and Horizon. We have a deep understanding of the City of Johannesburg's regulations and are committed to delivering safe, compliant, and efficient projects. We complete demolition projects across Roodepoort daily, from small residential jobs to large construction sites.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -64,6 +64,9 @@ export default function DemolitionRoodepoortPage() {
                  <p className="mt-4 text-lg text-muted-foreground">
                     We are one of the most trusted demolition contractors in Roodepoort, delivering fast and professional services across residential, commercial, and construction projects. Our deep understanding of Roodepoort's suburbs and regulations makes us the reliable choice for any project.
                  </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Roodepoort and surrounding areas every day</strong></p>
+                </div>
             </div>
         </section>
 
@@ -94,7 +97,7 @@ export default function DemolitionRoodepoortPage() {
                         A clean and clear site is the foundation of any successful construction or landscaping project. Our site clearance service is a complete solution that goes beyond basic rubble removal. We prepare your land by removing all unwanted materials, including demolition debris, vegetation, unwanted trees, old foundations, and surface-level concrete. Our team uses a combination of manual labour and heavy machinery like TLBs and excavators for maximum efficiency.
                     </p>
                     <p className="text-muted-foreground">
-                        This service is essential for developers preparing a plot for a new build or for homeowners looking to do extensive landscaping. Our site clearance service ensures your property is completely free of obstructions and perfectly levelled, ready for surveyors and builders to begin their work. This comprehensive approach is a hallmark of our work, whether it's a large plot in Ruimsig or a smaller stand in Horizon. We also handle complex site clearance for <a href="/demolition-randburg" className="text-primary hover:underline">demolition in Randburg</a>.
+                        This service is essential for developers preparing a plot for a new build or for homeowners looking to do extensive landscaping. Our site clearance service ensures your property is completely free of obstructions and perfectly levelled, ready for surveyors and builders to begin their work. This comprehensive approach is a hallmark of our work, whether it's a large plot in Ruimsig or a smaller stand in Horizon. We also handle complex site clearance for <a href="/demolition-randburg" className="text-primary hover:underline">demolition in Randburg</a> and <a href="/demolition-midrand" className="text-primary hover:underline">demolition in Midrand</a>.
                     </p>
                 </div>
             </div>
@@ -104,8 +107,8 @@ export default function DemolitionRoodepoortPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Roodepoort</h2>
                 <div className="max-w-4xl mx-auto space-y-4 text-center">
-                    <p className="font-semibold text-lg">✔ Roodepoort – House demolition completed safely</p>
-                    <p className="font-semibold text-lg">✔ Florida – Interior strip-out for renovation</p>
+                    <p className="font-semibold text-lg">✔ Roodepoort – House demolition completed safely and on time</p>
+                    <p className="font-semibold text-lg">✔ Florida – Interior strip-out for renovation project</p>
                     <p className="font-semibold text-lg">✔ Weltevreden Park – Site clearance for new development</p>
                 </div>
             </div>
