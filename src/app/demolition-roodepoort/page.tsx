@@ -65,7 +65,7 @@ export default function DemolitionRoodepoortPage() {
                     We are one of the most trusted demolition contractors in Roodepoort, delivering fast and professional services across residential, commercial, and construction projects. Our deep understanding of Roodepoort's suburbs and regulations makes us the reliable choice for any project.
                  </p>
                  <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
-                    <p><strong>✔ Trusted demolition contractors working across Roodepoort and surrounding areas every day</strong></p>
+                    <p><strong>✔ We complete demolition projects across Roodepoort daily with fast and reliable service</strong></p>
                 </div>
             </div>
         </section>
