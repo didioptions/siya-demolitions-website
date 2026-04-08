@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -41,7 +42,7 @@ export default function DemolitionBoksburgPage() {
             <ShieldCheck /> Your Local, Licensed Boksburg Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions provides reliable and professional demolition services across Boksburg and the East Rand. As a trusted local contractor, we specialize in safe residential house demolition, swimming pool removal, and comprehensive site clearing for homeowners and developers. Our team is well-versed in Boksburg's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth, compliant, and stress-free project from start to finish. We are dedicated to delivering top-quality results.
+            Apex Demolitions provides reliable and professional demolition services across Boksburg and the East Rand. As a trusted local contractor, we specialize in safe residential house demolition, swimming pool removal, and comprehensive site clearing for homeowners and developers. We complete demolition projects across Boksburg daily, from small residential jobs to larger construction sites. Our team is well-versed in Boksburg's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth, compliant, and stress-free project.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -53,12 +54,35 @@ export default function DemolitionBoksburgPage() {
             <h2 className="text-3xl font-bold text-center mb-8">Our Demolition Focus in Boksburg</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
                 <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <Card><CardHeader><CardTitle>Full House Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe and complete removal of houses to make way for new builds or subdivisions in areas like Impala Park and Beyers Park.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Efficient Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Fast and thorough site preparation for residential or commercial projects, leaving your property ready for the next phase.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Full House Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe and complete removal of houses to make way for new builds or subdivisions in areas like Impala Park, Sunward Park, and Beyers Park.</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Efficient Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Fast and thorough site preparation for residential or commercial projects in Parkrand, leaving your property ready for the next phase.</p></CardContent></Card>
                     <Card className="sm:col-span-2"><CardHeader><CardTitle>Rubble & Waste Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We don't just demolish; we ensure all demolition debris and waste is cleared and legally disposed of, leaving your site spotless.</p></CardContent></Card>
                 </div>
                 <div className="lg:col-span-2">
                     {servicesImage && <Image src={servicesImage.imageUrl} alt="A pile of rubble in Boksburg ready for removal" data-ai-hint="rubble removal" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+            </div>
+        </section>
+        
+        <section id="trust-authority" className="py-12 md:py-16 bg-card text-center rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Trusted Demolition Contractors in Boksburg</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of the most trusted demolition contractors in Boksburg, providing fast and professional services for residential, commercial, and construction projects across the area.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Boksburg every day</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-projects" className="py-12 md:py-20 bg-background rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Boksburg</h2>
+                <div className="max-w-4xl mx-auto space-y-4 text-center">
+                    <p className="font-semibold text-lg">✔ Boksburg – Residential demolition completed safely and on time</p>
+                    <p className="font-semibold text-lg">✔ Sunward Park – Interior strip-out for renovation project</p>
+                    <p className="font-semibold text-lg">✔ Beyers Park – Site clearance for new development</p>
                 </div>
             </div>
         </section>
@@ -92,7 +116,7 @@ export default function DemolitionBoksburgPage() {
         
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Our East Rand Service Network</h2>
-             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
+             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas like <Link href="/demolition-edenvale" className="text-primary hover:underline">Edenvale</Link> and <Link href="/demolition-bedfordview" className="text-primary hover:underline">Bedfordview</Link>.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park Demolition</Link></Button>
