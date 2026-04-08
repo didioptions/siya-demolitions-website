@@ -1,8 +1,9 @@
+
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Bedfordview Demolition Services | High-End Home & Site Clearing',
-  description: 'Premier demolition contractors in Bedfordview. We specialize in high-end home demolition, delicate site clearing, and pool removal in Senderwood and St Andrews. Licensed and insured.',
+  title: 'Demolition Bedfordview | Professional Demolition Contractors Near You',
+  description: 'Professional demolition services in Bedfordview for residential & commercial projects. We handle demolition, site clearance, and rubble removal in Bedfordview, Edenvale, and Kensington. Fast quotes & experienced service.',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
