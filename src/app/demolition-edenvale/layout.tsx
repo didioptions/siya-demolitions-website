@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Demolition Services in Edenvale | SIMA Demolitions',
+  title: 'Same-Day Demolition Edenvale – Fast, Affordable & Trusted Contractors',
   description: 'Local demolition contractors in Edenvale. We offer residential house demolition, pool removal, and site clearing services in Greenstone Hill and the Avenues. Licensed and insured.',
 };
 

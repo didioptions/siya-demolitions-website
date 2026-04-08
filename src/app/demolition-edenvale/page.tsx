@@ -7,7 +7,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "What is your main service area in Edenvale?", answer: "We serve all neighborhoods in Edenvale and its surroundings, from Greenstone Hill to the Avenues. We provide fast, responsive, and local service across the area." },
+    { question: "What is your main service area in Edenvale?", answer: "We serve all neighborhoods in Edenvale and its surroundings, from Greenstone Hill to the Avenues. As a leading contractor for demolition Johannesburg wide, our teams provide fast, responsive, and local service across the area." },
     { question: "What is the process for demolishing a house in Edenvale?", answer: "Our process starts with a free site assessment. We then handle the permit application with the City of Ekurhuleni, perform the demolition safely, and finish with a complete rubble removal and site cleanup." },
     { question: "Do you also remove old paving and garden structures?", answer: "Yes, our site clearing services include the removal of old paving, garden sheds, walls, and other outdoor structures in addition to the main building demolition." },
     { question: "Are your demolition quotes free?", answer: "Yes, all our quotes are 100% free and come with no obligation. We provide a detailed breakdown of costs so you know exactly what to expect." }
@@ -27,16 +27,15 @@ const faqSchema = {
 };
 
 export default function DemolitionEdenvalePage() {
-    const heroImage = PlaceHolderImages.find(p => p.id === 'residentialDemolition');
-    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
     const servicesImage = PlaceHolderImages.find(p => p.id === 'rubbleRemoval');
+    const partnerImage = PlaceHolderImages.find(p => p.id === 'aboutSection');
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Edenvale Demolition Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Edenvale – Professional Demolition Services</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
             <ShieldCheck /> Your Local, Licensed Edenvale Demolition Contractor
           </p>
@@ -47,6 +46,18 @@ export default function DemolitionEdenvalePage() {
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
             <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></Button>
           </div>
+        </section>
+
+        <section id="trust-authority" className="py-12 md:py-16 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
+                <h2 className="text-3xl font-bold">Trusted Demolition Contractors in Edenvale</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                   We complete demolition projects across Edenvale daily, from small residential jobs to larger commercial sites. Our team is equipped with reliable machinery and years of experience to handle any job with professional, safe demolition methods to deliver results you can depend on.
+                </p>
+                <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Edenvale every day</strong></p>
+                </div>
+            </div>
         </section>
 
         <section className="mb-16">
@@ -63,10 +74,21 @@ export default function DemolitionEdenvalePage() {
             </div>
         </section>
 
+         <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Edenvale</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+                   <p className="font-semibold text-lg">✔ Edenvale – Residential demolition completed safely and on time</p>
+                   <p className="font-semibold text-lg">✔ Greenstone Hill – Interior strip-out for renovation project</p>
+                   <p className="font-semibold text-lg">✔ Eastleigh – Site clearance for new development</p>
+                </div>
+            </div>
+        </section>
+
         <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Edenvale</h2>
-                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large commercial clearings. Our local knowledge of Edenvale ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. Our local knowledge of Edenvale ensures your project runs smoothly and complies with all regulations, whether it's a small job or a large <Link href="/demolition-randburg" className="text-primary hover:underline">demolition in Randburg</Link>.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Ekurhuleni requirements.</span></li>
@@ -92,7 +114,7 @@ export default function DemolitionEdenvalePage() {
         
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Our Service Network</h2>
-             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
+             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas like <Link href="/demolition-sandton" className="text-primary hover:underline">demolition Sandton</Link>.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview Demolition</Link></Button>
