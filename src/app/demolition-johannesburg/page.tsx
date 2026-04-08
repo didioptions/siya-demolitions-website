@@ -277,7 +277,6 @@ export default function DemolitionJohannesburgPage() {
                              <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div>
                                 <h3 className="text-xl font-semibold">Proven Track Record</h3>
                                 <p className="text-muted-foreground mt-1 text-sm">
-                                    <strong>✔ Completed hundreds of demolition projects across Johannesburg.</strong><br/>
                                     <strong>✔ Trusted demolition contractors working across Johannesburg every day.</strong><br/>
                                     Our portfolio of successful residential and commercial projects speaks for itself, making us a trusted partner for homeowners, builders, and businesses alike.
                                 </p>
@@ -409,8 +408,32 @@ export default function DemolitionJohannesburgPage() {
                  <div className="text-center mt-12 border-t pt-8">
                      <h3 className="text-2xl font-semibold">We Also Serve...</h3>
                     <p className="mt-4 max-w-4xl mx-auto text-muted-foreground">
-                        Our extensive service network also provides expert demolition in Soweto, Alberton, Boksburg, Benoni, Kempton Park, Bedfordview, Edenvale, Bryanston, Rosebank, Northcliff, Melville, Linden, Parkhurst, Greenside, Pretoria, Centurion, Krugersdorp, Springs, Brakpan, and Nigel.
+                        Our team covers all major areas in and around Johannesburg, providing fast and reliable demolition services. Our extensive service network also provides expert demolition in the following areas:
                     </p>
+                    <div className="flex flex-wrap justify-center gap-4 mt-8">
+                        <Button variant="outline" asChild><Link href="/demolition-soweto">Soweto</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-benoni">Benoni</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-edenvale">Edenvale</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-bryanston">Bryanston</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-rosebank">Rosebank</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-northcliff">Northcliff</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-melville">Melville</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-linden">Linden</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-parkhurst">Parkhurst</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-greenside">Greenside</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-pretoria">Pretoria</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-centurion">Centurion</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-krugersdorp">Krugersdorp</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-springs">Springs</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-brakpan">Brakpan</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-nigel">Nigel</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-johannesburg-south">Johannesburg South</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-fourways">Fourways</Link></Button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -452,3 +475,6 @@ export default function DemolitionJohannesburgPage() {
     </>
   );
 }
+
+
+    
