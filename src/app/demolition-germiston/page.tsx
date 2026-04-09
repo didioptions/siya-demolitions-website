@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -7,10 +8,9 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Can you handle large-scale industrial demolition in Germiston?", answer: "Yes, this is one of our core specialties. We have the heavy-duty equipment and certified teams to safely dismantle large industrial structures like factories and warehouses." },
-    { question: "How do you handle hazardous materials on industrial sites?", answer: "We follow strict safety protocols for identifying and handling potential hazardous materials. If asbestos or other specific hazards are found, we work with certified specialists to ensure safe removal and disposal before demolition." },
-    { question: "Do you provide services for commercial strip-outs?", answer: "Yes. We offer complete interior strip-out services for commercial buildings, offices, and retail spaces, preparing them for renovation or a complete change of use." },
-    { question: "What is your safety record on large projects?", answer: "Safety is our number one priority. We have an excellent safety record and implement rigorous safety plans, site inductions, and have dedicated safety officers on all large-scale projects." }
+    { question: "How much does demolition cost in Germiston?", answer: "The cost depends on the project's scale, from residential jobs to large industrial demolitions. We provide a free, detailed on-site assessment to give you a transparent, fixed-price quote." },
+    { question: "Do you offer same-day service in Germiston?", answer: "For urgent projects and smaller jobs, same-day service may be available depending on our schedule. We prioritize rapid response for emergency situations like fire or storm damage. Please call us directly for the fastest service." },
+    { question: "What areas in and around Germiston do you cover?", answer: "We serve the entire Germiston area, including Primrose, Lambton, Elsburg, and all surrounding industrial and residential zones. Our service extends across the whole East Rand." }
 ];
 
 const faqSchema = {
@@ -36,45 +36,72 @@ export default function DemolitionGermistonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Services in Germiston</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Demolition Germiston – Professional Demolition Contractors Near You</h1>
           <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
             <ShieldCheck /> Germiston's Industrial & Commercial Demolition Experts
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions is the premier demolition contractor for Germiston's industrial and commercial sectors. With deep experience in the East Rand's industrial heartland, we specialize in large-scale factory demolition, warehouse clearing, and full site preparation. We are experts in navigating the City of Ekurhuleni's regulations for complex industrial projects. Our commitment to safety, efficiency, and environmental compliance makes us the trusted partner for transforming Germiston's industrial landscapes for future development.
+            We provide professional demolition services in Germiston, handling residential, commercial, and site clearance projects with reliable equipment and experienced teams. As a key industrial and residential area on the East Rand, Germiston has a high demand for demolition services for renovations, redevelopment, and new construction. We serve the entire area, including Primrose, Lambton, and Elsburg.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for an Industrial Quote</a></Button>
             <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></Button>
           </div>
         </section>
+        
+        <section id="trust-authority" className="py-12 md:py-16 bg-card text-center rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Trusted Demolition Contractors in Germiston</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of the most trusted demolition contractors in Germiston, providing fast and professional services for residential, commercial, and construction projects across the area. We complete demolition projects across Germiston daily, from small residential jobs to larger construction sites.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Germiston every day</strong></p>
+                </div>
+            </div>
+        </section>
 
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Our Demolition Focus in Germiston</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
-                <div className="lg:col-span-2">
-                    {servicesImage && <Image src={servicesImage.imageUrl} alt="Large commercial building site being cleared in Germiston" data-ai-hint="commercial site" width={600} height={500} className="rounded-lg shadow-lg" />}
+            <div className="space-y-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 className="text-2xl font-semibold mb-4">Residential Demolition Germiston</h3>
+                    <p className="text-muted-foreground mb-4">While known for its industry, Germiston has many residential suburbs where homeowners are upgrading and renovating their properties. We provide safe, affordable house demolition services, clearing old structures to make way for new builds or extensions. Our teams work with precision to protect neighbouring properties and ensure a clean site upon completion.</p>
                 </div>
-                <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <Card><CardHeader><CardTitle>Industrial Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Expert demolition of factories, warehouses, and industrial structures with a focus on safety and environmental compliance.</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Commercial Site Clearing</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete clearing of commercial properties to prepare large tracts of land for new developments, retail centers, or logistics parks.</p></CardContent></Card>
-                    <Card className="sm:col-span-2"><CardHeader><CardTitle>Residential & Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">We also offer safe house demolition and fast rubble removal services for residential projects within Germiston.</p></CardContent></Card>
+                 <div>
+                    <h3 className="text-2xl font-semibold mb-4">Commercial Demolition Germiston</h3>
+                    <p className="text-muted-foreground mb-4">Our commercial demolition services are essential for the redevelopment of Germiston's business districts. We handle the dismantling of old office blocks, retail spaces, and other commercial structures. We focus on minimizing disruption to nearby businesses and manage projects with strict safety protocols to ensure a smooth process for large-scale redevelopments.</p>
+                </div>
+                 <div>
+                    <h3 className="text-2xl font-semibold mb-4">Site Clearance Germiston</h3>
+                    <p className="text-muted-foreground mb-4">A clean site is the foundation of any successful project. Our site clearance service combines demolition with expert <Link href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</Link>. We clear all unwanted materials, including demolition debris, vegetation, and old foundations, leaving your property ready for the next phase of construction without delay.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Germiston</h2>
+                <div className="max-w-4xl mx-auto space-y-4 text-center">
+                    <p className="font-semibold text-lg">✔ Germiston – Residential demolition completed safely</p>
+                    <p className="font-semibold text-lg">✔ Primrose – Interior strip-out for renovation project</p>
+                    <p className="font-semibold text-lg">✔ Lambton – Site clearance for new development project</p>
                 </div>
             </div>
         </section>
 
         <section className="grid md:grid-cols-5 gap-8 mb-16 items-center bg-card p-8 rounded-lg">
+            <div className="md-col-span-2">
+               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our contractors planning a large-scale industrial demolition in Germiston" data-ai-hint="industrial planning" width={600} height={500} className="rounded-lg shadow-lg" />}
+            </div>
             <div className="md:col-span-3">
                 <h2 className="text-3xl font-bold mb-6">Your Trusted Demolition Partner in Germiston</h2>
-                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. We are committed to upholding the highest standards on every job, from small residential tasks to large industrial clearings. Our local knowledge of Germiston ensures your project runs smoothly and complies with all regulations.</p>
+                <p className="text-muted-foreground mb-4">Choosing Apex Demolitions means partnering with a team that values safety, integrity, and customer satisfaction. Our local knowledge of Germiston ensures your project runs smoothly and complies with all City of Ekurhuleni regulations, whether it is an industrial job or a <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link> on a smaller scale. We also provide services in <Link href="/demolition-sandton" className="text-primary hover:underline">Sandton</Link> and <Link href="/demolition-randburg" className="text-primary hover:underline">Randburg</Link>.</p>
                 <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Fully licensed and insured for your protection.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Deep knowledge of City of Ekurhuleni industrial regulations.</span></li>
                     <li className="flex items-center gap-3"><Check className="text-accent" /><span>Free, no-obligation quotes with transparent pricing.</span></li>
                 </ul>
-            </div>
-            <div className="md:col-span-2">
-               {partnerImage && <Image src={partnerImage.imageUrl} alt="Our contractors planning a large-scale industrial demolition in Germiston" data-ai-hint="industrial planning" width={600} height={500} className="rounded-lg shadow-lg" />}
             </div>
         </section>
         
@@ -94,19 +121,19 @@ export default function DemolitionGermistonPage() {
             <h2 className="text-2xl font-semibold">Our Service Network in the East Rand</h2>
              <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-alberton">Alberton Services</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-boksburg">Projects in Boksburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-edenvale">Demolition Edenvale</Link></Button>
             </div>
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Get a Free Demolition Quote in Germiston</h2>
-          <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Contact us today to discuss your project. Our Germiston team is ready to provide a fast, competitive, and no-obligation quote.</p>
+          <h2 className="text-3xl font-bold">Need Demolition in Germiston Today?</h2>
+          <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Call or WhatsApp now for fast, professional demolition services in Germiston. Our team is ready to provide a fast, competitive, and no-obligation quote.</p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone />Call Now</a></Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><Link href="/contact"><Mail />Request Quote Online</Link></Button>
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><Mail />WhatsApp for Fast Response</a></Button>
           </div>
         </section>
       </div>
