@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -7,8 +8,8 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "Can you handle demolitions near O.R. Tambo International Airport?", answer: "Yes, we are experienced in working in the logistical and commercial zones around the airport. We adhere to all special regulations and security requirements for the area." },
-    { question: "What is your primary focus in Kempton Park?", answer: "We handle a mix of commercial, industrial, and residential projects. Our expertise in site clearing for logistics and business parks is particularly strong in the Kempton Park area." },
+    { question: "Can you handle demolitions near O.R. Tambo International Airport?", answer: "Yes, we are experienced in working in the logistical and commercial zones around the airport. We adhere to all special regulations and security requirements for the area, ensuring a compliant and safe demolition process." },
+    { question: "What is your primary focus in Kempton Park?", answer: "We handle a mix of commercial, industrial, and residential projects. Our expertise in site clearing for logistics and business parks is particularly strong in the Kempton Park area, but we also complete residential jobs in suburbs like Birchleigh and Glen Marais daily." },
     { question: "Do I need a permit for demolition in Kempton Park?", answer: "Yes, a permit from the City of Ekurhuleni is required for almost all structural demolitions. We manage this entire application process to ensure your project is compliant." },
     { question: "How do you manage noise and dust on your sites?", answer: "We employ dust suppression systems like water misting and adhere strictly to municipal work hours to minimize disruption to nearby businesses and residents in Kempton Park." }
 ];
@@ -41,12 +42,24 @@ export default function DemolitionKemptonParkPage() {
             <ShieldCheck /> Your Commercial & Residential Demolition Contractor
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions is a key player in Kempton Park's development, providing expert demolition services for commercial, industrial, and residential projects. Located in the heart of the East Rand's economic hub, we specialize in site clearing for logistics parks, demolition for commercial redevelopment, and standard residential demolitions. Our team has a robust understanding of the City of Ekurhuleni's regulations, especially for projects near O.R. Tambo International Airport, ensuring your project is handled with expert compliance and efficiency.
+            Apex Demolitions is a key player in Kempton Park's development, providing expert demolition services for commercial, industrial, and residential projects. We complete demolition projects across Kempton Park daily, from small residential jobs in Birchleigh to larger construction sites. Located in the heart of the East Rand's economic hub, we specialize in site clearing for logistics parks, demolition for commercial redevelopment, and standard residential demolitions in suburbs like Glen Marais and Van Riebeeck Park. Our team has a robust understanding of the City of Ekurhuleni's regulations, especially for projects near O.R. Tambo International Airport, ensuring your project is handled with expert compliance and efficiency.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
             <Button size="lg" variant="secondary" asChild><a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></Button>
           </div>
+        </section>
+
+        <section id="trust-authority" className="py-12 md:py-16 bg-card text-center rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Trusted Demolition Contractors in Kempton Park</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of the most trusted demolition contractors in Kempton Park, providing fast and professional services for residential, commercial, and construction projects across the area. Our deep understanding of Kempton Park's suburbs and regulations makes us the reliable choice.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Kempton Park every day</strong></p>
+                </div>
+            </div>
         </section>
 
         <section className="mb-16">
@@ -59,6 +72,17 @@ export default function DemolitionKemptonParkPage() {
                 </div>
                 <div className="lg:col-span-2">
                     {servicesImage && <Image src={servicesImage.imageUrl} alt="Large site in Kempton Park being cleared by an excavator" data-ai-hint="site clearing" width={600} height={500} className="rounded-lg shadow-lg" />}
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Kempton Park</h2>
+                <div className="max-w-4xl mx-auto space-y-4 text-center">
+                    <p className="font-semibold text-lg">✔ Kempton Park – Residential demolition completed safely and on time</p>
+                    <p className="font-semibold text-lg">✔ Birchleigh – Interior strip-out for renovation project</p>
+                    <p className="font-semibold text-lg">✔ Glen Marais – Site clearance for new development</p>
                 </div>
             </div>
         </section>
@@ -92,12 +116,11 @@ export default function DemolitionKemptonParkPage() {
         
         <section className="mb-16 text-center">
             <h2 className="text-2xl font-semibold">Our Service Network</h2>
-             <p className="mt-2 text-muted-foreground">We also provide expert demolition services in nearby areas.</p>
+             <p className="mt-2 text-muted-foreground">We also provide expert <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition Johannesburg</Link> services and in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
-                <Button variant="outline" asChild><Link href="/demolition-johannesburg">Johannesburg Demolition</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-edenvale">Edenvale Services</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg Demolition</Link></Button>
-                <Button variant="outline" asChild><Link href="/demolition-midrand">Explore Midrand</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-benoni">Benoni Demolition</Link></Button>
             </div>
         </section>
 
@@ -113,3 +136,5 @@ export default function DemolitionKemptonParkPage() {
     </>
   );
 }
+
+    
