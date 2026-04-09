@@ -416,6 +416,7 @@ export default function DemolitionJohannesburgPage() {
                         <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
                         <Button variant="outline" asChild><Link href="/demolition-benoni">Benoni</Link></Button>
                         <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park</Link></Button>
+                        <Button variant="outline" asChild><Link href="/demolition-germiston">Germiston</Link></Button>
                         <Button variant="outline" asChild><Link href="/demolition-bedfordview">Bedfordview</Link></Button>
                         <Button variant="outline" asChild><Link href="/demolition-edenvale">Edenvale</Link></Button>
                         <Button variant="outline" asChild><Link href="/demolition-bryanston">Bryanston</Link></Button>
@@ -478,4 +479,3 @@ export default function DemolitionJohannesburgPage() {
 
 
     
-
