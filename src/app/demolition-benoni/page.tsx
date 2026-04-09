@@ -7,7 +7,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const faqs = [
-    { question: "What is your main service area in Benoni?", answer: "We serve all of Benoni, including Rynfield, Farrarmere, Lakefield, and the surrounding suburbs. Our local East Rand teams ensure a fast response for any demolition or site clearing project." },
+    { question: "What is your main service area in Benoni?", answer: "We serve all of Benoni, including Rynfield, Farrarmere, Northmead, Lakefield, and the surrounding suburbs. Our local East Rand teams ensure a fast response for any demolition or site clearing project." },
     { question: "Do I need council approval for demolition in Benoni?", answer: "Yes, a permit from the City of Ekurhuleni is required for most structural demolitions. As part of our service, we manage the entire permit application process to ensure your project is fully compliant." },
     { question: "How do you handle demolition near the many lakes in Benoni?", answer: "We take extra precautions when working near water bodies. Our site plans include measures to prevent any debris or runoff from entering the lakes, ensuring we protect the local environment while completing the demolition safely." }
 ];
@@ -24,7 +24,7 @@ export default function DemolitionBenoniPage() {
             <ShieldCheck /> Your Local, Licensed Benoni Demolition Experts
           </p>
           <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-            Apex Demolitions provides reliable and professional demolition services across Benoni. As a trusted local contractor on the East Rand, we specialize in safe residential house demolition, commercial site clearing, swimming pool removal, and comprehensive rubble removal. Our team is well-versed in Benoni's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth and compliant project.
+            Apex Demolitions provides reliable and professional demolition services across Benoni. As a trusted local contractor on the East Rand, we specialize in safe residential house demolition, commercial site clearing, swimming pool removal, and comprehensive rubble removal. We complete demolition projects across Benoni daily, from small residential jobs to larger construction sites. Our team is well-versed in Benoni's specific building codes and the City of Ekurhuleni's regulations, guaranteeing a smooth and compliant project.
           </p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" asChild><a href="tel:0784292760"><Phone /> Call for a Quote</a></Button>
@@ -32,13 +32,36 @@ export default function DemolitionBenoniPage() {
           </div>
         </section>
 
+        <section id="trust-authority" className="py-12 md:py-16 bg-card text-center rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Trusted Demolition Contractors in Benoni</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We are one of the most trusted demolition contractors in Benoni, providing fast and professional services for residential, commercial, and construction projects across the area.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted demolition contractors working across Benoni every day</strong></p>
+                </div>
+            </div>
+        </section>
+
         <section className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Professional Demolition Services in Benoni</h2>
             <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-6">
-                <Card><CardHeader><CardTitle>Residential Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses, garages, and other structures to make way for new builds in suburbs like Rynfield and Farrarmere.</p></CardContent></Card>
+                <Card><CardHeader><CardTitle>Residential Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Safe removal of houses, garages, and other structures to make way for new builds in suburbs like Rynfield, Farrarmere, and Northmead.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Commercial Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Site clearing for new business premises, retail spaces, and office parks in Benoni's commercial hubs.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Pool Demolition</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Reclaim your yard space by removing old or unused swimming pools. We handle breaking, removal, and professional backfilling.</p></CardContent></Card>
                 <Card><CardHeader><CardTitle>Rubble Removal</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">Complete site cleanup, ensuring all demolition debris and waste is cleared and legally disposed of.</p></CardContent></Card>
+            </div>
+        </section>
+
+        <section id="recent-projects" className="py-12 md:py-20 bg-card rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Demolition Projects in Benoni</h2>
+                <div className="max-w-4xl mx-auto space-y-4 text-center">
+                    <p className="font-semibold text-lg">✔ Benoni – Residential demolition completed safely and on time</p>
+                    <p className="font-semibold text-lg">✔ Rynfield – Interior strip-out for renovation project</p>
+                    <p className="font-semibold text-lg">✔ Farrarmere – Site clearance for new development</p>
+                </div>
             </div>
         </section>
         
@@ -57,11 +80,12 @@ export default function DemolitionBenoniPage() {
             </div>
         </section>
         
-        <section className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Nearby Areas</h2>
-             <p className="mt-2 text-muted-foreground text-center max-w-2xl mx-auto">We also provide expert demolition services in nearby areas on the East Rand.</p>
+        <section className="mb-16 text-center">
+            <h2 className="text-2xl font-semibold">Our East Rand Service Network</h2>
+             <p className="mt-2 text-muted-foreground">We also provide expert services for <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition Johannesburg</Link> wide and in nearby areas.</p>
             <div className="mt-4 flex flex-wrap justify-center gap-4">
                 <Button variant="outline" asChild><Link href="/demolition-boksburg">Boksburg</Link></Button>
+                <Button variant="outline" asChild><Link href="/demolition-edenvale">Edenvale</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-kempton-park">Kempton Park</Link></Button>
                 <Button variant="outline" asChild><Link href="/demolition-springs">Springs</Link></Button>
             </div>
