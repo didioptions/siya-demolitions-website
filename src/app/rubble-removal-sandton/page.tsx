@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Phone, Mail, Quote, Star, ShieldCheck, MessageSquare } from "lucide-react";
@@ -72,26 +73,27 @@ export default function RubbleRemovalSandtonPage() {
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast, Reliable Turnaround</h3><p className="text-sm text-muted-foreground">We pride ourselves on completing cleanups quickly to minimize disruption, often offering same-day service.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Trusted by All</h3><p className="text-sm text-muted-foreground">Trusted by homeowners, builders, and contractors across Sandton for our reliable and professional service.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Complete Site Cleanup</h3><p className="text-sm text-muted-foreground">We remove all rubble and leave your site clean, safe, and ready for use.</p></div></div>
+                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Affordable & Transparent Pricing</h3><p className="text-sm text-muted-foreground">We offer competitive quotes with no hidden costs – what we quote is what you pay.</p></div></div>
             </div>
         </section>
 
         <section id="sandton-challenges" className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">The Unique Challenges of Rubble Removal in Sandton Properties</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
-                Clearing waste in Sandton requires more than just a truck. It demands expertise in navigating the area's unique environment. We specialize in overcoming these challenges for a seamless service.
+                Clearing waste in Sandton requires more than just a truck. It demands expertise in navigating the area's unique environment. We specialize in overcoming these challenges for a seamless service. We regularly work on properties in and around Sandton City, Bryanston, Rivonia, and nearby residential estates where access, site protection, and clean <a href="/rubble-removal-johannesburg" className="text-primary hover:underline">rubble removal</a> are especially important.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
                 <Card>
                     <CardHeader><CardTitle>Secure Estate Access</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">We are experts at working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours and noise limitations, and use the right-sized equipment for narrow roads.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">We have extensive experience working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours and noise limitations, and use the right-sized equipment for narrow roads.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Protecting Luxury Finishes</CardTitle></CardHeader>
                     <CardContent><p className="text-muted-foreground">Your property is an investment. Our teams use protective boarding for imported paving, manicured lawns, and surrounding structures to ensure the cleanup process leaves no trace, other than the newly available space.</p></CardContent>
                 </Card>
                 <Card>
-                    <CardHeader><CardTitle>Discreet & Professional Service</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">In suburbs like Bryanston and Hyde Park, discretion is key. Our uniformed, professional teams work efficiently and quietly to minimize disruption to you and your neighbours, maintaining the tranquility of the area.</p></CardContent>
+                    <CardHeader><CardTitle>Maximizing Property Value</CardTitle></CardHeader>
+                    <CardContent><p className="text-muted-foreground">In the Sandton market, a large, versatile garden can be more valuable than an aging pool. A professional removal with certified compaction ensures the land is ready for a high-value extension or premium landscaping.</p></CardContent>
                 </Card>
             </div>
         </section>
@@ -186,6 +188,7 @@ export default function RubbleRemovalSandtonPage() {
             <div className="relative z-10">
                 <h2 className="text-3xl font-bold">Get Your Sandton Property Cleared—Fast!</h2>
                 <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Call now for same-day rubble removal in Sandton – fast response guaranteed. For a professional, discreet, and reliable rubble removal service, contact the experts at Apex Demolitions.</p>
+                <p className="mt-4 font-semibold text-primary-foreground/90">Limited same-day slots available – call now to secure your booking.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Speak to a Specialist</a></Button>
