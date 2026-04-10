@@ -123,6 +123,9 @@ export default function RubbleRemovalJohannesburgPage() {
                   <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-200">
                       Fast, affordable, and licensed removal of builders rubble, garden refuse, and construction waste. Same-day service available across Johannesburg.
                   </p>
+                  <p className="mt-6 text-xl md:text-2xl font-semibold text-accent">
+                    Same-Day Rubble Removal Johannesburg – From R1200 | 6 & 10 Cube Trucks Available
+                  </p>
                   <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                       <Button size="lg" asChild>
                           <a href="tel:0784292760"><Phone /> Call for a Fast Quote</a>
@@ -207,7 +210,7 @@ export default function RubbleRemovalJohannesburgPage() {
               <p className="text-accent font-semibold uppercase tracking-widest">Urgent Cleanup?</p>
               <h2 className="text-3xl md:text-4xl font-bold mt-2">Same-Day Rubble Removal in Johannesburg</h2>
               <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
-                  Don't let rubble and waste halt your project. We offer a rapid-response, **same-day rubble removal Johannesburg** service designed to clear your site quickly and affordably. For urgent situations or unexpected debris, our teams are on standby across the city.
+                  Don't let rubble and waste halt your project. We offer a rapid-response, **same-day rubble removal Johannesburg** service designed to clear your site quickly and affordably. For urgent situations or unexpected debris, our teams are on standby across the city. Most rubble removal jobs are completed within hours, depending on load size and site access.
               </p>
               <div className="mt-12">
                    <Button size="lg" variant="destructive" asChild>
@@ -231,6 +234,7 @@ export default function RubbleRemovalJohannesburgPage() {
                           We are built on a foundation of trust, reliability, and professionalism. Our goal is to provide a seamless rubble removal service that gives you complete peace of mind.
                       </p>
                        <div className="mt-8 grid gap-6">
+                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Trusted by All</h3><p className="text-muted-foreground mt-1 text-sm">Trusted by homeowners, builders, and contractors across Johannesburg for reliable and professional service.</p></div></div>
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection. This means your project is handled legally and safely from start to finish.</p></div></div>
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Service</h3><p className="text-muted-foreground mt-1 text-sm">With teams across Johannesburg, we offer same-day or next-day service to keep your project on schedule. We pride ourselves on punctuality and efficient work.</p></div></div>
                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Eco-Friendly Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are committed to responsible waste management. We prioritize recycling and guarantee all waste is disposed of legally at registered facilities, protecting our city and you from fines.</p></div></div>
@@ -410,7 +414,7 @@ export default function RubbleRemovalJohannesburgPage() {
            <div className="container mx-auto px-4 md:px-6 text-center">
               <h2 className="text-3xl md:text-4xl font-bold">Need Rubble Removed Today?</h2>
               <p className="mt-4 max-w-2xl mx-auto text-primary-foreground/80">
-                  Call or WhatsApp now for fast, affordable rubble removal in Johannesburg. We handle everything from small loads to large 10 cube tipper truck removals.
+                  Call or WhatsApp now for fast, affordable rubble removal in Johannesburg. We handle everything from small loads to large 10 cube tipper truck removals. Call now for same-day rubble removal in Johannesburg – limited slots available daily.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" asChild>
@@ -425,6 +429,7 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
 
 
 
