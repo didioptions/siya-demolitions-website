@@ -238,6 +238,7 @@ export default function RubbleRemovalJohannesburgPage() {
                                 <h3 className="text-xl font-semibold">Proven Track Record</h3>
                                 <p className="text-muted-foreground mt-1 text-sm">
                                     <strong>✔ Successfully completed hundreds of rubble removal jobs across Johannesburg.</strong><br/>
+                                    <strong>✔ We handle everything from small loads to large 10 cube tipper truck removals daily across Johannesburg.</strong><br/>
                                     Our portfolio of successful projects speaks for itself, making us a trusted partner for homeowners, builders, and businesses alike for any <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link>.
                                 </p>
                             </div></div>
@@ -424,6 +425,7 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
 
 
 
