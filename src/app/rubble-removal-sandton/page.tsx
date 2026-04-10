@@ -35,11 +35,11 @@ export default function RubbleRemovalSandtonPage() {
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Rubble Removal Services Sandton</h1>
-             <p className="mt-4 text-lg text-accent font-semibold flex items-center justify-center gap-2">
-                <ShieldCheck /> Your Trusted Sandton Estate & Commercial Cleanup Specialists
-            </p>
+             <p className="mt-6 text-xl md:text-2xl font-semibold text-accent">
+                Same-Day Rubble Removal Sandton – From R1200 | Fast & Professional Service
+             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Apex Demolitions provides premier rubble removal services in Sandton. We specialize in discreet and efficient waste clearing for high-value residential properties, secure estates, and commercial sites. From garden refuse removal in Bryanston to construction debris in the CBD, our licensed teams ensure your property is left immaculate. For urgent needs, ask about our **same-day rubble removal Sandton** service.
+                We provide fast, professional rubble removal services across Sandton, ensuring your site is cleared quickly and left clean and tidy. We specialize in discreet and efficient waste clearing for high-value residential properties, secure estates, and commercial sites. From garden refuse removal in Bryanston to construction debris in the CBD, our licensed teams ensure your property is left immaculate. For urgent needs, ask about our **same-day rubble removal Sandton** service.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -48,6 +48,18 @@ export default function RubbleRemovalSandtonPage() {
                 <Button size="lg" variant="secondary" asChild>
                     <a href="https://wa.me/2784292760" target="_blank" rel="noopener noreferrer"><MessageSquare className="mr-2"/>WhatsApp for a Fast Quote</a>
                 </Button>
+            </div>
+        </section>
+        
+        <section id="trust-authority" className="py-12 md:py-16 bg-card text-center rounded-lg mb-16">
+            <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+                 <h2 className="text-3xl font-bold">Trusted Rubble Removal Contractors in Sandton</h2>
+                 <p className="mt-4 text-lg text-muted-foreground">
+                    We don’t just remove rubble — we leave your site clean, safe, and ready for use.
+                 </p>
+                 <div className="mt-6 text-xl font-bold text-foreground flex items-center justify-center gap-2 bg-background p-4 rounded-lg shadow-sm">
+                    <p><strong>✔ Trusted rubble removal contractors working across Sandton every day</strong></p>
+                </div>
             </div>
         </section>
 
@@ -69,7 +81,7 @@ export default function RubbleRemovalSandtonPage() {
             <div className="grid md:grid-cols-3 gap-8">
                 <Card>
                     <CardHeader><CardTitle>Secure Estate Access</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">We are experts at working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours, and use the right-sized equipment for narrow roads, ensuring a smooth process in communities like Dainfern and Morningside.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">We are experts at working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours and noise limitations, and use the right-sized equipment for narrow roads, ensuring a smooth process in communities like Dainfern and Morningside.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Protecting Luxury Finishes</CardTitle></CardHeader>
@@ -87,21 +99,21 @@ export default function RubbleRemovalSandtonPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Rubble Removal Jobs in Sandton</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>Renovation Debris Removal</CardTitle><p className="text-sm text-muted-foreground">Bryanston</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Sandton – 6 cube rubble removal completed same day</CardTitle></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A client in a secure Bryanston estate required urgent removal of builders rubble from a major home renovation. Our team responded the same day, carefully loading and removing 3 truckloads without damaging the new paving. The site was left spotless, allowing painters to start the next day.</p>
+                            <p className="text-sm">A client in a secure Sandton estate required urgent removal of renovation debris. Our team responded the same day, carefully loading and removing a full 6 cube truckload without damaging the new paving, allowing other contractors to proceed.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Garden Refuse & Soil</CardTitle><p className="text-sm text-muted-foreground">Morningside</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Bryanston – renovation rubble cleared within hours</CardTitle></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A homeowner was landscaping their large garden and needed multiple loads of excess soil, rocks, and large tree branches removed. Our team cleared the site over two days, transforming the property and preparing it for the new lawn and flowerbeds.</p>
+                            <p className="text-sm">After a major home renovation, a homeowner in Bryanston was left with several large piles of rubble. Our team arrived within hours and cleared two full truckloads, transforming the messy yard into a clean, usable space before the end of the day.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Commercial Strip-Out Waste</CardTitle><p className="text-sm text-muted-foreground">Sandton CBD</p></CardHeader>
+                        <CardHeader><CardTitle>✔ Fourways – large 10 cube construction site clean-up</CardTitle></CardHeader>
                         <CardContent>
-                            <p className="text-sm">We provided after-hours rubble removal for a retail store renovation near Sandton City. Our team worked overnight to clear all old fittings, drywall, and tiles, ensuring the site was ready for the shopfitters the next morning with no disruption to the mall's daytime operations.</p>
+                            <p className="text-sm">We provided scheduled rubble removal for a contractor building new homes in a Fourways development, using our 10-cube tipper truck to efficiently manage large volumes of builders rubble, keeping the site safe and productive.</p>
                         </CardContent>
                     </Card>
                 </div>
@@ -112,11 +124,11 @@ export default function RubbleRemovalSandtonPage() {
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl font-bold text-center mb-8">Rubble Removal Prices in Sandton</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
-                    We offer transparent and competitive pricing. Sandton-specific factors like estate access and the type of debris can affect the final cost.
+                    We offer transparent and competitive pricing. Sandton-specific factors like estate access and the type of debris can affect the final cost. 10 cube tipper trucks are also available for larger jobs.
                 </p>
                 <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     <Card><CardHeader><CardTitle>Small Load (1 Ton)</CardTitle><p className="text-muted-foreground text-sm">e.g., Garden refuse after a weekend cleanup.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R650</p></CardContent></Card>
-                    <Card><CardHeader><CardTitle>Medium Load (4-Ton Truck)</CardTitle><p className="text-muted-foreground text-sm">e.g., Renovation rubble from a kitchen or bathroom.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,400</p></CardContent></Card>
+                    <Card><CardHeader><CardTitle>Medium Load (6 Cube Truck)</CardTitle><p className="text-muted-foreground text-sm">e.g., Renovation rubble from a kitchen or bathroom.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,200</p></CardContent></Card>
                     <Card><CardHeader><CardTitle>Large Load (10-Cube Tipper)</CardTitle><p className="text-muted-foreground text-sm">e.g., Builders rubble from a small <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> or site clearing.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,500</p></CardContent></Card>
                 </div>
                 <p className="text-center text-sm text-muted-foreground mt-8">*Disclaimer: Prices are a guideline. For a precise, fixed-price quote, we provide a free, no-obligation on-site assessment.</p>
@@ -171,7 +183,7 @@ export default function RubbleRemovalSandtonPage() {
             {clearedSiteImage && <Image src={clearedSiteImage.imageUrl} alt="Pristine site after rubble removal in Sandton" data-ai-hint="clean site sandton" fill className="object-cover opacity-20" />}
             <div className="relative z-10">
                 <h2 className="text-3xl font-bold">Get Your Sandton Property Cleared—Fast!</h2>
-                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">For a professional, discreet, and reliable rubble removal service in Sandton, contact the experts at Apex Demolitions. Same-day service is often available.</p>
+                <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Call now for same-day rubble removal in Sandton – fast response guaranteed. For a professional, discreet, and reliable rubble removal service, contact the experts at Apex Demolitions.</p>
                 <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                     <Button size="lg" variant="secondary" asChild><Link href="/contact"><Mail className="mr-2" /> Get Your Free Quote</Link></Button>
                     <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild><a href="tel:0784292760"><Phone className="mr-2" /> Speak to a Specialist</a></Button>
