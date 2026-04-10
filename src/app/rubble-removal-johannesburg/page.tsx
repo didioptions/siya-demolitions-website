@@ -181,9 +181,9 @@ export default function RubbleRemovalJohannesburgPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-accent font-semibold uppercase tracking-widest">Efficient & Powerful</p>
-              <h2 className="text-3xl md:text-4xl font-bold mt-2">Heavy-Duty Rubble Removal with Machinery</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mt-2">We Handle Small to Large Loads</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                For larger rubble removal jobs in Johannesburg, we use professional equipment to handle high volumes quickly and safely. If rubble, soil, or construction waste is too much for manual loading, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time.
+                We use both 6 cube trucks and larger 10 cube tipper trucks to handle jobs of all sizes. Whether you have a small household clean-up or a large construction site in Johannesburg, we have the equipment to remove your rubble quickly and efficiently. For larger jobs, we use <Link href="/plant-hire-johannesburg" className="text-primary hover:underline">Bobcats and TLB machines</Link> to speed up the process and reduce labour time.
               </p>
               <div className="mt-6">
                 <h3 className="font-semibold text-lg mb-3">This service is ideal for:</h3>
@@ -191,13 +191,8 @@ export default function RubbleRemovalJohannesburgPage() {
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Large construction sites needing regular clearing.</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Full <Link href="/site-cleaning-johannesburg" className="text-primary hover:underline">site clearance</Link> projects after demolition.</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Heavy soil, rock, or mixed rubble removal.</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Major renovation and <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> clean-ups.</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" /><span>Commercial and industrial property waste management.</span></li>
                 </ul>
               </div>
-              <p className="mt-6 text-muted-foreground">
-                Using the right equipment allows us to complete jobs faster, keep sites safe, and handle even the most demanding rubble removal projects across Johannesburg, including <Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link>, <Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link>, and <Link href="/rubble-removal-midrand" className="text-primary hover:underline">Midrand</Link>.
-              </p>
             </div>
             <div>
               {bobcatImage && <div className="aspect-video relative"><Image src={bobcatImage.imageUrl} alt="Bobcat machine clearing heavy rubble at a Johannesburg site" data-ai-hint="bobcat clearing rubble" fill className="rounded-lg object-cover shadow-lg" /></div>}
@@ -239,6 +234,13 @@ export default function RubbleRemovalJohannesburgPage() {
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Licensed & Insured</h3><p className="text-muted-foreground mt-1 text-sm">We are fully licensed waste carriers and carry comprehensive public liability insurance for your protection. This means your project is handled legally and safely from start to finish.</p></div></div>
                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Fast, Reliable Service</h3><p className="text-muted-foreground mt-1 text-sm">With teams across Johannesburg, we offer same-day or next-day service to keep your project on schedule. We pride ourselves on punctuality and efficient work.</p></div></div>
                           <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div><h3 className="text-xl font-semibold">Eco-Friendly Disposal</h3><p className="text-muted-foreground mt-1 text-sm">We are committed to responsible waste management. We prioritize recycling and guarantee all waste is disposed of legally at registered facilities, protecting our city and you from fines.</p></div></div>
+                            <div className="flex gap-4 items-start"><Check className="w-8 h-8 text-primary mt-1 flex-shrink-0" /><div>
+                                <h3 className="text-xl font-semibold">Proven Track Record</h3>
+                                <p className="text-muted-foreground mt-1 text-sm">
+                                    <strong>✔ Successfully completed hundreds of rubble removal jobs across Johannesburg.</strong><br/>
+                                    Our portfolio of successful projects speaks for itself, making us a trusted partner for homeowners, builders, and businesses alike for any <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition in Johannesburg</Link>.
+                                </p>
+                            </div></div>
                       </div>
                   </div>
               </div>
@@ -251,21 +253,21 @@ export default function RubbleRemovalJohannesburgPage() {
                 <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Recent Rubble Removal Jobs in Johannesburg</h2>
                 <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <Card>
-                        <CardHeader><CardTitle>Renovation Rubble Removal</CardTitle><p className="text-sm text-muted-foreground">Sandton</p></CardHeader>
+                        <CardHeader><CardTitle>Same-Day Renovation Rubble</CardTitle><p className="text-sm text-muted-foreground"><Link href="/rubble-removal-sandton" className="text-primary hover:underline">Sandton</Link></p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">A client in a secure Sandton estate required urgent removal of renovation debris (tiles, bricks, drywall). Our team responded the same day, carefully loading and removing 3 truckloads without damaging the new paving. The site was left spotless, allowing painters to start the next day.</p>
+                            <p className="text-sm">A client in a secure Sandton estate required urgent removal of renovation debris (tiles, bricks, drywall). Our team responded the same day, carefully loading and removing 6 cube truckloads without damaging the new paving.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Garden Refuse & Soil Removal</CardTitle><p className="text-sm text-muted-foreground">Randburg</p></CardHeader>
+                        <CardHeader><CardTitle>Renovation Rubble Cleared</CardTitle><p className="text-sm text-muted-foreground"><Link href="/rubble-removal-randburg" className="text-primary hover:underline">Randburg</Link></p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">After a major landscaping project, a homeowner in Blairgowrie was left with several large piles of soil and tree branches. Our team arrived the next morning and cleared two full truckloads, transforming the messy yard into a clean, usable space.</p>
+                            <p className="text-sm">After a major home renovation, a homeowner in Blairgowrie was left with several large piles of rubble. Our team arrived within hours and cleared two full truckloads, transforming the messy yard into a clean, usable space.</p>
                         </CardContent>
                     </Card>
                     <Card>
-                        <CardHeader><CardTitle>Builders Rubble Removal</CardTitle><p className="text-sm text-muted-foreground">Midrand</p></CardHeader>
+                        <CardHeader><CardTitle>Large 10-Cube Load Removed</CardTitle><p className="text-sm text-muted-foreground"><Link href="/rubble-removal-midrand" className="text-primary hover:underline">Midrand</Link></p></CardHeader>
                         <CardContent>
-                            <p className="text-sm">We provided scheduled weekly rubble removal for a contractor building new homes in a Midrand development. Our reliable service kept the site safe and clear of builders rubble, ensuring the project ran smoothly and on schedule without any delays caused by waste buildup.</p>
+                            <p className="text-sm">We provided scheduled rubble removal for a contractor building new homes in a Midrand development, using our 10-cube tipper truck to efficiently manage large volumes of builders rubble, keeping the site safe and productive.</p>
                         </CardContent>
                     </Card>
                 </div>
@@ -312,32 +314,32 @@ export default function RubbleRemovalJohannesburgPage() {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                  <Card>
                     <CardHeader>
-                        <CardTitle>Small Load</CardTitle>
+                        <CardTitle>Small Load (from)</CardTitle>
                         <p className="text-muted-foreground text-sm">e.g., Garden refuse after a weekend cleanup.</p>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-3xl font-bold">from R550</p>
-                        <p className="text-muted-foreground mt-2">Ideal for quick, small residential cleanups of light materials like branches, leaves, or a small amount of household junk. Perfect for when you've done a garden tidy-up and just need the waste gone fast.</p>
+                        <p className="text-3xl font-bold">R550</p>
+                        <p className="text-muted-foreground mt-2">Ideal for quick, small residential cleanups of light materials like branches, leaves, or a small amount of household junk.</p>
                     </CardContent>
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>Medium Load</CardTitle>
+                        <CardTitle>6 Cube Truck (from)</CardTitle>
                         <p className="text-muted-foreground text-sm">e.g., Debris from a bathroom or kitchen renovation.</p>
                     </CardHeader>
                     <CardContent>
-                        <p className="text-3xl font-bold">from R1,200</p>
-                        <p className="text-muted-foreground mt-2">Our most popular option for builders and renovators. This covers a full load of mixed renovation waste, such as old tiles, bricks, drywall, and wood. A single truckload can often clear an entire room's worth of debris.</p>
+                        <p className="text-3xl font-bold">R1,200</p>
+                        <p className="text-muted-foreground mt-2">Our most popular option for builders and renovators. This covers a full load of mixed renovation waste, such as old tiles, bricks, drywall, and wood.</p>
                     </CardContent>
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>Large Load</CardTitle>
+                        <CardTitle>10 Cube Tipper Truck</CardTitle>
                         <p className="text-muted-foreground text-sm">e.g., Builders rubble from a construction site.</p>
                     </CardHeader>
                     <CardContent>
                         <p className="text-3xl font-bold">from R2,200</p>
-                        <p className="text-muted-foreground mt-2">Perfect for large-scale site clearing, this service is for heavy builders rubble, large amounts of soil from excavations, or debris from a small <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> project. Multiple loads can be arranged for major projects.</p>
+                        <p className="text-muted-foreground mt-2">Perfect for large-scale site clearing, this service is for heavy builders rubble, large amounts of soil from excavations, or debris from a small <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> project.</p>
                     </CardContent>
                 </Card>
             </div>
@@ -405,9 +407,9 @@ export default function RubbleRemovalJohannesburgPage() {
       {/* Final CTA */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
            <div className="container mx-auto px-4 md:px-6 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Ready to Clear Your Site in Johannesburg?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Need Rubble Removed Today?</h2>
               <p className="mt-4 max-w-2xl mx-auto text-primary-foreground/80">
-                  Contact Apex Demolitions for a fast, free, and no-obligation quote on professional rubble removal anywhere in Johannesburg. Our team is ready to help.
+                  Call or WhatsApp now for fast, affordable rubble removal in Johannesburg. We handle everything from small loads to large 10 cube tipper truck removals.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                   <Button size="lg" variant="secondary" asChild>
@@ -422,5 +424,6 @@ export default function RubbleRemovalJohannesburgPage() {
     </>
   );
 }
+
 
 
