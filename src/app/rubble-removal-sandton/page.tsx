@@ -20,7 +20,7 @@ const faqs = [
         answer: "Our full-service rubble removal Johannesburg solution is designed to be completely hassle-free. Our team handles all the heavy lifting, loading, and transport. For a typical garage or site cleanup in Sandton, we will remove old furniture, construction debris, garden refuse, and general junk. We then do a final sweep-up of the area, leaving your space clean, safe, and ready to use. All waste is then transported to a licensed facility for responsible disposal, ensuring full legal compliance."
     },
     {
-        question: "How do you determine the cost of rubble removal in Sandton?",
+        question: "How much does it cost to rubble removal in Sandton?",
         answer: "The cost for professional rubble removal in Sandton is based on the volume of debris (per truckload), the type of material (light garden refuse vs. heavy builders rubble), and site accessibility. Factors like navigating secure estate entrances or limited space for our trucks can influence the final price. We provide a free, detailed, on-site assessment to give every client a transparent and fixed-price quote with no hidden costs, ensuring you receive affordable, premium service."
     }
 ];
@@ -39,7 +39,7 @@ export default function RubbleRemovalSandtonPage() {
                 Same-Day Rubble Removal Sandton – From R1200 | Fast & Professional Service
              </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                We provide fast, professional rubble removal services across Sandton, ensuring your site is cleared quickly and left clean and tidy. We specialize in discreet and efficient waste clearing for high-value residential properties, secure estates, and commercial sites. From garden refuse removal in Bryanston to construction debris in the CBD, our licensed teams ensure your property is left immaculate. For urgent needs, ask about our **same-day rubble removal Sandton** service.
+                We provide fast, professional rubble removal services across Sandton, ensuring your site is cleared quickly and left clean and tidy. We specialize in discreet and efficient waste clearing for high-value residential properties, secure estates, and commercial sites.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -70,22 +70,24 @@ export default function RubbleRemovalSandtonPage() {
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Estate Work Specialists</h3><p className="text-sm text-muted-foreground">We have extensive experience working within Sandton's secure lifestyle estates and adhere to all HOA rules.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Luxury Property Protection</h3><p className="text-sm text-muted-foreground">We use advanced techniques to safeguard your home, landscaping, and valuable assets during a cleanup.</p></div></div>
                 <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Fast, Reliable Turnaround</h3><p className="text-sm text-muted-foreground">We pride ourselves on completing cleanups quickly to minimize disruption, often offering same-day service.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Trusted by All</h3><p className="text-sm text-muted-foreground">Trusted by homeowners, builders, and contractors across Sandton for our reliable and professional service.</p></div></div>
+                <div className="flex items-start gap-4"><Star className="text-accent h-6 w-6 mt-1 flex-shrink-0"/><div><h3 className="font-semibold">Complete Site Cleanup</h3><p className="text-sm text-muted-foreground">We remove all rubble and leave your site clean, safe, and ready for use.</p></div></div>
             </div>
         </section>
 
         <section id="sandton-challenges" className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Rubble Removal Challenges in Sandton Properties</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">The Unique Challenges of Rubble Removal in Sandton Properties</h2>
             <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">
                 Clearing waste in Sandton requires more than just a truck. It demands expertise in navigating the area's unique environment. We specialize in overcoming these challenges for a seamless service.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
                 <Card>
                     <CardHeader><CardTitle>Secure Estate Access</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">We are experts at working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours and noise limitations, and use the right-sized equipment for narrow roads, ensuring a smooth process in communities like Dainfern and Morningside.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">We are experts at working within Sandton's premier estates. We coordinate with estate management, adhere to strict work hours and noise limitations, and use the right-sized equipment for narrow roads.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Protecting Luxury Finishes</CardTitle></CardHeader>
-                    <CardContent><p className="text-muted-foreground">Your property is an investment. Our teams use protective boarding for imported paving, manicured lawns, and surrounding structures to ensure the cleanup process leaves no trace, a crucial service after a <Link href="/swimming-pool-demolition-sandton" className="text-primary hover:underline">pool demolition</Link> or renovation.</p></CardContent>
+                    <CardContent><p className="text-muted-foreground">Your property is an investment. Our teams use protective boarding for imported paving, manicured lawns, and surrounding structures to ensure the cleanup process leaves no trace, other than the newly available space.</p></CardContent>
                 </Card>
                 <Card>
                     <CardHeader><CardTitle>Discreet & Professional Service</CardTitle></CardHeader>
@@ -131,7 +133,7 @@ export default function RubbleRemovalSandtonPage() {
                     <Card><CardHeader><CardTitle>Medium Load (6 Cube Truck)</CardTitle><p className="text-muted-foreground text-sm">e.g., Renovation rubble from a kitchen or bathroom.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R1,200</p></CardContent></Card>
                     <Card><CardHeader><CardTitle>Large Load (10-Cube Tipper)</CardTitle><p className="text-muted-foreground text-sm">e.g., Builders rubble from a small <Link href="/demolition-johannesburg" className="text-primary hover:underline">demolition</Link> or site clearing.</p></CardHeader><CardContent><p className="text-3xl font-bold">from R2,500</p></CardContent></Card>
                 </div>
-                <p className="text-center text-sm text-muted-foreground mt-8">*Disclaimer: Prices are a guideline. For a precise, fixed-price quote, we provide a free, no-obligation on-site assessment.</p>
+                <p className="text-center text-sm text-muted-foreground mt-8">*Disclaimer: Prices are estimates. For a precise, fixed-price quote, we provide a free, no-obligation on-site assessment.</p>
             </div>
         </section>
 
