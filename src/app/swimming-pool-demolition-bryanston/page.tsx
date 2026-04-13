@@ -13,7 +13,7 @@ const faqs = [
     { question: "Is your team insured for work on high-value Bryanston properties?", answer: "Absolutely. We carry comprehensive insurance coverage specifically for high-value residential properties, giving you complete confidence and peace of mind when we operate on your property." }
 ];
 
-export default function SwimmingPoolDemolitionBryanstonPage() {
+export default function DemolitionBryanstonPage() {
     const clearedSiteImage = PlaceHolderImages.find(p => p.id === 'poolDemoAfter');
 
   return (
@@ -24,7 +24,7 @@ export default function SwimmingPoolDemolitionBryanstonPage() {
                 <ShieldCheck /> The Trusted Swimming Pool Demolition Specialist in Bryanston
             </p>
             <p className="mt-3 max-w-3xl mx-auto text-muted-foreground">
-                Apex Demolitions provides a premier pool demolition service for Bryanston, defined by precision, discretion, and the high standards expected in Johannesburg's northern suburbs. Removing your pool allows you to reclaim valuable outdoor space, reduce maintenance costs, and prepare your property for new development or landscaping.
+                Apex Demolitions provides a premier pool demolition service for Bryanston, defined by precision, discretion, and the high standards expected in Johannesburg's northern suburbs. Removing your pool allows you to reclaim valuable outdoor space, reduce maintenance costs, and prepare your property for new development or landscaping. Most swimming pool demolition projects are completed within a few days, depending on size and site access.
             </p>
              <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
@@ -68,8 +68,7 @@ export default function SwimmingPoolDemolitionBryanstonPage() {
                 <h2 className="text-3xl font-bold text-center mb-8">Swimming Pool Demolition Costs</h2>
                 <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">Pool demolition costs vary based on size and structure. Typical projects range from **R8,000 to R25,000+**. We provide free quotes after a site inspection.</p>
                 <div className="text-center">
-                  <p className="font-semibold text-foreground">✔ Proper backfilling and compaction for safe ground use.</p>
-                  <p className="font-semibold text-foreground">✔ Site prepared for building, paving, or landscaping.</p>
+                  <p className="font-semibold text-foreground">✔ Proper backfilling and compaction done to support future building or landscaping</p>
                 </div>
             </div>
         </section>
@@ -98,7 +97,7 @@ export default function SwimmingPoolDemolitionBryanstonPage() {
         </section>
 
         <section className="text-center bg-primary text-primary-foreground p-8 rounded-lg">
-          <h2 className="text-3xl font-bold">Call now for professional swimming pool demolition in Bryanston.</h2>
+          <h2 className="text-3xl font-bold">Request a professional quote today for safe and reliable swimming pool demolition in Bryanston.</h2>
           <p className="mt-2 max-w-2xl mx-auto text-primary-foreground/80">Get fast quotes and reliable service from the trusted local experts.</p>
           <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild><a href="tel:0784292760"><Phone /> Call Now: 078 429 2760</a></Button>
@@ -112,5 +111,3 @@ export default function SwimmingPoolDemolitionBryanstonPage() {
     </div>
   );
 }
-
-    
